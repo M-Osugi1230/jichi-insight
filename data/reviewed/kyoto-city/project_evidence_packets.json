@@ -1,0 +1,1033 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「環境」。基本計画の政策体系における政策1の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「うるおい」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「豊かな地球環境を未来へ引き継ぐために、地球温暖化対策、生物多様性保全、ごみ減量等の課題に対し市民、事業者、地域団体、行政等のオール京都で、これまでの延長にとどまらない取組を実践し、2050年までの二酸化炭素排出量「正味ゼロ」等の目標達成に向け、さまざまな政策分野において、自然との共生を楽しむ環境と調和した持続可能な社会の実現をめざす。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「環境政策局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「B：目的がかなり達成されている」を登録した。客観指標評価はa評価、市民生活実感評価はc評価であり、市は客観指標評価を重視して総合評価をB評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標2件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-environment",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「人権・男女共同参画」。基本計画の政策体系における政策2の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「うるおい」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「少子化、国際化、情報化、経済・雇用環境の変化などが進むなか、多様な考え方や生き方が迎え入れられ、個性と能力を十分に発揮でき、日々の交流のなかから一人一人が尊重され、より豊かな人間関係が育まれる誰一人取り残さない共生社会をめざす。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「文化市民局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「B：目的がかなり達成されている」を登録した。客観指標評価はa評価、市民生活実感評価はc評価であり、市は市民生活実感評価を重視して総合評価をB評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標4件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-human-rights-gender-equality",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-human-rights-gender-equality",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「市民生活とコミュニティ」。基本計画の政策体系における政策3の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「うるおい」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「自治会・町内会などの地域団体をはじめ、地域企業、市民活動団体等が地域のさまざまな課題に対して、連携して解決に取り組むとともに、地域におけるさまざまな居場所や活躍の場づくりなどを進め、これを行政が支えることで、多様な地域コミュニティの活性化に向けたまちづくりを進める。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「文化市民局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「C：目的がそこそこ達成されている」を登録した。客観指標評価はb評価、市民生活実感評価はc評価であり、市は市民生活実感評価を重視して総合評価をC評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標1件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。政策3の指標「地域コミュニティが活性化していると回答した自治会・町内会の割合」は、令和7年度の実績値が公表されておらず、令和8年度評価では評価対象外（「-」）のため、actual は未登録（null）とし、assessment は not_assessable とした。直近の実績値は令和6年度の59.7％であり、baseline として登録している。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-civic-life-community",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "政策の客観指標「地域コミュニティが活性化していると回答した自治会・町内会の割合」は、令和7年度の実績値が公表されておらず、令和8年度評価では評価対象外だった。次回のアンケート実施・公表後に更新する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-civic-life-community",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「市民生活の安全」。基本計画の政策体系における政策4の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「うるおい」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「京都がもつ地域力を生かし、地域住民をはじめあらゆる関係機関と一層連携を深めながら、犯罪、交通事故、消費者被害・契約トラブルを予防し、被害拡大防止のために対応するとともに、被害に遭わないようよりよい防犯環境・交通安全環境を構築する。また、市民が地域における防犯活動・交通安全運動などの活動に積極的に参加し、取組の輪を大きくすることができるような施策を展開することで、すべての人が安心して安全にくらせるよりよい地域共生社会を実現する。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「文化市民局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「C：目的がそこそこ達成されている」を登録した。客観指標評価はc評価、市民生活実感評価はc評価であり、市は市民生活実感評価を重視して総合評価をC評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標2件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-civic-life-safety",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-civic-life-safety",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「文化」。基本計画の政策体系における政策5の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「うるおい」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「市民の生活に息づくくらしの文化や、伝統文化から現代芸術まで幅広い文化、有形無形の文化遺産をはじめとする多様な文化を、新しい生活スタイルに合わせて維持、継承、活用しつつ、創造的に発展させていくため、持続可能な文化施策を展開する。また、文化とあらゆる政策の融合を推進し、そこから生まれる新たな価値が相乗効果を生み、文化芸術が経済や社会の発展を牽引する「地方創生のモデル都市」となるとともに、新・文化庁と連携し、日本の文化GDPの拡大や「文化芸術立国」に貢献する。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「文化市民局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「B：目的がかなり達成されている」を登録した。客観指標評価はb評価、市民生活実感評価はc評価であり、市は客観指標評価を重視して総合評価をB評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標2件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-culture",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-culture",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「スポーツ」。基本計画の政策体系における政策6の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「うるおい」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「「誰もが、いつでも、どこでも、する・みる・支える、さまざまなかたちでスポーツやレクリエーションに親しみ、その環境をみんなで支え合うまちづくり」を市民、関係団体等と行政とが一体となって進める。人生100 年時代を見据え、市民一人一人がスポーツを楽しむことで、健康や心の豊かさを享受するとともに、多様な仲間とつながる取組を推進する。スポーツと文化、産業、観光、環境、教育などとがつながることで、京都のまちをさまざまな分野からより魅力あるものにする。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「文化市民局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「C：目的がそこそこ達成されている」を登録した。客観指標評価はc評価、市民生活実感評価はc評価であり、市は市民生活実感評価を重視して総合評価をC評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標3件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-sports",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-sports",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「産業・商業」。基本計画の政策体系における政策7の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「活性化」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「京都のまちに息づく伝統文化とそれを支える匠のわざ、人々の生活文化や美意識、さらには地域企業の優れた技術力、大学の集積といった京都の「強み」を生かすとともに、国内外からの起業家の呼び込みやクリエイティブな企業の進出によって、文化と経済の融合、異分野との交流による新たなイノベーションを加速し、世界に羽ばたく企業を生み出す等、Society5.0 を先導する産業創造都市をめざす。また、地域コミュニティを支える地域企業の感染症をはじめとするさまざまなリスクへの対応力の強化とともに、担い手の確保や、伝統産業、商店街の振興、京都の豊かな食生活を支える流通体制の整備等によって、持続可能な京都経済の好循環を生み出し、市民生活の豊かさにつなげていく。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「産業観光局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「A：目的が十分に達成されている」を登録した。客観指標評価はa評価、市民生活実感評価はb評価であり、市は客観指標評価を重視して総合評価をA評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標2件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-industry-commerce",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-industry-commerce",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「観光」。基本計画の政策体系における政策8の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「活性化」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「市民生活と観光との調和の下、地域や社会の課題解決に貢献するとともに、感染症や災害などの危機や環境問題への対応力を強化することで持続可能な観光を実現し、市民が温かく観光客を迎え入れ、市民と国内外からの観光客との交流が盛んになり、観光が市民生活の豊かさにつながるまちをめざす。そのために、観光地域づくりの推進を担う京都市DMO はもとより、観光関連業界と連携し、観光課題の解決をはじめ市民生活を最優先に、安心・安全、豊かさの向上、地域文化・コミュニティの継承・発展等につながる観光の京都モデルを全力を挙げて推進する。そして、引き続き観光の質を高めることで、市民、観光客、観光事業者の満足度を向上させるとともに、観光とMICE による経済効果を京都経済全体に波及させ、市民生活の豊かさ、文化の継承・創造につなげ、将来にわたり京都が発展する好循環を構築する。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「産業観光局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「B：目的がかなり達成されている」を登録した。客観指標評価はa評価、市民生活実感評価はb評価であり、市は市民生活実感評価を重視して総合評価をB評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標2件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-tourism",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-tourism",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「農林業」。基本計画の政策体系における政策9の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「活性化」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「京都市の農林業は、市民に食料や木材を供給するとともに、食文化、文化財、伝統芸能や伝統産業等、京都の人々のくらしや文化を支える産業として発展してきた。二酸化炭素吸収源としての機能をはじめ、生物多様性の保全や美しい景観の形成等の多面的な機能を有する農地や森林が今後も適切に保全されるよう、産業としての魅力を高めて担い手を確保し、持続可能な農林業をめざす。さらに、台風や集中豪雨等の自然災害の多発や環境の変化に対して高い対応能力を備えた農林業を推進し、市民生活の安全・安心の確保につなげる。また、京都市の文化芸術の継承・発展を支える京都ならではの農林業の振興を図るとともに、市民が自然とふれあう機会を創出する。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「産業観光局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「B：目的がかなり達成されている」を登録した。客観指標評価はa評価、市民生活実感評価はc評価であり、市は客観指標評価を重視して総合評価をB評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標2件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-agriculture-forestry",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-agriculture-forestry",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果（PDF）「1 政策評価制度とは」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-results"
+    ],
+    "statement": "本登録の単位は、「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の「政策」とした。計画は27の政策を4つの柱（うるおい・活性化・すこやか・まちづくり）の下に置き、各政策の下に合計114の施策を置く。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価が毎年度公表される最上位の単位であるためである。京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は「新京都戦略」（2024〜2027年度）に移行しているが、令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画の公式ページ「政策の体系」、令和8年度政策評価結果「政策の評価結果一覧」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page",
+     "kyoto-city-policy-evaluation-fy2026-list"
+    ],
+    "statement": "政策名は「大学」。基本計画の政策体系における政策10の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画の公式ページ「政策の体系」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-kyoplan2025-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる基本計画の柱「活性化」を用いた。柱は、うるおい（政策1〜6）、活性化（政策7〜11）、すこやか（政策12〜18）、まちづくり（政策19〜27）の4つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "政策の評価票「政策分野の基本方針」、評価結果詳細データ「01政策評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "purposeには、政策評価における政策分野の基本方針を転記した。「千年を超えて、都市の機能・文化が継承・発展しつつ、世界にも開かれた稀有な都市「京都」で学ぶ意義を再確認し、その魅力を高めるとともに、国内外に強力に発信することで、留学生、社会人を含む多様な学生を受け入れ、これからの社会の担い手を京都から輩出する。また、京都のすべての大学が個性・特色を生かしながら発展し続けられるよう、大学コンソーシアム京都と連携し、大学の取組を全面的にサポートするとともに、集積された大学の知・学生の力を最大限に生かした、産業・文化の創造・発展、地域の活性化をより一層進める。」"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "評価結果詳細データ「01政策評価」の担当局欄",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database"
+    ],
+    "statement": "担当局は「総合企画局」（評価結果詳細データの政策評価シートの担当局欄による）。政策に関係する個別指標の担当局・部室は指標ごとに定められており、KPIの定義に記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度政策評価結果「政策の評価結果一覧」、政策の評価票「政策の総合評価」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-sheets",
+     "kyoto-city-policy-evaluation-fy2026-list",
+     "kyoto-city-policy-evaluation-fy2026-announcement-page"
+    ],
+    "statement": "公式評価は令和8年度政策評価結果における総合評価「B：目的がかなり達成されている」を登録した。客観指標評価はa評価、市民生活実感評価はc評価であり、市は市民生活実感評価を重視して総合評価をB評価とした。政策の評価結果の内訳（政策27項目で A2・B19・C6・D0・E0）は公表ページの集計と評価結果一覧の転記が一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和8年度政策評価結果・政策の評価票・評価結果詳細データ、「令和6年度決算の概要」",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-results",
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-settlement-overview-fy2024"
+    ],
+    "statement": "京都市の政策評価制度の公表資料（令和8年度政策評価結果、政策の評価票、評価結果詳細データ）には、政策単位の金額（予算額・決算額）の掲載はない。決算の公表は、「決算の概要」が新京都戦略の6政策の体系で主な取組を整理し、「決算実績報告」は局別の編成であり、京プラン2025の政策単位に対応する金額は公表されていない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "評価結果詳細データ「02政策の客観指標」、政策の評価票「客観指標評価」の詳細",
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-policy-evaluation-fy2026-database",
+     "kyoto-city-policy-evaluation-fy2026-sheets"
+    ],
+    "statement": "政策の客観指標1件を登録した。各指標の単年度目標（令和7年度）、実績値（令和7年度）、市の評価結果（a〜e）は評価結果詳細データ「政策の客観指標」に基づく。本登録の assessment は市の評価を a=achieved、b=mostly_achieved、c=partially_achieved、d=not_achieved、e=not_achieved、評価なし=not_assessable と換算したものである。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-project-2025-universities",
+  "open_questions": [
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "新計画体系（京都基本構想・新京都戦略）での政策評価の枠組みは確定公表されていない。公表され次第、更新サイクルで扱いを判断する。",
+   "首長公約との接続は京都クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-project-2025-universities",
+  "subject_type": "project"
+ }
+]

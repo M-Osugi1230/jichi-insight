@@ -1,0 +1,180 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（計画の掲載順の先頭10政策）。後続の展開では、同じ掲載順ルールを継続し、政策番号11以降の政策を追加する。",
+  "total_count": 10
+ },
+ "issue": 935,
+ "municipality_id": "jp-local-261009",
+ "municipality_key": "kyoto-city",
+ "population": {
+  "description": "母集団は「はばたけ未来へ！ 京プラン2025」（京都市基本計画、2021年3月26日策定、計画期間2021〜2025年度）の政策体系とした。計画は27の政策分野（政策）を4つの柱（うるおい＝政策1〜6、活性化＝政策7〜11、すこやか＝政策12〜18、まちづくり＝政策19〜27）の下に置き、各政策の下に合計114の施策を置く。登録単位は「政策」とした。政策は、市の政策評価制度において政策ごとに客観指標が設定され、客観指標評価と市民生活実感評価を総合したA〜Eの5段階の公式評価（総合評価）が毎年度公表される最上位の単位であるためである。本登録の評価・指標は、最新の公表である令和8年度政策評価結果（2026年9月17日公表。令和7年度までの実績を評価したもの）に基づく。なお京都市は2025年12月に「京都基本構想」（2026〜2050年）を策定し、実行計画は市長任期のアクションプラン「新京都戦略」（2024〜2027年度）に移行している。令和8年度政策評価も京プラン2025の体系で実施されており、新体系での政策評価の枠組みは確定公表されていない。また決算の公表は「決算の概要」が新京都戦略の6政策の体系で主な取組を整理するなど、京プラン2025の体系とは一致せず、政策と新体系との公式対応表は公表されていないため、本登録では新旧の対応付けは行っていない。",
+  "fiscal_year": 2025,
+  "group_count": 4,
+  "measure_count": 114,
+  "policy_count": 27,
+  "source_ids": [
+   "kyoto-city-kyoplan2025-page",
+   "kyoto-city-policy-evaluation-system-page",
+   "kyoto-city-policy-evaluation-fy2026-announcement-page",
+   "kyoto-city-policy-evaluation-fy2026-results",
+   "kyoto-city-policy-evaluation-fy2026-list",
+   "kyoto-city-policy-evaluation-fy2026-database"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "京プラン2025の政策体系の掲載順（柱「うるおい」「活性化」「すこやか」「まちづくり」の順、各柱の中では政策番号の昇順）に、最初の10政策（政策1〜10）を選定した。掲載順は基本計画の公式ページの「政策の体系」の並びで定める。金額の大小では選ばない。",
+  "pillars": [
+   "うるおい",
+   "活性化",
+   "すこやか",
+   "まちづくり"
+  ]
+ },
+ "selections": [
+  {
+   "department": "環境政策局",
+   "official_title": "環境",
+   "pillar": "うるおい",
+   "policy": "うるおい",
+   "project_id": "jp-local-261009-project-2025-environment",
+   "selection_basis": "掲載順1番目: 柱「うるおい」の政策1「環境」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-environment",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "文化市民局",
+   "official_title": "人権・男女共同参画",
+   "pillar": "うるおい",
+   "policy": "うるおい",
+   "project_id": "jp-local-261009-project-2025-human-rights-gender-equality",
+   "selection_basis": "掲載順2番目: 柱「うるおい」の政策2「人権・男女共同参画」を選定した。政策の下位には施策が5件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-human-rights-gender-equality",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "文化市民局",
+   "official_title": "市民生活とコミュニティ",
+   "pillar": "うるおい",
+   "policy": "うるおい",
+   "project_id": "jp-local-261009-project-2025-civic-life-community",
+   "selection_basis": "掲載順3番目: 柱「うるおい」の政策3「市民生活とコミュニティ」を選定した。政策の下位には施策が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-civic-life-community",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "文化市民局",
+   "official_title": "市民生活の安全",
+   "pillar": "うるおい",
+   "policy": "うるおい",
+   "project_id": "jp-local-261009-project-2025-civic-life-safety",
+   "selection_basis": "掲載順4番目: 柱「うるおい」の政策4「市民生活の安全」を選定した。政策の下位には施策が2件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-civic-life-safety",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "文化市民局",
+   "official_title": "文化",
+   "pillar": "うるおい",
+   "policy": "うるおい",
+   "project_id": "jp-local-261009-project-2025-culture",
+   "selection_basis": "掲載順5番目: 柱「うるおい」の政策5「文化」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-culture",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "文化市民局",
+   "official_title": "スポーツ",
+   "pillar": "うるおい",
+   "policy": "うるおい",
+   "project_id": "jp-local-261009-project-2025-sports",
+   "selection_basis": "掲載順6番目: 柱「うるおい」の政策6「スポーツ」を選定した。政策の下位には施策が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-sports",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "産業観光局",
+   "official_title": "産業・商業",
+   "pillar": "活性化",
+   "policy": "活性化",
+   "project_id": "jp-local-261009-project-2025-industry-commerce",
+   "selection_basis": "掲載順7番目: 柱「活性化」の政策7「産業・商業」を選定した。政策の下位には施策が5件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-industry-commerce",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "産業観光局",
+   "official_title": "観光",
+   "pillar": "活性化",
+   "policy": "活性化",
+   "project_id": "jp-local-261009-project-2025-tourism",
+   "selection_basis": "掲載順8番目: 柱「活性化」の政策8「観光」を選定した。政策の下位には施策が5件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-tourism",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "産業観光局",
+   "official_title": "農林業",
+   "pillar": "活性化",
+   "policy": "活性化",
+   "project_id": "jp-local-261009-project-2025-agriculture-forestry",
+   "selection_basis": "掲載順9番目: 柱「活性化」の政策9「農林業」を選定した。政策の下位には施策が4件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-agriculture-forestry",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  },
+  {
+   "department": "総合企画局",
+   "official_title": "大学",
+   "pillar": "活性化",
+   "policy": "活性化",
+   "project_id": "jp-local-261009-project-2025-universities",
+   "selection_basis": "掲載順10番目: 柱「活性化」の政策10「大学」を選定した。政策の下位には施策が6件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-261009-project-series-universities",
+   "source_ids": [
+    "kyoto-city-kyoplan2025-page",
+    "kyoto-city-policy-evaluation-fy2026-results",
+    "kyoto-city-policy-evaluation-fy2026-list"
+   ]
+  }
+ ],
+ "updated_at": "2026-11-22",
+ "version": "1.0.0"
+}
