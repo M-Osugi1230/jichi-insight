@@ -1853,6 +1853,113 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-niigata-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-151009-executive-2026-11-18",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "新潟市の現市長は中原 八一である。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-results",
+          "niigata-city-mayor-election-2026-overview"
+        ],
+        "location_note": "市選挙管理委員会の開票速報の当選人欄および選挙特設ページ。",
+        "decision": "accepted",
+        "review_note": "両出典とも中原八一を2026年市長選挙の当選人として記載する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "新潟市長選挙は2026年10月25日に執行され、中原八一が143,724票を得て当選した（3選）。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-results"
+        ],
+        "location_note": "市選挙管理委員会の開票速報（確定）の候補者別得票数。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計225,262票（中原143,724票・青木まなぶ46,638票・早武淳34,900票）とも整合する。候補者名の公式表記は「青木まなぶ」である。"
+      },
+      {
+        "field": "term_start",
+        "statement": "中原八一市長の現任期は2026年11月18日に始まった。",
+        "source_ids": [
+          "niigata-pref-term-expiry-list",
+          "niigata-city-mayor-election-2026-overview"
+        ],
+        "location_note": "新潟県選挙管理委員会『任期満了日（定数）一覧』（選挙前の版）の新潟市長の行、および市選挙管理委員会の期日決定の公表。",
+        "decision": "accepted",
+        "review_note": "前任期の満了日（2026年11月17日）は県選管一覧に明記され、市選管も期日の決定に際し同日を任期満了日として公表した。その翌日が開始日であり、公職選挙法第259条ただし書の任期起算とも整合する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "中原八一市長の現任期は2030年11月17日に満了する。",
+        "source_ids": [
+          "niigata-pref-term-expiry-list"
+        ],
+        "location_note": "新潟県選挙管理委員会『任期満了日（定数）一覧』（選挙前の版）の新潟市長の行（前任期の満了日の明記）。",
+        "decision": "accepted",
+        "review_note": "前任期の満了日（2026年11月17日）の明記と公職選挙法第259条ただし書の構成により、現任期の満了日は開始日（2026年11月18日）の4年後の応当日の前日である2030年11月17日となる。県選管一覧の現行版は選挙前の版のままであり、新任期満了日の明記そのものの照合は一覧の次回更新時に行う（open question）。"
+      }
+    ],
+    "open_questions": [
+      "新潟県選挙管理委員会『任期満了日（定数）一覧』は確認時点で選挙前の版（新潟市長欄は旧任期・連続就任回数2）のままである。新任期満了日（2030年11月17日）の明記は一覧の次回更新で照合する。",
+      "2026年新潟市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #946）で確認済みであり、段階3で転記・接続する。段階1では manifesto_source_ids を未接続とする。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-niigata-pref-current-governor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-150002-executive-2026-06-10",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "新潟県の現職知事が花角英世であることを県公式「知事プロフィール」で確認した。職歴に「平成30年6月新潟県知事」「令和4年6月新潟県知事（2期目）」「令和8年6月新潟県知事（3期目）」と明記する。",
+        "location_note": "新潟県公式「知事プロフィール」（2026年6月10日更新）の職歴。",
+        "source_ids": [
+          "niigata-pref-governor"
+        ],
+        "decision": "accepted",
+        "review_note": "現職知事の氏名と3期目であることを保持する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する知事選挙は2026年5月31日に執行された新潟県知事選挙（任期満了に伴う選挙、候補者3人）であり、花角英世が554,012票で当選した。得票数は新潟県選挙管理委員会の投・開票結果ページの開票結果（県計）で直接照合した（土田竜吾230,721票、安中さとし43,089票、有効投票827,822票、投票率47.40%）。告示日は2026年5月14日であり、新潟県報号外（令和8年5月14日）の選挙管理委員会告示第45号で確認されている（段階0棚卸し）。",
+        "location_note": "新潟県選挙管理委員会「令和8年5月31日執行 新潟県知事選挙」ページの開票結果・投票結果の県計欄。",
+        "source_ids": [
+          "niigata-pref-governor-election-2026-results"
+        ],
+        "decision": "accepted",
+        "review_note": "得票数は県選管自身の開票結果の県計値を採用した。候補者名の公式表記は「はなずみ英世」である。"
+      },
+      {
+        "field": "term_start",
+        "statement": "花角英世知事の現任期の開始日は2026年6月10日である。本選挙は任期満了に伴う選挙であり、任期満了に伴う選挙で当選した者の任期は公職選挙法第259条ただし書により前任者の任期満了日の翌日から起算される。前任期の満了日は2026年6月9日であり、開始日はその翌日となる。県公式の知事プロフィール（2026年6月10日更新）が「令和8年6月 新潟県知事（3期目）」とすることも、この日付と整合する。",
+        "location_note": "新潟県選挙管理委員会「任期満了日（定数）一覧」および新潟県公式「知事プロフィール」。",
+        "source_ids": [
+          "niigata-pref-governor-term-list",
+          "niigata-pref-governor"
+        ],
+        "decision": "accepted",
+        "review_note": "開始日は任期満了選挙であることの公式記録と公職選挙法第259条ただし書・地方自治法第140条の構成で確定し、知事プロフィールの更新日（2026年6月10日）とも矛盾しないことを確認した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "花角英世知事の現任期の満了日は2030年6月9日である。新潟県選挙管理委員会の公式一覧「任期満了日（定数）一覧」（2026年10月16日更新）に、新潟県知事の任期満了日として令和12年6月9日と連続就任回数3が明記されている。開始日2026年6月10日から4年（地方自治法第140条）とする法定構成とも一致する。",
+        "location_note": "新潟県選挙管理委員会「任期満了日（定数）一覧」（2026年10月16日更新）の新潟県知事の行。",
+        "source_ids": [
+          "niigata-pref-governor-term-list"
+        ],
+        "decision": "accepted",
+        "review_note": "満了日は県選管自身の公式明記と法定構成の双方で確定した。"
+      }
+    ],
+    "open_questions": [
+      "2026年新潟県知事選挙の選挙公報は、県選管の現行公式ページ・選挙特設サイト・Wayback Machine のいずれでも所在を確認できていない（特設サイトは応答せず、結果ページの「選挙の記録」は作成中）。県選管「選挙の記録」の完成時に再確認し、公約レコードの登録は段階3で判断する。本段階では manifesto_source_ids を空としている。",
+      "任期の開始日（2026年6月10日）を直接印字した県選管の公式文書は確認できていない。開始日は任期満了選挙の法定構成（公職選挙法第259条ただし書）により確定し、県公式の知事プロフィール（2026年6月10日更新・3期目明記）と矛盾しないことを確認した。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-okayama-pref-current-governor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-330001-executive-2024-11-12",
@@ -1913,60 +2020,6 @@
     "open_questions": [
       "就任日（2024年11月12日）を直接印字した公式文書は本段階では確認できておらず、開始日は任期満了選挙であることの公式記録と公職選挙法第259条ただし書の構成で確定した。",
       "2024年知事選挙の選挙公報は発行されたが、県選管の現行の知事選挙ページにはリンクがなく、現行公式サイトにおける現存と音声読み上げ対応データの有無は未確認である（段階3で再確認する）。このため本段階では manifesto_source_ids を空とした。"
-    ],
-    "review_status": "reviewed"
-  },
-  {
-    "id": "evidence-niigata-city-current-mayor-term",
-    "subject_type": "executive_term",
-    "subject_id": "jp-local-151009-executive-2026-11-18",
-    "claims": [
-      {
-        "field": "person_name",
-        "statement": "新潟市の現市長は中原 八一である。",
-        "source_ids": [
-          "niigata-city-mayor-election-2026-results",
-          "niigata-city-mayor-election-2026-overview"
-        ],
-        "location_note": "市選挙管理委員会の開票速報の当選人欄および選挙特設ページ。",
-        "decision": "accepted",
-        "review_note": "両出典とも中原八一を2026年市長選挙の当選人として記載する。"
-      },
-      {
-        "field": "election_date",
-        "statement": "新潟市長選挙は2026年10月25日に執行され、中原八一が143,724票を得て当選した（3選）。",
-        "source_ids": [
-          "niigata-city-mayor-election-2026-results"
-        ],
-        "location_note": "市選挙管理委員会の開票速報（確定）の候補者別得票数。",
-        "decision": "accepted",
-        "review_note": "得票数は候補者別得票数の合計225,262票（中原143,724票・青木まなぶ46,638票・早武淳34,900票）とも整合する。候補者名の公式表記は「青木まなぶ」である。"
-      },
-      {
-        "field": "term_start",
-        "statement": "中原八一市長の現任期は2026年11月18日に始まった。",
-        "source_ids": [
-          "niigata-pref-term-expiry-list",
-          "niigata-city-mayor-election-2026-overview"
-        ],
-        "location_note": "新潟県選挙管理委員会『任期満了日（定数）一覧』（選挙前の版）の新潟市長の行、および市選挙管理委員会の期日決定の公表。",
-        "decision": "accepted",
-        "review_note": "前任期の満了日（2026年11月17日）は県選管一覧に明記され、市選管も期日の決定に際し同日を任期満了日として公表した。その翌日が開始日であり、公職選挙法第259条ただし書の任期起算とも整合する。"
-      },
-      {
-        "field": "term_end",
-        "statement": "中原八一市長の現任期は2030年11月17日に満了する。",
-        "source_ids": [
-          "niigata-pref-term-expiry-list"
-        ],
-        "location_note": "新潟県選挙管理委員会『任期満了日（定数）一覧』（選挙前の版）の新潟市長の行（前任期の満了日の明記）。",
-        "decision": "accepted",
-        "review_note": "前任期の満了日（2026年11月17日）の明記と公職選挙法第259条ただし書の構成により、現任期の満了日は開始日（2026年11月18日）の4年後の応当日の前日である2030年11月17日となる。県選管一覧の現行版は選挙前の版のままであり、新任期満了日の明記そのものの照合は一覧の次回更新時に行う（open question）。"
-      }
-    ],
-    "open_questions": [
-      "新潟県選挙管理委員会『任期満了日（定数）一覧』は確認時点で選挙前の版（新潟市長欄は旧任期・連続就任回数2）のままである。新任期満了日（2030年11月17日）の明記は一覧の次回更新で照合する。",
-      "2026年新潟市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #946）で確認済みであり、段階3で転記・接続する。段階1では manifesto_source_ids を未接続とする。"
     ],
     "review_status": "reviewed"
   },

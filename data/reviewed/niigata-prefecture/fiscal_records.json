@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-150002-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 1169750000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "第1号議案「令和8年度新潟県一般会計予算」の歳入歳出予算総額1,169,750,000千円を円換算。議案書の全文は県のWebサイトで公表されていないため、千円単位の額は財政課「令和8年度当初予算計数資料」の款別一覧表で確定し、款別合計が総額と一致することを検算した。同議案は令和8年2月定例会で2026年3月27日に「可決」された（「原案可決」ではない）。県の広報資料等の百万円単位の表記（1,169,750百万円）は丸めた額であり、千円単位の値を正とする。令和8年度から借換債を県債管理特別会計へ移したため、令和7年度当初との単純比較はできない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-budget-figures-fy2026",
+      "niigata-prefecture-assembly-2026-feb-session-results"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計県税",
+    "amount_yen": 292805000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "財政課「令和8年度当初予算計数資料」の歳入款別一覧表に印字された第1款「県税」292,805,000千円を円換算。議案書の全文がWeb公表されていないため計数資料を確定経路とし、歳入款別の合計が歳入総額と一致することを検算した。第1号議案は2026年3月27日に「可決」されたため、計数資料の値がそのまま成立後の額である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-budget-figures-fy2026",
+      "niigata-prefecture-assembly-2026-feb-session-results"
+    ]
+  },
+  {
+    "id": "jp-local-150002-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-150002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 1169750000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "第1号議案「令和8年度新潟県一般会計予算」の歳入歳出予算総額と同額。財政課「令和8年度当初予算計数資料」の歳出款別一覧表でも合計が総額と一致することを検算した。同議案は2026年3月27日に「可決」された。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "niigata-prefecture-budget-figures-fy2026",
+      "niigata-prefecture-assembly-2026-feb-session-results"
+    ]
+  }
+]
