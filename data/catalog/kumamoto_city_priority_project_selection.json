@@ -1,0 +1,183 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（計画の掲載順の先頭10施策）。後続の展開では、同じ掲載順ルールを継続し、施策3-2以降の施策を追加する。",
+  "total_count": 10
+ },
+ "issue": 966,
+ "municipality_id": "jp-local-431001",
+ "municipality_key": "kumamoto-city",
+ "population": {
+  "description": "母集団は「第8次熊本市総合計画」（計画期間2024〜2031年度。基本構想・基本計画・アクションプランの3層で構成）の基本計画の施策体系とした。基本計画は8つのビジョン（ビジョン1「こどもが輝き、若者が希望を抱くまち」、ビジョン2「市民に愛され、世界に選ばれる、持続的な発展を実現するまち」、ビジョン3「市民生活を守る強くしなやかなまち」、ビジョン4「だれもが自分らしくいきいきと生活できるまち」、ビジョン5「豊かな環境を未来につなぐまち」、ビジョン6「すべての市民がより良い暮らしを営むまち」、ビジョン7「安全で良好な都市基盤が整備されたまち」、ビジョン8「市民に信頼される市役所」）の下に全32の施策を置き、各施策の下に基本方針を置く。登録単位は「施策」とした。施策は、市の行政評価が施策単位で実施され、施策ごとに行政評価シートと成果指標（全97項目）の進捗評価が毎年度公表される最上位の単位であるためである。本登録の評価・指標は、最新の公表である令和6年度行政評価（2025年9月16日公表。令和6年度までの実績を評価したもの）に基づく。令和7年度行政評価の公表は、2026年11月23日時点で市の公式サイト等で確認できなかった。なお決算の公表資料「決算状況報告書」は部門（局）別の編成で計画体系とは一致せず、計画体系と決算の公式対応表は公表されていないため、本登録では計画体系と決算の対応付けは行っていない。",
+  "fiscal_year": 2024,
+  "group_count": 8,
+  "policy_count": 32,
+  "source_ids": [
+   "kumamoto-city-plan8-page",
+   "kumamoto-city-plan8-document",
+   "kumamoto-city-administrative-evaluation-page",
+   "kumamoto-city-administrative-evaluation-fy2024-about",
+   "kumamoto-city-administrative-evaluation-fy2024-indicators",
+   "kumamoto-city-administrative-evaluation-fy2024-sheets"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "第8次総合計画・基本計画の施策体系の掲載順（ビジョン1〜8の順、各ビジョンの中では施策番号の昇順）に、最初の10施策（施策1-1〜1-4、2-1〜2-5、3-1）を選定した。掲載順は計画本編の基本計画の並びで定める。金額の大小では選ばない。",
+  "pillars": [
+   "こどもが輝き、若者が希望を抱くまち",
+   "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "市民生活を守る強くしなやかなまち",
+   "だれもが自分らしくいきいきと生活できるまち",
+   "豊かな環境を未来につなぐまち",
+   "すべての市民がより良い暮らしを営むまち",
+   "安全で良好な都市基盤が整備されたまち",
+   "市民に信頼される市役所"
+  ]
+ },
+ "selections": [
+  {
+   "department": "健康福祉局、こども局、区役所、教育委員会事務局",
+   "official_title": "すべてのこどもの健やかな成長と家庭の幸せへの支援",
+   "pillar": "こどもが輝き、若者が希望を抱くまち",
+   "policy": "こどもが輝き、若者が希望を抱くまち",
+   "project_id": "jp-local-431001-project-2024-child-growth-family-support",
+   "selection_basis": "掲載順1番目: ビジョン1「こどもが輝き、若者が希望を抱くまち」の施策1-1「すべてのこどもの健やかな成長と家庭の幸せへの支援」を選定した。施策の下位には基本方針が6件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-child-growth-family-support",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "文化市民局、健康福祉局、こども局、区役所、教育委員会事務局",
+   "official_title": "困難な状況にあるこどもや子育て家庭への支援",
+   "pillar": "こどもが輝き、若者が希望を抱くまち",
+   "policy": "こどもが輝き、若者が希望を抱くまち",
+   "project_id": "jp-local-431001-project-2024-support-children-families-in-difficulty",
+   "selection_basis": "掲載順2番目: ビジョン1「こどもが輝き、若者が希望を抱くまち」の施策1-2「困難な状況にあるこどもや子育て家庭への支援」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-support-children-families-in-difficulty",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "教育委員会事務局",
+   "official_title": "こどもを主体とした教育の推進",
+   "pillar": "こどもが輝き、若者が希望を抱くまち",
+   "policy": "こどもが輝き、若者が希望を抱くまち",
+   "project_id": "jp-local-431001-project-2024-child-centered-education",
+   "selection_basis": "掲載順3番目: ビジョン1「こどもが輝き、若者が希望を抱くまち」の施策1-3「こどもを主体とした教育の推進」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-child-centered-education",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "政策局、文化市民局、健康福祉局、経済観光局、農水局、都市建設局",
+   "official_title": "まちを支える人材の確保・育成",
+   "pillar": "こどもが輝き、若者が希望を抱くまち",
+   "policy": "こどもが輝き、若者が希望を抱くまち",
+   "project_id": "jp-local-431001-project-2024-human-resource-development",
+   "selection_basis": "掲載順4番目: ビジョン1「こどもが輝き、若者が希望を抱くまち」の施策1-4「まちを支える人材の確保・育成」を選定した。施策の下位には基本方針が2件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-human-resource-development",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "経済観光局",
+   "official_title": "半導体関連産業等への新たな投資の後押しや中小企業等の振興",
+   "pillar": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "policy": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "project_id": "jp-local-431001-project-2024-semiconductor-and-sme-promotion",
+   "selection_basis": "掲載順5番目: ビジョン2「市民に愛され、世界に選ばれる、持続的な発展を実現するまち」の施策2-1「半導体関連産業等への新たな投資の後押しや中小企業等の振興」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-semiconductor-and-sme-promotion",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "文化市民局、環境局、経済観光局、都市建設局",
+   "official_title": "世界を魅了する都市ブランド力の向上",
+   "pillar": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "policy": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "project_id": "jp-local-431001-project-2024-urban-brand",
+   "selection_basis": "掲載順6番目: ビジョン2「市民に愛され、世界に選ばれる、持続的な発展を実現するまち」の施策2-2「世界を魅了する都市ブランド力の向上」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-urban-brand",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "政策局、経済観光局",
+   "official_title": "交流人口拡大によるにぎわいの創出",
+   "pillar": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "policy": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "project_id": "jp-local-431001-project-2024-exchange-population-vitality",
+   "selection_basis": "掲載順7番目: ビジョン2「市民に愛され、世界に選ばれる、持続的な発展を実現するまち」の施策2-3「交流人口拡大によるにぎわいの創出」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-exchange-population-vitality",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "経済観光局、都市建設局",
+   "official_title": "広域交通ネットワークの形成による物流・人流の円滑化",
+   "pillar": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "policy": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "project_id": "jp-local-431001-project-2024-wide-area-transport-network",
+   "selection_basis": "掲載順8番目: ビジョン2「市民に愛され、世界に選ばれる、持続的な発展を実現するまち」の施策2-4「広域交通ネットワークの形成による物流・人流の円滑化」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-wide-area-transport-network",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "農水局、農業委員会事務局",
+   "official_title": "活力と魅力に満ちた持続可能な農水産業の振興",
+   "pillar": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "policy": "市民に愛され、世界に選ばれる、持続的な発展を実現するまち",
+   "project_id": "jp-local-431001-project-2024-agriculture-fisheries-promotion",
+   "selection_basis": "掲載順9番目: ビジョン2「市民に愛され、世界に選ばれる、持続的な発展を実現するまち」の施策2-5「活力と魅力に満ちた持続可能な農水産業の振興」を選定した。施策の下位には基本方針が3件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-agriculture-fisheries-promotion",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  },
+  {
+   "department": "政策局、健康福祉局、都市建設局、消防局、上下水道局、教育委員会事務局",
+   "official_title": "防災・減災の推進",
+   "pillar": "市民生活を守る強くしなやかなまち",
+   "policy": "市民生活を守る強くしなやかなまち",
+   "project_id": "jp-local-431001-project-2024-disaster-prevention-mitigation",
+   "selection_basis": "掲載順10番目: ビジョン3「市民生活を守る強くしなやかなまち」の施策3-1「防災・減災の推進」を選定した。施策の下位には基本方針が6件ある。金額の大小では選んでいない。",
+   "series_id": "jp-local-431001-project-series-disaster-prevention-mitigation",
+   "source_ids": [
+    "kumamoto-city-plan8-document",
+    "kumamoto-city-administrative-evaluation-fy2024-indicators",
+    "kumamoto-city-administrative-evaluation-fy2024-sheets"
+   ]
+  }
+ ],
+ "updated_at": "2026-11-23",
+ "version": "1.0.0"
+}
