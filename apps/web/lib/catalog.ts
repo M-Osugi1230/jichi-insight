@@ -7,6 +7,7 @@ import miyagiFinanceCatalog from "../../../data/catalog/miyagi_prefecture_financ
 import shizuokaFinanceCatalog from "../../../data/catalog/shizuoka_prefecture_finance_sources.json";
 import hiroshimaFinanceCatalog from "../../../data/catalog/hiroshima_prefecture_finance_sources.json";
 import kyotoCityFinanceCatalog from "../../../data/catalog/kyoto_city_finance_sources.json";
+import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
@@ -46,7 +47,8 @@ export type MunicipalityKey =
   | "hiroshima-prefecture"
   | "hiroshima-city"
   | "kyoto-city"
-  | "kyoto-prefecture";
+  | "kyoto-prefecture"
+  | "niigata-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -277,6 +279,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "niigata-city": {
+    name: "新潟市", type: "政令指定都市",
+    summary: "新潟市総合計画2030（2023〜2030年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、中原 八一市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -289,6 +297,7 @@ export const sourceCatalog = [
   ...(shizuokaFinanceCatalog.records as SourceRecord[]),
   ...(hiroshimaFinanceCatalog.records as SourceRecord[]),
   ...(kyotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(niigataCityFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),

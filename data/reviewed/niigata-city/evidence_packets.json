@@ -58,5 +58,25 @@
     ],
     "open_questions": [],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-niigata-city-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-151009-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度の新潟市一般会計当初予算の市税は144,920,480,000円。",
+        "source_ids": [
+          "niigata-city-budget-bill-fy2026",
+          "niigata-city-budget-council-results-fy2026"
+        ],
+        "location_note": "議案第1号（令和8年度新潟市一般会計予算）の第1表歳入歳出予算の第1款市税、および新潟市議会の令和8年2月定例会「会議の結果」（2026年3月23日「可決」）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。市税内訳（市民税72,341,661千円・固定資産税51,548,753千円・軽自動車税2,597,054千円・市たばこ税5,147,407千円・鉱産税86,229千円・入湯税27,389千円・事業所税4,748,750千円・都市計画税8,423,237千円）の合計が144,920,480千円と一致することも検算した。第1条の総額442,500,000千円も議案書で併せて確認し、既登録の総額レコードと一致する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]
