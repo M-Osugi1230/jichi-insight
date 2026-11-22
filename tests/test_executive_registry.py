@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 170
-    assert len({record["id"] for record in catalog["records"]}) == 170
+    assert len(catalog["records"]) == 171
+    assert len({record["id"] for record in catalog["records"]}) == 171
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
@@ -561,11 +561,16 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-221309"]["manifesto_source_ids"] == [
         "hamamatsu-city-mayor-election-2023-bulletin",
     ]
-    # Okayama City registers no manifesto source at stage 1: the 2025
-    # bulletin was published, but whether the bulletin PDF is still
-    # reachable on the city's current site is unverified (stage 0,
-    # Issue #949); stage 3 confirms its survival before connecting it.
-    assert by_municipality["jp-local-331007"]["manifesto_source_ids"] == []
+    # Okayama City registers the 2025 bulletin: the promise stage
+    # (Issue #974) confirmed the live official PDF is 404 and the
+    # Wayback capture of the official URL cannot be replayed, but
+    # the go2senkyo CDN copy of the same bulletin is byte-identical
+    # to that capture (SHA-1 digest match against the Wayback CDX
+    # record), so the bulletin was registered from the verified
+    # copy and connected to the mayor's term.
+    assert by_municipality["jp-local-331007"]["manifesto_source_ids"] == [
+        "okayama-city-mayor-election-2025-bulletin",
+    ]
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

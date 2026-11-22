@@ -1232,6 +1232,49 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-okayama-city-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-331007-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "大森まさお候補欄は選挙公報1ページ目右上に掲載され、大見出し「大森まさおは、市民と一緒に考え、一緒に行動します。」の下に、好循環の図、3本柱のもとに置かれた6つの見出しの箇条書き計21項目、プロフィール欄が配置されている。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "2026-11-23に原典ファイルを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "箇条書きの各項目が政策の表明として完結するため、6つの見出しの箇条書き計21項目をそれぞれ1レコードへ分割した。見出し（主題のラベル）、大見出し、好循環の図（枠組みの提示）、プロフィール欄（経歴の提示）は公約として分割しなかった。好循環の図は過去12年間の市政の成果に言及するが、箇条書きの形で実績を提示した項目はなく、実績の切り分けによる除外は0件である。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄の箇条書き21項目とその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "項目単位の登録は千葉市長・仙台市長・広島市長・京都市長の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は岡山市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。公報PDFは選挙期間中、市公式サイトの選挙公報案内ページの添付ファイル（市公式URL）として掲載されていたが、現行の市公式URLは404であり、Wayback Machine の保存（2025年9月21日、告示日）も再生時に2026年2月19日の404保存へリダイレクトされ実物を取得できない。そのため選挙ドットコムCDNに現存する同一公報の複写を取得し、その SHA-1 ダイジェストが Wayback Machine の CDX 記録にある市公式URL保存分のダイジェスト（YYYYSS5ZCNRWRI6XUE7FSIIPFRXTSFXM）と完全一致することを確認して、市公式URLで公表された原典そのものと同一ファイルであることを担保した（取得ファイルは3,489,450バイト、全2ページ、SHA-256 は bf3cc6f129aeb018226cdc20097ca5aa10281a398da9c64cc3bd7649df91b602）。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "公報各ページ欄外の備考（候補者から提出された原稿をそのまま写真印刷した旨）と、市公式URLの Wayback Machine 保存記録（CDX）および選挙ドットコムCDNの複写に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "見出しをレコード化しない境界判断は項目単位の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "大森候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "Wayback Machine の市公式URL保存分の再生が復旧すれば、保存コピーそのものでも登録文を照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-niigata-city-2026-manifesto-review",
     "subject_type": "manifesto_review",
     "subject_id": "manifesto-review-jp-local-151009-2026",

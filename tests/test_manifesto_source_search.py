@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 34
+    assert len(searches) == 35
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -69,6 +69,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-330001-executive-2024-11-12",
         "jp-local-150002-executive-2026-06-10",
         "jp-local-151009-executive-2026-11-18",
+        "jp-local-331007-executive-2025-10-09",
     }
 
     for search in searches:
@@ -94,7 +95,10 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # each closed by its
     # official election bulletin (the Sendai, Shizuoka City and
     # Hiroshima City bulletins survive only as archived copies
-    # of the cities' official election-period URLs; the Kyoto
+    # of the cities' official election-period URLs; the Okayama
+    # City bulletin survives as a CDN copy proven byte-identical
+    # to the archived capture of the city's official URL by a
+    # SHA-1 digest match; the Kyoto
     # Prefecture bulletin is registered as the candidate-submitted
     # manuscript published as audio-readable data);
     # Kawasaki's bulletin is registered as reprinted in the city
