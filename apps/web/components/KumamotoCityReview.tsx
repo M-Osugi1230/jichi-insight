@@ -42,7 +42,7 @@ export function KumamotoCityReview() {
           <div><div className={styles.heroMeta}><span>政令指定都市</span>
             <StatusBadge label="Reviewed" tone="verified" /></div>
             <h1>熊本市</h1>
-            <p>熊本市第8次熊本市総合計画（2026〜2050年）とアクションプラン（2024〜2027年度）を現行計画として、
+            <p>熊本市第8次熊本市総合計画（2022〜2026年）とアクションプラン（2024〜2027年度）を現行計画として、
               第8次熊本市総合計画の政策評価・KPIは履歴として区別し、
               当初予算・決算・市長公約・市会記録を一次資料で確認します。</p>
           </div>
@@ -69,7 +69,7 @@ export function KumamotoCityReview() {
             {kumamotoCityPlanReview.records.map((record) => (
               <article key={record.id}>
                 <h3>{record.title}</h3><p>{record.statement}</p>
-                <p>根拠資料：{record.evidence_location}</p>
+                
               </article>
             ))}
           </div>
