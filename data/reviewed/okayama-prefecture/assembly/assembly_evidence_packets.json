@@ -1,0 +1,79 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-pref-assembly-seats",
+     "okayama-pref-assembly-term"
+    ],
+    "statement": "岡山県議会の定数は55名。議員の任期は2023年4月30日から2027年4月29日まで（県選挙管理委員会の任期満了日一覧による）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-pref-assembly-members-by-faction",
+     "okayama-pref-assembly-committee-roster"
+    ],
+    "statement": "会派別名簿（2025年5月15日更新）による現員は53名で、内訳は自由民主党岡山県議団31名、民主・県民クラブ11名、公明党岡山県議団6名、日本共産党岡山県議会議員団3名、無所属2名（定数55名に対し欠員2名）。議長は太田正孝、副議長は上田勝義（委員会名簿、2026年5月15日更新）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-pref-assembly-committee-roster"
+    ],
+    "statement": "委員会は12（議会運営委員会、常任委員会6＝総務・環境文化保健子ども福祉・産業労働警察・農林水産・土木・文教、特別委員会5＝決算特別・総合計画・行財政改革特別・地域振興特別・防災・環境対策・スポーツ振興特別・子ども応援・教育推進特別）。名称のみを登録した（委員名簿は委員会名簿ページで公開）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_vote_availability",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-pref-assembly-results-2026-09",
+     "okayama-pref-assembly-agenda-2026-10-02"
+    ],
+    "statement": "岡山県議会は会派別・議員別の賛否を公表していない。議決結果の公表は「提出議案及び議決結果」PDFの議案番号・概要・議決結果の3列のみであり、賛否の内訳は含まれない。10月2日の議事日程では陳情第120号・第123号・第125号等について起立採決が行われたことが分かるが、賛成・反対の数値や議員個人の態度は公表されていない。したがって全議案について賛否は not_published として欠損を明示し、復元・推測は行わない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "settlement_fy2025_status",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-pref-assembly-settlement-committee-2026",
+     "okayama-pref-assembly-results-2025-11",
+     "okayama-pref-assembly-results-2026-09"
+    ],
+    "statement": "令和7年度決算のうち企業会計3件（県営電気事業・県営工業用水道事業・流域下水道事業）は議第108〜110号として令和8年9月定例会で2026年10月2日に認定された。一方、一般会計・特別会計の歳入歳出決算は9月定例会に認定議案として付議されておらず、決算特別委員会の付託事件「令和7年度一般会計、特別会計及び企業会計の決算状況に関する調査」として調査が続いている。前年度（令和6年度）の歳入歳出決算は議第156号として令和7年11月定例会で認定されており、令和7年度分も「令和7年度岡山県歳入歳出決算の認定について」として令和8年11月定例会（2026年11月27日開会見込み）に提出される見込みであるため、pending（継続審査中）として登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petition_numbering_gap",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-pref-assembly-petitions-2026-09"
+    ],
+    "statement": "請願・陳情審査結果には陳情第119〜123号と第125号の6件が掲載され、第124号は表に存在しない。不存在の理由は公式資料からは確認できないため、推測せず欠番として記録する。"
+   }
+  ],
+  "id": "evidence-jp-local-330001-assembly-2023",
+  "open_questions": [
+   "令和7年度歳入歳出決算の認定議案は令和8年11月定例会への提出・議決後に結果を更新する（#706のフォローアップ）。",
+   "陳情第124号が審査結果表に存在しない理由は未確認。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-330001-assembly-2023",
+  "subject_type": "assembly"
+ }
+]

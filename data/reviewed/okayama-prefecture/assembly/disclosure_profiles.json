@@ -1,0 +1,99 @@
+[
+ {
+  "as_of": "2026-11-23",
+  "assembly_id": "jp-local-330001-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-330001-assembly-2023-disclosure",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議席順・選挙区別・期別・会派別の議員名簿を議会サイトで公表。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別名簿に各会派の所属議員数を掲載（2025年5月15日更新、現員53名・定数55名）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会名簿に常任委員会6・特別委員会5・議会運営委員会の委員構成を掲載（2026年5月15日更新）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "定例会ごとに提出議案及び議決結果（議案番号・概要・結果の3列）と請願・陳情審査結果をPDFで公表。令和7年度の一般・特別会計決算は決算特別委員会で継続審査中であり、認定議案は11月定例会に提出される運用。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "faction_votes",
+    "note": "議決結果に会派別の賛否内訳は掲載されておらず、公表自体が存在しない。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の表決は公表されていない。一部議案で起立採決が行われたことは議事日程から分かるが、賛否の内訳数値は公表されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "議員個人単位の収支報告書を年度別にPDFで公表（令和7年度は対象議員54名分と前議員1名分）。",
+    "source_url": null
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書（原紙）及び領収書等はWeb公表されず、県議会議事堂1階の閲覧室での閲覧のみ。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "inspection_trip_reports",
+    "note": "委員会の県外調査について、報告書または一覧の形での公式公表は議会サイトでは確認できなかった。各委員会ページは会議順序のみを掲載している。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議・委員会の会議録の検索・閲覧を提供。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継（ライブ・録画）を提供。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願・陳情の審査結果を定例会ごとにPDFで公表（令和8年9月定例会は陳情6件、うち採択3件・不採択3件）。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "okayama-pref-assembly-top",
+   "okayama-pref-assembly-session-2026-09-index"
+  ]
+ }
+]
