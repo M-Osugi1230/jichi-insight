@@ -1,0 +1,110 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": "広島県選挙管理委員会「市町長及び議会議員の任期満了日等一覧（令和8年7月7日現在）」の広島市の行",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-term-list"
+    ],
+    "statement": "広島市議会議員の任期満了日は、広島県選挙管理委員会の任期満了日等一覧（令和8年7月7日現在）に令和9年5月1日（2027年5月1日）と明記されている。任期は4年であり、開始日は2023年5月2日となる（改選後の令和5年第2回臨時会が2023年5月10日から開かれていることとも整合する）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": "同上",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-term-list"
+    ],
+    "statement": "議員定数は54人（同上の一覧に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": "令和8年第4回定例会の賛否表に併記された会派別議員名簿",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-votes-2026-09",
+     "hiroshima-city-assembly-faction-roster"
+    ],
+    "statement": "議決時点の会派構成は13会派・51人で、賛否表の会派別議員名簿による。定数54人との差3人は欠員である（選挙区別一覧でも中区で定数6人・現員5人、安佐南区で定数11人・現員10人など欠員が示されている）。議長（八條範彦議員、自由民主党・市民クラブ）は表決に参加しない旨が賛否表に明記されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": "広島市議会「委員会の種類」のページ、令和8年第4回定例会の会議結果",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-committees",
+     "hiroshima-city-assembly-results-2026-09"
+    ],
+    "statement": "常任委員会は総務・消防上下水道・こども文教・経済観光環境・厚生・建設の6委員会、特別委員会は大都市税財政・地方創生対策、都市活性化対策、安心社会づくり対策の3委員会で、議会運営委員会とあわせて「委員会の種類」のページに構成が公表されている。決算特別委員会は令和8年9月25日に設置された（議長および議会選出の監査委員を除く48人で構成され、現員51人から3人を除いた人数と一致する）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "unregistered_items",
+    "location_note": "令和8年第4回定例会・第5回臨時会の会議結果",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-results-2026-09",
+     "hiroshima-city-assembly-results-2026-10-extra"
+    ],
+    "statement": "第4回定例会の「請願・陳情の閉会中継続審査について」（請願17件・陳情74件）および決算特別委員会の設置・付託の決定は番号のない手続き事項であり、個別の請願・陳情は当会期に結論が出ていないため、proposal_number が必須の proposals には登録せず、本パケットと開示プロファイルに記録した。報告・監査報告・検査報告も登録対象外とした（番号付き議案等のみを登録する先例に倣う）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "faction_vote_grouping",
+    "location_note": "第5回臨時会の賛否表（決算の行）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-votes-2026-10-extra"
+    ],
+    "statement": "第5回臨時会の賛否表では、決算のうち第1・8・9・10・11・15号が1行にまとめられ（日本共産党のみ反対）、残りの決算がもう1行にまとめられている（全会派賛成）。各決算の faction_votes にはこのグループのパターンをそのまま付けた。第4回定例会の賛否表にある決算の行は付託・閉会中継続審査の決定に対するもので認定の表決ではないため、決算の賛否には用いていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "vote_method_judgment",
+    "location_note": "会議結果ページの案内文、広島市議会会議録検索システムの収録状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-results-2026-09",
+     "hiroshima-city-assembly-results-2026-10-extra",
+     "hiroshima-city-assembly-minutes-search"
+    ],
+    "statement": "市は賛否表を「各会派の賛否態度」と呼び、会議結果ページにも「各会派の賛否態度は、次のファイルをご確認ください」と案内している。事後の表決記録かどうかを会議録で突合するため広島市議会会議録検索システムを調査したところ、2026年11月22日時点で同システムの収録は令和8年第2回定例会（2026年2〜3月）分までであり、第4回定例会（9月25日）・第5回臨時会（10月26日）の本会議会議録は未収録で、突合はできなかった。よって本登録では賛否表を公式の会議結果公表物として登録し、vote の method は unknown とし、表決記録か採決前の態度集約かは断定しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_votes",
+    "location_note": "賛否表の会派別議員名簿と注記",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-votes-2026-09",
+     "hiroshima-city-assembly-votes-2026-10-extra"
+    ],
+    "statement": "議員個人別の賛否は公表されていないため member_votes は空とし、member_vote_availability は not_published とした。議員提出議案第12号（定数3減案）は賛成19人・反対31人で否決、第13号（1増1減案）は賛成29人・反対21人で可決となり、会派別賛否に議長（表決に参加しない）を除く調整を加えた人数合計が議決結果と整合することを検算した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "submitted_at",
+    "location_note": "会議結果ページ全般",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-assembly-results-2026-09",
+     "hiroshima-city-assembly-results-2026-10-extra"
+    ],
+    "statement": "個別議案の提出日を記した一次資料を確認できなかったため、submitted_at は全件 null とした（推測で補完しない）。各会計決算の個別件名は財政局の臨時会提出案件（報道資料、2026年10月19日）の決算等の正式件名に基づく。企業会計決算3件には公式資料で番号が付されていないため、proposal_number は「決算（番号の公表なし）」とした。"
+   }
+  ],
+  "id": "evidence-jp-local-341002-assembly-2023",
+  "open_questions": [
+   "賛否表が事後の表決記録かどうかは、会議録検索システムに令和8年第4回定例会・第5回臨時会の本会議会議録が収録された後に突合して確定する（更新サイクルのフォローアップ対象）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341002-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
