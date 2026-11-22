@@ -1,0 +1,102 @@
+[
+ {
+  "id": "jp-local-151009-assembly-2023-disclosure-2026-09",
+  "assembly_id": "jp-local-151009-assembly-2023",
+  "as_of": "2026-11-23",
+  "items": [
+   {
+    "item": "member_roster",
+    "availability": "published",
+    "granularity": "assembly",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_02kaihabetsu.html",
+    "note": "議員名簿は会派別・選出区別で公開されている。"
+   },
+   {
+    "item": "faction_composition",
+    "availability": "published",
+    "granularity": "faction",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_02kaihabetsu.html",
+    "note": "会派構成は名簿ページで公開される。令和8年9月定例会時点の構成は会議の結果ページの会派欄（翔政会は議長を除く人数の注記あり）に基づく。"
+   },
+   {
+    "item": "committee_composition",
+    "availability": "published",
+    "granularity": "assembly",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_03jounin.html",
+    "note": "常任委員会・特別委員会・議会運営委員会・決算特別委員会の名簿が公開されている。"
+   },
+   {
+    "item": "proposals_and_results",
+    "availability": "published",
+    "granularity": "assembly",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0809.html",
+    "note": "会議の結果ページに議案・請願・陳情の件名と結果が掲載され、議案書も公開されている。"
+   },
+   {
+    "item": "faction_votes",
+    "availability": "published",
+    "granularity": "faction",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0809.html",
+    "note": "会議の結果ページに会派別の賛否が全会派分明示される（継続審査の案件は「―」）。陳情第151号第2項では会派内の賛成・反対の人数も明示された。"
+   },
+   {
+    "item": "member_votes",
+    "availability": "not_published",
+    "granularity": null,
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0809.html",
+    "note": "会議の結果ページは会派単位の賛否のみで、議員個人別の賛否は公表されていない。"
+   },
+   {
+    "item": "political_activity_expense_reports",
+    "availability": "published",
+    "granularity": "member",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_houshuu/seimukatudouhi/seimuinternet/r07seimukatudou.html",
+    "note": "令和7年度分は会派交付分（8会派）と議員交付分（41人）の双方の収支報告書が公開され、過去5年分が閲覧できる。"
+   },
+   {
+    "item": "political_activity_expense_receipts",
+    "availability": "published",
+    "granularity": "document",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_houshuu/seimukatudouhi/seimuinternet/r07seimukatudou.html",
+    "note": "収支報告書等のPDFには領収書の写しが含まれる。"
+   },
+   {
+    "item": "inspection_trip_reports",
+    "availability": "published",
+    "granularity": "assembly",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_shisatsu/houkoku/R07_gyouseisisatu.html",
+    "note": "委員会等の行政視察報告書と海外訪問報告書が年度別に公開されている。費用は報告書に掲載されていない。"
+   },
+   {
+    "item": "meeting_minutes",
+    "availability": "published",
+    "granularity": "assembly",
+    "source_url": "https://www06.gijiroku.com/niigata/",
+    "note": "会議録検索システムで本会議・委員会の会議録が公開されている。"
+   },
+   {
+    "item": "session_broadcast",
+    "availability": "not_found",
+    "granularity": null,
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index.html",
+    "note": "市議会ホームページ上で本会議のインターネット中継・録画配信への案内は確認できなかった（2026-11-23確認）。"
+   },
+   {
+    "item": "petition_results",
+    "availability": "published",
+    "granularity": "assembly",
+    "source_url": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0809.html",
+    "note": "請願・陳情も本会議で議決され、結果と会派別賛否が会議の結果ページに掲載される。項目別に分割して議決される場合もある。"
+   }
+  ],
+  "sources": [
+   "niigata-city-assembly-roster-factions",
+   "niigata-city-assembly-results-2026-09",
+   "niigata-city-assembly-seimu-2025-index",
+   "niigata-city-assembly-inspection-2025-index",
+   "niigata-city-assembly-minutes-search"
+  ],
+  "review_status": "reviewed",
+  "confidence": "high"
+ }
+]

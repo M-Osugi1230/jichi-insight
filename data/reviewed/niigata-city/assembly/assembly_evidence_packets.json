@@ -1,0 +1,45 @@
+[
+ {
+  "id": "evidence-jp-local-151009-assembly-2023",
+  "subject_type": "assembly",
+  "subject_id": "jp-local-151009-assembly-2023",
+  "claims": [
+   {
+    "field": "term_and_seats",
+    "statement": "新潟市議会議員の任期満了日は2027-05-01、条例定数は50人（新潟県選挙管理委員会の任期満了日（定数）一覧）。任期開始日は満了日から4年の任期として2023-05-02とした。",
+    "source_ids": [
+     "niigata-city-assembly-term-list"
+    ],
+    "location_note": "任期満了日（定数）一覧の新潟市議会議員欄",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "factions",
+    "statement": "会派構成は令和8年9月定例会の議決時点のものとし、会議の結果ページの会派欄に基づく（翔政会21人＝議長を含む所属人数。結果表の人数は議長を除く20人）。合計48人で、定数50人に対し中央区の2議席が欠員であった（欠員は2026年10月25日の補欠選挙で補充された）。",
+    "source_ids": [
+     "niigata-city-assembly-results-2026-09",
+     "niigata-city-assembly-roster-factions"
+    ],
+    "location_note": "会議の結果ページの会派欄と議員名簿（会派別）",
+    "decision": "accepted",
+    "review_note": null
+   },
+   {
+    "field": "committees",
+    "statement": "委員会は常任委員会4、議会運営委員会、決算特別委員会、特別委員会5（大都市制度・行財政改革調査、地域公共交通調査、議員定数調査、農業活性化調査、広域観光交流促進調査）の計11委員会を登録した。",
+    "source_ids": [
+     "niigata-city-assembly-committees-standing",
+     "niigata-city-assembly-committees-special",
+     "niigata-city-assembly-committee-gikaiunei",
+     "niigata-city-assembly-committee-kessan"
+    ],
+    "location_note": "各委員会名簿ページ",
+    "decision": "accepted",
+    "review_note": null
+   }
+  ],
+  "open_questions": [],
+  "review_status": "reviewed"
+ }
+]
