@@ -1,0 +1,952 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「子供・子育て」の見出し（報告書14〜23ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「子供・子育て」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「子供・子育て」冒頭の「目指す姿（10年後）」（報告書14〜23ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「子供・子育て」のKPI表（報告書14〜23ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ11件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（安心して妊娠、出産、子育てができると思う者の割合）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-children-childrearing",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-children-childrearing",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「教育」の見出し（報告書24〜36ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「教育」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「教育」冒頭の「目指す姿（10年後）」（報告書24〜36ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「教育」のKPI表（報告書24〜36ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ12件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（「遊び 学び 育つひろしまっ子！」推進プランに掲げる５つの力が育まれている年長児の割合、「主体的な学び」が定着している児童生徒の割合、全国学力・学習状況調査における正答率40％未満の児童生徒の割合、「児童生徒のデジタル活用を指導する能力」の全国順位、大学等進学時における転出超過数）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-education",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「健康」の見出し（報告書37〜46ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「健康」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「健康」冒頭の「目指す姿（10年後）」（報告書37〜46ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「健康」のKPI表（報告書37〜46ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ12件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（健康寿命の延伸）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-health",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「医療・介護」の見出し（報告書47〜57ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「医療・介護」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「医療・介護」冒頭の「目指す姿（10年後）」（報告書47〜57ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「医療・介護」のKPI表（報告書47〜57ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ13件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（広島都市圏の基幹病院が実施する先進医療技術件数、県内医療に携わる医師数、医療や介護が必要になっても、安心して暮らし続けられると思う者の割合）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-medical-care-longterm-care",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-medical-care-longterm-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「地域共生社会」の見出し（報告書58〜65ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「地域共生社会」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「地域共生社会」冒頭の「目指す姿（10年後）」（報告書58〜65ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「地域共生社会」のKPI表（報告書58〜65ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ7件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（困りごとや悩みに対して地域の方同士での助け合いができている人の割合）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-inclusive-community",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-inclusive-community",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「防災・減災」の見出し（報告書66〜75ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「防災・減災」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「防災・減災」冒頭の「目指す姿（10年後）」（報告書66〜75ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「防災・減災」のKPI表（報告書66〜75ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ10件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（避難の準備行動ができている人の割合、河川氾濫により床上浸水が想定される家屋数、土砂災害から保全される家屋数、緊急輸送道路の災害時通行止箇所）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-disaster-prevention-mitigation",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-disaster-prevention-mitigation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「治安・暮らしの安全」の見出し（報告書76〜91ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「治安・暮らしの安全」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「治安・暮らしの安全」冒頭の「目指す姿（10年後）」（報告書76〜91ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「治安・暮らしの安全」のKPI表（報告書76〜91ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ15件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（刑法犯認知件数、体感治安（治安良好と感じる県民の割合））は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-public-safety-livelihood-security",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-public-safety-livelihood-security",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「働き方改革・多様な主体の活躍」の見出し（報告書92〜102ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「働き方改革・多様な主体の活躍」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「働き方改革・多様な主体の活躍」冒頭の「目指す姿（10年後）」（報告書92〜102ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「働き方改革・多様な主体の活躍」のKPI表（報告書92〜102ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ9件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（従業員が働きがいを感じて意欲的に働くことができる環境づくりに取り組む企業（従業員31人以上）の割合）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-work-style-reform-diverse-participation",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-work-style-reform-diverse-participation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「産業イノベーション」の見出し（報告書103〜123ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「産業イノベーション」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「産業イノベーション」冒頭の「目指す姿（10年後）」（報告書103〜123ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「産業イノベーション」のKPI表（報告書103〜123ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ27件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（県の取組による付加価値創出額）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-industrial-innovation",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-industrial-innovation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "ビジョン第2章の施策体系、実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "本登録の単位は、「安心▷誇り▷挑戦 ひろしまビジョン」（令和2年10月策定）の施策領域である。県は毎年度「主要施策の成果に関する説明書（ビジョン実施状況報告書）」を公表し、施策領域ごとにKPIの目標・実績・達成状況と取組状況を示すため、この公表単位を登録単位とした。旧ビジョンの体系では施策領域の上に柱の層はなく、17の施策領域が第2章「施策」の下に並ぶ。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "実施状況報告書の施策領域「農林水産業」の見出し（報告書124〜142ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域名は「農林水産業」であり、ビジョン第2章の17施策領域の一つである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "ビジョン第2章の掲載順と本登録の選定カタログ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-vision-2020",
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "旧ビジョンの体系には施策領域の上に柱の層がないため、柱ごとの巡回に相当する選定はできない。施策領域自体が計画体系の最上位の公表単位であることから、実施状況報告書の掲載順に先頭から10領域を選定した。金額の大小では選んでいない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "実施状況報告書の施策領域「農林水産業」冒頭の「目指す姿（10年後）」（報告書124〜142ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "目的（purpose）は、実施状況報告書の当該施策領域の冒頭に示された「目指す姿（10年後）」の最初の箇条書きに基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "実施状況報告書の施策領域別の取組状況",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "実施状況報告書は施策領域別の担当部局を掲載していないため、担当部局は未登録とした（推測で補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "実施状況報告書、ビジョン、アクションプラン",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "広島県は施策領域単位の令和7年度予算額・決算額を公表していない。令和7年度 主要施策の成果に関する説明書（ビジョン実施状況報告書）は施策領域ごとにKPIの目標・実績・達成状況を示すが、金額の掲載はない。予算案段階の資料「施策及び事業案の概要」には事業案の金額があるが、施策領域との公式の対応表がないため接続していない。このため金額は未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "実施状況報告書のKPI表と進捗状況表",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book"
+    ],
+    "statement": "施策領域単位の評定は公表されていない。公式の評価はKPIごとの達成状況（達成・概ね達成・未達成・実績未確定の表示）として公表されており、本登録ではKPIの assessment に換算して登録した（達成=achieved、概ね達成=mostly_achieved、未達成=not_achieved、実績未確定・「―」=not_assessable）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "実施状況報告書の施策領域「農林水産業」のKPI表（報告書124〜142ページ）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-pref-evaluation-fy2025-book",
+     "hiroshima-pref-action-plan-2025"
+    ],
+    "statement": "当該施策領域のKPI表のエントリ15件を登録した。区分（男女別・校種別・がん種別等）を持つKPIは、報告書の進捗表では区分ごとに数えられているが、本登録では表エントリ単位で1件とし、区分値は複合文字列で保持した。ビジョン指標（農業生産額、農業生産額１千万円以上の経営体数、農業生産額１千万円以上の経営体生産額、比婆牛を取り扱う高級飲食店の増加数）は達成状況の評定が付かないためKPIとしては登録せず、本パケットに記録するにとどめた。"
+   }
+  ],
+  "id": "evidence-jp-local-340006-project-2025-agriculture-forestry-fisheries",
+  "open_questions": [
+   "令和8年6月に改定された新ビジョンの実施状況報告書は未公表である。本登録は旧ビジョン（令和2年10月策定）の体系に基づく登録であり、改定版の初回報告書が公表された時点で、版をまたぐ対応付けの要否を公式対応表の有無とあわせて判断する。",
+   "報告書冒頭の進捗表のKPI件数（全185件、達成86・未達70・実績未確定29）は区分を個別に数えたものであり、本登録の表エントリ単位の件数（選定10領域で131件）とは数え方が異なる。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-340006-project-2025-agriculture-forestry-fisheries",
+  "subject_type": "project"
+ }
+]
