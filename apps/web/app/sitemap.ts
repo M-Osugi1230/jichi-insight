@@ -1,3 +1,5 @@
+import kyotoPrefectureMunicipality from "../../../data/reviewed/kyoto-prefecture/municipality.json";
+import kyotoCityMunicipality from "../../../data/reviewed/kyoto-city/municipality.json";
 import hiroshimaPrefectureMunicipality from "../../../data/reviewed/hiroshima-prefecture/municipality.json";
 import hiroshimaCityMunicipality from "../../../data/reviewed/hiroshima-city/municipality.json";
 import shizuokaPrefectureMunicipality from "../../../data/reviewed/shizuoka-prefecture/municipality.json";
@@ -76,6 +78,8 @@ const staticRoutes = [
   "/municipalities/hiroshima",
   "/municipalities/kagawa",
   "/municipalities/okinawa",
+  "/municipalities/kyoto-prefecture",
+  "/municipalities/kyoto-city",
   "/municipalities/hiroshima-prefecture",
   "/municipalities/hiroshima-city",
   "/municipalities/shizuoka-prefecture",
@@ -121,6 +125,8 @@ const lastModifiedByRoute = new Map<string, string>();
 for (const city of phase15Cities) {
   lastModifiedByRoute.set(`/municipalities/${city.slug}`, city.completedAt);
 }
+lastModifiedByRoute.set("/municipalities/kyoto-prefecture", kyotoPrefectureMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/kyoto-city", kyotoCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/hiroshima-prefecture", hiroshimaPrefectureMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/hiroshima-city", hiroshimaCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/shizuoka-prefecture", shizuokaPrefectureMunicipality.last_verified_at);
