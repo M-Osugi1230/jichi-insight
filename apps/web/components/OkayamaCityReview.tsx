@@ -60,16 +60,16 @@ export function OkayamaCityReview() {
         />
         <section className={styles.scope} aria-labelledby="plan-title">
           <div><p className="eyebrow">Plan review</p>
-            <h2 id="plan-title">岡山市第七次総合計画・前期中期計画と第七次総合計画の政策評価</h2>
+            <h2 id="plan-title">岡山市第七次総合計画・前期中期計画</h2>
             <p>確認日：{okayamaCityPlanReview.reviewed_at}</p></div>
           <div>
-            <p>現行の岡山市第七次総合計画・前期中期計画と、第七次総合計画の政策評価を同一視しません。
+            <p>第七次総合計画の政策単位の予算額は公表資料で接続できないため、金額を補完しません。
               令和8年度政策評価は旧計画の10政策を評価した公式記録です。
               今回の重点事業10系列・KPI21件はその旧計画の政策単位で登録しています。</p>
             {okayamaCityPlanReview.records.map((record) => (
               <article key={record.id}>
                 <h3>{record.title}</h3><p>{record.statement}</p>
-                <p>根拠資料：{record.evidence_location}</p>
+                
               </article>
             ))}
           </div>
@@ -108,7 +108,7 @@ export function OkayamaCityReview() {
         </section>
         <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
           <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
-            <h2 id="projects-title">第七次総合計画政策10系列・KPI21件</h2>
+            <h2 id="projects-title">第七次総合計画・政策10系列</h2>
             <p>第七次総合計画の政策10系列・KPI21件と令和8年度政策評価結果を表示します。
               政策単位の予算額は公表されていないため補完しません。
               <Link href="/projects#okayama-city"> 重点事業一覧を見る</Link></p></div>
@@ -144,7 +144,7 @@ export function OkayamaCityReview() {
         </section>
         <section className={styles.scope} aria-labelledby="assembly-title">
           <div><p className="eyebrow">Assembly</p>
-            <h2 id="assembly-title">岡山市会</h2></div>
+            <h2 id="assembly-title">岡山市議会</h2></div>
           <div><p>議員定数{assembly.assembly.seat_count}人。
             登録議案{assembly.proposals.length}件・会派別賛否{assembly.factionVotes.length}件、
             政務活動費{assembly.expenses.length}件・視察{assembly.trips.length}件。</p>
@@ -164,7 +164,7 @@ export function OkayamaCityReview() {
           <Link href="/municipalities/okayama-prefecture">岡山県</Link>
           <Link href="/projects#okayama-city">重点事業</Link>
           <Link href="/promises#okayama-city">市長公約</Link>
-          <Link href="/assemblies/okayama-city">岡山市会</Link>
+          <Link href="/assemblies/okayama-city">岡山市議会</Link>
         </nav>
       </div></main>
       <SiteFooter />
