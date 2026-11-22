@@ -1,0 +1,100 @@
+[
+ {
+  "as_of": "2026-11-23",
+  "assembly_id": "jp-local-431001-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-431001-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議席番号順の議員名簿が議会ホームページに掲載され、氏名・会派・所属委員会が確認できる。",
+    "source_url": "https://kumamoto-shigikai.jp/namelist/pub/list.aspx?c_id=3&lsttype=0"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "議員名簿の「会派から見る」に会派の正式名称が掲載され、賛否一覧の会派列と対応付けられる。",
+    "source_url": "https://kumamoto-shigikai.jp/namelist/pub/default.aspx?c_id=3"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "議員名簿に議員ごとの所属委員会が掲載される。",
+    "source_url": "https://kumamoto-shigikai.jp/namelist/pub/list.aspx?c_id=3&lsttype=0"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "議案一覧に議案等の件名・付託委員会・議決結果が掲載され、会議録検索システムの処理結果一覧でも議決日が確認できる。",
+    "source_url": "https://kumamoto-shigikai.jp/agenda/pub/ailist.aspx?c_id=4&coy_id=16&co_id=216"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "賛否一覧は議員別に会派列付きで公表されており、会派別の賛否はその集計で確認できる。",
+    "source_url": "https://kumamoto-shigikai.jp/agenda/pub/ailist.aspx?c_id=4&coy_id=16&co_id=216"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "各議案の詳細ページに議員別の賛否一覧が凡例（○賛成／×反対／－議長・欠席・除斥・退席）付きで公表されている。",
+    "source_url": "https://kumamoto-shigikai.jp/agenda/pub/ailist.aspx?c_id=4&coy_id=16&co_id=216"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分の収支報告書等が議員分45件・会派分5件、議会ホームページに掲載されている。",
+    "source_url": "https://kumamoto-shigikai.jp/kiji/pub/detail.aspx?c_id=51&id=487&pg=1"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書等には領収書等の写しが含まれ、同じページから公開されている。",
+    "source_url": "https://kumamoto-shigikai.jp/kiji/pub/detail.aspx?c_id=51&id=487&pg=1"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会の行政視察は市議会だよりの「視察レポート」に日程・視察先・調査項目が掲載される。視察費用と参加議員名は掲載されず、正式な視察報告書の公開は確認できなかった。",
+    "source_url": "https://kumamoto-shigikai.jp/pubmag/pub/detail.aspx?c_id=24&id=60&pg=1"
+   },
+   {
+    "availability": "not_found",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムは稼働しているが、令和8年第3回定例会の会議録は2026年11月23日時点で未収録であり、表決方法の突合はできなかった。",
+    "source_url": "https://kumamoto.gijiroku.com/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議と予算決算委員会はインターネット中継（生中継・録画中継）が行われている。",
+    "source_url": "https://kumamoto-city.stream.jfit.co.jp/"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "陳情は会議録検索システムの陳情一覧に件名・付託委員会・委員会の審査日が掲載される。ただし熊本市議会では陳情について採択・不採択の決定を行わない（議会の陳情案内）。当会期の請願は確認できなかった。",
+    "source_url": "https://kumamoto.gijiroku.com/gikai/g07_Chinjo.asp"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "kumamoto-city-assembly-roster",
+   "kumamoto-city-assembly-agenda-list",
+   "kumamoto-city-assembly-seimu-2025-index"
+  ]
+ }
+]

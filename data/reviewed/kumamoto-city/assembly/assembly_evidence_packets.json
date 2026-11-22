@@ -1,0 +1,70 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kumamoto-city-assembly-term-list"
+    ],
+    "statement": "熊本市議会議員の任期満了日は令和9年4月30日（2027年4月30日）であり、熊本県選挙管理委員会の「市町村長・議員の任期満了日等に関する調べ」（令和8年8月1日現在）で直接確認した。任期は4年のため開始日は2023年5月1日と算定したが、開始日を直接印字した公式資料は確認できていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kumamoto-city-assembly-term-list",
+     "kumamoto-city-assembly-roster"
+    ],
+    "statement": "議員定数は48人（県選挙管理委員会の一覧）。令和8年第3回定例会の賛否一覧に現れる議員は46人で、議会ホームページの現議員名簿は45人（会期中に市長選挙へ立候補した井坂隆寛氏を除く）であり、定数に対し2人の欠員がある。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kumamoto-city-assembly-agenda-details",
+     "kumamoto-city-assembly-roster-main",
+     "kumamoto-city-assembly-seimu-2025-index"
+    ],
+    "statement": "会期中の会派構成は賛否一覧の会派列から集計した。2026年9月25日議決分では自由民主党熊本市議団21人、公明党熊本市議団7人、市民連合6人、無所属議員3人、市民の会3人、創生熊本市議団2人、日本共産党熊本市議団2人、新風熊本市議団2人の合計46人である。会派の正式名称は議員名簿の「会派から見る」と令和7年度政務活動費収支報告書等の索引で確認した。ただし発議第6号（2026年8月31日議決）の賛否一覧では、自民党14人・熊本自民7人に分かれて表示されており、当該7人（松本幸隆、中川栄一郎、山本浩之、北川哉、平江透、澤田昌作、満永寿博）は令和7年度政活費索引における熊本自由民主党市議団の所属議員（年度途中で辞職した大嶌澄雄を除く）と一致する。両会派の統合時期を直接示す公式資料は確認できていないため、会派別賛否は各議案の賛否一覧の表示どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kumamoto-city-assembly-committees",
+     "kumamoto-city-assembly-roster"
+    ],
+    "statement": "常任委員会は総務、教育市民、厚生、環境水道、経済、都市整備の6委員会で、このほかに予算決算委員会と議会運営委員会がある。議員名簿の所属委員会欄と常任委員会のページで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_votes",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kumamoto-city-assembly-agenda-details",
+     "kumamoto-city-assembly-chair-greeting"
+    ],
+    "statement": "賛否一覧で全議案を通じて「未投票」となるのは田中誠一氏のみであり、同氏は第63代議長である（議長あいさつページ）。賛否一覧の凡例では「－」は議長・欠席・除斥・退席を意味するため、本登録では未投票を excused として転記し、賛否の合計には含めていない。"
+   }
+  ],
+  "id": "evidence-jp-local-431001-assembly-2023",
+  "open_questions": [
+   "議員の任期開始日（2023年5月1日）を直接印字した公式資料は未確認である（任期満了日2027年4月30日から4年遡って算定した）。",
+   "令和8年第3回定例会における請願の有無は一次資料で確定できなかった。会議録検索システムの請願一覧ページ（g07_Seigan.asp）は404で機能しておらず、議案一覧・決議意見書一覧・陳情一覧にも請願の掲載はない。",
+   "自由民主党熊本市議団と熊本自由民主党市議団の統合の時期・経緯を直接示す公式資料は未確認である（賛否一覧の表示は2026年8月31日議決分と9月25日議決分で異なる）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-431001-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
