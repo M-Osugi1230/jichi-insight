@@ -207,11 +207,11 @@ export default function NiigataPrefecturePage() {
               <p>議員定数{assembly.assembly.seat_count}人。
                 登録議案等{assembly.proposals.length}件、表決{assembly.votes.length}件、
                 会派別賛否{assembly.factionVotes.length}件、政務活動費{assembly.expenses.length}件、視察{assembly.trips.length}件。</p>
-              <p>2026年度当初予算（骨格予算）は2026年3月12日「原案可決」です。
+              <p>2026年度一般会計当初予算は2026年3月27日に「可決」されました。
                 県議会の表決記録は会派別賛否を含む登録済み範囲で表示します。
                 議案の議決状況と予算執行・決算を区別します。</p>
               {budgetProposal ? <p>関連登録議案：{budgetProposal.title}</p> : null}
-              <p><Link href="/assemblies/niigata-city">新潟市会</Link>も別議会として確認できます。
+              <p><Link href="/assemblies/niigata-city">新潟市議会</Link>も別議会として確認できます。
                 賛否の公開粒度はそれぞれの公式資料の範囲で表示します。</p>
             </div>
           </section>
