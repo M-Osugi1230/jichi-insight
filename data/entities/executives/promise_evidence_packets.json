@@ -18015,5 +18015,373 @@
       "松井候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、大見出し直下の原則文をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の大見出し直下の原則文",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「防災・減災の推進」は、第8次熊本市総合計画の施策として登録された系列であり、ハード・ソフトの両面から災害や危機事象から市民生活を守ることを掲げるため、公約の主題（災害・復興政策の原則）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の大見出し直下の原則文",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「生命を守る強い熊本プロジェクト」の項目〈2/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「広域交通ネットワークの形成による物流・人流の円滑化」は、第8次熊本市総合計画の施策として登録された系列であり、成果指標に主要渋滞箇所数を掲げるため、公約の主題（主要幹線道路の渋滞対策）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「生命を守る強い熊本プロジェクト」の項目〈2/150〉",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「生命を守る強い熊本プロジェクト」の項目〈8/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「防災・減災の推進」は、第8次熊本市総合計画の施策として登録された系列であり、基本方針に都市基盤の強靭化を掲げるため、公約の主題（公共インフラ・公共施設の耐震化・老朽化対策）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「生命を守る強い熊本プロジェクト」の項目〈8/150〉",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「生命を守る強い熊本プロジェクト」の項目〈9/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「こどもを主体とした教育の推進」は、第8次熊本市総合計画の施策として登録された系列であり、基本方針に最適な教育環境の整備を掲げるため、公約の主題（学校施設の環境整備）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「生命を守る強い熊本プロジェクト」の項目〈9/150〉",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「暮らしを支える支え合う熊本プロジェクト」の項目〈28/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「すべてのこどもの健やかな成長と家庭の幸せへの支援」は、第8次熊本市総合計画の施策として登録された系列であり、基本方針に子育てにおける経済的な負担の軽減を掲げるため、公約の主題（こども・子育て家庭への経済的支援）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「暮らしを支える支え合う熊本プロジェクト」の項目〈28/150〉",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「暮らしを支える支え合う熊本プロジェクト」の項目〈30/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「すべてのこどもの健やかな成長と家庭の幸せへの支援」は、第8次熊本市総合計画の施策として登録された系列であり、基本方針に希望する結婚や仕事と子育ての両立支援を掲げるため、公約の主題（子育てと仕事の両立）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「暮らしを支える支え合う熊本プロジェクト」の項目〈30/150〉",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「未来を拓く重点政策」の項目〈64/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「広域交通ネットワークの形成による物流・人流の円滑化」は、第8次熊本市総合計画の施策として登録された系列であり、基本方針に基幹となる公共交通ネットワークの機能強化を掲げ、成果指標に公共交通機関の年間利用者数を掲げるため、公約の主題（公共交通の速達性・定時性の向上）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「未来を拓く重点政策」の項目〈64/150〉",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、全マニフェスト150項目の抜粋項目をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の柱「未来を拓く重点政策」の項目〈113/150〉",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "地下水保全を主題とする系列は段階2で登録した10施策に含まれないため、事業への接続は行っていない。第8次総合計画の他の施策が登録された場合は接続を検討する。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-city-2026-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-431001-executive-2026-12-03-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報（候補者提出原稿）のおおにしかずふみ候補欄から、「市庁舎について」の囲みの全文をそのまま転記した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の「市庁舎について」の囲み",
+        "decision": "accepted",
+        "review_note": "公報は全文が画像（テキスト層は改ページのみ）のため、PDFの描画画像（200dpi・300dpi・400dpi）で照合した。資料上の項目境界（原則文、3つの柱の下の抜粋7項目、「市庁舎について」の囲み）をそのまま公約の単位とし、欄の大見出し「強い熊本、支え合う熊本。」、柱の見出し、プロフィール欄（氏名・年齢58才）と、「全マニフェスト（公約）はホームページでご覧いただけます」の案内・QRコードはレコードに含めていない。候補欄には過去の実績を提示する項目は含まれていなかった。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は熊本市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表されていたが、同ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。そのため市の公式URLの Wayback Machine 保存コピー（2026年11月2日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日2026年11月15日の前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0棚卸し時の記録と一致すること、掲載候補者5名が市選管公式の開票結果と一致すること、の3点で担保した（Wayback のダイジェストは YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 は 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 で段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文はPDFの描画画像（200dpi・300dpi・400dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "公報の市の公式URLと Wayback Machine の保存状況、段階0棚卸しの記録に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "登録済み事業「防災・減災の推進」は、第8次熊本市総合計画の施策として登録された系列であり、基本方針に防災拠点施設の強靭化を掲げるため、公約の主題（災害時に機能し続ける防災拠点としての市庁舎）に対応する系列として接続した。",
+        "source_ids": [
+          "kumamoto-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報・おおにしかずふみ候補欄の「市庁舎について」の囲み",
+        "decision": "needs_review",
+        "review_note": "接続の確信度は low / inferred を上限とし、市の公式な対応付けが公表された場合は見直す。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "本レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードは任期開始後に Issue #706 の更新サイクルで登録し、その際に本レコードを含む公約の出典（kumamoto-city-mayor-election-2026-bulletin）を新任期 term の manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

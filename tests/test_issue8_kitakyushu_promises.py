@@ -152,8 +152,9 @@ def test_promise_registry_holds_the_verified_manifesto_items() -> None:
     # + 9 Shizuoka Prefecture, 10 Hamamatsu City and 3 Shizuoka
     # City (Issue #900)
     # + 14 Hiroshima Prefecture and 14 Hiroshima City (Issue #921)
-    # + 29 Kyoto Prefecture and + 38 Kyoto City (Issue #938).
-    assert len(packets) == 445
+    # + 29 Kyoto Prefecture and + 38 Kyoto City (Issue #938)
+    # + 9 Kumamoto City (Issue #975).
+    assert len(packets) == 454
     for promise in promises:
         assert promise["sources"] == [MANIFESTO_ID]
 

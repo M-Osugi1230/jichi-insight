@@ -523,5 +523,23 @@
     "last_reviewed_at": "2026-11-23",
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-review-jp-local-431001-2026",
+    "executive_term_id": "jp-local-431001-executive-2026-12-03",
+    "source_id": "kumamoto-city-mayor-election-2026-bulletin",
+    "candidate_name": "大西 一史",
+    "source_location": "全1ページ（両面収録）PDF・候補者面のおおにしかずふみ候補欄",
+    "review_scope": "candidate_panel",
+    "statement_boundary": "mixed",
+    "segmentation_status": "segmented",
+    "promise_records_created": 9,
+    "reason_codes": [
+      "other"
+    ],
+    "review_note": "候補欄は、右側に顔写真と候補者名「大西一史」（おおにし かずふみ、58才）が配置され、左側に大見出し「強い熊本、支え合う熊本。」の下に、災害・復興政策の原則文、3つの柱（「生命を守る強い熊本プロジェクト」「暮らしを支える支え合う熊本プロジェクト」「未来を拓く重点政策」）と全マニフェスト150項目からの抜粋7項目（〈2/150〉〈8/150〉〈9/150〉〈28/150〉〈30/150〉〈64/150〉〈113/150〉）、「市庁舎について」の囲み、「全マニフェスト（公約）はホームページでご覧いただけます」の案内とQRコードが配置されている。原則文は災害・復興政策について将来の目標を完結した文で表明しているため、京都府知事の先例に倣い独立した1レコードとした。抜粋7項目はそれぞれ完結した政策表明であるため各1レコードとした。「市庁舎について」の囲みは、専門家の検証が進行中である現況の提示を含むが、防災拠点としての将来像を完結して表明するため1レコードとした（statement_boundary は mixed）。大見出し、柱の見出し、プロフィール欄（氏名・年齢）、全マニフェストへの案内とQRコードは公約として分割しなかった。候補欄には過去の実績を提示する項目は含まれておらず、実績提示を理由とする除外は0件である。数値目標・期限の明示は〈9/150〉の令和9年度末（体育館等の空調設備の整備完了目標）と〈28/150〉の任期中の給食費無償化目標のみで、いずれも target に登録し deadline は登録していない。公報は全文が画像のため、転記は描画画像（200dpi・300dpi・400dpi）の照合で行った。作成した公約レコードの executive_term_id は2026年12月3日開始の新任期のIDを指し、新任期の term 登録時に manifesto_source_ids へ本出典を接続する（Issue #706）。",
+    "last_reviewed_at": "2026-11-23",
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

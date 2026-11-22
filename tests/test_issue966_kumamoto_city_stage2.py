@@ -40,6 +40,29 @@ EXPECTED_IDS = [
     "jp-local-431001-project-2024-disaster-prevention-mitigation",
 ]
 
+# Stage 3 (Issue #975) linked the 2026 mayoral promises to four of
+# the ten series. The promises reference the term starting
+# 2026-12-03, which is registered once it starts (Issue #706).
+_FUTURE_TERM = "jp-local-431001-executive-2026-12-03"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-431001-project-2024-child-growth-family-support": [
+        f"{_FUTURE_TERM}-promise-005",
+        f"{_FUTURE_TERM}-promise-006",
+    ],
+    "jp-local-431001-project-2024-child-centered-education": [
+        f"{_FUTURE_TERM}-promise-004",
+    ],
+    "jp-local-431001-project-2024-wide-area-transport-network": [
+        f"{_FUTURE_TERM}-promise-002",
+        f"{_FUTURE_TERM}-promise-007",
+    ],
+    "jp-local-431001-project-2024-disaster-prevention-mitigation": [
+        f"{_FUTURE_TERM}-promise-001",
+        f"{_FUTURE_TERM}-promise-003",
+        f"{_FUTURE_TERM}-promise-009",
+    ],
+}
+
 EXPECTED_TITLES = [
     "すべてのこどもの健やかな成長と家庭の幸せへの支援",
     "困難な状況にあるこどもや子育て家庭への支援",
@@ -161,9 +184,12 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2024
         assert record["review_status"] == "reviewed"
-        # No mayoral promises for Kumamoto City are registered yet;
-        # stage 3 will examine the links.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #975) registered the 2026 mayoral promises
+        # and linked them to the series below (confidence low /
+        # inferred); every other series remains unlinked.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            item["project_id"], []
+        )
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 

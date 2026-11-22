@@ -1,5 +1,5 @@
 {
-  "version": "0.55.0",
+  "version": "0.56.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2312,6 +2312,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "就任記者会見の県公式ページ。会見録の冒頭で知事本人が「本日、令和6年4月16日付で熊本県知事に就任いたしました」と発言している。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-city-mayor-election-2026-bulletin",
+      "municipality_key": "kumamoto-city",
+      "organization": "熊本市選挙管理委員会／保存は Internet Archive",
+      "category": "election",
+      "title": "令和8年11月15日執行 熊本市長選挙 選挙公報（おおにしかずふみ候補欄）",
+      "url": "https://web.archive.org/web/20261102235209/https://www.city.kumamoto.jp/kiji00373652/3_73652_523075_up_xnlivmyb.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本市選挙管理委員会が市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）から公表した選挙公報PDFの Wayback Machine 保存コピー（2026年11月2日保存）。案内ページは2026年11月23日時点で削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。当該PDFの200保存はこの1件のみのため、原典性は、選挙期間中（投開票日前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）と段階0棚卸し時の記録の一致、掲載候補者5名と市選管公式の開票結果との一致で担保した（Wayback のダイジェスト YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 は段階0の記録と一致）。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文は描画画像（200dpi・300dpi・400dpi）の照合で転記した。"
     }
   ]
 }
