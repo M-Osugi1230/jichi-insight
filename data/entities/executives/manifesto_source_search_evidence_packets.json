@@ -1427,31 +1427,32 @@
     "claims": [
       {
         "field": "checked_source_ids",
-        "statement": "岡山県選挙管理委員会の開票結果・選挙の概要と県公式の投票・開票速報ページを確認したが、いずれも選挙公報への導線を含まない。県選管の現行の知事選挙ページにも選挙公報へのリンクはない。",
+        "statement": "岡山県選挙管理委員会の開票結果・選挙の概要・結果調と県公式の投票・開票速報ページを確認したが、いずれも選挙公報の候補者原稿面への導線を含まない。県選管の現行の知事選挙ページにも選挙公報へのリンクはない。",
         "source_ids": [
           "okayama-pref-governor-election-2024",
           "okayama-pref-governor-election-2024-overview",
-          "okayama-pref-governor-election-2024-results"
+          "okayama-pref-governor-election-2024-results",
+          "okayama-pref-governor-election-2024-report"
         ],
-        "location_note": "県選管の開票結果・選挙の概要（いずれも公式公表）と県公式の速報ページ。",
+        "location_note": "県選管の開票結果・選挙の概要・結果調（いずれも公式公表）と県公式の速報ページ。",
         "decision": "accepted",
         "review_note": "公式資料側に公約原文への導線がないことを確認。"
       },
       {
         "field": "manifesto_source_ids_found",
-        "statement": "選挙公報は発行された（県選管「結果調」に印刷・配布の記録があり、選挙時には県選管ホームページに掲載されていた）が、現行公式サイトにおける現存は確認できず、選挙特設サイトも到達不可だったため、公報の実物は特定できていない。",
+        "statement": "選挙公報は発行され、選挙期間中は県選管ホームページに掲載されていた（結果調第2編「5 選挙公報」: 両候補者から掲載申請、787,000部印刷、2024年10月11日22時頃からホームページに掲載）。しかし結果調に再録されるのは公報の表紙・裏表紙のみで候補者の原稿面は含まれず、現行公式サイトにおける公報の現存は確認できず、選挙特設サイトも到達不可だったため、公報の実物は特定できていない。",
         "source_ids": [
-          "okayama-pref-governor-election-2024-overview"
+          "okayama-pref-governor-election-2024-report"
         ],
         "location_note": "探索記録 manifesto-source-search-okayama-pref-2024 の review_note に確認経緯を記載。",
         "decision": "accepted",
-        "review_note": "発行の事実のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
+        "review_note": "発行と選挙時の掲載の事実のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
       },
       {
         "field": "result_status",
-        "statement": "現行公式サイトでの現存が未確認のため、result_status を follow_up_required とし、公約レコードは作成しない。段階3でWayback Machine等を含めて再確認する。",
+        "statement": "段階3の再確認（2026-11-23）を経ても検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。Wayback Machine等のWebアーカイブは今回の確認経路では応答が得られず、保存有無の確認は完遂できていない。",
         "source_ids": [
-          "okayama-pref-governor-election-2024"
+          "okayama-pref-governor-election-2024-report"
         ],
         "location_note": "探索記録 manifesto-source-search-okayama-pref-2024 の review_note に判断の詳細を記載。",
         "decision": "accepted",
@@ -1460,7 +1461,8 @@
     ],
     "open_questions": [
       "選挙公報の音声読み上げ対応データの公表有無は未確認。",
-      "選挙特設サイトのアーカイブ保存の有無は未確認であり、Wayback Machineでの再確認は段階3で行う。"
+      "選挙特設サイトおよび県選管の選挙公報ページのWebアーカイブ保存の有無は、段階3でも今回の確認経路では確定できていない（アーカイブ側の応答が得られなかったため）。到達可能な経路での再確認が残る。",
+      "紙の選挙公報の保管・所蔵状況（県選挙管理委員会の保管分・図書館所蔵）は未確認。"
     ],
     "review_status": "reviewed"
   },
@@ -1506,6 +1508,94 @@
       "大森候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
       "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
       "Wayback Machine の市公式URL保存分は CDX に記録があるものの再生できておらず、再生が復旧すれば保存コピーそのものでも照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-niigata-city-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-niigata-city-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "新潟市選挙管理委員会の開票結果で当選と得票数（143,724票）を、市選管の選挙概要ページで選挙の概要を、新潟県選挙管理委員会の任期満了日一覧で前任期の満了日（2026年11月17日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式ページで、2026年選挙の選挙公報が現存することを確認した。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-results",
+          "niigata-city-mayor-election-2026-overview",
+          "niigata-pref-term-expiry-list"
+        ],
+        "location_note": "開票結果、選挙概要ページ、県選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページから選挙公報PDFを取得し、1ページ目中段の中原八一候補欄（3つの柱の■箇条書き17項目と「2期8年の主な実績」欄10項目）を確認した。公報の候補者欄は画像でテキスト層はない（抽出文字は選管の枠文のみ）。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（150dpi・300dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード17件を作成したため、result_status を source_registered とした。中原候補の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "niigata-city-mayor-election-2026-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（市の現行公式ページで現存）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "中原候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "新潟県選挙管理委員会の任期満了日（定数）一覧は段階0の確認時点で選挙前の版のままで、新任期満了日（2030年11月17日）の明記照合は一覧の次回更新待ちである（Issue #706の追跡対象）。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-niigata-pref-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-niigata-pref-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "新潟県選挙管理委員会の2026年知事選挙の投・開票結果ページと県知事選挙執行一覧を確認したが、いずれにも選挙公報への導線は掲載されていない。結果ページの「選挙の記録」欄は2026-11-23の確認時点で「作成中です。」のままである。令和4年（2022年）選挙の結果ページには完成した「選挙の記録」PDFがリンクされており（2023年12月28日更新）、2026年分は未公表である。",
+        "source_ids": [
+          "niigata-pref-governor-election-2026-results",
+          "niigata-pref-governor-election-list"
+        ],
+        "location_note": "県選管の投・開票結果ページ、県知事選挙執行一覧、令和4年選挙の結果ページ（いずれも公式公表、2026-11-23に本文を直接確認）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "新潟市選挙管理委員会の公式ページによれば、選挙公報は新聞折込と戸別配布（ポスティング）による紙配布と区役所・出張所・期日前投票所への備え置きのみで、Web版PDFの掲載はなく、お知らせ版（点字版・音声版）も希望者への送付による。選挙期間中の特設サイトと開票速報サイトは現在到達不可で、Wayback Machineに特設サイトのスナップショットや県サイトの選挙公報添付ファイルの保存はなく、国立国会図書館WARPにも特設サイトの収集はない。",
+        "source_ids": [
+          "niigata-city-governor-election-2026-overview"
+        ],
+        "location_note": "新潟市選管の知事選挙案内ページ（2026年5月14日更新）、特設サイト・速報サイトへの到達確認、Wayback Machineの保存確認（availability・CDX）とWARPの収集検索の結果（いずれも2026-11-23に確認）に基づく。",
+        "decision": "accepted",
+        "review_note": "配布方法の公式説明のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。新潟県報号外1（令和8年5月14日）の選挙管理委員会告示第55号で選挙公報の掲載順序を定めるくじが指定されており、選挙公報の発行自体は公式に確認できるが、県報は公報の本文を掲載しない。報道の候補者政策報道は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "niigata-pref-gazette-2026-05-14-extra"
+        ],
+        "location_note": "探索記録 manifesto-source-search-niigata-pref-2026 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "県選挙管理委員会「選挙の記録」（2026年知事選挙分）は作成中であり、完成時に選挙公報が収録されるかは未確定（2022年分は選挙の約19か月後に公表された）。",
+      "紙の選挙公報の現物確認（選管保管分・図書館所蔵）はオフライン経路が必要で、本探索の範囲外。"
     ],
     "review_status": "reviewed"
   }

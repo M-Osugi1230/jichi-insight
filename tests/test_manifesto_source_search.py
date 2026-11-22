@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 33
+    assert len(searches) == 35
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -67,6 +67,8 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-260002-executive-2026-04-16",
         "jp-local-261009-executive-2024-02-25",
         "jp-local-330001-executive-2024-11-12",
+        "jp-local-150002-executive-2026-06-10",
+        "jp-local-151009-executive-2026-11-18",
         "jp-local-331007-executive-2025-10-09",
     }
 
@@ -81,7 +83,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Thirty searches have registered a primary source (Fukuoka
+    # Twenty-nine searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
@@ -89,8 +91,8 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
-    # Hiroshima City, Kyoto Prefecture, Kyoto City, Okayama
-    # Prefecture and Okayama City, each closed by its
+    # Hiroshima City, Kyoto Prefecture, Kyoto City and Niigata City,
+    # each closed by its
     # official election bulletin (the Sendai, Shizuoka City and
     # Hiroshima City bulletins survive only as archived copies
     # of the cities' official election-period URLs; the Okayama
@@ -101,19 +103,30 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # manuscript published as audio-readable data);
     # Kawasaki's bulletin is registered as reprinted in the city
     # election commission's official election record).
-    # Three searches remain exceptions:
+    # Five searches remain exceptions:
     # Toyota City (the 2024 bulletin is not extant as an official web
     # publication), Asahikawa City (the 2025 bulletin has no official
-    # web publication) and Sakai City (the 2023 bulletin has no
-    # official web publication); in all three cases no verifiable
+    # web publication), Sakai City (the 2023 bulletin has no official
+    # web publication), Okayama Prefecture (the 2024 bulletin was
+    # published on the election commission's homepage during the
+    # election, but the current official page no longer links to it,
+    # the election special site is unreachable, the commission's
+    # official election report reprints only the bulletin's covers,
+    # and the stage-3 archive re-check could not be completed) and
+    # Niigata Prefecture (the 2026 bulletin was
+    # distributed on paper only; the commission's election record is
+    # still in preparation and no archived copy of the official
+    # election-period sites survives); in all five cases no verifiable
     # candidate publication was found, so their terms register no
     # manifesto source. The safety invariant still applies to any
     # record that reports no source: it must not claim found sources.
-    assert len(missing) == 3
+    assert len(missing) == 5
     assert {search["executive_term_id"] for search in missing} == {
         "jp-local-232114-executive-2024-02-19",
         "jp-local-012041-executive-2025-09-26",
         "jp-local-271403-executive-2023-06-09",
+        "jp-local-330001-executive-2024-11-12",
+        "jp-local-150002-executive-2026-06-10",
     }
     assert all(search["manifesto_source_ids_found"] == [] for search in missing)
 
