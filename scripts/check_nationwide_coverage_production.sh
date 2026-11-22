@@ -105,11 +105,11 @@ check_absent() {
 }
 
 check_page "/municipalities/" \
-  "47都道府県の目標原文を、Evidenceから探す。" \
+  "47都道府県の政策目標を根拠から探す" \
   "PHASE 9 COMPLETE" \
   "${REVIEWED_TOTAL}件" \
   "読みたいデータの深さ" \
-  "47都道府県の統合索引。" \
+  "都道府県名・地域から探す。" \
   "年度実績を接続" \
   "財政値をReviewed" \
   "目標" "実績" "予算" "事業" "契約" \
