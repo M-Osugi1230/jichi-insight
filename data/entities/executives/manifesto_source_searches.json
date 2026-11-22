@@ -968,6 +968,68 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-source-search-kumamoto-city-2026",
+    "executive_term_id": "jp-local-431001-executive-2026-12-03",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kumamoto-city-mayor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "kumamoto-city-mayor-election-results-2026",
+      "kumamoto-pref-mayor-term-expiry-list",
+      "kumamoto-city-mayor-election-2026-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "熊本市長選挙（令和8年11月15日執行）の選挙公報は、選挙期間中は熊本市公式サイトの案内ページ「選挙公報の掲載について」（kiji00373652）からPDF（kiji00373652/3_73652_523075_up_xnlivmyb.pdf）がリンクされ公表されていた。2026年11月23日時点で案内ページは削除済み（市の標準 not-found 画面）であり、PDFの現行URLも取得できない。段階0の棚卸しで Wayback Machine の2026年11月2日保存を特定し控えを確保していたため、段階3では当該保存コピーを再取得して照合した。当該PDFの200保存はこの1件のみで、複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中（投開票日前）の市公式URLからの保存であること、取得ファイルのサイズ（1,895,508バイト）が段階0の記録と一致すること、掲載候補者5名と市選管公式の開票結果との一致、の3点で担保した（Wayback のダイジェスト YQ7GLW3SLRQZQ4KXO3DISRFBNQRGV4UO、取得ファイルの SHA-256 25c13cba040dcb9f6469d3c6df57512cbdf32eca013ef9adb0f66c7506335ca3 は段階0の記録と一致）。おおにしかずふみ候補欄（大見出し、原則文、3つの柱と全マニフェスト150項目からの抜粋7項目、「市庁舎について」の囲み）を確認し、分割レビュー（manifesto-review-jp-local-431001-2026）を経て公約レコード9件を作成した。公報は1ページに両面を収めた形式で全文が画像（テキスト層は改ページのみ）のため、登録文は描画画像（200dpi・300dpi・400dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、市の公式URLの保存コピーで実物を確認できたため、公約レコードの confidence は high とした。本探索レコードの executive_term_id は、2026年12月3日に開始する新任期のID（jp-local-431001-executive-2026-12-03）を指す。新任期の term レコードはまだ登録されておらず、任期開始後に Issue #706 の更新サイクルで登録し、その際に本出典を manifesto_source_ids へ接続する。現任期（2022年12月3日〜2026年12月2日）の term の manifesto_source_ids は、2022年選挙に基づく任期であるため空のまま維持する。一般ウェブ検索でも他の公式な公報コピーの所在は確認できなかったが、候補者の全マニフェスト全文を含め詳細な政策資料が存在しないと判定するものではない。",
+    "next_actions": [
+      "新任期の開始（2026年12月3日）後に term レコードを登録し、manifesto_source_ids へ本出典を接続する（Issue #706）",
+      "候補者の公式サイト等に掲載された全マニフェスト（150項目）の全文の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（1件）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "事業との接続（8件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-niigata-pref-2026",
+    "executive_term_id": "jp-local-150002-executive-2026-06-10",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "niigata-pref-governor-election-2026-results",
+      "niigata-pref-governor-election-list",
+      "niigata-pref-gazette-2026-05-14-extra",
+      "niigata-city-governor-election-2026-overview",
+      "niigata-pref-governor-term-list",
+      "niigata-pref-governor"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2026年5月31日執行の新潟県知事選挙の選挙公報について、2026-11-23に公式経路を再探索した。県選挙管理委員会の投・開票結果ページ（2026年6月22日更新）の「選挙の記録」欄は「作成中です。」のままで選挙公報へのリンクはなく、県知事選挙執行一覧にも公報への導線はない。令和4年（2022年）選挙の結果ページには完成した「選挙の記録」PDFがリンクされているが（2023年12月28日更新、選挙の約19か月後に公表）、2026年分は未公表である。選挙期間中のみ開設された特設サイト（niigatachijisen2026.pref.niigata.lg.jp、2026年6月5日まで開設予定）と開票速報サイト（websenkyo.pref.niigata.lg.jp/26chiji/）はいずれも現在到達不可で、Wayback Machineにも特設サイトのスナップショットはなく、県サイトの選挙公報添付ファイルの保存も確認できない。国立国会図書館WARPにも特設サイトの収集はない。新潟市選挙管理委員会の公式ページによれば、選挙公報は新聞折込と戸別配布（ポスティング）による紙配布と備え置きのみで、Web版PDFの掲載はなく、お知らせ版（点字版・音声版）も希望者への送付による。新潟県報号外1（令和8年5月14日）の選挙管理委員会告示第55号で選挙公報の掲載順序を定めるくじが指定されており、選挙公報が発行されたこと自体は公式に裏付けられるが、県報は公報の本文を掲載しない。国政選挙向けの音声読み上げ用選挙公報ページは存在するが、知事選挙向けの同種の公表は確認できなかった。一般Web検索で得られるのは候補者の政策発表を伝える報道のみで、候補者自身の公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。",
+    "next_actions": [
+      "県選挙管理委員会「選挙の記録」（2026年知事選挙分）の完成・公表時に選挙公報の収録有無を確認し、収録されていれば原典として登録する（2022年分は選挙の約19か月後に公表された実績がある）",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や選挙公報の複写が特定できれば、原典として登録し直す",
+      "2030年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-source-search-okayama-city-2025",
     "executive_term_id": "jp-local-331007-executive-2025-10-09",
     "searched_at": "2026-11-23",
@@ -1028,37 +1090,6 @@
       "未接続の公約（1件）について、計画・事業資料への進捗証拠の接続を拡充する",
       "事業との接続（16件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す",
       "2030年の任期満了に伴う次回市長選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
-    ],
-    "review_status": "reviewed",
-    "confidence": "high"
-  },
-  {
-    "id": "manifesto-source-search-niigata-pref-2026",
-    "executive_term_id": "jp-local-150002-executive-2026-06-10",
-    "searched_at": "2026-11-23",
-    "search_scopes": [
-      "official_election_result_page",
-      "official_site_search",
-      "official_document_archive",
-      "candidate_publication_search",
-      "general_web_search"
-    ],
-    "result_status": "no_stable_primary_source_found",
-    "manifesto_source_ids_found": [],
-    "checked_source_ids": [
-      "niigata-pref-governor-election-2026-results",
-      "niigata-pref-governor-election-list",
-      "niigata-pref-gazette-2026-05-14-extra",
-      "niigata-city-governor-election-2026-overview",
-      "niigata-pref-governor-term-list",
-      "niigata-pref-governor"
-    ],
-    "nonexistence_claim": false,
-    "review_note": "2026年5月31日執行の新潟県知事選挙の選挙公報について、2026-11-23に公式経路を再探索した。県選挙管理委員会の投・開票結果ページ（2026年6月22日更新）の「選挙の記録」欄は「作成中です。」のままで選挙公報へのリンクはなく、県知事選挙執行一覧にも公報への導線はない。令和4年（2022年）選挙の結果ページには完成した「選挙の記録」PDFがリンクされているが（2023年12月28日更新、選挙の約19か月後に公表）、2026年分は未公表である。選挙期間中のみ開設された特設サイト（niigatachijisen2026.pref.niigata.lg.jp、2026年6月5日まで開設予定）と開票速報サイト（websenkyo.pref.niigata.lg.jp/26chiji/）はいずれも現在到達不可で、Wayback Machineにも特設サイトのスナップショットはなく、県サイトの選挙公報添付ファイルの保存も確認できない。国立国会図書館WARPにも特設サイトの収集はない。新潟市選挙管理委員会の公式ページによれば、選挙公報は新聞折込と戸別配布（ポスティング）による紙配布と備え置きのみで、Web版PDFの掲載はなく、お知らせ版（点字版・音声版）も希望者への送付による。新潟県報号外1（令和8年5月14日）の選挙管理委員会告示第55号で選挙公報の掲載順序を定めるくじが指定されており、選挙公報が発行されたこと自体は公式に裏付けられるが、県報は公報の本文を掲載しない。国政選挙向けの音声読み上げ用選挙公報ページは存在するが、知事選挙向けの同種の公表は確認できなかった。一般Web検索で得られるのは候補者の政策発表を伝える報道のみで、候補者自身の公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。",
-    "next_actions": [
-      "県選挙管理委員会「選挙の記録」（2026年知事選挙分）の完成・公表時に選挙公報の収録有無を確認し、収録されていれば原典として登録する（2022年分は選挙の約19か月後に公表された実績がある）",
-      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や選挙公報の複写が特定できれば、原典として登録し直す",
-      "2030年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
     ],
     "review_status": "reviewed",
     "confidence": "high"
