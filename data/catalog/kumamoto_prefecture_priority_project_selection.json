@@ -1,0 +1,129 @@
+{
+  "issue": 966,
+  "municipality_id": "jp-local-430005",
+  "municipality_key": "kumamoto-prefecture",
+  "population": {
+    "description": "「くまもと新時代共創基本方針」（令和6年12月策定、県政の最上位方針）は4つの基本的方向性（こどもたちが笑顔で育つ熊本／世界に開かれた活力あふれる熊本／いつまでも続く豊かな熊本／県民の命、健康、安全・安心を守る）を掲げ、その具体化である「くまもと新時代共創総合戦略」（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」（令和7年度分、地方自治法第233条第5項に基づき令和8年8月に提出）は同じ体系で編集され、取組みブロックごとに予算額・決算額を印字するため、施策単位で金額を接続できる。本登録では総合戦略の施策を登録単位とした。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。",
+    "fiscal_year": 2025,
+    "project_count": 17,
+    "source_ids": [
+      "kumamoto-pref-plan-page",
+      "kumamoto-pref-basic-policy",
+      "kumamoto-pref-comprehensive-strategy",
+      "kumamoto-pref-major-measures-results-fy2025"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "initial",
+  "selection_rule": {
+    "description": "4つの方向性（柱）を巡回し、各方向性から総合戦略の掲載順に施策を選定した（第1巡: 各方向性の施策1、第2巡: 各方向性の施策2、第3巡: 方向性1・2の施策3）。これにより10施策を選定した。金額の大小では選んでいない。未選定の7施策は、スポーツ、観光、文化芸術の振興／交通の利便性向上／魅力ある地域づくり／社会の多様性／健康で長寿な社会の実現／安全・安心の地域づくり／水俣病問題への対応である。",
+    "pillars": [
+      "こどもたちが笑顔で育つ熊本",
+      "世界に開かれた活力あふれる熊本",
+      "いつまでも続く豊かな熊本",
+      "県民の命、健康、安全・安心を守る"
+    ]
+  },
+  "selections": [
+    {
+      "area_number": 1,
+      "official_title": "こども・若者がキラキラ輝く社会づくり",
+      "project_id": "jp-local-430005-project-2025-children-youth-shining",
+      "selection_basis": "第1番目: 4方向性の巡回選定で、方向性「こどもたちが笑顔で育つ熊本」の施策1「こども・若者がキラキラ輝く社会づくり」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-children-youth-shining",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 2,
+      "official_title": "「くまもとで働く」人材の確保・育成",
+      "project_id": "jp-local-430005-project-2025-workforce-securing-development",
+      "selection_basis": "第2番目: 4方向性の巡回選定で、方向性「世界に開かれた活力あふれる熊本」の施策1「「くまもとで働く」人材の確保・育成」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-workforce-securing-development",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 3,
+      "official_title": "豊かな自然の保全",
+      "project_id": "jp-local-430005-project-2025-nature-conservation",
+      "selection_basis": "第3番目: 4方向性の巡回選定で、方向性「いつまでも続く豊かな熊本」の施策1「豊かな自然の保全」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-nature-conservation",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 4,
+      "official_title": "「緑の流域治水」を核とした創造的復興",
+      "project_id": "jp-local-430005-project-2025-creative-reconstruction",
+      "selection_basis": "第4番目: 4方向性の巡回選定で、方向性「県民の命、健康、安全・安心を守る」の施策1「「緑の流域治水」を核とした創造的復興」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-creative-reconstruction",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 5,
+      "official_title": "家庭や子育てに夢を持てる社会づくり",
+      "project_id": "jp-local-430005-project-2025-family-childrearing-dreams",
+      "selection_basis": "第5番目: 4方向性の巡回選定で、方向性「こどもたちが笑顔で育つ熊本」の施策2「家庭や子育てに夢を持てる社会づくり」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-family-childrearing-dreams",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 6,
+      "official_title": "世界に伍する産業拠点熊本の創出",
+      "project_id": "jp-local-430005-project-2025-industrial-hub",
+      "selection_basis": "第6番目: 4方向性の巡回選定で、方向性「世界に開かれた活力あふれる熊本」の施策2「世界に伍する産業拠点熊本の創出」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-industrial-hub",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 7,
+      "official_title": "移住定住、関係人口創出",
+      "project_id": "jp-local-430005-project-2025-migration-related-population",
+      "selection_basis": "第7番目: 4方向性の巡回選定で、方向性「いつまでも続く豊かな熊本」の施策2「移住定住、関係人口創出」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-migration-related-population",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 8,
+      "official_title": "災害に強い県土づくり",
+      "project_id": "jp-local-430005-project-2025-disaster-resilient-land",
+      "selection_basis": "第8番目: 4方向性の巡回選定で、方向性「県民の命、健康、安全・安心を守る」の施策2「災害に強い県土づくり」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-disaster-resilient-land",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 9,
+      "official_title": "質の高い教育・未来を担う人材の育成",
+      "project_id": "jp-local-430005-project-2025-quality-education-human-resources",
+      "selection_basis": "第9番目: 4方向性の巡回選定で、方向性「こどもたちが笑顔で育つ熊本」の施策3「質の高い教育・未来を担う人材の育成」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-quality-education-human-resources",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    },
+    {
+      "area_number": 10,
+      "official_title": "「食のみやこ熊本県」の創造",
+      "project_id": "jp-local-430005-project-2025-food-capital",
+      "selection_basis": "第10番目: 4方向性の巡回選定で、方向性「世界に開かれた活力あふれる熊本」の施策3「「食のみやこ熊本県」の創造」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-430005-project-series-food-capital",
+      "source_ids": [
+        "kumamoto-pref-comprehensive-strategy"
+      ]
+    }
+  ]
+}
