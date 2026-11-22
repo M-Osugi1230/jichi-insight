@@ -70,8 +70,8 @@ export default function OkayamaPrefecturePage() {
               </div>
               <h1>岡山県</h1>
               <p>第4次晴れの国おかやま生き活きプランの戦略プログラム10系列・KPI85件、
-                2026年度一般会計骨格予算と2022〜2024年度普通会計決算、
-                伊原木隆太知事の公約29件、岡山県議会の公式記録を確認します。</p>
+                2026年度一般会計当初予算と2022〜2024年度普通会計決算、
+                伊原木隆太知事の登録済み公約、岡山県議会の公式記録を確認します。</p>
             </div>
             <dl className={styles.heroFacts}>
               <div><dt>普通会計決算</dt><dd>{settlements.length}件（FY2022–2024）</dd></div>
@@ -96,7 +96,7 @@ export default function OkayamaPrefecturePage() {
               <p>戦略プログラム単位で重点事業10系列を登録しています。
                 分野単位の予算・決算金額は公表資料で確認できないため、
                 金額を0円で補完せず、個別指標を施策全体の総合評定に転用しません。</p>
-              <p>2026年度一般会計当初予算は知事選前の骨格予算です。
+              <p>2026年度一般会計当初予算です。
                 第1号議案は2026年3月12日に「原案可決」されました。
                 当初予算と補正予算、2022〜2024年度普通会計決算を分けて表示します。</p>
             </div>
@@ -120,7 +120,7 @@ export default function OkayamaPrefecturePage() {
           <section className={styles.headline} aria-labelledby="finance-headline-title">
             <div className="sectionIntro"><p className="eyebrow">FY2026 initial budget</p>
               <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
-              <p>知事選挙を控えて編成された骨格予算です。
+              <p>一般会計当初予算です。
                 第1号議案「令和8年度岡山県一般会計予算」は2026年3月19日に原案可決され、
                 一般会計総額819,698,359千円です。
                 補正前の当初予算額であり、普通会計決算とは区別します。</p>
@@ -158,8 +158,8 @@ export default function OkayamaPrefecturePage() {
 
           <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
             <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
-              <h2 id="projects-title">分野別基本施策10系列・KPI51件</h2>
-              <p>分野別基本施策10系列・KPI51件を登録しています。分野単位の予算額や総合評定を推測せず、
+              <h2 id="projects-title">戦略プログラム10系列・KPI85件</h2>
+              <p>戦略プログラム10系列・成果指標85件を登録しています。政策単位の予算額は公表資料から接続できないため、補完しません。
                 登録済みの指標・予算接続状況を表示します。
                 <Link href="/projects#okayama-prefecture"> 重点事業一覧を見る</Link></p>
             </div>
