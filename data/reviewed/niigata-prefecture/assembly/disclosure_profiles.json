@@ -1,0 +1,107 @@
+[
+ {
+  "as_of": "2026-11-23",
+  "assembly_id": "jp-local-150002-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-150002-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿を県議会公式サイトで公開（2026年5月14日更新）。定数53人・現員52人で、選出選挙区・所属党会派・当選回数を掲載。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "議員名簿に会派別の所属を掲載。6会派（自由民主党32名・未来にいがた8名・リベラル新潟6名・真政にいがた3名・公明党2名・無所属1名）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会委員名簿（2026年10月19日現在）で、議会運営委員会・常任委員会4・特別委員会5の計10委員会の委員名簿を公開。本登録では委員会の名称のみを登録した。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "知事提出議案一覧・議員発議案（意見書等）・請願陳情の各ページで、議案番号・件名・審議結果・議決年月日を公開。令和7年度決算関係の8件（第103号から第110号）は閉会中継続審査のため未決で、本登録では pending とした。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "知事提出議案一覧と議員発議案のページに会派別賛否表を公開（公式凡例：○賛成・×反対・－棄権・欠欠席。無所属議員は個人の列）。令和8年6月定例会の本会議会議録との突合により、表の○×が実際の表決行動と一致することを確認した（事後の表決記録）。ただし令和8年9月定例会の本会議会議録は2026年11月23日時点で未公表のため、9月会期の個別議案の表決方法は公表情報から確定せず、method は unknown として登録した（判定の経緯は証拠パケットに記録）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない（公表は会派別のみ）。無所属の馬場秀幸議員については賛否表の個人列が実質的に本人の表決と一致するが、議員別投票の一覧として公表されたものではないため、議員別投票として復元・登録はしていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分は会派交付分（5会派）と議員交付分（53名）の双方について収支報告書を公式サイトで公開。登録は公式公開の単位（会派5件・議員53件）に一致させた。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書と領収書等の写しを一体のPDFで公式サイトに公開（令和3年度分からWeb公開）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "令和8年度の委員会県外行政視察レポート（議会運営委員会・特別委員会2・常任委員会4の計7件）を公開し、日程・参加委員・視察先・視察目的を掲載。視察費用はいずれのレポートにも公表されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システム（ssp.kaigiroku.net テナント prefniigata）で本会議・委員会の会議録を公開。ただし令和8年9月定例会の本会議会議録は2026年11月23日時点で未公表（令和8年分は2月・6月定例会本会議分等を公開）。",
+    "source_url": null
+   },
+   {
+    "availability": "unknown",
+    "granularity": "unknown",
+    "item": "session_broadcast",
+    "note": "議会中継の公開状況は本登録の調査範囲では確認していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願・陳情のページで、今会期提出の請願4件（採択2件・不採択2件）と継続中の請願1件・陳情2件（いずれも継続）の結果を公開。請願・陳情に会派別賛否表は付されていない。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "niigata-pref-assembly-roster",
+   "niigata-pref-assembly-committees",
+   "niigata-pref-assembly-proposals-2026-09",
+   "niigata-pref-assembly-member-bills-2026-09",
+   "niigata-pref-assembly-petitions-2026-09",
+   "niigata-pref-assembly-minutes-search",
+   "niigata-pref-assembly-seimu-r7-overview",
+   "niigata-pref-assembly-inspections-giun",
+   "niigata-pref-assembly-inspections-tokubetsu",
+   "niigata-pref-assembly-inspections-jonin"
+  ]
+ }
+]
