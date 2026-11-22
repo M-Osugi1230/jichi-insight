@@ -25,6 +25,7 @@ SOURCE_CATALOG_PATHS = [
     ROOT / "data" / "catalog" / "niigata_city_finance_sources.json",
     ROOT / "data" / "catalog" / "niigata_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "kyoto_prefecture_finance_sources.json",
+    ROOT / "data" / "catalog" / "okayama_city_finance_sources.json",
     ROOT / "data" / "catalog" / "kumamoto_city_finance_sources.json",
     ROOT / "data" / "catalog" / "okayama_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "kumamoto_prefecture_finance_sources.json",

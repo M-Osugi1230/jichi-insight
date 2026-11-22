@@ -1853,6 +1853,58 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-okayama-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-331007-executive-2025-10-09",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "岡山市の現市長は大森 雅夫である。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-results"
+        ],
+        "location_note": "市選挙管理委員会の開票結果速報（4区合算分）の当選人欄。",
+        "decision": "accepted",
+        "review_note": "開票結果で大森まさおの当選（4期目）が確定している。"
+      },
+      {
+        "field": "election_date",
+        "statement": "岡山市長選挙は2025年10月5日に執行され、大森まさおが89,183票を得て当選した。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-results"
+        ],
+        "location_note": "市選挙管理委員会『令和7年10月5日執行 岡山市長選挙 開票結果速報（4区合算分）』の候補者別得票数。",
+        "decision": "accepted",
+        "review_note": "得票数は区別内訳（北区39,081票・中区17,076票・東区11,974票・南区21,052票）の合計とも一致する。候補者4人の得票合計206,374票（大森89,183票・うらかみ雅彦74,494票・かんざき政人27,780票・むかいだに千鳥14,917票）は有効投票数と一致する。"
+      },
+      {
+        "field": "term_start",
+        "statement": "大森雅夫市長の現任期は2025年10月9日に始まった。",
+        "source_ids": [
+          "okayama-city-mayor-election-2025-schedule"
+        ],
+        "location_note": "市選挙管理委員会の広報連絡資料『岡山市長選挙の選挙期日が決定しました』（2025年3月19日）の参考欄。",
+        "decision": "accepted",
+        "review_note": "前任期の満了日が2025年10月8日と明記されている。任期満了による選挙のため、公職選挙法第259条ただし書により新任期は満了日の翌日（2025年10月9日）に開始する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "大森雅夫市長の現任期は2029年10月8日に満了する。",
+        "source_ids": [
+          "okayama-pref-mayor-term-list"
+        ],
+        "location_note": "岡山県選挙管理委員会『長及び議会議員の任期満了日一覧』（令和8年5月26日現在）の岡山市長の行。",
+        "decision": "accepted",
+        "review_note": "岡山市長の任期満了日が令和11年の列に『10月8日』と印字されている（2029年10月8日）。"
+      }
+    ],
+    "open_questions": [
+      "2025年岡山市長選挙の選挙公報は発行され市選挙管理委員会のホームページに掲載されたことを段階0（Issue #949）で確認したが、現行サイト上で公報PDFに直接到達できるかは未確認であり、段階3で存否を確認して転記・接続する。段階1では manifesto_source_ids を未接続とする。",
+      "市公式の歴代市長一覧ページは段階0では特定できなかった。任期は県選管一覧・市選管の期日決定資料・公職選挙法の構成で確定済みであり、一覧の有無は登録の支障にはならない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-kumamoto-city-current-mayor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-431001-executive-2022-12-03",

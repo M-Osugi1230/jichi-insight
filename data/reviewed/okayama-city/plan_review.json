@@ -40,6 +40,17 @@
       "reviewed_data_path": "data/catalog/okayama_current_progress_availability.json",
       "decision": "accepted_availability_boundary",
       "review_note": "旧計画結果を流用しない。"
+    },
+    {
+      "id": "okayama-seventh-plan-enactment",
+      "evidence_role": "current_plan_enactment",
+      "title": "岡山市第七次総合計画の策定議決",
+      "statement": "甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」は、令和8年2月定例市議会において2026年3月17日に原案可決された。",
+      "value": "2026-03-17",
+      "source_id": "okayama-seventh-plan-council-result",
+      "evidence_location": "市議会公式『令和8年2月定例市議会の提出議案・議決結果について』の甲第71号議案の行",
+      "decision": "accepted",
+      "review_note": "計画の同一性・期間は okayama-seventh-plan の公式概要で確認済み。本レコードは策定の議決事実のみを保持する。"
     }
   ],
   "quality_boundary": "現行計画階層、PDCA設計、Result availabilityを分離する。個別成果指標・取組・年度評価、財政接続、因果評価、独自達成度、比較可能性は別レビュー。",

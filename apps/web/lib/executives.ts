@@ -108,6 +108,7 @@ const municipalityIdToKey = {
   "jp-local-150002": "niigata-prefecture",
   "jp-local-151009": "niigata-city",
   "jp-local-261009": "kyoto-city",
+  "jp-local-331007": "okayama-city",
   "jp-local-340006": "hiroshima-prefecture",
   "jp-local-341002": "hiroshima-city",
   "jp-local-260002": "kyoto-prefecture",

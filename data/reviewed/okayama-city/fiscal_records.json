@@ -6,18 +6,19 @@
     "account_type": "general",
     "stage": "initial_budget",
     "metric": "total_revenue",
-    "metric_label": "一般会計当初予算（市議会可決・source precision）",
-    "amount_yen": 429863380000,
+    "metric_label": "一般会計当初予算",
+    "amount_yen": 429863382000,
     "value": null,
     "unit": "yen",
     "value_status": "available",
     "period_start": "2026-04-01",
     "period_end": "2027-03-31",
-    "note": "市議会広報の『4,298億6,338万円余』をsource precisionのまま換算。末尾未満を精密値とみなさない。",
+    "note": "令和8年度岡山市一般会計当初予算429,863,382千円を円換算。千円単位の額は財政課『令和8年度6月補正予算（案）について』の一般会計『補正前の額』で確定した（令和8年度一般会計補正予算（第1号）・甲第99号議案の第1表の補正前の額と同値）。甲第4号議案は令和8年2月定例市議会で2026年3月17日に原案可決。Phase 13で保持した市議会広報『4,298億6,338万円余』由来の万円精度の値（429,863,380,000円）は、千円単位の確定値が得られたため本値に置き換えた。補正・執行・決算とは別state。",
     "review_status": "reviewed",
     "confidence": "high",
     "sources": [
-      "okayama-budget-2026-enacted"
+      "okayama-city-budget-supplement-fy2026",
+      "okayama-city-budget-council-results-fy2026"
     ]
   },
   {
@@ -60,6 +61,28 @@
     "confidence": "high",
     "sources": [
       "okayama-settlement-2024"
+    ]
+  },
+  {
+    "id": "jp-local-331007-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-331007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 143589274000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度岡山市一般会計当初予算の市税143,589,274千円を円換算。財政課『令和8年度6月補正予算（案）について』の歳入『補正前の額』（令和8年度一般会計補正予算（第1号）・甲第99号議案の第1表の補正前の額と同値）を収録する。甲第4号議案は2026年3月17日に原案可決されたため、印字値がそのまま成立後の額である。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "okayama-city-budget-supplement-fy2026",
+      "okayama-city-budget-council-results-fy2026"
     ]
   }
 ]
