@@ -1,0 +1,168 @@
+{
+ "issue": 965,
+ "municipality_id": "jp-local-330001",
+ "municipality_key": "okayama-prefecture",
+ "population": {
+  "description": "「第4次晴れの国おかやま生き活きプラン」（令和7年3月策定、計画期間2025〜2028年度）の計画体系。4つの重点戦略（I 子育ての希望がかなう社会の実現、II 夢を育む教育県岡山の推進、III 地域を支える産業の振興、IV 安心で豊かさが実感できる地域の創造）の下に戦略プログラム22件（I:3件、II:4件、III:5件、IV:10件）が置かれ、各プログラムは重点施策と推進施策から構成される（重点施策89件・推進施策68件、計画の生き活き指標99件）。県は毎年度「行政評価」を実施し、令和8年度行政評価（令和7年度実績、令和8年11月13日公表）では、政策評価としてプログラムごとにプログラム達成レベル（5段階）を、施策評価として戦略プログラム単位の施策評価シート（施策ごとに指標の現況値・目標値・令和7年度実績値・達成度と施策達成レベル）を公表しているため、本登録では戦略プログラムを登録単位とした。",
+  "fiscal_year": 2025,
+  "project_count": 22,
+  "source_ids": [
+   "okayama-pref-plan4-book",
+   "okayama-pref-eval-fy2025-page",
+   "okayama-pref-eval-fy2025-policy-book"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "4つの重点戦略を計画の掲載順に巡回し、各戦略では戦略プログラムを掲載順にたどって10系列を選定した。第1巡で I-1・II-1・III-1・IV-1、第2巡で I-2・II-2・III-2・IV-2、第3巡で I-3・II-3 を選定した時点で10系列が揃った。金額の大小では選んでいない。KPIの assessment は、県の達成度（5段階）から、5・4を achieved、3を partially_achieved、2・1を not_achieved、達成度の公表がないもの（評価対象外）を not_assessable に換算した。",
+  "pillars": [
+   "子育ての希望がかなう社会の実現",
+   "夢を育む教育県岡山の推進",
+   "地域を支える産業の振興",
+   "安心で豊かさが実感できる地域の創造"
+  ]
+ },
+ "selections": [
+  {
+   "official_title": "出会い・結婚応援プログラム",
+   "program_code": "I-1",
+   "program_number": 1,
+   "project_id": "jp-local-330001-project-2025-marriage-encounter-support",
+   "selection_basis": "第1巡: 重点戦略I「子育ての希望がかなう社会の実現」について、計画の掲載順で1番目の戦略プログラム「出会い・結婚応援プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-marriage-encounter-support",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-marriage-encounter-support",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "I",
+   "strategy_name": "子育ての希望がかなう社会の実現"
+  },
+  {
+   "official_title": "学ぶ力育成プログラム",
+   "program_code": "II-1",
+   "program_number": 1,
+   "project_id": "jp-local-330001-project-2025-learning-ability",
+   "selection_basis": "第1巡: 重点戦略II「夢を育む教育県岡山の推進」について、計画の掲載順で1番目の戦略プログラム「学ぶ力育成プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-learning-ability",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-learning-ability",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "II",
+   "strategy_name": "夢を育む教育県岡山の推進"
+  },
+  {
+   "official_title": "企業誘致・投資促進プログラム",
+   "program_code": "III-1",
+   "program_number": 1,
+   "project_id": "jp-local-330001-project-2025-business-attraction-investment",
+   "selection_basis": "第1巡: 重点戦略III「地域を支える産業の振興」について、計画の掲載順で1番目の戦略プログラム「企業誘致・投資促進プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-business-attraction-investment",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-business-attraction-investment",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "III",
+   "strategy_name": "地域を支える産業の振興"
+  },
+  {
+   "official_title": "保健医療充実プログラム",
+   "program_code": "IV-1",
+   "program_number": 1,
+   "project_id": "jp-local-330001-project-2025-healthcare-enhancement",
+   "selection_basis": "第1巡: 重点戦略IV「安心で豊かさが実感できる地域の創造」について、計画の掲載順で1番目の戦略プログラム「保健医療充実プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-healthcare-enhancement",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-healthcare-enhancement",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "IV",
+   "strategy_name": "安心で豊かさが実感できる地域の創造"
+  },
+  {
+   "official_title": "妊娠・出産・子育て支援プログラム",
+   "program_code": "I-2",
+   "program_number": 2,
+   "project_id": "jp-local-330001-project-2025-pregnancy-childrearing-support",
+   "selection_basis": "第2巡: 重点戦略I「子育ての希望がかなう社会の実現」について、計画の掲載順で2番目の戦略プログラム「妊娠・出産・子育て支援プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-pregnancy-childrearing-support",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-pregnancy-childrearing-support",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "I",
+   "strategy_name": "子育ての希望がかなう社会の実現"
+  },
+  {
+   "official_title": "徳育・体育推進プログラム",
+   "program_code": "II-2",
+   "program_number": 2,
+   "project_id": "jp-local-330001-project-2025-moral-physical-education",
+   "selection_basis": "第2巡: 重点戦略II「夢を育む教育県岡山の推進」について、計画の掲載順で2番目の戦略プログラム「徳育・体育推進プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-moral-physical-education",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-moral-physical-education",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "II",
+   "strategy_name": "夢を育む教育県岡山の推進"
+  },
+  {
+   "official_title": "企業の「稼ぐ力」強化プログラム",
+   "program_code": "III-2",
+   "program_number": 2,
+   "project_id": "jp-local-330001-project-2025-corporate-earning-power",
+   "selection_basis": "第2巡: 重点戦略III「地域を支える産業の振興」について、計画の掲載順で2番目の戦略プログラム「企業の「稼ぐ力」強化プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-corporate-earning-power",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-corporate-earning-power",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "III",
+   "strategy_name": "地域を支える産業の振興"
+  },
+  {
+   "official_title": "福祉サービス推進プログラム",
+   "program_code": "IV-2",
+   "program_number": 2,
+   "project_id": "jp-local-330001-project-2025-welfare-services",
+   "selection_basis": "第2巡: 重点戦略IV「安心で豊かさが実感できる地域の創造」について、計画の掲載順で2番目の戦略プログラム「福祉サービス推進プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-welfare-services",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-welfare-services",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "IV",
+   "strategy_name": "安心で豊かさが実感できる地域の創造"
+  },
+  {
+   "official_title": "子育てと仕事の両立支援プログラム",
+   "program_code": "I-3",
+   "program_number": 3,
+   "project_id": "jp-local-330001-project-2025-childcare-work-balance",
+   "selection_basis": "第3巡: 重点戦略I「子育ての希望がかなう社会の実現」について、計画の掲載順で3番目の戦略プログラム「子育てと仕事の両立支援プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-childcare-work-balance",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-childcare-work-balance",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "I",
+   "strategy_name": "子育ての希望がかなう社会の実現"
+  },
+  {
+   "official_title": "多様な教育ニーズ支援プログラム",
+   "program_code": "II-3",
+   "program_number": 3,
+   "project_id": "jp-local-330001-project-2025-diverse-education-needs",
+   "selection_basis": "第3巡: 重点戦略II「夢を育む教育県岡山の推進」について、計画の掲載順で3番目の戦略プログラム「多様な教育ニーズ支援プログラム」を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-330001-project-series-diverse-education-needs",
+   "source_ids": [
+    "okayama-pref-eval-fy2025-sheet-diverse-education-needs",
+    "okayama-pref-plan4-book"
+   ],
+   "strategy": "II",
+   "strategy_name": "夢を育む教育県岡山の推進"
+  }
+ ]
+}
