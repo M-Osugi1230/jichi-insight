@@ -144,13 +144,11 @@ export function NiigataCityReview() {
         </section>
         <section className={styles.scope} aria-labelledby="assembly-title">
           <div><p className="eyebrow">Assembly</p>
-            <h2 id="assembly-title">新潟市会</h2></div>
+            <h2 id="assembly-title">新潟市議会</h2></div>
           <div><p>議員定数{assembly.assembly.seat_count}人。
             登録議案{assembly.proposals.length}件・会派別賛否{assembly.factionVotes.length}件、
             政務活動費{assembly.expenses.length}件・視察{assembly.trips.length}件。</p>
-            <p>令和8年9月市会の議員別賛否385件は無所属7人分のみです。
-              他の会派所属議員の個人別賛否は市会だより公表後に追加予定であり、
-              登録済みの会派別賛否から推測しません。令和7年度決算は認定済みです。</p>
+            <p>令和8年9月定例会の議案・表決・会派別賛否は登録済みの公式資料の範囲で表示します。個人別賛否が未公表の議案については推測しません。</p>
             <p><Link href="/assemblies/niigata-city">議案・議決と公開資料を見る</Link></p></div>
         </section>
         <section className={styles.scope} aria-labelledby="sources-title">
