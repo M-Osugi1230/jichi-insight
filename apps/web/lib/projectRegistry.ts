@@ -246,7 +246,7 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(hiroshimaCityProjectSources.records as SourceRecord[]),
   ...(kyotoPrefProjectSources.records as SourceRecord[]),
   ...(kyotoCityProjectSources.records as SourceRecord[]),
-  ...(okayamaPrefProjectSources.records as SourceRecord[])];
+  ...(okayamaPrefProjectSources.records as SourceRecord[]),
   ...(kumamotoPrefProjectSources.records as SourceRecord[]),
   ...(niigataPrefProjectSources.records as SourceRecord[]),
   ...(niigataCityProjectSources.records as SourceRecord[]),
