@@ -1,6 +1,6 @@
 {
-  "version": "0.48.0",
-  "updated_at": "2026-11-23",
+  "version": "0.49.0",
+  "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
     {
@@ -1962,6 +1962,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "3期目の就任に当たる2026年4月16日の知事就任記者会見の府公式ページ。府民だより2026年5月号も「4月16日、…第53代京都府知事として3期目の登庁式に臨みました」とする。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "kyoto-pref-governor-election-2026-bulletin",
+      "municipality_key": "kyoto-prefecture",
+      "organization": "京都府選挙管理委員会",
+      "category": "election",
+      "title": "令和8年4月5日執行 京都府知事選挙 選挙公報（にしわき隆俊候補欄・候補者提出原稿）",
+      "url": "https://www.pref.kyoto.jp/senkyo/documents/r8tijiniwakitakatoshi.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "候補者提出原稿をそのまま掲載した全1ページの公式選挙公報（音声読み上げ対応データ）。府選管の公式ページ「京都府知事選挙・京都府議会議員補欠選挙 候補者情報（選挙公報）（音声読み上げ用）」（2026年3月28日更新）から直接取得した（1,903,102バイト、SHA-256 ae07590608f2e5b6083e3fb022f1a6c0fd40cc2cfaf80044ddd148d73f69b360）。このPDFは「京都府知事選挙公報掲載文原稿用紙（電子データ入稿用）」に入稿された候補者原稿そのもので、候補者欄の文言にはテキスト層があるため、公約文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、テキスト層の抽出文と全項目を突合した（全項目で一致）。印刷版公報（全候補者を収めた画像版PDF）の公表は府選管の選挙情報ページおよび検索で確認できなかった。"
     },
     {
       "id": "kyoto-city-mayor-election-2024-bulletin",

@@ -1330,6 +1330,53 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-manifesto-source-search-kyoto-pref-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-kyoto-pref-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "府選管の公式ページで知事選挙の結果公表と選挙公報（音声読み上げ用）ページを確認し、府公式の知事プロフィールで現職知事であることを、府選管の任期満了一覧で知事の任期満了日（2030年4月15日）を、府公報（選管告示）で選挙期日の告示を確認した（段階0の棚卸しと段階1で登録済み）。得票数412,583票は段階1で府選管の開票結果と照合済みである。あわせて印刷版公報（全候補者を収めた画像版PDF）の公表を府選管の選挙情報ページおよび検索で確認したが、公表は確認できなかった。",
+        "source_ids": [
+          "kyoto-pref-governor-election-2026-results",
+          "kyoto-pref-governor",
+          "kyoto-pref-term-list",
+          "kyoto-pref-governor-election-2026-gazette",
+          "kyoto-pref-governor-inauguration-2026"
+        ],
+        "location_note": "府選管の選挙情報ページと開票結果、知事プロフィール、任期満了一覧、府公報（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "府選管の公式ページ「京都府知事選挙・京都府議会議員補欠選挙 候補者情報（選挙公報）（音声読み上げ用）」から、にしわき隆俊候補の候補者提出原稿PDF（全1ページ、1,903,102バイト）を直接取得し、候補者欄（総論文3件・見出し10件・■項目16件）を確認した。このPDFは候補者入稿原稿そのもので、候補者欄の文言にはテキスト層があることを実測した。",
+        "source_ids": [
+          "kyoto-pref-governor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報原稿PDF（全1ページ）の候補者欄全体。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、テキスト層の抽出文と全項目を突合した（全項目で一致）。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報原稿を登録し、分割レビューを経て公約レコード29件を作成したため、result_status を source_registered とした。印刷版公報（画像版PDF）および候補者欄のQRコードが案内する候補者ホームページの政策資料については、公表・安定した所在を特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "kyoto-pref-governor-election-2026-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "公的機関（府選管）の公式ページから直接取得した候補者提出原稿そのものであるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "印刷版公報（全候補者を収めた画像版PDF）の公表は確認できていない。",
+      "候補者欄のQRコードが案内する候補者ホームページの政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "事業との接続は文言・内容に基づく推定であり、府が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-manifesto-source-search-kyoto-city-2024",
     "subject_type": "manifesto_source_search",
     "subject_id": "manifesto-source-search-kyoto-city-2024",

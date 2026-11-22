@@ -870,6 +870,40 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-source-search-kyoto-pref-2026",
+    "executive_term_id": "jp-local-260002-executive-2026-04-16",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "kyoto-pref-governor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "kyoto-pref-governor",
+      "kyoto-pref-term-list",
+      "kyoto-pref-governor-election-2026-results",
+      "kyoto-pref-governor-election-2026-gazette",
+      "kyoto-pref-governor-inauguration-2026",
+      "kyoto-pref-governor-election-2026-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2026年4月5日執行の京都府知事選挙の選挙公報として、京都府選挙管理委員会の公式ページ「京都府知事選挙・京都府議会議員補欠選挙 候補者情報（選挙公報）（音声読み上げ用）」（2026年3月28日更新）に、にしわき隆俊候補の候補者提出原稿PDF（全1ページ）が公表されており、2026-11-23に直接取得した（1,903,102バイト、SHA-256 ae07590608f2e5b6083e3fb022f1a6c0fd40cc2cfaf80044ddd148d73f69b360）。このPDFは「京都府知事選挙公報掲載文原稿用紙（電子データ入稿用）」に入稿された候補者原稿そのもので、候補者欄の文言にはテキスト層がある。選挙公報を出典として登録し、分割レビュー（manifesto-review-jp-local-260002-2026）を経て公約レコード29件を作成した。登録文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、テキスト層の抽出文と全項目を突合した（全項目で一致）。印刷版公報（全候補者を収めた画像版PDF）の公表は、府選管の選挙情報ページ（令和8年4月5日執行 京都府知事選挙）および検索で確認できなかった（公表されていないと判定するものではない）。選挙公報原稿は候補者提出原稿をそのまま掲載した公式文書であり、府選管の公式ページから直接取得できたため、公約レコードの confidence は high とした。候補者欄には候補者ホームページへのQRコードがあるが、政策資料の安定した所在は本探索では特定していない。",
+    "next_actions": [
+      "印刷版公報（全候補者を収めた画像版PDF）の公表が新たに確認できれば、登録済みの公約文と照合する",
+      "候補者欄のQRコードが案内する候補者ホームページの政策資料が安定した所在で確認できれば、登録済みの公約文と照合する",
+      "未接続の公約（防災・産業・文化・環境・地域振興等）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "2030年4月の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-source-search-kyoto-city-2024",
     "executive_term_id": "jp-local-261009-executive-2024-02-25",
     "searched_at": "2026-11-23",

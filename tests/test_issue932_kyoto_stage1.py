@@ -195,7 +195,11 @@ def test_governor_term_registration() -> None:
     assert term["election_date"] == "2026-04-05"
     assert term["status"] == "current"
     # Promises are registered in the promise stage, not here.
-    assert term["manifesto_source_ids"] == []
+    # Stage 3 (Issue #938) then transcribed the bulletin manuscript
+    # and registered it as the term's manifesto source.
+    assert term["manifesto_source_ids"] == [
+        "kyoto-pref-governor-election-2026-bulletin"
+    ]
     assert len(term["sources"]) == 5
 
     packets = load_json(ROOT / "data" / "entities" / "executives" / "evidence_packets.json")

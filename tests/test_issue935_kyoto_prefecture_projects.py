@@ -37,6 +37,35 @@ ROOT = Path(__file__).resolve().parents[1]
 MID = "jp-local-260002"
 BASE = ROOT / "data" / "reviewed" / "kyoto-prefecture"
 
+PROMISE = "jp-local-260002-executive-2026-04-16-promise-{}"
+# Stage 3 (Issue #938) registered the governor's promises; only
+# the fields with a clear thematic match are linked.
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-260002-project-2025-hopeful-childrearing": [
+        PROMISE.format("010"),
+        PROMISE.format("011"),
+        PROMISE.format("013"),
+    ],
+    "jp-local-260002-project-2025-dream-education": [
+        PROMISE.format("014"),
+        PROMISE.format("015"),
+    ],
+    "jp-local-260002-project-2025-health-medical-longevity": [
+        PROMISE.format("006")
+    ],
+    "jp-local-260002-project-2025-care-welfare": [PROMISE.format("007")],
+    "jp-local-260002-project-2025-human-rights": [],
+    "jp-local-260002-project-2025-all-genders-participation": [
+        PROMISE.format("009")
+    ],
+    "jp-local-260002-project-2025-disability-friendly": [],
+    "jp-local-260002-project-2025-foreign-residents-vibrant": [
+        PROMISE.format("017")
+    ],
+    "jp-local-260002-project-2025-community-bonds": [PROMISE.format("008")],
+    "jp-local-260002-project-2025-sports-for-all": [],
+}
+
 EXPECTED_KPI_COUNTS = {
     "jp-local-260002-project-2025-hopeful-childrearing": 7,
     "jp-local-260002-project-2025-dream-education": 6,
@@ -91,8 +120,9 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        # Stage 3 (promises) has not run yet for Kyoto.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #938) registered the governor's promises;
+        # only the fields with a clear thematic match are linked.
+        assert project["related_promise_ids"] == EXPECTED_PROMISE_LINKS[project["id"]]
         # The plan's three parts stand side by side; fields are not
         # subordinate to the visions and no mapping table exists.
         assert project["parent_policy"] is None
