@@ -52,6 +52,17 @@ const readingLevels = [
 
 const featuredPaths = [
   {
+    code: "34",
+    area: "広島県・広島市",
+    status: "段階1〜4 Reviewed",
+    tone: "verified" as const,
+    title: "ひろしまビジョンから予算・成果・公約・議会へ。",
+    text: "広島県の2026年度一般会計当初予算と普通会計決算、重点事業、知事公約、県議会記録を同じ入口から確認。広島市の専用ページにも接続します。",
+    facts: ["広島県", "広島市", "予算・公約・議会"],
+    href: "/municipalities/hiroshima-prefecture",
+    action: "広島クラスターの詳細を見る",
+  },
+  {
     code: "04",
     area: "宮城県",
     status: "年度実績を接続",
@@ -106,7 +117,7 @@ export default function MunicipalitiesPage() {
             現行政策計画の入口だけでなく、全47都道府県の目標・指標を人が照合して公開しました。
             件数の大小を順位にせず、各レコードの公式根拠と、その先の実績・予算・事業・契約の接続状況を示します。
           </p>
-          <p>確認できること：詳細レビュー済み69市の基本情報と予算・決算、47都道府県の政策目標・指標。まだ確認できないこと：市債残高・財政健全性の指標は全69市に同条件では揃っていません。財政の詳細・重点事業・公約・議会の深掘りは福岡県・福岡市・北九州市が対象で、掲載の粒度は自治体ごとに異なります。</p>
+          <p>確認できること：詳細レビュー済み69市の基本情報と予算・決算、47都道府県の政策目標・指標。まだ確認できないこと：市債残高・財政健全性の指標は全69市に同条件では揃っていません。財政の詳細・重点事業・公約・議会の深掘りは広島県・広島市を含む複数の地域クラスターで公開しています。掲載の粒度は自治体ごとに異なります。</p>
         </PageIntro>
 
         <nav className={styles.topShortcuts} aria-label="自治体一覧のページ内案内">
@@ -203,6 +214,7 @@ export default function MunicipalitiesPage() {
               計画の枠組みと予算・決算を市ページで公開しています。接続できない範囲は判定不能のまま明示します。
             </p>
           </div>
+          <p><Link href="/municipalities/hiroshima-city">広島市の政策・財政・市長公約・議会の詳細を見る</Link></p>
           <ul className={styles.cityGrid}>
             {phase15Cities.map((city) => (
               <li key={city.slug} className={styles.cityCard}>

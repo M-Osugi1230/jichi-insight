@@ -97,19 +97,19 @@ EXPECTED_POLICY_AREAS = [
 
 EXPECTED_LINKS = {
     f"{TERM_ID}-promise-001": [
-        "jp-local-341003-project-2025-urban-centrality"
+        "jp-local-341002-project-2025-urban-centrality"
     ],
     f"{TERM_ID}-promise-002": [
-        "jp-local-341003-project-2025-urban-centrality"
+        "jp-local-341002-project-2025-urban-centrality"
     ],
     f"{TERM_ID}-promise-005": [
-        "jp-local-341003-project-2025-economic-promotion"
+        "jp-local-341002-project-2025-economic-promotion"
     ],
     f"{TERM_ID}-promise-006": [
-        "jp-local-341003-project-2025-social-welfare"
+        "jp-local-341002-project-2025-social-welfare"
     ],
     f"{TERM_ID}-promise-007": [
-        "jp-local-341003-project-2025-social-welfare"
+        "jp-local-341002-project-2025-social-welfare"
     ],
 }
 # The remaining nine items have no stage-2 series whose subject
