@@ -35,6 +35,24 @@ EXPECTED_IDS = [
     "jp-local-341003-project-2025-atomic-bomb-survivor-measures",
 ]
 
+# Stage 3 (Issue #921) linked five of Mayor Matsui's fourteen
+# bulletin promises back to three series (inference capped at
+# low / inferred; the stage-3 test pins the forward links).
+_MAYOR_TERM = "jp-local-341002-executive-2023-04-12"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-341003-project-2025-social-welfare": [
+        f"{_MAYOR_TERM}-promise-006",
+        f"{_MAYOR_TERM}-promise-007",
+    ],
+    "jp-local-341003-project-2025-economic-promotion": [
+        f"{_MAYOR_TERM}-promise-005",
+    ],
+    "jp-local-341003-project-2025-urban-centrality": [
+        f"{_MAYOR_TERM}-promise-001",
+        f"{_MAYOR_TERM}-promise-002",
+    ],
+}
+
 EXPECTED_TITLES = [
     "市税等について",
     "社会福祉について",
@@ -152,8 +170,13 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2025
         assert record["review_status"] == "reviewed"
-        # Promises are linked in stage 3, not in this registration.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #921) linked the mayor's bulletin
+        # promises back to three of the series; the exact links
+        # are pinned by the stage-3 test. All other series stay
+        # unlinked.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            record["id"], []
+        )
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 

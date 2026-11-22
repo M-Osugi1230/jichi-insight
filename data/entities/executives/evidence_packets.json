@@ -1711,17 +1711,18 @@
       },
       {
         "field": "manifesto_source_ids",
-        "statement": "2023年広島市長選挙の選挙公報は現行の市公式サイトに掲載されておらず、『選挙の記録』にも公報本文は収録されていないため、段階1では manifesto_source_ids を接続しない。",
+        "statement": "原典は2023年広島市長選挙の選挙公報である。選挙期間中は市の公式サイトの選挙ページで公表されていたが、現行サイトからは削除されているため、市の公式URLの Wayback Machine 保存コピー（2023年4月4日保存）で実物を確認し、まついかずみ候補欄（公報1ページ目下段）から公約14件を転記・登録したため、manifesto_source_ids に接続した。原典探索の記録は manifesto-source-search-hiroshima-city-2023、分割レビューは manifesto-review-jp-local-341002-2023。",
         "source_ids": [
+          "hiroshima-city-mayor-election-2023-bulletin",
           "hiroshima-city-mayor-election-2023-results"
         ],
-        "location_note": "選挙の記録（別冊3）の選挙公報に関する記載（2023年4月2日に新聞折り込みで配布した実績のみで、本文は未収録）。",
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目下段のまついかずみ候補欄。",
         "decision": "accepted",
-        "review_note": "公報の発行自体は条例（平成14年条例第1号）に基づき行われている。段階3で Wayback Machine の保存・図書館所蔵等の順で原典を再調査し、不存在とは判定しない。"
+        "review_note": "公報そのものを出典優先順位の最上位として登録した。段階1で未確認としていた公報の所在は、市の公式URLの Wayback Machine 保存コピー（2023年4月4日保存）により確認し、段階3で接続を完了した。当該PDFの200保存は1件のみのため、保存された市公式案内ページの明示・ファイルサイズの一致・掲載候補者と公式記録との一致により原典性を担保した。"
       }
     ],
     "open_questions": [
-      "2023年広島市長選挙の選挙公報の原典（Wayback Machine の保存コピー、図書館所蔵等）の所在は未確認であり、段階3で再調査する。確認できれば公約を転記・登録し manifesto_source_ids へ接続する。"
+      "松井候補の公式サイト（公報に www.matsui.hiroshima.jp の記載あり）に公報欄の項目の詳細な政策資料が掲載されていたかは、選挙期間中の保存では確認できていない。詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
   }

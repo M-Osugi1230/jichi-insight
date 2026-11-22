@@ -1060,5 +1060,47 @@
       "難波候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-341002-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "まついかずみ候補欄は選挙公報1ページ目下段に掲載され、大見出し「世界に誇れる『まち』広島をめざして」の下に、3つの視点（「鳥の目」「虫の目」「心の目」）と宣言文、プロフィール欄、番号付きの3つの柱と箇条書き計14項目が配置され、右側に顔写真と候補者名が縦書きで配置されている。",
+        "source_ids": [
+          "hiroshima-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "2026-11-22に保存コピーを取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "箇条書きの各項目が政策の表明として完結するため14項目をそれぞれ1レコードへ分割した。柱の見出し（主題のラベル）、大見出し、3つの視点、宣言文、標語、プロフィール欄（経歴の提示）は公約として分割しなかった。",
+        "source_ids": [
+          "hiroshima-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "候補者欄の箇条書き14項目とその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "項目単位の登録は千葉市長・仙台市長の先例に倣った境界判断であり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は広島市選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは選挙期間中は市の公式サイトの選挙ページ（「令和5年4月9日執行広島市長選挙の候補者一覧表及び選挙公報」）から「広島市長選挙・選挙広報」として公表されていたが、現行サイトには公報への導線がなく、旧URLは現在404である（Wayback Machine の2026年2月17日保存分も404）。そのため市の公式URLの Wayback Machine 保存コピー（2023年4月4日保存）から取得した。当該PDFの200保存はこの1件のみで複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中の市公式URLからの保存であること、同じく保存された市の公式案内ページが当該PDFを「広島市長選挙・選挙広報 [PDFファイル／1.46MB]」と明示しファイルサイズが取得ファイル（1,526,285バイト）と一致すること、掲載候補者3名が市公式の候補者一覧表および開票結果と一致すること、の3点で担保した（Wayback のダイジェストは 6WDGBCMGPXGNI7IGUVQF36KDPVV5763L、取得ファイルの SHA-256 は bbe4548fed69ea52370643890205697d9b4513b3650989df509673fa99f57e51）。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・300dpi）で照合して転記した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "hiroshima-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報各ページ欄外の備考（候補者から提出された原稿をそのまま印刷した旨）と、市の公式URLの Wayback Machine 保存状況に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      }
+    ],
+    "open_questions": [
+      "柱の見出しをレコード化しない境界判断は千葉市長・仙台市長の項目単位の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "松井候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

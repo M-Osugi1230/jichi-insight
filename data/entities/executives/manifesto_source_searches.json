@@ -804,5 +804,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-hiroshima-city-2023",
+    "executive_term_id": "jp-local-341002-executive-2023-04-12",
+    "searched_at": "2026-11-22",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "hiroshima-city-mayor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "hiroshima-city-mayor-election-2023-results",
+      "hiroshima-city-mayor-history",
+      "hiroshima-pref-mayor-term-list",
+      "hiroshima-city-mayor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "広島市長選挙（令和5年4月9日執行）の選挙公報は、選挙期間中は広島市公式サイトの選挙ページ「令和5年4月9日執行広島市長選挙の候補者一覧表及び選挙公報」から「広島市長選挙・選挙広報」としてPDF（uploaded/attachment/208510.pdf）がリンクされ公表されていた。現行サイトでは2023年選挙の記録ページに公報への導線がなく旧URLは404であり、「選挙の記録（別冊3）」にも公報本文は収録されていない（2023年4月2日に新聞折り込みで配布した実績のみ）。段階0の棚卸しでは Wayback Machine の CDX 照会がタイムアウトし保存の有無は未確認だったため、段階3では旧サイトの選挙セクション（/site/senkyo/）配下に絞った CDX 照会で当該案内ページの保存（2023年4月6日）を特定し、リンク先PDFの保存を確認した。当該PDFの200保存は2023年4月4日（選挙期間中）の1件のみで、複数保存間のダイジェスト一致は取れないため、原典性は、選挙期間中の市公式URLからの保存であること、保存された市公式案内ページの明示とファイルサイズ（1.46MB表記と取得ファイル1,526,285バイト）の一致、掲載候補者3名と市公式の候補者一覧表・開票結果との一致、の3点で担保した（Wayback のダイジェスト 6WDGBCMGPXGNI7IGUVQF36KDPVV5763L、取得ファイルの SHA-256 bbe4548fed69ea52370643890205697d9b4513b3650989df509673fa99f57e51）。1ページ目下段のまついかずみ候補欄（3つの柱と箇条書き14項目）を確認し、分割レビュー（manifesto-review-jp-local-341002-2023）を経て公約レコード14件を作成した。公報は全文が画像でテキスト層はないため、登録文は描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、市の公式URLの保存コピーで実物を確認できたため、公約レコードの confidence は high とした。一般ウェブ検索でも他の公式な公報コピーの所在は確認できなかったが、図書館所蔵等を含め詳細な政策資料が存在しないと判定するものではない。",
+    "next_actions": [
+      "松井候補の公式サイト（公報に www.matsui.hiroshima.jp の記載あり）等に掲載された詳細な政策資料の安定した所在が特定できれば、登録済みの公約文と照合する",
+      "未接続の公約（9件）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "事業との接続（5件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す",
+      "2027年4月の任期満了に伴う次回市長選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
