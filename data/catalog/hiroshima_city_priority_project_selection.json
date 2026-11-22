@@ -1,0 +1,199 @@
+{
+ "expansion_rule": {
+  "added_count": 10,
+  "description": "初回登録として10件（7つの関係を巡回して選んだ10件）。後続の展開では、同じ掲載順ルールを継続し、巡回の続き（2巡目の経済関係・建設関係の2番目の章以降、3巡目以降）から章を追加する。",
+  "total_count": 10
+ },
+ "issue": 918,
+ "municipality_id": "jp-local-341003",
+ "municipality_key": "hiroshima-city",
+ "population": {
+  "chapter_count": 47,
+  "description": "令和7年度決算の附属書類「主要な施策の成果」の体系を母集団とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章（「第○ ○○について」）が置かれる。登録単位はこの「章」とした。章は、区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位であるためである。総括に置かれた第1（令和7年度歳入歳出予算執行の概況）、第2（普通建設事業費の内訳）、第3（人件費の内訳）、第4（市債の状況）は財務の集計であり施策ではないため、母集団から除いた。本書の体系は、第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致しない。本書は基本計画ではなく款の編成に基づく決算附属書類であり、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかった。したがって本登録の柱は、基本計画の章ではなく、本書自体の最上位区分である「関係」とした。金額は区分単位の実施額が示されるが、章全体の合計が印字されるのは一部の章に限られる。章には評定区分（達成度等の区分）は設けられておらず、成果は実施内容欄の事業名・金額・数量等の記述で示される。広島市実施計画（2025-2030）のKPIは基本計画の体系のもとで設定されPDCAで検証されるもので、本書の章との公式対応表がないため、本登録では接続していない。",
+  "division_count": 7,
+  "excluded_summary_count": 4,
+  "fiscal_year": 2025,
+  "source_ids": [
+   "hiroshima-city-seika-fy2025-page",
+   "hiroshima-city-seika-fy2025-cover",
+   "hiroshima-city-seika-fy2025-soukatsu",
+   "hiroshima-city-seika-fy2025-soumu",
+   "hiroshima-city-seika-fy2025-minsei",
+   "hiroshima-city-seika-fy2025-eisei",
+   "hiroshima-city-seika-fy2025-keizai",
+   "hiroshima-city-seika-fy2025-kensetsu",
+   "hiroshima-city-seika-fy2025-shoubou",
+   "hiroshima-city-seika-fy2025-kyouiku",
+   "hiroshima-city-sixth-basic-plan-pdf",
+   "hiroshima-city-comprehensive-plan-page"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "expanded",
+ "selection_rule": {
+  "description": "本書の最上位区分である7つの「関係」を本書の掲載順（総務関係→民生関係→衛生関係→経済関係→建設関係→消防関係→教育関係）に巡回し、各関係の掲載順先頭の章を1件ずつ選ぶ（1巡目7件）。2巡目は総務関係・民生関係・衛生関係の掲載順2番目の章を選ぶ（3件）。合計10件。掲載順は「主要な施策の成果」（令和7年度）の目次における関係と章の並びで定める。金額の大小では選ばない。",
+  "pillars": [
+   "総務関係",
+   "民生関係",
+   "衛生関係",
+   "経済関係",
+   "建設関係",
+   "消防関係",
+   "教育関係"
+  ]
+ },
+ "selections": [
+  {
+   "department": null,
+   "official_title": "市税等について",
+   "pillar": "総務関係",
+   "policy": "総務関係",
+   "project_id": "jp-local-341003-project-2025-city-tax",
+   "selection_basis": "第1巡目: 関係「総務関係」について、本書の掲載順で最初の章（第5「市税等について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-city-tax",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-soumu",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "社会福祉について",
+   "pillar": "民生関係",
+   "policy": "民生関係",
+   "project_id": "jp-local-341003-project-2025-social-welfare",
+   "selection_basis": "第1巡目: 関係「民生関係」について、本書の掲載順で最初の章（第23「社会福祉について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-social-welfare",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-minsei",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "保健衛生について",
+   "pillar": "衛生関係",
+   "policy": "衛生関係",
+   "project_id": "jp-local-341003-project-2025-public-health-hygiene",
+   "selection_basis": "第1巡目: 関係「衛生関係」について、本書の掲載順で最初の章（第26「保健衛生について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-public-health-hygiene",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-eisei",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "経済の振興について",
+   "pillar": "経済関係",
+   "policy": "経済関係",
+   "project_id": "jp-local-341003-project-2025-economic-promotion",
+   "selection_basis": "第1巡目: 関係「経済関係」について、本書の掲載順で最初の章（第30「経済の振興について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-economic-promotion",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-keizai",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "道路、橋りょうについて",
+   "pillar": "建設関係",
+   "policy": "建設関係",
+   "project_id": "jp-local-341003-project-2025-roads-and-bridges",
+   "selection_basis": "第1巡目: 関係「建設関係」について、本書の掲載順で最初の章（第35「道路、橋りょうについて」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-roads-and-bridges",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-kensetsu",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "消防について",
+   "pillar": "消防関係",
+   "policy": "消防関係",
+   "project_id": "jp-local-341003-project-2025-fire-service",
+   "selection_basis": "第1巡目: 関係「消防関係」について、本書の掲載順で最初の章（第50「消防について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-fire-service",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-shoubou",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "学校について",
+   "pillar": "教育関係",
+   "policy": "教育関係",
+   "project_id": "jp-local-341003-project-2025-schools",
+   "selection_basis": "第1巡目: 関係「教育関係」について、本書の掲載順で最初の章（第51「学校について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-schools",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-kyouiku",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "中枢性の強化について",
+   "pillar": "総務関係",
+   "policy": "総務関係",
+   "project_id": "jp-local-341003-project-2025-urban-centrality",
+   "selection_basis": "第2巡目: 関係「総務関係」について、本書の掲載順で2番目の章（第6「中枢性の強化について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-urban-centrality",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-soumu",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "介護保険事業について",
+   "pillar": "民生関係",
+   "policy": "民生関係",
+   "project_id": "jp-local-341003-project-2025-long-term-care-insurance",
+   "selection_basis": "第2巡目: 関係「民生関係」について、本書の掲載順で2番目の章（第24「介護保険事業について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-long-term-care-insurance",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-minsei",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "原爆被爆者対策について",
+   "pillar": "衛生関係",
+   "policy": "衛生関係",
+   "project_id": "jp-local-341003-project-2025-atomic-bomb-survivor-measures",
+   "selection_basis": "第2巡目: 関係「衛生関係」について、本書の掲載順で2番目の章（第27「原爆被爆者対策について」）を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-341003-project-series-atomic-bomb-survivor-measures",
+   "source_ids": [
+    "hiroshima-city-seika-fy2025-page",
+    "hiroshima-city-seika-fy2025-eisei",
+    "hiroshima-city-sixth-basic-plan-pdf",
+    "hiroshima-city-comprehensive-plan-page"
+   ]
+  }
+ ],
+ "updated_at": "2026-11-22",
+ "version": "1.0.0"
+}
