@@ -25,7 +25,7 @@ import projectStyles from "@/components/ProjectReview.module.css";
 export const metadata: Metadata = {
   alternates: { canonical: canonicalFor("/municipalities/okayama-prefecture") },
   title: "岡山県｜岡山県総合計画・財政・知事公約・県議会",
-  description: "岡山県総合計画の重点施策、2026年度の骨格予算、2022〜2024年度普通会計決算、伊原木隆太知事の公約29件、岡山県議会の公開記録を確認します。",
+  description: "岡山県総合計画の重点施策、2026年度一般会計当初予算、2022〜2024年度普通会計決算、伊原木隆太知事の登録済み公約、岡山県議会の公開記録を確認します。",
 };
 
 export default function OkayamaPrefecturePage() {
@@ -69,7 +69,7 @@ export default function OkayamaPrefecturePage() {
                 <span>都道府県</span><StatusBadge label="Reviewed" tone="verified" />
               </div>
               <h1>岡山県</h1>
-              <p>岡山県総合計画の分野別基本施策10系列・KPI51件、
+              <p>第4次晴れの国おかやま生き活きプランの戦略プログラム10系列・KPI85件、
                 2026年度一般会計骨格予算と2022〜2024年度普通会計決算、
                 伊原木隆太知事の公約29件、岡山県議会の公式記録を確認します。</p>
             </div>
@@ -92,9 +92,7 @@ export default function OkayamaPrefecturePage() {
             <div><p className="eyebrow">Scope</p>
               <h2 id="scope-title">政策計画・予算・実績を、登録単位と時点を分けて確認する。</h2></div>
             <div>
-              <p>岡山県総合計画は2019年10月策定、2022年12月改定です。
-                将来構想・基本計画・地域振興計画から成り、
-                基本計画と地域振興計画は2023〜2026年度を対象とします。</p>
+              <p>岡山県の最上位計画は「第4次晴れの国おかやま生き活きプラン」です。2025年3月策定で、長期構想とFY2025〜2028の4年間の行動計画から構成されます。</p>
               <p>戦略プログラム単位で重点事業10系列を登録しています。
                 分野単位の予算・決算金額は公表資料で確認できないため、
                 金額を0円で補完せず、個別指標を施策全体の総合評定に転用しません。</p>
@@ -124,13 +122,13 @@ export default function OkayamaPrefecturePage() {
               <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
               <p>知事選挙を控えて編成された骨格予算です。
                 第1号議案「令和8年度岡山県一般会計予算」は2026年3月19日に原案可決され、
-                一般会計総額819,698,359千円、府税（県税額は登録財政レコードを参照）です。
+                一般会計総額819,698,359千円です。
                 補正前の当初予算額であり、普通会計決算とは区別します。</p>
             </div>
             <div className={styles.metricGrid}>
               {[
                 { label: "一般会計当初予算（歳入総額）", record: revenue },
-                { label: "府税収入", record: tax },
+                { label: "県税収入", record: tax },
                 { label: "一般会計当初予算（歳出総額）", record: expenditure },
               ].map(({ label, record }) => (
                 <article className={styles.metricCard} key={label}>
