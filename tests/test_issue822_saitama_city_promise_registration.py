@@ -191,9 +191,16 @@ def test_results_table_was_collated_directly() -> None:
         assert len(claims) == 1
         assert claims[0]["decision"] == "accepted"
         assert claims[0]["source_ids"] == [RESULTS_ID]
-    # The pending cross-check against the prefectural term-expiry
-    # list stays visible as an open question.
-    assert any("任期満了一覧" in q for q in packet["open_questions"])
+    # The cross-check against the prefectural term-expiry list was
+    # completed on 2026-11-22: the list (as of 2025-12-18) states
+    # 2029-05-26 for the Saitama City mayor, matching the record,
+    # so it is recorded in the term_end claim and no longer open.
+    term_end_claims = [
+        claim for claim in packet["claims"] if claim["field"] == "term_end"
+    ]
+    assert "任期満了日一覧" in term_end_claims[0]["statement"]
+    assert "照合済み" in term_end_claims[0]["review_note"]
+    assert not any("未照合" in q for q in packet["open_questions"])
 
 
 def test_all_12_items_registered_verbatim_in_document_order() -> None:
