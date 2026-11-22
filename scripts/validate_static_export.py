@@ -778,7 +778,7 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "35議会", "埼玉県議会", "さいたま市議会", "川口市議会",
+            "37議会", "埼玉県議会", "さいたま市議会", "川口市議会",
             "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
             "神奈川県議会", "横浜市会", "川崎市議会",
@@ -1275,7 +1275,7 @@ def validate_chiba_cluster_export() -> list[str]:
     assemblies_page = EXPORT_ROOT / "assemblies/index.html"
     if assemblies_page.is_file():
         html = normalized_html(assemblies_page)
-        for phrase in ("35議会", "千葉県議会", "千葉市議会"):
+        for phrase in ("37議会", "千葉県議会", "千葉市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Chiba fact: {phrase}")
     for slug, phrases in {
@@ -1609,7 +1609,7 @@ def validate_hyogo_web_finish_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("35議会", "兵庫県議会", "神戸市会"):
+        for phrase in ("37議会", "兵庫県議会", "神戸市会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Hyogo fact: {phrase}")
 
@@ -1863,7 +1863,7 @@ def validate_miyagi_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("35議会", "宮城県議会", "仙台市議会"):
+        for phrase in ("37議会", "宮城県議会", "仙台市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Miyagi registered fact: {phrase}")
     for slug, phrases in (
@@ -2124,7 +2124,7 @@ def validate_kyoto_cluster_export() -> list[str]:
     assembly_index = EXPORT_ROOT / "assemblies/index.html"
     if assembly_index.is_file():
         html = normalized_html(assembly_index)
-        for phrase in ("35議会", "京都府議会", "京都市会", "unknown", "令和7年度決算は認定済み"):
+        for phrase in ("37議会", "京都府議会", "京都市会", "unknown", "令和7年度決算は認定済み"):
             if phrase not in html:
                 failures.append(f"Kyoto assembly index missing: {phrase}")
     return failures
@@ -2177,7 +2177,7 @@ def validate_hiroshima_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("35議会", "広島県議会", "広島市議会"):
+        for phrase in ("37議会", "広島県議会", "広島市議会"):
             if phrase not in html:
                 failures.append(f"Assembly directory missing Hiroshima fact: {phrase}")
     return failures
@@ -2286,7 +2286,7 @@ def validate_shizuoka_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("35議会", "静岡県議会", "静岡市議会", "浜松市議会"):
+        for phrase in ("37議会", "静岡県議会", "静岡市議会", "浜松市議会"):
             if phrase not in html:
                 failures.append(f"Assembly index missing Shizuoka fact: {phrase}")
     for slug, phrases in (
