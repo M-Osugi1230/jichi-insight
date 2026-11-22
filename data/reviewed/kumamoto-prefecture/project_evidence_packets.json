@@ -1,0 +1,962 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「こども・若者がキラキラ輝く社会づくり」（方向性「こどもたちが笑顔で育つ熊本」の施策1）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第1番目として、方向性「こどもたちが笑顔で育つ熊本」の施策1「こども・若者がキラキラ輝く社会づくり」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①「こどもまんなか熊本」の実現とこども・若者のライフステージに応じた支援、②特に支援が必要なこどもへの支援で構成される。目的は次のとおり要約した: 「こどもまんなか熊本」の実現とこども・若者のライフステージに応じた支援、特に支援が必要なこどもへの支援を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 42,090,483,000円、決算額 39,668,028,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する7ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全3指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-children-youth-shining",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-children-youth-shining",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「家庭や子育てに夢を持てる社会づくり」（方向性「こどもたちが笑顔で育つ熊本」の施策2）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第5番目として、方向性「こどもたちが笑顔で育つ熊本」の施策2「家庭や子育てに夢を持てる社会づくり」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①希望を叶える結婚・妊娠・出産への支援、②家庭のニーズに応じた子育て支援で構成される。目的は次のとおり要約した: 希望を叶える結婚・妊娠・出産への支援と、家庭のニーズに応じた子育て支援を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 2,133,752,000円、決算額 1,908,873,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する3ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全1指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-family-childrearing-dreams",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-family-childrearing-dreams",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「質の高い教育・未来を担う人材の育成」（方向性「こどもたちが笑顔で育つ熊本」の施策3）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第9番目として、方向性「こどもたちが笑顔で育つ熊本」の施策3「質の高い教育・未来を担う人材の育成」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①変化の激しい時代に対応した教育の推進、②インクルーシブ教育システムの推進と多文化共生社会の実現、③グローバル人材の育成、④県立高校の魅力向上、⑤私学の振興で構成される。目的は次のとおり要約した: 変化の激しい時代に対応した教育の推進、インクルーシブ教育システムの推進と多文化共生社会の実現、グローバル人材の育成、県立高校の魅力向上、私学の振興を行う（総合戦略の本施策の取組みは、この5つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 25,680,987,000円、決算額 22,126,092,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する8ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全5指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-quality-education-human-resources",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-quality-education-human-resources",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「「くまもとで働く」人材の確保・育成」（方向性「世界に開かれた活力あふれる熊本」の施策1）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第2番目として、方向性「世界に開かれた活力あふれる熊本」の施策1「「くまもとで働く」人材の確保・育成」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①大学等と連携した人材育成、②様々な分野の人材確保で構成される。目的は次のとおり要約した: 大学等と連携した人材育成と、様々な分野の人材確保を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 923,836,000円、決算額 728,048,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する5ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全2指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-workforce-securing-development",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-workforce-securing-development",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「世界に伍する産業拠点熊本の創出」（方向性「世界に開かれた活力あふれる熊本」の施策2）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第6番目として、方向性「世界に開かれた活力あふれる熊本」の施策2「世界に伍する産業拠点熊本の創出」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①半導体を中心とした新たな産業基盤の構築、②「くまもと版スタートアップ・エコシステム」の創出、③地域経済の振興、④DXの推進、⑤ビジネスの国際化・国際交流の促進で構成される。目的は次のとおり要約した: 半導体を中心とした新たな産業基盤の構築、「くまもと版スタートアップ・エコシステム」の創出、地域経済の振興、DXの推進、ビジネスの国際化・国際交流の促進を行う（総合戦略の本施策の取組みは、この5つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 81,510,835,000円、決算額 63,474,610,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する10ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全12指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-industrial-hub",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-industrial-hub",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「「食のみやこ熊本県」の創造」（方向性「世界に開かれた活力あふれる熊本」の施策3）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第10番目として、方向性「世界に開かれた活力あふれる熊本」の施策3「「食のみやこ熊本県」の創造」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①農林畜水産業の担い手確保・育成、②稼げる農林畜水産業の実践、③食育の推進・食文化の発展で構成される。目的は次のとおり要約した: 農林畜水産業の担い手確保・育成、稼げる農林畜水産業の実践、食育の推進・食文化の発展を行う（総合戦略の本施策の取組みは、この3つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 44,319,127,000円、決算額 28,071,254,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する7ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全9指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-food-capital",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-food-capital",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「豊かな自然の保全」（方向性「いつまでも続く豊かな熊本」の施策1）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第3番目として、方向性「いつまでも続く豊かな熊本」の施策1「豊かな自然の保全」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①水資源をはじめとした環境保全、②ゼロカーボン社会及び循環型社会の推進で構成される。目的は次のとおり要約した: 水資源をはじめとした環境保全と、ゼロカーボン社会及び循環型社会の推進を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 3,920,010,000円、決算額 2,786,143,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する4ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全2指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-nature-conservation",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-nature-conservation",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「移住定住、関係人口創出」（方向性「いつまでも続く豊かな熊本」の施策2）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第7番目として、方向性「いつまでも続く豊かな熊本」の施策2「移住定住、関係人口創出」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①移住定住、UIJターンの促進、②魅力の発信、関係人口創出で構成される。目的は次のとおり要約した: 移住定住・UIJターンの促進と、魅力の発信による関係人口の創出を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 1,157,325,000円、決算額 967,099,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する6ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全2指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-migration-related-population",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-migration-related-population",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「「緑の流域治水」を核とした創造的復興」（方向性「県民の命、健康、安全・安心を守る」の施策1）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第4番目として、方向性「県民の命、健康、安全・安心を守る」の施策1「「緑の流域治水」を核とした創造的復興」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①「緑の流域治水」の更なる推進による一日も早い安全・安心の実現、②若者が“残り・集う”産業・雇用の創出で構成される。目的は次のとおり要約した: 「緑の流域治水」の更なる推進による一日も早い安全・安心の実現と、若者が“残り・集う”産業・雇用の創出を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 107,153,053,000円、決算額 46,648,846,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する14ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全1指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-creative-reconstruction",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-creative-reconstruction",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "基本方針の4つの基本的方向性と総合戦略 第1章「施策の推進」の構成、総合戦略 第3章「重要業績評価指標（KPI）一覧」、「主要な施策の成果」の索引・概要",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-basic-policy",
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "登録単位は「くまもと新時代共創総合戦略」の施策とした。県政の最上位方針である「くまもと新時代共創基本方針」（令和6年12月策定）は4つの基本的方向性を掲げ、その具体化である総合戦略（計画期間 令和6〜9年度）は方向性の下に17の施策を配置し、第3章で施策ごとにKPI（現状 令和5年・目標 令和9年）を掲げる。決算附属書類「主要な施策の成果」も同じ体系で編集され、金額を施策単位で接続できる。基本方針が掲げる理念レベルの指標「幸せだと感じている県民の割合」は特定の施策に属さないため、施策のKPIには含めていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "総合戦略 第1章の施策見出しおよび第3章KPI一覧の施策欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "施策「災害に強い県土づくり」（方向性「県民の命、健康、安全・安心を守る」の施策2）"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "data/catalog/kumamoto_prefecture_priority_project_selection.json の selection_rule",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "4つの方向性（柱）を巡回する選定の第8番目として、方向性「県民の命、健康、安全・安心を守る」の施策2「災害に強い県土づくり」を総合戦略の掲載順に基づき選定した。金額の大小では選んでいない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "総合戦略 第1章の本施策の取組み見出し",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "本施策の取組みは①防災力の強化、②防災・減災、国土強靱化に資するインフラ整備で構成される。目的は次のとおり要約した: 防災力の強化と、防災・減災、国土強靱化に資するインフラ整備を行う（総合戦略の本施策の取組みは、この2つで構成される）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "総合戦略 第1章および「主要な施策の成果」の索引（取組みごとの所管課の表示）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "施策単位の所管部局は、総合戦略・「主要な施策の成果」のいずれにも定められていない。「主要な施策の成果」の索引は取組みごとに所管課を示すが、施策の代表部局は示さない。このため responsible_department は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "「主要な施策の成果」（令和7年度分）の本施策に属する取組みブロックの予算額・決算額欄",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-major-measures-results-fy2025"
+        ],
+        "statement": "令和7年度予算額 100,307,714,000円、決算額 58,476,443,000円は、同書に取組みブロックごとに印字された金額（千円単位）を、本施策に属する9ブロック分合計し円に換算した。同書の予算額には当初・現計の別が明示されていないため、予算額の種別は revised_budget とし、その旨を注記した。合計には「（再掲）」事業の金額も印字どおり含む。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "総合戦略（進捗公表の方針の記述）および概要版（有識者による評価の記述）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy",
+          "kumamoto-pref-strategy-summary"
+        ],
+        "statement": "施策単位の評定（達成度等）を公表した資料は特定できなかった。総合戦略は有識者等の参画による効果検証を行うとし、概要版も有識者による評価を行う旨を記すが、施策ごとの評定結果の公表物は本登録時点で確認できない。このため official_evaluation は null とした（欠損明示）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "総合戦略 第3章「重要業績評価指標（KPI）一覧」（印刷76〜79ページ）",
+        "review_note": null,
+        "source_ids": [
+          "kumamoto-pref-comprehensive-strategy"
+        ],
+        "statement": "第3章のKPI一覧から本施策の全6指標を登録した。現状（原則として令和5年、一部は令和4年・令和3年）・目標（令和9年）は同表の印字どおりとし、複合指標（小学校・中学校別など内訳のあるもの）は同表の1項目を1件として登録し、内訳は文字列で保持した。実績値は、KPIごとの実績値を一覧できる公表資料が特定できないため未登録（欠損明示）とし、全指標の達成度は評価不能とした。"
+      }
+    ],
+    "id": "evidence-jp-local-430005-project-2025-disaster-resilient-land",
+    "open_questions": [
+      "総合戦略はKPIの進捗を毎年度公表するとしているが、本登録時点（2026年11月）で、KPIごとの実績値を一覧できる公表資料（年次進捗公表物）は特定できていない。公表が確認でき次第、実績値と達成度を追記する必要がある。",
+      "「主要な施策の成果」の予算額は同書に当初・現計の別が明示されていない。県の予算資料で現計予算額との対応が確認できた場合は、金額の種別の注記を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-430005-project-2025-disaster-resilient-land",
+    "subject_type": "project"
+  }
+]
