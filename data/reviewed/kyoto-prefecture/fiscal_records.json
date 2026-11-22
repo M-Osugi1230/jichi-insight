@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-260002-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-260002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 1043260000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "第1号議案「令和8年度京都府一般会計予算」第1条および第1表の千円単位の印字値。原案は令和8年2月定例会の第1号議案「令和8年度京都府一般会計予算」として2026年3月12日に「原案可決」で議決された（府議会の賛否の状況では共産党が賛成でなく、他の会派は賛成）。知事選挙を控えた骨格予算として編成されたもので、令和8年度6月補正予算（第1号）議案の第1表「補正前の額」でも同額を確認した。府の広報資料等の億円単位の表記は丸めた額であり、千円単位の印字値を正とする。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kyoto-pref-budget-2026-bill",
+      "kyoto-pref-assembly-2026-feb-session-results"
+    ]
+  },
+  {
+    "id": "jp-local-260002-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-260002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計府税",
+    "amount_yen": 314000000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "第1号議案「令和8年度京都府一般会計予算」第1表の歳入第1款「府税」の千円単位の印字値。原案は令和8年2月定例会の第1号議案「令和8年度京都府一般会計予算」として2026年3月12日に「原案可決」で議決された（府議会の賛否の状況では共産党が賛成でなく、他の会派は賛成）。内訳12項の合計とも一致する（検算済み）。当初予算概要では百万円単位の314,000百万円とされ、千円単位の正確値は議案の第1表で確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kyoto-pref-budget-2026-bill",
+      "kyoto-pref-assembly-2026-feb-session-results"
+    ]
+  },
+  {
+    "id": "jp-local-260002-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-260002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 1043260000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "第1号議案「令和8年度京都府一般会計予算」第1条および第1表の千円単位の印字値であり、歳入総額と同額である。原案は令和8年2月定例会の第1号議案「令和8年度京都府一般会計予算」として2026年3月12日に「原案可決」で議決された（府議会の賛否の状況では共産党が賛成でなく、他の会派は賛成）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "kyoto-pref-budget-2026-bill",
+      "kyoto-pref-assembly-2026-feb-session-results"
+    ]
+  }
+]

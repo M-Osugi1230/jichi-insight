@@ -324,10 +324,10 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # parallel branches, bringing the combined
     # catalog to version 0.45.0 / 132 records; the Kyoto cluster's
     # stage 1 (Issue #932) then appended the three Kyoto City mayor
-    # records, bringing the combined catalog to version 0.46.0 /
-    # 135 records.
-    assert catalog["version"] == "0.46.0"
-    assert len(catalog["records"]) == 135
+    # records and the five Kyoto Prefecture governor records,
+    # bringing the combined catalog to version 0.47.0 / 140 records.
+    assert catalog["version"] == "0.47.0"
+    assert len(catalog["records"]) == 140
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

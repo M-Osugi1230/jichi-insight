@@ -7,6 +7,7 @@ import miyagiFinanceCatalog from "../../../data/catalog/miyagi_prefecture_financ
 import shizuokaFinanceCatalog from "../../../data/catalog/shizuoka_prefecture_finance_sources.json";
 import hiroshimaFinanceCatalog from "../../../data/catalog/hiroshima_prefecture_finance_sources.json";
 import kyotoCityFinanceCatalog from "../../../data/catalog/kyoto_city_finance_sources.json";
+import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -44,7 +45,8 @@ export type MunicipalityKey =
   | "shizuoka-prefecture"
   | "hiroshima-prefecture"
   | "hiroshima-city"
-  | "kyoto-city";
+  | "kyoto-city"
+  | "kyoto-prefecture";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -135,6 +137,12 @@ export const municipalityMeta: Record<
     name: "広島県", type: "都道府県",
     summary: "安心▷誇り▷挑戦 ひろしまビジョン（令和8年6月改定）、2026年度成立後当初予算、2022〜2024年度の普通会計決算と横田美香知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/hiroshima-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "kyoto-prefecture": {
+    name: "京都府", type: "都道府県",
+    summary: "京都府総合計画（2019年策定・2022年改定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と西脇隆俊知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/kyoto-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -281,6 +289,7 @@ export const sourceCatalog = [
   ...(shizuokaFinanceCatalog.records as SourceRecord[]),
   ...(hiroshimaFinanceCatalog.records as SourceRecord[]),
   ...(kyotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
