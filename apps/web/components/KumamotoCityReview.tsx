@@ -44,7 +44,7 @@ export function KumamotoCityReview() {
             <h1>熊本市</h1>
             <p>熊本市第8次熊本市総合計画（2022〜2026年）とアクションプラン（2024〜2027年度）を現行計画として、
               第8次熊本市総合計画の政策評価・KPIは履歴として区別し、
-              当初予算・決算・市長公約・市会記録を一次資料で確認します。</p>
+              当初予算・決算・市長公約・市議会記録を一次資料で確認します。</p>
           </div>
           <dl className={styles.heroFacts}>
             <div><dt>重点事業</dt><dd>{projects.length}系列</dd></div>
@@ -164,7 +164,7 @@ export function KumamotoCityReview() {
           <Link href="/municipalities/kumamoto-prefecture">熊本県</Link>
           <Link href="/projects#kumamoto-city">重点事業</Link>
           <Link href="/promises#kumamoto-city">市長公約</Link>
-          <Link href="/assemblies/kumamoto-city">熊本市会</Link>
+          <Link href="/assemblies/kumamoto-city">熊本市議会</Link>
         </nav>
       </div></main>
       <SiteFooter />
