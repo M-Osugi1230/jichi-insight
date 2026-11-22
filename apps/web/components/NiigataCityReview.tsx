@@ -42,8 +42,8 @@ export function NiigataCityReview() {
           <div><div className={styles.heroMeta}><span>政令指定都市</span>
             <StatusBadge label="Reviewed" tone="verified" /></div>
             <h1>新潟市</h1>
-            <p>新潟市総合計画2030（2026〜2050年）と前期実施計画（2024〜2027年度）を現行計画として、
-              新潟市総合計画2030の政策評価・KPIは履歴として区別し、
+            <p>新潟市総合計画2030は2023〜2030年度を計画期間とし、8分野16政策・45施策と10重点戦略で構成されます。
+              令和7年度進捗状況に基づく重点戦略と成果指標を表示します。
               当初予算・決算・市長公約・市会記録を一次資料で確認します。</p>
           </div>
           <dl className={styles.heroFacts}>
@@ -60,7 +60,7 @@ export function NiigataCityReview() {
         />
         <section className={styles.scope} aria-labelledby="plan-title">
           <div><p className="eyebrow">Plan review</p>
-            <h2 id="plan-title">新潟市総合計画2030・前期実施計画と新潟市総合計画2030の政策評価</h2>
+            <h2 id="plan-title">新潟市総合計画2030と令和7年度進捗状況</h2>
             <p>確認日：{niigataCityPlanReview.reviewed_at}</p></div>
           <div>
             <p>現行の新潟市総合計画2030・前期実施計画と、新潟市総合計画2030の政策評価を同一視しません。
@@ -69,7 +69,7 @@ export function NiigataCityReview() {
             {niigataCityPlanReview.records.map((record) => (
               <article key={record.id}>
                 <h3>{record.title}</h3><p>{record.statement}</p>
-                <p>根拠資料：{record.evidence_location}</p>
+                
               </article>
             ))}
           </div>
@@ -108,8 +108,8 @@ export function NiigataCityReview() {
         </section>
         <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
           <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
-            <h2 id="projects-title">新潟市総合計画2030政策10系列・KPI21件</h2>
-            <p>新潟市総合計画2030の政策10系列・KPI21件と令和7年度進捗状況を表示します。
+            <h2 id="projects-title">新潟市総合計画2030・重点戦略10系列</h2>
+            <p>重点戦略10系列と令和7年度進捗状況を表示します。
               政策単位の予算額は公表されていないため補完しません。
               <Link href="/projects#niigata-city"> 重点事業一覧を見る</Link></p></div>
           <div className={projectStyles.cards}>
@@ -144,13 +144,11 @@ export function NiigataCityReview() {
         </section>
         <section className={styles.scope} aria-labelledby="assembly-title">
           <div><p className="eyebrow">Assembly</p>
-            <h2 id="assembly-title">新潟市会</h2></div>
+            <h2 id="assembly-title">新潟市議会</h2></div>
           <div><p>議員定数{assembly.assembly.seat_count}人。
             登録議案{assembly.proposals.length}件・会派別賛否{assembly.factionVotes.length}件、
             政務活動費{assembly.expenses.length}件・視察{assembly.trips.length}件。</p>
-            <p>令和8年9月市会の議員別賛否385件は無所属7人分のみです。
-              他の会派所属議員の個人別賛否は市会だより公表後に追加予定であり、
-              登録済みの会派別賛否から推測しません。令和7年度決算は認定済みです。</p>
+            <p>令和8年9月定例会の議案・表決・会派別賛否は登録済みの公式資料の範囲で表示します。個人別賛否が未公表の議案については推測しません。</p>
             <p><Link href="/assemblies/niigata-city">議案・議決と公開資料を見る</Link></p></div>
         </section>
         <section className={styles.scope} aria-labelledby="sources-title">
