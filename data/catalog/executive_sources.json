@@ -1,5 +1,5 @@
 {
-  "version": "0.45.0",
+  "version": "0.46.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1850,6 +1850,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "候補者提出原稿をそのまま掲載した全1ページの公式選挙公報。横田みか候補欄は最上段。県選管の公式ページ「令和7年執行 広島県知事選挙」（2025年11月10日掲載）から直接取得した（1,600,375バイト）。候補者欄は画像主体で、PDFのテキスト抽出は空白を除き0字（実測）であり候補者欄から文字は抽出されないため、公約文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。候補者提出の音声読み上げ対応データの公表は、県選管の選挙ページ上および検索で確認できなかったため、転記の突合には用いていない。"
+    },
+    {
+      "id": "kyoto-pref-governor",
+      "municipality_key": "kyoto-prefecture",
+      "organization": "京都府",
+      "category": "executive",
+      "title": "知事の部屋 わたしのプロフィール | 京都府",
+      "url": "https://www.pref.kyoto.jp/chiji/profile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "京都府公式の知事プロフィール。西脇隆俊が現職知事であり、略歴に「平成30年4月京都府知事（1期目）」「令和4年4月京都府知事（2期目）」「令和8年4月京都府知事（3期目）」と明記する。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "kyoto-pref-term-list",
+      "municipality_key": "kyoto-prefecture",
+      "organization": "京都府選挙管理委員会",
+      "category": "election",
+      "title": "京都府知事・市町村長・議会議員任期満了日一覧［各種選挙のお知らせ］",
+      "url": "https://www.pref.kyoto.jp/senkyo/ninki.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "京都府選挙管理委員会の公式ページ（令和8年4月30日現在、2026年10月23日更新）。京都府の行の知事欄に任期満了日として「12年 4月15日」（令和12年4月15日）が明記されている。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "kyoto-pref-governor-election-2026-results",
+      "municipality_key": "kyoto-prefecture",
+      "organization": "京都府選挙管理委員会",
+      "category": "election",
+      "title": "各種選挙の結果（京都府選挙管理委員会）",
+      "url": "https://www.pref.kyoto.jp/senkyo/kekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年4月5日執行の京都府知事選挙の結果公表ページ（2026年8月21日更新）。リンク先の開票結果（開票了速報）の京都府計欄に、にしわき隆俊412,583票・浜田聡181,998票・藤井伸生149,330票、有効投票743,911票、投票総数753,029票が印字されている。投票結果の京都府計では投票率37.43%。2026-11-22にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "kyoto-pref-governor-election-2026-gazette",
+      "municipality_key": "kyoto-prefecture",
+      "organization": "京都府選挙管理委員会",
+      "category": "election",
+      "title": "京都府公報 号外第13号（令和8年3月19日）",
+      "url": "https://www.pref.kyoto.jp/kouhou/documents/kouho_697_1.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "京都府選挙管理委員会告示第47号「京都府知事選挙の期日を、次のように定める。令和8年3月19日…令和8年4月5日」を収録する府公報。2026年知事選挙の告示日が2026年3月19日であることを府選管自身の告示で直接確認した。2026-11-22にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "kyoto-pref-governor-inauguration-2026",
+      "municipality_key": "kyoto-prefecture",
+      "organization": "京都府",
+      "category": "executive",
+      "title": "令和8年4月16日知事就任記者会見 | 京都府",
+      "url": "https://www.pref.kyoto.jp/koho/kaiken/260416.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "3期目の就任に当たる2026年4月16日の知事就任記者会見の府公式ページ。府民だより2026年5月号も「4月16日、…第53代京都府知事として3期目の登庁式に臨みました」とする。2026-11-22に直接確認した。"
     }
   ]
 }
