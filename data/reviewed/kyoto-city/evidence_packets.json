@@ -61,5 +61,25 @@
       "より細かい単位の確定決算額を追加する場合は、この億円表示値を上書きせず精度・source roleを明示する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kyoto-city-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-261009-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度の京都市一般会計当初予算の市税は356,307,000,000円。",
+        "source_ids": [
+          "kyoto-city-budget-explanation-fy2026",
+          "kyoto-city-budget-council-results-fy2026"
+        ],
+        "location_note": "議第1号の予算に関する説明書の歳入歳出総括表（歳入第1款市税）、および令和8年2月市会審議結果総括表（2026年3月24日議決・原案可決）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。原案可決のため修正による増減はない。歳入・歳出の総額1,007,967,000千円も説明書で併せて確認し、既登録の総額レコードと一致する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]

@@ -1725,5 +1725,57 @@
       "松井候補の公式サイト（公報に www.matsui.hiroshima.jp の記載あり）に公報欄の項目の詳細な政策資料が掲載されていたかは、選挙期間中の保存では確認できていない。詳細資料の安定した所在が特定できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kyoto-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-261009-executive-2024-02-25",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "京都市の現市長は松井 孝治である。",
+        "source_ids": [
+          "kyoto-city-mayor-election-2024-results",
+          "kyoto-city-mayor-history"
+        ],
+        "location_note": "市公式『歴代市長一覧』の第27代の欄および市選挙管理委員会の開票結果の当選人欄。",
+        "decision": "accepted",
+        "review_note": "両出典とも松井孝治を現市長として記載する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "京都市長選挙は2024年2月4日に執行され、松井こうじが177,454票を得て当選した。",
+        "source_ids": [
+          "kyoto-city-mayor-election-2024-results"
+        ],
+        "location_note": "市選挙管理委員会の開票結果（京都市計）の候補者別得票数。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計468,016票（松井177,454票・福山和人161,203票・村山しょうえい72,613票・二之湯真士54,430票・高家悠2,316票）とも整合する。"
+      },
+      {
+        "field": "term_start",
+        "statement": "松井孝治市長の現任期は2024年2月25日に始まった。",
+        "source_ids": [
+          "kyoto-city-mayor-history"
+        ],
+        "location_note": "市公式『歴代市長一覧』の第27代松井孝治の就任期間欄。",
+        "decision": "accepted",
+        "review_note": "就任日（令和6年2月25日）が明記されている。前任期の満了（2024年2月24日）の翌日であり、公職選挙法第259条ただし書の任期起算とも整合する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "松井孝治市長の現任期は2028年2月24日に満了する。",
+        "source_ids": [
+          "kyoto-pref-mayor-term-list"
+        ],
+        "location_note": "京都府選挙管理委員会『京都府知事・市町村長・議会議員任期満了日一覧』（令和8年4月30日現在）の京都市長の行。",
+        "decision": "accepted",
+        "review_note": "任期満了日（令和10年2月24日）が明記されている。"
+      }
+    ],
+    "open_questions": [
+      "2024年京都市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #930）で確認済みであり、段階3で転記・接続する。段階1では manifesto_source_ids を未接続とする。"
+    ],
+    "review_status": "reviewed"
   }
 ]

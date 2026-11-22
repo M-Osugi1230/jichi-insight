@@ -1,5 +1,5 @@
 {
-  "version": "0.45.0",
+  "version": "0.46.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1850,6 +1850,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "候補者提出原稿をそのまま掲載した全1ページの公式選挙公報。横田みか候補欄は最上段。県選管の公式ページ「令和7年執行 広島県知事選挙」（2025年11月10日掲載）から直接取得した（1,600,375バイト）。候補者欄は画像主体で、PDFのテキスト抽出は空白を除き0字（実測）であり候補者欄から文字は抽出されないため、公約文はPDFの描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。候補者提出の音声読み上げ対応データの公表は、県選管の選挙ページ上および検索で確認できなかったため、転記の突合には用いていない。"
+    },
+    {
+      "id": "kyoto-city-mayor-election-2024-results",
+      "municipality_key": "kyoto-city",
+      "organization": "京都市選挙管理委員会",
+      "category": "election",
+      "title": "京都市長選挙開票結果（令和6年2月4日執行）",
+      "url": "https://www.city.kyoto.lg.jp/senkyo/page/0000324183.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2024年2月4日執行の京都市長選挙の開票結果（京都市計）を公表する市選挙管理委員会の公式ページ。候補者別得票数に松井こうじ177,454票・当選、有効投票468,016票が印字される。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "kyoto-city-mayor-history",
+      "municipality_key": "kyoto-city",
+      "organization": "京都市",
+      "category": "official_profile",
+      "title": "歴代市長一覧（京都市公式サイト）",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000033357.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "第27代に松井孝治を掲げ、就任期間を『令和6年2月25日～』とし、現職であることを示す。2026-11-22に直接確認した。"
+    },
+    {
+      "id": "kyoto-pref-mayor-term-list",
+      "municipality_key": "kyoto-city",
+      "organization": "京都府選挙管理委員会",
+      "category": "election",
+      "title": "京都府知事・市町村長・議会議員任期満了日一覧（京都府選挙管理委員会）",
+      "url": "https://www.pref.kyoto.jp/senkyo/ninki.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "京都市長の任期満了日が令和10年2月24日と明記される（令和8年4月30日現在・2026年10月23日更新の一覧）。2026-11-22に直接確認した。"
     }
   ]
 }
