@@ -1,5 +1,5 @@
 {
-  "version": "0.50.0",
+  "version": "0.51.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2032,6 +2032,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2026年10月16日更新の選挙前の版。新潟市長欄は旧任期（令和8年11月17日満了・連続就任回数2）の記載のままで、新任期の満了日（2030年11月17日）の明記は一覧の次回更新で照合する。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-pref-governor",
+      "municipality_key": "niigata-prefecture",
+      "organization": "新潟県",
+      "category": "executive",
+      "title": "知事プロフィール - 新潟県ホームページ",
+      "url": "https://www.pref.niigata.lg.jp/sec/hisho/chijiprofile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "新潟県公式の知事プロフィール（2026年6月10日更新）。花角英世が現職知事であり、職歴の末尾に「令和8年6月 新潟県知事（3期目）」と明記する。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-pref-governor-term-list",
+      "municipality_key": "niigata-prefecture",
+      "organization": "新潟県選挙管理委員会",
+      "category": "election",
+      "title": "任期満了日（定数）一覧（新潟県選挙管理委員会）",
+      "url": "https://www.pref.niigata.lg.jp/site/senkyo/1198018603173.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "新潟県選挙管理委員会の公式ページ（2026年10月16日更新）。新潟県知事の行に「花角英世 R12年6月9日、連続就任回数3」と任期満了日（2030年6月9日）が明記されている。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "niigata-pref-governor-election-2026-results",
+      "municipality_key": "niigata-prefecture",
+      "organization": "新潟県選挙管理委員会",
+      "category": "election",
+      "title": "令和8年5月31日執行 新潟県知事選挙（投・開票結果）",
+      "url": "https://www.pref.niigata.lg.jp/site/senkyo/r8chijisen-kekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2026年5月31日執行の新潟県知事選挙の投・開票結果を公表する県選挙管理委員会の公式ページ。開票結果の県計欄にはなずみ英世554,012票・土田竜吾230,721票・安中さとし43,089票、得票数計827,822票が印字され、投票結果の県計では投票率47.40%。2026-11-23に直接確認した。"
     }
   ]
 }

@@ -104,6 +104,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-150002": "niigata-prefecture",
   "jp-local-151009": "niigata-city",
   "jp-local-261009": "kyoto-city",
   "jp-local-340006": "hiroshima-prefecture",
