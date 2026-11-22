@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-23",
+  "assembly_id": "jp-local-430005-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-430005-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿（会派別）を県議会公式サイトで公開（2026年8月27日更新、現員47名）。議員名簿PDF（連絡先・選挙区・期数入り）も公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿で7会派と無所属3名の構成を公開。会期時点の人数は自由民主党35名、立憲民主連合3名、公明党3名、新社会党1名、参政党1名、熊本維新の会1名、無所属3名で、採決結果表の会派区分とも一致する。なお会派は所属政党とは一致しない場合がある（例：参政党所属の南部隼平議員は自由民主党会派に所属）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "常任委員会（6）・議会運営委員会・特別委員会（4）の概要と委員名簿を委員会ページで公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "議決結果ページで、会期ごとに議案番号・件名・議決日・議決結果を公開。報告37件は件名のみの掲載。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派単位に集計した賛否は公表されていない（本登録でも会派別賛否の集約は行っていない）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "「議案等の採決結果表」PDFで、全議員の記号（○＝賛成・認定・採択、×＝反対・不採択、●＝継続、△＝棄権、議＝議長、除＝除斥、欠＝欠席、凡例付き）と出席者数・議決者数・賛成者数・反対者数・継続審査者数を公開。これは本会議の表決そのものの事後記録であり、採決前の態度表明の集約ではない。表決方法は公表資料に記載がない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分の収支報告書（別記第4号様式）を、議員48名分（年度途中で退職した1名を含む）と会派1件分、および統合版PDFで公開。交付額は議員により3,600,000円と3,360,000円の2種がある（原票の印字どおり）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "証拠書類の写しはWeb公開されておらず（公表は別記第4号様式のみ）、県議会図書室での閲覧のみである。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "「委員会による視察の概要」ページで年度別に視察先・実施日・視察者・概要を公開。令和8年度分は常任委員会の管内視察6件のみ（2026年11月16日更新時点）。費用の公表はない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "本会議録は会期ごとにPDFで公表され、会議録検索システムも提供されている。ただし令和8年8月定例会分は2026年11月23日時点で未公表（収録は令和8年6月定例会まで）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継（ライブ・録画）を県議会公式サイトで提供。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "令和8年8月定例会の議決結果ページに請願の掲載はなく、同会期に議決された請願は確認できなかった。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "kumamoto-pref-assembly-members-2026",
+   "kumamoto-pref-assembly-proposals-2026-08",
+   "kumamoto-pref-assembly-saiketsu-2026-08",
+   "kumamoto-pref-assembly-seimu-page",
+   "kumamoto-pref-assembly-inspections-2026",
+   "kumamoto-pref-assembly-minutes"
+  ]
+ }
+]
