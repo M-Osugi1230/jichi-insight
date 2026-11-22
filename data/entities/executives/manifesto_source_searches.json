@@ -964,5 +964,36 @@
     ],
     "review_status": "reviewed",
     "confidence": "medium"
+  },
+  {
+    "id": "manifesto-source-search-niigata-pref-2026",
+    "executive_term_id": "jp-local-150002-executive-2026-06-10",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "niigata-pref-governor-election-2026-results",
+      "niigata-pref-governor-election-list",
+      "niigata-pref-gazette-2026-05-14-extra",
+      "niigata-city-governor-election-2026-overview",
+      "niigata-pref-governor-term-list",
+      "niigata-pref-governor"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2026年5月31日執行の新潟県知事選挙の選挙公報について、2026-11-23に公式経路を再探索した。県選挙管理委員会の投・開票結果ページ（2026年6月22日更新）の「選挙の記録」欄は「作成中です。」のままで選挙公報へのリンクはなく、県知事選挙執行一覧にも公報への導線はない。令和4年（2022年）選挙の結果ページには完成した「選挙の記録」PDFがリンクされているが（2023年12月28日更新、選挙の約19か月後に公表）、2026年分は未公表である。選挙期間中のみ開設された特設サイト（niigatachijisen2026.pref.niigata.lg.jp、2026年6月5日まで開設予定）と開票速報サイト（websenkyo.pref.niigata.lg.jp/26chiji/）はいずれも現在到達不可で、Wayback Machineにも特設サイトのスナップショットはなく、県サイトの選挙公報添付ファイルの保存も確認できない。国立国会図書館WARPにも特設サイトの収集はない。新潟市選挙管理委員会の公式ページによれば、選挙公報は新聞折込と戸別配布（ポスティング）による紙配布と備え置きのみで、Web版PDFの掲載はなく、お知らせ版（点字版・音声版）も希望者への送付による。新潟県報号外1（令和8年5月14日）の選挙管理委員会告示第55号で選挙公報の掲載順序を定めるくじが指定されており、選挙公報が発行されたこと自体は公式に裏付けられるが、県報は公報の本文を掲載しない。国政選挙向けの音声読み上げ用選挙公報ページは存在するが、知事選挙向けの同種の公表は確認できなかった。一般Web検索で得られるのは候補者の政策発表を伝える報道のみで、候補者自身の公式公表物ではないため原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公約が存在しないという主張ではない。",
+    "next_actions": [
+      "県選挙管理委員会「選挙の記録」（2026年知事選挙分）の完成・公表時に選挙公報の収録有無を確認し、収録されていれば原典として登録する（2022年分は選挙の約19か月後に公表された実績がある）",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や選挙公報の複写が特定できれば、原典として登録し直す",
+      "2030年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
