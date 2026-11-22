@@ -770,7 +770,7 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "27議会", "埼玉県議会", "さいたま市議会", "川口市議会",
+            "29議会", "埼玉県議会", "さいたま市議会", "川口市議会",
             "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
             "神奈川県議会", "横浜市会", "川崎市議会",
@@ -1267,7 +1267,7 @@ def validate_chiba_cluster_export() -> list[str]:
     assemblies_page = EXPORT_ROOT / "assemblies/index.html"
     if assemblies_page.is_file():
         html = normalized_html(assemblies_page)
-        for phrase in ("27議会", "千葉県議会", "千葉市議会"):
+        for phrase in ("29議会", "千葉県議会", "千葉市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Chiba fact: {phrase}")
     for slug, phrases in {
@@ -1601,7 +1601,7 @@ def validate_hyogo_web_finish_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("27議会", "兵庫県議会", "神戸市会"):
+        for phrase in ("29議会", "兵庫県議会", "神戸市会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Hyogo fact: {phrase}")
 
@@ -1855,7 +1855,7 @@ def validate_miyagi_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("27議会", "宮城県議会", "仙台市議会"):
+        for phrase in ("29議会", "宮城県議会", "仙台市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Miyagi registered fact: {phrase}")
     for slug, phrases in (
@@ -2057,6 +2057,59 @@ def _shizuoka_scoped_text(html_text: str, attribute: str, value: str) -> str | N
     return "".join(parser.text_parts) if parser.found else None
 
 
+def validate_hiroshima_cluster_export() -> list[str]:
+    """Verify the published Hiroshima pair from actual reviewed records.
+
+    Section extraction uses HTMLParser depth tracking, never a non-greedy
+    closing-section regex (nested sections are common in project cards).
+    """
+    failures: list[str] = []
+    for slug, section_ids in {
+        "hiroshima-prefecture": (
+            "plan-title", "finance-headline-title", "projects-title",
+            "governor-title", "assembly-title",
+        ),
+        "hiroshima-city": (
+            "plan-title", "finance-headline-title", "projects-title",
+            "mayor-title", "assembly-title",
+        ),
+    }.items():
+        path = EXPORT_ROOT / "municipalities" / slug / "index.html"
+        if not path.is_file():
+            failures.append(f"Hiroshima municipality page missing: {slug}")
+            continue
+        html = normalized_html(path)
+        for section_id in section_ids:
+            if _shizuoka_scoped_text(html, "aria-labelledby", section_id) is None:
+                failures.append(f"{slug} missing section {section_id}")
+        municipality = load_json(ROOT / "data" / "reviewed" / slug / "municipality.json")
+        if municipality["data_status"] != "reviewed":
+            failures.append(f"{slug} must have reviewed municipality identity")
+        for record in load_json(ROOT / "data" / "reviewed" / slug / "projects.json"):
+            if record["review_status"] == "reviewed":
+                body = _shizuoka_scoped_text(html, "id", "priority-projects")
+                if body is None or record["official_title"] not in body:
+                    failures.append(f"{slug} missing project title: {record['official_title']}")
+        if municipality["official_code"] not in html:
+            # The discovery panel uses officialCode internally, not visible text.
+            # A missing printed code is therefore not a failure.
+            pass
+
+    prefecture_page = EXPORT_ROOT / "municipalities/hiroshima-prefecture/index.html"
+    if prefecture_page.is_file():
+        html = normalized_html(prefecture_page)
+        for phrase in ("安心▷誇り▷挑戦 ひろしまビジョン", "横田美香", "1,151,390,000千円", "可決"):
+            if phrase not in html:
+                failures.append(f"Hiroshima prefecture missing registered fact: {phrase}")
+    index = EXPORT_ROOT / "assemblies/index.html"
+    if index.is_file():
+        html = normalized_html(index)
+        for phrase in ("29議会", "広島県議会", "広島市議会"):
+            if phrase not in html:
+                failures.append(f"Assembly directory missing Hiroshima fact: {phrase}")
+    return failures
+
+
 def validate_shizuoka_cluster_export() -> list[str]:
     failures: list[str] = []
     pages = {
@@ -2160,7 +2213,7 @@ def validate_shizuoka_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("27議会", "静岡県議会", "静岡市議会", "浜松市議会"):
+        for phrase in ("29議会", "静岡県議会", "静岡市議会", "浜松市議会"):
             if phrase not in html:
                 failures.append(f"Assembly index missing Shizuoka fact: {phrase}")
     for slug, phrases in (
@@ -2189,6 +2242,7 @@ def main() -> int:
     validate_hyogo_web_finish_data_facts()
     validate_miyagi_cluster_data_facts()
     validate_shizuoka_cluster_data_facts()
+    failures.extend(validate_hiroshima_cluster_export())
     required_files = (
         set(REQUIRED_FILES)
         | published_required_files()
@@ -2201,6 +2255,10 @@ def main() -> int:
         | miyagi_cluster_project_detail_files()
         | shizuoka_cluster_project_detail_files()
         | {
+            "municipalities/hiroshima-prefecture/index.html",
+            "municipalities/hiroshima-city/index.html",
+            "assemblies/hiroshima-prefecture/index.html",
+            "assemblies/hiroshima-city/index.html",
             "municipalities/shizuoka-prefecture/index.html",
             "municipalities/shizuoka-city/index.html",
             "municipalities/hamamatsu-city/index.html",
