@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 28
+    assert len(searches) == 29
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -62,6 +62,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-220001-executive-2024-05-26",
         "jp-local-221309-executive-2023-05-01",
         "jp-local-221007-executive-2023-04-13",
+        "jp-local-341002-executive-2023-04-12",
         "jp-local-340006-executive-2025-11-29",
     }
 
@@ -76,16 +77,16 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Twenty-five searches have registered a primary source (Fukuoka
+    # Twenty-six searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
     # Saitama Prefecture, Saitama City, Kawaguchi City, Chiba
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
-    # Hamamatsu City, Shizuoka City and Hiroshima Prefecture, each
-    # closed by its
-    # official election bulletin (the Sendai and Shizuoka City
+    # Hamamatsu City, Shizuoka City, Hiroshima Prefecture and
+    # Hiroshima City, each closed by its official election
+    # bulletin (the Sendai, Shizuoka City and Hiroshima City
     # bulletins survive only as archived copies of the cities'
     # official election-period URLs);
     # Kawasaki's bulletin is registered as reprinted in the city

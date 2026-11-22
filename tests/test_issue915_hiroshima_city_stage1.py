@@ -272,10 +272,13 @@ def test_hiroshima_mayor_term_and_votes() -> None:
     # Election Commission's official list of mayoral terms.
     assert term["term_end"] == "2027-04-11"
     assert term["election_date"] == "2023-04-09"
-    # Stage 1 leaves the manifesto unconnected: the 2023 election
-    # bulletin is not on the city's current site and its survival
-    # is re-investigated at stage 3.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 left the manifesto unconnected (the 2023 election
+    # bulletin is not on the city's current site); stage 3
+    # (Issue #921) located the Wayback Machine capture of the
+    # city's official election-period URL and connected it.
+    assert term["manifesto_source_ids"] == [
+        "hiroshima-city-mayor-election-2023-bulletin"
+    ]
 
     packets = load_json("data/entities/executives/evidence_packets.json")
     packet = next(p for p in packets if p["subject_id"] == term["id"])
