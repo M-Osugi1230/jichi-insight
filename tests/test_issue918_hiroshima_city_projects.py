@@ -6,7 +6,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
-MID = "jp-local-341003"
+MID = "jp-local-341002"
 SOURCES_PATH = ROOT / "data/catalog/hiroshima_city_project_sources.json"
 SELECTION_PATH = ROOT / "data/catalog/hiroshima_city_priority_project_selection.json"
 PROJECTS_PATH = ROOT / "data/reviewed/hiroshima-city/projects.json"
@@ -23,16 +23,16 @@ D7 = "教育関係"
 PILLARS = [D1, D2, D3, D4, D5, D6, D7]
 
 EXPECTED_IDS = [
-    "jp-local-341003-project-2025-city-tax",
-    "jp-local-341003-project-2025-social-welfare",
-    "jp-local-341003-project-2025-public-health-hygiene",
-    "jp-local-341003-project-2025-economic-promotion",
-    "jp-local-341003-project-2025-roads-and-bridges",
-    "jp-local-341003-project-2025-fire-service",
-    "jp-local-341003-project-2025-schools",
-    "jp-local-341003-project-2025-urban-centrality",
-    "jp-local-341003-project-2025-long-term-care-insurance",
-    "jp-local-341003-project-2025-atomic-bomb-survivor-measures",
+    "jp-local-341002-project-2025-city-tax",
+    "jp-local-341002-project-2025-social-welfare",
+    "jp-local-341002-project-2025-public-health-hygiene",
+    "jp-local-341002-project-2025-economic-promotion",
+    "jp-local-341002-project-2025-roads-and-bridges",
+    "jp-local-341002-project-2025-fire-service",
+    "jp-local-341002-project-2025-schools",
+    "jp-local-341002-project-2025-urban-centrality",
+    "jp-local-341002-project-2025-long-term-care-insurance",
+    "jp-local-341002-project-2025-atomic-bomb-survivor-measures",
 ]
 
 # Stage 3 (Issue #921) linked five of Mayor Matsui's fourteen
@@ -40,14 +40,14 @@ EXPECTED_IDS = [
 # low / inferred; the stage-3 test pins the forward links).
 _MAYOR_TERM = "jp-local-341002-executive-2023-04-12"
 EXPECTED_PROMISE_LINKS = {
-    "jp-local-341003-project-2025-social-welfare": [
+    "jp-local-341002-project-2025-social-welfare": [
         f"{_MAYOR_TERM}-promise-006",
         f"{_MAYOR_TERM}-promise-007",
     ],
-    "jp-local-341003-project-2025-economic-promotion": [
+    "jp-local-341002-project-2025-economic-promotion": [
         f"{_MAYOR_TERM}-promise-005",
     ],
-    "jp-local-341003-project-2025-urban-centrality": [
+    "jp-local-341002-project-2025-urban-centrality": [
         f"{_MAYOR_TERM}-promise-001",
         f"{_MAYOR_TERM}-promise-002",
     ],
@@ -91,8 +91,8 @@ EXPECTED_POLICY_AREAS = [
 # printed expenditure total covers the whole chapter). Every other
 # chapter stays unregistered instead of summing partial figures.
 EXPECTED_AMOUNTS = {
-    "jp-local-341003-project-2025-urban-centrality": 68519000,
-    "jp-local-341003-project-2025-long-term-care-insurance": 108090374000,
+    "jp-local-341002-project-2025-urban-centrality": 68519000,
+    "jp-local-341002-project-2025-long-term-care-insurance": 108090374000,
 }
 
 
