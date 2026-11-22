@@ -1,0 +1,104 @@
+[
+ {
+  "as_of": "2026-11-22",
+  "assembly_id": "jp-local-341002-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-341002-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "member_roster",
+    "note": "議員名簿は選挙区別一覧・会派別一覧・50音順一覧で公表されている。選挙区別一覧には区ごとの定数と現員数が示され、現員は合計51人（定数54人、欠員3人）。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/giin-shoukai/1010261.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別一覧で会派構成が公表されている。議決時点の構成は賛否表の会派別議員名簿（13会派・51人）による。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/giin-shoukai/1010248.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "「委員会の種類」のページに常任委員会・特別委員会・議会運営委員会の構成（委員長・副委員長・委員名）が公表されている。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/1036241/1010277.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会議結果のページに会期ごとの議案番号・件名・議決結果が公表されている。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/nittei/1027907/1053686.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会期ごとに「議案と議決結果」PDFで会派別の賛否（○賛成・×反対）が公表される。市はこれを「各会派の賛否態度」と呼んでおり、事後の表決記録かどうかは、会議録の収録が令和8年第2回定例会分までのため当会期分については確認できなかった。",
+    "source_url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/053/686/260925.pdf"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない。公表の単位は会派別までである（議長が表決に参加しない旨のみ賛否表に注記される）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分は13会派の収支報告書が会派別ページで公開されている。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/koukai/1027922/1050427/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収証書の写しが会派別ページで費目別PDFとして公開されている。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/koukai/1027922/1050427/index.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察について、報告書または一覧の形での公式公表は確認できなかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "本会議・委員会の会議録が会議録検索システムで公表されている。ただし2026年11月22日時点で収録は令和8年第2回定例会（2026年3月）分までで、第4回定例会・第5回臨時会分は未収録である。",
+    "source_url": "https://hiroshima.gijiroku.com/voices/index.asp"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議の録画映像が会議録検索システムで公開されている。",
+    "source_url": "https://hiroshima.gijiroku.com/voices/index.asp"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "会議結果のページに請願・陳情の取扱いが掲載される。令和8年第4回定例会では請願17件・陳情74件の閉会中継続審査が決定され、個別の結論は出ていない。",
+    "source_url": "https://www.city.hiroshima.lg.jp/gikai/nittei/1027907/1053686.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "hiroshima-city-assembly-term-list",
+   "hiroshima-city-assembly-faction-roster",
+   "hiroshima-city-assembly-committees",
+   "hiroshima-city-assembly-results-2026-09",
+   "hiroshima-city-assembly-votes-2026-09",
+   "hiroshima-city-assembly-seimu-2025-index",
+   "hiroshima-city-assembly-minutes-search"
+  ]
+ }
+]
