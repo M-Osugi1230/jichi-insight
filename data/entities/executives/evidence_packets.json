@@ -1608,5 +1608,67 @@
       "2024年静岡県知事選挙の選挙公報は県選管の公式PDFが現存するが、候補者欄は画像主体（テキスト抽出は実質なし）のため、公約レコードの登録は静岡クラスターの公約段階で目視転記により判断し、本段階では manifesto_source_ids を空としている。第21回選で候補者提出の音声読み上げ対応データが公表されたかは未確認であり、公約段階で確認する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-341002-executive-2023-04-12",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "広島市の現市長は松井 一實である。",
+        "source_ids": [
+          "hiroshima-city-mayor-election-2023-results",
+          "hiroshima-city-mayor-history"
+        ],
+        "location_note": "市公式『歴代広島市長』の第39代の欄および選挙の記録（別冊3）の当選人欄。",
+        "decision": "accepted",
+        "review_note": "両出典とも松井一實を現市長として記載する。氏名表記は市公式の『一實』を採る（報道では『一実』も混在する）。"
+      },
+      {
+        "field": "election_date",
+        "statement": "広島市長選挙は2023年4月9日に執行され、松井かずみが258,336票を得て当選した。",
+        "source_ids": [
+          "hiroshima-city-mayor-election-2023-results"
+        ],
+        "location_note": "選挙の記録（別冊3）広島市長選挙の開票結果（候補者別得票数）。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計323,117票（松井258,336票・高見あつみ36,595票・大山宏28,186票）とも整合する。Wikipedia の当該選挙記事には295,038票とする箇所があるが、市公式の開票結果が正であり採用しない。"
+      },
+      {
+        "field": "term_start",
+        "statement": "松井一實市長の現任期は2023年4月12日に始まった。",
+        "source_ids": [
+          "hiroshima-city-mayor-history"
+        ],
+        "location_note": "市公式『歴代広島市長』の第39代松井一實の就任欄。",
+        "decision": "accepted",
+        "review_note": "就任日（令和5年4月12日）が明記されている。前任期の満了（2023年4月11日）の翌日であり、公職選挙法第259条ただし書の任期起算とも整合する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "松井一實市長の現任期は2027年4月11日に満了する。",
+        "source_ids": [
+          "hiroshima-pref-mayor-term-list"
+        ],
+        "location_note": "広島県選挙管理委員会『市町長及び議会議員の任期満了日等一覧』（令和8年7月7日現在）の広島市長の行。",
+        "decision": "accepted",
+        "review_note": "任期満了日（令和9年4月11日）が明記されている。"
+      },
+      {
+        "field": "manifesto_source_ids",
+        "statement": "2023年広島市長選挙の選挙公報は現行の市公式サイトに掲載されておらず、『選挙の記録』にも公報本文は収録されていないため、段階1では manifesto_source_ids を接続しない。",
+        "source_ids": [
+          "hiroshima-city-mayor-election-2023-results"
+        ],
+        "location_note": "選挙の記録（別冊3）の選挙公報に関する記載（2023年4月2日に新聞折り込みで配布した実績のみで、本文は未収録）。",
+        "decision": "accepted",
+        "review_note": "公報の発行自体は条例（平成14年条例第1号）に基づき行われている。段階3で Wayback Machine の保存・図書館所蔵等の順で原典を再調査し、不存在とは判定しない。"
+      }
+    ],
+    "open_questions": [
+      "2023年広島市長選挙の選挙公報の原典（Wayback Machine の保存コピー、図書館所蔵等）の所在は未確認であり、段階3で再調査する。確認できれば公約を転記・登録し manifesto_source_ids へ接続する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
