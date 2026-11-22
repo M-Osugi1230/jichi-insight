@@ -60,6 +60,37 @@ EXPECTED_GRADES = {
     "jp-local-340006-project-2025-industrial-innovation": (16, 0, 0, 7, 4),
     "jp-local-340006-project-2025-agriculture-forestry-fisheries": (6, 4, 0, 4, 1),
 }
+_TERM = "jp-local-340006-executive-2025-11-29"
+# Promise links registered by stage 3 (Issue #921): the governor's
+# bulletin items whose theme clearly matches a policy domain. The
+# culture / related-population item, the tourism items, the
+# furusato-nozei item and the peace items have no corresponding
+# domain among the ten and stay unlinked.
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-340006-project-2025-children-childrearing": [],
+    "jp-local-340006-project-2025-education": [],
+    "jp-local-340006-project-2025-health": [],
+    "jp-local-340006-project-2025-medical-care-longterm-care": [],
+    "jp-local-340006-project-2025-inclusive-community": [],
+    "jp-local-340006-project-2025-disaster-prevention-mitigation": [
+        f"{_TERM}-promise-007",
+        f"{_TERM}-promise-008",
+        f"{_TERM}-promise-009",
+    ],
+    "jp-local-340006-project-2025-public-safety-livelihood-security": [],
+    "jp-local-340006-project-2025-work-style-reform-diverse-participation": [
+        f"{_TERM}-promise-004",
+        f"{_TERM}-promise-005",
+    ],
+    "jp-local-340006-project-2025-industrial-innovation": [
+        f"{_TERM}-promise-005",
+    ],
+    "jp-local-340006-project-2025-agriculture-forestry-fisheries": [
+        f"{_TERM}-promise-001",
+        f"{_TERM}-promise-002",
+        f"{_TERM}-promise-003",
+    ],
+}
 ASSESSMENTS = [
     "achieved",
     "mostly_achieved",
@@ -87,8 +118,9 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        # Stage 3 (promises) has not run yet for Hiroshima.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #921) registered the governor's promises;
+        # only the domains with a clear thematic match are linked.
+        assert project["related_promise_ids"] == EXPECTED_PROMISE_LINKS[project["id"]]
         # The old vision has no layer above the policy domains.
         assert project["parent_policy"] is None
         assert project["responsible_department"] is None
