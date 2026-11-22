@@ -1328,5 +1328,49 @@
       "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-kyoto-city-2024",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-kyoto-city-2024",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "京都市選挙管理委員会の開票結果で当選と得票数（177,454票）を、市公式サイトの「歴代市長一覧」で現職市長と就任日（2024年2月25日）を、京都府選挙管理委員会の任期満了日一覧で任期満了日（2028年2月24日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式サイトで、2024年選挙の選挙公報が「過去の選挙公報」区分のページに現存することを確認した。",
+        "source_ids": [
+          "kyoto-city-mayor-election-2024-results",
+          "kyoto-city-mayor-history",
+          "kyoto-pref-mayor-term-list"
+        ],
+        "location_note": "開票結果、歴代市長一覧、府選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページから選挙公報PDFを取得し、1ページ目左下の松井こうじ候補欄（5つの柱の箇条書き33項目と防災・減災対策バンド5項目）を確認した。公報は全文が画像でテキスト層はない。",
+        "source_ids": [
+          "kyoto-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード38件を作成したため、result_status を source_registered とした。松井候補の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "kyoto-city-mayor-election-2024-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（市の現行公式ページで現存）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "松井候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

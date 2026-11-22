@@ -72,6 +72,35 @@ EXPECTED_POLICY_AREAS = [
     "education",
 ]
 
+# Stage 3 (Issue #938) linked 22 of the mayor's 38 promises to the
+# policies whose subject matches them (inference, confidence low);
+# sports and agriculture-forestry received no links.
+_TERM = "jp-local-261009-executive-2024-02-25"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-261009-project-2025-environment": [
+        f"{_TERM}-promise-{i:03d}" for i in (18, 29, 30, 31, 33)
+    ],
+    "jp-local-261009-project-2025-human-rights-gender-equality": [
+        f"{_TERM}-promise-032"
+    ],
+    "jp-local-261009-project-2025-civic-life-community": [
+        f"{_TERM}-promise-{i:03d}" for i in (4, 26, 27)
+    ],
+    "jp-local-261009-project-2025-civic-life-safety": [
+        f"{_TERM}-promise-{i:03d}" for i in (34, 35, 36, 37, 38)
+    ],
+    "jp-local-261009-project-2025-culture": [
+        f"{_TERM}-promise-{i:03d}" for i in (10, 11)
+    ],
+    "jp-local-261009-project-2025-industry-commerce": [
+        f"{_TERM}-promise-{i:03d}" for i in (19, 20, 24)
+    ],
+    "jp-local-261009-project-2025-tourism": [f"{_TERM}-promise-012"],
+    "jp-local-261009-project-2025-universities": [
+        f"{_TERM}-promise-{i:03d}" for i in (21, 23)
+    ],
+}
+
 # FY2026 policy evaluation (published 2026-09-17): the official
 # comprehensive ratings of policies 1-10. The published tally over
 # all 27 policies is A2 / B19 / C6 / D0 / E0.
@@ -164,9 +193,11 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2025
         assert record["review_status"] == "reviewed"
-        # Stage 3 (Kyoto cluster) will examine promise links; at
-        # this stage nothing is linked.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #938) examined the promise links; the
+        # per-project expectations are pinned above.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            record["id"], []
+        )
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 
