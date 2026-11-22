@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "evidence-kumamoto-prefecture-2022-ordinary-revenue",
+    "subject_id": "jp-local-430005-fiscal-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入総額は1,028,620,307千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-ordinary-expenditure",
+    "subject_id": "jp-local-430005-fiscal-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳出総額は978,345,151千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-ordinary-local-tax",
+    "subject_id": "jp-local-430005-fiscal-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入のうち県税は224,737,382千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-formal-balance",
+    "subject_id": "jp-local-430005-fiscal-2022-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計形式収支は50,275,156千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-carryover-resources",
+    "subject_id": "jp-local-430005-fiscal-2022-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計翌年度繰越財源は25,647,460千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から実質収支を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-real-balance",
+    "subject_id": "jp-local-430005-fiscal-2022-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計実質収支は24,627,696千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度繰越財源を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-real-balance-ratio",
+    "subject_id": "jp-local-430005-fiscal-2022-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は5.7（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-standard-fiscal-scale",
+    "subject_id": "jp-local-430005-fiscal-2022-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は435,111,278千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-expenditure-by-purpose",
+    "subject_id": "jp-local-430005-fiscal-2022-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出の合計は歳出総額978,345,151千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・前年度繰上充用金・自動車取得税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-expenditure-by-nature",
+    "subject_id": "jp-local-430005-fiscal-2022-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出の上位3区分（義務的経費計・その他の経費・投資的経費計）の合計は歳出総額978,345,151千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、上位区分の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は該当なし（「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-fund-balance",
+    "subject_id": "jp-local-430005-fiscal-2022-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の基金残高（積立金現在高）は108,590,422千円で、財政調整基金・減債基金・その他特定目的基金の3区分の合計と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-debt-balance",
+    "subject_id": "jp-local-430005-fiscal-2022-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の地方債現在高は1,664,929,258千円（臨時財政対策債を含む）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "「臨時財政対策債を除く」残高は資料集総括表の印字値、臨時財政対策債は差し引いた算出値であることを内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-current-balance-ratio",
+    "subject_id": "jp-local-430005-fiscal-2022-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は90.5（印字値。括弧内の91.9は収録していない）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-real-debt-service-ratio",
+    "subject_id": "jp-local-430005-fiscal-2022-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は7.8（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-future-burden-ratio",
+    "subject_id": "jp-local-430005-fiscal-2022-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は209.5（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-fiscal-strength-index",
+    "subject_id": "jp-local-430005-fiscal-2022-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.39703（印字値、過去3年平均）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2022-population",
+    "subject_id": "jp-local-430005-fiscal-2022-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の住民基本台帳人口（2023年1月1日現在）は1,737,946人。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和4年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2022",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録した。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-ordinary-revenue",
+    "subject_id": "jp-local-430005-fiscal-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入総額は954,296,621千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-ordinary-expenditure",
+    "subject_id": "jp-local-430005-fiscal-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳出総額は903,825,031千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-ordinary-local-tax",
+    "subject_id": "jp-local-430005-fiscal-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入のうち県税は225,860,631千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-formal-balance",
+    "subject_id": "jp-local-430005-fiscal-2023-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計形式収支は50,471,590千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-carryover-resources",
+    "subject_id": "jp-local-430005-fiscal-2023-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計翌年度繰越財源は19,548,599千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から実質収支を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-real-balance",
+    "subject_id": "jp-local-430005-fiscal-2023-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計実質収支は30,922,991千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度繰越財源を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-real-balance-ratio",
+    "subject_id": "jp-local-430005-fiscal-2023-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は7（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-standard-fiscal-scale",
+    "subject_id": "jp-local-430005-fiscal-2023-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は440,447,592千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-expenditure-by-purpose",
+    "subject_id": "jp-local-430005-fiscal-2023-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出の合計は歳出総額903,825,031千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・前年度繰上充用金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-expenditure-by-nature",
+    "subject_id": "jp-local-430005-fiscal-2023-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出の上位3区分（義務的経費計・その他の経費・投資的経費計）の合計は歳出総額903,825,031千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、上位区分の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は該当なし（「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-fund-balance",
+    "subject_id": "jp-local-430005-fiscal-2023-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の基金残高（積立金現在高）は98,950,021千円で、財政調整基金・減債基金・その他特定目的基金の3区分の合計と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-debt-balance",
+    "subject_id": "jp-local-430005-fiscal-2023-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の地方債現在高は1,669,854,317千円（臨時財政対策債を含む）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "「臨時財政対策債を除く」残高は資料集総括表の印字値、臨時財政対策債は差し引いた算出値であることを内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-current-balance-ratio",
+    "subject_id": "jp-local-430005-fiscal-2023-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は91.5（印字値。括弧内の92.1は収録していない）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-real-debt-service-ratio",
+    "subject_id": "jp-local-430005-fiscal-2023-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は8.3（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-future-burden-ratio",
+    "subject_id": "jp-local-430005-fiscal-2023-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は217（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-fiscal-strength-index",
+    "subject_id": "jp-local-430005-fiscal-2023-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.39719（印字値、過去3年平均）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2023-population",
+    "subject_id": "jp-local-430005-fiscal-2023-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の住民基本台帳人口（2024年1月1日現在）は1,728,098人。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和5年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2023",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録した。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-ordinary-revenue",
+    "subject_id": "jp-local-430005-fiscal-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入総額は922,220,421千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-ordinary-expenditure",
+    "subject_id": "jp-local-430005-fiscal-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳出総額は880,334,474千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-ordinary-local-tax",
+    "subject_id": "jp-local-430005-fiscal-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入のうち県税は239,929,033千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-formal-balance",
+    "subject_id": "jp-local-430005-fiscal-2024-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計形式収支は41,885,947千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-carryover-resources",
+    "subject_id": "jp-local-430005-fiscal-2024-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計翌年度繰越財源は20,223,154千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から実質収支を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-real-balance",
+    "subject_id": "jp-local-430005-fiscal-2024-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計実質収支は21,662,793千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度繰越財源を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-real-balance-ratio",
+    "subject_id": "jp-local-430005-fiscal-2024-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は4.8（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-standard-fiscal-scale",
+    "subject_id": "jp-local-430005-fiscal-2024-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は448,036,790千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。2系統の一次資料で値が一致することを確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-expenditure-by-purpose",
+    "subject_id": "jp-local-430005-fiscal-2024-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出の合計は歳出総額880,334,474千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・前年度繰上充用金・自動車取得税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-expenditure-by-nature",
+    "subject_id": "jp-local-430005-fiscal-2024-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出の上位3区分（義務的経費計・その他の経費・投資的経費計）の合計は歳出総額880,334,474千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、上位区分の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は該当なし（「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-fund-balance",
+    "subject_id": "jp-local-430005-fiscal-2024-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の基金残高（積立金現在高）は104,685,530千円で、財政調整基金・減債基金・その他特定目的基金の3区分の合計と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。内訳の合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-debt-balance",
+    "subject_id": "jp-local-430005-fiscal-2024-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の地方債現在高は1,669,554,803千円（臨時財政対策債を含む）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "「臨時財政対策債を除く」残高は資料集総括表の印字値、臨時財政対策債は差し引いた算出値であることを内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-current-balance-ratio",
+    "subject_id": "jp-local-430005-fiscal-2024-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は91.5（印字値。括弧内の91.7は収録していない）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-real-debt-service-ratio",
+    "subject_id": "jp-local-430005-fiscal-2024-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は8.9（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-future-burden-ratio",
+    "subject_id": "jp-local-430005-fiscal-2024-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は212.5（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-fiscal-strength-index",
+    "subject_id": "jp-local-430005-fiscal-2024-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.42277（印字値、過去3年平均）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2024-population",
+    "subject_id": "jp-local-430005-fiscal-2024-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の住民基本台帳人口（2025年1月1日現在）は1,716,360人。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（熊本県シート）の該当欄および熊本県『令和6年度財政状況資料集』総括表・「普通会計の状況」（総務省サイト掲載分）の該当欄。",
+        "source_ids": [
+          "kumamoto-prefecture-mic-settlement-card-fy2024",
+          "kumamoto-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録した。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 熊本県公式の財政状況資料集ページは「総務省公表データをそのまま掲載」と県自身が明記する転載であり、独立した第2系統とはならないため、本照合は総務省の都道府県決算カードと財政状況資料集（いずれも総務省公表）の相互照合とした。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  }
+]

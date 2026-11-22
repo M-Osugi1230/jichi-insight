@@ -1419,5 +1419,49 @@
       "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-okayama-pref-2024",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-okayama-pref-2024",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "岡山県選挙管理委員会の開票結果・選挙の概要と県公式の投票・開票速報ページを確認したが、いずれも選挙公報への導線を含まない。県選管の現行の知事選挙ページにも選挙公報へのリンクはない。",
+        "source_ids": [
+          "okayama-pref-governor-election-2024",
+          "okayama-pref-governor-election-2024-overview",
+          "okayama-pref-governor-election-2024-results"
+        ],
+        "location_note": "県選管の開票結果・選挙の概要（いずれも公式公表）と県公式の速報ページ。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文への導線がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙公報は発行された（県選管「結果調」に印刷・配布の記録があり、選挙時には県選管ホームページに掲載されていた）が、現行公式サイトにおける現存は確認できず、選挙特設サイトも到達不可だったため、公報の実物は特定できていない。",
+        "source_ids": [
+          "okayama-pref-governor-election-2024-overview"
+        ],
+        "location_note": "探索記録 manifesto-source-search-okayama-pref-2024 の review_note に確認経緯を記載。",
+        "decision": "accepted",
+        "review_note": "発行の事実のみが証拠であり、公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "現行公式サイトでの現存が未確認のため、result_status を follow_up_required とし、公約レコードは作成しない。段階3でWayback Machine等を含めて再確認する。",
+        "source_ids": [
+          "okayama-pref-governor-election-2024"
+        ],
+        "location_note": "探索記録 manifesto-source-search-okayama-pref-2024 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報の音声読み上げ対応データの公表有無は未確認。",
+      "選挙特設サイトのアーカイブ保存の有無は未確認であり、Wayback Machineでの再確認は段階3で行う。"
+    ],
+    "review_status": "reviewed"
   }
 ]

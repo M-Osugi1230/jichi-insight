@@ -10,6 +10,8 @@ import kyotoCityFinanceCatalog from "../../../data/catalog/kyoto_city_finance_so
 import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_finance_sources.json";
 import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
+import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
+import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -49,6 +51,8 @@ export type MunicipalityKey =
   | "hiroshima-city"
   | "kyoto-city"
   | "kyoto-prefecture"
+  | "okayama-prefecture"
+  | "kumamoto-prefecture"
   | "niigata-city"
   | "niigata-prefecture";
 export type SourceRecord = {
@@ -147,6 +151,18 @@ export const municipalityMeta: Record<
     name: "京都府", type: "都道府県",
     summary: "京都府総合計画（2019年策定・2022年改定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と西脇隆俊知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/kyoto-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "okayama-prefecture": {
+    name: "岡山県", type: "都道府県",
+    summary: "第4次晴れの国おかやま生き活きプラン（2025年3月策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と伊原木隆太知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/okayama-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "kumamoto-prefecture": {
+    name: "熊本県", type: "都道府県",
+    summary: "くまもと新時代共創基本方針及び総合戦略（2024年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と木村敬知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/kumamoto-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -308,6 +324,8 @@ export const sourceCatalog = [
   ...(niigataCityFinanceCatalog.records as SourceRecord[]),
   ...(niigataFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
+  ...(okayamaFinanceCatalog.records as SourceRecord[]),
+  ...(kumamotoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
