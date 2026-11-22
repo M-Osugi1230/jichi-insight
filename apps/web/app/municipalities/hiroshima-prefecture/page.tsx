@@ -55,7 +55,7 @@ export default function HiroshimaPrefecturePage() {
     : undefined;
   const assembly = assemblies["hiroshima-prefecture"];
   const budgetProposal = assembly.proposals.find((proposal) =>
-    proposal.official_title?.includes("令和8年度広島県一般会計予算"),
+    proposal.title?.includes("令和8年度広島県一般会計予算"),
   );
 
   return (
@@ -209,7 +209,7 @@ export default function HiroshimaPrefecturePage() {
                 会派別賛否{assembly.factionVotes.length}件。</p>
               <p>県第1号議案（令和8年度広島県一般会計予算）は「可決」です。
                 可決された当初予算と、その後の補正予算・執行・決算を同一の状態として扱いません。</p>
-              {budgetProposal ? <p>関連登録議案：{budgetProposal.official_title}</p> : null}
+              {budgetProposal ? <p>関連登録議案：{budgetProposal.title}</p> : null}
               <p><Link href="/assemblies/hiroshima-city">広島市議会</Link>も別議会として確認できます。
                 賛否の公開粒度はそれぞれの公式資料の範囲で表示します。</p>
             </div>
