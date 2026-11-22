@@ -182,7 +182,7 @@ export default function OkayamaPrefecturePage() {
 
           <section className={styles.scope} aria-labelledby="governor-title">
             <div><p className="eyebrow">Executive</p>
-              <h2 id="governor-title">伊原木隆太知事の任期と公約29件</h2></div>
+              <h2 id="governor-title">伊原木隆太知事の任期と登録済み公約</h2></div>
             <div>{governor ? (
               <>
                 <h3>{governor.person_name} 知事</h3>
@@ -207,11 +207,11 @@ export default function OkayamaPrefecturePage() {
               <p>議員定数{assembly.assembly.seat_count}人。
                 登録議案等{assembly.proposals.length}件、表決{assembly.votes.length}件、
                 会派別賛否{assembly.factionVotes.length}件、政務活動費{assembly.expenses.length}件、視察{assembly.trips.length}件。</p>
-              <p>2026年度当初予算（骨格予算）は2026年3月12日「原案可決」です。
+              <p>2026年度一般会計当初予算は2026年3月19日に「原案可決」されました。
                 岡山県議会は賛否の公表自体がなく、会派別・議員別の賛否は未公表として扱います。
                 未公表の賛否を推測していません。</p>
               {budgetProposal ? <p>関連登録議案：{budgetProposal.title}</p> : null}
-              <p><Link href="/assemblies/okayama-city">岡山市会</Link>も別議会として確認できます。
+              <p><Link href="/assemblies/okayama-city">岡山市議会</Link>も別議会として確認できます。
                 賛否の公開粒度はそれぞれの公式資料の範囲で表示します。</p>
             </div>
           </section>
