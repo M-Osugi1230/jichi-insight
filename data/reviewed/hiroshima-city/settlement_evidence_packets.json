@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "evidence-hiroshima-city-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入総額は710,147,785千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳出総額は705,188,318千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の形式収支は4,959,467千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の翌年度へ繰り越すべき財源は2,007,473千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の実質収支は2,951,994千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は0.9％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は98.2％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "括弧書きの参考値ではなく本体の表示値を収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.796。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の財政力指数欄（小数第3位まで印字）。広島市『令和4年度財政状況資料集』総括表は小数第2位までの表示。",
+        "decision": "accepted",
+        "review_note": "カードの第3位までの印字値を収録し、再計算では置き換えていない。資料集の2桁表示は四捨五入の範囲で一致する。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は9.8％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は164.8％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計の市税収入額は242,137,534千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の歳入欄および市町村税欄。広島市『令和4年度財政状況資料集』普通会計の状況の地方税の状況でも合計が一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "広島市の住民基本台帳人口は令和5年1月1日現在で1,184,731人。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市『令和4年度財政状況資料集』総括表の住民基本台帳人口欄（注記※7により調査対象年度の1月1日現在）。広島市公表の決算カードの人口欄は3月31日現在。",
+        "decision": "accepted",
+        "review_note": "資料集総括表の1月1日現在の公表値を収録する。カードの年度末人口とは基準日が異なる。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は342,971,969千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の基金残高は19,741,073千円（財政調整基金10,197,142千円、減債基金は残高なし、その他特定目的基金9,543,931千円）。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市『令和4年度財政状況資料集』総括表の積立金現在高欄。広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の積立金現在高（合計および財政調整基金・減債基金の括弧書き）でも一致。",
+        "decision": "accepted",
+        "review_note": "内訳の合計（減債基金を0として）が基金残高と一致することを検算した。その他特定目的基金の内訳はカードに印字がなく資料集総括表のみの公表。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の地方債現在高は1,116,204,480千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の該当欄。広島市『令和4年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "内訳の合計が地方債現在高と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出は705,188,318千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の性質別歳出欄。広島市『令和4年度財政状況資料集』普通会計の状況の性質別歳出の状況でも全項目一致。",
+        "decision": "accepted",
+        "review_note": "各区分の合計が歳出総額と一致することを検算で確認。失業対策事業費・前年度繰上充用金は『－』印字のため金額なし（内訳に含めない）。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2022-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2022-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出は705,188,318千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2022",
+          "hiroshima-city-fiscal-situation-collection-fy2022"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和4年度市町村普通会計決算カード』の目的別歳出欄。広島市『令和4年度財政状況資料集』普通会計の状況の目的別歳出の状況でも全項目一致。",
+        "decision": "accepted",
+        "review_note": "各区分の合計が歳出総額と一致することを検算で確認。諸支出金・前年度繰上充用金は『－』印字のため金額なし（null）。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入総額は711,658,564千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳出総額は707,638,369千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の形式収支は4,020,195千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の翌年度へ繰り越すべき財源は1,232,967千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の実質収支は2,787,228千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は0.8％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は98.7％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "括弧書きの参考値ではなく本体の表示値を収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.779。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の財政力指数欄（小数第3位まで印字）。広島市『令和5年度財政状況資料集』総括表は小数第2位までの表示。",
+        "decision": "accepted",
+        "review_note": "カードの第3位までの印字値を収録し、再計算では置き換えていない。資料集の2桁表示は四捨五入の範囲で一致する。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は9.6％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は165.4％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計の市税収入額は246,715,613千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の歳入欄および市町村税欄。広島市『令和5年度財政状況資料集』普通会計の状況の地方税の状況でも合計が一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "広島市の住民基本台帳人口は令和6年1月1日現在で1,178,773人。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市『令和5年度財政状況資料集』総括表の住民基本台帳人口欄（注記※7により調査対象年度の1月1日現在）。広島市公表の決算カードの人口欄は3月31日現在。",
+        "decision": "accepted",
+        "review_note": "資料集総括表の1月1日現在の公表値を収録する。カードの年度末人口とは基準日が異なる。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は348,912,170千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の基金残高は12,675,696千円（財政調整基金8,459,075千円、減債基金は残高なし、その他特定目的基金4,216,621千円）。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市『令和5年度財政状況資料集』総括表の積立金現在高欄。広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の積立金現在高（合計および財政調整基金・減債基金の括弧書き）でも一致。",
+        "decision": "accepted",
+        "review_note": "内訳の合計（減債基金を0として）が基金残高と一致することを検算した。その他特定目的基金の内訳はカードに印字がなく資料集総括表のみの公表。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の地方債現在高は1,110,569,164千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の該当欄。広島市『令和5年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "内訳の合計が地方債現在高と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出は707,638,369千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の性質別歳出欄。広島市『令和5年度財政状況資料集』普通会計の状況の性質別歳出の状況でも全項目一致。",
+        "decision": "accepted",
+        "review_note": "各区分の合計が歳出総額と一致することを検算で確認。失業対策事業費・前年度繰上充用金は『－』印字のため金額なし（内訳に含めない）。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2023-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2023-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出は707,638,369千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2023",
+          "hiroshima-city-fiscal-situation-collection-fy2023"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和5年度市町村普通会計決算カード』の目的別歳出欄。広島市『令和5年度財政状況資料集』普通会計の状況の目的別歳出の状況でも全項目一致。",
+        "decision": "accepted",
+        "review_note": "各区分の合計が歳出総額と一致することを検算で確認。諸支出金・前年度繰上充用金は『－』印字のため金額なし（null）。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入総額は724,426,839千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳出総額は720,666,916千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の形式収支は3,759,923千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の翌年度へ繰り越すべき財源は1,492,240千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の実質収支は2,267,683千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は0.6％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は97.3％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "括弧書きの参考値ではなく本体の表示値を収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.771。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の財政力指数欄（小数第3位まで印字）。広島市『令和6年度財政状況資料集』総括表は小数第2位までの表示。",
+        "decision": "accepted",
+        "review_note": "カードの第3位までの印字値を収録し、再計算では置き換えていない。資料集の2桁表示は四捨五入の範囲で一致する。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は8.8％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は161.3％。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "公表値をそのまま収録し、再計算では置き換えていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計の市税収入額は249,905,332千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の歳入欄および市町村税欄。広島市『令和6年度財政状況資料集』普通会計の状況の地方税の状況でも合計が一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "広島市の住民基本台帳人口は令和7年1月1日現在で1,173,543人。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市『令和6年度財政状況資料集』総括表の住民基本台帳人口欄（注記※7により調査対象年度の1月1日現在）。広島市公表の決算カードの人口欄は3月31日現在。",
+        "decision": "accepted",
+        "review_note": "資料集総括表の1月1日現在の公表値を収録する。カードの年度末人口とは基準日が異なる。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は358,258,463千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の基金残高は12,598,254千円（財政調整基金8,684,088千円、減債基金は残高なし、その他特定目的基金3,914,166千円）。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市『令和6年度財政状況資料集』総括表の積立金現在高欄。広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の積立金現在高（合計および財政調整基金・減債基金の括弧書き）でも一致。",
+        "decision": "accepted",
+        "review_note": "内訳の合計（減債基金を0として）が基金残高と一致することを検算した。その他特定目的基金の内訳はカードに印字がなく資料集総括表のみの公表。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の地方債現在高は1,098,519,970千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の該当欄。広島市『令和6年度財政状況資料集』総括表・普通会計の状況でも一致。",
+        "decision": "accepted",
+        "review_note": "内訳の合計が地方債現在高と一致することを検算した。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出は720,666,916千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の性質別歳出欄。広島市『令和6年度財政状況資料集』普通会計の状況の性質別歳出の状況でも全項目一致。",
+        "decision": "accepted",
+        "review_note": "各区分の合計が歳出総額と一致することを検算で確認。失業対策事業費・前年度繰上充用金は『－』印字のため金額なし（内訳に含めない）。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-city-2024-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2024-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出は720,666,916千円。",
+        "source_ids": [
+          "hiroshima-city-settlement-card-fy2024",
+          "hiroshima-city-fiscal-situation-collection-fy2024"
+        ],
+        "location_note": "広島市が公式サイトに掲載する『令和6年度市町村普通会計決算カード』の目的別歳出欄。広島市『令和6年度財政状況資料集』普通会計の状況の目的別歳出の状況でも全項目一致。",
+        "decision": "accepted",
+        "review_note": "各区分の合計が歳出総額と一致することを検算で確認。諸支出金・前年度繰上充用金は『－』印字のため金額なし（null）。千円単位を1,000倍して円単位で保存。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  }
+]

@@ -62,5 +62,27 @@
     "sources": [
       "hiroshima-settlement-2024"
     ]
+  },
+  {
+    "id": "jp-local-341002-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-341002",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 271949021000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度広島市一般会計当初予算の市税。第1号議案『令和8年度広島市一般会計予算』の第1表歳入歳出予算の市税271,949,021千円を収録する。同議案は2026年3月26日に市議会で原案可決されたため、議案の印字値がそのまま成立後の額である。",
+    "sources": [
+      "hiroshima-city-budget-bill-fy2026",
+      "hiroshima-city-budget-council-results-fy2026"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
