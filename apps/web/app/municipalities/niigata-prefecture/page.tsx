@@ -96,7 +96,7 @@ export default function NiigataPrefecturePage() {
               <p>基本政策19件に紐づく成果指標77件を登録しています。県は指標の年次実績・達成度を公表していないため、実績未登録は未達成を意味しません。
                 分野単位の予算・決算金額は公表資料で確認できないため、
                 金額を0円で補完せず、個別指標を施策全体の総合評定に転用しません。</p>
-              <p>2026年度一般会計当初予算は知事選前の骨格予算です。
+              <p>2026年度一般会計当初予算です。
                 第1号議案は2026年3月12日に「可決」されました。
                 当初予算と補正予算、2022〜2024年度普通会計決算を分けて表示します。</p>
             </div>
@@ -120,7 +120,7 @@ export default function NiigataPrefecturePage() {
           <section className={styles.headline} aria-labelledby="finance-headline-title">
             <div className="sectionIntro"><p className="eyebrow">FY2026 initial budget</p>
               <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
-              <p>知事選挙を控えて編成された骨格予算です。
+              <p>一般会計当初予算です。
                 第1号議案「令和8年度新潟県一般会計予算」は2026年3月27日に可決され、
                 一般会計総額1,169,750,000千円です。
                 補正前の当初予算額であり、普通会計決算とは区別します。</p>
@@ -128,7 +128,7 @@ export default function NiigataPrefecturePage() {
             <div className={styles.metricGrid}>
               {[
                 { label: "一般会計当初予算（歳入総額）", record: revenue },
-                { label: "府税収入", record: tax },
+                { label: "県税収入", record: tax },
                 { label: "一般会計当初予算（歳出総額）", record: expenditure },
               ].map(({ label, record }) => (
                 <article className={styles.metricCard} key={label}>
@@ -159,7 +159,7 @@ export default function NiigataPrefecturePage() {
           <section id="priority-projects" className={styles.headline} aria-labelledby="projects-title">
             <div className="sectionIntro"><p className="eyebrow">Priority projects</p>
               <h2 id="projects-title">基本政策19件・KPI77件</h2>
-              <p>分野別基本施策10系列・KPI51件を登録しています。分野単位の予算額や総合評定を推測せず、
+              <p>基本政策19件・成果指標77件を登録しています。政策単位の予算額は公表資料から接続できないため、推測で補完しません。
                 登録済みの指標・予算接続状況を表示します。
                 <Link href="/projects#niigata-prefecture"> 重点事業一覧を見る</Link></p>
             </div>
@@ -182,7 +182,7 @@ export default function NiigataPrefecturePage() {
 
           <section className={styles.scope} aria-labelledby="governor-title">
             <div><p className="eyebrow">Executive</p>
-              <h2 id="governor-title">花角英世知事の任期と公約29件</h2></div>
+              <h2 id="governor-title">花角英世知事の任期と公約</h2></div>
             <div>{governor ? (
               <>
                 <h3>{governor.person_name} 知事</h3>
