@@ -1,0 +1,980 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書27〜30ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "章名は「市税等について」。「主要な施策の成果」の目次と総務関係本文の章見出し（第5）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「総務関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書27〜30ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書27〜30ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書27〜30ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "本章は歳出の実施額ではなく市税の収入状況を示す章である。市税収入額の合計263,855,548千円（法定普通税237,243,361千円・法定目的税26,612,187千円）が印字されるが、これは収入額であり実施額（歳出）ではないため、決算額としては未登録とした（0では補完しない）。法定目的税の使途と交通安全対策特別交付金の使途については区分単位の実施額が示されるが、章全体の実施額の合計は公表されていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-city-tax",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-city-tax",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書98〜136ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "章名は「社会福祉について」。「主要な施策の成果」の目次と民生関係本文の章見出し（第23）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「民生関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書98〜136ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書98〜136ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書98〜136ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "本章は10の項目からなり、項目ごとに区分単位の実施額が示されるが、章全体の実施額の合計は公表されていない。区分・項目の実施額を合算して章の金額とすることは市の公表値ではない（凡例により、※印の金額は他の項目と重複して記載されたもので、単純な合算は二重計上になる）ため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-social-welfare",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-social-welfare",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書144〜155ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "章名は「保健衛生について」。「主要な施策の成果」の目次と衛生関係本文の章見出し（第26）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「衛生関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書144〜155ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書144〜155ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書144〜155ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "本章は4の項目からなり、項目ごとに区分単位の実施額が示されるが、章全体の実施額の合計は公表されていない。区分・項目の実施額を合算して章の金額とすることは市の公表値ではない（凡例により、※印の金額は他の項目と重複して記載されたもので、単純な合算は二重計上になる）ため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-public-health-hygiene",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-public-health-hygiene",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）経済関係（PDF）、文書179〜196ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-keizai"
+    ],
+    "statement": "章名は「経済の振興について」。「主要な施策の成果」の目次と経済関係本文の章見出し（第30）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「経済関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）経済関係（PDF）、文書179〜196ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-keizai"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）経済関係（PDF）、文書179〜196ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-keizai"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）経済関係（PDF）、文書179〜196ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-keizai"
+    ],
+    "statement": "本章は7の項目からなり、項目ごとに区分単位の実施額が示されるが、章全体の実施額の合計は公表されていない。区分・項目の実施額を合算して章の金額とすることは市の公表値ではない（凡例により、※印の金額は他の項目と重複して記載されたもので、単純な合算は二重計上になる）ため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-economic-promotion",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-economic-promotion",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）建設関係（PDF）、文書214〜230ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-kensetsu"
+    ],
+    "statement": "章名は「道路、橋りょうについて」。「主要な施策の成果」の目次と建設関係本文の章見出し（第35）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「建設関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）建設関係（PDF）、文書214〜230ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-kensetsu"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）建設関係（PDF）、文書214〜230ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-kensetsu"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）建設関係（PDF）、文書214〜230ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-kensetsu"
+    ],
+    "statement": "本章は2の項目からなり、項目・区分ごとに実施額が示されるが、章全体の実施額の合計は公表されていない。区分・路線の実施額を合算して章の金額とすることは市の公表値ではないため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-roads-and-bridges",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-roads-and-bridges",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）消防関係（PDF）、文書273〜277ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-shoubou"
+    ],
+    "statement": "章名は「消防について」。「主要な施策の成果」の目次と消防関係本文の章見出し（第50）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「消防関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）消防関係（PDF）、文書273〜277ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-shoubou"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）消防関係（PDF）、文書273〜277ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-shoubou"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）消防関係（PDF）、文書273〜277ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-shoubou"
+    ],
+    "statement": "項目「消防」の実施額の表には計19,018,036千円が印字されるが、これは同項目のみの合計であり、項目「施設の管理運営状況」（総合防災センターの事業費）を含む章全体の実施額の合計は公表されていない。項目の合計を章の金額として付け替えることはしないため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-fire-service",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-fire-service",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）教育関係（PDF）、文書279〜294ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-kyouiku"
+    ],
+    "statement": "章名は「学校について」。「主要な施策の成果」の目次と教育関係本文の章見出し（第51）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「教育関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）教育関係（PDF）、文書279〜294ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-kyouiku"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）教育関係（PDF）、文書279〜294ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-kyouiku"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）教育関係（PDF）、文書279〜294ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-kyouiku"
+    ],
+    "statement": "本章は5の項目からなり、項目ごとに区分単位の実施額が示されるが、章全体の実施額の合計は公表されていない。区分・項目の実施額を合算して章の金額とすることは市の公表値ではないため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-schools",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-schools",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書31ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "章名は「中枢性の強化について」。「主要な施策の成果」の目次と総務関係本文の章見出し（第6）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「総務関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書31ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書31ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）総務関係（PDF）、文書31ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-soumu"
+    ],
+    "statement": "本章の実施額の表に「計」として印字された68,519千円を登録した。内訳は、関係自治体等との交流と連携の推進41,062千円と計画策定その他27,457千円である。計画策定その他のうち計画的な土地利用の推進（10,327千円）と都市計画情報システムの運用（16,906千円）には※印が付され、凡例により他の項目と重複して記載されたものであることが示されている。章の合計として市が印字した値をそのまま登録したもので、重複分を差し引く加工はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-urban-centrality",
+  "open_questions": [
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-urban-centrality",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書137〜140ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "章名は「介護保険事業について」。「主要な施策の成果」の目次と民生関係本文の章見出し（第24）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「民生関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書137〜140ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書137〜140ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）民生関係（PDF）、文書137〜140ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-minsei"
+    ],
+    "statement": "介護保険事業特別会計の歳出決算額の合計として印字された108,090,374千円を登録した。章の残りの項目（被保険者数、要介護度別認定者数、保険給付費、地域支援事業）は同会計の内訳・統計であり、この合計は章全体を覆う。なお歳入決算額は108,717,134千円で、歳入歳出差引額626,760千円は翌年度へ繰り越されたことが注記されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-long-term-care-insurance",
+  "open_questions": [
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-long-term-care-insurance",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次と凡例、第6次広島市基本計画（PDF）第2部の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover",
+     "hiroshima-city-sixth-basic-plan-pdf"
+    ],
+    "statement": "本登録の単位は、令和7年度決算の附属書類「主要な施策の成果」の章（第○「○○について」）とした。本書は款別に7つの「関係」（総務関係・民生関係・衛生関係・経済関係・建設関係・消防関係・教育関係）に分かれ、その下に第5から第51までの47の章が置かれる。章は区分・実施額・実施内容の表を持ち、年度の実施結果が完結して示される最上位の単位である。総括の第1〜第4（予算執行の概況、普通建設事業費の内訳、人件費の内訳、市債の状況）は財務の集計であり施策ではないため母集団から除いた。本書の体系は第6次広島市基本計画の体系（第2部の6つの章と18の節からなる施策の大綱）とは一致せず、章と基本計画の章・節との対応表は本書にも市の公式資料にも確認できなかったため、柱は基本計画の章ではなく本書自体の最上位区分である「関係」とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書156〜162ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page",
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "章名は「原爆被爆者対策について」。「主要な施策の成果」の目次と衛生関係本文の章見出し（第27）の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "「主要な施策の成果」表紙・目次・凡例（PDF）の目次",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-cover"
+    ],
+    "statement": "本登録のparent_policyには、章を直接束ねる本書の最上位区分として「衛生関係」を用いた。本書の章立て（目次）の表記どおりであり、基本計画の章・節の名称ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書156〜162ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "本章の項目構成と、本文の表に示された実施内容・金額・数量に基づく要約である。計画文書の文言の転記ではなく、本書の記載内容の範囲で記述した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "広島市総合計画の公式ページ（実施計画とPDCAの説明）、「主要な施策の成果」全体",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-comprehensive-plan-page",
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "本書には、章に対応するKPI（目標値と実績値の対比）は設定されていない。広島市実施計画（2025-2030）は第6次広島市基本計画の体系のもとに重要業績評価指標（KPI）を設定し、PDCAサイクルで検証する仕組みであるが、本書の章との公式対応表は公表されておらず、体系が異なる資料の指標を対応付けなく接続することはしないため、KPIは未登録（0件）とした。本書の実施内容欄に示される件数・人数等の数量は、目標との対比を伴わない実施結果の記述であり、KPIとしては登録していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書156〜162ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "本書は章単位の所管局を示していない（款別の「関係」は複数の局の所管にまたがる）ため、responsible_departmentは未登録（null）とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "「主要な施策の成果」（令和7年度）衛生関係（PDF）、文書156〜162ページ",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-eisei"
+    ],
+    "statement": "項目「健康管理及び援護」の実施額の表には計23,402,267千円が印字されるが、これは同項目のみの合計であり、項目「施設の管理運営状況」（原爆養護ホーム等の事業費）を含む章全体の実施額の合計は公表されていない。項目の合計を章の金額として付け替えることはしないため、未登録とした（0では補完しない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "「主要な施策の成果」全体（評定区分の欄は存在しない）",
+    "review_note": null,
+    "source_ids": [
+     "hiroshima-city-seika-fy2025-page"
+    ],
+    "statement": "「主要な施策の成果」には、章単位の評定区分（達成度等の区分）は設けられていない。成果は実施内容欄の事業名・金額・数量等の記述によって示されるのみであるため、公式評価は未登録（null）とした。評定が公表されていないことは、事業が実施されていないことや目標が未達成であることを意味しない。"
+   }
+  ],
+  "id": "evidence-jp-local-341003-project-2025-atomic-bomb-survivor-measures",
+  "open_questions": [
+   "金額は未登録。章全体の実施額の合計を掲載した公式資料は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "公式評価は未登録。本書には章単位の評定区分がなく、評定の公表は確認できていない。公表され次第、更新サイクル（#706）で登録する。",
+   "KPIは未登録。広島市実施計画（2025-2030）のKPIは基本計画の体系に基づくもので、本書の章との公式対応表が公表されていないため接続していない。対応表が公表されれば、更新サイクルで接続を検討する。",
+   "首長公約との接続は広島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と施策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-341003-project-2025-atomic-bomb-survivor-measures",
+  "subject_type": "project"
+ }
+]
