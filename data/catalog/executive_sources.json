@@ -1,5 +1,5 @@
 {
-  "version": "0.42.0",
+  "version": "0.43.0",
   "updated_at": "2026-11-22",
   "scope": "pilot",
   "records": [
@@ -1780,6 +1780,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2025年11月9日執行の広島県知事選挙の投開票結果・選挙公報の公表ページ（2025年11月10日掲載）。リンク先の開票結果（確定版、37KB）の県計欄に、横田みか552,614票・大山宏34,333票・いのはら真弓75,468票、有効投票662,415票、投票総数673,903票が印字されている。2026-11-22にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "hiroshima-city-mayor-election-2023-results",
+      "municipality_key": "hiroshima-city",
+      "organization": "広島市選挙管理委員会",
+      "category": "election",
+      "title": "選挙の記録（別冊3）広島市長選挙（令和5年4月9日執行）",
+      "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/049/372/shicyou_r5.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年4月9日執行の広島市長選挙の開票結果を収録する市選挙管理委員会の公式記録。候補者別得票数に松井かずみ258,336票・当選を印字する（次点は高見あつみ36,595票）。2026-11-22にPDF本体を直接読み取り照合した。なお Wikipedia の当該選挙記事には295,038票とする箇所があるが、市公式の開票結果と異なるため採用しない。"
+    },
+    {
+      "id": "hiroshima-city-mayor-history",
+      "municipality_key": "hiroshima-city",
+      "organization": "広島市",
+      "category": "official_profile",
+      "title": "歴代広島市長（広島市公式サイト）",
+      "url": "https://www.city.hiroshima.lg.jp/shisei/gaiyo/1021754/1022362.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "第39代に松井一實を掲げ、就任を令和5年4月12日とし、退任欄は空欄（現職）。氏名の表記は市公式の『一實』に従う。2026-11-22に直接確認した（旧URL http://www.city.hiroshima.lg.jp/soshiki/7/17966.html から現行URLへ移転）。"
+    },
+    {
+      "id": "hiroshima-pref-mayor-term-list",
+      "municipality_key": "hiroshima-city",
+      "organization": "広島県選挙管理委員会",
+      "category": "election",
+      "title": "市町長及び議会議員の任期満了日等一覧（令和8年7月7日現在）",
+      "url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/675356.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-22",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "広島市長の任期満了日が令和9年4月11日と明記される。2026-11-22にPDF本体を直接読み取り照合した。"
     }
   ]
 }

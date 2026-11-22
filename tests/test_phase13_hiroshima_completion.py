@@ -29,10 +29,14 @@ def test_hiroshima_completion_contract():
 
 def test_hiroshima_fiscal_and_result_boundary():
     fiscal = load("data/reviewed/hiroshima-city/fiscal_records.json")
+    # 3 records at the Phase 13 review; the Hiroshima cluster stage 1
+    # (Issue #915) added the FY2026 initial budget's local tax record
+    # (verified against the enacted Bill No. 1, Table 1).
     assert {record["amount_yen"] for record in fiscal} == {
         794_011_359_000,
         720_118_240_000,
         716_676_720_000,
+        271_949_021_000,
     }
 
     progress = load("data/catalog/hiroshima_current_progress_availability.json")

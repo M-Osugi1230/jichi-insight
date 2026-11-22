@@ -315,10 +315,11 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # stage-3 branches, bringing the combined catalog to
     # version 0.41.0 / 124 records; the Hiroshima cluster's stage 1
     # (Issue #915) then appended the three Hiroshima Prefecture
-    # governor records, bringing it to
-    # version 0.42.0 / 127 records.
-    assert catalog["version"] == "0.42.0"
-    assert len(catalog["records"]) == 127
+    # governor records and the three Hiroshima City mayor records
+    # across parallel stage-1 branches, bringing the combined
+    # catalog to version 0.43.0 / 130 records.
+    assert catalog["version"] == "0.43.0"
+    assert len(catalog["records"]) == 130
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

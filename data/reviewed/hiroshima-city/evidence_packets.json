@@ -58,5 +58,25 @@
     ],
     "open_questions": [],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-hiroshima-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-341002-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度の広島市一般会計当初予算の市税は271,949,021,000円。",
+        "source_ids": [
+          "hiroshima-city-budget-bill-fy2026",
+          "hiroshima-city-budget-council-results-fy2026"
+        ],
+        "location_note": "第1号議案『令和8年度広島市一般会計予算』の第1表歳入歳出予算（歳入第1款市税）、および令和8年第2回定例会の会議結果（2026年3月26日議決・原案可決）。",
+        "decision": "accepted",
+        "review_note": "千円単位を1,000倍して円単位で保存。予算案段階の公表値（報道資料・当初予算の概要）とも同額だが、登録値は議案本体の印字値で確認した。原案可決のため修正による増減はない。第1条の総額7,940億1,135万9千円（794,011,359千円）も議案で併せて確認し、既登録の総額レコードと一致する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]

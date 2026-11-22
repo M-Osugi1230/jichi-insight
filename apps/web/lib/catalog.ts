@@ -41,7 +41,8 @@ export type MunicipalityKey =
   | "shizuoka-city"
   | "hamamatsu-city"
   | "shizuoka-prefecture"
-  | "hiroshima-prefecture";
+  | "hiroshima-prefecture"
+  | "hiroshima-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -252,6 +253,12 @@ export const municipalityMeta: Record<
     name: "浜松市", type: "政令指定都市",
     summary: "浜松市総合計画第2期基本計画の基本政策10系列（KPI18件）、普通会計決算51件、中野祐介市長の公約10件と浜松市議会の議員別賛否を確認します。",
     status: "財政データ公開", href: "/municipalities/hamamatsu-city",
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "hiroshima-city": {
+    name: "広島市", type: "政令指定都市",
+    summary: "第6次広島市基本計画（2020〜2030年度）と実施計画（2025-2030）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、松井 一實市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
 };
