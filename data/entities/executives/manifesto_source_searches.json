@@ -964,5 +964,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "medium"
+  },
+  {
+    "id": "manifesto-source-search-niigata-city-2026",
+    "executive_term_id": "jp-local-151009-executive-2026-11-18",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "niigata-city-mayor-election-2026-bulletin"
+    ],
+    "checked_source_ids": [
+      "niigata-city-mayor-election-2026-results",
+      "niigata-city-mayor-election-2026-overview",
+      "niigata-pref-term-expiry-list",
+      "niigata-city-mayor-election-2026-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "新潟市長選挙（令和8年10月25日執行）の選挙公報は、市選挙管理委員会の現行公式ページ「令和8年新潟市長選挙について」（2026年10月14日更新）にPDFがリンクされ、現行ページに現存する（段階0・Issue #946で確認済み）。段階3では2026-11-23に現行ページから改めてPDFを取得し、段階0の取得分とファイルが一致することを SHA-256 で確認した（dfea42ed4bcbf64a3d47f2be88990a17f3c2ef1bc3d3ce0b607c77ba770810ca、2,819,581バイト、全2ページ）。公報には候補者3名（青木まなぶ・中原八一・早武淳）が掲載され、市公式の開票結果の候補者構成と一致する。1ページ目中段の中原八一候補欄（3つの柱の■箇条書き17項目と「2期8年の主な実績」欄10項目）を確認し、分割レビュー（manifesto-review-jp-local-151009-2026）を経て公約レコード17件を作成した。公報の候補者欄は画像でテキスト層はない（抽出文字は選管の枠文のみ）ため、登録文は描画画像（150dpi・300dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿をそのまま写真製版により印刷した公式文書であり、市の現行公式ページで実物を確認できたため、公約レコードの confidence は high とした。中原候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "中原候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "未接続の公約（1件）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "事業との接続（16件）は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す",
+      "2030年の任期満了に伴う次回市長選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
