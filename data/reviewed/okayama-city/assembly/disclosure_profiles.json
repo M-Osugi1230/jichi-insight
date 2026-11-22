@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-23",
+  "assembly_id": "jp-local-331007-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-331007-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "member_roster",
+    "note": "議員名簿（50音順）が市議会ホームページに掲載され、条例定数46人と明記されている。2026年11月23日の確認時点で名簿に掲載された議員は45人であった。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000015787.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "賛否のページに会派名と所属議員名が掲載されている。令和8年9月定例会時点では8会派45人（公明党岡山市議団8人、日本共産党岡山市議団4人、自由民主党岡山市議会23人、懐かしい未来2人、みらいえ2人、おかやま創政会4人、おかやま未来プロジェクト1人、日本維新の会岡山市議団1人）。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000078068.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会の構成のページに常任委員会5委員会（総務、保健福祉・協働、スポーツ文化・産業、都市・環境、子ども・文教）、議会運営委員会、予算・決算特別委員会等の委員が掲載されている（2025年10月8日更新）。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000015957.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとの提出議案・議決結果のページに議案番号、件名、結果が掲載される。令和8年9月定例会分は60件（決算17件、議案30件、意見書案3件、請願・陳情10件）。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000085139.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派単位で集計した賛否の公式公表はない。賛否のページは議員個人別の賛否を会派名と併記する形式である。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000078068.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "本会議において起立により採決を行った議案に限り、議員ごとの賛否（賛成・反対・欠席・退席）が会派名つきで公表される。議長は採決に加わらない旨が明記されている。起立採決以外の議案の議員個人別の賛否は公表されない。令和8年9月定例会では7件（令和8年9月17日議決分3件、10月16日議決分4件）が対象。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000078068.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は会派にのみ交付される（月額218,000円×所属議員数、半期ごとに交付）。収支報告書は過去5年度分が掲載されるが、令和7年度分は索引ページに8会派の名称が掲示されるのみで報告書本文へのリンクがなく、カテゴリ一覧にも令和7年度のページがない（2026年11月23日確認）。令和6年度分までは会派別ページに収支報告書のPDFが掲載されている。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000015914.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "political_activity_expense_receipts",
+    "note": "令和7年度分は収支報告書自体が未公表のため、領収書の写しも未公表である。令和6年度分までは会派別ページから領収書の写しのPDFが公開されている。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000015914.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "inspection_trip_reports",
+    "note": "令和7年度分からは政務活動費の視察報告書も索引ページの掲載対象とされているが、令和7年度分は未公表である。特別委員会調査報告書は別ページで公表されているが、個別の視察の日程・視察先・費用の一覧ではない。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000015914.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議・委員会の会議録が公開されているが、公開には遅延があり、2026年11月23日時点で令和8年9月定例会分は未公開である（令和8年6月定例会分までの公開を確認）。",
+    "source_url": "https://ssp.kaigiroku.net/tenant/okayama/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議と予算・決算特別委員会の様子はインターネットで配信されている（本会議の会期日程のページに案内が記載されている）。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000015643.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願・陳情の件名と結果（採択・不採択）は提出議案・議決結果のページに掲載される。",
+    "source_url": "https://www.city.okayama.jp/gikai/0000085139.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "okayama-city-assembly-roster",
+   "okayama-city-assembly-committees",
+   "okayama-city-assembly-results-2026-09",
+   "okayama-city-assembly-votes-2026",
+   "okayama-city-assembly-seimu-index",
+   "okayama-city-assembly-minutes-search"
+  ]
+ }
+]

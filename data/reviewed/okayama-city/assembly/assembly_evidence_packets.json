@@ -1,0 +1,77 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-assembly-term-list-pdf"
+    ],
+    "statement": "岡山市議会議員の任期満了日は令和9年4月30日であり、岡山県選挙管理委員会の任期満了日一覧（令和8年5月26日現在）で直接確認した。任期は4年で、開始日は2023年5月1日である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-assembly-term-list-pdf",
+     "okayama-city-assembly-roster"
+    ],
+    "statement": "議員定数は46人（条例定数）。県選管の任期満了日一覧の定数欄と、市議会の議員名簿（50音順）の表題「条例定数46人」の双方で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": "会派別人数の合計（45人）が定数（46人）を1人下回る点については open_questions を参照。",
+    "source_ids": [
+     "okayama-city-assembly-votes-2026"
+    ],
+    "statement": "令和8年9月定例会の賛否の表に掲載された会派構成は、公明党岡山市議団8人、日本共産党岡山市議団4人、自由民主党岡山市議会23人、懐かしい未来2人、みらいえ2人、おかやま創政会4人、おかやま未来プロジェクト1人、日本維新の会岡山市議団1人の8会派45人である。議員名簿（50音順）に掲載された議員も45人で一致した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-assembly-committees"
+    ],
+    "statement": "常任委員会は総務（10人）、保健福祉・協働（9人）、スポーツ文化・産業（9人）、都市・環境（9人）、子ども・文教（9人）の5委員会で、このほかに議会運営委員会（9人）、予算特別委員会（45人）、決算特別委員会（45人）等がある。委員会の構成の公式ページ（2025年10月8日更新）に基づく。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": null,
+    "review_note": "開会日は市の会期日程ページが既に11月定例会分に更新されていたため、開会当日の報道で裏付けた。会議録の公開後に再確認する。",
+    "source_ids": [
+     "okayama-city-assembly-results-2026-09",
+     "okayama-city-assembly-votes-2026"
+    ],
+    "statement": "令和8年9月定例会は2026年9月1日に開会し、10月16日に閉会した。閉会日は提出議案・議決結果のページ（2026年10月16日付）と賛否のページの議決日で確認できる。甲第145号議案、諮問第2号、乙第3号議案の3件は会期中の9月17日に議決された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_votes",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-assembly-votes-2026"
+    ],
+    "statement": "賛否のページには「本会議において、起立により採決を行った議案に対する議員ごとの賛否を掲載しています」と明記されており、令和8年9月定例会では7件（9月17日議決分3件、10月16日議決分4件）が対象である。この7件については登録上の method を standing とした。その他の53件は議員個人別の賛否が公表されていないため、個人別賛否を登録していない。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-assembly-2023",
+  "open_questions": [
+   "賛否の表が実際の起立採決の記録であるか事前の態度集約であるかは、令和8年9月定例会の会議録が未公開（2026年11月23日時点で公開済みは令和8年6月定例会分まで）のため、会議録との突合は未了である。",
+   "定数46人に対し現員は45人で、欠員1人が生じている。令和8年6月定例会（6月23日議決分）の賛否の表には高成壯磨議員が掲載されていたが、9月定例会の賛否の表と現行の議員名簿には掲載がなく、異動の時期と理由は公式ページでは確認していない。",
+   "令和7年度政務活動費収支報告書について、索引ページに令和7年度の会派名が掲示されるのみで報告書本文へのリンクがなく、カテゴリ一覧にも令和7年度のページがない（2026年11月23日確認）。段階0棚卸しの「令和7年度分は2026年9月1日公開開始」との差異は未解消であり、市の掲載漏れか公開時期の未到来かは判別できない。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
