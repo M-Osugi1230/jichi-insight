@@ -38,6 +38,10 @@ import okayamaFiscalRecords from "../../../data/reviewed/okayama-prefecture/fisc
 import okayamaSettlementRecords from "../../../data/reviewed/okayama-prefecture/settlement_records.json";
 import okayamaFiscalEvidence from "../../../data/reviewed/okayama-prefecture/evidence_packets.json";
 import okayamaSettlementEvidence from "../../../data/reviewed/okayama-prefecture/settlement_evidence_packets.json";
+import kumamotoFiscalRecords from "../../../data/reviewed/kumamoto-prefecture/fiscal_records.json";
+import kumamotoSettlementRecords from "../../../data/reviewed/kumamoto-prefecture/settlement_records.json";
+import kumamotoFiscalEvidence from "../../../data/reviewed/kumamoto-prefecture/evidence_packets.json";
+import kumamotoSettlementEvidence from "../../../data/reviewed/kumamoto-prefecture/settlement_evidence_packets.json";
 import kobeCityFiscalRecords from "../../../data/reviewed/kobe-city/fiscal_records.json";
 import kobeCitySettlementRecords from "../../../data/reviewed/kobe-city/settlement_records.json";
 import kobeCityFiscalEvidence from "../../../data/reviewed/kobe-city/evidence_packets.json";
@@ -140,6 +144,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "hiroshima-prefecture": "広島県",
   "kyoto-prefecture": "京都府",
   "okayama-prefecture": "岡山県",
+  "kumamoto-prefecture": "熊本県",
   "kobe-city": "神戸市",
   "saitama-city": "さいたま市",
   "yokohama-city": "横浜市",
@@ -176,6 +181,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "hiroshima-prefecture": [...hiroshimaFiscalRecords, ...hiroshimaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "kyoto-prefecture": [...kyotoFiscalRecords, ...kyotoSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "okayama-prefecture": [...okayamaFiscalRecords, ...okayamaSettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "kumamoto-prefecture": [...kumamotoFiscalRecords, ...kumamotoSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "kobe-city": [...kobeCityFiscalRecords, ...kobeCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "chiba-city": [...chibaCityFiscalRecords, ...chibaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "saitama-city": [...saitamaCityFiscalRecords, ...saitamaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
@@ -211,6 +217,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "hiroshima-prefecture": [...hiroshimaFiscalEvidence, ...hiroshimaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "kyoto-prefecture": [...kyotoFiscalEvidence, ...kyotoSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "okayama-prefecture": [...okayamaFiscalEvidence, ...okayamaSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "kumamoto-prefecture": [...kumamotoFiscalEvidence, ...kumamotoSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "kobe-city": [...kobeCityFiscalEvidence, ...kobeCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "chiba-city": [...chibaCityFiscalEvidence, ...chibaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "saitama-city": [...saitamaCityFiscalEvidence, ...saitamaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,

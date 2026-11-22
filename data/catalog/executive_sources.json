@@ -1,5 +1,5 @@
 {
-  "version": "0.51.0",
+  "version": "0.52.0",
   "updated_at": "2026-11-23",
   "scope": "pilot",
   "records": [
@@ -2102,6 +2102,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2026年10月16日更新の選挙前の版。新潟市長欄は旧任期（令和8年11月17日満了・連続就任回数2）の記載のままで、新任期の満了日（2030年11月17日）の明記は一覧の次回更新で照合する。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-pref-governor",
+      "municipality_key": "kumamoto-prefecture",
+      "organization": "熊本県",
+      "category": "executive",
+      "title": "プロフィール（知事公室広報課）| 熊本県",
+      "url": "https://www.pref.kumamoto.jp/soshiki/1/203084.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "熊本県公式の知事プロフィール。木村敬（きむら たかし）が現職知事であり、略歴に「令和6年（2024）熊本県知事（1期）」と、それ以前の熊本県副知事（令和2年〜令和6年1月退職）が明記される。2026-11-23に直接確認した。"
+    },
+    {
+      "id": "kumamoto-pref-term-list",
+      "municipality_key": "kumamoto-prefecture",
+      "organization": "熊本県選挙管理委員会",
+      "category": "election",
+      "title": "市町村長・議員の任期満了日等に関する調べ（熊本県選挙管理委員会）",
+      "url": "https://www.pref.kumamoto.jp/soshiki/147/182198.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管の「任期満了日について」ページ（2026年8月1日更新）からリンクされる本体PDF「市町村長・議員の任期満了日等に関する調べ（R8(2026).8.1現在）」に、熊本県の長の任期満了日として令和10年4月15日（連続当選回数1）が明記される。2026-11-23にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "kumamoto-pref-governor-election-2024-ballot-count",
+      "municipality_key": "kumamoto-prefecture",
+      "organization": "熊本県選挙管理委員会",
+      "category": "election",
+      "title": "熊本県知事選挙 開票結果（令和6年3月24日執行）",
+      "url": "https://www.pref.kumamoto.jp/uploaded/attachment/248495.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管「熊本県知事選挙結果」ページからリンクされる開票結果PDF。きむら敬383,010票・当選、幸山政史287,750票、毛利秀徳22,116票、宮川一彦8,761票、有効投票701,637票が印字される。2026-11-23にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "kumamoto-pref-governor-election-2024-turnout",
+      "municipality_key": "kumamoto-prefecture",
+      "organization": "熊本県選挙管理委員会",
+      "category": "election",
+      "title": "熊本県知事選挙 投票結果（令和6年3月24日執行）",
+      "url": "https://www.pref.kumamoto.jp/uploaded/attachment/248494.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管「熊本県知事選挙結果」ページからリンクされる投票結果PDF。県計で選挙当日有権者数1,420,749人、投票者数705,137人、投票率49.63%が印字される。2026-11-23にPDF本体を直接読み取り照合した。"
+    },
+    {
+      "id": "kumamoto-pref-governor-inauguration-2024",
+      "municipality_key": "kumamoto-prefecture",
+      "organization": "熊本県",
+      "category": "executive",
+      "title": "令和6年（2024年）4月16日 木村知事就任記者会見 | 熊本県",
+      "url": "https://www.pref.kumamoto.jp/site/chiji/203761.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-23",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "就任記者会見の県公式ページ。会見録の冒頭で知事本人が「本日、令和6年4月16日付で熊本県知事に就任いたしました」と発言している。2026-11-23に直接確認した。"
     }
   ]
 }
