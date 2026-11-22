@@ -124,13 +124,13 @@ export default function KumamotoPrefecturePage() {
               <h2 id="finance-headline-title">2026年度一般会計当初予算</h2>
               <p>知事選挙を控えて編成された骨格予算です。
                 第1号議案「令和8年度熊本県一般会計予算」は2026年3月18日に可決され、
-                一般会計総額935,335,562千円、府税県税収入は登録済み財政レコードを参照です。
+                一般会計総額935,335,562千円です。
                 補正前の当初予算額であり、普通会計決算とは区別します。</p>
             </div>
             <div className={styles.metricGrid}>
               {[
                 { label: "一般会計当初予算（歳入総額）", record: revenue },
-                { label: "府税収入", record: tax },
+                { label: "県税収入", record: tax },
                 { label: "一般会計当初予算（歳出総額）", record: expenditure },
               ].map(({ label, record }) => (
                 <article className={styles.metricCard} key={label}>
