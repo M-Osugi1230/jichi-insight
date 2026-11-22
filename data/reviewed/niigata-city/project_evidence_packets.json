@@ -1,0 +1,1022 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略1の公式名称は「都市機能の充実と拠点性の向上」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略1は、基本計画の重点戦略の2つの大きなテーマのうち「都市の活力向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "purpose は、基本計画「重点戦略1」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はAが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略1の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-urban-functions-hub",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-urban-functions-hub",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略2の公式名称は「地域企業の経営力強化、新たなビジネスや成長産業の創出・育成」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略2は、基本計画の重点戦略の2つの大きなテーマのうち「都市の活力向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "purpose は、基本計画「重点戦略2」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はBが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略2の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-business-growth",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-business-growth",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略3の公式名称は「豊富な田園資源を活かした儲かる農業の実現」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略3は、基本計画の重点戦略の2つの大きなテーマのうち「都市の活力向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "purpose は、基本計画「重点戦略3」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標3件の評価内訳はAが2件、Cが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略3の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された3件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-profitable-agriculture",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-profitable-agriculture",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略4の公式名称は「魅力と拠点性を活かした交流人口の拡大」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略4は、基本計画の重点戦略の2つの大きなテーマのうち「都市の活力向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "purpose は、基本計画「重点戦略4」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標3件の評価内訳はAが1件、Bが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略4の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された3件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-exchange-population",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-exchange-population",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略5の公式名称は「新潟暮らしの魅力発信と多様な支援による移住・定住の促進」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略5は、基本計画の重点戦略の2つの大きなテーマのうち「都市の活力向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "purpose は、基本計画「重点戦略5」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-1",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はBが1件、Cが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略5の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-migration-settlement",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-migration-settlement",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略6の公式名称は「誰もが個性と能力を発揮しながら、心豊かに暮らせる社会の実現」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略6は、基本計画の重点戦略の2つの大きなテーマのうち「住民福祉の向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2"
+    ],
+    "statement": "purpose は、基本計画「重点戦略6」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はAが1件、Cが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略6の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-inclusive-society",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-inclusive-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略7の公式名称は「子どもと子育てにやさしいまちづくりと新潟の将来を担う人材の育成」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略7は、基本計画の重点戦略の2つの大きなテーマのうち「住民福祉の向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2"
+    ],
+    "statement": "purpose は、基本計画「重点戦略7」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はAが1件、-が1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略7の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-childcare-talent",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-childcare-talent",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略8の公式名称は「仕事と生活の調和（ワーク・ライフ・バランス）の実現」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略8は、基本計画の重点戦略の2つの大きなテーマのうち「住民福祉の向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2"
+    ],
+    "statement": "purpose は、基本計画「重点戦略8」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はAが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略8の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-work-life-balance",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-work-life-balance",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略9の公式名称は「脱炭素・循環型社会の実現」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略9は、基本計画の重点戦略の2つの大きなテーマのうち「住民福祉の向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2"
+    ],
+    "statement": "purpose は、基本計画「重点戦略9」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はAが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略9の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-decarbonized-circular-society",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-decarbonized-circular-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本計画「重点戦略」の位置付けと地方版総合戦略との関係、令和7年度進捗状況（資料1）第Ⅵ章「重点戦略の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "本登録の単位は、重点戦略とした。基本計画は10の重点戦略を一つの政策パッケージとして定め、各戦略の政策指標を重要業績評価指標（KPI）としている。令和7年度進捗状況（資料1）は重点戦略ごとに主な取組と実績、課題と今後の展開、政策指標の評価を公表しており、公式の進捗・評価の公表単位と一致する。政策単位では政策指標の内訳が指標単位で公表されるのみで、政策単位の進捗・評価の公表は存在しないため、政策を登録単位とはしなかった。決算附属書類「主要施策成果説明書」は部門別編成で計画体系と一致せず、公式対応表もないため、重点戦略との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本計画「重点戦略」の各戦略の見出し",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略10の公式名称は「安心・安全で災害に強いまちづくり」であり、基本計画「重点戦略」の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本計画「重点戦略」の位置付け、新潟市総合計画2030有識者会議の部会構成（公式ページ）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-page",
+     "niigata-city-plan-2030-strategies-1"
+    ],
+    "statement": "重点戦略10は、基本計画の重点戦略の2つの大きなテーマのうち「住民福祉の向上」に属する。基本計画は、重点戦略1〜5が「都市の活力向上」、重点戦略6〜10が「住民福祉の向上」に対応し、両者の持続可能な好循環をつくりだす戦略と位置付けており、新潟市総合計画2030有識者会議もこの2テーマで部会を構成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本計画「重点戦略」の各戦略の冒頭文",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2"
+    ],
+    "statement": "purpose は、基本計画「重点戦略10」の冒頭文（戦略のねらいと展開の方向を示す本文）を転記した。PDF 抽出時の不要な空白は除去し、正規の表記に整えた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本計画「重点戦略」および令和7年度進捗状況（資料1）を通読し、戦略単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-plan-2030-strategies-2",
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "重点戦略は分野横断の政策パッケージであり、基本計画および進捗公表資料には戦略単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、総合計画の進捗状況の公表資料は政策企画部政策調整課が作成している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary"
+    ],
+    "statement": "進捗公表資料には重点戦略単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は各戦略の政策指標ごとに A（順調）・B（概ね順調）・C（低調）・－（評価保留）で公表されており、本戦略の指標2件の評価内訳はBが1件、Cが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度進捗状況（資料1）、前期実施計画（令和8年3月改定）、令和6年度主要施策成果説明書",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-implementation-plan-first-term",
+     "niigata-city-settlement-outcomes-fy2024"
+    ],
+    "statement": "重点戦略単位の金額（予算額・決算額）は、進捗公表資料・前期実施計画・主要施策成果説明書のいずれにも公表されていない。前期実施計画は施策・取組単位で主な事業の内容を示すもので金額の集計はなく、主要施策成果説明書は部門別編成で計画体系と一致しない。このため金額は null とし、理由をnote に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度進捗状況（資料1）第Ⅵ章の戦略別政策指標表、資料2「政策指標の進捗状況」",
+    "review_note": null,
+    "source_ids": [
+     "niigata-city-progress-fy2025-summary",
+     "niigata-city-progress-fy2025-policy-indicators"
+    ],
+    "statement": "重点戦略10の政策指標は、令和7年度進捗状況（資料1）第Ⅵ章の戦略別表に掲載された2件をすべて登録した。基本計画が各戦略の政策指標を重要業績評価指標（KPI）と指定していることに基づく。baseline は策定時点の値、target は令和7年度の参考目標値（目安ライン）、actuals は令和7年度実績であり、市の評価（A/B/C/評価保留）を換算規則に基づき assessment に換算した。実績が未公表の指標は null とし、理由を definition に明記した。"
+   }
+  ],
+  "id": "evidence-jp-local-151009-project-2025-disaster-resilient-city",
+  "open_questions": [
+   "金額は未登録である。重点戦略単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "令和8年度以降の進捗状況が公表され次第、更新サイクルで年度別レコードを追加する。総合計画2030は2026年度に中間見直しが予定されており、見直し後の体系との対応は公式資料の公表を待って判断する。",
+   "首長公約との接続は新潟クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点戦略との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-151009-project-2025-disaster-resilient-city",
+  "subject_type": "project"
+ }
+]

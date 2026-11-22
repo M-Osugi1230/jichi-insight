@@ -1,0 +1,1012 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.036〜039）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "政策名は「こども・若者の権利の尊重と、成長・自立の支援（こども・若者）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策1の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向1 こども・子育て・教育」を用いた。基本方向1は「こども・若者が健やかに成長し、安心して子育てができるまちづくり」を掲げ、政策1を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.036〜039）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「こども・若者の権利の尊重」「こどもが安全で健やかに育つことができる環境づくり」「若者の成長と未来のための支援」「困難を抱えるこども・若者やその家庭への支援」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.036〜039）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は岡山っ子育成局を中心に、保健福祉局・教育委員会など複数局にまたがるため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された5件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-children-youth",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-children-youth",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.040〜043）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "政策名は「安心してこどもを生み育てることができる環境づくり（子育て）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策2の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向1 こども・子育て・教育」を用いた。基本方向1は「こども・若者が健やかに成長し、安心して子育てができるまちづくり」を掲げ、政策2を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.040〜043）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「妊娠期からの切れ目ない健康づくりへの支援」「子育ての負担感や不安感をやわらげる支援」「共働き・共育ての推進」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.040〜043）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は岡山っ子育成局を中心に、保健福祉局など複数局にまたがるため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された3件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-child-rearing",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-child-rearing",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.044〜047）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "政策名は「知・徳・体の調和のとれた自立に向かって成長する子どもの育成（学校教育）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策3の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向1 こども・子育て・教育」を用いた。基本方向1は「こども・若者が健やかに成長し、安心して子育てができるまちづくり」を掲げ、政策3を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.044〜047）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「確かな学力を育む教育活動の推進」「主体性を育む特色ある教育の推進」「健やかな体を育む健康・安全教育の推進」「豊かな人間性、社会性を育む教育活動の推進」「多様な教育ニーズを踏まえた支援の充実」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.044〜047）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は教育委員会が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された10件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-school-education",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-school-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.048〜051）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "政策名は「教育を支える基盤整備及び教育DXの推進（教育環境）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策4の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向1 こども・子育て・教育」を用いた。基本方向1は「こども・若者が健やかに成長し、安心して子育てができるまちづくり」を掲げ、政策4を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.048〜051）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「学校園の指導体制の充実」「教育DXによる学習指導の充実及び働き方改革の推進」「安全・安心で快適な教育環境の整備」「広報活動と当事者からの意見聴取の充実による教育の推進」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.048〜051）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は教育委員会が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された3件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-educational-environment",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-educational-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.052〜055）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "政策名は「共に学び、つながる社会教育の推進と、生涯にわたる学びの充実（生涯学習）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策5の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向1 こども・子育て・教育」を用いた。基本方向1は「こども・若者が健やかに成長し、安心して子育てができるまちづくり」を掲げ、政策5を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.052〜055）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「家庭・地域の教育を支える社会教育の推進」「社会教育施設の機能強化」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.052〜055）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は教育委員会が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya1-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya1-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された4件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-lifelong-learning",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-lifelong-learning",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.056〜059）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "政策名は「多様な主体による協働のまちづくり（協働・ESD）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策6の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向2 協働・多様性」を用いた。基本方向2は「一人ひとりが活躍でき、ともに創る市民主体のまちづくり」を掲げ、政策6を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.056〜059）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「SDGs達成に向けたESDの推進」「地域における主体的な活動の促進」「多様な主体による協働の推進」「特色ある区づくりの推進」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.056〜059）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は市民協働局を中心に、教育委員会など複数局にまたがるため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された4件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-collaboration-esd",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-collaboration-esd",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.060〜063）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "政策名は「未来を拓く国際交流と多文化共生のまちづくり（国際）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策7の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向2 協働・多様性」を用いた。基本方向2は「一人ひとりが活躍でき、ともに創る市民主体のまちづくり」を掲げ、政策7を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.060〜063）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「魅力を高め活力を生み出す国際交流とグローバルマインドの醸成」「誰もが活躍できる多文化共生の地域づくり」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.060〜063）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は市民協働局が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された2件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-international-exchange",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-international-exchange",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.064〜067）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "政策名は「多様性を認め平和を願う人権尊重社会の実現（人権・男女共同参画）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策8の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向2 協働・多様性」を用いた。基本方向2は「一人ひとりが活躍でき、ともに創る市民主体のまちづくり」を掲げ、政策8を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.064〜067）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「多様性を認め合える人権尊重の社会づくり」「男女共同参画の推進」「平和を大切にする意識の醸成」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.064〜067）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は市民協働局が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya2-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya2-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された3件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-human-rights-gender-equality",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-human-rights-gender-equality",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.068〜071）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya3-pdf"
+    ],
+    "statement": "政策名は「生涯にわたり健康でいきいきと生活できるまちづくり（健康）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策9の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向3 健康・福祉」を用いた。基本方向3は「ともに支え合い、誰もが自分らしくいきいきと暮らせるまちづくり」を掲げ、政策9を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.068〜071）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya3-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「健康寿命の延伸に向けた健康づくりの推進」「いきいきと活躍できる生涯現役社会づくり」「介護予防の推進」「感染症対策」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.068〜071）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya3-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は保健福祉局が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya3-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya3-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された4件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-health",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-health",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第71号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "本登録の単位は、「岡山市第七次総合計画・前期中期計画」（2026〜2030年度）の分野別計画における「政策」とした。計画は8つの「都市づくりの基本方向」の下に30の政策を設け、各政策の下に合計99の施策を置く。政策は、前期中期計画の進行管理について計画が「30の政策ごとに成果指標を設定し、各施策のもとで実施する取組の達成状況を毎年度評価し、ホームページで公表します」と定める、成果指標の設定単位かつ公式評価の公表単位であるためである。計画は令和8年2月定例市議会で甲第71号議案「岡山市第七次総合計画長期構想及び前期中期計画の策定について」が2026年3月17日に原案可決されて策定された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画概要ページ「政策・施策体系」、前期中期計画 分野別計画（計画p.072〜075）の政策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-bunya3-pdf"
+    ],
+    "statement": "政策名は「ともに生き、ともに支え合う地域共生社会の推進（福祉）」。計画概要ページの「政策・施策体系」および前期中期計画（分野別計画）の政策10の見出しの表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "計画概要ページ「都市づくりの基本方向」および「政策・施策体系」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本登録のparent_policyには、政策を束ねる「都市づくりの基本方向3 健康・福祉」を用いた。基本方向3は「ともに支え合い、誰もが自分らしくいきいきと暮らせるまちづくり」を掲げ、政策10を含む政策群を置く。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "前期中期計画 分野別計画（計画p.072〜075）の政策・施策体系と施策見出し",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya3-pdf",
+     "okayama-city-seventh-plan-overview-page"
+    ],
+    "statement": "本政策は施策「重層的なセーフティネットの構築」「地域福祉の推進」「障害者の自立支援と社会参加の促進」「ユニバーサルデザインの推進」で構成される。各施策名は前期中期計画の政策・施策体系および分野別計画の施策見出しで確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "前期中期計画 分野別計画（計画p.072〜075）の主な事務事業の担当局表記",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya3-pdf"
+    ],
+    "statement": "計画書は政策単位の担当局を定めておらず、主な事務事業は保健福祉局が中心であるが、政策単位の担当は計画上定められていないため、responsible_departmentは未登録（null）とした。特定の局を政策の担当として推測で登録することはしない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画概要ページ「前期中期計画の進行管理」、前期中期計画総論「4 計画の進行管理」",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-overview-page",
+     "okayama-city-seventh-plan-souron-pdf"
+    ],
+    "statement": "第七次総合計画の公式評価は、令和8年度の取組分が初回となり、本登録時点では未公表である（計画は、政策ごとの成果指標を設定し、各施策の取組達成状況を毎年度評価してホームページで公表する設計を明記している）。このため official_evaluation は未登録（null）とし、旧・第六次総合計画の評価結果は流用していない。初回評価の公表後に更新サイクル（#706）で登録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.initial_budget",
+    "location_note": "前期中期計画（金額の掲載なし）、市議会公式「令和8年2月定例市議会の提出議案・議決結果について」（甲第4号議案）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-bunya3-pdf",
+     "okayama-city-council-results-2026-02-page"
+    ],
+    "statement": "岡山市第七次総合計画・前期中期計画は政策単位の金額（予算額・決算額）を掲載しておらず、市の当初予算資料も会計別・款別の集計であるため、本政策の令和8年度当初予算額は確認できず、未登録とした（0では補完しない）。なお、令和8年度一般会計予算は甲第4号議案として2026年3月17日に原案可決され成立している。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "付属資料「1 成果指標一覧」（計画p.196〜198）",
+    "review_note": null,
+    "source_ids": [
+     "okayama-city-seventh-plan-fuzoku-pdf",
+     "okayama-city-seventh-plan-bunya3-pdf"
+    ],
+    "statement": "本政策の成果指標は、計画本体の付属資料「成果指標一覧」に公表された3件を登録した（複数区分のある指標は区分ごとに分割して登録した）。基準値・目標値は一覧の印字どおりに転記し、PDF上の座標レベルで照合した。実績値は初回評価が未公表のため未登録（not_published）とし、assessmentはnot_assessableとした。"
+   }
+  ],
+  "id": "evidence-jp-local-331007-project-2026-welfare",
+  "open_questions": [
+   "公式評価は未登録。第七次総合計画の初回評価（令和8年度分）の公表後に、更新サイクル（#706）で公式評価と指標実績値を登録する。",
+   "金額は未登録。政策単位の金額を掲載した公式資料は確認できていない。決算附属書類（主要な施策の成果等）の体系と前期中期計画の政策体系との対応は未確認であり、政策単位の金額が公表され次第、更新サイクルで登録する。",
+   "首長公約との接続は岡山クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と政策との公式な対応は確認できていないため未登録（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-331007-project-2026-welfare",
+  "subject_type": "project"
+ }
+]
