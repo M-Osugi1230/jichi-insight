@@ -934,5 +934,35 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-okayama-pref-2024",
+    "executive_term_id": "jp-local-330001-executive-2024-11-12",
+    "searched_at": "2026-11-23",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "follow_up_required",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "okayama-pref-governor-proposal-2025",
+      "okayama-pref-term-list",
+      "okayama-pref-governor-election-2024-results",
+      "okayama-pref-governor-election-2024-overview",
+      "okayama-pref-governor-election-2024"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2024年岡山県知事選挙の選挙公報は発行された。岡山県選挙管理委員会「令和6年10月27日執行岡山県知事選挙 結果調」（令和7年8月）に「5 選挙公報」の章（印刷・配布の記録）があり、倉敷市の選挙結果ページにも選挙時に県選管ホームページへ選挙公報が掲載されていたことを示すリンク記録がある。しかし、県選管の現行の知事選挙ページには選挙公報へのリンクがなく、選挙特設サイトは2026-11-23時点で到達不可だったため、現行公式サイトにおける2024年分選挙公報の現存は確認できていない。音声読み上げ対応データの有無も未確認である。以上により本段階では公約原文資料を登録せず、段階3でWayback Machine等を含めて再確認する。これは選挙公報が存在しないという主張ではない。",
+    "next_actions": [
+      "段階3でWayback Machine等を含めて2024年知事選挙の選挙公報の所在を再確認し、特定できれば原典として登録する",
+      "選挙公報の音声読み上げ対応データの公表有無を確認する",
+      "2028年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "medium"
   }
 ]

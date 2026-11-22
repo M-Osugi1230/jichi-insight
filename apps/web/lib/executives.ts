@@ -109,6 +109,7 @@ const municipalityIdToKey = {
   "jp-local-340006": "hiroshima-prefecture",
   "jp-local-341002": "hiroshima-city",
   "jp-local-260002": "kyoto-prefecture",
+  "jp-local-330001": "okayama-prefecture",
   "jp-local-430005": "kumamoto-prefecture",
   "jp-local-221007": "shizuoka-city",
   "jp-local-221309": "hamamatsu-city",
