@@ -2089,7 +2089,9 @@ def validate_kyoto_cluster_export() -> list[str]:
         else:
             projects = load_json(ROOT / "data" / "reviewed" / slug / "projects.json")
             for record in projects:
-                if record["review_status"] == "reviewed" and record["official_title"] not in project_body:
+                if record["review_status"] != "reviewed":
+                    continue
+                if record["official_title"] not in project_body:
                     failures.append(f"Kyoto {slug} missing project: {record['official_title']}")
         for section_id in ("finance-headline-title", "assembly-title"):
             if not _shizuoka_scoped_text(html, "aria-labelledby", section_id):
