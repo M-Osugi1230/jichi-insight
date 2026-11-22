@@ -10,8 +10,8 @@ import kyotoCityFinanceCatalog from "../../../data/catalog/kyoto_city_finance_so
 import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_finance_sources.json";
 import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
-import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
+import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
@@ -53,12 +53,12 @@ export type MunicipalityKey =
   | "hiroshima-city"
   | "kyoto-city"
   | "kyoto-prefecture"
-  | "okayama-city"
   | "niigata-city"
   | "kumamoto-city"
   | "okayama-prefecture"
   | "kumamoto-prefecture"
-  | "niigata-prefecture";
+  | "niigata-prefecture"
+  | "okayama-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -310,14 +310,21 @@ export const municipalityMeta: Record<
   "kumamoto-city": {
     name: "熊本市", type: "政令指定都市",
     summary: "第8次熊本市総合計画（2024〜2031年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、大西 一史市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
   "niigata-city": {
     name: "新潟市", type: "政令指定都市",
     summary: "新潟市総合計画2030（2023〜2030年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、中原 八一市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
   "niigata-prefecture": {
     name: "新潟県", type: "都道府県",
     summary: "新潟県総合計画（2025年策定、令和7〜14年度）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と花角英世知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/niigata-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -333,8 +340,8 @@ export const sourceCatalog = [
   ...(niigataCityFinanceCatalog.records as SourceRecord[]),
   ...(niigataFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
-  ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
