@@ -104,6 +104,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-431001": "kumamoto-city",
   "jp-local-261009": "kyoto-city",
   "jp-local-340006": "hiroshima-prefecture",
   "jp-local-341002": "hiroshima-city",
