@@ -1,0 +1,110 @@
+[
+ {
+  "as_of": "2026-11-23",
+  "assembly_id": "jp-local-261009-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-261009-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "member_roster",
+    "note": "選挙区別（11区）の議員名簿が市会ホームページに掲載され、氏名と選挙区が確認できる。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/meibo/senkyoku/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿が掲載され、政務活動費の交付先一覧とも一致する。令和8年9月市会の議決時点では自民19人、維京国16人、共産14人、公明11人、無所属7人。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会の構成のページに常任委員会等の委員が掲載されている。ただしページの最終更新日は令和5年5月16日である。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/shikumi/iinkaikousei.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとの議案・審議結果のページに、議案番号、件名、提出日、議決日、審議結果が掲載されている。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R08/gian9.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議案・審議結果のページに会派別（無所属議員は個人名の列）の態度が掲載され、凡例として〇＝賛成、×＝反対、－＝欠席と明記されている。市はこれを表決結果とは呼ばず「態度」と表記しており、会議録（審議期間の終了後、概ね4箇月後に掲載）との突合は未了のため、登録上の method は unknown とした。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R08/gian9.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "無所属議員7名については議案・審議結果のページに個人名の列で態度が公表されている。全議員の議員個人別の賛否は京都市会だよりに掲載されるが、令和8年9月市会分は第153号（令和8年11月15日発行）には掲載されておらず、前半の報告のみであったため、個人別の登録は次号以降の公表を待つ（2026年11月23日確認時点）。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R08/gian9.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分は会派分（6会派、うち2会派は存続期間の部分期間）と議員分（67人）の双方の収支報告書が公開されている。会派分は議員1人当たり月14万円、議員分は月40万円が交付される。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/joho/seimukatsudohi.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の写しは収支報告書と一体のPDFで公開され、オンラインで閲覧できる。公開期間は1年間である。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/joho/seimukatsudohi.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "海外行政調査については調査団の報告書と提言書が公表されている。委員会の他都市調査については京都市会だよりに行き先とテーマの概要が掲載されるのみで、日程、費用、参加者は公表されていない。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/joho/kaigai/R7.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議と委員会の会議録が公開されている。本会議録は審議期間の終了後、概ね4箇月後に掲載されるため、令和8年9月市会分は2026年11月23日時点で未掲載である。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/kaigiroku/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議と予算・決算特別委員会の生中継と録画中継が市会ホームページで公開されている。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/chukei/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願は議案・審議結果のページに受理日、付託委員会、委員会の審査結果、議決結果と会派等の賛否が掲載されている。",
+    "source_url": "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R08/gian9.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "kyoto-city-assembly-term-list",
+   "kyoto-city-assembly-roster-districts",
+   "kyoto-city-assembly-faction-roster",
+   "kyoto-city-assembly-committees",
+   "kyoto-city-assembly-results-2026-09",
+   "kyoto-city-assembly-dayori-153",
+   "kyoto-city-assembly-dayori-index",
+   "kyoto-city-assembly-seimu-2025-index",
+   "kyoto-city-assembly-seimu-2025-reports",
+   "kyoto-city-assembly-kaigai-2025",
+   "kyoto-city-assembly-kaigai-report-2025",
+   "kyoto-city-assembly-minutes-search",
+   "kyoto-city-assembly-broadcast"
+  ]
+ }
+]
