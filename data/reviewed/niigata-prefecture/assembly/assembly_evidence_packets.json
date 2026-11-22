@@ -1,0 +1,44 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "niigata-pref-assembly-roster"
+    ],
+    "statement": "新潟県議会の定数は53名、現員は52名（欠員1名）。議員の任期は2023年4月30日から2027年4月29日までで、段階1登録の任期情報と一致する。定数・現員は議員名簿（2026年5月14日更新）の印字どおり。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "niigata-pref-assembly-roster"
+    ],
+    "statement": "会派は6会派（自由民主党32名・未来にいがた8名・リベラル新潟6名・真政にいがた3名・公明党2名・無所属1名）で、合計52名が現員と一致する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "niigata-pref-assembly-committees"
+    ],
+    "statement": "委員会は10（議会運営委員会、常任委員会4、特別委員会5）。委員会委員名簿（2026年10月19日現在）の名称のみを登録した。"
+   }
+  ],
+  "id": "evidence-jp-local-150002-assembly-2023",
+  "open_questions": [
+   "令和8年9月定例会の本会議会議録は2026年11月23日時点で未公表。公表後に賛否表と個別議案の表決方法（異議なし・起立採決等）を突合し、必要に応じて vote の method を更新する。",
+   "現員52名（欠員1名）について、欠員の補充時期は未確認。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-150002-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
