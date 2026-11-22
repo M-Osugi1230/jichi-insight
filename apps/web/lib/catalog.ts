@@ -8,8 +8,11 @@ import shizuokaFinanceCatalog from "../../../data/catalog/shizuoka_prefecture_fi
 import hiroshimaFinanceCatalog from "../../../data/catalog/hiroshima_prefecture_finance_sources.json";
 import kyotoCityFinanceCatalog from "../../../data/catalog/kyoto_city_finance_sources.json";
 import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_finance_sources.json";
+import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
+import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
+import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -50,7 +53,10 @@ export type MunicipalityKey =
   | "kyoto-city"
   | "kyoto-prefecture"
   | "niigata-city"
-  | "kumamoto-city";
+  | "kumamoto-city"
+  | "okayama-prefecture"
+  | "kumamoto-prefecture"
+  | "niigata-prefecture";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -147,6 +153,18 @@ export const municipalityMeta: Record<
     name: "京都府", type: "都道府県",
     summary: "京都府総合計画（2019年策定・2022年改定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と西脇隆俊知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/kyoto-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "okayama-prefecture": {
+    name: "岡山県", type: "都道府県",
+    summary: "第4次晴れの国おかやま生き活きプラン（2025年3月策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と伊原木隆太知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/okayama-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "kumamoto-prefecture": {
+    name: "熊本県", type: "都道府県",
+    summary: "くまもと新時代共創基本方針及び総合戦略（2024年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と木村敬知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/kumamoto-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -293,6 +311,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "niigata-prefecture": {
+    name: "新潟県", type: "都道府県",
+    summary: "新潟県総合計画（2025年策定、令和7〜14年度）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と花角英世知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/niigata-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -306,8 +330,11 @@ export const sourceCatalog = [
   ...(hiroshimaFinanceCatalog.records as SourceRecord[]),
   ...(kyotoCityFinanceCatalog.records as SourceRecord[]),
   ...(niigataCityFinanceCatalog.records as SourceRecord[]),
+  ...(niigataFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(okayamaFinanceCatalog.records as SourceRecord[]),
+  ...(kumamotoFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),

@@ -335,9 +335,9 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # to version 0.50.0 / 145 records; the Kumamoto cluster's
     # stage 1 (Issue #956) then appended the four Kumamoto City
     # mayor records, bringing the combined catalog to version
-    # 0.51.0 / 149 records.
-    assert catalog["version"] == "0.51.0"
-    assert len(catalog["records"]) == 149
+    # 0.54.0 / 162 records.
+    assert catalog["version"] == "0.54.0"
+    assert len(catalog["records"]) == 162
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

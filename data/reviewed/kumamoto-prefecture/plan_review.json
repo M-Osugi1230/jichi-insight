@@ -1,0 +1,55 @@
+{
+  "id": "phase15-kumamoto-plan-review",
+  "name_ja": "熊本県",
+  "next_action": "Register the priority projects in the project stage after fixing the registration unit as the measures of the Comprehensive Strategy and confirming the full measure list (including the measures under the third direction) from the strategy text; identify the published form of the annual expert evaluation; register the governor's promises in the promise stage after locating the official 2024 election bulletin (its survival on the election commission's current pages is unconfirmed); add the assembly layer in the assembly stage, where the FY2025 settlement bills (21 bills) stand continued in the August 2026 session and remain pending; keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "430005",
+  "quality_boundary": "The prefecture's top-level plans are the Kumamoto New Era Co-Creation Basic Policy (くまもと新時代共創基本方針) and the Kumamoto New Era Co-Creation Comprehensive Strategy (くまもと新時代共創総合戦略), together forming the prefecture's regional revitalisation strategy. This review fixes that identity, the governing philosophy, the four basic directions and the strategy's pillar/measure/KPI structure, the implementation layer shown in the settlement annex, and the progress governance based on the OODA loop and external expert evaluation. Kumamoto Prefecture had no reviewed package in this repository before this stage, so this review rests on the prefecture's and the MIC's own published documents alone. Project units are registered in the project stage, the governor's promises in the promise stage, and the assembly in the assembly stage; the FY2026 initial budget and the FY2022-FY2024 ordinary-account settlements are registered as separate fiscal records.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "熊本県企画課「『くまもと新時代共創基本方針及び総合戦略』の策定について」公式ページ、基本方針本体、および決算附属書類「主要な施策の成果」（令和7年度分）の基本方針概要",
+      "evidence_role": "current_plan_identity",
+      "id": "kumamoto-plan-current-identity",
+      "review_note": "計画名・位置付け・基本理念は県公式の策定ページと基本方針本体、「主要な施策の成果」の概要で一致を確認した。基本方針の策定議案の議案番号と議決結果文言は、令和6年11月定例会の知事提出議案等ページでの直接確認が未了であり、段階2以降の確認事項として残す（県議会報第226号は同定例会の知事提出議案45件が原案どおり可決・承認・同意となった旨を示す）。",
+      "source_url": "https://www.pref.kumamoto.jp/soshiki/18/219402.html",
+      "statement": "熊本県の県政運営の最上位の方針は「くまもと新時代共創基本方針」であり、これを具体化する具体的な施策等をまとめた「くまもと新時代共創総合戦略」と合わせて「熊本県版総合戦略」を構成し、地方創生の取組みを推進する。両者は令和6年（2024年）12月に策定された（企画課の策定ページは2024年12月25日更新）。基本理念は「県民みんなが安心して笑顔になり、持続的で活力あふれる熊本の未来を共に創る～世界に開かれた熊本、世界へ羽ばたく熊本～」である。基本方針は令和6年11月定例会に議案として提案された（知事説明概要、2024年11月29日）。",
+      "title": "現行計画（くまもと新時代共創基本方針及び総合戦略、令和6年12月策定）",
+      "value": "くまもと新時代共創基本方針／くまもと新時代共創総合戦略（令和6年度〜令和9年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "くまもと新時代共創基本方針（第3章〜第6章）および総合戦略（目次・構成図・柱別分冊）",
+      "evidence_role": "policy_structure",
+      "id": "kumamoto-plan-policy-structure",
+      "review_note": "4つの基本的方向性の名称と基本方針の章構成は基本方針本体の目次で、総合戦略の柱構成は戦略本体の構成図で確認した。全施策の総数と方向性3（いつまでも続く豊かな熊本）の施策名は段階2で総合戦略本文により確定する。",
+      "source_url": "https://www.pref.kumamoto.jp/uploaded/attachment/275895.pdf",
+      "statement": "基本方針は第3章で基本理念を示し、第4章「取組みの基本的方向性」として（1）こどもたちが笑顔で育つ熊本、（2）世界に開かれた活力あふれる熊本、（3）いつまでも続く豊かな熊本、（4）県民の命、健康、安全・安心を守る、の4つを掲げる。第5章は「緑の流域治水」の推進と五木村・相良村振興、水俣病問題への対応を、第6章は施策を支える行財政運営、DXの推進、市町村との連携を示す。総合戦略は同じ4つを柱とし、各柱の下に「施策」を配置して、施策ごとに重要業績評価指標（KPI）を設定する。",
+      "title": "計画の体系（基本方針の基本的方向性4つと総合戦略の柱・施策・KPI）",
+      "value": "基本方針（基本理念／基本的方向性4つ／重点的対応／行財政運営等）／総合戦略（4つの柱の下の施策群と施策ごとのKPI）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "くまもと新時代共創基本方針第1章（期間の記述）、総合戦略第3章「重要業績評価指標（KPI）一覧」、決算附属書類「主要な施策の成果」（令和7年度分）",
+      "evidence_role": "implementation_layer",
+      "id": "kumamoto-plan-implementation-layer",
+      "review_note": "期間・KPIの持ち方は基本方針・総合戦略の本体で、実施層の文書は「主要な施策の成果」（令和7年度分、地方自治法第233条第5項に基づき令和8年8月に提出）の実物で確認した。金額は施策配下の事業単位で公表されるため、重点事業の登録は段階2で施策単位を確定してから行う。",
+      "source_url": "https://www.pref.kumamoto.jp/uploaded/attachment/275900.pdf",
+      "statement": "基本方針の期間は令和6年度から令和9年度（2027年度）までである。実施層は総合戦略の施策とその配下の事業であり、地方自治法第233条第5項に基づく決算附属書類「主要な施策の成果」が、基本方針・総合戦略の体系に沿って施策・事業ごとの予算額・決算額と成果を年度ごとに示す。総合戦略のKPI一覧は、施策ごとに評価指標と現状（令和5（2023）年）・目標（令和9（2027）年）を掲げる。",
+      "title": "総合戦略の施策と決算附属書類「主要な施策の成果」による実施の提示",
+      "value": "計画期間 令和6年度〜令和9年度／決算附属書類「主要な施策の成果」（施策・事業ごとの予算額・決算額）／施策ごとのKPI（現状R5・目標R9）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "くまもと新時代共創総合戦略 第2章「推進体制」および用語解説（KPI・OODAループの定義）",
+      "evidence_role": "progress_governance",
+      "id": "kumamoto-plan-progress-governance",
+      "review_note": "推進体制の記述は総合戦略本体で確認した。年次評価の独立した公表物（有識者評価の結果公表の有無・形式）は現時点で特定できておらず、段階2で確認する。",
+      "source_url": "https://www.pref.kumamoto.jp/uploaded/attachment/275900.pdf",
+      "statement": "総合戦略第2章「推進体制」は、施策ごとの進捗状況を検証するために設定するKPIを活用し、観察・情勢判断・意思決定・行動のOODAループの考え方に基づき、迅速・機敏に（アジャイル）施策の見直しと事業の検討を進めること、外部有識者等の参画による効果検証も行いながら更なる施策の充実・展開につなげることを定める。",
+      "title": "OODAループと外部有識者の効果検証による進行管理",
+      "value": "総合戦略第2章「推進体制」／KPIによる進捗検証・OODAループに基づく見直し・外部有識者等の参画による効果検証"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-23"
+}

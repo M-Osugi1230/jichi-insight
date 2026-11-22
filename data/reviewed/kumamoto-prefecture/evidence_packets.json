@@ -1,0 +1,64 @@
+[
+  {
+    "id": "evidence-kumamoto-prefecture-2026-initial-budget-total-revenue",
+    "subject_id": "jp-local-430005-fiscal-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度熊本県一般会計当初予算の歳入総額は935,335,562千円であり、議案第46号として2026年3月18日に「可決」で議決された。",
+        "location_note": "議案第46号「令和8年度熊本県一般会計予算」の第1表、および熊本県議会「令和8年2月定例会 知事提出議案等」の議案第46号の欄（2026年3月18日議決）。",
+        "source_ids": [
+          "kumamoto-pref-budget-2026-bill",
+          "kumamoto-pref-assembly-2026-feb-session-bills",
+          "kumamoto-pref-budget-2026-supplementary-bill-1"
+        ],
+        "decision": "accepted",
+        "review_note": "議案の千円単位の印字値を円単位へ換算して保存。議案PDFは画像のみのため描画画像の目視転記を正とし、令和8年6月定例会の一般会計補正予算（第1号）議案の第1表「補正前の額」（935,335,562千円）および同議案第1条（補正後953,590,591千円・補正額18,255,029千円）とも一致することを確認した。議決日と結果文言「可決」は県議会の議案等ページで確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2026-initial-budget-local-tax",
+    "subject_id": "jp-local-430005-fiscal-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度熊本県一般会計当初予算の県税は177,985,266千円であり、議案第46号として2026年3月18日に「可決」で議決された。",
+        "location_note": "議案第46号「令和8年度熊本県一般会計予算」第1表の歳入第1款「県税」の欄、および熊本県議会「令和8年2月定例会 知事提出議案等」の議案第46号の欄（2026年3月18日議決）。",
+        "source_ids": [
+          "kumamoto-pref-budget-2026-bill",
+          "kumamoto-pref-assembly-2026-feb-session-bills"
+        ],
+        "decision": "accepted",
+        "review_note": "議案の第1表の千円単位の印字値を円単位へ換算して保存。議案PDFは画像のみのため描画画像の目視転記を正とした。県税の内訳11項（県民税55,986,434千円・事業税49,069,455千円・地方消費税36,079,831千円・不動産取得税4,897,714千円・県たばこ税2,207,659千円・ゴルフ場利用税626,856千円・軽油引取税7,234,080千円・自動車税21,739,487千円・鉱区税10,911千円・狩猟税15,632千円・産業廃棄物税117,207千円）の合計が177,985,266千円と一致することも検算した。当初予算の概要は百万円単位（177,985百万円）しか示さないため、千円単位の正確値は議案を正とする。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-kumamoto-prefecture-2026-initial-budget-total-expenditure",
+    "subject_id": "jp-local-430005-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度熊本県一般会計当初予算の歳出総額は935,335,562千円であり、歳入総額と同額である。",
+        "location_note": "議案第46号「令和8年度熊本県一般会計予算」の第1表、および熊本県議会「令和8年2月定例会 知事提出議案等」の議案第46号の欄（2026年3月18日議決）。",
+        "source_ids": [
+          "kumamoto-pref-budget-2026-bill",
+          "kumamoto-pref-assembly-2026-feb-session-bills",
+          "kumamoto-pref-budget-2026-supplementary-bill-1"
+        ],
+        "decision": "accepted",
+        "review_note": "議案の千円単位の印字値を円単位へ換算して保存。令和8年6月定例会の一般会計補正予算（第1号）議案の第1表でも歳出合計の「補正前の額」として同額を確認した。議決日と結果文言「可決」は県議会の議案等ページで確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]
