@@ -11,6 +11,19 @@ import hiroshimaCityVoteEvidence from "../../../data/reviewed/hiroshima-city/ass
 import hiroshimaCityExpenseEvidence from "../../../data/reviewed/hiroshima-city/assembly/expense_evidence_packets.json";
 import hiroshimaCityTripEvidence from "../../../data/reviewed/hiroshima-city/assembly/inspection_evidence_packets.json";
 import hiroshimaCitySources from "../../../data/catalog/hiroshima_city_assembly_sources.json";
+import kyotoCityAssembly from "../../../data/reviewed/kyoto-city/assembly/assembly_records.json";
+import kyotoCityDisclosure from "../../../data/reviewed/kyoto-city/assembly/disclosure_profiles.json";
+import kyotoCitySessions from "../../../data/reviewed/kyoto-city/assembly/sessions.json";
+import kyotoCityProposals from "../../../data/reviewed/kyoto-city/assembly/proposals.json";
+import kyotoCityVotes from "../../../data/reviewed/kyoto-city/assembly/votes.json";
+import kyotoCityFactionVotes from "../../../data/reviewed/kyoto-city/assembly/faction_votes.json";
+import kyotoCityExpenses from "../../../data/reviewed/kyoto-city/assembly/political_activity_expenses.json";
+import kyotoCityTrips from "../../../data/reviewed/kyoto-city/assembly/inspection_trips.json";
+import kyotoCityAssemblyEvidence from "../../../data/reviewed/kyoto-city/assembly/assembly_evidence_packets.json";
+import kyotoCityVoteEvidence from "../../../data/reviewed/kyoto-city/assembly/proposal_vote_evidence_packets.json";
+import kyotoCityExpenseEvidence from "../../../data/reviewed/kyoto-city/assembly/expense_evidence_packets.json";
+import kyotoCityTripEvidence from "../../../data/reviewed/kyoto-city/assembly/inspection_evidence_packets.json";
+import kyotoCitySources from "../../../data/catalog/kyoto_city_assembly_sources.json";
 import shizuokaPrefAssembly from "../../../data/reviewed/shizuoka-prefecture/assembly/assembly_records.json";
 import shizuokaPrefDisclosure from "../../../data/reviewed/shizuoka-prefecture/assembly/disclosure_profiles.json";
 import shizuokaPrefSessions from "../../../data/reviewed/shizuoka-prefecture/assembly/sessions.json";
@@ -396,7 +409,7 @@ import chibaCityExpenseEvidence from "../../../data/reviewed/chiba-city/assembly
 import chibaCityTripEvidence from "../../../data/reviewed/chiba-city/assembly/inspection_evidence_packets.json";
 import chibaCitySources from "../../../data/catalog/chiba_city_assembly_sources.json";
 
-export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city" | "hiroshima-prefecture" | "hiroshima-city" | "kyoto-prefecture";
+export type AssemblySlug = "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city" | "hiroshima-prefecture" | "hiroshima-city" | "kyoto-prefecture" | "kyoto-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -496,6 +509,13 @@ function shizuokaAssemblyEvidence(packets: unknown[]): Evidence[] {
   }));
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "kyoto-city": registry(
+    kyotoCityAssembly, kyotoCityDisclosure, kyotoCitySessions,
+    kyotoCityProposals, kyotoCityVotes, kyotoCityFactionVotes,
+    kyotoCityExpenses, kyotoCityTrips,
+    [...kyotoCityAssemblyEvidence, ...kyotoCityVoteEvidence, ...kyotoCityExpenseEvidence, ...kyotoCityTripEvidence],
+    kyotoCitySources.records,
+  ),
   "hiroshima-city": registry(
     hiroshimaCityAssembly, hiroshimaCityDisclosure, hiroshimaCitySessions,
     hiroshimaCityProposals, hiroshimaCityVotes, hiroshimaCityFactionVotes,
@@ -742,7 +762,7 @@ export const assemblySlugs: AssemblySlug[] = [
   "miyagi-prefecture", "sendai-city",
   "shizuoka-prefecture", "shizuoka-city", "hamamatsu-city",
   "hiroshima-prefecture", "hiroshima-city",
-  "kyoto-prefecture",
+  "kyoto-prefecture", "kyoto-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);

@@ -1,0 +1,43 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "inspection_trip_reports",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-kaigai-2025",
+     "kyoto-city-assembly-kaigai-report-2025"
+    ],
+    "statement": "令和7年度の海外行政調査は、令和8年1月25日から30日までの6日間、オーストリア共和国のウィーン市で実施された。調査団は12人（団長 吉田孝雄、副団長 寺田一博・久保田正紀、提案者 かわしま優子ほか）で、報告書は令和8年7月21日に議長へ提出され、市会ホームページに公表されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "inspection_trip_reports",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-kaigai-2025",
+     "kyoto-city-assembly-kaigai-report-2025"
+    ],
+    "statement": "調査に要した経費の実績額は、海外行政調査のページにも報告書にも公表されていない。実施要領には議員1人につき100万円を限度とする上限の規定があるのみであるため、金額は null とし、cost_status は not_published とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "inspection_trip_reports",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-dayori-153"
+    ],
+    "statement": "委員会の他都市調査については、京都市会だより第153号（令和8年11月15日発行）に各委員会の行き先とテーマの概要レポートが掲載されているが、日程、費用、参加者は公表されていないため、trip レコードとしては登録していない。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-assembly-2023-inspection-trips",
+  "open_questions": [],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-assembly-2023",
+  "subject_type": "assembly"
+ }
+]

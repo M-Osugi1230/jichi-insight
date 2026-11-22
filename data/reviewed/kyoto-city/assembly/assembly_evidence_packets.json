@@ -1,0 +1,55 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-term-list"
+    ],
+    "statement": "京都市会議員の任期満了日は令和9年4月29日であり、京都府選挙管理委員会の任期満了日一覧（令和8年4月30日現在、令和8年10月23日更新）で直接確認した。任期は4年で、開始日は2023年4月30日である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-roster-districts",
+     "kyoto-city-assembly-faction-roster"
+    ],
+    "statement": "議員定数は67人（条例定数）。選挙区別議員名簿と会派別議員名簿の双方で現員67人を確認し、政務活動費の交付先一覧とも一致した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-faction-roster",
+     "kyoto-city-assembly-roster-districts"
+    ],
+    "statement": "令和8年9月市会の議決時点の会派構成は、自由民主党京都市会議員団19人、維新・京都・国民市会議員団16人、日本共産党京都市会議員団14人、公明党京都市会議員団11人、無所属7人の合計67人である。政務活動費交付先一覧（令和8年3月31日時点）と選挙区別議員名簿（令和8年11月時点）の2つの公式名簿で一致を確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "kyoto-city-assembly-committees"
+    ],
+    "statement": "常任委員会は総務消防（13人）、環境福祉（13人）、文教はぐくみ（14人）、まちづくり（14人）、産業交通水道（13人）の5委員会で、このほかに予算特別委員会、決算特別委員会、市会運営委員会（15人）がある。委員会構成の公式ページ（最終更新日は令和5年5月16日）に基づく。"
+   }
+  ],
+  "id": "evidence-jp-local-261009-assembly-2023",
+  "open_questions": [
+   "委員会の構成ページの最終更新日が令和5年5月16日のままであるため、令和8年9月市会時点の委員構成と同一かは公式ページ上では確認できない。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-261009-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
