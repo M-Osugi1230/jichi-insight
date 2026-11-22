@@ -85,7 +85,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Thirty searches have registered a primary source (Fukuoka
+    # Thirty-one searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
@@ -93,8 +93,8 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Prefecture, Chiba City, Hyogo Prefecture, Kobe City,
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
-    # Hiroshima City, Kyoto Prefecture, Kyoto City, Niigata City
-    # and Kumamoto City, each closed by its
+    # Hiroshima City, Kyoto Prefecture, Kyoto City, Niigata City,
+    # Okayama City and Kumamoto City, each closed by its
     # official election bulletin (the Sendai, Shizuoka City,
     # Hiroshima City and Kumamoto City bulletins survive only as archived copies
     # of the cities' official election-period URLs; the Okayama
