@@ -213,7 +213,7 @@ export default function KyotoPrefecturePage() {
                 府議会の賛否表は賛成した場合のみ表示され、空欄はunknownとして登録しています。
                 令和7年度決算は認定済みです。空欄から反対票を推測しません。</p>
               {budgetProposal ? <p>関連登録議案：{budgetProposal.title}</p> : null}
-              <p><Link href="/assemblies/kyoto-city">京都市議会</Link>も別議会として確認できます。
+              <p><Link href="/assemblies/kyoto-city">京都市会</Link>も別議会として確認できます。
                 賛否の公開粒度はそれぞれの公式資料の範囲で表示します。</p>
             </div>
           </section>
