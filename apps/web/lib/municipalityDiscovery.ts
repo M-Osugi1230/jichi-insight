@@ -1,3 +1,4 @@
+import { tohokuFinance, type TohokuSlug } from "@/lib/tohokuFinance";
 import kumamotoPrefectureMunicipality from "../../../data/reviewed/kumamoto-prefecture/municipality.json";
 import kumamotoCityMunicipality from "../../../data/reviewed/kumamoto-city/municipality.json";
 import { kumamotoFinance, kumamotoCityFinance } from "@/lib/kumamotoFinance";
@@ -86,6 +87,33 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     return municipality.official_code === officialCode &&
       municipality.data_status === "reviewed";
   });
+
+  // New Tohoku clusters have dedicated pages and Reviewed phase 1-4 packages.
+  const tohokuSlugs: TohokuSlug[] = [
+    "fukushima-prefecture", "fukushima-city",
+    "yamagata-prefecture", "yamagata-city",
+    "akita-prefecture", "akita-city",
+  ];
+  for (const slug of tohokuSlugs) {
+    const { municipality, records } = tohokuFinance[slug];
+    if (officialCode !== municipality.official_code ||
+      municipality.data_status !== "reviewed") continue;
+    const municipalityId = municipality.id;
+    const entry = assemblies[slug];
+    return {
+      key: slug,
+      finance: records.some((item) =>
+        item.municipality_id === municipalityId && item.review_status === "reviewed" &&
+        (item.stage === "initial_budget" || item.stage === "settlement"),
+      ),
+      projects: projectRegistry[slug].projects.some((item) =>
+        item.municipality_id === municipalityId && item.review_status === "reviewed",
+      ),
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: entry.assembly.review_status === "reviewed" &&
+        entry.disclosure.review_status === "reviewed",
+    };
+  }
 
   // Stage 2: Reviewed projects are available; stage 3/4 promises and assemblies are not inferred.
   // Keep key null until a dedicated municipality route or corresponding executive/assembly data is published.
