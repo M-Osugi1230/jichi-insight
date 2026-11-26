@@ -22,6 +22,8 @@ import niigataCityAssemblyEvidence from "../../../data/reviewed/niigata-city/ass
 import niigataCityVoteEvidence from "../../../data/reviewed/niigata-city/assembly/proposal_vote_evidence_packets.json";
 import niigataCityExpenseEvidence from "../../../data/reviewed/niigata-city/assembly/expense_evidence_packets.json";
 import niigataCityTripEvidence from "../../../data/reviewed/niigata-city/assembly/inspection_evidence_packets.json";
+import niigataPrefSources from "../../../data/catalog/niigata_prefecture_assembly_sources.json";
+import niigataCitySources from "../../../data/catalog/niigata_city_assembly_sources.json";
 
 import hiroshimaCityAssembly from "../../../data/reviewed/hiroshima-city/assembly/assembly_records.json";
 import hiroshimaCityDisclosure from "../../../data/reviewed/hiroshima-city/assembly/disclosure_profiles.json";
@@ -536,10 +538,7 @@ function shizuokaAssemblyEvidence(packets: unknown[]): Evidence[] {
 export const assemblies: Record<AssemblySlug, Registry> = {
   "niigata-prefecture": registry(
     niigataPrefAssembly, niigataPrefDisclosure, niigataPrefSessions,
-    niigataPrefProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    niigataPrefProposals,
     niigataPrefVotes, niigataPrefFactionVotes, niigataPrefExpenses,
     niigataPrefTrips,
     [...niigataPrefAssemblyEvidence, ...niigataPrefVoteEvidence,
@@ -547,11 +546,11 @@ export const assemblies: Record<AssemblySlug, Registry> = {
     niigataPrefSources.records,
   ),
   "niigata-city": registry(
-    niigataCityAssembly, niigataCityDisclosure, niigataCitySessions,
-    niigataCityProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    niigataCityAssembly, niigataCityDisclosure.map((profile) => ({
+      ...profile,
+      items: profile.items.map((item) => ({ ...item, granularity: item.granularity ?? "none" })),
+    })), niigataCitySessions,
+    niigataCityProposals,
     niigataCityVotes, niigataCityFactionVotes, niigataCityExpenses,
     niigataCityTrips,
     [...niigataCityAssemblyEvidence, ...niigataCityVoteEvidence,
