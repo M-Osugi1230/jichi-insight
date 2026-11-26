@@ -13,6 +13,7 @@ import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
+import fukushimaFinanceCatalog from "../../../data/catalog/fukushima_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
@@ -58,7 +59,8 @@ export type MunicipalityKey =
   | "okayama-prefecture"
   | "kumamoto-prefecture"
   | "niigata-prefecture"
-  | "okayama-city";
+  | "okayama-city"
+  | "fukushima-prefecture";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -167,6 +169,12 @@ export const municipalityMeta: Record<
     name: "熊本県", type: "都道府県",
     summary: "くまもと新時代共創基本方針及び総合戦略（2024年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と木村敬知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/kumamoto-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "fukushima-prefecture": {
+    name: "福島県", type: "都道府県",
+    summary: "福島県総合計画（2021年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と内堀雅雄知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/fukushima-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -344,6 +352,7 @@ export const sourceCatalog = [
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
+  ...(fukushimaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),
