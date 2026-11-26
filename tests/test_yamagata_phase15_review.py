@@ -145,7 +145,11 @@ def test_yamagata_progress_keeps_evaluation_and_linkage_explicit():
 
 def test_yamagata_fiscal_records_validate_and_keep_exact_states():
     records = load(FISCAL)
-    assert len(records) == 3
+    # 3 records at the Phase 15 review; the Yamagata cluster stage 1
+    # (Issue #1014) added the FY2026 initial budget's local tax record
+    # (verified against Table 1 of Bill No. 8 itself, passed as
+    # proposed on 2026-03-24).
+    assert len(records) == 4
 
     for record in records:
         assert validate(FISCAL_SCHEMA, record) == []
@@ -175,7 +179,9 @@ def test_yamagata_evidence_packets_validate_and_match_fiscal_records():
     packets = load(EVIDENCE)
     fiscal_ids = {record["id"] for record in load(FISCAL)}
 
-    assert len(packets) == 3
+    # 3 packets at the Phase 15 review; stage 1 (Issue #1014) added
+    # the packet for the FY2026 local tax record.
+    assert len(packets) == 4
     for packet in packets:
         assert validate(EVIDENCE_SCHEMA, packet) == []
         assert packet["subject_id"] in fiscal_ids

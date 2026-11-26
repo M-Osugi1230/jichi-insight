@@ -1154,5 +1154,128 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-akita-pref-2025",
+    "executive_term_id": "jp-local-050008-executive-2025-04-20",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "akita-pref-governor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "akita-pref-governor-inauguration-2025",
+      "akita-pref-term-list",
+      "akita-pref-governor-election-2025-results",
+      "akita-pref-governor-election-2025-results-page",
+      "akita-pref-governor-election-2025-gazette",
+      "akita-pref-governor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2025年秋田県知事選挙の選挙公報は発行された（秋田県選挙管理委員会告示第29号、令和7年3月20日付：選挙公報の掲載文等の掲載順序を定めるくじの告示）。しかし県選管の現行公式ページ（投開票結果等についてのページ、選管事務局のページ一覧）には選挙公報へのリンクはなく、公報の県公式URLは現存しない。Wayback Machine でも、県公式の公報PDF・選挙特設ページの保存は特定できなかった（県公式ページ群への対象を絞ったCDX照会で該当なし）。一方、由利本荘市公式サイトの知事選案内ページに「秋田県知事選挙公報（PDF 1.2MB）」の複写が現存し、2026-11-26に取得したファイル（1,207,207バイト、全2ページ、SHA-256 680355120c3afb5c17ece4fb9dd63ef086fdd8063953c6630f367a9d2f7d34f8）は、Wayback Machine の同URLの2025年5月15日保存分とバイト単位で完全一致した（CDX記録のダイジェスト VBYOCD42ZPDQN3KXISMEVLON7J7UPBCX）。公報の掲載候補者3名（鈴木けんた・さるた和三・大久保のりお）は総務省『選挙結果調』の候補者構成と一致し、1ページ目右上に鈴木けんた候補欄（大見出し「あきた『ニュートラル』宣言！」、関係・政治・地域間・手法・カーボンの5つのニュートラル、3つの重点政策「かせぐ・まもる・そだてる」）があることを描画画像の目視で確認した。選挙公報は候補者から提出された原稿をそのまま製版した公式文書であり、県内自治体の公式サイトに現存する複写の同一性を保存記録とのバイト一致で確認できたため、原典として登録し（akita-pref-governor-election-2025-bulletin）、term の manifesto_source_ids へ接続した。公約レコードの作成は段階3で行う。なお、県公式の原典そのもの（選挙期間中に県サイトで公表されていた公報ファイル）の所在は特定できていないが、これは選挙公報が存在しないという主張ではない。",
+    "next_actions": [
+      "段階3で、登録した選挙公報の鈴木候補欄から公約レコードを作成する",
+      "県公式の公報原典（選挙期間中の県サイト掲載ファイル）の保存が特定できれば、登録済みの複写とダイジェストを照合し、出典URLを原典へ差し替える",
+      "選挙公報の音声読み上げ対応データの公表有無を確認する",
+      "2029年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-fukushima-city-2025",
+    "executive_term_id": "jp-local-072010-executive-2025-12-08",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "fukushima-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "fukushima-city-mayor-election-2025-results",
+      "fukushima-city-mayor-election-2025-schedule",
+      "fukushima-city-mayor-inauguration-2025",
+      "fukushima-city-mayor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "令和7年11月16日執行の福島市長選挙の選挙公報は、市選挙管理委員会の現行公式ページ「選挙結果（統計資料）」に「令和7年福島市長選挙 選挙公報 (PDFファイル: 3.6MB)」として掲載され、現行ページに現存する（段階0・Issue #1015の棚卸しで確認し、段階1の2026-11-26に現行ページのリンクとファイルの存在（3,735,050バイト）を再確認した）。よって原典は選管の現行公式ページに現存するものとして登録する。段階1では所在の登録までとし、候補者欄（馬場ゆうき候補欄）の転記・分割レビュー・公約レコードの作成と、term への manifesto_source_ids の接続は段階3で行う。馬場候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "段階3で現行公式ページから選挙公報PDFを改めて取得し、馬場ゆうき候補欄を転記して公約レコードを作成し、term の manifesto_source_ids へ本出典を接続する",
+      "馬場候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する",
+      "福島県選挙管理委員会の任期満了一覧の更新時に、現任期の満了日（2029年12月7日）の明記を照合する",
+      "2029年の任期満了に伴う次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-akita-city-2025",
+    "executive_term_id": "jp-local-052019-executive-2025-04-12",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "follow_up_required",
+    "manifesto_source_ids_found": [
+      "akita-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "akita-city-mayor-election-2025-results",
+      "akita-pref-mayor-term-expiry-list",
+      "akita-city-mayor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "秋田市長選挙（令和7年4月6日執行）の選挙公報は、市選挙管理委員会の現行公式ページ「選挙公報」（2026年3月12日更新）にPDFがリンクされ現存する（段階0・Issue #1013の棚卸しで確認し、段階1でも2026-11-26に現行ページからPDF本体を取得して確認した。全2ページ、1,916,335バイト）。公報の候補者欄は画像でテキスト層は選管の枠文のみのため、公約の抽出は段階3で描画画像の目視転記により行う。本探索は公報の所在確認までとし、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。沼谷候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "段階3で選挙公報（現行公式ページのPDF）から沼谷純候補欄の公約を目視転記し、分割レビューを経て公約レコードを作成し、term の manifesto_source_ids へ接続する",
+      "沼谷候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録する公約文と照合する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-yamagata-city-2023",
+    "executive_term_id": "jp-local-062014-executive-2023-09-28",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "yamagata-city-mayor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "yamagata-city-mayor-election-2023-results",
+      "yamagata-city-mayor-election-2023-overview",
+      "yamagata-pref-municipality-list",
+      "yamagata-city-mayor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2023年山形市長選挙（令和5年9月10日執行）の選挙公報は市選挙管理委員会が発行し、選挙期間中は市公式サイトの選挙ページの添付PDF（r5sityousenkyokouhou3.pdf）として掲載されていた（段階0・Issue #1014の棚卸しでは現行ページに現存とされた）。段階1（2026-11-26）の再確認では、同PDFのURLは404で、選挙ページの「山形市長選挙選挙公報」の見出しからもリンクが外れていた。Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなく、岡山市長の先例のような公式原典とのダイジェスト照合はできなかった。一方、選挙ドットコムCDNに現存する同一公報の複写を取得し、内容を実物で照合した（全2ページ、1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）:選挙管理委員会の枠文、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、二面の投票案内（繰上げ閉鎖の11投票所を含む）が市公式の選挙ページ・結果報告と一致する。佐藤孝弘候補欄は1ページ目下段にあり、大見出し「市民と共に 希望の山形へ！」のもと番号付きの7項目で構成される。公報の候補者欄は画像・ベクタ描画でテキスト層は枠文のみのため、段階3の登録文は描画画像の目視転記を正とする。複写の同一性は内容照合に基づくもので、ダイジェスト照合ができていない点は open question として残す。選挙公報は候補者提出原稿をそのまま写真印刷した公式文書であり、内容照合で同一性を確認できたため、公約化は段階3で行う。",
+    "next_actions": [
+      "段階3で選挙公報（選挙ドットコムCDNの複写）の佐藤孝弘候補欄を描画画像から目視転記し、公約レコードを作成して term の manifesto_source_ids へ接続する",
+      "市公式URLで公報PDFが再掲載された場合は、公式原典と複写のダイジェスト照合を行う"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
