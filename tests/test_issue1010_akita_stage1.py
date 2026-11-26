@@ -5,6 +5,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "data" / "reviewed" / "akita-prefecture"
 PLAN_URL = (
     "https://www.pref.akita.lg.jp/uploads/public/archive_0000094577_00/"
+    "%E3%80%90%E8%BB%BD%E9%87%8F%E7%89%88%E3%80%91"
     "%E7%A7%8B%E7%94%B0%E7%9C%8C%E7%B7%8F%E5%90%88%E8%A8%88%E7%94%BB"
     "%EF%BC%88%E5%86%8A%E5%AD%90%E3%83%BB%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf"
 )
@@ -308,7 +309,7 @@ def test_source_catalog_registers_only_verified_prefecture_sources() -> None:
 
 def test_executive_catalog_includes_the_akita_sources() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.67.0"
+    assert catalog["version"] == "0.68.0"
     assert len(catalog["records"]) == 203
     akita = [
         r for r in catalog["records"] if r["municipality_key"] == "akita-prefecture"

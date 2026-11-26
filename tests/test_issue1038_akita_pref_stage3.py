@@ -301,7 +301,7 @@ def test_every_promise_has_one_packet_with_provenance() -> None:
 
 def test_bulletin_source_record_points_at_the_verified_copy() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.67.0"
+    assert catalog["version"] == "0.68.0"
     assert len(catalog["records"]) == 203
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["municipality_key"] == "akita-prefecture"

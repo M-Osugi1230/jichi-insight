@@ -66,6 +66,29 @@ SOURCE_IDS = {
     "yamagata-pref-plan-progress-evaluation-fy2025",
 }
 
+# Stage 3 (Issue #1036) connected six of the governor's eleven
+# bulletin promises to five of these policies (inferred links,
+# confidence capped at low / inferred).
+_TERM = "jp-local-060003-executive-2025-02-14"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-060003-project-2025-lifelong-learning": [
+        f"{_TERM}-promise-001"
+    ],
+    "jp-local-060003-project-2025-crisis-management": [
+        f"{_TERM}-promise-003"
+    ],
+    "jp-local-060003-project-2025-transport-network": [
+        f"{_TERM}-promise-005",
+        f"{_TERM}-promise-008",
+    ],
+    "jp-local-060003-project-2025-regional-industry-sme-growth": [
+        f"{_TERM}-promise-006"
+    ],
+    "jp-local-060003-project-2025-agricultural-workforce-foundation": [
+        f"{_TERM}-promise-007"
+    ],
+}
+
 
 def _load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -86,8 +109,11 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        # Stage 3 (governor's promises) is not registered yet.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #1036) registered the governor's 11 promises;
+        # six of them link to five of these policies (inferred links).
+        assert project["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            project["id"], []
+        )
         # The parent policy is the plan's policy pillar (政策の柱).
         assert project["parent_policy"]
         # The plan names no responsible department per policy.
