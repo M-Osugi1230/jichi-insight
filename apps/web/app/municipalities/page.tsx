@@ -51,6 +51,30 @@ const readingLevels = [
 ];
 
 const featuredPaths = [
+  {
+    code: "07", area: "福島県・福島市", status: "段階1〜4 Reviewed",
+    tone: "verified" as const,
+    title: "福島県総合計画と第6次福島市総合計画。", text: "復興・再生を含む政策体系、予算・決算、公約・議会のReviewed登録を確認します。",
+    facts: ["福島県", "福島市", "計画・財政・議会"],
+    href: "/municipalities/fukushima-prefecture",
+    action: "福島県・福島市の詳細を見る",
+  },
+  {
+    code: "06", area: "山形県・山形市", status: "段階1〜4 Reviewed",
+    tone: "verified" as const,
+    title: "第4次山形県総合発展計画と山形市発展計画2030。", text: "長期構想と政策・指標、当初予算と普通会計決算、首長公約・議会を確認します。",
+    facts: ["山形県", "山形市", "計画・財政・議会"],
+    href: "/municipalities/yamagata-prefecture",
+    action: "山形県・山形市の詳細を見る",
+  },
+  {
+    code: "05", area: "秋田県・秋田市", status: "段階1〜4 Reviewed",
+    tone: "verified" as const,
+    title: "秋田再興への第一歩とプラスの循環プラン。", text: "現行計画・財政・公約と、部分登録を明示した議会資料を確認します。",
+    facts: ["秋田県", "秋田市", "計画・財政・議会"],
+    href: "/municipalities/akita-prefecture",
+    action: "秋田県・秋田市の詳細を見る",
+  },
   { code: "43", area: "熊本県・熊本市", status: "段階1〜4 Reviewed", tone: "verified" as const, title: "くまもと新時代と市の総合計画を読む。", text: "熊本県の総合戦略・財政・重点施策と、熊本市第8次総合計画、財政・議会の公開記録を確認できます。", facts: ["熊本県", "熊本市", "決算・政策・議会"], href: "/municipalities/kumamoto-prefecture", action: "熊本クラスターの詳細を見る" },
   { code: "33", area: "岡山県・岡山市", status: "段階1〜4 Reviewed", tone: "verified" as const, title: "晴れの国の政策・予算・議会を確認。", text: "第4次晴れの国おかやま生き活きプランと岡山市第七次総合計画、財政・議会の公開記録を確認できます。", facts: ["岡山県", "岡山市", "決算・政策・議会"], href: "/municipalities/okayama-prefecture", action: "岡山クラスターの詳細を見る" },
   { code: "15", area: "新潟県・新潟市", status: "段階1〜4 Reviewed", tone: "verified" as const, title: "新潟県総合計画と市の重点戦略を読む。", text: "新潟県の総合計画・財政・成果指標と、新潟市総合計画2030の重点戦略、議会記録を確認できます。", facts: ["新潟県", "新潟市", "決算・政策・議会"], href: "/municipalities/niigata-prefecture", action: "新潟クラスターの詳細を見る" },
@@ -228,6 +252,9 @@ export default function MunicipalitiesPage() {
               計画の枠組みと予算・決算を市ページで公開しています。接続できない範囲は判定不能のまま明示します。
             </p>
           </div>
+          <p><Link href="/municipalities/fukushima-city">福島市の政策・予算・決算・首長公約・議会の詳細を見る</Link></p>
+          <p><Link href="/municipalities/yamagata-city">山形市の政策・予算・決算・首長公約・議会の詳細を見る</Link></p>
+          <p><Link href="/municipalities/akita-city">秋田市の政策・予算・決算・首長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/kumamoto-city">熊本市の政策・財政・市長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/okayama-city">岡山市の政策・財政・市長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/niigata-city">新潟市の政策・財政・市長公約・議会の詳細を見る</Link></p>
