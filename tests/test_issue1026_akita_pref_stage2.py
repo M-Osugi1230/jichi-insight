@@ -44,6 +44,28 @@ EXPECTED_KPI_COUNTS = {
     PREFIX + "nature-environment-heritage": 8,
 }
 
+# Stage 3 (Issue #1038) registered the governor's promises and
+# linked five of them, by content, to three of these projects.
+_TERM = "jp-local-050008-executive-2025-04-20"
+EXPECTED_RELATED_PROMISES = {
+    PREFIX + "akita-life-migration-employment": [f"{_TERM}-promise-007"],
+    PREFIX + "marriage-childrearing-hope": [],
+    PREFIX + "heart-moving-tourism": [],
+    PREFIX + "food-brand-sales": [],
+    PREFIX + "agriculture-food-security": [],
+    PREFIX + "sme-management-innovation": [],
+    PREFIX + "medical-nursing-care-system": [
+        f"{_TERM}-promise-006",
+        f"{_TERM}-promise-012",
+    ],
+    PREFIX + "children-healthy-growth": [
+        f"{_TERM}-promise-013",
+        f"{_TERM}-promise-014",
+    ],
+    PREFIX + "disaster-resilient-community": [],
+    PREFIX + "nature-environment-heritage": [],
+}
+
 EXPECTED_TITLES = [
     "移住・就職で未来を拓く「あきた暮らし」を実現する",
     "出会いから子育てまで希望が持てる社会を実現する",
@@ -85,8 +107,12 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2026
         assert project["review_status"] == "reviewed"
-        # Stage 3 (governor's promises) is not registered yet.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #1038) registered the governor's promises;
+        # the content-matched projects carry the inferred links.
+        assert (
+            project["related_promise_ids"]
+            == EXPECTED_RELATED_PROMISES[project["id"]]
+        )
         # The parent policy is the plan's policy (政策).
         assert project["parent_policy"]
         # The plan names no responsible department per measure.
