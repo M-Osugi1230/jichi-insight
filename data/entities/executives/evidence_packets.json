@@ -2256,5 +2256,59 @@
       "選挙公報PDFの候補者欄は画像でテキスト層がないため、段階3の転記は描画画像の目視転記とする。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yamagata-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-062014-executive-2023-09-28",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "山形市の現市長は佐藤 孝弘である（3期目）。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-results",
+          "yamagata-city-mayor-profile"
+        ],
+        "location_note": "市選挙管理委員会『山形市長選挙の結果報告』の当選人欄、および市公式『市長プロフィール』（現在3期目）。",
+        "decision": "accepted",
+        "review_note": "両出典とも佐藤孝弘を現市長として記載する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "山形市長選挙は2023年9月10日に執行され、佐藤孝弘が66,670票を得て当選した（3選）。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-results"
+        ],
+        "location_note": "市選挙管理委員会『山形市長選挙の結果報告』の開票結果（得票数）。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計78,106票（佐藤66,670票・渡辺ゆり子11,436票）が同報告の有効投票数と一致することでも整合する。投票率39.10%。"
+      },
+      {
+        "field": "term_start",
+        "statement": "佐藤孝弘市長の現任期は2023年9月28日に始まった。",
+        "source_ids": [
+          "yamagata-pref-municipality-list",
+          "yamagata-city-mayor-profile"
+        ],
+        "location_note": "山形県公式『市町村一覧』（令和8年6月1日現在）の山形市長の満了日明記、および市公式プロフィールの就任日（平成27年9月28日）の記載。",
+        "decision": "accepted",
+        "review_note": "現任期の満了日（2027年9月27日）は県公式一覧に明記されている。開始日は、初当選時の就任日2015年9月28日（市公式プロフィールに明記）からの4年周期、および前任期満了日（2023年9月27日）の翌日とする公職選挙法第259条ただし書の構成で確定し、両者は一致する。現任期開始日そのものを直接印字した公式文書は未確認であり、open question に記録した。本レビューは所有者が2026-11-15にClaudeへ委任した判断に基づくもので、所有者本人のレビューではない。"
+      },
+      {
+        "field": "term_end",
+        "statement": "佐藤孝弘市長の現任期は2027年9月27日に満了する。",
+        "source_ids": [
+          "yamagata-pref-municipality-list"
+        ],
+        "location_note": "山形県公式『市町村一覧』（令和8年6月1日現在）の山形市欄「市長：佐藤 孝弘（任期満了日：R9.9.27）」。",
+        "decision": "accepted",
+        "review_note": "満了日は県公式一覧に直接明記された値であり、4年加算による導出ではない。"
+      }
+    ],
+    "open_questions": [
+      "現任期（3期目）の開始日2023年9月28日を直接印字した市公式文書（市公報・選挙管理委員会資料）は確認できていない。開始日は県公式一覧の満了日明記と市長プロフィールの就任日（2015年9月28日）および公職選挙法第259条ただし書の構成で確定した。",
+      "2023年山形市長選挙の選挙公報は、市公式URLが404となり現行の選挙ページからもリンクが外れている。段階3では選挙ドットコムCDNの複写（内容照合済み）から転記する。公式原典の保存記録（Wayback Machine）には404分しかなく、ダイジェスト照合は実施できていない。"
+    ],
+    "review_status": "reviewed"
   }
 ]

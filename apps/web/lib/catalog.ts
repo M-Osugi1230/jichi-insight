@@ -12,6 +12,7 @@ import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_fina
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
 import akitaCityFinanceCatalog from "../../../data/catalog/akita_city_finance_sources.json";
+import yamagataCityFinanceCatalog from "../../../data/catalog/yamagata_city_finance_sources.json";
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
@@ -61,6 +62,7 @@ export type MunicipalityKey =
   | "niigata-prefecture"
   | "okayama-city"
   | "akita-city";
+  | "yamagata-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -321,6 +323,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "yamagata-city": {
+    name: "山形市", type: "中核市",
+    summary: "山形市発展計画2030（2025〜2029年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、佐藤 孝弘市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
   "niigata-prefecture": {
     name: "新潟県", type: "都道府県",
     summary: "新潟県総合計画（2025年策定、令和7〜14年度）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と花角英世知事の現任期を確認します。",
@@ -350,6 +358,7 @@ export const sourceCatalog = [
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoCityFinanceCatalog.records as SourceRecord[]),
   ...(akitaCityFinanceCatalog.records as SourceRecord[]),
+  ...(yamagataCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),

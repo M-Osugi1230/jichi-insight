@@ -1,5 +1,5 @@
 {
-  "version": "0.62.0",
+  "version": "0.63.0",
   "updated_at": "2026-11-26",
   "scope": "pilot",
   "records": [
@@ -2466,6 +2466,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "秋田市選挙管理委員会の現行公式ページ「選挙公報」（2026年3月12日更新）からリンクされる令和7年4月6日執行秋田市長選挙の選挙公報PDF（全2ページ、1,916,335バイト）。候補者欄は画像で、テキスト層は選管の枠文のみのため、段階3の公約抽出は描画画像の目視転記による。2026-11-26に現行ページで現存を確認し、PDF本体を取得した。"
+    },
+    {
+      "id": "yamagata-city-mayor-election-2023-results",
+      "municipality_key": "yamagata-city",
+      "organization": "山形市選挙管理委員会",
+      "category": "election",
+      "title": "山形市長選挙の結果報告（令和5年9月10日執行）",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/012/279/r5sityousenkaihyoukekka.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-26",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和5年9月10日執行の山形市長選挙について、告示日（9月3日）、立候補の状況、当日有権者数201,788人、開票結果を掲載する市選挙管理委員会の公式結果報告。佐藤孝弘66,670票（当選）・渡辺ゆり子11,436票で、両者の合計78,106票は有効投票数と一致し、投票率は39.10%。2026-11-26に現行公式サイトで直接確認した。"
+    },
+    {
+      "id": "yamagata-city-mayor-election-2023-overview",
+      "municipality_key": "yamagata-city",
+      "organization": "山形市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年9月10日執行 山形市長選挙（山形市公式ページ）",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/senkyo/1007119/1012073.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-26",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "選挙期日（令和5年9月10日）、候補者情報（候補者一覧、選挙公報）、期日前投票、投開票速報への導線を掲載する市選挙管理委員会の現行公式ページ。「山形市長選挙選挙公報」の見出し自体は現存するが、2026-11-26の確認時点では公報PDFへのリンクは外れており、公報ファイルの旧URLも404である（探索記録 manifesto-source-search-yamagata-city-2023 を参照）。"
+    },
+    {
+      "id": "yamagata-pref-municipality-list",
+      "municipality_key": "yamagata-city",
+      "organization": "山形県",
+      "category": "election",
+      "title": "市町村一覧（山形県公式ページ、令和8年6月1日現在）",
+      "url": "https://www500.pref.yamagata.jp/020024/kensei/information/gaiyo/murayama/index.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-26",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "山形県公式の市町村一覧（令和8年6月1日現在）。山形市の欄に「市長：佐藤 孝弘（任期満了日：R9.9.27）」と、現任期の満了日（2027年9月27日）を直接明記する。2026-11-26に直接確認した。"
+    },
+    {
+      "id": "yamagata-city-mayor-profile",
+      "municipality_key": "yamagata-city",
+      "organization": "山形市",
+      "category": "official_profile",
+      "title": "市長プロフィール（山形市公式ページ）",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/shicho/1005809.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-26",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "佐藤孝弘市長の公式プロフィール。略歴に「平成27年9月28日 第18代山形市長就任（現在3期目）」と明記され、9月28日就任・9月27日満了の4年周期が現任期の開始日（2023年9月28日）の法定構成のアンカーになる。2026-11-26に直接確認した。"
+    },
+    {
+      "id": "yamagata-city-mayor-election-2023-bulletin",
+      "municipality_key": "yamagata-city",
+      "organization": "山形市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年9月10日執行 山形市長選挙 選挙公報（佐藤孝弘候補欄）",
+      "url": "https://prod-cdn.go2senkyo.com/public/senkyo_koho/23596/r5sityoukouhou.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-26",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年9月10日執行の山形市長選挙の選挙公報そのもの（全2ページ、候補者2人）。選挙期間中は市公式サイトの選挙ページの添付PDF（https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/012/073/r5sityousenkyokouhou3.pdf）として掲載されていたが、2026-11-26の確認では同URLは404で、選挙ページからもリンクが外れている。Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなく、公式原典とのダイジェスト照合はできなかった。一方、選挙ドットコムCDNに現存する同一公報の複写（1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）を取得し、内容を実物で照合した: 選挙管理委員会の枠文（候補者から提供された原稿をそのまま印刷したもの）、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、二面の投票案内（繰上げ閉鎖の11投票所を含む）が市公式の選挙ページ・開票結果と一致する。佐藤孝弘候補欄は1ページ目下段にあり、大見出し「市民と共に 希望の山形へ！」と「持続可能な山形市へ！」のビジョン文のもと、番号付きの7項目で構成される。公報の候補者欄は画像・ベクタ描画でテキスト層は選管の枠文のみのため、段階3の登録文は描画画像の目視転記を正とする。"
     }
   ]
 }
