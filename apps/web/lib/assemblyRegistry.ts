@@ -597,7 +597,12 @@ export const assemblies: Record<AssemblySlug, Registry> = {
       ...proposal,
     })),
     kumamotoPrefVotes, kumamotoPrefFactionVotes, kumamotoPrefExpenses,
-    kumamotoPrefTrips,
+    kumamotoPrefTrips.map((trip) => ({
+      ...trip,
+      participants: trip.participants.map((name) => ({
+        name, role: "役職未収録", participant_type: "member",
+      })),
+    })),
     [...kumamotoPrefAssemblyEvidence, ...kumamotoPrefVoteEvidence,
       ...kumamotoPrefExpenseEvidence, ...kumamotoPrefTripEvidence],
     kumamotoPrefSources.records,
