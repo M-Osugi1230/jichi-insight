@@ -315,7 +315,7 @@ def test_yamagata_bulletin_search_registered() -> None:
     assert "ダイジェスト照合はできなかった" in search["review_note"]
 
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.64.0"
+    assert catalog["version"] == "0.65.0"
     bulletin = next(
         r for r in catalog["records"] if r["id"] == "yamagata-city-mayor-election-2023-bulletin"
     )

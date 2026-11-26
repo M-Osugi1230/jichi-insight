@@ -2203,6 +2203,70 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-akita-pref-current-governor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-050008-executive-2025-04-20",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "秋田県の現職知事が鈴木健太であることは、県公式サイトの「職員に対する知事就任あいさつ要旨（令和7年4月21日）」（鈴木健太本人が知事として職員にあいさつした記録）および総務省『秋田県知事選挙 選挙結果調』の当選者欄で確認した。鈴木健太は2025年知事選で初当選した1期目の知事である（選挙時は無所属・新、49歳、前秋田県議会議員・司法書士）。",
+        "source_ids": [
+          "akita-pref-governor-inauguration-2025",
+          "akita-pref-governor-election-2025-results"
+        ],
+        "location_note": "秋田県公式サイト「知事室からこんにちは」の就任あいさつ要旨ページ、および総務省『秋田県知事選挙 選挙結果調』（令和7年4月7日付）。",
+        "decision": "accepted",
+        "review_note": "現職知事の氏名と1期目であることを保持する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する知事選挙は2025年4月6日に執行された秋田県知事選挙（任期満了選挙、候補者3人）であり、鈴木健太が273,270票で当選した。得票数は総務省『秋田県知事選挙 選挙結果調』で直接照合した（猿田和三189,382票・大久保範夫5,345票、有効投票467,997票、投票率59.59%）。県選管自身の投開票結果ページも現行公式ページに現存する。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-results",
+          "akita-pref-governor-election-2025-results-page"
+        ],
+        "location_note": "総務省『秋田県知事選挙 選挙結果調』および秋田県選挙管理委員会「投開票結果等について」のページ。",
+        "decision": "accepted",
+        "review_note": "得票数・投票率は総務省の選挙結果調の値を採用した（県選管の開票結果（最終）PDFとも整合する）。"
+      },
+      {
+        "field": "term_start",
+        "statement": "鈴木健太知事の現任期の開始日は2025年4月20日である。県公式の就任あいさつ要旨（令和7年4月21日）で、知事本人が「昨日、秋田県知事に就任をした」と発言している。本選挙は任期満了に伴う選挙であり、任期満了に伴う選挙で当選した者の任期は公職選挙法第259条ただし書により前任者の任期満了日の翌日から起算されるところ、前任者（佐竹敬久）の満了日は2025年4月19日であり、開始日はその翌日となる。",
+        "source_ids": [
+          "akita-pref-governor-inauguration-2025",
+          "akita-pref-term-list"
+        ],
+        "location_note": "秋田県公式「職員に対する知事就任あいさつ要旨（令和7年4月21日）」の冒頭。",
+        "decision": "accepted",
+        "review_note": "開始日は就任あいさつにおける知事本人の発言で直接確認し、公職選挙法第259条ただし書の構成とも一致することを確認した。開始日を直接印字した選管文書そのものは未確認（段階0のOQ-1）であり、本人の就任発言で代替確認した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "秋田県知事の現任期の満了日は2029年4月19日である。秋田県選挙管理委員会「任期満了日等について」（2026年6月30日更新）の一覧に「秋田県 鈴木健太 令和11年4月19日」と明記されている。開始日2025年4月20日から4年（地方自治法第140条）とする法定構成とも一致する。",
+        "source_ids": [
+          "akita-pref-term-list"
+        ],
+        "location_note": "秋田県選挙管理委員会「任期満了日等について」の秋田県知事の行。",
+        "decision": "accepted",
+        "review_note": "満了日は県選管自身の公式明記で確定した。"
+      },
+      {
+        "field": "election_proclamation_date",
+        "statement": "2025年秋田県知事選挙の告示日は2025年3月20日である。秋田県選挙管理委員会告示第26号（令和7年3月20日）が、任期満了による秋田県知事選挙の期日を令和7年4月6日と定めた。同日の告示第29号は選挙公報の掲載文等の掲載順序を定めるくじの告示である。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-gazette"
+        ],
+        "location_note": "秋田県公報に収録される秋田県選挙管理委員会告示第26号・第29号（令和7年3月20日付）。",
+        "decision": "accepted",
+        "review_note": "告示日は県選管自身の告示で確認した（段階0棚卸しで告示本文を確認）。"
+      }
+    ],
+    "open_questions": [
+      "任期開始日（2025年4月20日）を直接印字した選管・県公報の文書は未確認である（段階0のOQ-1）。開始日は知事本人の就任発言（2025年4月21日のあいさつ要旨）と県選管の満了日明記、公職選挙法第259条ただし書の構成で確定した。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-fukushima-city-current-mayor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-072010-executive-2025-12-08",

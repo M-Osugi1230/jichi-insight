@@ -1,0 +1,55 @@
+{
+  "id": "phase15-akita-plan-review",
+  "name_ja": "秋田県",
+  "official_code": "050008",
+  "quality_boundary": "秋田県の最上位計画は「秋田県総合計画 ～秋田再興への第一歩～」（2026年3月策定、計画期間は2026〜2029年度）である。本レビューは計画の同一性、8つの政策と施策の体系、政策単位の指標の持ち方、政策評価制度による進行管理の枠組みを固定する。計画体系は計画書本体の公式PDFで直接確認した（本県の計画枠組みについては過去に外部作成の記述に誤りがあった経緯があるため、二次資料には依拠していない）。事業単位の登録と評価単位の確定は、新計画の年次評価の公表形式が明らかになる段階2で行う。FY2026当初予算とFY2022–FY2024普通会計決算は別の fiscal レコードとして登録する。",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "秋田県総合計画（冊子・見開き版、2026年3月）の基本理念・目指す姿と計画期間の記載",
+      "evidence_role": "current_plan_identity",
+      "id": "phase15-akita-plan-review-current-plan-identity",
+      "review_note": "計画名・策定時期・計画期間は計画書本体（県公式PDF）で直接確認した。",
+      "source_url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094577_00/%E7%A7%8B%E7%94%B0%E7%9C%8C%E7%B7%8F%E5%90%88%E8%A8%88%E7%94%BB%EF%BC%88%E5%86%8A%E5%AD%90%E3%83%BB%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf",
+      "statement": "秋田県の県政運営の最上位計画は「秋田県総合計画 ～秋田再興への第一歩～」であり、令和8年（2026年）3月に策定された。計画期間は2026年度から2029年度までの4年間で、前計画「新秋田元気創造プラン」（2022〜2025年度）の後継である。基本理念は「寛容・挑戦・安心」、目指す姿は「新時代に咲き誇る秋田」（2040年の姿を見据えて設定）。",
+      "title": "現行計画（秋田県総合計画 ～秋田再興への第一歩～、2026年3月策定）",
+      "value": "秋田県総合計画 ～秋田再興への第一歩～（令和8年3月策定）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "秋田県総合計画 本編（第3章・第4章）",
+      "evidence_role": "policy_structure",
+      "id": "phase15-akita-plan-review-policy-structure",
+      "review_note": "政策の名称と階層は計画書本体で確認した。施策の総数の確定は段階2に送る。",
+      "source_url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094577_00/%E7%A7%8B%E7%94%B0%E7%9C%8C%E7%B7%8F%E5%90%88%E8%A8%88%E7%94%BB%EF%BC%88%E5%86%8A%E5%AD%90%E3%83%BB%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf",
+      "statement": "計画第4章は8つの政策（政策1 未来づくり、政策2 観光・交流、政策3 農林水産、政策4 産業、政策5 健康・医療・福祉、政策6 教育・人づくり、政策7 防災・減災・県土強靱化、政策8 環境・くらし）の下に施策を配置し、施策ごとに「方向性」を置く。施策数は政策ごとに3〜5程度である。政策に関する指標（2029年目標値）は政策単位で設定される。第3章は人口減少社会への対応と社会減の抑制（社会減対策パッケージ）を扱う。",
+      "title": "計画の体系（8つの政策と施策）",
+      "value": "政策（8）／施策（政策ごとに3〜5程度）／施策ごとの方向性／政策に関する指標（2029年目標値）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "秋田県総合計画 本編（第4章の政策に関する指標）および令和8年度当初予算資料",
+      "evidence_role": "implementation_layer",
+      "id": "phase15-akita-plan-review-implementation-layer",
+      "review_note": "指標の持ち方は計画書本体で確認した。施策単位の金額公表の有無は未確認のため段階2へ送る。",
+      "source_url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094577_00/%E7%A7%8B%E7%94%B0%E7%9C%8C%E7%B7%8F%E5%90%88%E8%A8%88%E7%94%BB%EF%BC%88%E5%86%8A%E5%AD%90%E3%83%BB%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf",
+      "statement": "計画の政策に関する指標は政策単位で設定され、2029年の目標値を持つ。具体の事業は毎年度の予算編成を通じて決定される。金額面では、令和8年度当初予算資料で8政策の予算額（合計3,771億円）が政策単位で公表されている。施策単位の金額が公表されているかは段階2で確認し、公表がなければ欠損として明示する。",
+      "title": "政策単位の指標（2029年目標値）と当初予算での政策単位の金額公表",
+      "value": "政策に関する指標は2029年目標値を設定／金額は政策単位（8政策の予算額3,771億円）まで当初予算資料で公表"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "秋田県総合計画 本編 第2章および「令和6年度政策等評価の実施状況」（企画振興部、2024年9月）",
+      "evidence_role": "progress_governance",
+      "id": "phase15-akita-plan-review-progress-governance",
+      "review_note": "政策評価制度による進行管理の明記は計画書本体で、従来の3層評価の運用は令和6年度実施状況資料で確認した。新計画の評価公表形式は未公表のため評価単位の確定は段階2へ送る。",
+      "source_url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094577_00/%E7%A7%8B%E7%94%B0%E7%9C%8C%E7%B7%8F%E5%90%88%E8%A8%88%E7%94%BB%EF%BC%88%E5%86%8A%E5%AD%90%E3%83%BB%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf",
+      "statement": "進行管理は計画第2章の定めにより政策評価制度による。県の政策等評価は従来、政策評価（旧プランの戦略単位、A〜Eの5段階）・施策評価（施策単位、a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた（令和6年度は旧プランの38施策を施策評価した）。新計画での初回評価（令和8年度分）の公表時期・様式は未公表であるため、登録単位（候補は公式評価の公表単位である「施策」）の確定は段階2で行う。",
+      "title": "政策評価制度による進行管理",
+      "value": "政策評価制度による進行管理／従来は政策評価（A〜E）・施策評価（a〜e）・事業評価の3層を毎年度実施"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-26",
+  "next_action": "Register the plan's measures in the project stage after fixing the registration unit from the new plan's annual evaluation format (the measures under the eight policies are the leading candidate, matching the unit of the prefecture's policy evaluation, which evaluates at measure level); register the governor's promises in the promise stage from the 2025 election bulletin, whose copy on the Yurihonjo City official site was verified byte-identical to its 2025-05-15 Wayback Machine snapshot; add the assembly layer in the assembly stage; keep supplementary budgets, execution and settlement as separate states. The FY2026 prefectural tax is registered as not_published: the web-published prefectural documents give only the million-yen figure (99,270 million yen), and the thousand-yen figure is to be fixed from the text of Bill No. 45 or the first supplementary budget bill's table when obtained."
+}

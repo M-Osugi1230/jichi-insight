@@ -32,6 +32,7 @@ SOURCE_CATALOG_PATHS = [
     ROOT / "data" / "catalog" / "yamagata_city_finance_sources.json",
     ROOT / "data" / "catalog" / "okayama_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "kumamoto_prefecture_finance_sources.json",
+    ROOT / "data" / "catalog" / "akita_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "aichi_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "official_sources.json",
     ROOT / "data" / "catalog" / "fukuoka_finance_sources.json",

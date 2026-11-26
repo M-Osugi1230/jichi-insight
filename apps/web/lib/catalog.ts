@@ -16,6 +16,7 @@ import akitaCityFinanceCatalog from "../../../data/catalog/akita_city_finance_so
 import yamagataCityFinanceCatalog from "../../../data/catalog/yamagata_city_finance_sources.json";
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
+import akitaFinanceCatalog from "../../../data/catalog/akita_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
@@ -62,6 +63,7 @@ export type MunicipalityKey =
   | "kumamoto-prefecture"
   | "niigata-prefecture"
   | "okayama-city"
+  | "akita-prefecture"
   | "fukushima-city"
   | "akita-city"
   | "yamagata-city";
@@ -173,6 +175,12 @@ export const municipalityMeta: Record<
     name: "熊本県", type: "都道府県",
     summary: "くまもと新時代共創基本方針及び総合戦略（2024年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と木村敬知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/kumamoto-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "akita-prefecture": {
+    name: "秋田県", type: "都道府県",
+    summary: "秋田県総合計画 ～秋田再興への第一歩～（2026年3月策定、2026〜2029年度）、FY2026一般会計当初予算（県税は千円単位が未公表のため欠損明示）、2022〜2024年度の普通会計決算と鈴木健太知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/akita-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -371,6 +379,7 @@ export const sourceCatalog = [
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
+  ...(akitaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),

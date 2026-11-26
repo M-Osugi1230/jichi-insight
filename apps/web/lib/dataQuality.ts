@@ -102,6 +102,10 @@ import niigataPrefectureFiscalRecords from "../../../data/reviewed/niigata-prefe
 import niigataPrefectureSettlementRecords from "../../../data/reviewed/niigata-prefecture/settlement_records.json";
 import niigataPrefectureFiscalEvidence from "../../../data/reviewed/niigata-prefecture/evidence_packets.json";
 import niigataPrefectureSettlementEvidence from "../../../data/reviewed/niigata-prefecture/settlement_evidence_packets.json";
+import akitaPrefectureFiscalRecords from "../../../data/reviewed/akita-prefecture/fiscal_records.json";
+import akitaPrefectureSettlementRecords from "../../../data/reviewed/akita-prefecture/settlement_records.json";
+import akitaPrefectureFiscalEvidence from "../../../data/reviewed/akita-prefecture/evidence_packets.json";
+import akitaPrefectureSettlementEvidence from "../../../data/reviewed/akita-prefecture/settlement_evidence_packets.json";
 import akitaCityFiscalRecords from "../../../data/reviewed/akita-city/fiscal_records.json";
 import akitaCitySettlementRecords from "../../../data/reviewed/akita-city/settlement_records.json";
 import akitaCityFiscalEvidence from "../../../data/reviewed/akita-city/evidence_packets.json";
@@ -195,6 +199,7 @@ const municipalityNames: Record<MunicipalityKey, string> = {
   "yamagata-city": "山形市",
   "niigata-city": "新潟市",
   "niigata-prefecture": "新潟県",
+  "akita-prefecture": "秋田県",
   "akita-city": "秋田市",
 };
 
@@ -239,6 +244,7 @@ const recordsByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFin
   "yamagata-city": [...yamagataCityFiscalRecords, ...yamagataCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "niigata-city": [...niigataCityFiscalRecords, ...niigataCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "niigata-prefecture": [...niigataPrefectureFiscalRecords, ...niigataPrefectureSettlementRecords] as typeof fukuokaPrefectureFinance.records,
+  "akita-prefecture": [...akitaPrefectureFiscalRecords, ...akitaPrefectureSettlementRecords] as typeof fukuokaPrefectureFinance.records,
   "akita-city": [...akitaCityFiscalRecords, ...akitaCitySettlementRecords] as typeof fukuokaPrefectureFinance.records,
 };
 const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFinance.evidencePackets> = {
@@ -281,6 +287,7 @@ const evidenceByMunicipality: Record<MunicipalityKey, typeof fukuokaPrefectureFi
   "yamagata-city": [...yamagataCityFiscalEvidence, ...yamagataCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "niigata-city": [...niigataCityFiscalEvidence, ...niigataCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "niigata-prefecture": [...niigataPrefectureFiscalEvidence, ...niigataPrefectureSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
+  "akita-prefecture": [...akitaPrefectureFiscalEvidence, ...akitaPrefectureSettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
   "akita-city": [...akitaCityFiscalEvidence, ...akitaCitySettlementEvidence] as typeof fukuokaPrefectureFinance.evidencePackets,
 };
 const fiscalRecords = Object.values(recordsByMunicipality).flat();
