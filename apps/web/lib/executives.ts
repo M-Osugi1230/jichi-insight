@@ -104,6 +104,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-062014": "yamagata-city",
   "jp-local-431001": "kumamoto-city",
   "jp-local-150002": "niigata-prefecture",
   "jp-local-151009": "niigata-city",
