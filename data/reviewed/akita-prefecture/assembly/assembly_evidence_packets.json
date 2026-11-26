@@ -1,0 +1,59 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": "定例会概要ページ、「各議員の表決状況」PDFの議員列、「秋田県議会の概要（令和7年度版）」。",
+    "review_note": null,
+    "source_ids": [
+     "akita-pref-assembly-overview-2026",
+     "akita-pref-assembly-votes-2026-1102",
+     "akita-pref-assembly-guide-r7"
+    ],
+    "statement": "秋田県議会の定数は41人。議員の任期は2023年4月30日から2027年4月29日まで（開始日は前任期の満了日の翌日として構成）。表決状況PDFの議員列は41列で定数と一致する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": "「各議員の表決状況」PDF（2026年11月2日・10月7日議決分）の会派区分ヘッダ。",
+    "review_note": null,
+    "source_ids": [
+     "akita-pref-assembly-votes-2026-1102",
+     "akita-pref-assembly-votes-2026-1007"
+    ],
+    "statement": "2026年11月時点の会派構成は自由民主党27名・みらい5名・立憲民主党4名・社会民主党1名・日本共産党1名・公明党1名・きらり1名・ひらく会1名の8会派で合計41名。表決表の罫線による会派区切りと議員列の対応から確定した。ひらく会は令和8年度の新設会派で、令和7年度の政務活動費交付会派（7会派）には含まれない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": "「秋田県議会の概要（令和7年度版）」の委員会の節。",
+    "review_note": null,
+    "source_ids": [
+     "akita-pref-assembly-guide-r7"
+    ],
+    "statement": "委員会は常任委員会6（総務企画・福祉環境・農林水産・産業観光・建設・教育公安）、議会運営委員会、予算特別委員会、決算特別委員会の9つで、公式解説書に名称と所管が明記されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session_scope",
+    "location_note": "定例会概要ページの会期情報と先例（会期区分を session とする登録方法）。",
+    "review_note": null,
+    "source_ids": [
+     "akita-pref-assembly-overview-2026"
+    ],
+    "statement": "秋田県議会の定例会は年2回で会期区分制（第1回=2月・6月議会、第2回=9月・10月・12月議会）のため、先例どおり会期区分を session として登録した。令和8年第2回定例会は継続中で12月議会が未閉会のため、完了した10月議会（2026年10月14日〜11月2日）と9月議会（同年9月8日〜10月7日）を登録対象とし、12月議会は対象外とした。9月議会は決算2件のみの部分登録で、残り27件は未登録である。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-assembly-2023",
+  "open_questions": [
+   "会議録検索システム（https://ssp.kaigiroku.net/tenant/prefakita/）へのアクセスがタイムアウトし、表決状況PDFと会議録との直接突合は未了。表決の性質判定は、印字合計と議員記号の完全一致、定例会概要ページの叙述との整合、同一形式を採用する宮城県議会の先例に基づく。",
+   "令和8年第2回定例会12月議会は未閉会のため未登録。閉会後に会期区分として追加登録する。",
+   "令和8年9月議会の決算以外の議案27件（議案第153〜172号、意見書案第7〜11号、請願第30〜32号）は未登録で、更新サイクルで追加する。",
+   "認定第1号・認定第2号はいずれも件名が「令和7年度秋田県公営企業会計決算の認定について」と同一に印字されており、表決表からは対象の企業会計を区別できないため、印字どおり登録した。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
