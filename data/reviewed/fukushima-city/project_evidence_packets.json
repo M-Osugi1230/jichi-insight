@@ -1,0 +1,1298 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策1の公式名称は「子どもたちの未来が広がる子育て・教育の新ステージの実現」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策1は、基本ビジョンの6つの基本方針のうち「基本方針1 子どもたちの未来が広がるまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが0件、Bが0件、Cが0件、Dが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策1の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「子育てしやすいまちだと思う」と答えた市民の割合」、「合計特殊出生率」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-childcare-education",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-childcare-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策2の公式名称は「復興・創生のための放射線対策と風評払拭の推進」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策2は、基本ビジョンの6つの基本方針のうち「基本方針2 暮らしを支える安心安全のまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが0件、Bが0件、Cが0件、Dが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策2の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「福島市の復興が進んだ」と答えた市民の割合」、「講座受講後の不安軽減率」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-radiation-recovery",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-radiation-recovery",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策3の公式名称は「災害対策の強化」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策3は、基本ビジョンの6つの基本方針のうち「基本方針2 暮らしを支える安心安全のまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが1件、Bが0件、Cが0件、Dが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策3の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「危機や災害に強く安心して暮らせるまちである」と答えた市民の割合」、「地区防災マップ・防災計画の策定地区数」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-disaster-measures",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-disaster-measures",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策4の公式名称は「安心して暮らせる健康・医療・福祉の総合的な推進」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策4は、基本ビジョンの6つの基本方針のうち「基本方針2 暮らしを支える安心安全のまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標3件の評価内訳はAが0件、Bが0件、Cが0件、Dが3件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策4の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された3件（「「健康づくりや医療体制が充実したまちである」と答えた市民の割合」、「「高齢者や障がいのある人、子ども連れの人などが外出する際、周りの人の理解や手助けがある」と答えた市民の割合」、「お達者度（65歳健康寿命）」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-health-medical-welfare",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-health-medical-welfare",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策5の公式名称は「豊かな文化芸術の振興と発信」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策5は、基本ビジョンの6つの基本方針のうち「基本方針3 次世代へ文化と環境をつなぐまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが1件、Bが0件、Cが0件、Dが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策5の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「福島らしい文化芸術で自信を持って紹介できるものがある」と答えた市民の割合」、「本市主要文化施設の一人あたりの年間利用回数」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-culture-arts",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-culture-arts",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策6の公式名称は「脱炭素社会の実現と循環型社会の構築」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策6は、基本ビジョンの6つの基本方針のうち「基本方針3 次世代へ文化と環境をつなぐまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが1件、Bが1件、Cが0件、Dが0件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策6の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「ＣＯ2の発生抑制やごみの減量など、地球環境にやさしい生活を常に心がけている」と答えた市民の割合」、「温室効果ガス実質排出量」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-decarbonization-circular",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-decarbonization-circular",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策7の公式名称は「「人」と「活力」であふれる農業・商工業の実現」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策7は、基本ビジョンの6つの基本方針のうち「基本方針4 産業とにぎわいを生み出す活力躍動のまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標4件の評価内訳はAが1件、Bが1件、Cが1件、Dが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策7の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された4件（「「農業や商業、工業などの産業が活力あふれるまちである」と答えた市民の割合」、「農業産出額」、「製造品出荷額等」、「中心市街地空き店舗数」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-agriculture-commerce-industry",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-agriculture-commerce-industry",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策8の公式名称は「福島らしい個性とにぎわいのあるまちづくり」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策8は、基本ビジョンの6つの基本方針のうち「基本方針4 産業とにぎわいを生み出す活力躍動のまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが1件、Bが0件、Cが0件、Dが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策8の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「福島らしい個性とにぎわいのあるまちである」と答えた市民の割合」、「休日の歩行者・自転車通行量（7地点）」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-lively-city",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-lively-city",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策9の公式名称は「移住・定住に向けた支援・受入体制の強化」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策9は、基本ビジョンの6つの基本方針のうち「基本方針4 産業とにぎわいを生み出す活力躍動のまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが0件、Bが0件、Cが0件、Dが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策9の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「移住・定住先として自信を持って紹介できるまちである」と答えた市民の割合」、「人口の社会動態（20歳～39歳）」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-migration-settlement",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-migration-settlement",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策10の公式名称は「市民総活躍と市民共創のまちづくり」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策10は、基本ビジョンの6つの基本方針のうち「基本方針5 新ステージに向けて共創・挑戦・発信するまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標3件の評価内訳はAが0件、Bが1件、Cが0件、Dが2件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策10の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された3件（「「性別や年齢、立場に関わらず、個性や能力を十分に生かすことができるまちである」と答えた市民の割合」、「「まちづくりに参加している、参加したい」と答えた市民の割合」、「「ふくしま共創のまちづくり計画」における取り組み数」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-citizen-co-creation",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-citizen-co-creation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策11の公式名称は「新たな施策への挑戦と発信による都市ブランド力の向上」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策11は、基本ビジョンの6つの基本方針のうち「基本方針5 新ステージに向けて共創・挑戦・発信するまち」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが0件、Bが0件、Cが1件、Dが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策11の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「福島市に住み続けたい」と答えた市民の割合」、「元気ふくしま・ふるさと寄附金額」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-city-brand",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-city-brand",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本ビジョン第4編「重点施策」の位置付け、令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細、令和7年度実績評価検証結果等について",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025",
+     "fukushima-city-execution-plan-verification-fy2025"
+    ],
+    "statement": "本登録の単位は、重点施策とした。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて計画期間に特に重点的に取り組む施策を「重点施策」として位置付け（全12件）、各部局が連携して横断的に推進するとしている。下位の新ステージ実行プランは重点施策ごとに成果指標を定め、令和7年度結果は重点施策の成果指標28件について基準値・年度別目標値・実績値・達成率・評価（A〜D）を指標詳細として公表しており、外部有識者からなる検証会議の助言を踏まえた評価検証の単位とも一致する。基本方針（6件）は重点施策の上位の分類であり指標・評価の公表単位ではないため登録単位としなかった。個別施策（成果指標68件）は重点施策の下位の単位であり、本段階では登録対象としない（重点施策の成果指標のうち13件は個別施策にも再掲されるが、登録は重点施策側の1件のみで二重登録はしていない）。決算附属書類は部門別編成で計画体系と一致せず公式対応表もないため、重点施策との対応付けは行っていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本ビジョン第4編の各重点施策の見出し",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "重点施策12の公式名称は「ICTを活用した行政・経済・社会の変革」であり、基本ビジョン第4編の表記どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本ビジョン第4編の構成（基本方針ごとの重点施策の掲載位置）と計画体系図",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-basic-vision-system-chart"
+    ],
+    "statement": "重点施策12は、基本ビジョンの6つの基本方針のうち「基本方針6 効率的で質の高い行財政経営」のもとに位置付けられている。対応は基本ビジョン第4編における掲載位置と計画体系図で確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "基本ビジョン第4編の当該重点施策の取組項目",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4"
+    ],
+    "statement": "purpose は、基本ビジョン第4編の当該重点施策の取組項目（（1）（2）等の内容）に基づく要約であり、計画本文の転記ではない。要約である旨は purpose 本文にも明記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "基本ビジョン第4編および令和7年度新ステージ実行プラン結果を通読し、施策単位の担当部局の指定がないことを確認",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-basic-vision-part4",
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策は各部局が連携して横断的に推進する単位であり、基本ビジョンおよび結果の公表資料には施策単位の担当部局の指定がない。このため responsible_department は null とした（欠損明示）。なお、成果指標ごとに主担当課が結果の指標詳細に公表されており、各KPIの definition に主担当課を記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧・指標詳細（評価は指標ごとに公表）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "結果の公表資料には重点施策単位の総合評価は公表されていないため official_evaluation は null とした（欠損明示）。評価は重点施策の成果指標ごとに A（達成率100％）・B（80％以上100％未満）・C（60％以上80％未満）・D（60％未満）で公表されており、本施策の指標2件の評価内訳はAが0件、Bが1件、Cが0件、Dが1件である。これらの評価は KPI に登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度新ステージ実行プラン結果の指標詳細（取組ごとの事業費）、決算附属書類の編成",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策単位の金額（予算額・決算額）は公表されていない。結果の指標詳細には取組ごとの事業費（千円）の掲載があるが、重点施策単位への集計値は公表されておらず、本登録で合算することも公表形ではないため行っていない。決算附属書類は部門別編成で計画体系と一致しない。このため金額は null とし、理由を note に明記した（欠損明示）。0では補完していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度新ステージ実行プラン結果の成果指標一覧および指標詳細（重点施策の成果指標）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "重点施策12の成果指標は、結果の成果指標一覧に重点施策の指標として掲載された2件（「「地域社会のＩＣＴ化が進み、市民生活が快適で便利になった」と答えた市民の割合」、「行政手続きのオンラインサービス利用件数（年間）」）をすべて登録した。baseline は結果の指標詳細に公表された基準値、target は令和7年度目標値、actuals は令和7年度実績値であり、市の評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-execution-plan-results-fy2025"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-project-2025-ict-transformation",
+  "open_questions": [
+   "金額は未登録である。重点施策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+   "第6次福島市総合計画は2026年度が最終年度であり、後継の第7次福島市総合計画（2027年度開始に向けて策定中）との新旧対応は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+   "首長公約との接続は福島クラスター段階3で検討する。本段階では接続を行っていない。",
+   "契約・支払先・議会・監査と重点施策との公式な対応は確認できていないため未登録である（欠損として明示）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-project-2025-ict-transformation",
+  "subject_type": "project"
+ }
+]
