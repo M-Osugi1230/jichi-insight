@@ -41,6 +41,49 @@ EXPECTED_IDS = [
     "jp-local-062014-project-2025-administration",
 ]
 
+PROMISE_TERM = "jp-local-062014-executive-2023-09-28"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-062014-project-2025-public-transport": [
+        f"{PROMISE_TERM}-promise-001"
+    ],
+    "jp-local-062014-project-2025-urban-development": [
+        f"{PROMISE_TERM}-promise-007"
+    ],
+    "jp-local-062014-project-2025-central-city-area": [
+        f"{PROMISE_TERM}-promise-006"
+    ],
+    "jp-local-062014-project-2025-education": [
+        f"{PROMISE_TERM}-promise-002"
+    ],
+    "jp-local-062014-project-2025-children": [
+        f"{PROMISE_TERM}-promise-002"
+    ],
+    "jp-local-062014-project-2025-health": [
+        f"{PROMISE_TERM}-promise-005"
+    ],
+    "jp-local-062014-project-2025-medical-care": [
+        f"{PROMISE_TERM}-promise-005"
+    ],
+    "jp-local-062014-project-2025-welfare": [
+        f"{PROMISE_TERM}-promise-005"
+    ],
+    "jp-local-062014-project-2025-culture": [
+        f"{PROMISE_TERM}-promise-006"
+    ],
+    "jp-local-062014-project-2025-sports": [
+        f"{PROMISE_TERM}-promise-005"
+    ],
+    "jp-local-062014-project-2025-commerce-industry": [
+        f"{PROMISE_TERM}-promise-003"
+    ],
+    "jp-local-062014-project-2025-tourism": [
+        f"{PROMISE_TERM}-promise-007"
+    ],
+    "jp-local-062014-project-2025-agriculture-forestry": [
+        f"{PROMISE_TERM}-promise-004"
+    ],
+}
+
 EXPECTED_TITLES = [
     "公共交通",
     "都市整備",
@@ -165,8 +208,12 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2025
         assert record["review_status"] == "reviewed"
-        # Stage 3 (mayoral promises) has not run for Yamagata City.
-        assert record["related_promise_ids"] == []
+        # Stage 3 (Issue #1037) connected the mayoral promises whose
+        # wording matches each policy field; all other fields keep an
+        # empty list.
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            item["project_id"], []
+        )
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 

@@ -290,7 +290,7 @@ def test_search_and_review_records() -> None:
     assert "公約レコード5件を作成し" in search["review_note"]
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 34
+    assert len(reviews) == 35
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert review["executive_term_id"] == TERM_ID
     assert review["source_id"] == BULLETIN_ID
@@ -344,11 +344,11 @@ def test_search_and_review_records() -> None:
 
 def test_registry_totals_after_registration() -> None:
     all_promises = load_json("data/entities/executives/promises.json")
-    assert len(all_promises) == 512
+    assert len(all_promises) == 519
     packets = load_json(
         "data/entities/executives/promise_evidence_packets.json"
     )
-    assert len(packets) == 512
+    assert len(packets) == 519
     assert {packet["subject_id"] for packet in packets} == {
         record["id"] for record in all_promises
     }

@@ -282,9 +282,12 @@ def test_yamagata_mayor_term_and_votes() -> None:
     # 任期満了日 R9.9.27).
     assert term["term_end"] == "2027-09-27"
     assert term["election_date"] == "2023-09-10"
-    # No manifesto connection at stage 1 (the 2023 election
-    # bulletin is handled at the promise stage).
-    assert term["manifesto_source_ids"] == []
+    # The manifesto connection was added at stage 3 (Issue #1037):
+    # the term now links the 2023 election bulletin copy verified at
+    # stage 1.
+    assert term["manifesto_source_ids"] == [
+        "yamagata-city-mayor-election-2023-bulletin"
+    ]
     assert len([t for t in terms if t["municipality_id"] == MID]) == 1
 
     packets = load_json("data/entities/executives/evidence_packets.json")
