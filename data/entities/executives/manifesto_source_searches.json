@@ -1125,5 +1125,32 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-akita-city-2025",
+    "executive_term_id": "jp-local-052019-executive-2025-04-12",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "follow_up_required",
+    "manifesto_source_ids_found": [
+      "akita-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "akita-city-mayor-election-2025-results",
+      "akita-pref-mayor-term-expiry-list",
+      "akita-city-mayor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "秋田市長選挙（令和7年4月6日執行）の選挙公報は、市選挙管理委員会の現行公式ページ「選挙公報」（2026年3月12日更新）にPDFがリンクされ現存する（段階0・Issue #1013の棚卸しで確認し、段階1でも2026-11-26に現行ページからPDF本体を取得して確認した。全2ページ、1,916,335バイト）。公報の候補者欄は画像でテキスト層は選管の枠文のみのため、公約の抽出は段階3で描画画像の目視転記により行う。本探索は公報の所在確認までとし、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。沼谷候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "段階3で選挙公報（現行公式ページのPDF）から沼谷純候補欄の公約を目視転記し、分割レビューを経て公約レコードを作成し、term の manifesto_source_ids へ接続する",
+      "沼谷候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録する公約文と照合する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
