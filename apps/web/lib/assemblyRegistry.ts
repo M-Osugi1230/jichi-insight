@@ -573,14 +573,11 @@ export const assemblies: Record<AssemblySlug, Registry> = {
     okayamaPrefTrips,
     [...okayamaPrefAssemblyEvidence, ...okayamaPrefVoteEvidence,
       ...okayamaPrefExpenseEvidence, ...okayamaPrefTripEvidence],
-    okayamaPrefSources.records,
+    okayamaPrefSources.records.map((source) => ({ ...source, notes: source.notes ?? "" })),
   ),
   "okayama-city": registry(
     okayamaCityAssembly, okayamaCityDisclosure, okayamaCitySessions,
-    okayamaCityProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    okayamaCityProposals,
     okayamaCityVotes, okayamaCityFactionVotes, okayamaCityExpenses,
     okayamaCityTrips,
     [...okayamaCityAssemblyEvidence, ...okayamaCityVoteEvidence,
