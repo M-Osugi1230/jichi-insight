@@ -1,0 +1,63 @@
+[
+  {
+    "id": "evidence-fukushima-prefecture-2026-initial-budget-total-revenue",
+    "subject_id": "jp-local-070009-fiscal-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度福島県一般会計当初予算の歳入総額は1,260,607,000千円であり、議案第1号として2026年3月19日に「原案可決」で議決された。",
+        "location_note": "福島県報号外別冊『福島県の財政』第157回（令和8年度当初予算）の第1表（一般会計歳入歳出予算款別比較表）、および福島県議会「令和8年2月定例会 議決結果」の議案第1号の欄。",
+        "source_ids": [
+          "fukushima-pref-budget-2026-finance-report",
+          "fukushima-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "県報号外別冊の千円単位の印字値を円単位へ換算して保存。款別内訳の合計が総額と一致することも検算した。議決日と結果文言「原案可決」は県議会の議決結果ページで確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2026-initial-budget-local-tax",
+    "subject_id": "jp-local-070009-fiscal-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度福島県一般会計当初予算の県税は241,794,000千円である。",
+        "location_note": "福島県報号外別冊『福島県の財政』第157回（令和8年度当初予算）の第1表の県税の欄、および令和8年度一般会計補正予算（第2号）事項別明細書の第1表。",
+        "source_ids": [
+          "fukushima-pref-budget-2026-finance-report",
+          "fukushima-pref-assembly-2026-feb-session-results",
+          "fukushima-pref-budget-2026-supplementary-2-detail"
+        ],
+        "decision": "accepted",
+        "review_note": "第1表の印字値を収録。補正予算（第2号）の事項別明細書第1表で県税の「補正前の額」（241,794,000千円）とも一致を確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2026-initial-budget-total-expenditure",
+    "subject_id": "jp-local-070009-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度福島県一般会計当初予算の歳出総額は1,260,607,000千円で、歳入総額と一致する。",
+        "location_note": "福島県報号外別冊『福島県の財政』第157回（令和8年度当初予算）の第1表（一般会計歳入歳出予算款別比較表）の歳出合計の欄。",
+        "source_ids": [
+          "fukushima-pref-budget-2026-finance-report",
+          "fukushima-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "第1表の印字値を収録し、款別内訳の合計および歳入総額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

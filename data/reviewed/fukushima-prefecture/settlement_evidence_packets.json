@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-revenue",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入総額は1,344,287,454千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-expenditure",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳出総額は1,306,838,789千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-local-tax",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入のうち県税は298,171,646千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-formal-balance",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の形式収支は37,448,665千円（歳入総額から歳出総額を差し引いた額と一致）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入・歳出・形式収支の恒等式が成立することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-carryover-resources",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の翌年度へ繰り越すべき財源は28,801,484千円（形式収支から実質収支を差し引いた額とも一致）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、形式収支−実質収支の恒等式でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-real-balance",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の実質収支は8,647,181千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支−繰越財源＝実質収支の恒等式が成立することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-real-balance-ratio",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は1.7（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-standard-fiscal-scale",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は495,387,012千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-expenditure-by-purpose",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出の合計は歳出総額1,306,838,789千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・自動車取得税交付金・軽油引取税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-expenditure-by-nature",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出の3区分計の合計は歳出総額1,306,838,789千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-fund-balance",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の基金残高（積立金現在高）は528,471,516千円で、3区分の内訳合計と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-debt-balance",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の地方債現在高は1,520,093,566千円（臨時財政対策債を含む）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "「臨時財政対策債を除く」残高は資料集総括表の印字値、臨時財政対策債は差し引いた算出値であることを内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-current-balance-ratio",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は96（印字値。括弧内の変種値は収録していない）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-real-debt-service-ratio",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は6.7（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-future-burden-ratio",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は112.6（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-fiscal-strength-index",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.51343（印字値、過去3年平均）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録する。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2022-ordinary-population",
+    "subject_id": "jp-local-070009-fiscal-2022-ordinary-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の住民基本台帳人口は1,818,581人（2023年1月1日現在）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2022",
+          "fukushima-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-revenue",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入総額は1,257,263,227千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-expenditure",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳出総額は1,224,298,248千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-local-tax",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入のうち県税は301,967,791千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-formal-balance",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の形式収支は32,964,979千円（歳入総額から歳出総額を差し引いた額と一致）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入・歳出・形式収支の恒等式が成立することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-carryover-resources",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の翌年度へ繰り越すべき財源は25,263,354千円（形式収支から実質収支を差し引いた額とも一致）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、形式収支−実質収支の恒等式でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-real-balance",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の実質収支は7,701,625千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支−繰越財源＝実質収支の恒等式が成立することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-real-balance-ratio",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は1.5（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-standard-fiscal-scale",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は498,570,050千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-expenditure-by-purpose",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出の合計は歳出総額1,224,298,248千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-expenditure-by-nature",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出の3区分計の合計は歳出総額1,224,298,248千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-fund-balance",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の基金残高（積立金現在高）は526,501,975千円で、3区分の内訳合計と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-debt-balance",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の地方債現在高は1,509,399,810千円（臨時財政対策債を含む）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "「臨時財政対策債を除く」残高は資料集総括表の印字値、臨時財政対策債は差し引いた算出値であることを内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-current-balance-ratio",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は94.4（印字値。括弧内の変種値は収録していない）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-real-debt-service-ratio",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は6.4（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-future-burden-ratio",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は114.1（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-fiscal-strength-index",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.50548（印字値、過去3年平均）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録する。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2023-ordinary-population",
+    "subject_id": "jp-local-070009-fiscal-2023-ordinary-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の住民基本台帳人口は1,795,219人（2024年1月1日現在）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2023",
+          "fukushima-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-revenue",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入総額は1,191,872,923千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-expenditure",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳出総額は1,152,505,464千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-local-tax",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入のうち県税は301,357,477千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-formal-balance",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の形式収支は39,367,459千円（歳入総額から歳出総額を差し引いた額と一致）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入・歳出・形式収支の恒等式が成立することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-carryover-resources",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の翌年度へ繰り越すべき財源は31,555,239千円（形式収支から実質収支を差し引いた額とも一致）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、形式収支−実質収支の恒等式でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-real-balance",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の実質収支は7,812,220千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支−繰越財源＝実質収支の恒等式が成立することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-real-balance-ratio",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は1.5（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-standard-fiscal-scale",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は509,718,963千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-expenditure-by-purpose",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出の合計は歳出総額1,152,505,464千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・自動車取得税交付金・軽油引取税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-expenditure-by-nature",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出の3区分計の合計は歳出総額1,152,505,464千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-fund-balance",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の基金残高（積立金現在高）は506,894,144千円で、3区分の内訳合計と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-debt-balance",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の地方債現在高は1,519,351,118千円（臨時財政対策債を含む）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "「臨時財政対策債を除く」残高は資料集総括表の印字値、臨時財政対策債は差し引いた算出値であることを内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-current-balance-ratio",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は95.8（印字値。括弧内の変種値は収録していない）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-real-debt-service-ratio",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は6（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-future-burden-ratio",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は115.3（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-fiscal-strength-index",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.51927（印字値、過去3年平均）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録する。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-prefecture-2024-ordinary-population",
+    "subject_id": "jp-local-070009-fiscal-2024-ordinary-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の住民基本台帳人口は1,771,314人（2025年1月1日現在）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（福島県シート）の該当欄および福島県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "fukushima-prefecture-mic-settlement-card-fy2024",
+          "fukushima-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は福島県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  }
+]

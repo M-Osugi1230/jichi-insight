@@ -1,0 +1,69 @@
+[
+  {
+    "id": "jp-local-070009-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 1260607000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "福島県報号外別冊『福島県の財政』第157回（令和8年度当初予算）の第1表（一般会計歳入歳出予算款別比較表）の印字値。款別内訳の合計も総額と一致する。福島県議会の令和8年2月定例会議決結果では、議案第1号「令和8年度福島県一般会計予算」は2026年3月19日に「原案可決」と記録されている。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-pref-budget-2026-finance-report",
+      "fukushima-pref-assembly-2026-feb-session-results"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計県税",
+    "amount_yen": 241794000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "同第1表の県税の印字値。令和8年度一般会計補正予算（第2号）の事項別明細書第1表でも、県税の「補正前の額」が241,794,000千円と一致することを確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-pref-budget-2026-finance-report",
+      "fukushima-pref-assembly-2026-feb-session-results",
+      "fukushima-pref-budget-2026-supplementary-2-detail"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 1260607000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "同第1表の歳出合計の印字値。款別内訳の合計および歳入総額と一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-pref-budget-2026-finance-report",
+      "fukushima-pref-assembly-2026-feb-session-results"
+    ]
+  }
+]
