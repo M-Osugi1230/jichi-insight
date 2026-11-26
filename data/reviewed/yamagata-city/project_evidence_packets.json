@@ -1,0 +1,2282 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野01の公式名称は「公共交通」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野01「公共交通」は、計画本編第4章のテーマ「まちをつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「「まち」・「ひと」・「しごと」公共交通が全てを繋ぐまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標1件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-public-transport",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-public-transport",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野02の公式名称は「都市整備」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野02「都市整備」は、計画本編第4章のテーマ「まちをつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「誰もが安全に安心して、心地よく快適に住み続けられるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる5施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標2件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-urban-development",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-urban-development",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野03の公式名称は「中心市街地」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野03「中心市街地」は、計画本編第4章のテーマ「まちをつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「歩くほど幸せになるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標1件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-central-city-area",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-central-city-area",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野04の公式名称は「防災」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野04「防災」は、計画本編第4章のテーマ「まちをつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「防災はみんなの力、安全はみんなの笑顔、安全・安心の絆でつながるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標2件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-disaster-prevention",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-disaster-prevention",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野05の公式名称は「コミュニティ」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野05「コミュニティ」は、計画本編第4章のテーマ「まちをつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「市民や地域のコミュニティが活発なまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる2施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標1件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-community",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-community",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野06の公式名称は「環境」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野06「環境」は、計画本編第4章のテーマ「まちをつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「一人ひとりが限りある資源を大切にする循環型の自然豊かな美しいまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる4施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標2件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-environment",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-environment",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野07の公式名称は「教育」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野07「教育」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「豊かな学びや体験を得て、質の高い教育を受けることのできるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる4施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-education",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-education",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野08の公式名称は「こども」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野08「こども」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「こどもの笑顔が未来をつくる、子育てが楽しいまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-children",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-children",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野09の公式名称は「健康」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野09「健康」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「誰もが健康で生きがいと役割を持って、地域の中でいきいきと暮らすまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる5施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標4件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-health",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-health",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野10の公式名称は「医療」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野10「医療」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「安心して医療が受けられる暮らしやすいまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる4施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標1件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-medical-care",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-medical-care",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野11の公式名称は「福祉」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野11「福祉」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「困っている人、悩んでいる人を誰もほっとかないホッとするまちHOTなまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる5施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標2件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-welfare",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-welfare",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野12の公式名称は「文化」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野12「文化」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「身近にあるクリエイティブに出会えるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標2件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-culture",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-culture",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野13の公式名称は「スポーツ」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野13「スポーツ」は、計画本編第4章のテーマ「ひとを育む」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「スポーツ熱の高い健康で活気あふれるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標1件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-sports",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-sports",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野14の公式名称は「商工」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野14「商工」は、計画本編第4章のテーマ「しごとを豊かにする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「産業の振興と働きやすさがつなぐ、未来をひらくまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-commerce-industry",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-commerce-industry",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野15の公式名称は「観光」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野15「観光」は、計画本編第4章のテーマ「しごとを豊かにする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「暮らしと観光がつながり、何度も訪れたくなる感動体験を生み出すまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-tourism",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-tourism",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野16の公式名称は「農林」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野16「農林」は、計画本編第4章のテーマ「しごとを豊かにする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「豊かな自然とおいしい食を未来につなぐ、みどりの循環するまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-agriculture-forestry",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-agriculture-forestry",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野17の公式名称は「男女共同参画」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野17「男女共同参画」は、計画本編第4章のテーマ「しごとを豊かにする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「性別に関わらず多様な人材が活躍し、多様な価値観が尊重されるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-gender-equality",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-gender-equality",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野18の公式名称は「シティプロモーション」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野18「シティプロモーション」は、計画本編第4章のテーマ「しごとを豊かにする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「山形ブランドを確立し、高いブランド力で選ばれ続けるまち」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる3施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標3件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-city-promotion",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-city-promotion",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "計画本編第1章「計画の推進に向けて」、第4章「推進する19の政策」、段階1 plan_review、令和7年度主要な施策の成果報告書の構成",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "本登録の単位は、山形市発展計画2030の「政策分野」とした。段階1の plan_review が本計画の登録単位を policy_fields と確定している。計画本編第4章は19の政策分野ごとに施策と成果指標を定め、第1章は成果指標による進捗管理を明記しており、政策分野は計画の公式の進捗管理単位と一致する。段階0棚卸し（OQ-3）が候補とした施策単位については、令和7年度主要な施策の成果報告書の実物確認により、施策単位の金額合計・評定が公表されていないことが判明したため採用しなかった。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "計画本編第4章の政策体系図と各政策分野の見出し",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野19の公式名称は「行政」であり、計画本編第4章の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "計画本編第4章の政策体系図",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "政策分野19「行政」は、計画本編第4章のテーマ「未来へつなげる行政経営」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "計画本編第4章の各政策分野「発展計画2030の施策（ビジョン）」",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "purpose は、目指すまちの姿「発展計画を推進するための基盤づくり」と、計画本編第4章「発展計画2030の施策（ビジョン）」に掲げる4施策の本文を、施策名とともに転記したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "計画本編第4章の各政策分野（所管部局の記載なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "計画本編は政策分野ごとの所管部局を印字していないため、responsible_department は null とした。市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "計画本編第1章「成果指標による進捗管理」、令和7年度主要な施策の成果報告書（政策分野単位の評定なし）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4",
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "市は政策分野ごとの評定（達成度区分）を公表していないため、official_evaluation は null とした。計画の進捗管理は成果指標の基準値・目標値によるものと計画第1章に明記されている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和7年度主要な施策の成果報告書の各事業欄（執行額は事業単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-major-measures-report-fy2025"
+        ],
+        "statement": "令和7年度主要な施策の成果報告書は、発展計画2030の政策分野・施策の体系に沿って事業ごとの執行額（千円）を印字するが、政策分野単位の金額合計は公表していない。事業執行額の合算による政策分野金額は公表されている形ではないため、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "計画本編第4章「政策分野別成果指標」（巻末一覧）と各政策分野の成果指標表",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "成果指標5件を計画本編第4章「政策分野別成果指標」の公表値（基準値・目標値❶）で登録した。定性目標（「基準値を超える」等）や男女別・学校種別の併記値は、公表されている形のまま文字列で保持した。令和7年度実績値は2026年11月26日時点で公式公表を確認できないため actual は null、評価は not_assessable とした。目標値❷（2040年度）は詳細KPIの definition に記録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_basis",
+        "location_note": "プロジェクトの運用記録（2026年11月15日の所有者委任）",
+        "review_note": null,
+        "source_ids": [
+          "yamagata-city-development-plan-2030-page",
+          "yamagata-city-development-plan-2030-full",
+          "yamagata-city-development-plan-2030-chapter4"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "id": "evidence-jp-local-062014-project-2025-administration",
+    "open_questions": [
+      "発展計画2030の成果指標の実績値（令和7年度以降）が市公式に公表された場合、詳細KPIへ実績を追加し、評価を更新する。",
+      "政策分野単位の金額または評定が公式に公表された場合、予算記録と公式評価を追加する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-062014-project-2025-administration",
+    "subject_type": "project"
+  }
+]

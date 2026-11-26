@@ -1,0 +1,301 @@
+{
+  "as_of": "2026-11-26",
+  "issue": 1025,
+  "municipality_id": "jp-local-062014",
+  "plan_title": "山形市発展計画2030",
+  "population": {
+    "basis": "山形市発展計画2030（令和7年3月策定、計画期間は2025年度から2029年度、地方版総合戦略を兼ねる）の第4章が定める19の政策分野を母集団とする。計画は2大ビジョン（健康医療先進都市・文化創造都市）の下、4テーマ（I まちをつくる、II ひとを育む、III しごとを豊かにする、未来へつなげる行政経営）に19政策分野を置き、政策分野別に全45件の成果指標（基準値・目標値❶2029年度・目標値❷2040年度）を定める。",
+    "description": "登録単位は政策分野とした。理由は次のとおり。第一に、段階1の plan_review が本計画の登録単位を policy_fields と確定している。第二に、計画第1章は「成果指標による進捗管理」を明記し、成果指標は政策分野単位で設定されるため、政策分野は計画の公式の進捗管理単位と一致する。第三に、令和7年度主要な施策の成果報告書は金額（執行額）を事業単位でのみ印字し、政策分野単位・施策単位いずれの金額合計も公表していないため、金額を根拠に施策単位へ降ろすことはできない。なお、段階0棚卸し（OQ-3）は施策単位を候補としたが、成果報告書の実物確認により施策単位の金額合計・評定が存在しないことが判明したため、plan_review の確定どおり政策分野単位を採用した。前計画（発展計画2025）との政策・指標の対応付けは、公式の対応表がないため行っていない。",
+    "item_count": 19,
+    "unit": "policy_field"
+  },
+  "schema_version": "0.1.0",
+  "selection_rule": "母集団（19政策分野）の全件を、計画本編第4章の掲載順に選定する。金額の大小では選ばない。",
+  "selections": [
+    {
+      "department": null,
+      "official_title": "公共交通",
+      "pillar": "まちをつくる",
+      "policy": "政策分野01",
+      "project_id": "jp-local-062014-project-2025-public-transport",
+      "selection_basis": "掲載順1番目: 政策分野01「公共交通」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-public-transport",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "都市整備",
+      "pillar": "まちをつくる",
+      "policy": "政策分野02",
+      "project_id": "jp-local-062014-project-2025-urban-development",
+      "selection_basis": "掲載順2番目: 政策分野02「都市整備」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-urban-development",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "中心市街地",
+      "pillar": "まちをつくる",
+      "policy": "政策分野03",
+      "project_id": "jp-local-062014-project-2025-central-city-area",
+      "selection_basis": "掲載順3番目: 政策分野03「中心市街地」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-central-city-area",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "防災",
+      "pillar": "まちをつくる",
+      "policy": "政策分野04",
+      "project_id": "jp-local-062014-project-2025-disaster-prevention",
+      "selection_basis": "掲載順4番目: 政策分野04「防災」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-disaster-prevention",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "コミュニティ",
+      "pillar": "まちをつくる",
+      "policy": "政策分野05",
+      "project_id": "jp-local-062014-project-2025-community",
+      "selection_basis": "掲載順5番目: 政策分野05「コミュニティ」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-community",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "環境",
+      "pillar": "まちをつくる",
+      "policy": "政策分野06",
+      "project_id": "jp-local-062014-project-2025-environment",
+      "selection_basis": "掲載順6番目: 政策分野06「環境」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-environment",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "教育",
+      "pillar": "ひとを育む",
+      "policy": "政策分野07",
+      "project_id": "jp-local-062014-project-2025-education",
+      "selection_basis": "掲載順7番目: 政策分野07「教育」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-education",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "こども",
+      "pillar": "ひとを育む",
+      "policy": "政策分野08",
+      "project_id": "jp-local-062014-project-2025-children",
+      "selection_basis": "掲載順8番目: 政策分野08「こども」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-children",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "健康",
+      "pillar": "ひとを育む",
+      "policy": "政策分野09",
+      "project_id": "jp-local-062014-project-2025-health",
+      "selection_basis": "掲載順9番目: 政策分野09「健康」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-health",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "医療",
+      "pillar": "ひとを育む",
+      "policy": "政策分野10",
+      "project_id": "jp-local-062014-project-2025-medical-care",
+      "selection_basis": "掲載順10番目: 政策分野10「医療」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-medical-care",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "福祉",
+      "pillar": "ひとを育む",
+      "policy": "政策分野11",
+      "project_id": "jp-local-062014-project-2025-welfare",
+      "selection_basis": "掲載順11番目: 政策分野11「福祉」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-welfare",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "文化",
+      "pillar": "ひとを育む",
+      "policy": "政策分野12",
+      "project_id": "jp-local-062014-project-2025-culture",
+      "selection_basis": "掲載順12番目: 政策分野12「文化」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-culture",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "スポーツ",
+      "pillar": "ひとを育む",
+      "policy": "政策分野13",
+      "project_id": "jp-local-062014-project-2025-sports",
+      "selection_basis": "掲載順13番目: 政策分野13「スポーツ」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-sports",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "商工",
+      "pillar": "しごとを豊かにする",
+      "policy": "政策分野14",
+      "project_id": "jp-local-062014-project-2025-commerce-industry",
+      "selection_basis": "掲載順14番目: 政策分野14「商工」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-commerce-industry",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "観光",
+      "pillar": "しごとを豊かにする",
+      "policy": "政策分野15",
+      "project_id": "jp-local-062014-project-2025-tourism",
+      "selection_basis": "掲載順15番目: 政策分野15「観光」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-tourism",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "農林",
+      "pillar": "しごとを豊かにする",
+      "policy": "政策分野16",
+      "project_id": "jp-local-062014-project-2025-agriculture-forestry",
+      "selection_basis": "掲載順16番目: 政策分野16「農林」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-agriculture-forestry",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "男女共同参画",
+      "pillar": "しごとを豊かにする",
+      "policy": "政策分野17",
+      "project_id": "jp-local-062014-project-2025-gender-equality",
+      "selection_basis": "掲載順17番目: 政策分野17「男女共同参画」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-gender-equality",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "シティプロモーション",
+      "pillar": "しごとを豊かにする",
+      "policy": "政策分野18",
+      "project_id": "jp-local-062014-project-2025-city-promotion",
+      "selection_basis": "掲載順18番目: 政策分野18「シティプロモーション」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-city-promotion",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "行政",
+      "pillar": "未来へつなげる行政経営",
+      "policy": "政策分野19",
+      "project_id": "jp-local-062014-project-2025-administration",
+      "selection_basis": "掲載順19番目: 政策分野19「行政」を選定した。母集団は発展計画2030の19政策分野の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-062014-project-series-administration",
+      "source_ids": [
+        "yamagata-city-development-plan-2030-page",
+        "yamagata-city-development-plan-2030-full",
+        "yamagata-city-development-plan-2030-chapter4",
+        "yamagata-city-major-measures-report-fy2025"
+      ]
+    }
+  ]
+}
