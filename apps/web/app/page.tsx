@@ -124,6 +124,10 @@ const searchEntries: MunicipalitySearchEntry[] = [
   })),
 ];
 
+const reviewedPromiseCount = promiseRecords.filter((record) =>
+  record.review_status === "reviewed" || record.review_status === "verified"
+).length;
+
 const startPaths = [
   {
     label: "財政",
@@ -135,7 +139,7 @@ const startPaths = [
   {
     label: "公約",
     heading: "首長の公約を確かめる",
-    description: `${promiseRecords.length}件のReviewed公約を、${currentExecutiveTerms.length}件の首長termごとに原文・出典から確認します。`,
+    description: `${reviewedPromiseCount}件のReviewed公約を、${currentExecutiveTerms.length}件の首長termごとに原文・出典から確認します。`,
     href: "/promises",
     action: "公約の原文と根拠を見る",
   },
