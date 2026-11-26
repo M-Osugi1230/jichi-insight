@@ -1,3 +1,5 @@
+import okayamaPrefectureMunicipality from "../../../data/reviewed/okayama-prefecture/municipality.json";
+import okayamaCityMunicipality from "../../../data/reviewed/okayama-city/municipality.json";
 import niigataPrefectureMunicipality from "../../../data/reviewed/niigata-prefecture/municipality.json";
 import niigataCityMunicipality from "../../../data/reviewed/niigata-city/municipality.json";
 import kyotoPrefectureMunicipality from "../../../data/reviewed/kyoto-prefecture/municipality.json";
@@ -84,6 +86,8 @@ const staticRoutes = [
   "/municipalities/kyoto-city",
   "/municipalities/niigata-prefecture",
   "/municipalities/niigata-city",
+  "/municipalities/okayama-prefecture",
+  "/municipalities/okayama-city",
   "/municipalities/hiroshima-prefecture",
   "/municipalities/hiroshima-city",
   "/municipalities/shizuoka-prefecture",
@@ -133,6 +137,8 @@ lastModifiedByRoute.set("/municipalities/kyoto-prefecture", kyotoPrefectureMunic
 lastModifiedByRoute.set("/municipalities/kyoto-city", kyotoCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/niigata-prefecture", niigataPrefectureMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/niigata-city", niigataCityMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/okayama-prefecture", okayamaPrefectureMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/okayama-city", okayamaCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/hiroshima-prefecture", hiroshimaPrefectureMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/hiroshima-city", hiroshimaCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/shizuoka-prefecture", shizuokaPrefectureMunicipality.last_verified_at);

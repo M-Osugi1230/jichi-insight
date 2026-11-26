@@ -1,3 +1,6 @@
+import okayamaPrefectureMunicipality from "../../../data/reviewed/okayama-prefecture/municipality.json";
+import okayamaCityMunicipality from "../../../data/reviewed/okayama-city/municipality.json";
+import { okayamaFinance, okayamaCityFinance } from "@/lib/okayamaFinance";
 import niigataPrefectureMunicipality from "../../../data/reviewed/niigata-prefecture/municipality.json";
 import niigataCityMunicipality from "../../../data/reviewed/niigata-city/municipality.json";
 import { niigataFinance, niigataCityFinance } from "@/lib/niigataFinance";
@@ -87,6 +90,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
   for (const item of [
     { slug: "kyoto-prefecture", municipality: kyotoPrefectureMunicipality, finance: kyotoFinance },
     { slug: "niigata-prefecture", municipality: niigataPrefectureMunicipality, finance: niigataFinance },
+    { slug: "okayama-prefecture", municipality: okayamaPrefectureMunicipality, finance: okayamaFinance },
     { slug: "hiroshima-prefecture", municipality: hiroshimaPrefectureMunicipality, finance: hiroshimaFinance },
     { slug: "shizuoka-prefecture", municipality: shizuokaPrefectureMunicipality, finance: shizuokaFinance },
     { slug: "shizuoka-city", municipality: shizuokaCityMunicipality, finance: shizuokaCityFinance },
@@ -115,6 +119,24 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
 
   // Hiroshima City is a Phase 15 city with separately reviewed stage 2-4 records.
   // Match the municipal code before publishing any deep-dive navigation.
+  if (!matched && officialCode === okayamaCityMunicipality.official_code &&
+    okayamaCityMunicipality.data_status === "reviewed") {
+    const municipalityId = okayamaCityMunicipality.id;
+    const entry = assemblies["okayama-city"];
+    return {
+      key: "okayama-city",
+      finance: okayamaCityFinance.records.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+        (record.stage === "initial_budget" || record.stage === "settlement"),
+      ),
+      projects: projectRegistry["okayama-city"].projects.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed",
+      ),
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: entry.assembly.review_status === "reviewed" &&
+        entry.disclosure.review_status === "reviewed",
+    };
+  }
   if (!matched && officialCode === niigataCityMunicipality.official_code &&
     niigataCityMunicipality.data_status === "reviewed") {
     const municipalityId = niigataCityMunicipality.id;
