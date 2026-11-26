@@ -1,0 +1,431 @@
+[
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和6年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "4科目中0科目"
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「学校教育の充実」の目標指標。現状値は令和6年度の4科目中0科目、目標値は令和11年度に全科目と公表されている。出典は全国学力・学習状況調査（文部科学省）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-school-education-kpi-academic-achievement-subjects",
+    "name": "全国学力・学習状況調査における正答率が全国平均以上の科目数",
+    "project_id": "jp-local-060003-project-2025-school-education",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "全科目"
+    },
+    "unit": "科目"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和6年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "小6：81.5％、中3：82.6％"
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「学校教育の充実」の目標指標。現状値は令和6年度の小6：81.5％、中3：82.6％、目標値は令和11年度に小6：84.0％、中3：85.1％と公表されている。出典は全国学力・学習状況調査（文部科学省）。県の「進捗状況と評価（令和7年度末時点）」では、全県版の「策定時の数値を下回っている項目」の一つに本指標が挙げられているが、実績値そのものは公表されていない（県の集計区分の記録であり、達成判定ではない）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-school-education-kpi-proactive-learning-students",
+    "name": "「授業中に課題の解決に向けて、自分で考え自分から取り組んでいた」と思う児童生徒の割合",
+    "project_id": "jp-local-060003-project-2025-school-education",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "小6：84.0％、中3：85.1％"
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "現状値",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「生涯を通じた多様な学びの機会の充実」の目標指標。現状値は公表されていない、目標値は令和11年度に80と公表されている。出典は県政アンケート調査。後期実施計画では現状値が「―」と公表されており（新規指標のため現状値の公表がない）、baseline の値は未登録（null）とした。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-lifelong-learning-kpi-adult-learning-participation",
+    "name": "過去1年間に月1日以上の学習を行った県民の割合",
+    "project_id": "jp-local-060003-project-2025-lifelong-learning",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 80
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和6年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "東北1位"
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「やまがたの農業を支える人材の育成と基盤形成」の目標指標。現状値は令和6年度の東北1位、目標値は令和11年度に東北1位と公表されている。目標は現状（東北1位）の維持として公表されている。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "maintain",
+    "id": "jp-local-060003-project-2025-agricultural-workforce-foundation-kpi-new-farmers-tohoku-rank",
+    "name": "新規就農者数の東北における順位",
+    "project_id": "jp-local-060003-project-2025-agricultural-workforce-foundation",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "東北1位"
+    },
+    "unit": "位"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和2～5年平均",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 338
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「収益性の高い農業の展開」の目標指標。現状値は令和2～5年平均の338、目標値は令和11年度に550と公表されている。現状値は令和2～5年の平均値として公表されている。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-profitable-agriculture-kpi-farm-management-income",
+    "name": "経営体当たり生産農業所得",
+    "project_id": "jp-local-060003-project-2025-profitable-agriculture",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 550
+    },
+    "unit": "万円"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和4年",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 1163
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「ＩｏＴなどの先端技術の活用等による産業イノベーションの創出」の目標指標。現状値は令和4年の1163、目標値は令和11年度に1280と公表されている。出典は経済構造実態調査（経済産業省）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-industrial-innovation-iot-kpi-manufacturing-value-added-per-worker",
+    "name": "製造業従事者一人当たり付加価値額",
+    "project_id": "jp-local-060003-project-2025-industrial-innovation-iot",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 1280
+    },
+    "unit": "万円"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和4年",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 11431
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「地域産業の振興・活性化と中小企業等の成長・発展」の目標指標。現状値は令和4年の11431、目標値は令和11年度に12500と公表されている。出典は経済構造実態調査（経済産業省）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-regional-industry-sme-growth-kpi-manufacturing-value-added",
+    "name": "製造業付加価値額",
+    "project_id": "jp-local-060003-project-2025-regional-industry-sme-growth",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 12500
+    },
+    "unit": "億円"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和5年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 0
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「大規模災害への対応など危機管理機能の充実強化」の目標指標。現状値は令和5年度の0、目標値は令和11年度に0と公表されている。目標は死亡者数ゼロの維持として公表されている。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "maintain",
+    "id": "jp-local-060003-project-2025-crisis-management-kpi-storm-flood-deaths",
+    "name": "風水害（台風、大雨、洪水等）による死亡者数",
+    "project_id": "jp-local-060003-project-2025-crisis-management",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 0
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和5年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 1
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「大規模災害への対応など危機管理機能の充実強化」の目標指標。現状値は令和5年度の1、目標値は令和11年度に0と公表されている。県の「進捗状況と評価（令和7年度末時点）」では、全県版の「策定時の数値を下回っている項目」の一つに本指標が挙げられているが、実績値そのものは公表されていない（県の集計区分の記録であり、達成判定ではない）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "decrease",
+    "id": "jp-local-060003-project-2025-crisis-management-kpi-snow-deaths",
+    "name": "雪害による死亡者数",
+    "project_id": "jp-local-060003-project-2025-crisis-management",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 0
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和6年",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 3052
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「暮らしの様々なリスクへの対応力の強化」の目標指標。現状値は令和6年の3052、目標値は令和11年度に3,052件未満と公表されている。目標値は「3,052件未満」と公表されているため、そのまま文字列で登録した。県の「進捗状況と評価（令和7年度末時点）」では、全県版の「策定時の数値を下回っている項目」の一つに本指標が挙げられているが、実績値そのものは公表されていない（県の集計区分の記録であり、達成判定ではない）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "decrease",
+    "id": "jp-local-060003-project-2025-everyday-risk-resilience-kpi-penal-code-offenses",
+    "name": "刑法犯認知件数",
+    "project_id": "jp-local-060003-project-2025-everyday-risk-resilience",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "3,052件未満"
+    },
+    "unit": "件"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和6年",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 24
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「暮らしの様々なリスクへの対応力の強化」の目標指標。現状値は令和6年の24、目標値は令和11年度に24人以下と公表されている。目標値は「24人以下」と公表されているため、そのまま文字列で登録した。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "decrease",
+    "id": "jp-local-060003-project-2025-everyday-risk-resilience-kpi-traffic-deaths",
+    "name": "交通事故死者数",
+    "project_id": "jp-local-060003-project-2025-everyday-risk-resilience",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "24人以下"
+    },
+    "unit": "人"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "現状値",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "not_published",
+      "value": null
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「暮らしや産業の発展基盤となるＩＣＴなど未来技術の早期実装」の目標指標。現状値は公表されていない、目標値は令和11年度に上昇と公表されている。出典は県政アンケート調査。後期実施計画では現状値が「―」と公表されており（新規指標のため現状値の公表がない）、baseline の値は未登録（null）とした。目標値も数値ではなく「上昇」と公表されているため、そのまま文字列で登録した。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-future-technology-implementation-kpi-digital-service-convenience",
+    "name": "デジタル技術の活用により、交通、医療、教育などの公的サービスの利便性が向上したと実感している県民の割合",
+    "project_id": "jp-local-060003-project-2025-future-technology-implementation",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": "上昇"
+    },
+    "unit": "％"
+  },
+  {
+    "actuals": [],
+    "assessment": "not_assessable",
+    "baseline": {
+      "period": "令和4年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 35361
+    },
+    "causality_note": null,
+    "confidence": "high",
+    "definition": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策「国内外の活力を呼び込む多様で重層的な交通ネットワークの形成」の目標指標。現状値は令和4年度の35361、目標値は令和11年度に45700と公表されている。出典は旅客地域流動調査（国土交通省）。指標ごとの年度別実績値および達成度は公表されていない。県の「進捗状況と評価（令和7年度末時点）」は、全県版の目標指標28項目全体について「目標値に到達3項目、概ね順調5項目、策定時を下回る5項目、その他（令和7年の数値が未発表等）15項目」という集計区分のみを公表しており、指標単位の評価ではない。このため実績は未登録とし、assessment は not_assessable とした。県の評価の記録であり、Jichi Insight独自の達成判定ではない。",
+    "direction": "increase",
+    "id": "jp-local-060003-project-2025-transport-network-kpi-public-transport-passengers",
+    "name": "県内の主な公共交通機関の年間輸送人員（県内⇔全国）",
+    "project_id": "jp-local-060003-project-2025-transport-network",
+    "review_status": "reviewed",
+    "sources": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-progress-evaluation-fy2025"
+    ],
+    "target": {
+      "period": "令和11年度",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ],
+      "status": "available",
+      "value": 45700
+    },
+    "unit": "千人"
+  }
+]
