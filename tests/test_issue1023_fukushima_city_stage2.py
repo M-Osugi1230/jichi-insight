@@ -61,6 +61,35 @@ EXPECTED_PILLARS = [
 ]
 EXPECTED_POLICIES = [f"重点施策{i}" for i in range(1, 13)]
 
+# Stage 3 (Issue #1035) connected the mayor's 2025 election-bulletin
+# promises to the priority measures by wording and content
+# (confidence capped at low / inferred); four measures received no
+# link and four promises stayed unconnected.
+_TERM = f"{MID}-executive-2025-12-08"
+EXPECTED_PROMISE_LINKS = {
+    f"{MID}-project-2025-childcare-education": [
+        f"{_TERM}-promise-007",
+        f"{_TERM}-promise-014",
+    ],
+    f"{MID}-project-2025-radiation-recovery": [],
+    f"{MID}-project-2025-disaster-measures": [f"{_TERM}-promise-015"],
+    f"{MID}-project-2025-health-medical-welfare": [f"{_TERM}-promise-011"],
+    f"{MID}-project-2025-culture-arts": [f"{_TERM}-promise-009"],
+    f"{MID}-project-2025-decarbonization-circular": [f"{_TERM}-promise-013"],
+    f"{MID}-project-2025-agriculture-commerce-industry": [],
+    f"{MID}-project-2025-lively-city": [
+        f"{_TERM}-promise-005",
+        f"{_TERM}-promise-006",
+    ],
+    f"{MID}-project-2025-migration-settlement": [],
+    f"{MID}-project-2025-citizen-co-creation": [f"{_TERM}-promise-003"],
+    f"{MID}-project-2025-city-brand": [],
+    f"{MID}-project-2025-ict-transformation": [
+        f"{_TERM}-promise-001",
+        f"{_TERM}-promise-002",
+    ],
+}
+
 EXPECTED_POLICY_AREAS = [
     "childcare",
     "environment",
@@ -150,8 +179,11 @@ def test_selected_projects_match_records() -> None:
         assert record["municipality_id"] == MID
         assert record["fiscal_year"] == 2025
         assert record["review_status"] == "reviewed"
-        # Stage 2 registers no promise links; stage 3 connects them.
-        assert record["related_promise_ids"] == []
+        # Stage 2 registered no promise links; stage 3 (Issue #1035)
+        # connected them (see EXPECTED_PROMISE_LINKS).
+        assert record["related_promise_ids"] == EXPECTED_PROMISE_LINKS[
+            record["id"]
+        ]
     areas = [projects[pid]["policy_area"] for pid in EXPECTED_IDS]
     assert areas == EXPECTED_POLICY_AREAS
 
