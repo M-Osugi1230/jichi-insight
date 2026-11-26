@@ -2198,6 +2198,23 @@ def validate_tohoku_cluster_export() -> list[str]:
         for marker in ("43議会", "福島県議会", "山形県議会", "秋田県議会"):
             if marker not in html:
                 failures.append(f"Assembly directory missing: {marker}")
+    terms = load_json(ROOT / "data/entities/executives/executive_terms.json")
+    promises = load_json(ROOT / "data/entities/executives/promises.json")
+    reviewed = [
+        promise for promise in promises
+        if promise["review_status"] in ("reviewed", "verified")
+    ]
+    if len(terms) != 43 or len(reviewed) != 580:
+        failures.append(
+            f"Unexpected executive registry counts: {len(terms)} terms, "
+            f"{len(reviewed)} reviewed promises"
+        )
+    promises_page = EXPORT_ROOT / "promises/index.html"
+    if promises_page.is_file():
+        html = normalized_html(promises_page)
+        for marker in ("580件", "43件"):
+            if marker not in html:
+                failures.append(f"Promises page missing updated count: {marker}")
     return failures
 
 
