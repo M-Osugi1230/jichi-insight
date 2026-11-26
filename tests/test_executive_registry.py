@@ -41,17 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 181
-    assert len({record["id"] for record in catalog["records"]}) == 181
-    assert len(catalog["records"]) == 181
-    assert len({record["id"] for record in catalog["records"]}) == 181
+    assert len(catalog["records"]) == 185
+    assert len({record["id"] for record in catalog["records"]}) == 185
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 39
+    assert len(terms) == 40
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-062014",
         "jp-local-400009",
@@ -92,6 +90,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-151009",
         "jp-local-150002",
         "jp-local-052019",
+        "jp-local-072010",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -363,6 +362,17 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # Article 259 proviso chain from the previous term's expiry
         # (2026-06-09), and the two values agree.
         "jp-local-150002": "2030-06-09",
+        # Fukushima City's start (2025-12-08) is stated directly in
+        # the city's official inauguration press release (the
+        # predecessor retired on 2025-12-07 and the new mayor took
+        # office on 2025-12-08); its end (2029-12-07) follows the
+        # Article 259 proviso chain anchored by the previous term's
+        # expiry (2025-12-07) stated in the city election
+        # commission's official election-schedule press release.
+        # The cross-check against the Fukushima Prefectural Election
+        # Commission's own term-expiry list is still outstanding and
+        # is recorded as an open question in the evidence packet.
+        "jp-local-072010": "2029-12-07",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -433,6 +443,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-151009": "2026-11-18",
         "jp-local-150002": "2026-06-10",
         "jp-local-052019": "2025-04-12",
+        "jp-local-072010": "2025-12-08",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]

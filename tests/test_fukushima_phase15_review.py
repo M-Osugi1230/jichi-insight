@@ -151,7 +151,10 @@ def test_fukushima_progress_keeps_evaluation_and_linkage_explicit():
 
 def test_fukushima_fiscal_records_validate_and_keep_exact_states():
     records = load(FISCAL)
-    assert len(records) == 3
+    # Three records were registered at Phase 15; the Fukushima
+    # cluster's stage 1 (Issue #1015) added the FY2026 local-tax
+    # record, bringing the total to four.
+    assert len(records) == 4
 
     for record in records:
         assert validate(FISCAL_SCHEMA, record) == []
@@ -169,6 +172,18 @@ def test_fukushima_fiscal_records_validate_and_keep_exact_states():
         "fukushima-budget-2026-enactment",
     ]
 
+    # Added at stage 1 (Issue #1015): the FY2026 local tax, verified
+    # at thousand-yen precision in the budget overview's revenue
+    # table (42,400,000 thousand yen).
+    local_tax = by_id["jp-local-072010-fiscal-2026-local-tax"]
+    assert local_tax["stage"] == "initial_budget"
+    assert local_tax["metric"] == "local_tax"
+    assert local_tax["amount_yen"] == 42_400_000_000
+    assert local_tax["sources"] == [
+        "fukushima-budget-2026",
+        "fukushima-budget-2026-enactment",
+    ]
+
     revenue = by_id["jp-local-072010-fiscal-2024-total-revenue"]
     expenditure = by_id["jp-local-072010-fiscal-2024-total-expenditure"]
     assert revenue["stage"] == expenditure["stage"] == "settlement"
@@ -181,7 +196,9 @@ def test_fukushima_evidence_packets_validate_and_match_fiscal_records():
     packets = load(EVIDENCE)
     fiscal_ids = {record["id"] for record in load(FISCAL)}
 
-    assert len(packets) == 3
+    # One packet per fiscal record: three from Phase 15 plus the
+    # FY2026 local-tax packet added at stage 1 (Issue #1015).
+    assert len(packets) == 4
     for packet in packets:
         assert validate(EVIDENCE_SCHEMA, packet) == []
         assert packet["subject_id"] in fiscal_ids
