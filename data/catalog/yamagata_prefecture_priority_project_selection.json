@@ -1,0 +1,128 @@
+{
+  "issue": 1024,
+  "municipality_id": "jp-local-060003",
+  "municipality_key": "yamagata-prefecture",
+  "population": {
+    "description": "第4次山形県総合発展計画 後期実施計画（令和7～11年度）全県版の政策22件（柱1に4件、柱2に4件、柱3に3件、柱4に6件、柱5に5件）を母集団とした。段階1の plan_review が候補とした「政策28項目」は、各政策の目標指標の総数（28）との混同であり、計画本文の実物（後期実施計画冊子の目次・政策一覧および長期構想概要版の政策体系）で政策は22件であることを確認して是正した。県の公式評価の公表単位は政策の「目標指標」（全県版で28項目）であり、施策単位のKPI（重要業績評価指標、全県版で121項目）は登録単位に含めていない。未選定の12政策: 3. 若者の定着・回帰の促進、4. 国内外の様々な人材の呼び込み、7. 「やまがた森林ノミクス」の加速化、8. 付加価値の高い水産業の振興、11. 国内外からの観光・交流の拡大による地域経済の活性化、14. 保健・医療・福祉の連携による「健康長寿日本一」の実現、15. 多様な力の結集による地域コミュニティの維持・活性化、16. 総合的な少子化対策の新展開、17. 県民誰もが個性や能力を発揮し、活躍できる環境の整備、20. 地域の豊かな自然と地球の環境を守る持続可能な地域づくり、21. 地域の特性を活かし暮らしを支える活力ある圏域の形成、22. 持続可能で効率的な社会資本の維持・管理の推進。",
+    "fiscal_year": 2025,
+    "project_count": 22,
+    "source_ids": [
+      "yamagata-pref-late-implementation-plan",
+      "yamagata-pref-plan-long-term-summary"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "initial",
+  "selection_rule": {
+    "description": "検証基準に従い、公式母集団（後期実施計画 全県版の政策22件）から、計画体系の柱（5つ）を掲載順に巡回し、各柱から掲載順に1件ずつ選定した（1巡目5件＋2巡目5件＝10件）。金額順では選定していない。",
+    "pillars": [
+      "次代を担い地域を支える人材の育成・確保",
+      "競争力のある力強い農林水産業の振興・活性化",
+      "高い付加価値を創出する産業経済の振興・活性化",
+      "県民が安全・安心を実感し総活躍できる社会づくり",
+      "未来に向けた発展基盤となる県土の整備・活用"
+    ]
+  },
+  "selections": [
+    {
+      "area_number": 1,
+      "official_title": "学校教育の充実",
+      "project_id": "jp-local-060003-project-2025-school-education",
+      "selection_basis": "政策の柱「次代を担い地域を支える人材の育成・確保」の掲載順1巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-school-education",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 2,
+      "official_title": "生涯を通じた多様な学びの機会の充実",
+      "project_id": "jp-local-060003-project-2025-lifelong-learning",
+      "selection_basis": "政策の柱「次代を担い地域を支える人材の育成・確保」の掲載順2巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-lifelong-learning",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 5,
+      "official_title": "やまがたの農業を支える人材の育成と基盤形成",
+      "project_id": "jp-local-060003-project-2025-agricultural-workforce-foundation",
+      "selection_basis": "政策の柱「競争力のある力強い農林水産業の振興・活性化」の掲載順1巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-agricultural-workforce-foundation",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 6,
+      "official_title": "収益性の高い農業の展開",
+      "project_id": "jp-local-060003-project-2025-profitable-agriculture",
+      "selection_basis": "政策の柱「競争力のある力強い農林水産業の振興・活性化」の掲載順2巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-profitable-agriculture",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 9,
+      "official_title": "ＩｏＴなどの先端技術の活用等による産業イノベーションの創出",
+      "project_id": "jp-local-060003-project-2025-industrial-innovation-iot",
+      "selection_basis": "政策の柱「高い付加価値を創出する産業経済の振興・活性化」の掲載順1巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-industrial-innovation-iot",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 10,
+      "official_title": "地域産業の振興・活性化と中小企業等の成長・発展",
+      "project_id": "jp-local-060003-project-2025-regional-industry-sme-growth",
+      "selection_basis": "政策の柱「高い付加価値を創出する産業経済の振興・活性化」の掲載順2巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-regional-industry-sme-growth",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 12,
+      "official_title": "大規模災害への対応など危機管理機能の充実強化",
+      "project_id": "jp-local-060003-project-2025-crisis-management",
+      "selection_basis": "政策の柱「県民が安全・安心を実感し総活躍できる社会づくり」の掲載順1巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-crisis-management",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 13,
+      "official_title": "暮らしの様々なリスクへの対応力の強化",
+      "project_id": "jp-local-060003-project-2025-everyday-risk-resilience",
+      "selection_basis": "政策の柱「県民が安全・安心を実感し総活躍できる社会づくり」の掲載順2巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-everyday-risk-resilience",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 18,
+      "official_title": "暮らしや産業の発展基盤となるＩＣＴなど未来技術の早期実装",
+      "project_id": "jp-local-060003-project-2025-future-technology-implementation",
+      "selection_basis": "政策の柱「未来に向けた発展基盤となる県土の整備・活用」の掲載順1巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-future-technology-implementation",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    },
+    {
+      "area_number": 19,
+      "official_title": "国内外の活力を呼び込む多様で重層的な交通ネットワークの形成",
+      "project_id": "jp-local-060003-project-2025-transport-network",
+      "selection_basis": "政策の柱「未来に向けた発展基盤となる県土の整備・活用」の掲載順2巡目として、柱を掲載順に巡回する選定により選定した。",
+      "series_id": "jp-local-060003-project-series-transport-network",
+      "source_ids": [
+        "yamagata-pref-late-implementation-plan"
+      ]
+    }
+  ]
+}
