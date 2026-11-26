@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の歳入総額は716,149,217千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。歳入−歳出＝形式収支の検算も通過した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の歳出総額は701,825,691千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。内訳（目的別・性質別）の合計が歳出総額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の県税収入は146,823,789千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの値を円換算して収録し、資料集「普通会計の状況」でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の形式収支は14,323,526千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の翌年度へ繰り越すべき財源は6,116,337千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から実質収支を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の実質収支は8,207,189千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は2.5%。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は330,051,143千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出の合計は歳出総額701,825,691千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金・分離課税所得割交付金・軽油引取税交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出の合計は歳出総額701,825,691千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は「－」のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の積立金現在高は69,833,844千円（財政調整基金22,926,347千円、減債基金18,910,392千円、その他特定目的基金27,997,105千円）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の地方債現在高は1,163,540,298千円（うち臨時財政対策債を除く残高は765,052,703千円）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "現在高は決算カードの印字値、臨時財政対策債を除く残高は資料集総括表の印字値。臨時財政対策債の額は両者の差引による算出値であり、その旨を内訳の注記に明記した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は94.4%（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "見出しの付いた経常収支比率（括弧なし）を収録し、括弧内の変種値は収録していない。資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は12.3%。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は217%。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-ordinary-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.35964。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2022-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2022-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の住民基本台帳人口（2023年1月1日現在）は1,042,396人。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2022",
+          "yamagata-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の歳入総額は676,811,593千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。歳入−歳出＝形式収支の検算も通過した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の歳出総額は664,557,243千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。内訳（目的別・性質別）の合計が歳出総額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の県税収入は148,478,513千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの値を円換算して収録し、資料集「普通会計の状況」でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の形式収支は12,254,350千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の翌年度へ繰り越すべき財源は6,102,479千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から実質収支を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の実質収支は6,151,871千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は1.9%。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は330,114,778千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出の合計は歳出総額664,557,243千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金・分離課税所得割交付金・軽油引取税交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出の合計は歳出総額664,557,243千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は「－」のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の積立金現在高は70,720,529千円（財政調整基金26,975,673千円、減債基金18,910,392千円、その他特定目的基金24,834,464千円）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の地方債現在高は1,145,986,972千円（うち臨時財政対策債を除く残高は777,629,713千円）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "現在高は決算カードの印字値、臨時財政対策債を除く残高は資料集総括表の印字値。臨時財政対策債の額は両者の差引による算出値であり、その旨を内訳の注記に明記した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は92.4%（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "見出しの付いた経常収支比率（括弧なし）を収録し、括弧内の変種値は収録していない。資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は12.8%。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は218.3%。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-ordinary-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.35801。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2023-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2023-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の住民基本台帳人口（2024年1月1日現在）は1,027,509人。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2023",
+          "yamagata-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の歳入総額は674,209,779千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。歳入−歳出＝形式収支の検算も通過した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の歳出総額は661,550,290千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。内訳（目的別・性質別）の合計が歳出総額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の県税収入は147,231,538千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの値を円換算して収録し、資料集「普通会計の状況」でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-formal-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の形式収支は12,659,489千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額から歳出総額を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-carryover-resources",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の翌年度へ繰り越すべき財源は7,335,091千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から実質収支を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-real-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の実質収支は5,324,398千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-real-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は1.6%。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-standard-fiscal-scale",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は335,547,047千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの千円単位の値を円換算して収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-expenditure-by-purpose",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出の合計は歳出総額661,550,290千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金・分離課税所得割交付金・自動車取得税交付金・軽油引取税交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-expenditure-by-nature",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出の合計は歳出総額661,550,290千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。前年度繰上充用金・失業対策事業費は「－」のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-fund-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の積立金現在高は58,753,508千円（財政調整基金17,403,254千円、減債基金18,301,890千円、その他特定目的基金23,048,364千円）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-debt-balance",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の地方債現在高は1,128,936,417千円（うち臨時財政対策債を除く残高は790,299,798千円）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "現在高は決算カードの印字値、臨時財政対策債を除く残高は資料集総括表の印字値。臨時財政対策債の額は両者の差引による算出値であり、その旨を内訳の注記に明記した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-current-balance-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は95.8%（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "見出しの付いた経常収支比率（括弧なし）を収録し、括弧内の変種値は収録していない。資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-real-debt-service-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は13.4%。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-future-burden-ratio",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は212.2%。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-ordinary-fiscal-strength-index",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.37417。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの印字値をそのまま収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-jp-local-060003-fiscal-2024-population",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2024-population",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の住民基本台帳人口（2025年1月1日現在）は1,012,355人。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（山形県シート）の該当欄および山形県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載分）の該当欄。",
+        "source_ids": [
+          "yamagata-prefecture-mic-settlement-card-fy2024",
+          "yamagata-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "決算カードの値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。"
+    ],
+    "review_status": "reviewed"
+  }
+]

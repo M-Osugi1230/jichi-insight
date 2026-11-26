@@ -1,0 +1,2044 @@
+[
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 716149217000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和4年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 701825691000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和4年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税収入",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 146823789000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "歳入のうち県税。総務省『令和4年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和4年度財政状況資料集』「普通会計の状況」（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-formal-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 14323526000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-carryover-resources",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 6116337000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "翌年度へ繰り越すべき財源。形式収支から実質収支を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-real-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 8207189000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "普通会計実質収支比率",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 2.5,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "実質収支比率。総務省『令和4年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "普通会計標準財政規模",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 330051143000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和4年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 701825691000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1027707000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 32718097000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 85707141000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 59216979000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2572942000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 50355205000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 118557808000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 92868615000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 26653378000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 110601522000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 4925999000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 85925403000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 43332000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 376903000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 264761000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 27628608000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 79802000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 6770000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 399943000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 1894776000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（山形県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金・分離課税所得割交付金・軽油引取税交付金）は該当がないため区分に含めない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 701825691000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 242981155000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 147149214000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 103490504000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 9907786000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 85924155000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 337704569000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 37992591000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 13090269000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 167433703000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 6150667000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 6965222000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 4008000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 106068109000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 121139967000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 116213968000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 75776542000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 26963935000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 4925999000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（山形県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-fund-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 69833844000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 22926347000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 18910392000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 27997105000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-debt-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債現在高",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 1163540298000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 765052703000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 398487595000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ],
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度都道府県決算カード』（山形県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "普通会計経常収支比率",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 94.4,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "経常収支比率。総務省『令和4年度都道府県決算カード』（山形県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "普通会計実質公債費比率",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 12.3,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "普通会計将来負担比率",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 217,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "普通会計財政力指数",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 0.35964,
+    "unit": "index",
+    "value_status": "available",
+    "note": "財政力指数（過去3年平均）。総務省『令和4年度都道府県決算カード』（山形県シート）の印字値をそのまま収録する。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2022-population",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2022",
+      "yamagata-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 1042396,
+    "unit": "persons",
+    "value_status": "available",
+    "note": "住民基本台帳人口（2023年1月1日現在）。総務省『令和4年度都道府県決算カード』（山形県シート）の値（山形県『令和4年度財政状況資料集』総括表（県公式サイト掲載分）でも一致）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 676811593000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和5年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 664557243000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和5年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税収入",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 148478513000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "歳入のうち県税。総務省『令和5年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和5年度財政状況資料集』「普通会計の状況」（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-formal-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 12254350000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-carryover-resources",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 6102479000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "翌年度へ繰り越すべき財源。形式収支から実質収支を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-real-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 6151871000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "普通会計実質収支比率",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 1.9,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "実質収支比率。総務省『令和5年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "普通会計標準財政規模",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 330114778000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和5年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 664557243000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1108439000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 31280469000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 81577981000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 41181766000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2421169000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 53758370000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 97718182000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 94223708000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 25226451000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 108709450000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 7114430000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 89208833000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 34828000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 422079000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 508376000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 27451403000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 75638000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 38136000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 506105000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 1991430000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（山形県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金・分離課税所得割交付金・軽油引取税交付金）は該当がないため区分に含めない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 664557243000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 236122653000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 138063458000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 103135636000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 8851081000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 89208114000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 296309869000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 24372207000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 10172268000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 150764943000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 6233238000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 7594940000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 6249000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 97166024000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 132124721000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 125010291000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 79273365000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 31361446000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 7114430000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（山形県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-fund-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 70720529000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 26975673000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 18910392000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 24834464000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-debt-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債現在高",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 1145986972000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 777629713000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 368357259000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ],
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度都道府県決算カード』（山形県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "普通会計経常収支比率",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 92.4,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "経常収支比率。総務省『令和5年度都道府県決算カード』（山形県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "普通会計実質公債費比率",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 12.8,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "普通会計将来負担比率",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 218.3,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "普通会計財政力指数",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 0.35801,
+    "unit": "index",
+    "value_status": "available",
+    "note": "財政力指数（過去3年平均）。総務省『令和5年度都道府県決算カード』（山形県シート）の印字値をそのまま収録する。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2023-population",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2023",
+      "yamagata-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 1027509,
+    "unit": "persons",
+    "value_status": "available",
+    "note": "住民基本台帳人口（2024年1月1日現在）。総務省『令和5年度都道府県決算カード』（山形県シート）の値（山形県『令和5年度財政状況資料集』総括表（県公式サイト掲載分）でも一致）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 674209779000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和6年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 661550290000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和6年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税収入",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 147231538000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "歳入のうち県税。総務省『令和6年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和6年度財政状況資料集』「普通会計の状況」（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-formal-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 12659489000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-carryover-resources",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 7335091000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "翌年度へ繰り越すべき財源。形式収支から実質収支を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-real-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 5324398000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "普通会計実質収支比率",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 1.6,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "実質収支比率。総務省『令和6年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "普通会計標準財政規模",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 335547047000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "note": "総務省『令和6年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 661550290000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1128959000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 35738217000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 83824271000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 35823049000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2547765000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 50002681000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 86300492000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 94488665000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 27518853000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 111599333000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 13179433000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 87258256000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 46323000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 613283000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 896775000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 28133310000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 73180000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 487945000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 1889500000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（山形県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・特別区財政調整交付金・分離課税所得割交付金・自動車取得税交付金・軽油引取税交付金）は該当がないため区分に含めない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 661550290000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 245541902000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 149611469000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 105496056000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 8700625000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 87229808000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 288340504000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 23319879000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 14342697000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 148804916000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 5964476000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 8216218000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 3235000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 87689083000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 127667884000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 114488451000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 74578472000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 23912242000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 13179433000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（山形県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-fund-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 58753508000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 17403254000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_reduction_fund",
+        "label": "減債基金",
+        "amount_yen": 18301890000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 23048364000,
+        "parent_key": null,
+        "note": null
+      }
+    ],
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度都道府県決算カード』（山形県シート）の千円単位の値を円換算し、山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-debt-balance",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債現在高",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": 1128936417000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 790299798000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 338636619000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ],
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度都道府県決算カード』（山形県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "普通会計経常収支比率",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 95.8,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "経常収支比率。総務省『令和6年度都道府県決算カード』（山形県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」値は収録していない）。山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "普通会計実質公債費比率",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 13.4,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "普通会計将来負担比率",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 212.2,
+    "unit": "percent",
+    "value_status": "available",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（山形県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "普通会計財政力指数",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 0.37417,
+    "unit": "index",
+    "value_status": "available",
+    "note": "財政力指数（過去3年平均）。総務省『令和6年度都道府県決算カード』（山形県シート）の印字値をそのまま収録する。"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2024-population",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "sources": [
+      "yamagata-prefecture-mic-settlement-card-fy2024",
+      "yamagata-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high",
+    "amount_yen": null,
+    "value": 1012355,
+    "unit": "persons",
+    "value_status": "available",
+    "note": "住民基本台帳人口（2025年1月1日現在）。総務省『令和6年度都道府県決算カード』（山形県シート）の値（山形県『令和6年度財政状況資料集』総括表（県公式サイト掲載分）でも一致）。"
+  }
+]

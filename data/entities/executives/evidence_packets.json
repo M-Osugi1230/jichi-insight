@@ -2203,6 +2203,59 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-yamagata-pref-current-governor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-060003-executive-2025-02-14",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "山形県知事は吉村美栄子氏（5期目）である。",
+        "location_note": "県公式サイトの知事プロフィール。",
+        "source_ids": [
+          "yamagata-pref-governor"
+        ],
+        "decision": "accepted",
+        "review_note": "現職知事の氏名は県公式プロフィールで確認した。"
+      },
+      {
+        "field": "election_date",
+        "statement": "直近の山形県知事選挙は2025年1月26日に執行され、吉村美栄子氏が318,364票で当選した。",
+        "location_note": "県選挙管理委員会「選挙の記録」第1編の選挙録、および都道府県選挙管理委員会連合会の知事一覧。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-results",
+          "yamagata-pref-governor-term-list"
+        ],
+        "decision": "accepted",
+        "review_note": "選挙録の候補者別得票数（吉村318,364票・金山17,794票、投票率39.67%）を実物で確認し、総務省の選挙結果調とも一致した。"
+      },
+      {
+        "field": "term_start",
+        "statement": "現任期の開始日は2025年2月14日（前任期の満了日2025年2月13日の翌日）である。",
+        "location_note": "都道府県選挙管理委員会連合会の知事一覧が示す満了日（令和11年2月13日）と、公職選挙法259条ただし書の任期起算の構成による。",
+        "source_ids": [
+          "yamagata-pref-governor-term-list"
+        ],
+        "decision": "accepted",
+        "review_note": "開始日を直接印字した県選管文書は未確認であり、満了日からの構成である旨を段階0棚卸し（OQ-1）に明記している。"
+      },
+      {
+        "field": "term_end",
+        "statement": "現任期の満了日は2029年2月13日である。",
+        "location_note": "都道府県選挙管理委員会連合会の知事一覧（山形県の行）。",
+        "source_ids": [
+          "yamagata-pref-governor-term-list"
+        ],
+        "decision": "accepted",
+        "review_note": "県選管「県内任期満了日調」（令和7年8月18日現在）も同じ満了日を明記していたが、登録時点で当該PDFのURLが応答しないため、現行の公式明記として連合会の一覧で確認した。"
+      }
+    ],
+    "open_questions": [
+      "任期開始日（2025年2月14日）は前任期満了日の翌日として公職選挙法259条ただし書から構成したもので、開始日を直接印字した県選管文書は未確認である（段階0棚卸しOQ-1）。県内任期満了日調の再掲時に開始日の直接確認を行う。",
+      "選挙公報は県選管「選挙の記録」第6編（104〜105頁）に公報そのものが再録され、県公式サイトから確保済みである。段階3で公報の掲載文を転記し、manifesto_source_idsへ接続する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-akita-pref-current-governor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-050008-executive-2025-04-20",

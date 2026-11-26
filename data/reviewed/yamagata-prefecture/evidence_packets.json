@@ -1,0 +1,68 @@
+[
+  {
+    "id": "evidence-yamagata-prefecture-2026-initial-budget-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度山形県一般会計当初予算の歳入総額は700,284,000千円であり、議第29号として2026年3月16日に「可決」で議決された。",
+        "location_note": "令和8年度山形県一般会計補正予算（第1号）の第1表（補正前の額）および令和8年2月定例会の議案等議決結果。",
+        "source_ids": [
+          "yamagata-prefecture-budget-figures-fy2026",
+          "yamagata-prefecture-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "補正予算（第1号）第1表の「補正前の額」で千円単位の額を確定し、当初予算の概要の百万円単位の計数とも一致を確認した。議第29号の議決結果（2026年3月16日「可決」）も確認した。"
+      }
+    ],
+    "open_questions": [
+      "当初予算議案書の第1表そのものではなく、補正予算（第1号）第1表の「補正前の額」で千円単位を確定した（検証基準の標準経路）。今後の補正予算の公表時にも当初額の印字が維持されるかを継続確認する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yamagata-prefecture-2026-initial-budget-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度山形県一般会計当初予算の県税は115,300,000千円である。",
+        "location_note": "令和8年度山形県一般会計補正予算（第1号）の第1表（補正前の額）および令和8年2月定例会の議案等議決結果。",
+        "source_ids": [
+          "yamagata-prefecture-budget-figures-fy2026",
+          "yamagata-prefecture-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "補正予算（第1号）第1表の「補正前の額」に印字された県税の額であり、議第29号は「可決」されているため成立後の当初額と一致する。当初予算の概要の百万円単位の計数とも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "当初予算議案書の第1表そのものではなく、補正予算（第1号）第1表の「補正前の額」で千円単位を確定した（検証基準の標準経路）。今後の補正予算の公表時にも当初額の印字が維持されるかを継続確認する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yamagata-prefecture-2026-initial-budget-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-060003-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度山形県一般会計当初予算の歳出総額は700,284,000千円（歳入総額と同額）であり、議第29号として2026年3月16日に「可決」で議決された。",
+        "location_note": "令和8年度山形県一般会計補正予算（第1号）の第1表（補正前の額）および令和8年2月定例会の議案等議決結果。",
+        "source_ids": [
+          "yamagata-prefecture-budget-figures-fy2026",
+          "yamagata-prefecture-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "補正予算（第1号）第1表の「補正前の額」で千円単位の額を確定し、当初予算の概要の百万円単位の計数とも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "当初予算議案書の第1表そのものではなく、補正予算（第1号）第1表の「補正前の額」で千円単位を確定した（検証基準の標準経路）。今後の補正予算の公表時にも当初額の印字が維持されるかを継続確認する。"
+    ],
+    "review_status": "reviewed"
+  }
+]

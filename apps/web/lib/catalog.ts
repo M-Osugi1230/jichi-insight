@@ -18,6 +18,7 @@ import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_financ
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
 import akitaFinanceCatalog from "../../../data/catalog/akita_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
+import yamagataFinanceCatalog from "../../../data/catalog/yamagata_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
 import assemblyCatalog from "../../../data/catalog/fukuoka_assembly_sources.json";
 import cityFinanceCatalog from "../../../data/catalog/fukuoka_city_finance_sources.json";
@@ -63,6 +64,7 @@ export type MunicipalityKey =
   | "kumamoto-prefecture"
   | "niigata-prefecture"
   | "okayama-city"
+  | "yamagata-prefecture"
   | "akita-prefecture"
   | "fukushima-city"
   | "akita-city"
@@ -175,6 +177,12 @@ export const municipalityMeta: Record<
     name: "熊本県", type: "都道府県",
     summary: "くまもと新時代共創基本方針及び総合戦略（2024年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と木村敬知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/kumamoto-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "yamagata-prefecture": {
+    name: "山形県", type: "都道府県",
+    summary: "第4次山形県総合発展計画（2020年3月策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と吉村美栄子知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/yamagata-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "akita-prefecture": {
@@ -379,6 +387,7 @@ export const sourceCatalog = [
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
+  ...(yamagataFinanceCatalog.records as SourceRecord[]),
   ...(akitaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
