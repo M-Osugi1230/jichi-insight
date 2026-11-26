@@ -1125,5 +1125,39 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-akita-pref-2025",
+    "executive_term_id": "jp-local-050008-executive-2025-04-20",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "akita-pref-governor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "akita-pref-governor-inauguration-2025",
+      "akita-pref-term-list",
+      "akita-pref-governor-election-2025-results",
+      "akita-pref-governor-election-2025-results-page",
+      "akita-pref-governor-election-2025-gazette",
+      "akita-pref-governor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2025年秋田県知事選挙の選挙公報は発行された（秋田県選挙管理委員会告示第29号、令和7年3月20日付：選挙公報の掲載文等の掲載順序を定めるくじの告示）。しかし県選管の現行公式ページ（投開票結果等についてのページ、選管事務局のページ一覧）には選挙公報へのリンクはなく、公報の県公式URLは現存しない。Wayback Machine でも、県公式の公報PDF・選挙特設ページの保存は特定できなかった（県公式ページ群への対象を絞ったCDX照会で該当なし）。一方、由利本荘市公式サイトの知事選案内ページに「秋田県知事選挙公報（PDF 1.2MB）」の複写が現存し、2026-11-26に取得したファイル（1,207,207バイト、全2ページ、SHA-256 680355120c3afb5c17ece4fb9dd63ef086fdd8063953c6630f367a9d2f7d34f8）は、Wayback Machine の同URLの2025年5月15日保存分とバイト単位で完全一致した（CDX記録のダイジェスト VBYOCD42ZPDQN3KXISMEVLON7J7UPBCX）。公報の掲載候補者3名（鈴木けんた・さるた和三・大久保のりお）は総務省『選挙結果調』の候補者構成と一致し、1ページ目右上に鈴木けんた候補欄（大見出し「あきた『ニュートラル』宣言！」、関係・政治・地域間・手法・カーボンの5つのニュートラル、3つの重点政策「かせぐ・まもる・そだてる」）があることを描画画像の目視で確認した。選挙公報は候補者から提出された原稿をそのまま製版した公式文書であり、県内自治体の公式サイトに現存する複写の同一性を保存記録とのバイト一致で確認できたため、原典として登録し（akita-pref-governor-election-2025-bulletin）、term の manifesto_source_ids へ接続した。公約レコードの作成は段階3で行う。なお、県公式の原典そのもの（選挙期間中に県サイトで公表されていた公報ファイル）の所在は特定できていないが、これは選挙公報が存在しないという主張ではない。",
+    "next_actions": [
+      "段階3で、登録した選挙公報の鈴木候補欄から公約レコードを作成する",
+      "県公式の公報原典（選挙期間中の県サイト掲載ファイル）の保存が特定できれば、登録済みの複写とダイジェストを照合し、出典URLを原典へ差し替える",
+      "選挙公報の音声読み上げ対応データの公表有無を確認する",
+      "2029年の任期満了に伴う次回知事選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
