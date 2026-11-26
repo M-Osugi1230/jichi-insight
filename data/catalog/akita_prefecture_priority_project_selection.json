@@ -1,0 +1,131 @@
+{
+ "issue": 1026,
+ "municipality_id": "jp-local-050008",
+ "municipality_key": "akita-prefecture",
+ "population": {
+  "description": "「秋田県総合計画 ～秋田再興への第一歩～」（2026年3月策定、計画期間2026〜2029年度）第4章の施策30件を母集団とする。計画の体系は、8つの政策（政策1 未来づくり、政策2 観光・交流、政策3 農林水産、政策4 産業、政策5 健康・医療・福祉、政策6 教育・人づくり、政策7 防災・減災・県土強靱化、政策8 環境・くらし）の下に施策を配置し、施策ごとに「方向性」を置く構造である。施策数は政策1が3件、政策2が5件、政策3が4件、政策4が3件、政策5が3件、政策6が5件、政策7が3件、政策8が4件の計30件（政策2の施策5「暮らしと交流を支える交通ネットワークを構築する」と政策6の施策5「誰もが生涯を通じて学び活躍できる環境を構築する」は、各政策の「政策を構成する施策」一覧には載らず、「政策に関する指標」と同じページに施策として提示されるため、一覧のみでは数え落とす。本登録では計画書第4章の全ページを実物確認して30件と確定した）。登録単位は「施策」とした。県の政策等評価は従来、政策評価・施策評価（施策単位、a〜eの5段階）・事業評価の3層で毎年度実施・公表されており、新計画も計画第2章で政策評価制度による進行管理を明記しているため、公式評価の公表単位である施策に一致させた（段階1の plan_review の方針どおり）。新計画の初回評価（令和8年度分）の公表時期・様式は未公表である。「政策に関する指標」は政策単位で設定されるため施策には接続していない。",
+  "fiscal_year": 2026,
+  "project_count": 30,
+  "source_ids": [
+   "akita-pref-plan-full-text",
+   "akita-pref-plan-page"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "8つの政策を計画の掲載順に巡回し、各政策から施策を掲載順に1件ずつ選ぶ方式（先行クラスター段階2の先例）で10件を選定した。1巡目: 政策1施策1（移住・就職で未来を拓く「あきた暮らし」を実現する）、政策2施策1（「心が動くあきたの観光」を実現する）、政策3施策1（日本の食を支える農業を実現する）、政策4施策1（「人への投資」と経営革新により中小企業の経営基盤を強化する）、政策5施策1（持続可能な医療・介護サービス提供体制を構築する）、政策6施策1（全てのこどもの健やかな心身と自ら学ぶ意欲を育てる）、政策7施策1（気候変動等に対応した災害に強い地域社会を実現する）、政策8施策1（豊かな自然と良好な環境を次世代に継承する）。2巡目: 政策1施策2（出会いから子育てまで希望が持てる社会を実現する）、政策2施策2（「あきたの美酒・美食」のブランド力と販売力を強化する）。金額順・規模順では選ばない。未選定の20件は次のとおり: 政策1施策3 誰もが自分らしくいられる魅力ある地域社会を構築する、政策2施策3 誇りと賑わいあふれる「スポーツ立県あきた」を実現する、政策2施策4 文化芸術が紡ぐ彩り豊かな秋田を創り出す、政策2施策5 暮らしと交流を支える交通ネットワークを構築する、政策3施策2 森の恵みを未来へつなぐ林業・木材産業を実現する、政策3施策3 環境変化に対応した新たな水産業を実現する、政策3施策4 活力あふれる明るい農山漁村を実現する、政策4施策2 成長分野への参入とイノベーションの促進により県内企業の挑戦を後押しする、政策4施策3 人材を呼び込むＧＸ関連産業等の集積を図る、政策5施策2 誰もが健康的に自分らしく暮らせる社会を実現する、政策5施策3 複雑・多様化する社会課題に対応できる相談・支援体制を整備する、政策6施策2 新時代をたくましく生き抜く力を育てる、政策6施策3 「こどもまんなか社会」を支える環境を整備する、政策6施策4 地域社会の発展と産業振興に資する高等教育機関を活性化する、政策6施策5 誰もが生涯を通じて学び活躍できる環境を構築する、政策7施策2 社会経済活動を支えるインフラを強化する、政策7施策3 持続可能なインフラマネジメントを実現する、政策8施策2 カーボンニュートラル（ネット・ゼロ）の実現に向けた地域社会を形成する、政策8施策3 犯罪・事故のない誰もが穏やかで安全に暮らせる地域を実現する、政策8施策4 快適で質の高い生活環境を実現する。",
+  "pillars": [
+   "未来づくり",
+   "観光・交流",
+   "農林水産",
+   "産業",
+   "健康・医療・福祉",
+   "教育・人づくり",
+   "防災・減災・県土強靱化",
+   "環境・くらし"
+  ]
+ },
+ "selections": [
+  {
+   "area_number": 1,
+   "official_title": "移住・就職で未来を拓く「あきた暮らし」を実現する",
+   "project_id": "jp-local-050008-project-2026-akita-life-migration-employment",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策1「未来づくり」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-akita-life-migration-employment",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 2,
+   "official_title": "出会いから子育てまで希望が持てる社会を実現する",
+   "project_id": "jp-local-050008-project-2026-marriage-childrearing-hope",
+   "selection_basis": "政策を掲載順に巡回する選定の2巡目で、政策1「未来づくり」の施策のうち掲載順第2位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-marriage-childrearing-hope",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 4,
+   "official_title": "「心が動くあきたの観光」を実現する",
+   "project_id": "jp-local-050008-project-2026-heart-moving-tourism",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策2「観光・交流」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-heart-moving-tourism",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 5,
+   "official_title": "「あきたの美酒・美食」のブランド力と販売力を強化する",
+   "project_id": "jp-local-050008-project-2026-food-brand-sales",
+   "selection_basis": "政策を掲載順に巡回する選定の2巡目で、政策2「観光・交流」の施策のうち掲載順第2位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-food-brand-sales",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 9,
+   "official_title": "日本の食を支える農業を実現する",
+   "project_id": "jp-local-050008-project-2026-agriculture-food-security",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策3「農林水産」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-agriculture-food-security",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 13,
+   "official_title": "「人への投資」と経営革新により中小企業の経営基盤を強化する",
+   "project_id": "jp-local-050008-project-2026-sme-management-innovation",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策4「産業」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-sme-management-innovation",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 16,
+   "official_title": "持続可能な医療・介護サービス提供体制を構築する",
+   "project_id": "jp-local-050008-project-2026-medical-nursing-care-system",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策5「健康・医療・福祉」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-medical-nursing-care-system",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 19,
+   "official_title": "全てのこどもの健やかな心身と自ら学ぶ意欲を育てる",
+   "project_id": "jp-local-050008-project-2026-children-healthy-growth",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策6「教育・人づくり」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-children-healthy-growth",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 24,
+   "official_title": "気候変動等に対応した災害に強い地域社会を実現する",
+   "project_id": "jp-local-050008-project-2026-disaster-resilient-community",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策7「防災・減災・県土強靱化」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-disaster-resilient-community",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  },
+  {
+   "area_number": 27,
+   "official_title": "豊かな自然と良好な環境を次世代に継承する",
+   "project_id": "jp-local-050008-project-2026-nature-environment-heritage",
+   "selection_basis": "政策を掲載順に巡回する選定の1巡目で、政策8「環境・くらし」の施策のうち掲載順第1位のものを選定した。",
+   "series_id": "jp-local-050008-project-series-nature-environment-heritage",
+   "source_ids": [
+    "akita-pref-plan-full-text"
+   ]
+  }
+ ]
+}

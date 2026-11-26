@@ -1,0 +1,932 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.30〜31）。政策1「未来づくり」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策1「未来づくり」の施策1「移住・就職で未来を拓く「あきた暮らし」を実現する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策1の「政策を構成する施策」および冊子p.30〜31の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「移住・就職で未来を拓く「あきた暮らし」を実現する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策1「未来づくり」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.30〜31の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "移住者や高校生・大学生等の県内就職者、さらには多様な形で本県と関わる方々の増加を図りながら、若者や子育て世帯等が秋田で自分らしい生き方を見出し、生き生きと暮らせる秋田の未来の実現を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.30〜31の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標7件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-akita-life-migration-employment",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-akita-life-migration-employment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.32〜33）。政策1「未来づくり」の下位の施策2。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策1「未来づくり」の施策2「出会いから子育てまで希望が持てる社会を実現する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策1の「政策を構成する施策」および冊子p.32〜33の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「出会いから子育てまで希望が持てる社会を実現する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策1「未来づくり」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.32〜33の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "若い世代の多様なニーズに応えながら結婚を希望する方々への後押しを行うとともに、産前・産後のサポート体制づくりや、社会全体で子育て家庭を応援する体制づくりを進めます。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.32〜33の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標10件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-marriage-childrearing-hope",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-marriage-childrearing-hope",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.40〜41）。政策2「観光・交流」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策2「観光・交流」の施策1「「心が動くあきたの観光」を実現する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策2の「政策を構成する施策」および冊子p.40〜41の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「「心が動くあきたの観光」を実現する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策2「観光・交流」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.40〜41の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "ターゲットに届く効果的なプロモーションにより、旅行者の心を動かし来訪を促すとともに、秋田ならではの体験コンテンツや快適な受入環境の整備を通じて、訪れた人々に深い感動を与え、四季折々の魅力が心に届くあきたの観光を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.40〜41の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標6件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-heart-moving-tourism",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-heart-moving-tourism",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.42〜43）。政策2「観光・交流」の下位の施策2。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策2「観光・交流」の施策2「「あきたの美酒・美食」のブランド力と販売力を強化する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策2の「政策を構成する施策」および冊子p.42〜43の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「「あきたの美酒・美食」のブランド力と販売力を強化する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策2「観光・交流」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.42〜43の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "日本酒や発酵文化など本県の特色を生かした美酒・美食のブランド化を推進するとともに、時代のニーズを先取りした新商品の開発や国内外への販路の拡大を促進することで、食品製造事業者の市場における優位性の確立を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.42〜43の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標6件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-food-brand-sales",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-food-brand-sales",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.55〜57）。政策3「農林水産」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策3「農林水産」の施策1「日本の食を支える農業を実現する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策3の「政策を構成する施策」および冊子p.55〜57の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「日本の食を支える農業を実現する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策3「農林水産」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.55〜57の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本県の広大な農地において、多様な担い手が新たな技術の活用等により、高い生産性と環境負荷低減を両立した収益性の高い持続可能な農業を実現することで、我が国の食料安全保障に貢献する食料供給基地を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.55〜57の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標18件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-agriculture-food-security",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-agriculture-food-security",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.67〜69）。政策4「産業」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策4「産業」の施策1「「人への投資」と経営革新により中小企業の経営基盤を強化する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策4の「政策を構成する施策」および冊子p.67〜69の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「「人への投資」と経営革新により中小企業の経営基盤を強化する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策4「産業」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.67〜69の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "産業を支える人づくりやデジタル技術活用への積極的な投資を後押しするとともに、県内の様々な経営資源を新たな付加価値の創出等に結び付け、県内産業の持続的な発展に向けた経営の安定化を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.67〜69の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標12件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-sme-management-innovation",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-sme-management-innovation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.77〜79）。政策5「健康・医療・福祉」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策5「健康・医療・福祉」の施策1「持続可能な医療・介護サービス提供体制を構築する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策5の「政策を構成する施策」および冊子p.77〜79の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「持続可能な医療・介護サービス提供体制を構築する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策5「健康・医療・福祉」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.77〜79の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "医療・介護・福祉サービスを支える人材の確保・定着を促進するとともに、限られた人材・地域資源で必要なサービスを安定的に提供する地域社会の構築を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.77〜79の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標11件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-medical-nursing-care-system",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-medical-nursing-care-system",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.87〜89）。政策6「教育・人づくり」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策6「教育・人づくり」の施策1「全てのこどもの健やかな心身と自ら学ぶ意欲を育てる」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策6の「政策を構成する施策」および冊子p.87〜89の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「全てのこどもの健やかな心身と自ら学ぶ意欲を育てる」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策6「教育・人づくり」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.87〜89の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "豊かな心と健康でたくましい身体を育むとともに、一人ひとりが個性を輝かせ、主体的に学びに向かう意欲の育成を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.87〜89の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標10件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-children-healthy-growth",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-children-healthy-growth",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.98〜100）。政策7「防災・減災・県土強靱化」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策7「防災・減災・県土強靱化」の施策1「気候変動等に対応した災害に強い地域社会を実現する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策7の「政策を構成する施策」および冊子p.98〜100の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「気候変動等に対応した災害に強い地域社会を実現する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策7「防災・減災・県土強靱化」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.98〜100の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "河川改修などのハード対策と防災訓練の充実などのソフト対策の両面から自然災害に対する対応力を強化するとともに、自助・共助・公助の取組の効果的な連携を図ることにより、本県の防災・減災力の抜本的な強化を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.98〜100の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標13件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-disaster-resilient-community",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-disaster-resilient-community",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章（冊子p.109〜110）。政策8「環境・くらし」の下位の施策1。",
+    "review_note": "県の政策等評価は従来、施策単位で実施・公表されてきた（施策評価 a〜e）。新計画も政策評価制度による進行管理を計画第2章に明記しており、公式評価の公表単位である「施策」を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+    "source_ids": [
+     "akita-pref-plan-full-text",
+     "akita-pref-plan-page"
+    ],
+    "statement": "登録単位は計画第4章の施策とし、本件は政策8「環境・くらし」の施策1「豊かな自然と良好な環境を次世代に継承する」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章の政策8の「政策を構成する施策」および冊子p.109〜110の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "公式名称は「豊かな自然と良好な環境を次世代に継承する」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/akita_prefecture_priority_project_selection.json",
+    "review_note": "金額順・規模順ではなく、計画体系の政策と掲載順に基づく機械的な選定とした。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "母集団は計画第4章の施策30件（8政策）。8つの政策を掲載順に巡回する方式で、政策8「環境・くらし」から掲載順に選定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画書 冊子p.109〜110の施策冒頭の記述。",
+    "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "野生鳥獣の保護管理と被害防止対策や自然公園等の利活用を図るほか、大気・水・土壌等の環境の保全、三大湖沼の特性に応じた水質保全対策を推進し、人と自然が共生する社会の実現を目指します。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の施策の記載（所管部局の明示なし）。",
+    "review_note": "計画には施策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "計画に施策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算（案）概要（県公式PDF）。8つの政策予算額は政策単位で公表され、事業概要は施策の下に個別事業の金額を掲載するが、施策単位の合計額の公表はない。",
+    "review_note": "事業概要の個別事業は主な事業の抜粋であり、合算して施策単位の金額とすることはしない。",
+    "source_ids": [
+     "akita-pref-fy2026-budget-overview"
+    ],
+    "statement": "秋田県は施策単位の令和8年度予算額・決算額を公表していない。令和8年度当初予算（案）概要は、8つの政策の予算額を政策単位で公表し（8つの政策予算額は合計3,771億円）、事業概要では施策の下に個別事業の金額を掲載するが、施策単位の合計額は公表されていない。事業概要に掲載される個別事業は主な事業の抜粋であり施策の全事業を網羅しないため、合算による施策単位の金額は登録しない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "計画第2章（政策評価制度による進行管理）および段階1で登録した plan_review（令和6年度政策等評価の実施状況）。",
+    "review_note": "旧計画の施策評価の形式を新計画に流用しない。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "秋田県の政策等評価は従来、政策評価（A〜Eの5段階）・施策評価（a〜eの5段階）・事業評価の3層で毎年度実施され、「政策等評価の実施状況」として公表されてきた。新計画（2026年3月策定）については初回評価（令和8年度分）の公表時期・様式が未公表であり、2026年11月26日の確認時点では新計画の施策評価は公表されていない。このため公式評価は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "計画書 冊子p.109〜110の施策の指標表（方向性ごと）。",
+    "review_note": "中間年度（2026〜2028年度）の目標値は definition に併記し、target は最終年度（2029年度）目標に統一した。",
+    "source_ids": [
+     "akita-pref-plan-full-text"
+    ],
+    "statement": "本施策のKPIとして、計画書の指標表に方向性ごとに掲げられた指標8件を登録した（現状値＝計画の現状値、target＝2029年度目標値、2026〜2028年度目標値は各KPIの definition に併記）。県は年次の実績値・公式評価を公表していないため、実績は未登録とし、全KPIの assessment を not_assessable とした。"
+   }
+  ],
+  "id": "evidence-jp-local-050008-project-2026-nature-environment-heritage",
+  "open_questions": [
+   "新計画についての政策等評価（施策評価）の初回公表（令和8年度分）の時期・様式が未公表であり、公表時に実績値と公式評価の登録を見直す。",
+   "令和8年度当初予算資料では施策単位の金額が公表されていない。将来、県が施策単位の金額を公表した場合は予算記録を見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-050008-project-2026-nature-environment-heritage",
+  "subject_type": "project"
+ }
+]
