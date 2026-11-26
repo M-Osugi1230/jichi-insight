@@ -47,9 +47,7 @@ export function generateStaticParams() {
     { slug: "niigata-city" },
     { slug: "okayama-city" },
     { slug: "kumamoto-city" },
-    { slug: "fukushima-city" },
-    { slug: "yamagata-city" },
-    { slug: "akita-city" },
+    // 福島市・山形市・秋田市は既存のPhase15生成対象に含まれるため重複追加しない。
   ];
 }
 
