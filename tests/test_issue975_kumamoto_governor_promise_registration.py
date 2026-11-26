@@ -79,7 +79,7 @@ def test_gazette_source_is_registered() -> None:
     # Niigata stage-3 registration (issue #973) added three records
     # over the stage-2 baseline (0.55.0 / 165) and this gazette
     # record adds one more.
-    assert catalog["version"] == "0.67.0"
+    assert catalog["version"] == "0.68.0"
     assert len(catalog["records"]) == 203
     assert len({record["id"] for record in catalog["records"]}) == 203
     assert len(catalog["records"]) == 203
@@ -162,11 +162,11 @@ def test_no_promises_or_review_are_created_for_the_term() -> None:
     # The Kumamoto governor registration itself created no promise
     # records. (The registry total has since grown through other
     # municipalities' stage-3 registrations.)
-    assert len(promises) == 497
+    assert len(promises) == 512
     assert all(p["executive_term_id"] != TERM_ID for p in promises)
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 33
+    assert len(reviews) == 34
     assert all(r["executive_term_id"] != TERM_ID for r in reviews)
 
     terms = load_json("data/entities/executives/executive_terms.json")
