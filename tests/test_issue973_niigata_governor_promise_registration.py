@@ -148,8 +148,8 @@ def test_search_evidence_packet_supports_the_closure() -> None:
 
 def test_new_sources_are_registered_in_the_catalog() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.61.0"
-    assert len(catalog["records"]) == 173
+    assert catalog["version"] == "0.62.0"
+    assert len(catalog["records"]) == 177
     for source_id, url in NEW_SOURCE_URLS.items():
         record = next(r for r in catalog["records"] if r["id"] == source_id)
         assert record["url"] == url

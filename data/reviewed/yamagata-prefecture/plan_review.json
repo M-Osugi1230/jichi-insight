@@ -1,0 +1,55 @@
+{
+  "id": "phase15-yamagata-plan-review",
+  "name_ja": "山形県",
+  "official_code": "060003",
+  "quality_boundary": "山形県の最上位計画は「第4次山形県総合発展計画」（令和2年3月策定）である。本レビューは計画の同一性、長期構想の体系（基本目標・3つの推進力・5つの政策の柱・政策28項目・施策）、実施計画（後期実施計画、令和7〜11年度）の構成、政策単位の目標指標による公式評価の枠組みを固定する。政策単位の登録は段階2、知事公約の転記は段階3で行う。FY2026当初予算とFY2022–FY2024普通会計決算は別の fiscal レコードとして登録する。",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "山形県「第4次山形県総合発展計画」長期構想概要版（県公式PDF）",
+      "evidence_role": "current_plan_identity",
+      "id": "phase15-yamagata-plan-review-current-plan-identity",
+      "review_note": "長期構想概要版（県公式PDF）で計画名・策定時期・構成を確認した。段階0棚卸し（docs/research/yamagata/stage0-inventory-prefecture-2026-11-26.md）の同定と一致する。",
+      "source_url": "https://www.pref.yamagata.jp/documents/16782/dai4zikeikaku_cyoukikousou_gaiyou.pdf",
+      "statement": "山形県の最上位計画は、令和2年3月に策定された「第4次山形県総合発展計画」である。長期構想（令和2年度から概ね10年間）と実施計画の2層で構成され、実施計画はまち・ひと・しごと創生法に基づく地方版総合戦略を兼ねる。",
+      "title": "現行計画（第4次山形県総合発展計画、2020年3月策定）",
+      "value": "第4次山形県総合発展計画（令和2年3月策定）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "山形県「第4次山形県総合発展計画」長期構想概要版（県公式PDF）の体系図",
+      "evidence_role": "policy_structure",
+      "id": "phase15-yamagata-plan-review-policy-structure",
+      "review_note": "概要版の体系図で柱・政策の構成と政策数を確認した。施策の転記と政策単位の登録は段階2で行う。",
+      "source_url": "https://www.pref.yamagata.jp/documents/16782/dai4zikeikaku_cyoukikousou_gaiyou.pdf",
+      "statement": "長期構想は基本目標「人と自然がいきいきと調和し、真の豊かさと幸せを実感できる山形」のもと、3つの推進力を置き、5つの政策の柱の下に政策、さらにその下に施策を配置する。政策は全28項目（柱1に5、柱2に6、柱3に6、柱4に6、柱5に5）。",
+      "title": "計画の体系（基本目標・3つの推進力・5つの政策の柱・政策・施策）",
+      "value": "基本目標（1）／推進力（3）／政策の柱（5）／政策（28）／施策"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "山形県「第4次山形県総合発展計画 実施計画（後期実施計画）」（県公式PDF）",
+      "evidence_role": "implementation_layer",
+      "id": "phase15-yamagata-plan-review-implementation-layer",
+      "review_note": "後期実施計画（県公式PDF）で対象期間・重点テーマ・全県版と地域版の構成を確認した。",
+      "source_url": "https://www.pref.yamagata.jp/documents/45885/dai4jikokisasshi.pdf",
+      "statement": "実施計画は前期（令和2〜6年度）に続き後期実施計画（令和7〜11年度）が現行であり、重点テーマ7項目と、政策ごとに目標指標・施策ごとにKPIを設定する全県版、県内4地域ごとの地域版で構成される。",
+      "title": "実施計画（後期実施計画、令和7〜11年度）と目標指標・KPI",
+      "value": "後期実施計画（令和7〜11年度）／重点テーマ（7）／政策ごとの目標指標・施策ごとのKPI／地域版（4地域）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "山形県総合政策審議会資料「第4次山形県総合発展計画 実施計画の進捗状況と評価」（県公式PDF）",
+      "evidence_role": "progress_governance",
+      "id": "phase15-yamagata-plan-review-progress-governance",
+      "review_note": "「進捗状況と評価」（県公式PDF）で評価の単位と公表形式を確認した。登録単位の確定は段階2のレビューで行う。",
+      "source_url": "https://www.pref.yamagata.jp/documents/53500/04_2-1_shinchokujoukyoutohyouka.pdf",
+      "statement": "県は毎年度、実施計画の「進捗状況と評価」を公表し、政策単位の目標指標（全県版・全28項目）で進捗を評価している。段階2の登録単位はこの公式評価の単位に合わせ「政策」を候補とする。",
+      "title": "毎年度の進捗状況と評価（政策単位の目標指標）による進行管理",
+      "value": "進捗状況と評価（毎年度公表）／政策単位の目標指標（全28項目）"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-26",
+  "next_action": "Register the 28 policies of the Fourth Yamagata Prefecture Comprehensive Development Plan in the plan stage, using the policy-level target indicators of the second-half implementation plan as the registration unit (the unit of the prefecture's official annual progress evaluation); transcribe Governor Yoshimura's pledges in the promise stage from the election bulletin reproduced in part 6 of the Election Administration Commission's official record of the 2025 election (pp. 104-105, downloadable from the prefecture's website); add the assembly layer in the assembly stage; keep supplementary budgets, execution and settlement as separate states."
+}

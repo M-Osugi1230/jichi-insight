@@ -79,9 +79,9 @@ def test_gazette_source_is_registered() -> None:
     # Niigata stage-3 registration (issue #973) added three records
     # over the stage-2 baseline (0.55.0 / 165) and this gazette
     # record adds one more.
-    assert catalog["version"] == "0.61.0"
-    assert len(catalog["records"]) == 173
-    assert len({record["id"] for record in catalog["records"]}) == 173
+    assert catalog["version"] == "0.62.0"
+    assert len(catalog["records"]) == 177
+    assert len({record["id"] for record in catalog["records"]}) == 177
 
     gazette = next(r for r in catalog["records"] if r["id"] == GAZETTE_ID)
     assert gazette["municipality_key"] == "kumamoto-prefecture"

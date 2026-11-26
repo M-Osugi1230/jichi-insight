@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jp-local-060003-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 700284000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "yamagata-prefecture-budget-figures-fy2026",
+      "yamagata-prefecture-assembly-2026-feb-session-results"
+    ],
+    "review_status": "reviewed",
+    "note": "令和8年度当初予算の一般会計歳入総額。議第29号「令和8年度山形県一般会計予算」（令和8年2月定例会、2026年3月16日「可決」）の千円単位の額を、令和8年度一般会計補正予算（第1号）（2026年5月27日専決処分）の第1表「補正前の額」で確定し円換算した。当初予算の概要（総務部）の百万円単位の計数（700,284百万円）とも一致する。",
+    "confidence": "high"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "県税",
+    "amount_yen": 115300000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "yamagata-prefecture-budget-figures-fy2026",
+      "yamagata-prefecture-assembly-2026-feb-session-results"
+    ],
+    "review_status": "reviewed",
+    "note": "当初予算の県税。補正予算（第1号）第1表「補正前の額」に印字された県税115,300,000千円を円換算した。議第29号は2026年3月16日に「可決」されたため、第1表の補正前の額がそのまま成立後の当初額である。当初予算の概要（総務部）の百万円単位の計数（115,300百万円）とも一致する。",
+    "confidence": "high"
+  },
+  {
+    "id": "jp-local-060003-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-060003",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 700284000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "sources": [
+      "yamagata-prefecture-budget-figures-fy2026",
+      "yamagata-prefecture-assembly-2026-feb-session-results"
+    ],
+    "review_status": "reviewed",
+    "note": "令和8年度当初予算の一般会計歳出総額。議第29号は2026年3月16日に「可決」されており、補正予算（第1号）の第1表「補正前の額」で確定し円換算した。歳入総額と同額。当初予算の概要（総務部）の百万円単位の計数とも一致する。",
+    "confidence": "high"
+  }
+]
