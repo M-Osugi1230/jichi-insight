@@ -1,3 +1,8 @@
+import yamagataPrefProjectSources from "../../../data/catalog/yamagata_prefecture_project_sources.json";
+import yamagataPrefSelection from "../../../data/catalog/yamagata_prefecture_priority_project_selection.json";
+import yamagataPrefProjects from "../../../data/reviewed/yamagata-prefecture/projects.json";
+import yamagataPrefKpis from "../../../data/reviewed/yamagata-prefecture/project_kpis.json";
+import yamagataPrefEvidence from "../../../data/reviewed/yamagata-prefecture/project_evidence_packets.json";
 import kumamotoCityProjectSources from "../../../data/catalog/kumamoto_city_project_sources.json";
 import kumamotoCitySelection from "../../../data/catalog/kumamoto_city_priority_project_selection.json";
 import kumamotoCityProjects from "../../../data/reviewed/kumamoto-city/projects.json";
@@ -177,10 +182,11 @@ import { fukuokaPrefectureProjectData } from "./fukuokaPrefectureProjects";
 import { kitakyushuProjectData, type ProjectRecord, type KpiRecord } from "./kitakyushuProjects";
 import type { EvidencePacket } from "./finance";
 
-export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city" | "hiroshima-prefecture" | "hiroshima-city" | "kyoto-prefecture" | "kyoto-city" | "niigata-city" | "okayama-city" | "niigata-prefecture" | "kumamoto-prefecture" | "okayama-prefecture" | "kumamoto-city";
+export type ProjectArea = "fukuoka-prefecture" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city" | "hiroshima-prefecture" | "hiroshima-city" | "kyoto-prefecture" | "kyoto-city" | "niigata-city" | "okayama-city" | "niigata-prefecture" | "kumamoto-prefecture" | "okayama-prefecture" | "kumamoto-city" | "yamagata-prefecture";
 type Selection = { updated_at?: string; population?: { description?: string; label?: string }; selection_rule?: { description?: string } | string; rule?: { description?: string } | string; };
 type SetOfProjects = { name: string; projects: ProjectRecord[]; kpis: KpiRecord[]; evidencePackets: EvidencePacket[]; selection: Selection };
 export const projectRegistry: Record<ProjectArea, SetOfProjects> = {
+  "yamagata-prefecture": { name: "山形県", projects: yamagataPrefProjects as ProjectRecord[], kpis: yamagataPrefKpis as KpiRecord[], evidencePackets: yamagataPrefEvidence as EvidencePacket[], selection: yamagataPrefSelection },
   "niigata-city": { name: "新潟市", projects: niigataCityProjects as ProjectRecord[], kpis: niigataCityKpis as KpiRecord[], evidencePackets: niigataCityEvidence as EvidencePacket[], selection: niigataCitySelection },
   "niigata-prefecture": { name: "新潟県", projects: niigataPrefProjects as ProjectRecord[], kpis: niigataPrefKpis as KpiRecord[], evidencePackets: niigataPrefEvidence as EvidencePacket[], selection: niigataPrefSelection },
   "kumamoto-city": { name: "熊本市", projects: kumamotoCityProjects as ProjectRecord[], kpis: kumamotoCityKpis as KpiRecord[], evidencePackets: kumamotoCityEvidence as EvidencePacket[], selection: kumamotoCitySelection },
@@ -257,4 +263,5 @@ export const projectSourceCatalog: SourceRecord[] = [...sourceCatalog,
   ...(kumamotoPrefProjectSources.records as SourceRecord[]),
   ...(niigataPrefProjectSources.records as SourceRecord[]),
   ...(niigataCityProjectSources.records as SourceRecord[]),
-  ...(okayamaCityProjectSources.records as SourceRecord[])];
+  ...(okayamaCityProjectSources.records as SourceRecord[]),
+  ...(yamagataPrefProjectSources.records as SourceRecord[])];
