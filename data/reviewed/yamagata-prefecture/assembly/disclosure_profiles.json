@@ -1,0 +1,100 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-060003-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-060003-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員紹介（選挙区別・五十音順、所属別）を県議会公式サイトで公開。令和8年9月定例会時点の現員は43名（欠員なし）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "4会派（自由民主党26名・県政クラブ14名・日本共産党山形県議団2名・公明党1名）。議案等議決結果表の末尾に、採決に参加しない田澤伸一議長（自由民主党）を除く採決参加者42名の会派別名簿（議席番号順）を掲載。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "「委員会の概要」ページで議会運営委員会・常任委員会6の名称・定数・所管事項を公開し、令和8年9月定例会では予算・決算の両特別委員会と政策課題の特別委員会3が設置された。本登録では委員会の名称のみを登録した。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "議案ページで知事提出議案（議第94号から第127号）と意見書案件（発議第16号・第17号）を、議案等議決結果（10月2日・10月8日議決分）で議決結果・議決年月日・会派別賛否を公開。令和7年度決算17件は議案番号が付されず、10月8日に上程・説明のうえ決算特別委員会に付託され継続審査となったため、本登録では未認定のまま pending とした。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議案等議決結果表に各会派等の賛否を公開（公式の表記は「各会派等の賛否」、凡例：○賛成・×反対・△棄権又は議場に不在）。令和8年6月定例会の本会議会議録との突合により、表の○×が実際の表決行動と一致することを確認した（事後の表決記録）。ただし令和8年9月定例会の本会議会議録は2026年11月27日時点で未公表のため、9月会期の個別議案の表決方法は公表情報から確定せず、method は unknown として登録した（判定の経緯は証拠パケットに記録）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "none",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は公表されていない（公表は会派別のみ）。議員別投票として復元・登録はしていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "令和7年度分は会派交付分（4会派）と議員交付分（43名）の双方について収支報告書を政務活動費の公開サイトで公開し、県議会事務局の実績一覧（令和8年7月1日公表）で全単位の交付額・支出合計・残余を公開。登録は公式公開の単位（会派4件・議員43件）に一致させた。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書と領収書等の写しを一体のPDFで公開サイトに掲載。",
+    "source_url": null
+   },
+   {
+    "availability": "not_found",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察の報告書・一覧の公式公表形式は特定できなかった。議員派遣8件は議案として議決結果表に掲載されるが、派遣の実施報告（日程・参加者・費用）の公式公表は確認できなかったため、視察記録としては登録していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システム（ssp.kaigiroku.net テナント prefyamagata）で本会議・委員会の会議録を公開。ただし令和8年9月定例会（第425号）の会議録は2026年11月27日時点で未公表（本会議・定例会の収録は令和8年6月定例会・第424号まで）。",
+    "source_url": null
+   },
+   {
+    "availability": "unknown",
+    "granularity": "unknown",
+    "item": "session_broadcast",
+    "note": "議会中継の公開状況は本登録の調査範囲では確認していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願審査結果一覧表・継続審査請願審査結果一覧表で、請願4件（採択1件・継続審査2件・撤回1件）の付託委員会・提出者・紹介議員・措置を公開。請願にも議案等議決結果表で会派別賛否（全件○）が付されている。なお継続審査・撤回に対する○は、請願内容への賛否ではなく継続審査・撤回という取扱いへの態度を示すものと解されるため、証拠パケットに注意書きを残した。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "yamagata-pref-assembly-top",
+   "yamagata-pref-assembly-roster",
+   "yamagata-pref-assembly-results-2026-10-08"
+  ]
+ }
+]
