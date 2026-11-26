@@ -1,0 +1,66 @@
+[
+  {
+    "id": "evidence-akita-prefecture-2026-initial-budget-total-revenue",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-050008-fiscal-2026-total-revenue",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度秋田県一般会計当初予算の歳入総額は604,145,000千円であり、議案第45号として2026年3月19日に「原案可決」で議決された。",
+        "location_note": "秋田県財政課「財政状況（令和8年6月）」の令和8年度当初予算の歳入表、および秋田県議会「各議員の表決状況」（2026年3月19日議決分）の議案第45号の欄。",
+        "source_ids": [
+          "akita-prefecture-fiscal-status-2026-06",
+          "akita-prefecture-assembly-2026-feb-session-votes"
+        ],
+        "decision": "accepted",
+        "review_note": "総額は財政状況の歳入表（百万円単位表記604,145百万円）と県議会の定例会概要（6,041億4,500万円）で一致し、段階0棚卸しで千円単位の総額604,145,000千円として確定した。議決日と結果文言「原案可決」、起立表決で賛成39・反対1であることは県議会の表決状況で確認した。議案書本体はWeb公表されていない。"
+      }
+    ],
+    "open_questions": [
+      "議案書（予算書）本体が県のWebサイトで公表されていないため、総額の千円単位の印字そのものは議案書では未照合である。補正予算議案の第1表（歳入合計の「補正前の額」の連鎖）でも再照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-akita-prefecture-2026-initial-budget-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-050008-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度秋田県一般会計当初予算の県税は99,270百万円（歳入の16.4%）までは公表資料で確定するが、千円単位の額は公表されていない。",
+        "location_note": "秋田県財政課「財政状況（令和8年6月）」の歳入表（単位：百万円）および「令和8年度当初予算の概要」の歳入内訳（単位：百万円）。",
+        "source_ids": [
+          "akita-prefecture-fiscal-status-2026-06",
+          "akita-prefecture-budget-outline-fy2026"
+        ],
+        "decision": "accepted",
+        "review_note": "百万円単位への丸め値を千円単位の確定値として登録することはしないため、amount_yen は保持せず value_status を not_published とした（欠損明示）。県のWeb公表資料（当初予算の概要・財政状況・各補正予算の概要）には千円単位の款別表が含まれないことを確認した。"
+      }
+    ],
+    "open_questions": [
+      "県税の千円単位の額は、議案第45号（令和8年度秋田県一般会計予算）の第1表、または令和8年度補正予算議案の第1表における県税の「補正前の額」で確定する。議案集のWeb公表分では当初予算分が特定できておらず、確定次第 amount_yen を登録する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-akita-prefecture-2026-initial-budget-total-expenditure",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-050008-fiscal-2026-total-expenditure",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度秋田県一般会計当初予算の歳出総額は歳入総額と同額の604,145,000千円である。",
+        "location_note": "秋田県財政課「財政状況（令和8年6月）」の令和8年度当初予算の概要（歳出合計604,145百万円）、および秋田県議会「各議員の表決状況」（2026年3月19日議決分）。",
+        "source_ids": [
+          "akita-prefecture-fiscal-status-2026-06",
+          "akita-prefecture-assembly-2026-feb-session-votes"
+        ],
+        "decision": "accepted",
+        "review_note": "歳出合計は財政状況の公表値と一致し、議案第45号が原案可決されたことで成立済みの当初予算として保持する。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

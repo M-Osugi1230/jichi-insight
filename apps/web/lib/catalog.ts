@@ -11,8 +11,12 @@ import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_financ
 import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
+import fukushimaCityFinanceCatalog from "../../../data/catalog/fukushima_city_finance_sources.json";
+import akitaCityFinanceCatalog from "../../../data/catalog/akita_city_finance_sources.json";
+import yamagataCityFinanceCatalog from "../../../data/catalog/yamagata_city_finance_sources.json";
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
+import akitaFinanceCatalog from "../../../data/catalog/akita_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import yamagataFinanceCatalog from "../../../data/catalog/yamagata_prefecture_finance_sources.json";
 import aichiFinanceCatalog from "../../../data/catalog/aichi_prefecture_finance_sources.json";
@@ -60,7 +64,11 @@ export type MunicipalityKey =
   | "kumamoto-prefecture"
   | "niigata-prefecture"
   | "okayama-city"
-  | "yamagata-prefecture";
+  | "yamagata-prefecture"
+  | "akita-prefecture"
+  | "fukushima-city"
+  | "akita-city"
+  | "yamagata-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -175,6 +183,12 @@ export const municipalityMeta: Record<
     name: "山形県", type: "都道府県",
     summary: "第4次山形県総合発展計画（2020年3月策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と吉村美栄子知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/yamagata-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "akita-prefecture": {
+    name: "秋田県", type: "都道府県",
+    summary: "秋田県総合計画 ～秋田再興への第一歩～（2026年3月策定、2026〜2029年度）、FY2026一般会計当初予算（県税は千円単位が未公表のため欠損明示）、2022〜2024年度の普通会計決算と鈴木健太知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/akita-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "kobe-city": {
@@ -327,11 +341,29 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "yamagata-city": {
+    name: "山形市", type: "中核市",
+    summary: "山形市発展計画2030（2025〜2029年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、佐藤 孝弘市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
   "niigata-prefecture": {
     name: "新潟県", type: "都道府県",
     summary: "新潟県総合計画（2025年策定、令和7〜14年度）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と花角英世知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/niigata-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "fukushima-city": {
+    name: "福島市", type: "中核市",
+    summary: "第6次福島市総合計画（2021〜2026年度、1年延長）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、馬場 雄基市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "akita-city": {
+    name: "秋田市", type: "中核市",
+    summary: "第15次秋田市総合計画「秋田市『プラスの循環』プラン」（2026〜2030年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、沼谷 純市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
 };
 
@@ -349,10 +381,14 @@ export const sourceCatalog = [
   ...(niigataFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(fukushimaCityFinanceCatalog.records as SourceRecord[]),
+  ...(akitaCityFinanceCatalog.records as SourceRecord[]),
+  ...(yamagataCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
   ...(yamagataFinanceCatalog.records as SourceRecord[]),
+  ...(akitaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),
   ...(officialCatalog.records as SourceRecord[]),
   ...(financeCatalog.records as SourceRecord[]),

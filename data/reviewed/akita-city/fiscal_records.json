@@ -62,5 +62,27 @@
     "sources": [
       "akita-settlement-2024"
     ]
+  },
+  {
+    "id": "jp-local-052019-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-052019",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 45990931000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "令和8年度秋田市一般会計当初予算の市税。令和8年度当初予算書（議案第2号）第1表「歳入歳出予算」の歳入第1款市税45,990,931千円を予算書本体で確認した（内訳7税目の合計と一致）。同議案は令和8年2月秋田市議会定例会で2026年3月17日に「可決」されたため、予算書の印字値がそのまま成立後の額である。一般会計総額144,180,000千円も予算書第1条で併せて確認し、既登録の総額レコードと一致する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "akita-city-budget-fy2026",
+      "akita-budget-2026-enactment"
+    ]
   }
 ]

@@ -104,6 +104,9 @@ export type ManifestoSourceSearchEvidencePacket = {
 };
 
 const municipalityIdToKey = {
+  "jp-local-072010": "fukushima-city",
+  "jp-local-052019": "akita-city",
+  "jp-local-062014": "yamagata-city",
   "jp-local-431001": "kumamoto-city",
   "jp-local-150002": "niigata-prefecture",
   "jp-local-151009": "niigata-city",
@@ -115,6 +118,7 @@ const municipalityIdToKey = {
   "jp-local-330001": "okayama-prefecture",
   "jp-local-430005": "kumamoto-prefecture",
   "jp-local-060003": "yamagata-prefecture",
+  "jp-local-050008": "akita-prefecture",
   "jp-local-221007": "shizuoka-city",
   "jp-local-221309": "hamamatsu-city",
   "jp-local-220001": "shizuoka-prefecture",

@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-26",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -142,6 +142,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する市公式資料。総務省決算カードの照合先として使用した。秋田市は財政状況資料集をExcel形式でのみ公表しており、PDF版の公表はない。"
+    },
+    {
+      "id": "akita-city-budget-fy2026",
+      "municipality_key": "akita-city",
+      "organization": "秋田市",
+      "category": "budget",
+      "title": "令和8年度当初予算書・事項別明細書（議案第2号）",
+      "url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/019/558/8tousyoyosansyo.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-26",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和8年度秋田市一般会計予算（議案第2号）の予算書本体。第1条で歳入歳出総額144,180,000千円、第1表「歳入歳出予算」の歳入第1款市税45,990,931千円（市民税21,188,016千円・固定資産税20,514,891千円・軽自動車税930,202千円・市たばこ税2,150,347千円・鉱産税5,383千円・入湯税43,908千円・事業所税1,158,184千円で、内訳7税目の合計が市税総額と一致）を千円単位で印字する。2026-11-26にPDF本体を直接読み取り照合した。"
     }
   ]
 }

@@ -1688,5 +1688,170 @@
       "新潟県選挙管理委員会の任期満了日（定数）一覧は段階0の確認時点で選挙前の版のままで、新任期満了日（2030年11月17日）の明記照合は一覧の次回更新待ちである（Issue #706の追跡対象）。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-akita-pref-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-akita-pref-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "秋田県選挙管理委員会の現行公式ページ（「投開票結果等について」と選管事務局のページ一覧）には、2025年知事選挙について期日前投票速報・投票結果・開票結果・年齢別投票率のみがあり、選挙公報へのリンクはない。選挙公報の発行自体は、県選管告示第29号（令和7年3月20日、選挙公報の掲載順序を定めるくじの告示）で裏付けられる。告示日（2025年3月20日）は告示第26号で直接確認した。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-results-page",
+          "akita-pref-governor-election-2025-gazette"
+        ],
+        "location_note": "秋田県公式サイトの選挙管理委員会ページ群と秋田県公報（いずれも公式公表）。",
+        "decision": "accepted",
+        "review_note": "県公式の現行ページに公報の現存掲載がないことを確認。発行の事実と告示日は県公報の告示で直接確認できた。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "由利本荘市公式サイトの知事選案内ページに掲載された秋田県知事選挙公報の複写（PDF、全2ページ）を取得し、ファイルが Wayback Machine の2025年5月15日保存分とバイト単位で完全一致すること（SHA-256 680355120c3afb5c17ece4fb9dd63ef086fdd8063953c6630f367a9d2f7d34f8）、掲載候補者3名が総務省『選挙結果調』の候補者構成と一致することを確認した。県公式の公報PDF・選挙特設ページについては、Wayback Machine の対象を絞った照会で保存を特定できなかった。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-bulletin",
+          "akita-pref-governor-election-2025-results"
+        ],
+        "location_note": "由利本荘市公式サイトの公報PDFとその Wayback Machine 保存記録（2025年5月15日）、総務省『秋田県知事選挙 選挙結果調』に基づく。",
+        "decision": "accepted",
+        "review_note": "複写の同一性は保存記録とのバイト一致で担保した。県内自治体の公式サイトに現存する複写であり、原典として登録する（岡山市長の先例と同型の担保方法）。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な公報の複写を特定し原典として登録できたため、result_status を source_registered とし、term の manifesto_source_ids へ接続した。公約レコードの作成は段階3で行う。県公式の原典ファイルそのものの所在は特定できていないが、不存在の主張はしない（nonexistence_claim は false）。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "探索記録 manifesto-source-search-akita-pref-2025 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "公報が全文画像のため、候補欄の内容確認は描画画像の目視によった。公約文の転記は段階3で複数解像度の照合により行う。"
+      }
+    ],
+    "open_questions": [
+      "県公式の選挙公報原典（選挙期間中に県サイトで公表されていたファイル）の Wayback Machine 保存の有無は、対象を絞ったCDX照会では特定できなかった。県公式URL自体が特定できていないため、網羅的な確認はできていない。",
+      "選挙公報の音声読み上げ対応データが選挙期間中に公表されていたかは未確認である。",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）の所在確認はオフライン経路が必要で、本探索の範囲外である。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-fukushima-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-fukushima-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の投開票結果概要で当選と得票数（58,453票）を、市選管のプレスリリースで本選挙が前任期の満了（2025年12月7日）に伴うものであることを、市の就任プレスリリースで2025年12月8日の就任を確認した（いずれも段階1で実物を確認）。あわせて市選挙管理委員会の現行公式ページで、2025年選挙の選挙公報が現存することを確認した。",
+        "source_ids": [
+          "fukushima-city-mayor-election-2025-results",
+          "fukushima-city-mayor-election-2025-schedule",
+          "fukushima-city-mayor-inauguration-2025"
+        ],
+        "location_note": "投開票結果概要、選挙期日決定のプレスリリース、就任のプレスリリース、現行の選挙結果（統計資料）ページ。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページ「選挙結果（統計資料）」に、2025年福島市長選挙の選挙公報PDF（3,735,050バイト）へのリンクが現存することを確認し、原典として登録した。候補者欄の転記は段階1では行っていない。",
+        "source_ids": [
+          "fukushima-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙結果（統計資料）ページの「令和7年福島市長選挙 選挙公報」リンク。",
+        "decision": "accepted",
+        "review_note": "原典は選管の現行公式ページに現存する。転記・公約化は段階3で行う。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報の所在を現行公式ページで確認し原典として登録したため、result_status を source_registered とした。公約レコードの作成と term への接続は段階3で行う。候補者の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "fukushima-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（市の現行公式ページで現存）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報の候補者欄の転記と公約レコードの作成は段階3で行う。",
+      "馬場候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "福島県選挙管理委員会の任期満了一覧における現任期満了日（2029年12月7日）の明記照合は、一覧の次回更新待ちである（Issue #706の追跡対象）。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-akita-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-akita-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の開票結果で当選と得票数（98,049票）を、県選挙管理委員会の任期満了日一覧で現任期の満了日（2029年4月11日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式ページで、2025年選挙の選挙公報が現存することを確認した。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-results",
+          "akita-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "開票結果、県選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページ「選挙公報」から令和7年秋田市長選挙の選挙公報PDFを取得した（全2ページ、1,916,335バイト）。候補者欄は画像で、テキスト層は選管の枠文のみである。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）。",
+        "decision": "accepted",
+        "review_note": "公報そのものが市の現行公式ページで現存するため、所在の確度は high とする。転記は段階3で描画画像の目視により行う。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報の所在は確認できたが、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。候補者の詳細な政策資料が存在しないとは判定しない。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "公約の抽出・term への接続は段階3で行う。",
+      "沼谷候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-yamagata-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-yamagata-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "山形市選挙管理委員会の結果報告で当選と得票数（66,670票）を、山形県公式『市町村一覧』で任期満了日（2027年9月27日）を確認した（いずれも段階1で照合済み）。あわせて市公式サイトでは選挙公報PDFの旧URLが404で、現行の選挙ページにも公報へのリンクがないことを確認した。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-results",
+          "yamagata-pref-municipality-list"
+        ],
+        "location_note": "結果報告、県公式の市町村一覧（段階0の棚卸しと段階1で確認済み）と、現行公式サイトの掲載状況（2026-11-26確認）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙ドットコムCDNに現存する選挙公報の複写を取得し、内容（候補者2名の候補者欄・選管の枠文・二面の投票案内）を市公式の選挙ページおよび結果報告と照合して、同一の公報であることを確認した。1ページ目下段の佐藤孝弘候補欄（大見出し「市民と共に 希望の山形へ！」のもと番号付き7項目）を確認した。公報の候補者欄は画像・ベクタ描画でテキスト層は枠文のみである。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "公式原典（市公式URL）は404で、Wayback Machine の保存も404分しかないため、ダイジェスト照合はできていない。同一性の担保は内容照合によるものである点を明記する。本レビューは所有者が2026-11-15にClaudeへ委任した判断に基づくもので、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "市公式URLの公報PDFは削除済みで、Wayback Machine にも200保存がないため、複写と公式原典のダイジェスト照合は実施できていない。段階3の転記時に候補者構成・枠文・投票案内の一致を再確認する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
