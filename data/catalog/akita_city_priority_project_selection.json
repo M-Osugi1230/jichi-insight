@@ -1,0 +1,268 @@
+{
+ "as_of": "2026-11-26",
+ "issue": 1027,
+ "municipality_id": "jp-local-052019",
+ "plan_title": "第15次秋田市総合計画「秋田市『プラスの循環』プラン」",
+ "population": {
+  "basis": "第15次秋田市総合計画推進計画の第4章「プラスの循環戦略別推進計画」に設定された重点プログラム全18件（戦略1に4件、戦略2に5件、戦略3に3件、戦略4に3件、戦略5に3件）を母集団とする。推進計画は、プラスの循環戦略の実現に向けて重点プログラムを設定し、重点プログラムごとにKPI（重要業績評価指標）を設定すると明記している。",
+  "description": "登録単位は重点プログラムとした。理由は次のとおり。第一に、推進計画は重点プログラムごとにKPIを設定しており、KPIの設定単位が重点プログラムである。第二に、令和8年度当初予算案の概要「令和8年度のプラスの循環戦略」は重点プログラム単位の合計額を公表しており、資源配分の公表単位とも一致する。第三に、戦略単位には別途「数値目標」が設定されているが、これは戦略全体の目標であり重点プログラムのKPIとは単位が異なるため、プロジェクトのKPIには含めず、各プロジェクトの証拠パケットに親戦略の目標として記録した。進行管理結果の公式公表は計画初年度のためまだ存在せず公表単位は未確定であるため、初回公表の形式が重点プログラム単位と異なる場合は更新サイクル（Issue #706）で登録単位を見直す。計画の施策体系（将来都市像5・政策12）は登録単位としていない。",
+  "item_count": 18,
+  "unit": "priority_program"
+ },
+ "schema_version": "0.1.0",
+ "selection_rule": "重点プログラムは母集団の全件（18件）を、推進計画第4章の掲載順（戦略1から戦略5、各戦略内は重点プログラムの掲載順）に選定する。金額の大小では選ばない。",
+ "selections": [
+  {
+   "department": null,
+   "official_title": "地域の強みをいかした産業の育成・創出",
+   "pillar": "地域産業の活力を高め、働きがいのあるしごとの場をつくる",
+   "policy": "戦略1 重点プログラムI",
+   "project_id": "jp-local-052019-project-2026-regional-industry",
+   "selection_basis": "掲載順1番目: プラスの循環戦略1の重点プログラムI「地域の強みをいかした産業の育成・創出」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-regional-industry",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "新エネルギー関連産業の集積・振興",
+   "pillar": "地域産業の活力を高め、働きがいのあるしごとの場をつくる",
+   "policy": "戦略1 重点プログラムII",
+   "project_id": "jp-local-052019-project-2026-new-energy-industry",
+   "selection_basis": "掲載順2番目: プラスの循環戦略1の重点プログラムII「新エネルギー関連産業の集積・振興」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-new-energy-industry",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "生産拡大と経営安定化による持続可能な農業の実現",
+   "pillar": "地域産業の活力を高め、働きがいのあるしごとの場をつくる",
+   "policy": "戦略1 重点プログラムIII",
+   "project_id": "jp-local-052019-project-2026-sustainable-agriculture",
+   "selection_basis": "掲載順3番目: プラスの循環戦略1の重点プログラムIII「生産拡大と経営安定化による持続可能な農業の実現」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-sustainable-agriculture",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "地元への就業機会の拡大と人材確保・育成支援",
+   "pillar": "地域産業の活力を高め、働きがいのあるしごとの場をつくる",
+   "policy": "戦略1 重点プログラムIV",
+   "project_id": "jp-local-052019-project-2026-local-employment",
+   "selection_basis": "掲載順4番目: プラスの循環戦略1の重点プログラムIV「地元への就業機会の拡大と人材確保・育成支援」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-local-employment",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "地域資源の磨き上げと戦略的PRによる観光振興の推進",
+   "pillar": "まちの魅力を高め、秋田市への新しいひとの流れをつくる",
+   "policy": "戦略2 重点プログラムI",
+   "project_id": "jp-local-052019-project-2026-tourism-promotion",
+   "selection_basis": "掲載順5番目: プラスの循環戦略2の重点プログラムI「地域資源の磨き上げと戦略的PRによる観光振興の推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-tourism-promotion",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "芸術文化を核としたまちづくりと中心市街地活性化",
+   "pillar": "まちの魅力を高め、秋田市への新しいひとの流れをつくる",
+   "policy": "戦略2 重点プログラムII",
+   "project_id": "jp-local-052019-project-2026-arts-culture-downtown",
+   "selection_basis": "掲載順6番目: プラスの循環戦略2の重点プログラムII「芸術文化を核としたまちづくりと中心市街地活性化」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-arts-culture-downtown",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "トップスポーツをいかした活気あるまちづくり",
+   "pillar": "まちの魅力を高め、秋田市への新しいひとの流れをつくる",
+   "policy": "戦略2 重点プログラムIII",
+   "project_id": "jp-local-052019-project-2026-top-sports",
+   "selection_basis": "掲載順7番目: プラスの循環戦略2の重点プログラムIII「トップスポーツをいかした活気あるまちづくり」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-top-sports",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "シティプロモーションの推進と関係人口の拡大",
+   "pillar": "まちの魅力を高め、秋田市への新しいひとの流れをつくる",
+   "policy": "戦略2 重点プログラムIV",
+   "project_id": "jp-local-052019-project-2026-city-promotion",
+   "selection_basis": "掲載順8番目: プラスの循環戦略2の重点プログラムIV「シティプロモーションの推進と関係人口の拡大」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-city-promotion",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "移住・定住の促進",
+   "pillar": "まちの魅力を高め、秋田市への新しいひとの流れをつくる",
+   "policy": "戦略2 重点プログラムV",
+   "project_id": "jp-local-052019-project-2026-migration-settlement",
+   "selection_basis": "掲載順9番目: プラスの循環戦略2の重点プログラムV「移住・定住の促進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-migration-settlement",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "安心してこどもを生み育てられる細やかな支援",
+   "pillar": "こども・若者の希望が叶うまちをつくる",
+   "policy": "戦略3 重点プログラムI",
+   "project_id": "jp-local-052019-project-2026-childcare-support",
+   "selection_basis": "掲載順10番目: プラスの循環戦略3の重点プログラムI「安心してこどもを生み育てられる細やかな支援」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-childcare-support",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "こどもが健やかに育つ環境の整備",
+   "pillar": "こども・若者の希望が叶うまちをつくる",
+   "policy": "戦略3 重点プログラムII",
+   "project_id": "jp-local-052019-project-2026-child-environment",
+   "selection_basis": "掲載順11番目: プラスの循環戦略3の重点プログラムII「こどもが健やかに育つ環境の整備」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-child-environment",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "若者の希望と挑戦を応援するまちの推進",
+   "pillar": "こども・若者の希望が叶うまちをつくる",
+   "policy": "戦略3 重点プログラムIII",
+   "project_id": "jp-local-052019-project-2026-youth-challenge",
+   "selection_basis": "掲載順12番目: プラスの循環戦略3の重点プログラムIII「若者の希望と挑戦を応援するまちの推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-youth-challenge",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "生涯を通じた健康づくりの推進",
+   "pillar": "誰もが健康でいきいきと暮らせるまちをつくる",
+   "policy": "戦略4 重点プログラムI",
+   "project_id": "jp-local-052019-project-2026-lifelong-health",
+   "selection_basis": "掲載順13番目: プラスの循環戦略4の重点プログラムI「生涯を通じた健康づくりの推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-lifelong-health",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "高齢者が活躍できる場の充実と生きがいづくりの推進",
+   "pillar": "誰もが健康でいきいきと暮らせるまちをつくる",
+   "policy": "戦略4 重点プログラムII",
+   "project_id": "jp-local-052019-project-2026-senior-participation",
+   "selection_basis": "掲載順14番目: プラスの循環戦略4の重点プログラムII「高齢者が活躍できる場の充実と生きがいづくりの推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-senior-participation",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "多様な生活支援サービスを利用できる地域づくりの推進",
+   "pillar": "誰もが健康でいきいきと暮らせるまちをつくる",
+   "policy": "戦略4 重点プログラムIII",
+   "project_id": "jp-local-052019-project-2026-community-life-support",
+   "selection_basis": "掲載順15番目: プラスの循環戦略4の重点プログラムIII「多様な生活支援サービスを利用できる地域づくりの推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-community-life-support",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "災害に強いまちづくりの推進",
+   "pillar": "災害に強く、安全安心で持続可能なまちをつくる",
+   "policy": "戦略5 重点プログラムI",
+   "project_id": "jp-local-052019-project-2026-disaster-resilience",
+   "selection_basis": "掲載順16番目: プラスの循環戦略5の重点プログラムI「災害に強いまちづくりの推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-disaster-resilience",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "将来にわたり持続可能な公共交通体系の構築",
+   "pillar": "災害に強く、安全安心で持続可能なまちをつくる",
+   "policy": "戦略5 重点プログラムII",
+   "project_id": "jp-local-052019-project-2026-public-transport",
+   "selection_basis": "掲載順17番目: プラスの循環戦略5の重点プログラムII「将来にわたり持続可能な公共交通体系の構築」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-public-transport",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "循環型社会の構築とゼロカーボンの推進",
+   "pillar": "災害に強く、安全安心で持続可能なまちをつくる",
+   "policy": "戦略5 重点プログラムIII",
+   "project_id": "jp-local-052019-project-2026-circular-zero-carbon",
+   "selection_basis": "掲載順18番目: プラスの循環戦略5の重点プログラムIII「循環型社会の構築とゼロカーボンの推進」を選定した。母集団は重点プログラムの全18件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-052019-project-series-circular-zero-carbon",
+   "source_ids": [
+    "akita-city-plan-15th-page",
+    "akita-city-plan-15th-promotion-plan",
+    "akita-city-budget-fy2026-overview"
+   ]
+  }
+ ]
+}
