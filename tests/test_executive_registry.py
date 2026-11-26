@@ -41,17 +41,17 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 177
-    assert len({record["id"] for record in catalog["records"]}) == 177
+    assert len(catalog["records"]) == 185
+    assert len({record["id"] for record in catalog["records"]}) == 185
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 38
+    assert len(terms) == 40
     assert {term["municipality_id"] for term in terms} == {
-        "jp-local-072010",
+        "jp-local-062014",
         "jp-local-400009",
         "jp-local-401307",
         "jp-local-401005",
@@ -89,6 +89,8 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-430005",
         "jp-local-151009",
         "jp-local-150002",
+        "jp-local-052019",
+        "jp-local-072010",
     }
     for term in terms:
         assert validation_errors("schemas/executive_term.schema.json", term) == []
@@ -175,6 +177,14 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
     # (2026-02-08) stated in the election commission's 2025-05-16
     # press release, and the two values agree.
     expected_term_ends = {
+        # Yamagata City's end (2027-09-27) is stated directly in
+        # the Yamagata Prefecture official list of municipalities
+        # (as of 2026-06-01: 任期満了日 R9.9.27); its start
+        # (2023-09-28) follows the Article 259 proviso chain,
+        # anchored by the mayoral profile's stated first-term
+        # inauguration date (2015-09-28) and the stated expiry,
+        # and the two values agree.
+        "jp-local-062014": "2027-09-27",
         "jp-local-400009": "2029-04-10",
         "jp-local-401307": "2026-12-06",
         "jp-local-401005": "2027-02-19",
@@ -337,6 +347,15 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # that cross-check remains outstanding and is recorded as
         # an open question in the evidence packet.
         "jp-local-151009": "2030-11-17",
+        # Akita City's end (2029-04-11) is stated directly in the
+        # Akita Prefectural Election Commission's official
+        # term-expiry list (as of 2026-06-30); its start
+        # (2025-04-12) follows the Article 259 proviso chain,
+        # anchored by the previous term's expiry (2025-04-11)
+        # stated in the commission's press release on the
+        # simultaneous elections, and the two values agree.
+        "jp-local-052019": "2029-04-11",
+        "jp-local-072010": "2029-12-07",
         # Niigata Prefecture's end (2030-06-09) is stated directly in
         # the prefectural election commission's official term-expiry
         # list (2026-10-16 edition: 花角英世 R12年6月9日, third
@@ -386,6 +405,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
     # date plus four years and was corrected under Issue #676. The
     # record ID keeps the original date as an opaque identifier.
     expected_term_starts = {
+        "jp-local-062014": "2023-09-28",
         "jp-local-400009": "2025-04-11",
         "jp-local-401307": "2022-12-07",
         "jp-local-401005": "2023-02-20",
@@ -423,6 +443,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-431001": "2022-12-03",
         "jp-local-151009": "2026-11-18",
         "jp-local-150002": "2026-06-10",
+        "jp-local-052019": "2025-04-12",
         "jp-local-072010": "2025-12-08",
     }
     for term in terms:

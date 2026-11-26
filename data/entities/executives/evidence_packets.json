@@ -2256,5 +2256,114 @@
       "2025年福島市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #1015）で確認し、段階1で再確認した。候補者欄の転記・公約レコードの作成と manifesto_source_ids の接続は段階3で行うため、段階1では未接続とする。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-akita-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-052019-executive-2025-04-12",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "秋田市の現職市長が沼谷純（1期目、第19代）であることを、市選挙管理委員会の開票結果と県選挙管理委員会の任期満了日一覧で確認した。2025年4月の市長選挙で、5選を目指した現職の穂積志を破り初当選した。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-results",
+          "akita-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "秋田市選管「令和7年4月6日執行市長選挙開票結果」の候補者欄と、秋田県選管「任期満了日等について」の秋田市長の欄。",
+        "decision": "accepted",
+        "review_note": "現職市長の氏名と1期目であることを保持する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する市長選挙は2025年4月6日に執行された秋田市長選挙（任期満了に伴う選挙、秋田県知事選挙と同時執行、候補者2人）であり、沼谷純が98,049票で当選した。市選挙管理委員会の公式開票結果で、ほづみもとむ51,808票・有効投票149,857票・無効投票1,499票・投票率60.39%（選挙当日有権者数250,645人）を直接照合した。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-results"
+        ],
+        "location_note": "秋田市選挙管理委員会「令和7年4月6日執行市長選挙開票結果」（2025年4月8日更新）の開票結果表。",
+        "decision": "accepted",
+        "review_note": "得票数は市選挙管理委員会自身の公式開票結果の値を採用した。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期の開始は2025年4月12日。2025年の市長選挙は前任期の満了日（2025年4月11日）より前に執行された任期満了選挙であるため、公職選挙法第259条ただし書により任期は満了日の翌日から起算される。県選挙管理委員会の任期満了日一覧が示す現任期の満了日（2029年4月11日）から遡る4年周期の開始とも一致する。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-results",
+          "akita-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "前任期の満了日2025年4月11日は秋田県選挙管理委員会のプレスリリース「知事選挙と市町長選挙の同時選挙の執行について」（2024年9月3日）に「秋田市長選挙（任期満了：令和7年4月11日）」と明記される（段階0棚卸し・Issue #1013で確認）。現任期の満了日は県選管の任期満了日一覧に明記される。",
+        "decision": "accepted",
+        "review_note": "開始日を日にちまで直接印字する市公式文書は未確認のため、満了日の公式明記と法定の起算構成で確定した。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2029年4月11日。秋田県選挙管理委員会「任期満了日等について」（2026年6月30日更新）に、秋田市長・沼谷純の任期満了日として明記される。",
+        "source_ids": [
+          "akita-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "秋田県選挙管理委員会「任期満了日等について」の秋田市長の欄。",
+        "decision": "accepted",
+        "review_note": "県選管自身の一覧が満了日を日にちまで直接明記する。本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報は市選管の現行公式ページに現存するため、段階3で公報から沼谷市長の公約を抽出し、term の manifesto_source_ids へ接続する（本段階では未接続）。",
+      "市長の就任日を日にちまで直接印字した市公式文書（市長プロフィール等）は未確認であり、開始日は県選管資料と公選法第259条ただし書の構成で確定した。直接資料が公表されれば証拠を補う。",
+      "選挙公報PDFの候補者欄は画像でテキスト層がないため、段階3の転記は描画画像の目視転記とする。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yamagata-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-062014-executive-2023-09-28",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "山形市の現市長は佐藤 孝弘である（3期目）。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-results",
+          "yamagata-city-mayor-profile"
+        ],
+        "location_note": "市選挙管理委員会『山形市長選挙の結果報告』の当選人欄、および市公式『市長プロフィール』（現在3期目）。",
+        "decision": "accepted",
+        "review_note": "両出典とも佐藤孝弘を現市長として記載する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "山形市長選挙は2023年9月10日に執行され、佐藤孝弘が66,670票を得て当選した（3選）。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-results"
+        ],
+        "location_note": "市選挙管理委員会『山形市長選挙の結果報告』の開票結果（得票数）。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計78,106票（佐藤66,670票・渡辺ゆり子11,436票）が同報告の有効投票数と一致することでも整合する。投票率39.10%。"
+      },
+      {
+        "field": "term_start",
+        "statement": "佐藤孝弘市長の現任期は2023年9月28日に始まった。",
+        "source_ids": [
+          "yamagata-pref-municipality-list",
+          "yamagata-city-mayor-profile"
+        ],
+        "location_note": "山形県公式『市町村一覧』（令和8年6月1日現在）の山形市長の満了日明記、および市公式プロフィールの就任日（平成27年9月28日）の記載。",
+        "decision": "accepted",
+        "review_note": "現任期の満了日（2027年9月27日）は県公式一覧に明記されている。開始日は、初当選時の就任日2015年9月28日（市公式プロフィールに明記）からの4年周期、および前任期満了日（2023年9月27日）の翌日とする公職選挙法第259条ただし書の構成で確定し、両者は一致する。現任期開始日そのものを直接印字した公式文書は未確認であり、open question に記録した。本レビューは所有者が2026-11-15にClaudeへ委任した判断に基づくもので、所有者本人のレビューではない。"
+      },
+      {
+        "field": "term_end",
+        "statement": "佐藤孝弘市長の現任期は2027年9月27日に満了する。",
+        "source_ids": [
+          "yamagata-pref-municipality-list"
+        ],
+        "location_note": "山形県公式『市町村一覧』（令和8年6月1日現在）の山形市欄「市長：佐藤 孝弘（任期満了日：R9.9.27）」。",
+        "decision": "accepted",
+        "review_note": "満了日は県公式一覧に直接明記された値であり、4年加算による導出ではない。"
+      }
+    ],
+    "open_questions": [
+      "現任期（3期目）の開始日2023年9月28日を直接印字した市公式文書（市公報・選挙管理委員会資料）は確認できていない。開始日は県公式一覧の満了日明記と市長プロフィールの就任日（2015年9月28日）および公職選挙法第259条ただし書の構成で確定した。",
+      "2023年山形市長選挙の選挙公報は、市公式URLが404となり現行の選挙ページからもリンクが外れている。段階3では選挙ドットコムCDNの複写（内容照合済み）から転記する。公式原典の保存記録（Wayback Machine）には404分しかなく、ダイジェスト照合は実施できていない。"
+    ],
+    "review_status": "reviewed"
   }
 ]

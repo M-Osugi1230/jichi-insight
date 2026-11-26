@@ -1733,5 +1733,80 @@
       "福島県選挙管理委員会の任期満了一覧における現任期満了日（2029年12月7日）の明記照合は、一覧の次回更新待ちである（Issue #706の追跡対象）。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-akita-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-akita-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の開票結果で当選と得票数（98,049票）を、県選挙管理委員会の任期満了日一覧で現任期の満了日（2029年4月11日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式ページで、2025年選挙の選挙公報が現存することを確認した。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-results",
+          "akita-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "開票結果、県選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページ「選挙公報」から令和7年秋田市長選挙の選挙公報PDFを取得した（全2ページ、1,916,335バイト）。候補者欄は画像で、テキスト層は選管の枠文のみである。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）。",
+        "decision": "accepted",
+        "review_note": "公報そのものが市の現行公式ページで現存するため、所在の確度は high とする。転記は段階3で描画画像の目視により行う。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報の所在は確認できたが、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。候補者の詳細な政策資料が存在しないとは判定しない。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "公約の抽出・term への接続は段階3で行う。",
+      "沼谷候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-yamagata-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-yamagata-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "山形市選挙管理委員会の結果報告で当選と得票数（66,670票）を、山形県公式『市町村一覧』で任期満了日（2027年9月27日）を確認した（いずれも段階1で照合済み）。あわせて市公式サイトでは選挙公報PDFの旧URLが404で、現行の選挙ページにも公報へのリンクがないことを確認した。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-results",
+          "yamagata-pref-municipality-list"
+        ],
+        "location_note": "結果報告、県公式の市町村一覧（段階0の棚卸しと段階1で確認済み）と、現行公式サイトの掲載状況（2026-11-26確認）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙ドットコムCDNに現存する選挙公報の複写を取得し、内容（候補者2名の候補者欄・選管の枠文・二面の投票案内）を市公式の選挙ページおよび結果報告と照合して、同一の公報であることを確認した。1ページ目下段の佐藤孝弘候補欄（大見出し「市民と共に 希望の山形へ！」のもと番号付き7項目）を確認した。公報の候補者欄は画像・ベクタ描画でテキスト層は枠文のみである。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "公式原典（市公式URL）は404で、Wayback Machine の保存も404分しかないため、ダイジェスト照合はできていない。同一性の担保は内容照合によるものである点を明記する。本レビューは所有者が2026-11-15にClaudeへ委任した判断に基づくもので、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "市公式URLの公報PDFは削除済みで、Wayback Machine にも200保存がないため、複写と公式原典のダイジェスト照合は実施できていない。段階3の転記時に候補者構成・枠文・投票案内の一致を再確認する。"
+    ],
+    "review_status": "reviewed"
   }
 ]

@@ -295,8 +295,9 @@ def test_every_promise_has_one_packet_with_provenance() -> None:
 
 def test_bulletin_source_record_points_at_the_archived_pdf() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.62.0"
-    assert len(catalog["records"]) == 177
+    assert catalog["version"] == "0.64.0"
+    assert len(catalog["records"]) == 185
+    assert len(catalog["records"]) == 185
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["municipality_key"] == "hiroshima-city"
     assert bulletin["organization"].startswith("広島市選挙管理委員会")

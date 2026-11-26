@@ -1157,5 +1157,62 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-akita-city-2025",
+    "executive_term_id": "jp-local-052019-executive-2025-04-12",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive"
+    ],
+    "result_status": "follow_up_required",
+    "manifesto_source_ids_found": [
+      "akita-city-mayor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "akita-city-mayor-election-2025-results",
+      "akita-pref-mayor-term-expiry-list",
+      "akita-city-mayor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "秋田市長選挙（令和7年4月6日執行）の選挙公報は、市選挙管理委員会の現行公式ページ「選挙公報」（2026年3月12日更新）にPDFがリンクされ現存する（段階0・Issue #1013の棚卸しで確認し、段階1でも2026-11-26に現行ページからPDF本体を取得して確認した。全2ページ、1,916,335バイト）。公報の候補者欄は画像でテキスト層は選管の枠文のみのため、公約の抽出は段階3で描画画像の目視転記により行う。本探索は公報の所在確認までとし、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。沼谷候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "段階3で選挙公報（現行公式ページのPDF）から沼谷純候補欄の公約を目視転記し、分割レビューを経て公約レコードを作成し、term の manifesto_source_ids へ接続する",
+      "沼谷候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録する公約文と照合する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-yamagata-city-2023",
+    "executive_term_id": "jp-local-062014-executive-2023-09-28",
+    "searched_at": "2026-11-26",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "yamagata-city-mayor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "yamagata-city-mayor-election-2023-results",
+      "yamagata-city-mayor-election-2023-overview",
+      "yamagata-pref-municipality-list",
+      "yamagata-city-mayor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2023年山形市長選挙（令和5年9月10日執行）の選挙公報は市選挙管理委員会が発行し、選挙期間中は市公式サイトの選挙ページの添付PDF（r5sityousenkyokouhou3.pdf）として掲載されていた（段階0・Issue #1014の棚卸しでは現行ページに現存とされた）。段階1（2026-11-26）の再確認では、同PDFのURLは404で、選挙ページの「山形市長選挙選挙公報」の見出しからもリンクが外れていた。Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなく、岡山市長の先例のような公式原典とのダイジェスト照合はできなかった。一方、選挙ドットコムCDNに現存する同一公報の複写を取得し、内容を実物で照合した（全2ページ、1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）:選挙管理委員会の枠文、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、二面の投票案内（繰上げ閉鎖の11投票所を含む）が市公式の選挙ページ・結果報告と一致する。佐藤孝弘候補欄は1ページ目下段にあり、大見出し「市民と共に 希望の山形へ！」のもと番号付きの7項目で構成される。公報の候補者欄は画像・ベクタ描画でテキスト層は枠文のみのため、段階3の登録文は描画画像の目視転記を正とする。複写の同一性は内容照合に基づくもので、ダイジェスト照合ができていない点は open question として残す。選挙公報は候補者提出原稿をそのまま写真印刷した公式文書であり、内容照合で同一性を確認できたため、公約化は段階3で行う。",
+    "next_actions": [
+      "段階3で選挙公報（選挙ドットコムCDNの複写）の佐藤孝弘候補欄を描画画像から目視転記し、公約レコードを作成して term の manifesto_source_ids へ接続する",
+      "市公式URLで公報PDFが再掲載された場合は、公式原典と複写のダイジェスト照合を行う"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]
