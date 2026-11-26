@@ -27,6 +27,7 @@ import { KyotoCityReview } from "@/components/KyotoCityReview";
 import { NiigataCityReview } from "@/components/NiigataCityReview";
 import { OkayamaCityReview } from "@/components/OkayamaCityReview";
 import { KumamotoCityReview } from "@/components/KumamotoCityReview";
+import { TohokuMunicipalityReview } from "@/components/TohokuMunicipalityReview";
 import { currentExecutiveTerms, promisesForExecutive } from "@/lib/executives";
 
 import styles from "./page.module.css";
@@ -46,6 +47,7 @@ export function generateStaticParams() {
     { slug: "niigata-city" },
     { slug: "okayama-city" },
     { slug: "kumamoto-city" },
+    // 福島市・山形市・秋田市は既存のPhase15生成対象に含まれるため重複追加しない。
   ];
 }
 
@@ -55,6 +57,19 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const tohokuCityNames: Record<string, string> = {
+    "fukushima-city": "福島市", "yamagata-city": "山形市", "akita-city": "秋田市",
+  };
+  if (slug in tohokuCityNames) {
+    const name = tohokuCityNames[slug];
+    const title = name + "｜現行計画・財政・首長公約・市議会";
+    const description = name + "の一次資料レビュー、財政詳細、重点事業、首長公約、議会記録。";
+    const url = siteUrl + "/municipalities/" + slug + "/";
+    return {
+      title, description, alternates: { canonical: url },
+      openGraph: { title, description, url, images: defaultOgImages },
+    };
+  }
   if (slug === "shizuoka-city" || slug === "hamamatsu-city" || slug === "kyoto-city" || slug === "niigata-city" || slug === "okayama-city" || slug === "kumamoto-city") {
     const name = slug === "shizuoka-city" ? "静岡市" : slug === "kyoto-city" ? "京都市" : slug === "niigata-city" ? "新潟市" : slug === "okayama-city" ? "岡山市" : slug === "kumamoto-city" ? "熊本市" : "浜松市";
     const title = `${name}｜計画・決算・重点事業・市長公約・議会`;
@@ -267,6 +282,15 @@ export default async function Phase15CityPage({
   }
   if (slug === "kumamoto-city") {
     return <KumamotoCityReview />;
+  }
+  if (slug === "fukushima-city") {
+    return <TohokuMunicipalityReview slug="fukushima-city" />;
+  }
+  if (slug === "yamagata-city") {
+    return <TohokuMunicipalityReview slug="yamagata-city" />;
+  }
+  if (slug === "akita-city") {
+    return <TohokuMunicipalityReview slug="akita-city" />;
   }
   const city = loadPhase15City(slug);
   if (!city) {
