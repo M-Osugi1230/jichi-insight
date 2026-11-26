@@ -1358,5 +1358,58 @@
       "中原候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-yamagata-city-2023-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-062014-2023",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "さとう孝弘候補欄は選挙公報1ページ目下段に掲載され、顔写真・縦書きの候補者名の下に、大見出し「市民と共に 希望の山形へ！」とビジョン文、番号付きの7項目（見出し＋「・」書きの細目）、枠囲みの結びの文章が配置されている。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目下段。",
+        "decision": "accepted",
+        "review_note": "2026-11-27に選挙ドットコムCDNの複写を改めて取得し、描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "番号付き7項目は見出しだけでは完結せず細目と一体で政策の表明をなすため、見出しと細目を改行でつないだ7件を公約レコードとした。大見出し・ビジョン文は欄全体の枠組みの表明として、枠囲みの結びの文章は項目3とビジョンの総括的な決意表明として、いずれもレコード化しなかった。「実績」として提示された項目のリストは候補欄になく、実績の切り分けによる除外は生じていない。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "候補者欄の番号付き7項目とその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "見出し＋本文を1レコードとする境界判断は静岡市長の先例に倣ったものであり、結びの文章をレコード化しない判断とあわせて open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は山形市選挙管理委員会が発行した公式選挙公報そのものである。選挙期間中は市公式サイトの選挙ページの添付PDF（https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/012/073/r5sityousenkyokouhou3.pdf）として掲載されていたが、段階1（2026-11-26）の再確認では同URLは404で選挙ページからもリンクが外れており、Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなかったため、公式原典とのダイジェスト照合はできていない。登録に用いたのは選挙ドットコムCDNに現存する同一公報の複写（全2ページ、1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）であり、段階3では2026-11-27に改めて取得し、段階1の照合済みファイルと SHA-256 が一致することを確認した。複写の内容（選挙管理委員会の枠文、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、2ページ目の投票案内（繰上げ閉鎖の11投票所を含む））は市公式の選挙ページ・開票結果報告と一致する。複写の同一性はこの内容照合に基づくものであり、ダイジェスト照合ができていない限界は段階1の探索記録（manifesto-source-search-yamagata-city-2023）にも明記されている。公報の候補者欄は画像・ベクタ描画でテキスト層は選管の枠文のみのため、登録文は描画画像（150dpi・300dpi）の目視転記を正とし、複数解像度で照合した。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "公報各ページ欄外の備考（候補者から提供された原稿をそのまま印刷した旨）と、段階1の探索記録 manifesto-source-search-yamagata-city-2023 に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。市公式URLで公報PDFが再掲載された場合は、公式原典と複写のダイジェスト照合を行う。"
+      },
+      {
+        "field": "review_authority",
+        "statement": "本レビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。",
+        "source_ids": [
+          "yamagata-city-mayor-election-2023-bulletin"
+        ],
+        "location_note": "プロジェクトのレビュー委任方針（2026-11-15）に基づく。",
+        "decision": "accepted",
+        "review_note": "委任の範囲は候補・下書きの Reviewed への昇格判断であり、公開承認の偽装は行っていない。"
+      }
+    ],
+    "open_questions": [
+      "枠囲みの結びの文章をレコード化しない境界判断は総括的表明の先例に倣ったものであり、資料上の項目境界の解釈が変われば見直す。",
+      "市公式URLで公報PDFが再掲載された場合は、公式原典と複写のダイジェスト照合を行う（段階1の探索記録の申し送り）。",
+      "佐藤候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
   }
 ]
