@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { currentExecutiveTerms, executiveMunicipality, promisesForExecutive, evidenceForPromise, evidenceForExecutive, formatDateJa } from "@/lib/executives";
+import { currentExecutiveTerms, promiseRecords, executiveMunicipality, promisesForExecutive, evidenceForPromise, evidenceForExecutive, formatDateJa } from "@/lib/executives";
 import { promiseSourceDetails } from "@/lib/promiseSources";
 import { sourceConfidenceLabel } from "@/lib/statusLabels";
 import { fukuokaCityProjectData } from "@/lib/fukuokaCityProjects";
@@ -39,8 +39,12 @@ const progressLabel:Record<string,string> = {
   abandoned:"撤回（公式説明を要確認）",
 };
 export default function PromisesPage() {
+  const reviewedPromiseCount = promiseRecords.filter((item) =>
+    item.review_status === "reviewed" || item.review_status === "verified"
+  ).length;
   return <><SiteHeader/><main className="pageShell">
     <header className={styles.hero}><p className="eyebrow">Reviewed promise registry</p><h1>首長公約の原文と根拠</h1>
+      <p>Reviewed公約 {reviewedPromiseCount.toLocaleString("ja-JP")}件／登録首長term {currentExecutiveTerms.length}件。</p>
       <p>公約を首長・選挙ごとに整理しています。事業との関連は確定的な成果や達成を意味しません。未接続は未着手・未達を意味しません。首長のスコア、達成率、ランキングは表示しません。</p>
       <p>確認できること：本サイトに Reviewed 公約が登録されている首長の公約原文と根拠。公約が未登録の首長については未登録と表示し、公約の不存在や未実施を意味しません。まだ確認できないこと：すべての公約の進捗評価は提供していません。評価材料がない公約は「評価材料なし（未接続）」と表示します。</p>
     </header>
