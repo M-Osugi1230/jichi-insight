@@ -1,0 +1,101 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-072010-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-072010-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "member_roster",
+    "note": "議員名簿（議席番号順）が市議会ホームページに掲載されている（令和8年10月1日現在）。定数35人に対し34人が掲載され、33番は欠員である。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/gaiyo/1/1069.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別議員名簿が掲載されている。令和8年10月1日現在、真政会11人、真結の会10人、ふくしま市民21が5人、公明党福島市議団4人、日本共産党福島市議会議員団3人、無所属1人の合計34人である。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/gaiyo/1/2/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会別議員名簿に常任委員会4委員会、議会運営委員会、人口減少対策に関する調査特別委員会の正副委員長が掲載されている（2026年10月1日更新）。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/gaiyo/1/1061.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとの議案の審議結果のページに議案番号、件名、結果、付託委員会が掲載される。令和8年9月定例会議分は議案31件（議案第88号〜第118号）。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/gian/2/3610.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派単位で集計した賛否の公式公表はない。採決結果は議員個人別に公表される形式である。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/material/files/group/72/R89saiketukeltuka2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "本会議の採決は採決システム（電子採決）で行われ（簡易採決を除く）、賛否が分かれた案件については議案ごとに「採決システムによる採決結果」PDFが公表され、総数・賛成数・反対数と議員の氏名（議席番号つき）が列挙される。令和8年9月定例会議では議案第92号、議案第98号、陳情第13号の3件が対象。全会一致等の案件については議員個人別の賛否は公表されない。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/material/files/group/72/R89saiketukeltuka2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は会派に交付され（所属議員数×月額10万円）、年度別に収支実績と会派ごとの収支報告書等が公表される。令和7年度分は通年分の6会派と、令和7年7月末に解散した2会派の4月〜7月分が公表されている。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/johokokai/2/15314.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の関係証拠書類の写しと現金出納簿（全体分・科目別）が、収支報告書と一体のPDFで会派ごとに公開されている。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/johokokai/2/15314.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会の行政視察について専用の視察報告書一覧ページは確認できなかった。委員会の行政視察は委員長報告として本会議の会議録に記録される形式である（2026年11月27日確認）。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/kaigiroku/1631.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議（平成3年5月臨時会以降）と委員会（平成30年4月以降）の会議録が公開されている。令和8年9月定例会議の本会議会議録も収録されている。",
+    "source_url": "https://www.fukushima-voices.jp/voices/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "議会中継のページで本会議のライブ中継と録画中継が提供されている。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/nittei-chukei/2/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "petition_results",
+    "note": "請願・陳情の審議結果が会期ごとに公表され、賛否が分かれた陳情については採決システムによる採決結果PDFも公表される。令和8年9月定例会議分は陳情1件（不採択）。",
+    "source_url": "https://www.city.fukushima.fukushima.jp/gikai/seigan-chinjo/1/6180.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "fukushima-city-assembly-roster",
+   "fukushima-city-assembly-results-2026-09",
+   "fukushima-city-assembly-seimu-2025-index",
+   "fukushima-city-assembly-minutes-search"
+  ]
+ }
+]
