@@ -1,0 +1,104 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-050008-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-050008-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員41名の名簿が県議会公式サイトで公開されているほか、「各議員の表決状況」PDFの議員列（41列）でも現員構成を確認できる。2024年時点の名簿にあった沼谷純・鈴木健太は補欠選挙により川邉隼之介・福田博之に交代している。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "2026年11月時点の会派構成は表決状況PDFの会派区分で確認でき、自由民主党27名・みらい5名・立憲民主党4名・社会民主党1名・日本共産党1名・公明党1名・きらり1名・ひらく会1名の8会派41名。ひらく会は令和8年度に新設された会派で、令和7年度時点の構成は7会派だった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "「秋田県議会の概要（令和7年度版）」に常任委員会6（総務企画・福祉環境・農林水産・産業観光・建設・教育公安）、議会運営委員会、予算特別委員会・決算特別委員会の構成と所管が明記されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "定例会概要ページに会期区分ごとの議決概要が叙述され、「各議員の表決状況」PDFに議案番号・件名・議決結果が印字されている。本登録の対象は令和8年第2回定例会のうち完了した会期区分で、10月議会は決算1件のみが表決表の対象、9月議会は決算2件のみを登録し、残りの議案27件（議案第153〜172号・意見書案第7〜11号・請願第30〜32号のうち決算以外）は未登録である。12月議会は第2回定例会が継続中で未閉会のため対象外とした。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派単位に集計した賛否は公表されていない（本登録でも会派別賛否の集約は行っていない）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "「各議員の表決状況」PDFで、議決日ごとに全議員の記号（○＝賛成、×＝反対、議＝議長、欠＝欠席、棄＝棄権、除＝除斥）と表決方法（簡易・起立・投票）、表決者数・賛成者数・反対者数を公開。これは本会議の表決そのものの事後記録であり、採決前の態度表明の集約ではない。簡易表決の議案では全議員が賛成として印字される形式であり、個人の表決行動の記録とは性質が異なる。本登録の3件はいずれも印字合計と記号集計が完全一致したが、会議録検索システムとの直接突合はアクセス不能のため未了である。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は会派及び議員個人の双方に交付され、収支報告書が県議会ホームページで公開されている。令和7年度分は2026年7月1日に公開され、会派7・議員41の全48単位を登録した（議員は月額28万円、会派は月額3万円×所属議員数が交付額の基礎。年度途中の補欠選挙当選者2名は11か月分）。過去5年分も公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "収支報告書には領収書等の添付書類が含まれ、報告書本体とあわせてPDFでWeb公開されている（分冊形式）。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "常任委員会の県外調査は実施されているが、県議会公式サイトに視察報告書の一覧・公表ページは段階0棚卸し（OQ-6）及び本段階の確認でも見つからなかったため、視察は登録していない（欠損の明示）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議（平成11年5月臨時会以降）・常任委員会（平成15年6月以降）・決算特別委員会（平成16年10月以降）等の会議録が公開されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "県議会公式サイトに「会議録・インターネット中継」のカテゴリがあり、本会議のインターネット中継が行われている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願の結果は「各議員の表決状況」PDFに印字され、定例会概要ページにも採択状況が叙述されている（令和8年9月議会では請願1件が採択）。本登録では請願自体は登録対象外とした。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "akita-pref-assembly-overview-2026",
+   "akita-pref-assembly-votes-2026-1102",
+   "akita-pref-assembly-votes-2026-1007",
+   "akita-pref-assembly-guide-r7",
+   "akita-pref-assembly-seimu-ordinance",
+   "akita-pref-assembly-seimu-reports-r7",
+   "akita-pref-assembly-minutes-guide"
+  ]
+ }
+]
