@@ -671,12 +671,9 @@ function shizuokaAssemblyEvidence(packets: unknown[]): Evidence[] {
 export const assemblies: Record<AssemblySlug, Registry> = {
   "fukushima-prefecture": registry(
     fukushimaPrefectureAssembly, fukushimaPrefectureDisclosure, fukushimaPrefectureSessions,
-    fukushimaPrefectureProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    fukushimaPrefectureProposals,
     fukushimaPrefectureVotes, fukushimaPrefectureFactionVotes,
-    fukushimaPrefectureExpenses.map((expense) => ({ breakdown: [], ...expense })),
+    fukushimaPrefectureExpenses,
     fukushimaPrefectureTrips as unknown as Trip[],
     shizuokaAssemblyEvidence([
       ...fukushimaPrefectureAssemblyEvidence, ...fukushimaPrefectureVoteEvidence,
@@ -686,12 +683,9 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   ),
   "fukushima-city": registry(
     fukushimaCityAssembly, fukushimaCityDisclosure, fukushimaCitySessions,
-    fukushimaCityProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    fukushimaCityProposals,
     fukushimaCityVotes, fukushimaCityFactionVotes,
-    fukushimaCityExpenses.map((expense) => ({ breakdown: [], ...expense })),
+    fukushimaCityExpenses,
     fukushimaCityTrips as unknown as Trip[],
     shizuokaAssemblyEvidence([
       ...fukushimaCityAssemblyEvidence, ...fukushimaCityVoteEvidence,
@@ -701,12 +695,9 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   ),
   "yamagata-prefecture": registry(
     yamagataPrefectureAssembly, yamagataPrefectureDisclosure, yamagataPrefectureSessions,
-    yamagataPrefectureProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    yamagataPrefectureProposals,
     yamagataPrefectureVotes, yamagataPrefectureFactionVotes,
-    yamagataPrefectureExpenses.map((expense) => ({ breakdown: [], ...expense })),
+    yamagataPrefectureExpenses,
     yamagataPrefectureTrips as unknown as Trip[],
     shizuokaAssemblyEvidence([
       ...yamagataPrefectureAssemblyEvidence, ...yamagataPrefectureVoteEvidence,
@@ -716,12 +707,9 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   ),
   "yamagata-city": registry(
     yamagataCityAssembly, yamagataCityDisclosure, yamagataCitySessions,
-    yamagataCityProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    yamagataCityProposals,
     yamagataCityVotes, yamagataCityFactionVotes,
-    yamagataCityExpenses.map((expense) => ({ breakdown: [], ...expense })),
+    yamagataCityExpenses,
     yamagataCityTrips as unknown as Trip[],
     shizuokaAssemblyEvidence([
       ...yamagataCityAssemblyEvidence, ...yamagataCityVoteEvidence,
@@ -732,11 +720,13 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   "akita-prefecture": registry(
     akitaPrefectureAssembly, akitaPrefectureDisclosure, akitaPrefectureSessions,
     akitaPrefectureProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
       ...proposal,
+      parent_proposal_id: null,
+      related_fiscal_record_ids: [] as string[],
+      related_project_ids: [] as string[],
     })),
     akitaPrefectureVotes, akitaPrefectureFactionVotes,
-    akitaPrefectureExpenses.map((expense) => ({ breakdown: [], ...expense })),
+    akitaPrefectureExpenses,
     akitaPrefectureTrips as unknown as Trip[],
     shizuokaAssemblyEvidence([
       ...akitaPrefectureAssemblyEvidence, ...akitaPrefectureVoteEvidence,
@@ -746,12 +736,9 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   ),
   "akita-city": registry(
     akitaCityAssembly, akitaCityDisclosure, akitaCitySessions,
-    akitaCityProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    akitaCityProposals,
     akitaCityVotes, akitaCityFactionVotes,
-    akitaCityExpenses.map((expense) => ({ breakdown: [], ...expense })),
+    akitaCityExpenses,
     akitaCityTrips as unknown as Trip[],
     shizuokaAssemblyEvidence([
       ...akitaCityAssemblyEvidence, ...akitaCityVoteEvidence,
