@@ -61,7 +61,7 @@ export type MunicipalityKey =
   | "kumamoto-prefecture"
   | "niigata-prefecture"
   | "okayama-city"
-  | "akita-city";
+  | "akita-city"
   | "yamagata-city";
 export type SourceRecord = {
   id: string;
