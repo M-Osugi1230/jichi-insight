@@ -1,0 +1,55 @@
+{
+  "id": "phase16-fukushima-plan-review",
+  "name_ja": "福島県",
+  "next_action": "Register the priority projects in the project stage after fixing the registration unit as the 18 policies of the Comprehensive Plan and confirming the published form of the policy evaluation sheets; register the governor's promises in the promise stage from the official 2026 election bulletin, which survives on the election commission's current pages; add the assembly layer in the assembly stage, where the FY2025 settlement bills (four bills) stand continued in committee and remain pending; keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "070009",
+  "quality_boundary": "The prefecture's top-level plan is the Fukushima Prefecture Comprehensive Plan (福島県総合計画, adopted in October 2021, period FY2022-FY2030). This review fixes that identity, the three-field structure (18 policies, 76 measures, 255 initiatives), the basic indicators set per measure, the two implementation plans run as its twin wheels (ふくしま創生総合戦略 and 第2期福島県復興計画), and the progress governance based on the policy-level evaluation sheets (政策分野別主要施策評価調書). Fukushima Prefecture had no reviewed package in this repository before this stage, so this review rests on the prefecture's and the MIC's own published documents alone. The registration unit for the project stage is fixed as the policy (政策), the unit at which the prefecture itself publishes its official evaluation.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "福島県公式サイト「福島県総合計画（2022-2030）」ページ、および計画の全体構成・一部抜粋",
+      "evidence_role": "current_plan_identity",
+      "id": "fukushima-plan-current-identity",
+      "review_note": "計画名・策定時期・計画期間・最上位計画としての位置付けは、県公式の計画ページと抜粋資料で一致を確認した。",
+      "source_url": "https://www.pref.fukushima.lg.jp/sec/11015b/comprehensiveplan2022-2030.html",
+      "statement": "福島県の県政運営の最上位計画は「福島県総合計画」であり、2021年10月に策定され、計画期間は2022年度から2030年度までである。将来の姿として「福島の未来の姿」を掲げ、復興・再生と持続可能な地域づくりを一体で進める計画として位置付けられている。",
+      "title": "現行計画（福島県総合計画、2021年10月策定）",
+      "value": "福島県総合計画（令和4年度〜令和12年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "福島県総合計画について（全体構成・一部抜粋）の体系図",
+      "evidence_role": "policy_structure",
+      "id": "fukushima-plan-policy-structure",
+      "review_note": "分野・政策・施策・取組の数と内訳は抜粋資料の体系図で直接確認した。基本指標は施策単位で設定される。",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/481526.pdf",
+      "statement": "計画の体系は3分野（ひと・暮らし・しごと）の下に18政策・76施策・255取組を配置する。内訳は、ひと分野が5政策・19施策・66取組、暮らし分野が6政策・32施策・106取組、しごと分野が7政策・25施策・83取組であり、基本指標は施策単位で設定される。",
+      "title": "計画の体系（3分野・18政策・76施策・255取組）",
+      "value": "3分野（ひと・暮らし・しごと）／18政策／76施策／255取組／基本指標は施策単位"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "福島県総合計画について（全体構成・一部抜粋）の実行計画の位置付け",
+      "evidence_role": "implementation_layer",
+      "id": "fukushima-plan-implementation-layer",
+      "review_note": "両輪の位置付けは抜粋資料で確認した。両計画それぞれの体系と公表形式は段階2で個別に確認する。",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/481526.pdf",
+      "statement": "総合計画の実行計画として、「ふくしま創生総合戦略」（人口ビジョンと創生総合戦略）と「第2期福島県復興計画」を両輪と位置付け、総合計画の進行管理と一体で進める構成である。",
+      "title": "実行計画（ふくしま創生総合戦略と第2期福島県復興計画の両輪）",
+      "value": "ふくしま創生総合戦略（人口ビジョン＋創生総合戦略）／第2期福島県復興計画"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "福島県総合計画審議会資料「福島県総合計画の進行管理について（案）」および「令和8年度 福島県総合計画進行管理」資料",
+      "evidence_role": "progress_governance",
+      "id": "fukushima-plan-progress-governance",
+      "review_note": "公式評価の公表単位が「政策」であることを進行管理資料で確認したため、段階2の登録単位は政策とする。",
+      "source_url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/759194.pdf",
+      "statement": "進行管理は、18政策分の「政策分野別主要施策評価調書」により政策単位で点検・評価し、基本指標の達成度と併せて公表する。政策の評価は4段階の定性評価である。",
+      "title": "政策単位の評価調書による進行管理",
+      "value": "政策分野別主要施策評価調書（18政策）／基本指標の達成度／政策単位の4段階評価"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-26"
+}

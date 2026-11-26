@@ -1690,6 +1690,50 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-manifesto-source-search-fukushima-pref-2026",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-fukushima-pref-2026",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "福島県選挙管理委員会の現行公式ページ「候補者に関する情報（県知事選挙）」で候補者7人の構成と選挙公報へのリンクを確認し、選挙公報PDFと音声読み上げ用データ（内堀まさお候補者提出原稿）を取得した。",
+        "source_ids": [
+          "fukushima-pref-governor-election-2026-candidates",
+          "fukushima-pref-governor-election-2026-bulletin",
+          "fukushima-pref-governor-election-2026-bulletin-voice"
+        ],
+        "location_note": "県選管の候補者情報ページと、そこからリンクされる選挙公報PDF・音声読み上げ用データ（2026-11-26取得）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙公報（候補者7人分、全候補者掲載）は県選管の現行公式ページに現存し、ファイルの同一性は SHA-256（50243021adc356bb3bfcd6d64434c8901bf2f627719b6e930f502d7acc947da9、6,977,745バイト）で記録した。",
+        "source_ids": [
+          "fukushima-pref-governor-election-2026-bulletin"
+        ],
+        "location_note": "選挙公報PDF（県選管の現行公式ページからリンク）。",
+        "decision": "accepted",
+        "review_note": "公報そのものが現行公式ページで確認できたため located（source_registered）として登録した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を出典登録したため result_status を source_registered とした。公約の抽出・登録は段階3で行うため、本探索では公約レコードは作成していない。",
+        "source_ids": [
+          "fukushima-pref-governor-election-2026-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（県選管の現行公式ページで現存）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "公約レコードの抽出・登録は段階3で行う（本探索は公報の所在確定まで）。",
+      "内堀候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定していない（存在しないと判定するものではない）。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-manifesto-source-search-akita-pref-2025",
     "subject_type": "manifesto_source_search",
     "subject_id": "manifesto-source-search-akita-pref-2025",

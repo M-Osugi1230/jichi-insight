@@ -41,15 +41,15 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 195
-    assert len({record["id"] for record in catalog["records"]}) == 195
+    assert len(catalog["records"]) == 203
+    assert len({record["id"] for record in catalog["records"]}) == 203
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 42
+    assert len(terms) == 43
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-062014",
         "jp-local-400009",
@@ -88,6 +88,7 @@ def test_executive_registry_matches_shared_contracts() -> None:
         "jp-local-431001",
         "jp-local-430005",
         "jp-local-151009",
+        "jp-local-070009",
         "jp-local-150002",
         "jp-local-052019",
         "jp-local-050008",
@@ -359,6 +360,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-052019": "2029-04-11",
         "jp-local-050008": "2029-04-19",
         "jp-local-060003": "2029-02-13",
+        "jp-local-070009": "2030-11-11",
         # Niigata Prefecture's end (2030-06-09) is stated directly in
         # the prefectural election commission's official term-expiry
         # list (2026-10-16 edition: 花角英世 R12年6月9日, third
@@ -449,6 +451,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-052019": "2025-04-12",
         "jp-local-050008": "2025-04-20",
         "jp-local-060003": "2025-02-14",
+        "jp-local-070009": "2026-11-12",
         "jp-local-072010": "2025-12-08",
     }
     for term in terms:

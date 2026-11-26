@@ -1,0 +1,2037 @@
+[
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 1344287454000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 1306838789000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 298171646000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入のうち県税。総務省『令和4年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和4年度財政状況資料集』「普通会計の状況」（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-formal-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 37448665000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-carryover-resources",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 28801484000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "翌年度へ繰り越すべき財源。総務省『令和4年度都道府県決算カード』（福島県シート）の印字値を収録し、形式収支から実質収支を差し引いた額とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-real-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 8647181000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.7,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質収支比率。総務省『令和4年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 495387012000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（福島県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・自動車取得税交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1534403000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 94721458000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 150103765000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 110622329000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 3134327000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 86610732000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 176817606000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 242597767000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 44329544000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 211557444000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 18347450000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 109617555000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 84156000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 830843000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 582849000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 49676179000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 375097000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 634829000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 4660456000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（福島県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 377718445000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 243601923000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 177181870000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 24741970000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 109374552000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 631318915000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 104323166000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 27848632000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 316769392000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 10668235000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 56262322000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 802150000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 114645018000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 297801429000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 279453979000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 175889403000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 90847452000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 18347450000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-fund-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 528471516000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 32308283000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 29929775000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 466233458000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-debt-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 1520093566000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度都道府県決算カード』（福島県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 1013065250000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 507028316000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 96,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "経常収支比率。総務省『令和4年度都道府県決算カード』（福島県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」変種値は収録していない）。福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 6.7,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 112.6,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.51343,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和4年度都道府県決算カード』（福島県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2022-ordinary-population",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1818581,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "住民基本台帳人口（2023年1月1日現在）。総務省『令和4年度都道府県決算カード』（福島県シート）の値（福島県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2022",
+      "fukushima-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 1257263227000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 1224298248000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 301967791000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入のうち県税。総務省『令和5年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和5年度財政状況資料集』「普通会計の状況」（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-formal-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 32964979000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-carryover-resources",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 25263354000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "翌年度へ繰り越すべき財源。総務省『令和5年度都道府県決算カード』（福島県シート）の印字値を収録し、形式収支から実質収支を差し引いた額とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-real-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 7701625000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質収支比率。総務省『令和5年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 498570050000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（福島県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1582806000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 114204019000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 142732388000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 58581928000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 3302484000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 93180236000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 158860880000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 194436458000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 44101183000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 208830055000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 14944538000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 131723274000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 71944000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 955185000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 1033663000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 49357563000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 374002000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 109940000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 808483000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 5107219000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（福島県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 380909259000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 230379263000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 176462588000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 21061955000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 129468041000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 593847680000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 59251483000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 29033279000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 297363432000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 11372208000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 76190575000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 784240000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 119852463000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 249541309000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 234596771000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 141066474000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 81056591000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 14944538000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-fund-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 526501975000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 28151145000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 29929775000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 468421055000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-debt-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 1509399810000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度都道府県決算カード』（福島県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 1042750855000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 466648955000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 94.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "経常収支比率。総務省『令和5年度都道府県決算カード』（福島県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」変種値は収録していない）。福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 6.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 114.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.50548,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和5年度都道府県決算カード』（福島県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2023-ordinary-population",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1795219,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "住民基本台帳人口（2024年1月1日現在）。総務省『令和5年度都道府県決算カード』（福島県シート）の値（福島県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2023",
+      "fukushima-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 1191872923000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 1152505464000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 301357477000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入のうち県税。総務省『令和6年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和6年度財政状況資料集』「普通会計の状況」（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-formal-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 39367459000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-carryover-resources",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 31555239000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "翌年度へ繰り越すべき財源。総務省『令和6年度都道府県決算カード』（福島県シート）の印字値を収録し、形式収支から実質収支を差し引いた額とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-real-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 7812220000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質収支比率。総務省『令和6年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 509718963000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（福島県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・自動車取得税交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1702546000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 105563252000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 144653810000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 46399879000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 4041378000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 82723184000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 133523501000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 196113180000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 46921280000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 222621328000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 10730116000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 97881335000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 90901000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 1444689000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 1863433000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 50206186000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 357892000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 857314000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 4810260000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（福島県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 367059832000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 248698211000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 181734416000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 20635148000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 97726473000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 563875612000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 56969374000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 34160492000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 287519812000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 10780972000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 69385586000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 960686000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 104098690000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 221570020000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 210839904000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 123315257000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 74240514000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 10730116000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-fund-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 506894144000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度都道府県決算カード』（福島県シート）の千円単位の値を円換算し、福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 29396995000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 29929775000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 447567374000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-debt-balance",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 1519351118000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度都道府県決算カード』（福島県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 1086973123000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 432377995000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 95.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "経常収支比率。総務省『令和6年度都道府県決算カード』（福島県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」変種値は収録していない）。福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 6,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 115.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（福島県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.51927,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和6年度都道府県決算カード』（福島県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-070009-fiscal-2024-ordinary-population",
+    "municipality_id": "jp-local-070009",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1771314,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "住民基本台帳人口（2025年1月1日現在）。総務省『令和6年度都道府県決算カード』（福島県シート）の値（福島県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "fukushima-prefecture-mic-settlement-card-fy2024",
+      "fukushima-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  }
+]

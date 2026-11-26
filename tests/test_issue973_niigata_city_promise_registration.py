@@ -289,9 +289,9 @@ def test_packets_cover_provenance_and_boundary() -> None:
 
 def test_bulletin_source_and_term_connection() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.66.0"
-    assert len(catalog["records"]) == 195
-    assert len(catalog["records"]) == 195
+    assert catalog["version"] == "0.67.0"
+    assert len(catalog["records"]) == 203
+    assert len(catalog["records"]) == 203
     source = next(
         record for record in catalog["records"] if record["id"] == BULLETIN_ID
     )

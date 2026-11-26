@@ -2203,6 +2203,61 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-fukushima-pref-current-governor-term",
+    "subject_id": "jp-local-070009-executive-2026-11-12",
+    "subject_type": "executive_term",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "福島県知事は内堀雅雄である。",
+        "location_note": "福島県公式サイト「知事プロフィール」。",
+        "source_ids": [
+          "fukushima-pref-governor"
+        ],
+        "decision": "accepted",
+        "review_note": "公式プロフィールで氏名（内堀雅雄、うちぼり まさお）を確認した。同ページ本文は「現在3期目」の表記のまま更新されていないため、期数の根拠には用いていない（4期目であることは「知事の動き」の初登庁記録で確認）。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する知事選挙は2026年10月25日に執行され、内堀雅雄が585,641票を得て当選した（有効投票645,250票、投票率44.05%）。",
+        "location_note": "福島県選挙管理委員会の公式選挙速報サイトで公表された「確定開票」ファイル（開票結果Excel・県計行）および「確定投票」ファイル（投票結果Excel・県計行）。",
+        "source_ids": [
+          "fukushima-pref-governor-election-2026-ballot-count",
+          "fukushima-pref-governor-election-2026-turnout",
+          "fukushima-pref-election-2026-schedule"
+        ],
+        "decision": "accepted",
+        "review_note": "得票数は県選管の公式速報サイトの「確定開票」ファイルの印字値であり、報道値ではない。候補者7人の得票合計（645,250票）が有効投票数と一致し、投票者総数650,859人は「確定投票」ファイルの投票者数とも一致することを検算した。投票率44.05%は「確定投票」ファイルの県計（有権者数1,477,389人・投票者数650,859人）による。"
+      },
+      {
+        "field": "term_start",
+        "statement": "現任期の開始日は2026年11月12日である。",
+        "location_note": "福島県選挙管理委員会「第23回福島県知事選挙 選挙期日等の公表について」（前任期の満了日2026年11月11日を明記）および福島県公式サイト「知事の動き」（令和8年11月12日「知事初登庁（4期目）」）。",
+        "source_ids": [
+          "fukushima-pref-election-2026-schedule",
+          "fukushima-pref-governor-inauguration-2026"
+        ],
+        "decision": "accepted",
+        "review_note": "前任期の満了日が2026年11月11日であるため、公職選挙法第259条ただし書により新任期は翌12日から始まる。初登庁の公式記録とも一致する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "現任期の満了日は2030年11月11日である。",
+        "location_note": "地方自治法第140条（任期4年）および公職選挙法第259条ただし書による構成。前任期の満了日2026年11月11日は福島県選挙管理委員会の選挙期日公表に明記されている。",
+        "source_ids": [
+          "fukushima-pref-election-2026-schedule"
+        ],
+        "decision": "accepted",
+        "review_note": "開始日2026年11月12日から4年間の任期として構成した。満了日そのものを印字した県選管の文書は本登録時点では確認できていない（open_questions参照）。"
+      }
+    ],
+    "open_questions": [
+      "任期満了日2030年11月11日を直接印字した福島県選挙管理委員会の文書（任期満了日調等）は未確認であり、満了日は前任期の満了日（県選管の選挙期日公表に明記）と公職選挙法・地方自治法の規定からの構成である。県選管が任期満了日調を公表した場合はそちらで再確認する。",
+      "選挙公報は県選管の現行公式ページに現存し出典登録済みだが、公約レコードの抽出・登録は段階3で行う。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-yamagata-pref-current-governor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-060003-executive-2025-02-14",

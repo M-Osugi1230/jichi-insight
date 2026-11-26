@@ -172,13 +172,13 @@ def test_election_report_source_is_registered_in_the_catalog() -> None:
 
     # The stage-3 registration of the election report is the only
     # catalog addition: version 0.63.0 / 176 records.
-    assert catalog["version"] == "0.66.0"
-    assert len(catalog["records"]) == 195
-    assert len({record["id"] for record in catalog["records"]}) == 195
+    assert catalog["version"] == "0.67.0"
+    assert len(catalog["records"]) == 203
+    assert len({record["id"] for record in catalog["records"]}) == 203
     # catalog addition: version 0.63.0 / 178 records.
-    assert catalog["version"] == "0.66.0"
-    assert len(catalog["records"]) == 195
-    assert len({record["id"] for record in catalog["records"]}) == 195
+    assert catalog["version"] == "0.67.0"
+    assert len(catalog["records"]) == 203
+    assert len({record["id"] for record in catalog["records"]}) == 203
 
     matches = [r for r in catalog["records"] if r["id"] == REPORT_SOURCE_ID]
     assert len(matches) == 1
