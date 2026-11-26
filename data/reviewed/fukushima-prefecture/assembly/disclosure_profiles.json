@@ -1,0 +1,105 @@
+[
+  {
+    "as_of": "2026-11-27",
+    "assembly_id": "jp-local-070009-assembly-2023",
+    "confidence": "high",
+    "id": "jp-local-070009-assembly-2023-disclosure-2026",
+    "items": [
+      {
+        "availability": "published",
+        "granularity": "member",
+        "item": "member_roster",
+        "note": "選挙区別名簿・会派別名簿を県議会公式サイトで公開。令和8年11月2日現在で定数58名・現員58名（2026年10月の補欠選挙で欠員解消）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_composition",
+        "note": "会派別名簿に5会派の構成を掲載（自由民主党福島県議会議員会31名・福島県議会県民連合議員会17名・日本共産党福島県議会議員団4名・公明党福島県議会議員団4名・日本維新・無所属の会2名）。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "assembly",
+        "item": "committee_composition",
+        "note": "常任委員会別名簿と「県議会の仕組み」ページで、常任委員会6・議会運営委員会・特別委員会の構成を公開。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "proposals_and_results",
+        "note": "定例会ごとに結果ページ・知事提出議案件名・議決件数一覧・議員提出議案付託表を公開。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "faction_votes",
+        "note": "「各会派採決態度一覧」を会期ごとに公開（○＝賛成、×＝反対、※＝退席）。自治体自身の呼称は「採決態度」。令和8年6月定例会分は会議録との突合で事後の表決結果と整合することを確認したが、9月定例会の会議録が未公表のため、9月分の method は unknown とした。",
+        "source_url": null
+      },
+      {
+        "availability": "not_published",
+        "granularity": "none",
+        "item": "member_votes",
+        "note": "議員個人別の賛否は公表されていない。公表されているのは会派単位の採決態度のみ。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "faction",
+        "item": "political_activity_expense_reports",
+        "note": "会派へ交付（月額30万円×所属議員数）。令和7年度分の会派別収支報告の概要（交付額・執行額・返還額・経費項目別執行額）を公開。",
+        "source_url": null
+      },
+      {
+        "availability": "restricted",
+        "granularity": "document",
+        "item": "political_activity_expense_receipts",
+        "note": "領収書等の写しはWeb公表されておらず、議会事務局総務課での閲覧・請求による。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "inspection_trip_reports",
+        "note": "海外行政調査（令和7年度A班・B班）の報告書を公開し、日程・視察先・参加議員を掲載。費用は報告書に掲載なし。委員会の県外調査は一覧形式の公表を確認できなかった。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "meeting_minutes",
+        "note": "本会議の会議録を公開（令和8年6月定例会分まで確認）。令和8年9月定例会分は順次公表とされ、本登録時点では未公表。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "session_broadcast",
+        "note": "定例会の録画映像を福島県議会公式チャンネル（YouTube）で公開。",
+        "source_url": null
+      },
+      {
+        "availability": "published",
+        "granularity": "document",
+        "item": "petition_results",
+        "note": "請願審査結果表を会期ごとに公開（令和8年9月定例会は請願4件：不採択1件・継続3件）。",
+        "source_url": null
+      }
+    ],
+    "review_status": "reviewed",
+    "sources": [
+      "fukushima-pref-assembly-roster-factions",
+      "fukushima-pref-assembly-structure",
+      "fukushima-pref-assembly-2026-sep-results",
+      "fukushima-pref-assembly-2026-sep-faction-positions",
+      "fukushima-pref-assembly-2026-sep-petition-results",
+      "fukushima-pref-assembly-activity-expenses-fy2025",
+      "fukushima-pref-assembly-overseas-trip-a-fy2025",
+      "fukushima-pref-assembly-overseas-trip-b-fy2025"
+    ]
+  }
+]

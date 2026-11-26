@@ -1,0 +1,78 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "term_and_seats",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "fukushima-pref-assembly-roster-factions",
+          "fukushima-pref-assembly-roster-districts"
+        ],
+        "statement": "福島県議会の定数は58名、現員は58名（令和8年11月2日現在）。議員の任期は2027年11月19日まで（任期満了日は選挙区別名簿の表題および須賀川市選挙管理委員会の公職別任期満了一覧で公式確認）。任期開始日2023年11月20日は前任期の満了日（2023年11月19日）の翌日として確定した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "factions",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "fukushima-pref-assembly-roster-factions"
+        ],
+        "statement": "会派は5会派（自由民主党福島県議会議員会31名・福島県議会県民連合議員会17名・日本共産党福島県議会議員団4名・公明党福島県議会議員団4名・日本維新・無所属の会2名）で、会派別名簿の印字どおり。2026年10月の補欠選挙（福島市・郡山市・いわき市選挙区）で欠員3名が解消された。"
+      },
+      {
+        "decision": "accepted",
+        "field": "committees",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "fukushima-pref-assembly-structure"
+        ],
+        "statement": "常任委員会は総務・企画環境・福祉公安・商労文教・農林水産・土木の6委員会。このほか議会運営委員会、9月定例会に設置される決算審査特別委員会、令和7年12月定例会で設置された調査特別委員会3（復興・創生推進対策／県民の安全・安心対策／人口減少・地域活力創造対策）を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "faction_position_table_nature",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "fukushima-pref-assembly-2026-jun-faction-positions",
+          "fukushima-pref-assembly-2026-jun-minutes",
+          "fukushima-pref-assembly-2026-sep-faction-positions"
+        ],
+        "statement": "「各会派採決態度一覧」の性質は、令和8年6月定例会分について同定例会の会議録（2026年7月8日本会議）と突合して判定した。賛否表で日本共産党のみ反対の知事提出議案第1・14・15・16・22・23号は起立採決で「起立多数・原案可決」、全会派賛成の議案群は異議なしの一括採決、議員提出議案第150・151号は「起立少数・否決」と記録され、賛否表と完全一致した。したがって同表は事後の表決結果を会派別に集約したものと判定する。ただし令和8年9月定例会の会議録は本登録時点で未公表のため、9月分の votes の method は先例どおり unknown とし、会議録公表後に追認確認する。"
+      }
+    ],
+    "id": "evidence-jp-local-070009-assembly-2023",
+    "open_questions": [
+      "令和8年9月定例会の会議録が公表されたら、賛否表（各会派採決態度一覧）と採決方法・結果を突合し、9月分 votes の method の追認確認を行う。",
+      "令和7年度決算4件（知事提出議案第20号〜第23号）は継続審査中。結論公表後に outcome を更新する。",
+      "前会期から継続審査中の議員等提出議案7件は、9月定例会の公式資料では件数のみが公表され番号・件名が列挙されていないため登録対象外とした。個別資料で特定できた時点で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-070009-assembly-2023",
+    "subject_type": "assembly"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "session_dates",
+        "location_note": null,
+        "review_note": null,
+        "source_ids": [
+          "fukushima-pref-assembly-2026-sep-results",
+          "fukushima-pref-assembly-2026-sep-vote-results"
+        ],
+        "statement": "令和8年9月定例会は2026年9月15日に開会し、10月5日に閉会した（会期21日間）。知事提出議案23件（19件原案可決・決算4件継続審査）、議員等提出議案11件（6件可決・1件否決・4件継続審査）、請願4件（1件不採択・3件継続）が公式結果資料に印字されている。報告第1号〜第9号は議決対象でないため登録していない。"
+      }
+    ],
+    "id": "evidence-jp-local-070009-assembly-2023-session-2026-09",
+    "open_questions": [],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-070009-assembly-2023-session-2026-09",
+    "subject_type": "session"
+  }
+]
