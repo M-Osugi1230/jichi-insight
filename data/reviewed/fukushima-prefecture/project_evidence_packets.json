@@ -1,0 +1,1928 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「ひと」分野・政策1「全国に誇れる健康長寿県へ」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「ひと」分野・政策1の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-health-longevity"
+    ],
+    "statement": "公式名称は「全国に誇れる健康長寿県へ」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「ひと」分野・政策1の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-health-longevity"
+    ],
+    "statement": "東日本大震災以降、メタボリックシンドローム該当者・予備群の割合が全国ワースト上位にあるなど本県の健康指標は悪化しており、その改善が急務である。若い世代から高齢者までライフステージに応じた疾病予防や健康づくりに取り組み、全国に誇れる健康長寿県を目指す（計画第4章「ひと」分野・政策1の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-health-longevity"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は2件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-health-longevity",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-health-longevity",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「ひと」分野・政策2「結婚・出産・子育ての希望をかなえる環境づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「ひと」分野・政策2の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-marriage-childbirth-childrearing"
+    ],
+    "statement": "公式名称は「結婚・出産・子育ての希望をかなえる環境づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「ひと」分野・政策2の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-marriage-childbirth-childrearing"
+    ],
+    "statement": "未婚率や平均初婚年齢の上昇により出生数・合計特殊出生率は減少傾向にある一方、未婚者の約7割が結婚の意思を持っている。出会いの機会の周知や交際・成婚の後押しを含め、結婚・出産・子育ての希望をかなえる環境づくりを進める（計画第4章「ひと」分野・政策2の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-marriage-childbirth-childrearing"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-marriage-childbirth-childrearing",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-marriage-childbirth-childrearing",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「ひと」分野・政策3「「福島ならでは」の教育の充実」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「ひと」分野・政策3の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-fukushima-education"
+    ],
+    "statement": "公式名称は「「福島ならでは」の教育の充実」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「ひと」分野・政策3の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-fukushima-education"
+    ],
+    "statement": "全国学力・学習状況調査で算数・数学や英語が全国平均を下回るなど学力面に課題があり、心のケアが必要な子どもが多く、不登校児童生徒数も増加している。「福島ならでは」の教育の充実を図る（計画第4章「ひと」分野・政策3の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-fukushima-education"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は2件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-fukushima-education",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-fukushima-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「ひと」分野・政策4「誰もがいきいきと暮らせる県づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「ひと」分野・政策4の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-inclusive-community-life"
+    ],
+    "statement": "公式名称は「誰もがいきいきと暮らせる県づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「ひと」分野・政策4の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-inclusive-community-life"
+    ],
+    "statement": "社会情勢の変化に伴い人権の問題が多様化・複雑化する中、国際化や高齢化への対応、障がい者の社会参加を進め、ユニバーサルデザインの考え方を幅広い分野に取り入れて、誰もがいきいきとした人生を享受できる共生社会の実現を目指す（計画第4章「ひと」分野・政策4の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-inclusive-community-life"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-inclusive-community-life",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-inclusive-community-life",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「ひと」分野・政策5「福島への新しい人の流れづくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「ひと」分野・政策5の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-new-inflow-of-people"
+    ],
+    "statement": "公式名称は「福島への新しい人の流れづくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「ひと」分野・政策5の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-new-inflow-of-people"
+    ],
+    "statement": "本県への移住・定住者数は震災・原発事故後に落ち込んだ後、増加を続けており、20代から40代の若い世代の移住者が増えている。テレワークの普及等も背景に、福島への新しい人の流れづくりを進める（計画第4章「ひと」分野・政策5の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-new-inflow-of-people"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-new-inflow-of-people",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-new-inflow-of-people",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「暮らし」分野・政策1「東日本大震災・原子力災害からの復興・再生」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「暮らし」分野・政策1の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-reconstruction-and-revitalization"
+    ],
+    "statement": "公式名称は「東日本大震災・原子力災害からの復興・再生」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「暮らし」分野・政策1の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-reconstruction-and-revitalization"
+    ],
+    "statement": "東日本大震災・原子力災害から10年が経過し復興・再生は着実に前進している一方、いまだ多くの方が避難を継続しており、生活再建、事業再開支援、避難先での支援や帰還支援を引き続き進める（計画第4章「暮らし」分野・政策1の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-reconstruction-and-revitalization"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は5件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-reconstruction-and-revitalization",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-reconstruction-and-revitalization",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「暮らし」分野・政策2「災害に強く治安が確保されている安全・安心な県づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「暮らし」分野・政策2の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-disaster-resilience-and-safety"
+    ],
+    "statement": "公式名称は「災害に強く治安が確保されている安全・安心な県づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「暮らし」分野・政策2の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-disaster-resilience-and-safety"
+    ],
+    "statement": "大規模な自然災害が頻発し災害リスクが高まる中、震災・原発事故の教訓の継承と併せ、道路整備・河川改修・砂防施設整備などのハード対策と避難体制の構築などのソフト対策を適切に組み合わせ、災害に強く治安が確保された安全・安心な県づくりを進める（計画第4章「暮らし」分野・政策2の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-disaster-resilience-and-safety"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は2件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-disaster-resilience-and-safety",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-disaster-resilience-and-safety",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「暮らし」分野・政策3「安心の医療、介護・福祉提供体制の整備」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「暮らし」分野・政策3の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-medical-care-welfare-system"
+    ],
+    "statement": "公式名称は「安心の医療、介護・福祉提供体制の整備」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「暮らし」分野・政策3の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-medical-care-welfare-system"
+    ],
+    "statement": "震災・原発事故により医療、介護・福祉の提供体制の脆弱化が顕在化し、全県的に人材不足と地域偏在が深刻化している。急速な高齢化の進行も踏まえ、安心の医療、介護・福祉提供体制の整備を進める（計画第4章「暮らし」分野・政策3の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-medical-care-welfare-system"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は5件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-medical-care-welfare-system",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-medical-care-welfare-system",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「暮らし」分野・政策4「環境と調和・共生する県づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「暮らし」分野・政策4の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-environment-coexistence"
+    ],
+    "statement": "公式名称は「環境と調和・共生する県づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「暮らし」分野・政策4の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-environment-coexistence"
+    ],
+    "statement": "地球規模での温暖化問題や海洋プラスチックごみ問題等が顕在化する中、脱炭素社会や循環型社会の実現に向け、徹底した省エネルギー対策や再生可能エネルギー等の最大限の活用、廃棄物の排出抑制や再資源化等を進め、環境と調和・共生する県づくりを目指す（計画第4章「暮らし」分野・政策4の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-environment-coexistence"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-environment-coexistence",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-environment-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「暮らし」分野・政策5「過疎・中山間地域の持続的な発展」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「暮らし」分野・政策5の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-depopulated-mountainous-areas"
+    ],
+    "statement": "公式名称は「過疎・中山間地域の持続的な発展」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「暮らし」分野・政策5の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-depopulated-mountainous-areas"
+    ],
+    "statement": "本県は過疎・中山間地域が県土の約8割を占め、県民の約3割が居住している。過疎化の進行により日常生活に必要なサービスの維持が困難となるおそれがあり、市町村との連携等を図りながら過疎・中山間地域の持続的な発展を進める（計画第4章「暮らし」分野・政策5の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-depopulated-mountainous-areas"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-depopulated-mountainous-areas",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-depopulated-mountainous-areas",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「暮らし」分野・政策6「ふれあいと親しみのある魅力あふれる県づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「暮らし」分野・政策6の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-community-charm"
+    ],
+    "statement": "公式名称は「ふれあいと親しみのある魅力あふれる県づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「暮らし」分野・政策6の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-community-charm"
+    ],
+    "statement": "人口減少・高齢化等の進行によるまちなかのにぎわい低下や遊休不動産の増加などにより、地域コミュニティの維持・形成が課題となっている。ふれあいと親しみのある魅力あふれる県づくりを進める（計画第4章「暮らし」分野・政策6の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-community-charm"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は2件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-community-charm",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-community-charm",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策1「地域産業の持続的発展」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策1の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-regional-industry-development"
+    ],
+    "statement": "公式名称は「地域産業の持続的発展」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策1の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-regional-industry-development"
+    ],
+    "statement": "人口減少・少子高齢化の急速な進行に伴う生産年齢人口の減少やデジタル化の進展、働き方改革、新型コロナウイルス感染症の影響など急激な社会情勢の変化により、地域経済の基盤である中小企業・小規模企業の経営に大きな影響が生じている。地域産業の持続的発展を図る（計画第4章「しごと」分野・政策1の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-regional-industry-development"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-regional-industry-development",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-regional-industry-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策2「福島イノベーション・コースト構想の推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策2の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-innovation-coast-initiative"
+    ],
+    "statement": "公式名称は「福島イノベーション・コースト構想の推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策2の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-innovation-coast-initiative"
+    ],
+    "statement": "震災・原発事故によって失われた浜通り地域等の産業を回復し、新たな産業基盤の構築を目指す福島イノベーション・コースト構想を進めている。産業の集積やサプライチェーンの形成は十分ではなく、その推進を図る（計画第4章「しごと」分野・政策2の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-innovation-coast-initiative"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は4件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-innovation-coast-initiative",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-innovation-coast-initiative",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策3「もうかる農林水産業の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策3の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-profitable-agriculture-forestry-fisheries"
+    ],
+    "statement": "公式名称は「もうかる農林水産業の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策3の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-profitable-agriculture-forestry-fisheries"
+    ],
+    "statement": "本県の農林水産業は県民の暮らしを支える主要産業の一つであるが、震災・原発事故により県産農林水産物等の生産・販売は大きく落ち込み、回復傾向にはあるものの途上にある。もうかる農林水産業の実現を目指す（計画第4章「しごと」分野・政策3の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-profitable-agriculture-forestry-fisheries"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は6件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-profitable-agriculture-forestry-fisheries",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-profitable-agriculture-forestry-fisheries",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策4「再生可能エネルギー先駆けの地の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策4の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-renewable-energy-frontier"
+    ],
+    "statement": "公式名称は「再生可能エネルギー先駆けの地の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策4の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-renewable-energy-frontier"
+    ],
+    "statement": "本県は「福島県再生可能エネルギー推進ビジョン」の下、2040年頃を目途に県内エネルギー需要の100%以上に相当する量を再生可能エネルギーで生み出すという目標を掲げ、「再生可能エネルギー先駆けの地」の実現を目指す（計画第4章「しごと」分野・政策4の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-renewable-energy-frontier"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-renewable-energy-frontier",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-renewable-energy-frontier",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策5「魅力を最大限いかした観光・交流の促進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策5の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-tourism-and-exchange"
+    ],
+    "statement": "公式名称は「魅力を最大限いかした観光・交流の促進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策5の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-tourism-and-exchange"
+    ],
+    "statement": "震災・原発事故により大きく減少した本県の観光客入込数は、回復傾向にあるものの震災前の水準まで回復していない。観光資源の魅力発信や教育旅行誘致、ホープツーリズム等により、魅力を最大限いかした観光・交流の促進を図る（計画第4章「しごと」分野・政策5の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-tourism-and-exchange"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-tourism-and-exchange",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-tourism-and-exchange",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策6「福島の産業を支える人材の確保・育成」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策6の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-industrial-workforce"
+    ],
+    "statement": "公式名称は「福島の産業を支える人材の確保・育成」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策6の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-industrial-workforce"
+    ],
+    "statement": "人口減少・少子高齢化の進行により企業における人材不足が顕著となっており、業種間・地域間のミスマッチなど深刻な人材不足により県内中小企業の競争力低下が懸念される。福島の産業を支える人材の確保・育成を進める（計画第4章「しごと」分野・政策6の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-industrial-workforce"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は1件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-industrial-workforce",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-industrial-workforce",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画第4章の体系（第4章「政策分野別の主要施策の体系」）および令和8年度進行管理の政策分野別主要施策評価調書。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（評価調書・政策に紐付く指標一覧）の公表単位と一致する。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "登録単位は福島県総合計画の政策とし、本件は「しごと」分野・政策7「地域を結ぶ社会基盤の整備促進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画第4章「しごと」分野・政策7の見出し（政策別PDF）。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-regional-transport-infrastructure"
+    ],
+    "statement": "公式名称は「地域を結ぶ社会基盤の整備促進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/fukushima_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "fukushima-pref-plan-chapter4-framework",
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "母集団は総合計画の政策18件。本政策を含む全18政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画第4章「しごと」分野・政策7の本文冒頭（現状・課題）。",
+    "review_note": "県の記述の要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-regional-transport-infrastructure"
+    ],
+    "statement": "ふくしま復興再生道路を始めとした復興の基盤となる道路整備を引き続き進めるとともに、災害時における交通体系の強化や観光振興、県内連携強化に向けた道路ネットワークの確保を進めるなど、地域を結ぶ社会基盤の整備促進を図る（計画第4章「しごと」分野・政策7の本文冒頭の現状・課題に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画第4章の政策の記載（所管部局の明示なし）。",
+    "review_note": "計画には政策単位の所管部局が明示されていないため、推測で補完しない。",
+    "source_ids": [
+     "fukushima-pref-plan-policy-regional-transport-infrastructure"
+    ],
+    "statement": "計画に政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "県の予算資料は事業単位・款単位の公表（令和8年度当初予算の重点プロジェクト集計は事業単位）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "fukushima-pref-plan-page",
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "福島県は総合計画の政策単位の令和7年度予算額・決算額を公表していない。県の予算資料は事業単位・款単位で公表されており（令和8年度当初予算では重点プロジェクト483事業・3,099億円という事業単位の集計があるが、これは政策単位の金額ではない）、政策との公式の対応表がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和8年度進行管理 資料1-2（政策分野別主要施策評価調書）。",
+    "review_note": "叙述による全体評価は評価調書に掲載されているが、rating として転記できる公式の格付ラベルが存在しないため、叙述を格付に読み替えることはしない。指標単位の県の判定は各 KPI の assessment に換算して登録した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-evaluation-sheets"
+    ],
+    "statement": "県は令和8年度進行管理で政策ごとに評価調書を公表し、基本指標の達成状況と叙述による全体評価を示しているが、政策単位の格付ラベル（順調等の段階評価）は公表していないため、official_evaluation は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和8年度進行管理 資料1-3「政策に紐付く指標一覧」。",
+    "review_note": "資料1-3で本政策に紐付くものとして掲載された指標のみを登録した。目標値・実績値は公表値のみを用い、未公表の年度は登録していない。県の判定の換算規則は各 KPI の definition に明記した。",
+    "source_ids": [
+     "fukushima-pref-progress-2026-policy-indicators",
+     "fukushima-pref-plan-indicator-list"
+    ],
+    "statement": "本政策の KPI は2件。いずれも資料1-3で本政策に紐付く指標として掲載されたもので、基準値・令和12年度目標値・公表済みの実績値系列と県の判定を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "fukushima-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-070009-project-2025-regional-transport-infrastructure",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "令和9年度以降の進行管理で実績値・判定が更新された場合に、本登録の KPI を更新する（特に実績値未公表の指標と見込み判定の確定）。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-070009-project-2025-regional-transport-infrastructure",
+  "subject_type": "project"
+ }
+]
