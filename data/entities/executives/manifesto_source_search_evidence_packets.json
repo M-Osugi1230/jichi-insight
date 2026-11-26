@@ -1897,5 +1897,49 @@
       "市公式URLの公報PDFは削除済みで、Wayback Machine にも200保存がないため、複写と公式原典のダイジェスト照合は実施できていない。段階3の転記時に候補者構成・枠文・投票案内の一致を再確認する。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-yamagata-pref-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-yamagata-pref-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "県選挙管理委員会の選挙録（『選挙の記録』第1編）で当選と得票数（318,364票）を、都道府県選挙管理委員会連合会の知事一覧で任期満了日（令和11年2月13日）を確認し、県公式の知事プロフィールで現職性を確認した（いずれも段階1で照合済み）。あわせて『選挙の記録』第6編に選挙公報が再録されていることを確認した。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-results",
+          "yamagata-pref-governor-term-list",
+          "yamagata-pref-governor"
+        ],
+        "location_note": "選挙録、知事一覧、知事プロフィール（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "県公式サイトから『選挙の記録』第6編PDFを取得し、104ページ下段の吉村みえこ候補欄（5つのチャレンジの●箇条書き11項目とプロフィール欄）を確認した。公報の候補者欄は画像でテキスト層はない。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "『選挙の記録』第6編PDF（全18ページ）の17〜18ページ（印刷ページ104〜105）。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード11件を作成したため、result_status を source_registered とした。吉村候補の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（県選管の公式記録『選挙の記録』に再録され、県公式サイトで現存）であるため confidence は high とする。本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "吉村候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "政策との接続は文言・内容に基づく推定であり、県が公約と政策の公式な対応付けを公表した場合は接続を見直す。"
+    ],
+    "review_status": "reviewed"
   }
 ]

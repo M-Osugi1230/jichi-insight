@@ -20,7 +20,7 @@ def validate(schema_path, value):
 
 def test_manifesto_review_matches_contract_and_preserves_zero_records():
     reviews = load("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 35
+    assert len(reviews) == 36
     bulletin = next(
         review
         for review in reviews

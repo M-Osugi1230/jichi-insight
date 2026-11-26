@@ -1279,5 +1279,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-yamagata-pref-2025",
+    "executive_term_id": "jp-local-060003-executive-2025-02-14",
+    "searched_at": "2026-11-27",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "yamagata-pref-governor-election-2025-bulletin"
+    ],
+    "checked_source_ids": [
+      "yamagata-pref-governor-election-2025-results",
+      "yamagata-pref-governor-term-list",
+      "yamagata-pref-governor",
+      "yamagata-pref-governor-election-2025-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "山形県知事選挙（令和7年1月26日執行）の選挙公報は、段階1で県選挙管理委員会『山形県知事選挙及び山形県議会議員補欠選挙の記録』第6編「6 選挙公報」（104〜105ページ）に原文のまま再録されていることを確認し、出典 yamagata-pref-governor-election-2025-bulletin として登録済みである。段階3では2026-11-27に県公式サイトの現行ページから第6編PDFを改めて取得し、ファイルの同一性を SHA-256 で記録した（50380a71b65b21479e9b4ffb3db24d4f5fff99d538530401829ffdc6c85f30be、3,217,787バイト、第6編全体・全18ページ、公報はPDF17〜18ページ＝印刷ページ104〜105）。公報には候補者2名（金山屯・吉村みえこ）が掲載され、県選管の選挙録（第1編）の候補者構成・得票数（吉村美栄子318,364票・金山屯17,794票）と一致する。104ページ下段の吉村みえこ候補欄（5つのチャレンジの●箇条書き11項目とプロフィール欄）を確認し、分割レビュー（manifesto-review-jp-local-060003-2025）を経て公約レコード11件を作成した。公報の候補者欄は画像でテキスト層はないため、登録文は描画画像（200dpi・300dpi）の目視転記を正とし、複数解像度で照合した。選挙公報は候補者提出原稿を原文のまま印刷した公式文書であり、県選管の公式記録に再録され県公式サイトで実物を確認できたため、公約レコードの confidence は high とした。吉村候補の公式サイト等に掲載された詳細な政策資料の所在は特定していないが、存在しないと判定するものではない。",
+    "next_actions": [
+      "吉村候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "未接続の公約（5件）について、計画・事業資料への進捗証拠の接続を拡充する",
+      "政策との接続（6件）は文言・内容に基づく推定であり、県が公約と政策の公式な対応付けを公表した場合は接続を見直す",
+      "2029年の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

@@ -177,7 +177,7 @@ def test_fiscal_evidence_packets_fix_the_budget_route() -> None:
     assert any("第1表" in question for question in total["open_questions"])
 
 
-def test_governor_term_is_registered_with_an_empty_manifesto_list() -> None:
+def test_governor_term_is_registered_with_manifesto_connected() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     term = next(t for t in terms if t["municipality_id"] == "jp-local-060003")
     assert term["id"] == "jp-local-060003-executive-2025-02-14"
@@ -185,14 +185,17 @@ def test_governor_term_is_registered_with_an_empty_manifesto_list() -> None:
     assert term["term_start"] == "2025-02-14"
     assert term["term_end"] == "2029-02-13"
     assert term["election_date"] == "2025-01-26"
-    # The bulletin is located (reproduced in the official election record)
-    # but transcription and linking are stage 3 work, so no manifesto
-    # source is registered at this stage.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 left the manifesto unconnected; stage 3 (Issue #1036)
+    # transcribed the bulletin (reproduced in the official election
+    # record) and connected it.
+    assert term["manifesto_source_ids"] == [
+        "yamagata-pref-governor-election-2025-bulletin"
+    ]
     assert set(term["sources"]) == {
         "yamagata-pref-governor",
         "yamagata-pref-governor-term-list",
         "yamagata-pref-governor-election-2025-results",
+        "yamagata-pref-governor-election-2025-bulletin",
     }
 
 
