@@ -43,7 +43,7 @@ import akitaCityBudgetEvidence from "../../../data/reviewed/akita-city/evidence_
 import akitaCitySettlementEvidence from "../../../data/reviewed/akita-city/settlement_evidence_packets.json";
 import akitaCitySources from "../../../data/catalog/akita_city_finance_sources.json";
 export type TohokuSlug = "fukushima-prefecture" | "fukushima-city" | "yamagata-prefecture" | "yamagata-city" | "akita-prefecture" | "akita-city";
-export type TohokuFinance = { municipality: {id:string; official_code:string;name_ja:string;last_verified_at:string}; records: FiscalRecord[]; evidencePackets: EvidencePacket[]; sources: SourceRecord[]; plan: {records: Array<{id:string;title:string;statement:string;decision:string;source_url?:string;evidence_location?:string}>; reviewed_at?:string; quality_boundary?:string} };
+export type TohokuFinance = { municipality: {id:string; official_code:string;name_ja:string;last_verified_at:string;data_status:string}; records: FiscalRecord[]; evidencePackets: EvidencePacket[]; sources: SourceRecord[]; plan: {records: Array<{id:string;title:string;statement:string;decision:string;source_url?:string;evidence_location?:string}>; reviewed_at?:string; quality_boundary?:string} };
 export const tohokuFinance: Record<TohokuSlug, TohokuFinance> = {
   "fukushima-prefecture": {
     municipality: fukushimaPrefectureMunicipality,
