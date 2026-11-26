@@ -88,6 +88,27 @@ EXPECTED_BUDGET_YEN = [
 ]
 EXPECTED_BUDGET_TOTAL_YEN = 15365357000
 
+# Stage 3 (Issue #1039) connected the mayor's five bulletin promises
+# to the programs below; every other program stays unconnected.
+_TERM = "jp-local-052019-executive-2025-04-12"
+EXPECTED_PROMISE_LINKS = {
+    "jp-local-052019-project-2026-circular-zero-carbon": [
+        f"{_TERM}-promise-001"
+    ],
+    "jp-local-052019-project-2026-childcare-support": [
+        f"{_TERM}-promise-002"
+    ],
+    "jp-local-052019-project-2026-local-employment": [
+        f"{_TERM}-promise-003"
+    ],
+    "jp-local-052019-project-2026-regional-industry": [
+        f"{_TERM}-promise-004"
+    ],
+    "jp-local-052019-project-2026-disaster-resilience": [
+        f"{_TERM}-promise-005"
+    ],
+}
+
 CLAIM_FIELDS = [
     "registration_unit",
     "official_title",
@@ -151,7 +172,9 @@ def test_projects_match_selection_and_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2026
         assert project["review_status"] == "reviewed"
-        assert project["related_promise_ids"] == []
+        assert project["related_promise_ids"] == EXPECTED_PROMISE_LINKS.get(
+            project["id"], []
+        )
 
 
 def test_budget_amounts_are_published_program_totals() -> None:

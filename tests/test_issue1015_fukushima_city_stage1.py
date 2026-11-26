@@ -158,9 +158,12 @@ def test_mayor_term_and_votes() -> None:
     assert term["term_start"] == "2025-12-08"
     assert term["term_end"] == "2029-12-07"
     assert term["election_date"] == "2025-11-16"
-    # No manifesto connection at stage 1: the bulletin is located,
-    # and transcription plus connection are stage 3 work.
-    assert term["manifesto_source_ids"] == []
+    # At stage 1 there was no manifesto connection yet: the bulletin
+    # was located, and transcription plus connection were stage 3
+    # work. Stage 3 (Issue #1035) connected the bulletin.
+    assert term["manifesto_source_ids"] == [
+        "fukushima-city-mayor-election-2025-bulletin"
+    ]
     assert len([t for t in terms if t["municipality_id"] == MID]) == 1
 
     packets = load(ROOT / "data/entities/executives/evidence_packets.json")
