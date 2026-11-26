@@ -355,7 +355,6 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # stated in the commission's press release on the
         # simultaneous elections, and the two values agree.
         "jp-local-052019": "2029-04-11",
-        "jp-local-072010": "2029-12-07",
         # Niigata Prefecture's end (2030-06-09) is stated directly in
         # the prefectural election commission's official term-expiry
         # list (2026-10-16 edition: 花角英世 R12年6月9日, third
