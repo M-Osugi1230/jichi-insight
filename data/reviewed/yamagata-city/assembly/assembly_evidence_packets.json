@@ -1,0 +1,56 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "yamagata-city-assembly-term-list"
+    ],
+    "statement": "山形市議会議員の任期満了日は令和9年4月30日（2027年4月30日）であり、山形県選挙管理委員会の「県内任期満了日調（R8.4.22現在）」で直接確認した。任期は4年のため開始日は2023年5月1日と算定したが、開始日を直接印字した公式資料は確認できていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "yamagata-city-assembly-factions",
+     "yamagata-city-assembly-seimu-2025-index"
+    ],
+    "statement": "議員定数は33人。会派ページの会派別人数（新翔会11人、未来やまがた5人、令政会5人、緑政会4人、山形市議会公明党3人、会派に属さない議員5人）の合計と一致し、令和7年度政務活動費収支報告書も33人全員分が公開されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "yamagata-city-assembly-factions",
+     "yamagata-city-assembly-sanpi-2026-03"
+    ],
+    "statement": "会派構成は会派ページ（令和8年6月4日更新）による。議長は丸子善弘、副議長は菊地健太郎で、いずれも「会派に属さない議員」として掲載されている。令和8年3月定例会の賛否一覧表の会派列とも一致する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "yamagata-city-assembly-committees"
+    ],
+    "statement": "委員会は委員会ページ（令和8年6月25日更新）に掲載された10委員会（総務、厚生、産業文教、環境建設、議会運営、予算、決算、議会改革検討、広報広聴、議会図書室運営）を登録した。"
+   }
+  ],
+  "id": "evidence-jp-local-062014-assembly-2023",
+  "open_questions": [
+   "任期開始日（2023年5月1日）を直接印字した公式資料は未確認で、任期満了日と4年任期からの算定である。",
+   "賛否一覧表が表決の記録そのものかは、令和8年9月定例会の会議録が未公開のため突合できていない。会議録の公開後に追認確認が必要である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-062014-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
