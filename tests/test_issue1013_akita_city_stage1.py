@@ -115,9 +115,12 @@ def test_akita_mayor_term_and_votes() -> None:
     # 2026-06-30).
     assert term["term_end"] == "2029-04-11"
     assert term["election_date"] == "2025-04-06"
-    # No manifesto connection at stage 1: the bulletin is located,
-    # but promise extraction from it is stage 3.
-    assert term["manifesto_source_ids"] == []
+    # Stage 1 left the manifesto unconnected (extraction was stage
+    # 3); Issue #1039 transcribed the bulletin's five numbered items
+    # and connected the bulletin to the term.
+    assert term["manifesto_source_ids"] == [
+        "akita-city-mayor-election-2025-bulletin"
+    ]
     assert len([t for t in terms if t["municipality_id"] == MID]) == 1
 
     packets = load_json("data/entities/executives/evidence_packets.json")
@@ -138,9 +141,9 @@ def test_akita_manifesto_search_locates_bulletin() -> None:
     search = next(s for s in searches if s["id"] == SEARCH_ID)
     assert search["executive_term_id"] == TERM_ID
     # The bulletin is extant on the city election commission's
-    # current official page, so its source is registered now; the
-    # promise extraction itself is stage 3, hence follow_up_required.
-    assert search["result_status"] == "follow_up_required"
+    # current official page; stage 3 (Issue #1039) completed the
+    # extraction, so the search is now closed as source_registered.
+    assert search["result_status"] == "source_registered"
     assert search["manifesto_source_ids_found"] == [
         "akita-city-mayor-election-2025-bulletin"
     ]
