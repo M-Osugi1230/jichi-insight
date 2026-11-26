@@ -1,0 +1,184 @@
+{
+ "as_of": "2026-11-26",
+ "issue": 1023,
+ "municipality_id": "jp-local-072010",
+ "plan_title": "第6次福島市総合計画",
+ "population": {
+  "basis": "第6次福島市総合計画「まちづくり基本ビジョン」第4編が定める重点施策の全12件を母集団とする。基本ビジョンは、目指すべき将来のまちの姿の実現に向けて、基本方針に沿って計画期間に特に重点的に取り組む施策を「重点施策」として位置付け、各部局が連携して横断的にその取り組みを推進するとしている。",
+  "description": "登録単位は重点施策とした。理由は次のとおり。第一に、基本ビジョン第4編は6つの基本方針のもとに12の重点施策を定め、重点施策を計画期間に特に重点的に取り組む単位と位置付けている。第二に、下位の新ステージ実行プランは重点施策ごとに成果指標（全28件）を定め、毎年度の「結果」は重点施策の成果指標ごとに基準値・年度別目標値・実績値・達成率・評価（A〜D）を公表し、外部有識者からなる「ふくしま新ステージ実行プラン検証会議」の助言を踏まえて評価検証を行っており、重点施策は公式の進捗・評価の公表単位と一致する。第三に、基本方針は重点施策の上位の分類であり、指標・評価の公表単位ではない。個別施策（成果指標68件）は重点施策の下位の単位であり本段階の登録対象としない。なお、重点施策の成果指標28件のうち13件は個別施策の成果指標にも再掲されているが、登録は重点施策側の1件のみとし二重登録はしていない。計画の体系は基本方針6件・重点施策12件・個別施策であり、成果指標は重点施策28件・個別施策68件（再掲13件を含む公表上の総数96件）である。決算附属書類は部門別編成で計画体系と一致しないため、重点施策との対応付けは行っていない。",
+  "item_count": 12,
+  "unit": "priority_measure"
+ },
+ "schema_version": "0.1.0",
+ "selection_rule": "重点施策は母集団の全件（12件）を、基本ビジョン第4編の掲載順に選定する。金額の大小では選ばない。",
+ "selections": [
+  {
+   "department": null,
+   "official_title": "子どもたちの未来が広がる子育て・教育の新ステージの実現",
+   "pillar": "基本方針1 子どもたちの未来が広がるまち",
+   "policy": "重点施策1",
+   "project_id": "jp-local-072010-project-2025-childcare-education",
+   "selection_basis": "掲載順1番目: 重点施策1「子どもたちの未来が広がる子育て・教育の新ステージの実現」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-childcare-education",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "復興・創生のための放射線対策と風評払拭の推進",
+   "pillar": "基本方針2 暮らしを支える安心安全のまち",
+   "policy": "重点施策2",
+   "project_id": "jp-local-072010-project-2025-radiation-recovery",
+   "selection_basis": "掲載順2番目: 重点施策2「復興・創生のための放射線対策と風評払拭の推進」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-radiation-recovery",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "災害対策の強化",
+   "pillar": "基本方針2 暮らしを支える安心安全のまち",
+   "policy": "重点施策3",
+   "project_id": "jp-local-072010-project-2025-disaster-measures",
+   "selection_basis": "掲載順3番目: 重点施策3「災害対策の強化」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-disaster-measures",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "安心して暮らせる健康・医療・福祉の総合的な推進",
+   "pillar": "基本方針2 暮らしを支える安心安全のまち",
+   "policy": "重点施策4",
+   "project_id": "jp-local-072010-project-2025-health-medical-welfare",
+   "selection_basis": "掲載順4番目: 重点施策4「安心して暮らせる健康・医療・福祉の総合的な推進」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-health-medical-welfare",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "豊かな文化芸術の振興と発信",
+   "pillar": "基本方針3 次世代へ文化と環境をつなぐまち",
+   "policy": "重点施策5",
+   "project_id": "jp-local-072010-project-2025-culture-arts",
+   "selection_basis": "掲載順5番目: 重点施策5「豊かな文化芸術の振興と発信」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-culture-arts",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "脱炭素社会の実現と循環型社会の構築",
+   "pillar": "基本方針3 次世代へ文化と環境をつなぐまち",
+   "policy": "重点施策6",
+   "project_id": "jp-local-072010-project-2025-decarbonization-circular",
+   "selection_basis": "掲載順6番目: 重点施策6「脱炭素社会の実現と循環型社会の構築」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-decarbonization-circular",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "「人」と「活力」であふれる農業・商工業の実現",
+   "pillar": "基本方針4 産業とにぎわいを生み出す活力躍動のまち",
+   "policy": "重点施策7",
+   "project_id": "jp-local-072010-project-2025-agriculture-commerce-industry",
+   "selection_basis": "掲載順7番目: 重点施策7「「人」と「活力」であふれる農業・商工業の実現」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-agriculture-commerce-industry",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "福島らしい個性とにぎわいのあるまちづくり",
+   "pillar": "基本方針4 産業とにぎわいを生み出す活力躍動のまち",
+   "policy": "重点施策8",
+   "project_id": "jp-local-072010-project-2025-lively-city",
+   "selection_basis": "掲載順8番目: 重点施策8「福島らしい個性とにぎわいのあるまちづくり」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-lively-city",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "移住・定住に向けた支援・受入体制の強化",
+   "pillar": "基本方針4 産業とにぎわいを生み出す活力躍動のまち",
+   "policy": "重点施策9",
+   "project_id": "jp-local-072010-project-2025-migration-settlement",
+   "selection_basis": "掲載順9番目: 重点施策9「移住・定住に向けた支援・受入体制の強化」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-migration-settlement",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "市民総活躍と市民共創のまちづくり",
+   "pillar": "基本方針5 新ステージに向けて共創・挑戦・発信するまち",
+   "policy": "重点施策10",
+   "project_id": "jp-local-072010-project-2025-citizen-co-creation",
+   "selection_basis": "掲載順10番目: 重点施策10「市民総活躍と市民共創のまちづくり」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-citizen-co-creation",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "新たな施策への挑戦と発信による都市ブランド力の向上",
+   "pillar": "基本方針5 新ステージに向けて共創・挑戦・発信するまち",
+   "policy": "重点施策11",
+   "project_id": "jp-local-072010-project-2025-city-brand",
+   "selection_basis": "掲載順11番目: 重点施策11「新たな施策への挑戦と発信による都市ブランド力の向上」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-city-brand",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  },
+  {
+   "department": null,
+   "official_title": "ICTを活用した行政・経済・社会の変革",
+   "pillar": "基本方針6 効率的で質の高い行財政経営",
+   "policy": "重点施策12",
+   "project_id": "jp-local-072010-project-2025-ict-transformation",
+   "selection_basis": "掲載順12番目: 重点施策12「ICTを活用した行政・経済・社会の変革」を選定した。母集団は重点施策の全12件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-072010-project-series-ict-transformation",
+   "source_ids": [
+    "fukushima-city-basic-vision-page",
+    "fukushima-city-basic-vision-part4",
+    "fukushima-city-execution-plan-results-fy2025"
+   ]
+  }
+ ]
+}
