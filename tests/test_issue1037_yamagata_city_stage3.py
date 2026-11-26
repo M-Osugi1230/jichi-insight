@@ -331,7 +331,7 @@ def test_search_and_review_records() -> None:
     assert "ダイジェスト照合はできなかった" in search["review_note"]
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 36
+    assert len(reviews) == 37
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert review["executive_term_id"] == TERM_ID
     assert review["source_id"] == BULLETIN_ID
@@ -361,7 +361,7 @@ def test_search_and_review_records() -> None:
             "data/entities/executives/manifesto_review_evidence_packets.json"
         )
     }
-    assert len(review_packets) == 36
+    assert len(review_packets) == 37
     review_packet = review_packets[REVIEW_ID]
     assert review_packet["id"] == "evidence-yamagata-city-2023-manifesto-review"
     assert review_packet["subject_type"] == "manifesto_review"
@@ -388,11 +388,11 @@ def test_search_and_review_records() -> None:
 
 def test_registry_totals() -> None:
     all_promises = load_json("data/entities/executives/promises.json")
-    assert len(all_promises) == 530
+    assert len(all_promises) == 545
     all_packets = load_json(
         "data/entities/executives/promise_evidence_packets.json"
     )
-    assert len(all_packets) == 530
+    assert len(all_packets) == 545
     assert {packet["subject_id"] for packet in all_packets} == {
         record["id"] for record in all_promises
     }

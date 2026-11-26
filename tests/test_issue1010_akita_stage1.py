@@ -243,6 +243,9 @@ def test_governor_term_is_registered_with_the_bulletin_source() -> None:
         "akita-pref-governor-election-2025-results",
         "akita-pref-governor-election-2025-results-page",
         "akita-pref-governor-election-2025-gazette",
+        # Stage 3 (Issue #1038) added the bulletin itself, the
+        # source of the registered promises, to the term sources.
+        BULLETIN_ID,
     }
 
 

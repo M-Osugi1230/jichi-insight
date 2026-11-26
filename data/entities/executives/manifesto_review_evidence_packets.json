@@ -1360,6 +1360,59 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-akita-pref-2025-manifesto-review",
+    "subject_type": "manifesto_review",
+    "subject_id": "manifesto-review-jp-local-050008-2025",
+    "claims": [
+      {
+        "field": "source_location",
+        "statement": "鈴木けんた候補欄は選挙公報1ページ目右上に掲載され、帯見出し「刷新！偏り・しがらみのない 秋田新時代へ」と大見出し「あきた『ニュートラル』宣言！」の下に、5つのニュートラルの表明文、「3つの重点政策（かせぐ・まもる・そだてる）」の箇条書き10項目、訴え文、知事データ表、推薦表示、プロフィール欄が配置されている。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）の1ページ目。",
+        "decision": "accepted",
+        "review_note": "2026-11-26に段階1で原典ファイルを取得し、段階3でも再取得して描画画像で候補者欄の構成を確認した。"
+      },
+      {
+        "field": "segmentation_status",
+        "statement": "5つのニュートラルの表明文は「〜秋田へ」の形で完結した方向表明であるため各行を1レコードとし、箇条書き10項目もそれぞれ1レコードへ分割した（計15件）。ニュートラルのラベルと「3つの重点政策」の見出しは主題ラベルとしてレコード化せず source_location に保持した。帯見出し・大見出し・訴え文・資料表・推薦表示・プロフィール欄・政談演説の案内は公約として分割しなかった。候補者欄に実績として提示された項目はなく、実績の切り分けによる除外は0件である。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "候補者欄の表明文5件・箇条書き10項目とその他の構成要素。",
+        "decision": "accepted",
+        "review_note": "表明文を行単位で登録する境界判断は、主題ラベルと完結した表明文を区別したものであり、open_questions に残す。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は秋田県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。県選管の現行公式ページに選挙公報は現存しないため、由利本荘市公式サイトの知事選案内ページに掲載された複写を登録URLとし、2026-11-26の段階1で取得したファイルが Wayback Machine の同URLの2025年5月15日保存分とバイト単位で完全一致すること（CDX記録のダイジェスト VBYOCD42ZPDQN3KXISMEVLON7J7UPBCX）を確認して原典性を担保した。段階3でも同URLから再取得し、SHA-256 が段階1の登録値と一致することを確認した（取得ファイルは1,207,207バイト、全2ページ、SHA-256 は 680355120c3afb5c17ece4fb9dd63ef086fdd8063953c6630f367a9d2f7d34f8）。公報は全文が画像でテキスト層はないため、登録文はPDFの描画画像（200dpi・300dpi）で照合して転記した。この来歴のため、分割レビューの confidence は high とした。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "公報各ページ欄外の備考（候補者から提出された原稿をそのまま製版して印刷した旨）と、由利本荘市公式サイト掲載の複写および Wayback Machine の同URL保存記録（CDX）に基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の詳細資料が新たに確認できれば照合する。"
+      },
+      {
+        "field": "review_basis",
+        "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。",
+        "source_ids": [
+          "akita-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+        "decision": "accepted",
+        "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。"
+      }
+    ],
+    "open_questions": [
+      "ニュートラルの表明文を行単位で登録する境界判断は、主題ラベルと完結した表明文の区別に基づくものであり、解釈が変われば見直す。",
+      "鈴木候補の公式サイト等に掲載された詳細な政策資料が安定した所在で確認できれば、登録済みの公約文と照合する。",
+      "県選管の公式ページに選挙公報が再掲載されれば、公式URLの現物でも登録文を照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-yamagata-pref-2025-manifesto-review",
     "subject_type": "manifesto_review",
     "subject_id": "manifesto-review-jp-local-060003-2025",
