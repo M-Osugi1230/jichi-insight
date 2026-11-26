@@ -1797,17 +1797,17 @@
       },
       {
         "field": "manifesto_source_ids_found",
-        "statement": "市選挙管理委員会の現行公式ページ「選挙結果（統計資料）」に、2025年福島市長選挙の選挙公報PDF（3,735,050バイト）へのリンクが現存することを確認し、原典として登録した。候補者欄の転記は段階1では行っていない。",
+        "statement": "市選挙管理委員会の現行公式ページ「選挙結果（統計資料）」に、2025年福島市長選挙の選挙公報PDF（3,735,050バイト）へのリンクが現存することを確認し、原典として登録した。段階3では2026-11-27に改めて取得してファイルサイズの一致を確認し（SHA-256: 68fc3fd24732db9c7577978404b66137bbcf7485f4cb7865b1c7aae72aa57155）、左上の馬場ゆうき候補欄を転記した。",
         "source_ids": [
           "fukushima-city-mayor-election-2025-bulletin"
         ],
         "location_note": "選挙結果（統計資料）ページの「令和7年福島市長選挙 選挙公報」リンク。",
         "decision": "accepted",
-        "review_note": "原典は選管の現行公式ページに現存する。転記・公約化は段階3で行う。"
+        "review_note": "原典は選管の現行公式ページに現存する。転記・公約化は段階3（2026-11-27）で完了した。"
       },
       {
         "field": "result_status",
-        "statement": "選挙公報の所在を現行公式ページで確認し原典として登録したため、result_status を source_registered とした。公約レコードの作成と term への接続は段階3で行う。候補者の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "statement": "選挙公報の所在を現行公式ページで確認し原典として登録したため、result_status を source_registered とした。段階3で公約レコード15件を作成し、term への接続まで完了した。候補者の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
         "source_ids": [
           "fukushima-city-mayor-election-2025-bulletin"
         ],
@@ -1817,9 +1817,9 @@
       }
     ],
     "open_questions": [
-      "選挙公報の候補者欄の転記と公約レコードの作成は段階3で行う。",
       "馬場候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
-      "福島県選挙管理委員会の任期満了一覧における現任期満了日（2029年12月7日）の明記照合は、一覧の次回更新待ちである（Issue #706の追跡対象）。"
+      "福島県選挙管理委員会の任期満了一覧における現任期満了日（2029年12月7日）の明記照合は、一覧の次回更新待ちである（Issue #706の追跡対象）。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
   },
@@ -1841,17 +1841,17 @@
       },
       {
         "field": "manifesto_source_ids_found",
-        "statement": "市選挙管理委員会の現行公式ページ「選挙公報」から令和7年秋田市長選挙の選挙公報PDFを取得した（全2ページ、1,916,335バイト）。候補者欄は画像で、テキスト層は選管の枠文のみである。",
+        "statement": "市選挙管理委員会の現行公式ページ「選挙公報」から令和7年秋田市長選挙の選挙公報PDFを取得した（全2ページ、1,916,335バイト）。段階3では2026-11-27に改めて取得し、段階1の取得分とファイルサイズが一致することを確認した（SHA-256: b46d60ade4262414beffb077fbfff1c20c4538ed3471cb337a4effb2e8b9f4d7）。候補者欄は画像で、テキスト層は選管の枠文のみである。1ページ目中段に沼谷純候補欄（大見出し「30万都市の復活へ 市民の皆さまとの約束」の下の番号付き約束5項目）を確認した。",
         "source_ids": [
           "akita-city-mayor-election-2025-bulletin"
         ],
         "location_note": "選挙公報PDF（全2ページ）。",
         "decision": "accepted",
-        "review_note": "公報そのものが市の現行公式ページで現存するため、所在の確度は high とする。転記は段階3で描画画像の目視により行う。"
+        "review_note": "公報そのものが市の現行公式ページで現存するため、所在の確度は high とする。登録文は描画画像（200dpi・300dpi）の照合で転記した。"
       },
       {
         "field": "result_status",
-        "statement": "選挙公報の所在は確認できたが、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。候補者の詳細な政策資料が存在しないとは判定しない。",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード5件を作成し、term へ接続したため、result_status を source_registered とした。候補者の詳細な政策資料が存在しないとは判定しない。",
         "source_ids": [
           "akita-city-mayor-election-2025-bulletin"
         ],
@@ -1861,7 +1861,7 @@
       }
     ],
     "open_questions": [
-      "公約の抽出・term への接続は段階3で行う。",
+      "事業との接続は文言・内容に基づく推定であり、市が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
       "沼谷候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。"
     ],
     "review_status": "reviewed"
@@ -1895,6 +1895,50 @@
     ],
     "open_questions": [
       "市公式URLの公報PDFは削除済みで、Wayback Machine にも200保存がないため、複写と公式原典のダイジェスト照合は実施できていない。段階3の転記時に候補者構成・枠文・投票案内の一致を再確認する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-yamagata-pref-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-yamagata-pref-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "県選挙管理委員会の選挙録（『選挙の記録』第1編）で当選と得票数（318,364票）を、都道府県選挙管理委員会連合会の知事一覧で任期満了日（令和11年2月13日）を確認し、県公式の知事プロフィールで現職性を確認した（いずれも段階1で照合済み）。あわせて『選挙の記録』第6編に選挙公報が再録されていることを確認した。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-results",
+          "yamagata-pref-governor-term-list",
+          "yamagata-pref-governor"
+        ],
+        "location_note": "選挙録、知事一覧、知事プロフィール（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "県公式サイトから『選挙の記録』第6編PDFを取得し、104ページ下段の吉村みえこ候補欄（5つのチャレンジの●箇条書き11項目とプロフィール欄）を確認した。公報の候補者欄は画像でテキスト層はない。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "『選挙の記録』第6編PDF（全18ページ）の17〜18ページ（印刷ページ104〜105）。",
+        "decision": "accepted",
+        "review_note": "登録文はPDFの描画画像（200dpi・300dpi）の照合で転記した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を登録し、分割レビューを経て公約レコード11件を作成したため、result_status を source_registered とした。吉村候補の公式サイト等に詳細な政策資料が掲載されていたかは特定していないため、資料が存在しないとは判定しない。",
+        "source_ids": [
+          "yamagata-pref-governor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（県選管の公式記録『選挙の記録』に再録され、県公式サイトで現存）であるため confidence は high とする。本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "吉村候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。",
+      "政策との接続は文言・内容に基づく推定であり、県が公約と政策の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
   }
