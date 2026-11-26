@@ -82,9 +82,9 @@ def test_assembly_registry_has_22_reviewed_assemblies_and_source_scope():
         assert len(proposals) == count
         assert f'"{slug}": registry(' in REGISTRY
         assert f'"{slug}"' in REGISTRY[REGISTRY.index("export const assemblySlugs"):]
-    assert "35議会" in INDEX
+    assert "37議会" in INDEX
     assert "神戸市会" in INDEX
-    assert "35議会の一覧に戻る" in DETAIL
+    assert "37議会の一覧に戻る" in DETAIL
     assert 'href: "/municipalities/hyogo-prefecture"' in CATALOG
 
 
@@ -112,4 +112,4 @@ def test_reviewed_gates_and_section_scoped_static_assertions():
     assert "validate_hyogo_web_finish_export()" in EXPORT
     assert "aria-labelledby" in EXPORT
     assert "section.group(1)" in EXPORT
-    assert "35議会" in EXPORT
+    assert "37議会" in EXPORT

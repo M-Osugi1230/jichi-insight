@@ -1,3 +1,6 @@
+import kumamotoPrefectureMunicipality from "../../../data/reviewed/kumamoto-prefecture/municipality.json";
+import kumamotoCityMunicipality from "../../../data/reviewed/kumamoto-city/municipality.json";
+import { kumamotoFinance, kumamotoCityFinance } from "@/lib/kumamotoFinance";
 import okayamaPrefectureMunicipality from "../../../data/reviewed/okayama-prefecture/municipality.json";
 import okayamaCityMunicipality from "../../../data/reviewed/okayama-city/municipality.json";
 import { okayamaFinance, okayamaCityFinance } from "@/lib/okayamaFinance";
@@ -91,6 +94,7 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     { slug: "kyoto-prefecture", municipality: kyotoPrefectureMunicipality, finance: kyotoFinance },
     { slug: "niigata-prefecture", municipality: niigataPrefectureMunicipality, finance: niigataFinance },
     { slug: "okayama-prefecture", municipality: okayamaPrefectureMunicipality, finance: okayamaFinance },
+    { slug: "kumamoto-prefecture", municipality: kumamotoPrefectureMunicipality, finance: kumamotoFinance },
     { slug: "hiroshima-prefecture", municipality: hiroshimaPrefectureMunicipality, finance: hiroshimaFinance },
     { slug: "shizuoka-prefecture", municipality: shizuokaPrefectureMunicipality, finance: shizuokaFinance },
     { slug: "shizuoka-city", municipality: shizuokaCityMunicipality, finance: shizuokaCityFinance },
@@ -119,6 +123,24 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
 
   // Hiroshima City is a Phase 15 city with separately reviewed stage 2-4 records.
   // Match the municipal code before publishing any deep-dive navigation.
+  if (!matched && officialCode === kumamotoCityMunicipality.official_code &&
+    kumamotoCityMunicipality.data_status === "reviewed") {
+    const municipalityId = kumamotoCityMunicipality.id;
+    const entry = assemblies["kumamoto-city"];
+    return {
+      key: "kumamoto-city",
+      finance: kumamotoCityFinance.records.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed" &&
+        (record.stage === "initial_budget" || record.stage === "settlement"),
+      ),
+      projects: projectRegistry["kumamoto-city"].projects.some((record) =>
+        record.municipality_id === municipalityId && record.review_status === "reviewed",
+      ),
+      promises: hasReviewedExecutivePromises(municipalityId),
+      assembly: entry.assembly.review_status === "reviewed" &&
+        entry.disclosure.review_status === "reviewed",
+    };
+  }
   if (!matched && officialCode === okayamaCityMunicipality.official_code &&
     okayamaCityMunicipality.data_status === "reviewed") {
     const municipalityId = okayamaCityMunicipality.id;

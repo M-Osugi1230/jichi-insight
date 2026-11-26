@@ -240,7 +240,7 @@ def test_three_new_assemblies_are_registered_and_discovery_gates_are_reviewed():
     assert registry.count('import yokohama') >= 13
     assert registry.count('import kawasaki') >= 13
     assert '"kanagawa-prefecture", "yokohama-city", "kawasaki-city"' in registry
-    assert "35議会" in overview
+    assert "37議会" in overview
     assert 'assemblies["kanagawa-prefecture"]' in discovery
     assert 'assemblies["yokohama-city"]' in discovery
     assert 'assemblies["kawasaki-city"]' in discovery
@@ -261,7 +261,7 @@ def test_kanagawa_page_and_registry_are_not_using_foreign_prefecture_copy():
     assert "kanagawa-prefecture" in page
     assert "kanagawa-prefecture" in finance
     assert "神奈川" in overview
-    assert "35議会" in overview
+    assert "37議会" in overview
     wrong_prefecture_copies = (
         "副首都ビジョン",
         "府政運営の基本方針",
