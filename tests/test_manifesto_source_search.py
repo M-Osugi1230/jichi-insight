@@ -33,7 +33,7 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 37
+    assert len(searches) == 38
     assert {search["executive_term_id"] for search in searches} == {
         "jp-local-400009-executive-2025-04-14",
         "jp-local-401307-executive-2022-12-07",
@@ -72,6 +72,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-331007-executive-2025-10-09",
         "jp-local-431001-executive-2026-12-03",
         "jp-local-430005-executive-2024-04-16",
+        "jp-local-072010-executive-2025-12-08",
     }
 
     for search in searches:
@@ -85,7 +86,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Thirty-one searches have registered a primary source (Fukuoka
+    # Thirty-two searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
@@ -94,7 +95,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Miyagi Prefecture, Sendai City, Shizuoka Prefecture,
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
     # Hiroshima City, Kyoto Prefecture, Kyoto City, Niigata City,
-    # Okayama City and Kumamoto City, each closed by its
+    # Okayama City and Kumamoto City and Fukushima City, each closed by its
     # official election bulletin (the Sendai, Shizuoka City,
     # Hiroshima City and Kumamoto City bulletins survive only as archived copies
     # of the cities' official election-period URLs; the Okayama

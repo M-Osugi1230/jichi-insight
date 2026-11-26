@@ -2201,5 +2201,60 @@
       "2024年熊本県知事選挙の選挙公報は、選挙期間中は県選管ホームページで閲覧できたが、該当ページは現行公式サイトから削除され、国立国会図書館WARP等のアーカイブにも本文の保存を特定できなかったため、段階3の探索（manifesto-source-search-kumamoto-pref-2024）で no_stable_primary_source_found として登録し、公約レコードは作成していない。Wayback Machineの収録有無は未確認であり、原典が特定できれば登録し直す。本任期では manifesto_source_ids を空としている。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-fukushima-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-072010-executive-2025-12-08",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "福島市の現市長は馬場 雄基である。",
+        "source_ids": [
+          "fukushima-city-mayor-election-2025-results",
+          "fukushima-city-mayor-inauguration-2025"
+        ],
+        "location_note": "市選挙管理委員会の投開票結果概要の開票結果（候補者氏名は「馬場 ゆうき」表記）および市の就任プレスリリース。",
+        "decision": "accepted",
+        "review_note": "両出典とも馬場雄基を2025年市長選挙の当選人・新市長として記載する。開票結果の候補者氏名はふりがな表記（馬場ゆうき）であり、漢字氏名は就任プレスリリースで確認した。"
+      },
+      {
+        "field": "election_date",
+        "statement": "福島市長選挙は2025年11月16日に執行され、馬場雄基が58,453票を得て初当選した。",
+        "source_ids": [
+          "fukushima-city-mayor-election-2025-results"
+        ],
+        "location_note": "市選挙管理委員会「投開票結果概要」の開票結果（福島市長選挙）。",
+        "decision": "accepted",
+        "review_note": "得票数は候補者別得票数の合計105,016票（馬場58,453票・こはた浩43,818票・たかはし翔2,745票）および無効票987票を加えた投票者数106,003人とも整合する（投票率47.34%、有権者数223,913人）。"
+      },
+      {
+        "field": "term_start",
+        "statement": "馬場雄基市長の現任期は2025年12月8日に始まった。",
+        "source_ids": [
+          "fukushima-city-mayor-inauguration-2025",
+          "fukushima-city-mayor-election-2025-schedule"
+        ],
+        "location_note": "市の就任プレスリリース（令和7年12月3日）および市選挙管理委員会の選挙期日決定のプレスリリース（令和7年7月2日）。",
+        "decision": "accepted",
+        "review_note": "就任プレスリリースは「令和7年12月8日付で馬場雄基市長が就任」と明記する。期日決定のプレスリリースは本選挙が「令和7年12月7日任期満了に伴う」選挙であることを明記し、開始日は前任期満了日の翌日として公職選挙法第259条ただし書の任期起算とも一致する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "馬場雄基市長の現任期は2029年12月7日に満了する。",
+        "source_ids": [
+          "fukushima-city-mayor-election-2025-schedule",
+          "fukushima-city-mayor-inauguration-2025"
+        ],
+        "location_note": "前任期の満了日（2025年12月7日）を明記する市選挙管理委員会のプレスリリースと、就任日（2025年12月8日）を明記する市のプレスリリース。",
+        "decision": "accepted",
+        "review_note": "前任期の満了日（2025年12月7日）の公式明記と公職選挙法第259条ただし書の構成により、現任期の満了日は開始日（2025年12月8日）の4年後の応当日の前日である2029年12月7日となる。福島県選挙管理委員会の任期満了一覧における新任期満了日の明記そのものの照合は、一覧の次回更新時に行う（open question）。"
+      }
+    ],
+    "open_questions": [
+      "福島県選挙管理委員会の任期満了一覧で馬場雄基市長の新任期満了日（2029年12月7日）の明記は未照合であり、一覧の次回更新時に照合する（Issue #706の追跡対象）。",
+      "2025年福島市長選挙の選挙公報は市選挙管理委員会の現行公式ページに現存することを段階0（Issue #1015）で確認し、段階1で再確認した。候補者欄の転記・公約レコードの作成と manifesto_source_ids の接続は段階3で行うため、段階1では未接続とする。"
+    ],
+    "review_status": "reviewed"
   }
 ]

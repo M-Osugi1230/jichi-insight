@@ -11,6 +11,7 @@ import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_financ
 import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
+import fukushimaCityFinanceCatalog from "../../../data/catalog/fukushima_city_finance_sources.json";
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
@@ -58,7 +59,8 @@ export type MunicipalityKey =
   | "okayama-prefecture"
   | "kumamoto-prefecture"
   | "niigata-prefecture"
-  | "okayama-city";
+  | "okayama-city"
+  | "fukushima-city";
 export type SourceRecord = {
   id: string;
   municipality_key: MunicipalityKey;
@@ -325,6 +327,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: "/municipalities/niigata-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
+  "fukushima-city": {
+    name: "福島市", type: "中核市",
+    summary: "第6次福島市総合計画（2021〜2026年度、1年延長）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、馬場 雄基市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -341,6 +349,7 @@ export const sourceCatalog = [
   ...(niigataFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(fukushimaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
