@@ -129,12 +129,12 @@ export function OkayamaCityReview() {
           </div>
         </section>
         <section className={styles.scope} aria-labelledby="mayor-title">
-          <div><p className="eyebrow">Executive</p><h2 id="mayor-title">大森雅夫市長の任期と公約38件</h2></div>
+          <div><p className="eyebrow">Executive</p><h2 id="mayor-title">大森雅夫市長の任期と公約</h2></div>
           <div>{mayor ? (
             <>
               <h3>{mayor.person_name} 市長</h3>
               <p>任期：{formatDateJa(mayor.term_start)} 〜 {formatDateJa(mayor.term_end)}</p>
-              <p>2024年市長選 得票数：177,454票 ／ Reviewed 公約：{promises.length}件</p>
+              <p>2025年市長選 得票数：89,183票 ／ Reviewed 公約：{promises.length}件</p>
               <p><Link href="/promises#okayama-city">市長公約と出典を見る</Link></p>
               {manifestoSourcesForExecutive(mayor).map((source) => (
                 <p key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></p>

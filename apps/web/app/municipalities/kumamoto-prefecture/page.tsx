@@ -184,12 +184,12 @@ export default function KumamotoPrefecturePage() {
 
           <section className={styles.scope} aria-labelledby="governor-title">
             <div><p className="eyebrow">Executive</p>
-              <h2 id="governor-title">木村敬知事の任期と公約29件</h2></div>
+              <h2 id="governor-title">木村敬知事の任期と公約</h2></div>
             <div>{governor ? (
               <>
                 <h3>{governor.person_name} 知事</h3>
                 <p>任期：{formatDateJa(governor.term_start)} 〜 {formatDateJa(governor.term_end)}</p>
-                <p>選挙日：{formatDateJa(governor.election_date)} ／ 得票数：412,583票</p>
+                <p>選挙日：{formatDateJa(governor.election_date)} ／ 得票数：383,010票</p>
                 <p>Reviewed 公約原文：{promises.length}件</p>
                 <p><Link href="/promises#kumamoto-prefecture">知事の公約原文と根拠</Link></p>
                 {manifestoSourcesForExecutive(governor).map((source) => (

@@ -122,8 +122,8 @@ def test_assemblies_keep_actual_voting_publication_granularity():
     assert '"miyagi-prefecture": registry(' in ASSEMBLIES
     assert '"sendai-city": registry(' in ASSEMBLIES
     assert '"miyagi-prefecture", "sendai-city"' in ASSEMBLIES
-    assert "35議会" in ASSEMBLY_INDEX
-    assert "35議会の一覧に戻る" in ASSEMBLY_DETAIL
+    assert "37議会" in ASSEMBLY_INDEX
+    assert "37議会の一覧に戻る" in ASSEMBLY_DETAIL
     assert "本会議の表決そのものの事後記録" in PREF_PAGE
     assert "採決に先立って表明された会派態度の集約ではありません" in PREF_PAGE
     assert "宮城県議会" in PREF_PAGE
@@ -146,4 +146,4 @@ def test_reviewed_navigation_and_scoped_validation():
     assert "miyagi_cluster_project_detail_files()" in EXPORT
     assert 'aria-labelledby="{re.escape(section_id)}"' in EXPORT
     assert 'record["official_title"] not in section.group(1)' in EXPORT
-    assert "35議会" in EXPORT
+    assert "37議会" in EXPORT

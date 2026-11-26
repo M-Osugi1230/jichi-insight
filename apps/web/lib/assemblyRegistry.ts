@@ -604,10 +604,7 @@ export const assemblies: Record<AssemblySlug, Registry> = {
   ),
   "kumamoto-city": registry(
     kumamotoCityAssembly, kumamotoCityDisclosure, kumamotoCitySessions,
-    kumamotoCityProposals.map((proposal) => ({
-      parent_proposal_id: null, related_fiscal_record_ids: [], related_project_ids: [],
-      ...proposal,
-    })),
+    kumamotoCityProposals,
     kumamotoCityVotes, kumamotoCityFactionVotes, kumamotoCityExpenses,
     kumamotoCityTrips,
     [...kumamotoCityAssemblyEvidence, ...kumamotoCityVoteEvidence,

@@ -140,8 +140,8 @@ def test_assembly_granularity_and_pending_records_are_not_inferred():
     assert sum(len(vote.get("member_votes", [])) for vote in hamamatsu_votes) == 2728
     assert data("data/reviewed/hamamatsu-city/assembly/faction_votes.json") == []
     assert "議員別賛否2,728件" in ASSEMBLY_DETAIL
-    assert "35議会" in ASSEMBLIES
-    assert "35議会の一覧に戻る" in ASSEMBLY_DETAIL
+    assert "37議会" in ASSEMBLIES
+    assert "37議会の一覧に戻る" in ASSEMBLY_DETAIL
 
 
 def test_reviewed_gates_generic_city_routes_and_scoped_static_contract():
@@ -159,7 +159,7 @@ def test_reviewed_gates_generic_city_routes_and_scoped_static_contract():
     assert "def validate_shizuoka_cluster_export()" in EXPORT_VALIDATOR
     assert "_shizuoka_scoped_text" in EXPORT_VALIDATOR
     assert 'record["official_title"] not in project_section' in EXPORT_VALIDATOR
-    assert "35議会" in EXPORT_VALIDATOR
+    assert "37議会" in EXPORT_VALIDATOR
     sitemap = src("apps/web/app/sitemap.ts")
     for slug in ("shizuoka-prefecture", "shizuoka-city", "hamamatsu-city"):
         assert f'"/municipalities/{slug}"' in sitemap
