@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-062014-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-062014-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員紹介ページに議員ごとの個別ページが掲載され、会派ページ・委員会ページとあわせて氏名と所属が確認できる。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/giin/1001204/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派ページに会派名と所属議員が掲載されている（令和8年6月4日更新）。新翔会11人、未来やまがた5人、令政会5人、緑政会4人、山形市議会公明党3人、会派に属さない議員5人。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/giin/1001203.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "委員会ページに委員会ごとの委員長・副委員長・委員の氏名が掲載されている（令和8年6月25日更新）。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/giin/1016076.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会議結果の議決議案一覧に、市長提出議案の件名・議決日・議決結果が掲載されている。概要ページには会期と議決の概要が記載されている。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/kaigikekka/1001699/1019454/1019457.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "議案等の賛否一覧表は賛成と反対の双方や退席などがあった議案のみを議員個人別（会派列付き）で表示する形式だが、令和8年9月定例会は市長提出議案20件がすべて全会一致（全員異議なく可決・認定・同意）だったため、当該会期の賛否一覧表は公表されておらず、会派別の賛否も存在しない。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/kaigikekka/1001699/1019454/1019456.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "議員個人別の賛否は議案等の賛否一覧表で公表される形式（令和8年3月定例会分の表で実物確認。凡例は会期により○又は•＝賛成、×＝反対、退＝退席、欠＝欠席で、議長は採決に加わらない）。令和8年9月定例会は全議案が全会一致で表示対象の議案がなかったため、当該会期の議員個人別賛否は公表されていない。全会一致の議案について個人別の賛否を推測で登録することはしない。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/018/153/202603sanpiitiranhyou.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は議員個人に交付され（月額100,000円、四半期ごとに交付）、令和7年度分の収支報告書が議員33人全員分、議会ホームページで公開されている。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/seimukatsudouhi/1001278/1018875.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書の写しは収支報告書と一体のPDFで議会ホームページに公開されている。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/seimukatsudouhi/1001277.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会視察の概要は市議会報「みちしるべ」に掲載される（常任委員会視察は第234号、広報広聴委員会視察は第235号）。日程・調査地・調査項目が掲載されるが、参加者と費用は印字されていない。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/shigikaihou/1001291.html"
+   },
+   {
+    "availability": "not_found",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録は閉会後2〜3か月後の次の定例会の時期に公開される旨が公式に案内されており、令和8年9月定例会（2026年9月25日閉会）の会議録は登録時点で未公開。このため賛否一覧表が表決の記録そのものかは突合できていない。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/kaigiroku/1001274.html"
+   },
+   {
+    "availability": "unknown",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "議会ホームページにインターネット中継の案内ページがあることは段階0棚卸しで確認したが、本登録では中継の実施状況を実物で再確認していないため unknown とした。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/gikai/kaigiroku/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "陳情の審査結果は市議会報「みちしるべ」に件名・提出者・所管委員会・結果の一覧表で掲載される。令和8年9月定例会では請願はなく、陳情3件がいずれも継続審査となった。",
+    "source_url": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/001/291/20261101-238_5.pdf"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "yamagata-city-assembly-results-2026-09",
+   "yamagata-city-assembly-overview-2026-09",
+   "yamagata-city-assembly-sanpi-2026-03",
+   "yamagata-city-assembly-seimu-2025-index",
+   "yamagata-city-assembly-minutes-guide",
+   "yamagata-city-assembly-dayori-238"
+  ]
+ }
+]
