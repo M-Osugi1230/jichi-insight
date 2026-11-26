@@ -1,0 +1,78 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-assembly-term-list-pdf"
+    ],
+    "statement": "福島市議会議員の任期満了日は令和9年7月30日であり、福島県選挙管理委員会の「市町村の長及び議会議員の任期一覧表」（令和8年4月1日現在）で確認した。一覧表は任期満了の年ごとに列が分かれており、福島市の議会議員欄の「7/30」は令和9年の列に位置する（市長欄の「12/7」は令和11年の列に位置し、市長の任期満了日2029年12月7日と一致する）。任期は4年で、開始日は2023年7月31日である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-assembly-roster"
+    ],
+    "statement": "議員定数は35人（福島市議会議員定数条例）。令和8年10月1日現在の議員名簿（議席番号順）には34人が掲載され、33番は空欄（欠員）である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": "会派別人数の合計（34人）が定数（35人）を1人下回る点については open_questions を参照。",
+    "source_ids": [
+     "fukushima-city-assembly-roster",
+     "fukushima-city-assembly-factions"
+    ],
+    "statement": "令和8年10月1日現在の会派構成は、真政会11人、真結の会10人、ふくしま市民21が5人、公明党福島市議団4人、日本共産党福島市議会議員団3人、無所属1人の合計34人である。議長は真政会の白川敏明議員（17番）、副議長は羽田房男議員（29番）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-assembly-committees"
+    ],
+    "statement": "委員会は、総務常任委員会、文教福祉常任委員会、経済民生常任委員会、建設水道常任委員会、議会運営委員会、人口減少対策に関する調査特別委員会の6つで、委員会別議員名簿（2026年10月1日更新）に各委員会の正副委員長が掲載されている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-assembly-results-2026-09",
+     "fukushima-city-assembly-bill-counts-2026-09"
+    ],
+    "statement": "福島市議会は通年会期制（会期は8月1日から翌年7月31日まで）で、定例会議が年4回開かれる。令和8年9月定例会議は2026年9月1日に開会し、9月24日に閉会した。議案31件（議案第88号〜第118号）は全件9月24日に議決され、議案審議件数表の集計（原案可決22件、決算認定4件、原案同意5件、否決・継続審査0件）と一致する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_roster",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "fukushima-city-assembly-resignations",
+     "fukushima-city-assembly-votes-2026-09",
+     "fukushima-city-assembly-roster"
+    ],
+    "statement": "33番の半沢正典議員は令和8年9月定例会議の採決（9月24日）に参加していたが、議員辞職願が同日議会で許可され、令和8年9月30日をもって辞職した。このため10月1日現在の名簿では33番が空席となっている。"
+   }
+  ],
+  "id": "evidence-jp-local-072010-assembly-2023",
+  "open_questions": [
+   "令和8年9月定例会議の会期時点（2026年9月24日）における半沢正典議員の所属会派は、現行の公式名簿では確認できなかったため、会派構成は2026年10月1日現在の名簿（34人）で登録した。令和7年度政務活動費収支実績表では令和8年3月31日時点で真政会は12人とされており、現在の11人との差は同議員の辞職と整合するが、一次資料で直接は確認していない。",
+   "賛否表の性質（事後の表決記録か採決前の態度集約か）の会議録との突合は未了であり、追認確認を申し送る（各 proposal 証拠パケットの open_questions にも記載）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-072010-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
