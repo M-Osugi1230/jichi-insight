@@ -1,0 +1,91 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-term-list"
+    ],
+    "statement": "秋田市議会議員の任期満了日は令和9年5月1日（2027年5月1日）であり、秋田県選挙管理委員会の「任期満了日等について」で直接確認した。任期は4年のため開始日は2023年5月2日と算定したが、開始日を直接印字した公式資料は確認できていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-term-list",
+     "akita-city-assembly-roster-faction"
+    ],
+    "statement": "議員定数は36人（県選挙管理委員会の一覧）。議員名簿（会派別、令和8年5月1日現在）にも36人の氏名が掲載され、欠員はない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-roster-faction",
+     "akita-city-assembly-vote-table-2026-0928"
+    ],
+    "statement": "会派構成は議員名簿（会派別）による秋水会8人、自民党8人、フロンティア秋田7人、公明党秋田市議会4人、そうせいと維新4人、日本共産党秋田市議会議員団2人、市民クラブ2人、市民のみかた1人の合計36人で、表決状況の会派グループとも一致する。賛否表の略称（公明党・共産党・市民ク・市み）は表決状況の凡例で正式名称に対応付けられている。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-committees"
+    ],
+    "statement": "委員会は総務、厚生、教育産業、建設の4常任委員会と、予算決算委員会（議長を除く全議員が所属）、議会運営委員会の6委員会。「市議会の委員会」ページ（令和7年6月4日現在）で委員氏名とともに確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-schedule-2026-08"
+    ],
+    "statement": "令和8年8月定例会の会期は2026年8月31日から10月7日までの38日間で、日程表で確認した。大半の議案は9月28日の本会議で議決され、議案第120号のみ9月28日に付託、10月7日に議決された。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_votes",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-vote-table-2026-0928",
+     "akita-city-assembly-vote-table-2026-1007",
+     "akita-city-assembly-minutes-system"
+    ],
+    "statement": "賛否表の性質は会議録閲覧検索システムの本会議録（令和8年8月定例会・9月28日および10月7日分）と突合して判定した。賛否が分かれた議案（議案第105号・第107号・第108号・第113号・第114号・第120号、（議）第5号・第7号、陳情第69号・第70号・第72号）では、会議録に「賛成の方は賛成のボタンを、反対の方は反対のボタンをお押し願います」「各員ボタンを押し、表決状況を議場内ディスプレーに表示」と記録され、議長の賛成多数・賛成少数の宣言が賛否表の集計と全件一致したため、これらを recorded（電子表決の記録）とした。全員一致の議案は会議録上「異議なし」により決定されており、賛否表でも出席議員全員が賛成（○）と表示されているため unanimous とした。秋田市議会は2016年から電子表決システムを本格導入している。議長（川口雅丈）は全議案を通じて表決に加わらないため excused とし、賛否の合計には含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "akita-city-assembly-petitions-2026-08"
+    ],
+    "statement": "秋田市議会では陳情も採択・不採択を議決する。令和8年8月定例会では陳情第68号（採択・全員一致）、陳情第69号（不採択・賛成少数）、陳情第70号（不採択・賛成少数）、陳情第72号（採択・賛成多数）が議決された。陳情第71号は陳情一覧に存在しない。"
+   }
+  ],
+  "id": "evidence-jp-local-052019-assembly-2023",
+  "open_questions": [
+   "議員の任期開始日（2023年5月2日）を直接印字した公式資料は未確認である（任期満了日2027年5月1日から4年の任期で算定した）。",
+   "陳情第71号が令和8年8月定例会の陳情一覧に存在しない理由（欠番の事情）は公表資料では確認できていない。",
+   "議案第120号の議決日は、段階0棚卸しでは2026年9月28日とされていたが、日程表・表決状況（10月7日分）・10月7日の本会議録の一次資料ではいずれも2026年10月7日であり、一次資料どおり登録した。",
+   "市民のみかたの令和7年度政務活動費交付額1,000,000円は月額100,000円の10か月分に相当するが、その理由（年度途中の会派結成等）は公表資料では確認できていない。",
+   "9月28日の本会議では日程第19「閉会中審査の件」（建設委員長からの継続審査の申出）が電子表決で否決されたが、提出議案・陳情および表決状況の公表対象外の手続的議決であるため、議案としては登録していない。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-052019-assembly-2023",
+  "subject_type": "assembly"
+ }
+]

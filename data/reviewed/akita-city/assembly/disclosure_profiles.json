@@ -1,0 +1,105 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-052019-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-052019-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿（会派別）が議会ホームページに掲載され、令和8年5月1日現在の議員氏名と所属会派が確認できる。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/giin/1001185.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "議員名簿（会派別）に8会派の正式名称と所属議員が掲載され、合計36人である。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/giin/1001185.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "「市議会の委員会」ページに常任委員会・予算決算委員会・議会運営委員会の委員氏名が掲載される（令和7年6月4日現在）。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/giin/1001184.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとの提出議案ページに議案番号・件名・付託委員会・議決結果が一覧公表され、陳情は別ページに件名と議決結果が掲載される。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/nittei/1049305/1053134/1053137.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "「議案等に対する議員の表決状況」は議員列が会派別にグループ化されており、会派別の賛否はその集計で確認できる。",
+    "source_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/053/139/r080928sanpi.xls"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "議員個人別の表決状況が会期ごとにExcel表で公表される。令和8年8月定例会分は会議録との突合により、賛否が分かれた議案は電子表決（ボタン表決）の記録、全員一致の議案は異議なし採決の結果表示であることを確認した。",
+    "source_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/053/139/r080928sanpi.xls"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は会派単位で交付され、会派別収支報告書と科目別収支状況一覧が議会ホームページに公表される（令和7年度分は2026年7月1日公開）。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/hoshu/1021331/1052418.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の証拠書類の写しは、収支報告書とともに会派別ZIPファイルで議会ホームページに公開されている。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/hoshu/1021331/1052418.html"
+   },
+   {
+    "availability": "not_found",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "議会サイトの「行政視察について」は他自治体からの視察受入れの案内であり、秋田市議会自身の委員会視察報告書の一覧公表は確認できなかった。あきた市議会だより第204号（令和8年8月定例会）にも委員会視察の報告は掲載されていない。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/shisatsu/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録閲覧検索システムに令和8年8月定例会の本会議録（9月28日・10月7日分を含む）が収録されており、表決方法の突合に用いた。",
+    "source_url": "https://akitashigikai.gijiroku.com/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議の中継・録画映像が議会ホームページから提供されている。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/chukei-rokuga/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "陳情は会期ごとの陳情ページに件名と議決結果（採択・不採択）が掲載される。秋田市議会では陳情も採否を議決する。",
+    "source_url": "https://www.city.akita.lg.jp/shigikai/nittei/1049305/1053134/1053138.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "akita-city-assembly-roster-faction",
+   "akita-city-assembly-committees",
+   "akita-city-assembly-proposals-2026-08",
+   "akita-city-assembly-vote-table-2026-0928",
+   "akita-city-assembly-seimu-2025-index",
+   "akita-city-assembly-minutes-system",
+   "akita-city-assembly-broadcast",
+   "akita-city-assembly-shisatsu"
+  ]
+ }
+]
