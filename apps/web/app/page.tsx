@@ -9,6 +9,8 @@ import {
   type MunicipalitySearchEntry,
 } from "@/components/MunicipalityQuickSearch";
 import { StatusBadge } from "@/components/StatusBadge";
+import { assemblySlugs } from "@/lib/assemblyRegistry";
+import { currentExecutiveTerms, promiseRecords } from "@/lib/executives";
 import { reviewedCoverageStats, reviewedPrefectureCoverage } from "@/lib/reviewedCoverage";
 import { loadPhase15CitySummaries } from "@/lib/phase15Cities";
 import { phase15Progress } from "@/lib/phase15Progress";
@@ -133,21 +135,21 @@ const startPaths = [
   {
     label: "公約",
     heading: "首長の公約を確かめる",
-    description: "福岡県知事・福岡市長・北九州市長の公約原文と評価材料を確認します。",
+    description: `${promiseRecords.length}件のReviewed公約を、${currentExecutiveTerms.length}件の首長termごとに原文・出典から確認します。`,
     href: "/promises",
     action: "公約の原文と根拠を見る",
   },
   {
     label: "議会",
     heading: "議会で何が決まったかを見る",
-    description: "3議会の議案や表決を確認します。議員ごとの賛否は公表されていません。",
+    description: `${assemblySlugs.length}議会の登録済み議案・表決と公表範囲を確認します。議員別賛否の公開粒度は議会ごとに異なります。`,
     href: "/assemblies",
     action: "議会の公開情報を見る",
   },
   {
     label: "事業",
     heading: "事業のお金と結果を確認する",
-    description: "3自治体の登録済み重点事業について、予算・KPI・公式評価をたどります。",
+    description: "登録済み自治体の重点事業について、予算・KPI・公式評価と未接続の範囲をたどります。",
     href: "/projects",
     action: "登録済みの重点事業を見る",
   },
