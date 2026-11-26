@@ -1,0 +1,220 @@
+{
+ "issue": 1022,
+ "municipality_id": "jp-local-070009",
+ "municipality_key": "fukushima-prefecture",
+ "population": {
+  "description": "「福島県総合計画」（令和3年10月策定、計画期間 令和4〜12年度）第4章の政策18件（「ひと」分野5政策・「暮らし」分野6政策・「しごと」分野7政策）を母集団とする。計画の体系は3分野―18政策―76施策―255取組であり、基本指標は施策単位に設定されるが、県の進行管理は18政策分の「政策分野別主要施策評価調書」で政策単位に点検・評価され、「政策に紐付く指標」（34指標）も政策単位に整理されている。計画自身の政策単位と、公式評価の公表単位が一致するため、登録単位は政策とし、母集団の全18政策を登録した（段階1の plan_review で確定）。",
+  "fiscal_year": 2025,
+  "project_count": 18,
+  "source_ids": [
+   "fukushima-pref-plan-chapter4-framework",
+   "fukushima-pref-plan-page",
+   "fukushima-pref-progress-2026-evaluation-sheets"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "選定による抽出は行わず、母集団である総合計画の政策18件の全件を、計画の掲載順（「ひと」分野→「暮らし」分野→「しごと」分野、各分野内は政策番号順）に登録した。金額順・規模順では選んでいない。各政策の KPI は、令和8年度進行管理の資料1-3「政策に紐付く指標一覧」に当該政策へ紐付くものとして掲載された指標のみとし、複数系列が公表されている指標（健康寿命の男女別、医療施設従事医師数・就業看護職員数の全県・相双地域別、県産農産物価格の回復状況の米・もも・牛肉別）は系列ごとに登録した（34指標→39件）。県の判定の assessment への換算は 達成=achieved、達成見込み=mostly_achieved、未達成・未達成見込み=not_achieved、判定なし=not_assessable とした。"
+ },
+ "selections": [
+  {
+   "area_number": 1,
+   "official_title": "全国に誇れる健康長寿県へ",
+   "project_id": "jp-local-070009-project-2025-health-longevity",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「ひと」分野の政策1で、計画の掲載順では第1位。",
+   "series_id": "jp-local-070009-project-series-health-longevity",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 2,
+   "official_title": "結婚・出産・子育ての希望をかなえる環境づくり",
+   "project_id": "jp-local-070009-project-2025-marriage-childbirth-childrearing",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「ひと」分野の政策2で、計画の掲載順では第2位。",
+   "series_id": "jp-local-070009-project-series-marriage-childbirth-childrearing",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 3,
+   "official_title": "「福島ならでは」の教育の充実",
+   "project_id": "jp-local-070009-project-2025-fukushima-education",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「ひと」分野の政策3で、計画の掲載順では第3位。",
+   "series_id": "jp-local-070009-project-series-fukushima-education",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 4,
+   "official_title": "誰もがいきいきと暮らせる県づくり",
+   "project_id": "jp-local-070009-project-2025-inclusive-community-life",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「ひと」分野の政策4で、計画の掲載順では第4位。",
+   "series_id": "jp-local-070009-project-series-inclusive-community-life",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 5,
+   "official_title": "福島への新しい人の流れづくり",
+   "project_id": "jp-local-070009-project-2025-new-inflow-of-people",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「ひと」分野の政策5で、計画の掲載順では第5位。",
+   "series_id": "jp-local-070009-project-series-new-inflow-of-people",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 6,
+   "official_title": "東日本大震災・原子力災害からの復興・再生",
+   "project_id": "jp-local-070009-project-2025-reconstruction-and-revitalization",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「暮らし」分野の政策1で、計画の掲載順では第6位。",
+   "series_id": "jp-local-070009-project-series-reconstruction-and-revitalization",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 7,
+   "official_title": "災害に強く治安が確保されている安全・安心な県づくり",
+   "project_id": "jp-local-070009-project-2025-disaster-resilience-and-safety",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「暮らし」分野の政策2で、計画の掲載順では第7位。",
+   "series_id": "jp-local-070009-project-series-disaster-resilience-and-safety",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 8,
+   "official_title": "安心の医療、介護・福祉提供体制の整備",
+   "project_id": "jp-local-070009-project-2025-medical-care-welfare-system",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「暮らし」分野の政策3で、計画の掲載順では第8位。",
+   "series_id": "jp-local-070009-project-series-medical-care-welfare-system",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 9,
+   "official_title": "環境と調和・共生する県づくり",
+   "project_id": "jp-local-070009-project-2025-environment-coexistence",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「暮らし」分野の政策4で、計画の掲載順では第9位。",
+   "series_id": "jp-local-070009-project-series-environment-coexistence",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 10,
+   "official_title": "過疎・中山間地域の持続的な発展",
+   "project_id": "jp-local-070009-project-2025-depopulated-mountainous-areas",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「暮らし」分野の政策5で、計画の掲載順では第10位。",
+   "series_id": "jp-local-070009-project-series-depopulated-mountainous-areas",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 11,
+   "official_title": "ふれあいと親しみのある魅力あふれる県づくり",
+   "project_id": "jp-local-070009-project-2025-community-charm",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「暮らし」分野の政策6で、計画の掲載順では第11位。",
+   "series_id": "jp-local-070009-project-series-community-charm",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 12,
+   "official_title": "地域産業の持続的発展",
+   "project_id": "jp-local-070009-project-2025-regional-industry-development",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策1で、計画の掲載順では第12位。",
+   "series_id": "jp-local-070009-project-series-regional-industry-development",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 13,
+   "official_title": "福島イノベーション・コースト構想の推進",
+   "project_id": "jp-local-070009-project-2025-innovation-coast-initiative",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策2で、計画の掲載順では第13位。",
+   "series_id": "jp-local-070009-project-series-innovation-coast-initiative",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 14,
+   "official_title": "もうかる農林水産業の実現",
+   "project_id": "jp-local-070009-project-2025-profitable-agriculture-forestry-fisheries",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策3で、計画の掲載順では第14位。",
+   "series_id": "jp-local-070009-project-series-profitable-agriculture-forestry-fisheries",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 15,
+   "official_title": "再生可能エネルギー先駆けの地の実現",
+   "project_id": "jp-local-070009-project-2025-renewable-energy-frontier",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策4で、計画の掲載順では第15位。",
+   "series_id": "jp-local-070009-project-series-renewable-energy-frontier",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 16,
+   "official_title": "魅力を最大限いかした観光・交流の促進",
+   "project_id": "jp-local-070009-project-2025-tourism-and-exchange",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策5で、計画の掲載順では第16位。",
+   "series_id": "jp-local-070009-project-series-tourism-and-exchange",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 17,
+   "official_title": "福島の産業を支える人材の確保・育成",
+   "project_id": "jp-local-070009-project-2025-industrial-workforce",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策6で、計画の掲載順では第17位。",
+   "series_id": "jp-local-070009-project-series-industrial-workforce",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 18,
+   "official_title": "地域を結ぶ社会基盤の整備促進",
+   "project_id": "jp-local-070009-project-2025-regional-transport-infrastructure",
+   "selection_basis": "登録単位は総合計画の政策であり、母集団18政策の全てを登録対象とした。本政策は「しごと」分野の政策7で、計画の掲載順では第18位。",
+   "series_id": "jp-local-070009-project-series-regional-transport-infrastructure",
+   "source_ids": [
+    "fukushima-pref-plan-chapter4-framework",
+    "fukushima-pref-plan-page"
+   ]
+  }
+ ]
+}
