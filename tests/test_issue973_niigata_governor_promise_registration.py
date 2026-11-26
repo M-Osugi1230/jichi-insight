@@ -103,7 +103,7 @@ def test_term_registers_no_manifesto_source_and_no_promises() -> None:
 
 def test_search_record_closes_as_no_stable_primary_source() -> None:
     searches = load_json("data/entities/executives/manifesto_source_searches.json")
-    assert len(searches) == 38
+    assert len(searches) == 39
     search = next(record for record in searches if record["id"] == SEARCH_ID)
     assert_valid("schemas/manifesto_source_search.schema.json", search)
     assert search["executive_term_id"] == TERM_ID
@@ -127,7 +127,7 @@ def test_search_evidence_packet_supports_the_closure() -> None:
     packets = load_json(
         "data/entities/executives/manifesto_source_search_evidence_packets.json"
     )
-    assert len(packets) == 38
+    assert len(packets) == 39
     packet = next(record for record in packets if record["id"] == PACKET_ID)
     assert_valid("schemas/evidence_packet.schema.json", packet)
     assert packet["subject_type"] == "manifesto_source_search"
@@ -148,8 +148,9 @@ def test_search_evidence_packet_supports_the_closure() -> None:
 
 def test_new_sources_are_registered_in_the_catalog() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.62.0"
-    assert len(catalog["records"]) == 178
+    assert catalog["version"] == "0.63.0"
+    assert len(catalog["records"]) == 181
+    assert len(catalog["records"]) == 181
     for source_id, url in NEW_SOURCE_URLS.items():
         record = next(r for r in catalog["records"] if r["id"] == source_id)
         assert record["url"] == url

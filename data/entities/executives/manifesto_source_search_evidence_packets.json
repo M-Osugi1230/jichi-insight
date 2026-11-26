@@ -1690,6 +1690,49 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-manifesto-source-search-akita-city-2025",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-akita-city-2025",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の開票結果で当選と得票数（98,049票）を、県選挙管理委員会の任期満了日一覧で現任期の満了日（2029年4月11日）を確認した（いずれも段階1で照合済み）。あわせて市選挙管理委員会の現行公式ページで、2025年選挙の選挙公報が現存することを確認した。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-results",
+          "akita-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "開票結果、県選管の任期満了日一覧（段階0の棚卸しと段階1で確認済み）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "市選挙管理委員会の現行公式ページ「選挙公報」から令和7年秋田市長選挙の選挙公報PDFを取得した（全2ページ、1,916,335バイト）。候補者欄は画像で、テキスト層は選管の枠文のみである。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "選挙公報PDF（全2ページ）。",
+        "decision": "accepted",
+        "review_note": "公報そのものが市の現行公式ページで現存するため、所在の確度は high とする。転記は段階3で描画画像の目視により行う。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報の所在は確認できたが、公約レコードの作成と term への接続は段階3で行うため、result_status は follow_up_required とした。候補者の詳細な政策資料が存在しないとは判定しない。",
+        "source_ids": [
+          "akita-city-mayor-election-2025-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "公約の抽出・term への接続は段階3で行う。",
+      "沼谷候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定できていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-manifesto-source-search-yamagata-city-2023",
     "subject_type": "manifesto_source_search",
     "subject_id": "manifesto-source-search-yamagata-city-2023",

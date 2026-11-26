@@ -145,7 +145,9 @@ def test_akita_progress_keeps_evaluation_and_linkage_explicit():
 
 def test_akita_fiscal_records_validate_and_keep_exact_states():
     records = load(FISCAL)
-    assert len(records) == 3
+    # Three records at Phase 15; the FY2026 local tax was added at
+    # cluster-18 stage 1 (Issue #1013).
+    assert len(records) == 4
 
     for record in records:
         assert validate(FISCAL_SCHEMA, record) == []
@@ -175,7 +177,7 @@ def test_akita_evidence_packets_validate_and_match_fiscal_records():
     packets = load(EVIDENCE)
     fiscal_ids = {record["id"] for record in load(FISCAL)}
 
-    assert len(packets) == 3
+    assert len(packets) == 4
     for packet in packets:
         assert validate(EVIDENCE_SCHEMA, packet) == []
         assert packet["subject_id"] in fiscal_ids

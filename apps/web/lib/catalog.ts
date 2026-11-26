@@ -11,6 +11,7 @@ import niigataCityFinanceCatalog from "../../../data/catalog/niigata_city_financ
 import niigataFinanceCatalog from "../../../data/catalog/niigata_prefecture_finance_sources.json";
 import kyotoFinanceCatalog from "../../../data/catalog/kyoto_prefecture_finance_sources.json";
 import kumamotoCityFinanceCatalog from "../../../data/catalog/kumamoto_city_finance_sources.json";
+import akitaCityFinanceCatalog from "../../../data/catalog/akita_city_finance_sources.json";
 import yamagataCityFinanceCatalog from "../../../data/catalog/yamagata_city_finance_sources.json";
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
@@ -60,6 +61,7 @@ export type MunicipalityKey =
   | "kumamoto-prefecture"
   | "niigata-prefecture"
   | "okayama-city"
+  | "akita-city"
   | "yamagata-city";
 export type SourceRecord = {
   id: string;
@@ -333,6 +335,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: "/municipalities/niigata-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
+  "akita-city": {
+    name: "秋田市", type: "中核市",
+    summary: "第15次秋田市総合計画「秋田市『プラスの循環』プラン」（2026〜2030年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、沼谷 純市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -349,6 +357,7 @@ export const sourceCatalog = [
   ...(niigataFinanceCatalog.records as SourceRecord[]),
   ...(kyotoFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoCityFinanceCatalog.records as SourceRecord[]),
+  ...(akitaCityFinanceCatalog.records as SourceRecord[]),
   ...(yamagataCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaCityFinanceCatalog.records as SourceRecord[]),
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
