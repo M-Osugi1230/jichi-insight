@@ -1,0 +1,391 @@
+{
+ "as_of": "2026-11-27",
+ "issue": 1079,
+ "municipality_id": "jp-local-032018",
+ "plan_title": "盛岡市総合計画",
+ "population": {
+  "basis": "盛岡市総合計画（基本構想・実施計画、計画期間：令和7年度から令和16年度）の施策体系に設定された施策全25件（基本目標1に6件、基本目標2に6件、基本目標3に6件、基本目標4に7件）を母集団とする。各施策の下位には小施策が計81件設定されている。",
+  "description": "登録単位は施策とした。理由は次のとおり。第一に、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策達成度・事業費（決算額）・小施策指標の実績が施策単位に完結しているため、公式評価の公表単位と一致する。第二に、基本目標（4件）は施策の上位の分類であり評価の公表単位ではない。第三に、小施策（81件）は施策の下位の単位であり評価シート上も施策の一部として扱われるため、本段階の登録単位とはしなかった（小施策名は各KPIのdefinitionに記録した）。",
+  "item_count": 25,
+  "unit": "policy"
+ },
+ "schema_version": "0.1.0",
+ "selection_rule": "施策は母集団の全件（25件）を、基本構想・実施計画の施策体系の掲載順（基本目標1から基本目標4、各基本目標内は施策番号順）に選定する。金額の大小では選ばない。",
+ "selections": [
+  {
+   "department": "商工労働部",
+   "official_title": "商工業の振興",
+   "pillar": "豊かな地域資源が活力を生み出すまちづくり",
+   "policy": "基本目標1 施策1",
+   "project_id": "jp-local-032018-project-2025-commerce-industry",
+   "selection_basis": "掲載順1番目: 基本目標1の施策1「商工業の振興」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-commerce-industry",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "農林部",
+   "official_title": "農林業の振興",
+   "pillar": "豊かな地域資源が活力を生み出すまちづくり",
+   "policy": "基本目標1 施策2",
+   "project_id": "jp-local-032018-project-2025-agriculture-forestry",
+   "selection_basis": "掲載順2番目: 基本目標1の施策2「農林業の振興」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-agriculture-forestry",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "商工労働部",
+   "official_title": "雇用対策の充実",
+   "pillar": "豊かな地域資源が活力を生み出すまちづくり",
+   "policy": "基本目標1 施策3",
+   "project_id": "jp-local-032018-project-2025-employment",
+   "selection_basis": "掲載順3番目: 基本目標1の施策3「雇用対策の充実」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-employment",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "市長公室",
+   "official_title": "魅力の創造・発信",
+   "pillar": "豊かな地域資源が活力を生み出すまちづくり",
+   "policy": "基本目標1 施策4",
+   "project_id": "jp-local-032018-project-2025-attraction-dissemination",
+   "selection_basis": "掲載順4番目: 基本目標1の施策4「魅力の創造・発信」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-attraction-dissemination",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "交流推進部",
+   "official_title": "観光の振興",
+   "pillar": "豊かな地域資源が活力を生み出すまちづくり",
+   "policy": "基本目標1 施策5",
+   "project_id": "jp-local-032018-project-2025-tourism",
+   "selection_basis": "掲載順5番目: 基本目標1の施策5「観光の振興」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-tourism",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "教育委員会事務局",
+   "official_title": "歴史・文化の継承",
+   "pillar": "豊かな地域資源が活力を生み出すまちづくり",
+   "policy": "基本目標1 施策6",
+   "project_id": "jp-local-032018-project-2025-history-culture",
+   "selection_basis": "掲載順6番目: 基本目標1の施策6「歴史・文化の継承」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-history-culture",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "子ども未来部",
+   "official_title": "子ども・若者への支援",
+   "pillar": "人を育み未来を選べるまちづくり",
+   "policy": "基本目標2 施策7",
+   "project_id": "jp-local-032018-project-2025-children-youth",
+   "selection_basis": "掲載順7番目: 基本目標2の施策7「子ども・若者への支援」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-children-youth",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "教育委員会事務局",
+   "official_title": "子どもの教育の充実",
+   "pillar": "人を育み未来を選べるまちづくり",
+   "policy": "基本目標2 施策8",
+   "project_id": "jp-local-032018-project-2025-education",
+   "selection_basis": "掲載順8番目: 基本目標2の施策8「子どもの教育の充実」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-education",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "総務部",
+   "official_title": "人権尊重・男女共同参画の推進",
+   "pillar": "人を育み未来を選べるまちづくり",
+   "policy": "基本目標2 施策9",
+   "project_id": "jp-local-032018-project-2025-human-rights-gender",
+   "selection_basis": "掲載順9番目: 基本目標2の施策9「人権尊重・男女共同参画の推進」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-human-rights-gender",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "交流推進部",
+   "official_title": "芸術文化の振興",
+   "pillar": "人を育み未来を選べるまちづくり",
+   "policy": "基本目標2 施策10",
+   "project_id": "jp-local-032018-project-2025-arts-culture",
+   "selection_basis": "掲載順10番目: 基本目標2の施策10「芸術文化の振興」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-arts-culture",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "交流推進部",
+   "official_title": "スポーツの推進",
+   "pillar": "人を育み未来を選べるまちづくり",
+   "policy": "基本目標2 施策11",
+   "project_id": "jp-local-032018-project-2025-sports",
+   "selection_basis": "掲載順11番目: 基本目標2の施策11「スポーツの推進」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-sports",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "教育委員会事務局",
+   "official_title": "生涯学習の推進",
+   "pillar": "人を育み未来を選べるまちづくり",
+   "policy": "基本目標2 施策12",
+   "project_id": "jp-local-032018-project-2025-lifelong-learning",
+   "selection_basis": "掲載順12番目: 基本目標2の施策12「生涯学習の推進」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-lifelong-learning",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "保健福祉部",
+   "official_title": "地域福祉の推進",
+   "pillar": "人がいきいきとつながり支え合うまちづくり",
+   "policy": "基本目標3 施策13",
+   "project_id": "jp-local-032018-project-2025-community-welfare",
+   "selection_basis": "掲載順13番目: 基本目標3の施策13「地域福祉の推進」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-community-welfare",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "保健福祉部",
+   "official_title": "高齢者福祉の充実",
+   "pillar": "人がいきいきとつながり支え合うまちづくり",
+   "policy": "基本目標3 施策14",
+   "project_id": "jp-local-032018-project-2025-elderly-welfare",
+   "selection_basis": "掲載順14番目: 基本目標3の施策14「高齢者福祉の充実」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-elderly-welfare",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "保健福祉部",
+   "official_title": "障がい者福祉の充実",
+   "pillar": "人がいきいきとつながり支え合うまちづくり",
+   "policy": "基本目標3 施策15",
+   "project_id": "jp-local-032018-project-2025-disability-welfare",
+   "selection_basis": "掲載順15番目: 基本目標3の施策15「障がい者福祉の充実」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-disability-welfare",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "保健福祉部",
+   "official_title": "生活困窮者への支援",
+   "pillar": "人がいきいきとつながり支え合うまちづくり",
+   "policy": "基本目標3 施策16",
+   "project_id": "jp-local-032018-project-2025-livelihood-support",
+   "selection_basis": "掲載順16番目: 基本目標3の施策16「生活困窮者への支援」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-livelihood-support",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "保健福祉部",
+   "official_title": "健康づくり・医療の充実",
+   "pillar": "人がいきいきとつながり支え合うまちづくり",
+   "policy": "基本目標3 施策17",
+   "project_id": "jp-local-032018-project-2025-health-medical",
+   "selection_basis": "掲載順17番目: 基本目標3の施策17「健康づくり・医療の充実」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-health-medical",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "市民部",
+   "official_title": "地域コミュニティの維持・活性化",
+   "pillar": "人がいきいきとつながり支え合うまちづくり",
+   "policy": "基本目標3 施策18",
+   "project_id": "jp-local-032018-project-2025-community-activation",
+   "selection_basis": "掲載順18番目: 基本目標3の施策18「地域コミュニティの維持・活性化」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-community-activation",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "総務部",
+   "official_title": "災害に強い地域づくり",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策19",
+   "project_id": "jp-local-032018-project-2025-disaster-resilience",
+   "selection_basis": "掲載順19番目: 基本目標4の施策19「災害に強い地域づくり」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-disaster-resilience",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "市民部",
+   "official_title": "安全・安心な暮らしの確保",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策20",
+   "project_id": "jp-local-032018-project-2025-safe-living",
+   "selection_basis": "掲載順20番目: 基本目標4の施策20「安全・安心な暮らしの確保」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-safe-living",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "環境部",
+   "official_title": "環境の保全・創造",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策21",
+   "project_id": "jp-local-032018-project-2025-environment",
+   "selection_basis": "掲載順21番目: 基本目標4の施策21「環境の保全・創造」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-environment",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "都市整備部",
+   "official_title": "コンパクトなまちづくりの推進",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策22",
+   "project_id": "jp-local-032018-project-2025-compact-city",
+   "selection_basis": "掲載順22番目: 基本目標4の施策22「コンパクトなまちづくりの推進」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-compact-city",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "建設部",
+   "official_title": "都市基盤施設の維持・強化",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策23",
+   "project_id": "jp-local-032018-project-2025-urban-infrastructure",
+   "selection_basis": "掲載順23番目: 基本目標4の施策23「都市基盤施設の維持・強化」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-urban-infrastructure",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "都市整備部",
+   "official_title": "快適な都市環境の形成",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策24",
+   "project_id": "jp-local-032018-project-2025-urban-environment",
+   "selection_basis": "掲載順24番目: 基本目標4の施策24「快適な都市環境の形成」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-urban-environment",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  },
+  {
+   "department": "建設部",
+   "official_title": "交通環境の構築",
+   "pillar": "安全・安心で快適に暮らせるまちづくり",
+   "policy": "基本目標4 施策25",
+   "project_id": "jp-local-032018-project-2025-transport-environment",
+   "selection_basis": "掲載順25番目: 基本目標4の施策25「交通環境の構築」を選定した。母集団は施策の全25件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+   "series_id": "jp-local-032018-project-series-transport-environment",
+   "source_ids": [
+    "morioka-city-plan-basic-concept-page",
+    "morioka-city-plan-implementation-page",
+    "morioka-city-plan-implementation-r8-r10",
+    "morioka-city-plan-evaluation-r7"
+   ]
+  }
+ ]
+}

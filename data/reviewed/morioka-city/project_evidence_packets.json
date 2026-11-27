@@ -1,0 +1,2692 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標1・施策1）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「商工業の振興」。基本構想および実施計画の施策体系における基本目標1の施策1の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標1）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標1 豊かな地域資源が活力を生み出すまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策1評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策1評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「商工労働部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策1評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度27点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策1評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策1評価シート見出しに公表された事業費（決算額）3,154,967千円（令和7年度・全会計、うち一般財源515,159千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策1評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された12件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。実績値が未公表の指標（「市内IT産業売上高」）は、評価シートの注記どおり未公表として登録し、0では補完していない。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-commerce-industry",
+  "open_questions": [
+   "一部の指標は実績値が未公表（評価シートに表示開始時期の注記あり）であり、公表後に更新サイクル（Issue #706）で実績値を接続する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-commerce-industry",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標1・施策2）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「農林業の振興」。基本構想および実施計画の施策体系における基本目標1の施策2の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標1）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標1 豊かな地域資源が活力を生み出すまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策2評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策2評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「農林部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策2評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度43点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策2評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策2評価シート見出しに公表された事業費（決算額）3,230,818千円（令和7年度・全会計、うち一般財源2,154,259千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は3,230,819千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策2評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された8件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-agriculture-forestry",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（3,230,818千円）と第4章実績額表（3,230,819千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-agriculture-forestry",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標1・施策3）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「雇用対策の充実」。基本構想および実施計画の施策体系における基本目標1の施策3の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標1）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標1 豊かな地域資源が活力を生み出すまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策3評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策3評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「商工労働部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策3評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度3点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策3評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策3評価シート見出しに公表された事業費（決算額）193,119千円（令和7年度・全会計、うち一般財源117,861千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策3評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された4件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-employment",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-employment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標1・施策4）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「魅力の創造・発信」。基本構想および実施計画の施策体系における基本目標1の施策4の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標1）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標1 豊かな地域資源が活力を生み出すまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策4評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策4評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「市長公室」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策4評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度77点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策4評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策4評価シート見出しに公表された事業費（決算額）385,648千円（令和7年度・全会計、うち一般財源109,350千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は385,647千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策4評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された8件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-attraction-dissemination",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（385,648千円）と第4章実績額表（385,647千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-attraction-dissemination",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標1・施策5）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「観光の振興」。基本構想および実施計画の施策体系における基本目標1の施策5の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標1）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標1 豊かな地域資源が活力を生み出すまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策5評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策5評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「交流推進部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策5評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度23点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策5評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策5評価シート見出しに公表された事業費（決算額）580,932千円（令和7年度・全会計、うち一般財源499,042千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策5評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された6件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-tourism",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-tourism",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標1・施策6）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「歴史・文化の継承」。基本構想および実施計画の施策体系における基本目標1の施策6の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標1）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標1 豊かな地域資源が活力を生み出すまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策6評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策6評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「教育委員会事務局」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策6評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度35点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策6評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策6評価シート見出しに公表された事業費（決算額）576,975千円（令和7年度・全会計、うち一般財源535,462千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策6評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された2件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-history-culture",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-history-culture",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標2・施策7）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「子ども・若者への支援」。基本構想および実施計画の施策体系における基本目標2の施策7の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標2）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標2 人を育み未来を選べるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策7評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策7評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「子ども未来部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策7評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度30点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策7評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策7評価シート見出しに公表された事業費（決算額）25,702,931千円（令和7年度・全会計、うち一般財源9,501,798千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は25,702,932千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策7評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された7件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。実績値が未公表の指標（「こどもまんなか応援サポーターの人数」、「まちづくり評価アンケート調査「子育てに関する経済的な負担が軽減している」と答えた市民の割合」）は、評価シートの注記どおり未公表として登録し、0では補完していない。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-children-youth",
+  "open_questions": [
+   "一部の指標は実績値が未公表（評価シートに表示開始時期の注記あり）であり、公表後に更新サイクル（Issue #706）で実績値を接続する。",
+   "事業費（決算額）は施策評価シート見出し（25,702,931千円）と第4章実績額表（25,702,932千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-children-youth",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標2・施策8）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「子どもの教育の充実」。基本構想および実施計画の施策体系における基本目標2の施策8の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標2）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標2 人を育み未来を選べるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策8評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策8評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「教育委員会事務局」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策8評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度29点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策8評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策8評価シート見出しに公表された事業費（決算額）8,916,957千円（令和7年度・全会計、うち一般財源5,718,820千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策8評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された10件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-education",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-education",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標2・施策9）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「人権尊重・男女共同参画の推進」。基本構想および実施計画の施策体系における基本目標2の施策9の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標2）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標2 人を育み未来を選べるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策9評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策9評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「総務部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策9評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度33点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策9評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策9評価シート見出しに公表された事業費（決算額）98,974千円（令和7年度・全会計、うち一般財源97,816千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は98,975千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策9評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された4件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-human-rights-gender",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（98,974千円）と第4章実績額表（98,975千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-human-rights-gender",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標2・施策10）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「芸術文化の振興」。基本構想および実施計画の施策体系における基本目標2の施策10の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標2）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標2 人を育み未来を選べるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策10評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策10評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「交流推進部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策10評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度49点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策10評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策10評価シート見出しに公表された事業費（決算額）1,003,430千円（令和7年度・全会計、うち一般財源959,014千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策10評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された5件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-arts-culture",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-arts-culture",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標2・施策11）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「スポーツの推進」。基本構想および実施計画の施策体系における基本目標2の施策11の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標2）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標2 人を育み未来を選べるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策11評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策11評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「交流推進部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策11評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度40点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策11評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策11評価シート見出しに公表された事業費（決算額）1,184,777千円（令和7年度・全会計、うち一般財源905,226千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策11評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された5件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-sports",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-sports",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標2・施策12）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「生涯学習の推進」。基本構想および実施計画の施策体系における基本目標2の施策12の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標2）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標2 人を育み未来を選べるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策12評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策12評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「教育委員会事務局」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策12評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度23点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策12評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策12評価シート見出しに公表された事業費（決算額）1,264,106千円（令和7年度・全会計、うち一般財源1,234,952千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は1,264,107千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策12評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された6件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-lifelong-learning",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（1,264,106千円）と第4章実績額表（1,264,107千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-lifelong-learning",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標3・施策13）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「地域福祉の推進」。基本構想および実施計画の施策体系における基本目標3の施策13の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標3）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標3 人がいきいきとつながり支え合うまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策13評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策13評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「保健福祉部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策13評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度7点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策13評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策13評価シート見出しに公表された事業費（決算額）1,468,682千円（令和7年度・全会計、うち一般財源364,504千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は1,468,683千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策13評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された5件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-community-welfare",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（1,468,682千円）と第4章実績額表（1,468,683千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-community-welfare",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標3・施策14）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「高齢者福祉の充実」。基本構想および実施計画の施策体系における基本目標3の施策14の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標3）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標3 人がいきいきとつながり支え合うまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策14評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策14評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「保健福祉部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策14評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度99点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策14評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策14評価シート見出しに公表された事業費（決算額）34,133,844千円（令和7年度・全会計、うち一般財源8,784,543千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は34,133,845千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策14評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された7件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-elderly-welfare",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（34,133,844千円）と第4章実績額表（34,133,845千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-elderly-welfare",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標3・施策15）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「障がい者福祉の充実」。基本構想および実施計画の施策体系における基本目標3の施策15の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標3）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標3 人がいきいきとつながり支え合うまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策15評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策15評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「保健福祉部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策15評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度13点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策15評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策15評価シート見出しに公表された事業費（決算額）11,306,181千円（令和7年度・全会計、うち一般財源3,576,605千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策15評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された6件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。実績値が未公表の指標（「障がい者アンケート調査「障がい福祉に関心がある」と答えた市民の割合」）は、評価シートの注記どおり未公表として登録し、0では補完していない。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-disability-welfare",
+  "open_questions": [
+   "一部の指標は実績値が未公表（評価シートに表示開始時期の注記あり）であり、公表後に更新サイクル（Issue #706）で実績値を接続する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-disability-welfare",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標3・施策16）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「生活困窮者への支援」。基本構想および実施計画の施策体系における基本目標3の施策16の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標3）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標3 人がいきいきとつながり支え合うまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策16評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策16評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「保健福祉部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策16評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度50点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策16評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策16評価シート見出しに公表された事業費（決算額）8,939,716千円（令和7年度・全会計、うち一般財源4,915,935千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は8,939,715千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策16評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された3件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-livelihood-support",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（8,939,716千円）と第4章実績額表（8,939,715千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-livelihood-support",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標3・施策17）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「健康づくり・医療の充実」。基本構想および実施計画の施策体系における基本目標3の施策17の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標3）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標3 人がいきいきとつながり支え合うまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策17評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策17評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「保健福祉部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策17評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度46点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策17評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策17評価シート見出しに公表された事業費（決算額）37,658,993千円（令和7年度・全会計、うち一般財源35,815,901千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策17評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された11件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-health-medical",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-health-medical",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標3・施策18）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「地域コミュニティの維持・活性化」。基本構想および実施計画の施策体系における基本目標3の施策18の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標3）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標3 人がいきいきとつながり支え合うまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策18評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策18評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「市民部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策18評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度100点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策18評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策18評価シート見出しに公表された事業費（決算額）808,951千円（令和7年度・全会計、うち一般財源525,674千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策18評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された2件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-community-activation",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-community-activation",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策19）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「災害に強い地域づくり」。基本構想および実施計画の施策体系における基本目標4の施策19の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策19評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策19評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「総務部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策19評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度19点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策19評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策19評価シート見出しに公表された事業費（決算額）5,615,626千円（令和7年度・全会計、うち一般財源4,938,685千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は5,615,627千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策19評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された9件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-disaster-resilience",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（5,615,626千円）と第4章実績額表（5,615,627千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-disaster-resilience",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策20）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「安全・安心な暮らしの確保」。基本構想および実施計画の施策体系における基本目標4の施策20の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策20評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策20評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「市民部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策20評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度35点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策20評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策20評価シート見出しに公表された事業費（決算額）295,509千円（令和7年度・全会計、うち一般財源201,786千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は295,511千円であり、シート見出しの印字値とは2千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策20評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された4件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-safe-living",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（295,509千円）と第4章実績額表（295,511千円）で2千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-safe-living",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策21）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「環境の保全・創造」。基本構想および実施計画の施策体系における基本目標4の施策21の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策21評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策21評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「環境部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策21評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度39点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策21評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策21評価シート見出しに公表された事業費（決算額）4,627,418千円（令和7年度・全会計、うち一般財源3,902,162千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は4,627,417千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策21評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された13件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-environment",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（4,627,418千円）と第4章実績額表（4,627,417千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策22）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「コンパクトなまちづくりの推進」。基本構想および実施計画の施策体系における基本目標4の施策22の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策22評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策22評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「都市整備部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策22評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度97点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策22評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策22評価シート見出しに公表された事業費（決算額）156,512千円（令和7年度・全会計、うち一般財源147,334千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策22評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された6件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-compact-city",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-compact-city",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策23）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「都市基盤施設の維持・強化」。基本構想および実施計画の施策体系における基本目標4の施策23の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策23評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策23評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「建設部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策23評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度8点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策23評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策23評価シート見出しに公表された事業費（決算額）12,461,035千円（令和7年度・全会計、うち一般財源6,626,038千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額の合計は12,461,034千円であり、シート見出しの印字値とは1千円の差異がある。原典内の不一致として、施策評価シート見出しの印字値を登録し、差異をここに記録する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策23評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された7件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-urban-infrastructure",
+  "open_questions": [
+   "事業費（決算額）は施策評価シート見出し（12,461,035千円）と第4章実績額表（12,461,034千円）で1千円の差異がある（原典内の不一致）。市の正誤表等が公表されれば更新サイクル（Issue #706）で追随する。",
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-urban-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策24）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「快適な都市環境の形成」。基本構想および実施計画の施策体系における基本目標4の施策24の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策24評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策24評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「都市整備部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策24評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度62点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策24評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策24評価シート見出しに公表された事業費（決算額）1,958,011千円（令和7年度・全会計、うち一般財源1,172,827千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策24評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された7件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-urban-environment",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-urban-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "基本構想（令和7年度から16年度）の施策体系、実施計画（令和8〜10年度）、令和7年度実績（まちづくりの取組）の施策評価シート",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録の単位は、盛岡市総合計画（計画期間：令和7年度から令和16年度）の施策とした。計画体系は4つの基本目標の下に25の施策、さらにその下に81の小施策を置く3層構造であり、市の公式評価である「盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－」は施策評価シートとして施策単位で公表され、施策主管部等・施策の方向性・事業費（決算額）・施策達成度・小施策指標一覧が施策単位に完結しているため、登録単位は公式評価の公表単位と一致する。基本目標（4件）は施策の上位の分類であり評価の公表単位ではないため登録単位としなかった。小施策（81件）は施策の下位の単位であり、本段階では登録単位とせず、小施策名は各KPIのdefinitionに記録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "基本構想の施策体系（基本目標4・施策25）、実施計画（令和8〜10年度）の施策体系",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page",
+     "morioka-city-plan-implementation-r8-r10"
+    ],
+    "statement": "施策名は「交通環境の構築」。基本構想および実施計画の施策体系における基本目標4の施策25の表記どおりに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "parent_policy",
+    "location_note": "基本構想の施策体系（基本目標4）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-basic-concept-page"
+    ],
+    "statement": "本登録のparent_policyには、施策を束ねる「基本目標4 安全・安心で快適に暮らせるまちづくり」を用いた。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "令和7年度実績（まちづくりの取組）施策25評価シート「1 施策の方向性」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シートの「施策の方向性」に掲載された文をpurposeに転記した（要約ではない）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "令和7年度実績（まちづくりの取組）施策25評価シート見出し「施策主管部等」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "施策評価シート見出しの「施策主管部等」に「建設部」と公表されているため、responsible_departmentに転記した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "令和7年度実績（まちづくりの取組）施策25評価シート「施策達成度（小施策達成度の平均値）」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "市の公式評価として、施策達成度27点を登録した。施策達成度は小施策達成度の平均値として市が算出した値であり、Jichi Insight独自の評価ではない。市は施策単位の評価をこの数値でのみ公表し、達成・未達成等の区分は公表していない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records.settlement",
+    "location_note": "令和7年度実績（まちづくりの取組）施策25評価シート見出し「事業費（決算額）」、同資料第4章「事務事業の実績額について」",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "盛岡市総合計画実施計画－令和7年度実績（まちづくりの取組）－の施策25評価シート見出しに公表された事業費（決算額）694,068千円（令和7年度・全会計、うち一般財源322,586千円）を登録した。同資料第4章「事務事業の実績額について」の施策別実績額（一般会計と一般会計以外の合計）とも一致することを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "令和7年度実績（まちづくりの取組）施策25評価シート「6 小施策指標一覧」、実施計画（令和8〜10年度）の指標一覧",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-implementation-r8-r10",
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本施策のKPIは、施策評価シートの小施策指標一覧に掲載された6件を、掲載順のまま全件登録した。当初値・目標値（令和16年度目標値）・実績値（令和7年度）は公表形のまま転記した。市は達成率・達成度を数値でのみ公表し達成・未達成等の区分を公表していないため、各KPIのassessmentはnot_assessableとし、達成率・達成度は詳細KPIのdefinitionに記録した。同一指標が複数の小施策に掲載されている場合は、原典の掲載どおりに各小施策の指標として登録した。市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は、評価シートに図表のみで公表され数値のテキスト公表がないため、グラフから読み取らずKPIに含めていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_provenance",
+    "location_note": "本リポジトリの運用記録（所有者からClaudeへのレビュー・昇格判断の委任、2026-11-15）",
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-plan-evaluation-r7"
+    ],
+    "statement": "本登録のレビュー・昇格判断は、所有者が2026年11月15日にClaudeへ委任した判断に基づくものであり、所有者本人のレビューとしては記録しない。review_statusのreviewedはこの委任に基づくレビュー済みを意味する。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-project-2025-transport-environment",
+  "open_questions": [
+   "市長公約との対応（related_promise_ids）は段階3（公約接続）で検討する。本段階では接続を行っていない。",
+   "市民の実感（まちづくり評価アンケート調査による施策ごとの実感度）は図表のみの公表で数値がテキスト公表されていないため未登録である。数値が公表されれば更新サイクル（Issue #706）で追加する。",
+   "施策を構成する個別の事務事業と契約・入札情報との対応は未確認である。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-project-2025-transport-environment",
+  "subject_type": "project"
+ }
+]
