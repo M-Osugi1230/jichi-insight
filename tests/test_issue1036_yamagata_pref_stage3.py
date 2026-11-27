@@ -181,9 +181,9 @@ def test_eleven_promises_in_panel_order() -> None:
 
 def test_totals_grew_by_eleven() -> None:
     all_promises = load_json("data/entities/executives/promises.json")
-    assert len(all_promises) == 586
+    assert len(all_promises) == 597
     packets = load_json("data/entities/executives/promise_evidence_packets.json")
-    assert len(packets) == 586
+    assert len(packets) == 597
 
 
 def test_policy_area_distribution() -> None:
@@ -340,7 +340,7 @@ def test_search_and_review_records() -> None:
     assert "318,364票" in search["review_note"]
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 39
+    assert len(reviews) == 40
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert_valid("schemas/manifesto_review.schema.json", review)
     assert review["executive_term_id"] == TERM_ID
@@ -378,7 +378,7 @@ def test_search_and_review_records() -> None:
             "data/entities/executives/manifesto_review_evidence_packets.json"
         )
     }
-    assert len(review_packets) == 39
+    assert len(review_packets) == 40
     review_packet = review_packets[REVIEW_ID]
     assert review_packet["subject_type"] == "manifesto_review"
     segmentation = next(

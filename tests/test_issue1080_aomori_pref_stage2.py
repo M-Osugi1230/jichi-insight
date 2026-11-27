@@ -108,8 +108,10 @@ def test_projects_validate_against_schema() -> None:
         assert project["municipality_id"] == MID
         assert project["fiscal_year"] == 2025
         assert project["review_status"] == "reviewed"
-        # Stage 3 has not registered the governor's promises yet.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #1087) registered the governor's promises
+        # and linked them here; the exact links are pinned by
+        # tests/test_issue1087_aomori_pref_stage3.py.
+        assert isinstance(project["related_promise_ids"], list)
         # The parent policy is the plan's policy theme (政策テーマ).
         assert project["parent_policy"].startswith("政策テーマ「")
         # The plan names no responsible department per policy.

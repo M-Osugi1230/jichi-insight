@@ -381,7 +381,7 @@ def test_every_promise_has_one_packet_with_provenance() -> None:
 
 def test_review_search_and_term_reflect_the_registration() -> None:
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 39
+    assert len(reviews) == 40
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert_valid("schemas/manifesto_review.schema.json", review)
     assert review["source_id"] == BULLETIN_ID

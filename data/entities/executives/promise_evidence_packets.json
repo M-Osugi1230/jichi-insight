@@ -24041,6 +24041,578 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-aomori-pref-2023-promise-001",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-001",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱1「燃料・電気・物価高騰等緊急対策実施」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱1「燃料・電気・物価高騰等緊急対策実施」（スピード実施へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-industry-competitiveness）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱1「燃料・電気・物価高騰等緊急対策実施」（スピード実施へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱1「燃料・電気・物価高騰等緊急対策実施」（スピード実施へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-002",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-002",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱2「人口減少・少子化へ挑戦」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱2「人口減少・少子化へ挑戦」（子育て費用無償化へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-childrearing-environment、jp-local-020001-project-2025-children-youth-support）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱2「人口減少・少子化へ挑戦」（子育て費用無償化へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱2「人口減少・少子化へ挑戦」（子育て費用無償化へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-003",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-003",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱3「新たな医療連携のあり方の構築」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱3「新たな医療連携のあり方の構築」（患者負担軽減へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-regional-medical-care）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱3「新たな医療連携のあり方の構築」（患者負担軽減へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱3「新たな医療連携のあり方の構築」（患者負担軽減へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-004",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-004",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱4「再生可能エネルギーと自然との共生」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱4「再生可能エネルギーと自然との共生」（自然と共生へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-renewable-energy-coexistence、jp-local-020001-project-2025-natural-environment）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱4「再生可能エネルギーと自然との共生」（自然と共生へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱4「再生可能エネルギーと自然との共生」（自然と共生へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-005",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-005",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱5「世界とつながる青森へ」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱5「世界とつながる青森へ」（県民所得アップ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-agriculture-strength、jp-local-020001-project-2025-tourism-promotion、jp-local-020001-project-2025-exports-logistics）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱5「世界とつながる青森へ」（県民所得アップ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱5「世界とつながる青森へ」（県民所得アップ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-006",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-006",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱6「気候変動・大規模災害へ挑戦」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱6「気候変動・大規模災害へ挑戦」（いのちを最優先に）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-disaster-prevention-crisis、jp-local-020001-project-2025-safe-land-infrastructure）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱6「気候変動・大規模災害へ挑戦」（いのちを最優先に）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱6「気候変動・大規模災害へ挑戦」（いのちを最優先に）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-007",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-007",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱7「スポーツと文化が花咲く青森へ」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱7「スポーツと文化が花咲く青森へ」（子供の夢応援へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-culture-sports）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱7「スポーツと文化が花咲く青森へ」（子供の夢応援へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱7「スポーツと文化が花咲く青森へ」（子供の夢応援へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-008",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-008",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱8「青森の若者が世界に咲き誇る未来に挑戦」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱8「青森の若者が世界に咲き誇る未来に挑戦」（若者が輝く青森へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-children-youth-support、jp-local-020001-project-2025-youth-jobs）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱8「青森の若者が世界に咲き誇る未来に挑戦」（若者が輝く青森へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱8「青森の若者が世界に咲き誇る未来に挑戦」（若者が輝く青森へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-009",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-009",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱9「あおもり新共生社会の実現」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱9「あおもり新共生社会の実現」（つながる優しさ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-inclusive-society）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱9「あおもり新共生社会の実現」（つながる優しさ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱9「あおもり新共生社会の実現」（つながる優しさ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-010",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-010",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱10「市町村長と知事の新たな連携」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱10「市町村長と知事の新たな連携」（住民に身近な県政へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-community-development）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱10「市町村長と知事の新たな連携」（住民に身近な県政へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱10「市町村長と知事の新たな連携」（住民に身近な県政へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-pref-2023-promise-011",
+    "subject_type": "promise",
+    "subject_id": "jp-local-020001-executive-2023-06-29-promise-011",
+    "claims": [
+      {
+        "field": "original_text",
+        "statement": "選挙公報1ページ目の宮下宗一郎候補欄から、柱11「社会資本整備と健全財政の確立」の本文をそのまま転記した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱11「社会資本整備と健全財政の確立」（県民に貢献する積極財政へ）の本文。",
+        "decision": "accepted",
+        "review_note": "候補者欄は画像形式のため、PDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。資料上の項目境界（番号付きの11の柱）をそのまま公約の単位とし、各柱の本文を1レコードとした。柱の見出しと括弧書きの副題は主題を掲げる標題であり、それ自体は公約文として完結しないため独立レコードとせず source_location に保持した。大見出し「青森新時代を創る11の柱と90の政策」、前文、PROFILE（経歴）、候補者名の見出しと写真、「90の政策」の詳細へのQRコード案内はレコードに含めていない。番号と装飾はレイアウト要素であり文言に含めない。"
+      },
+      {
+        "field": "source_provenance",
+        "statement": "原典は青森県選挙管理委員会が発行した公式選挙公報そのものであり、出典優先順位の最上位にあたる。掲載PDFは県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」から直接取得した（3,285,127バイト、SHA-256 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、段階1で登録した出典レコードの取得記録と一致する）。県選管『選挙の記録』の資料編にも選挙公報が再録されている。候補者欄は画像形式（全2ページのテキスト抽出で得られるのは選管の表頭・頒布の注意書き・投票方法の案内等の印刷文字のみで、候補者欄からは文字が抽出されない）ため、登録文はPDFの描画画像（全体200dpi・候補者欄400dpi）の目視転記を正とし、複数解像度で照合した。この来歴のため、公約レコードの confidence は high とした。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報の表頭（「令和5年6月4日執行 青森県知事選挙 選挙公報 青森県選挙管理委員会」の表示）と、県選管の公式ページ上の掲載URLに基づく。",
+        "decision": "accepted",
+        "review_note": "来歴の格付けを理由に公約文を差し替えない。候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+      },
+      {
+        "field": "related_project_ids",
+        "statement": "段階2で登録した青森県基本計画の政策のうち、主題が対応する政策（jp-local-020001-project-2025-safe-land-infrastructure、jp-local-020001-project-2025-industry-exchange-infrastructure、jp-local-020001-project-2025-transport-network）へ接続した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱11「社会資本整備と健全財政の確立」（県民に貢献する積極財政へ）の本文と、段階2で登録した政策レコードの主題との対応に基づく。",
+        "decision": "needs_review",
+        "review_note": "文言・内容に基づく推定接続のため、確信度は low / inferred を上限とする。公式な対応付けが公表されれば見直す。"
+      },
+      {
+        "field": "progress_state",
+        "statement": "段階2の政策への推定接続を根拠に in_progress とした。達成度の判定は行っていない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報（全2ページ）・1ページ目・宮下宗一郎候補欄の柱11「社会資本整備と健全財政の確立」（県民に貢献する積極財政へ）の本文。",
+        "decision": "needs_review",
+        "review_note": "推定接続を前提とする暫定的な in_progress 判定であり、県の公式な公約進捗公表に基づくものではない。達成度（達成・一部達成等）の判定は行わない。"
+      }
+    ],
+    "open_questions": [
+      "事業との接続は文言・内容に基づく推定であり、県が公約と事業の公式な対応付けを公表した場合は接続を見直す。",
+      "候補者の公式サイト等に掲載された詳細な政策資料（「90の政策」の詳細を含む）が安定した所在で確認できれば、登録済みの公約文と照合する。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-iwate-pref-2023-promise-001",
     "subject_type": "promise",
     "subject_id": "jp-local-030007-executive-2023-09-11-promise-001",
