@@ -1,0 +1,100 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-022012-assembly-2022",
+  "confidence": "high",
+  "id": "jp-local-022012-assembly-2022-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議案等審議結果一覧（賛否状況）と政務活動費収支報告書により、改選前の議員32人全員の氏名と所属会派が確認できる。議長は奈良岡隆（無所属）。",
+    "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/011/140/r08-t3-giketsu2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派構成は自民クラブ8人、創青会5人、市民クラブ4人、公明党4人、日本共産党4人、立憲民主・社民3人、無所属4人の計32人（令和8年第3回定例会時点）。",
+    "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/011/140/r08-t3-giketsu2.pdf"
+   },
+   {
+    "availability": "unknown",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "委員会の名称と日程は会期予定表で公表され、委員会の会議概要も順次掲載されるが、登録任期における委員名簿は本登録で用いた一次資料では確認できなかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとに公式ページが設けられ、議案番号・件名・議決結果の一覧と賛否状況PDFが掲載される。",
+    "source_url": "https://www.city.aomori.aomori.jp/gikai/kakonogikaijoukyou/1007129/1010093/1011140.html"
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派単位で集計した賛否の公式公表はない。採決結果は議員個人別（全会一致の場合は合計と欠席者名）で公表される形式であり、本登録の会派別賛否は個人別公表からの集計である。",
+    "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/011/140/r08-t3-giketsu2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "賛否が分かれた議案（本定例会では6件）は議員個人別の賛成・反対・欠席が公表される。全会一致の議案は賛成30人・反対0人の合計と欠席者名のみが公表され、個人別の内訳は公表されない。",
+    "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/011/140/r08-t3-giketsu2.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は議員個人への交付が原則（議員1人当たり月額9万円・四半期交付）で、令和7年度分は個人交付28人分と日本共産党への会派交付1件分の収支報告書・会計帳簿がホームページで公開されている。",
+    "source_url": "https://www.city.aomori.aomori.jp/gikai/seimukatudouhi/1010946.html"
+   },
+   {
+    "availability": "restricted",
+    "granularity": "member",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書の写しはホームページ公開の対象外であり、議会事務局で閲覧する。",
+    "source_url": "https://www.city.aomori.aomori.jp/gikai/seimukatudouhi/1007343.html"
+   },
+   {
+    "availability": "not_found",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "市議会自身の委員会視察について、議会サイトの「行政視察のご案内」は他自治体からの視察受入れの案内であり、自議会の視察報告書の一覧公表は確認できなかった。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムで本会議・委員会の会議録が公開されている。令和8年第3回定例会の会議録は2026年11月25日に掲載された。",
+    "source_url": "https://www.city.aomori.aomori.dbsr.jp/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "青森市議会インターネット中継（議会公式ページからリンクされる外部サイト）で本会議のライブ中継と録画中継が提供されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は議案等審議結果一覧に件名と議決結果が掲載される。本定例会では第2回定例会から継続審査中の請願2件（請願第6号・第10号）がいずれも不採択となった。陳情の掲載は本定例会の公表資料では確認できなかった。",
+    "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/011/140/r08-t3-giketsu2.pdf"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "aomori-city-assembly-session-2026-3",
+   "aomori-city-assembly-vote-table-2026-3",
+   "aomori-city-assembly-seimu-2025-index"
+  ]
+ }
+]
