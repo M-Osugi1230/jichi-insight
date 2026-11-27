@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-revenue",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳入総額は798,600,986千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-expenditure",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計歳出総額は770,615,744千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-local-tax",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計県税は182,088,567千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-formal-balance",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計形式収支は27,985,242千円で、歳入総額から歳出総額を差し引いた額と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額と歳出総額の差として検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-carryover-resources",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の翌年度へ繰り越すべき財源は20,094,632千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支と実質収支の差としても検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-real-balance",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計実質収支は7,890,610千円で、形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支と繰越財源の差として検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-real-balance-ratio",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質収支比率は2.1（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-standard-fiscal-scale",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の標準財政規模は381,388,392千円。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-expenditure-by-purpose",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計目的別歳出の合計は歳出総額770,615,744千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-expenditure-by-nature",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度の普通会計性質別歳出の3区分計の合計は歳出総額770,615,744千円と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。投資及び出資金・前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-fund-balance",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の基金残高（積立金現在高）は133,467,892千円で、3区分の内訳合計と一致する。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-debt-balance",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2022年度末の地方債現在高は930,738,728千円。内訳の「地方債現在高（臨時財政対策債を除く）」は資料集総括表の印字値567,151,246千円で、「臨時財政対策債」はその差額363,587,482千円（算出値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "総額は2系統で一致した。臨時財政対策債の額は印字値同士の差額として算出し、その旨を内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-current-balance-ratio",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の経常収支比率は94.5（印字値。括弧内の変種値は収録していない）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-real-debt-service-ratio",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の実質公債費比率は13.1（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-future-burden-ratio",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の将来負担比率は74.3（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-fiscal-strength-index",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の財政力指数は0.34201（印字値）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2022-ordinary-population",
+    "subject_id": "jp-local-020001-fiscal-2022-ordinary-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2022年度の住民基本台帳人口は1,225,497人（2023年1月1日現在）。",
+        "location_note": "総務省『令和4年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和4年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2022",
+          "aomori-prefecture-fiscal-situation-collection-fy2022"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-revenue",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳入総額は709,754,981千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-expenditure",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計歳出総額は681,161,044千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-local-tax",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計県税は182,723,845千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-formal-balance",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計形式収支は28,593,937千円で、歳入総額から歳出総額を差し引いた額と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額と歳出総額の差として検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-carryover-resources",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の翌年度へ繰り越すべき財源は22,694,493千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支と実質収支の差としても検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-real-balance",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計実質収支は5,899,444千円で、形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支と繰越財源の差として検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-real-balance-ratio",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質収支比率は1.6（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-standard-fiscal-scale",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の標準財政規模は378,359,033千円。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-expenditure-by-purpose",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計目的別歳出の合計は歳出総額681,161,044千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-expenditure-by-nature",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度の普通会計性質別歳出の3区分計の合計は歳出総額681,161,044千円と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。投資及び出資金・前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-fund-balance",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の基金残高（積立金現在高）は149,325,697千円で、3区分の内訳合計と一致する。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-debt-balance",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2023年度末の地方債現在高は882,298,272千円。内訳の「地方債現在高（臨時財政対策債を除く）」は資料集総括表の印字値554,574,094千円で、「臨時財政対策債」はその差額327,724,178千円（算出値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "総額は2系統で一致した。臨時財政対策債の額は印字値同士の差額として算出し、その旨を内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-current-balance-ratio",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の経常収支比率は91.2（印字値。括弧内の変種値は収録していない）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-real-debt-service-ratio",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の実質公債費比率は13.4（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-future-burden-ratio",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の将来負担比率は64.6（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-fiscal-strength-index",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の財政力指数は0.34193（印字値）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2023-ordinary-population",
+    "subject_id": "jp-local-020001-fiscal-2023-ordinary-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2023年度の住民基本台帳人口は1,205,578人（2024年1月1日現在）。",
+        "location_note": "総務省『令和5年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和5年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2023",
+          "aomori-prefecture-fiscal-situation-collection-fy2023"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-revenue",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳入総額は721,053,199千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-expenditure",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計歳出総額は691,728,176千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-local-tax",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計県税は193,342,703千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-formal-balance",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-formal-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計形式収支は29,325,023千円で、歳入総額から歳出総額を差し引いた額と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "歳入総額と歳出総額の差として検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-carryover-resources",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-carryover-resources",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の翌年度へ繰り越すべき財源は24,265,295千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支と実質収支の差としても検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-real-balance",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-real-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計実質収支は5,059,728千円で、形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "形式収支と繰越財源の差として検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-real-balance-ratio",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-real-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質収支比率は1.3（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-standard-fiscal-scale",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-standard-fiscal-scale",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の標準財政規模は382,634,998千円。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "2系統で値が一致した。千円単位の値を円換算して収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-expenditure-by-purpose",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-expenditure-by-purpose",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計目的別歳出の合計は歳出総額691,728,176千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、合計が歳出総額と一致することを検算した。「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-expenditure-by-nature",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-expenditure-by-nature",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度の普通会計性質別歳出の3区分計の合計は歳出総額691,728,176千円と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "各区分の印字値を収録し、3区分計の合計が歳出総額と一致することを検算した。投資及び出資金・前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-fund-balance",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-fund-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の基金残高（積立金現在高）は162,177,973千円で、3区分の内訳合計と一致する。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "3区分の印字値を収録し、合計が基金残高と一致することを検算した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-debt-balance",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-debt-balance",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2024年度末の地方債現在高は837,045,306千円。内訳の「地方債現在高（臨時財政対策債を除く）」は資料集総括表の印字値547,472,858千円で、「臨時財政対策債」はその差額289,572,448千円（算出値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "総額は2系統で一致した。臨時財政対策債の額は印字値同士の差額として算出し、その旨を内訳の注記に明示した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-current-balance-ratio",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-current-balance-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の経常収支比率は93（印字値。括弧内の変種値は収録していない）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。2系統で一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-real-debt-service-ratio",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-real-debt-service-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の実質公債費比率は13.4（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-future-burden-ratio",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-future-burden-ratio",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の将来負担比率は58（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録し、再計算による置き換えはしていない。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-fiscal-strength-index",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-fiscal-strength-index",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の財政力指数は0.36141（印字値）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "印字値をそのまま収録した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2024-ordinary-population",
+    "subject_id": "jp-local-020001-fiscal-2024-ordinary-population",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "value",
+        "statement": "2024年度の住民基本台帳人口は1,185,767人（2025年1月1日現在）。",
+        "location_note": "総務省『令和6年度都道府県決算カード』（青森県シート）の該当欄および青森県『令和6年度財政状況資料集』総括表・「普通会計の状況」（県公式サイト掲載）の該当欄。",
+        "source_ids": [
+          "aomori-prefecture-mic-settlement-card-fy2024",
+          "aomori-prefecture-fiscal-situation-collection-fy2024"
+        ],
+        "decision": "accepted",
+        "review_note": "カードの印字値を収録し、資料集総括表でも一致を確認した。"
+      }
+    ],
+    "open_questions": [
+      "普通会計は一般会計と一部の特別会計を再構成した統計上の会計であり、一般会計単独とは直接比較しない。",
+      "照合設計: 第2系統は青森県財政課が県公式サイトで公表する財政状況資料集（県自身の公表物）とした。両系統はいずれも国の決算統計の様式に基づき基礎数値は同一の決算統計に由来するため、本照合は転記・集計誤りの検出には有効だが、決算統計そのものの独立検証にはならない。県の法定決算書・決算の概要は一般会計・特別会計ベースであり、普通会計の集計値を独立に再現できないため照合には用いていない。"
+    ],
+    "review_status": "reviewed"
+  }
+]

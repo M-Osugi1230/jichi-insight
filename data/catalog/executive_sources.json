@@ -1,6 +1,6 @@
 {
-  "version": "0.68.0",
-  "updated_at": "2026-11-26",
+  "version": "0.69.0",
+  "updated_at": "2026-11-27",
   "scope": "pilot",
   "records": [
     {
@@ -2844,6 +2844,104 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2023年9月10日執行の山形市長選挙の選挙公報そのもの（全2ページ、候補者2人）。選挙期間中は市公式サイトの選挙ページの添付PDF（https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/012/073/r5sityousenkyokouhou3.pdf）として掲載されていたが、2026-11-26の確認では同URLは404で、選挙ページからもリンクが外れている。Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなく、公式原典とのダイジェスト照合はできなかった。一方、選挙ドットコムCDNに現存する同一公報の複写（1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）を取得し、内容を実物で照合した: 選挙管理委員会の枠文（候補者から提供された原稿をそのまま印刷したもの）、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、二面の投票案内（繰上げ閉鎖の11投票所を含む）が市公式の選挙ページ・開票結果と一致する。佐藤孝弘候補欄は1ページ目下段にあり、大見出し「市民と共に 希望の山形へ！」と「持続可能な山形市へ！」のビジョン文のもと、番号付きの7項目で構成される。公報の候補者欄は画像・ベクタ描画でテキスト層は選管の枠文のみのため、段階3の登録文は描画画像の目視転記を正とする。"
+    },
+    {
+      "id": "aomori-pref-governor",
+      "municipality_key": "aomori-prefecture",
+      "organization": "青森県",
+      "category": "executive",
+      "title": "知事・副知事のプロフィール",
+      "url": "https://www.pref.aomori.lg.jp/message/fukutiji_plofile.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "青森県知事 宮下宗一郎（みやした そういちろう）の公式プロフィール。氏名の確認に用いた。"
+    },
+    {
+      "id": "aomori-pref-governor-inauguration-2023",
+      "municipality_key": "aomori-prefecture",
+      "organization": "青森県",
+      "category": "executive",
+      "title": "宮下知事就任記者会見／令和5年6月29日",
+      "url": "https://www.pref.aomori.lg.jp/message/kaiken/kaiken20230629.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "宮下宗一郎知事の就任記者会見の県公式ページ。就任日が2023年6月29日であることの根拠（現任期の開始日）。"
+    },
+    {
+      "id": "aomori-pref-governor-election-2023-record",
+      "municipality_key": "aomori-prefecture",
+      "organization": "青森県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年6月4日執行 青森県知事選挙 選挙の記録",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/senkan/files2/R5tijisennokiroku.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管の公式記録。候補者別得票数で宮下宗一郎404,358票・小野寺晃彦174,155票・横垣成年10,516票・楠田謙信4,769票を確認し、合計593,798票が有効投票数と一致することを検算した。投票率57.05%。資料編に選挙公報も再録されている。"
+    },
+    {
+      "id": "aomori-pref-governor-election-2023-history",
+      "municipality_key": "aomori-prefecture",
+      "organization": "青森県選挙管理委員会",
+      "category": "election",
+      "title": "青森県知事選挙 候補者別得票数（歴代）",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/senkan/files2/2023_chiji_kohoshabetu.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管の歴代の候補者別得票数一覧。第22回（令和5年6月4日執行）の宮下宗一郎404,358票が『選挙の記録』と一致する。"
+    },
+    {
+      "id": "aomori-pref-governor-election-2023-results",
+      "municipality_key": "aomori-prefecture",
+      "organization": "青森県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年6月4日執行青森県知事選挙の結果について",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/senkan/2023_chijisen_kekka.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "県選管の現行公式ページ。開票結果と「選挙公報について」欄（選挙公報PDFへのリンク）を集約する。選挙公報が現行ページに現存することの確認経路。"
+    },
+    {
+      "id": "aomori-pref-governor-election-2023-bulletin",
+      "municipality_key": "aomori-prefecture",
+      "organization": "青森県選挙管理委員会",
+      "category": "election",
+      "title": "青森県知事選挙 選挙公報（令和5年6月4日執行）",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/senkan/files2/R5_chijisen_kouho.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "2023年6月4日執行の青森県知事選挙の選挙公報そのもの（候補者4人分）。県選管の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」からPDFがリンクされ、現行ページに現存する。2026-11-27に取得（3,285,127バイト、SHA-256: 73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b）。公約の抽出・登録は段階3で行う。"
+    },
+    {
+      "id": "aomori-governors-term-list",
+      "municipality_key": "aomori-prefecture",
+      "organization": "都道府県選挙管理委員会連合会",
+      "category": "election",
+      "title": "知事一覧",
+      "url": "https://todofuken-senkan.jp/pref/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "都道府県選挙管理委員会連合会の知事一覧。青森県知事 宮下宗一郎の任期満了日を令和9年6月28日（2027年6月28日）と明示し、得票数404,358票・投票率57.05%も『選挙の記録』と一致する。任期満了日の根拠。"
     }
   ]
 }

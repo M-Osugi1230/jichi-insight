@@ -1,0 +1,55 @@
+{
+  "id": "phase20-aomori-plan-review",
+  "name_ja": "青森県",
+  "next_action": "Register the priority projects in the project stage after fixing the registration unit (first candidate: the 26 policies of the Basic Plan) and confirming the published form of the policy reviews, starting by counting the measures in Chapter 3 of the plan; register the governor's promises in the promise stage from the official 2023 election bulletin, which survives on the election commission's current pages; add the assembly layer in the assembly stage, where the FY2025 settlement stands unapproved (certification pending, expected at the November 2026 regular session) and member-level votes are published; keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "020001",
+  "quality_boundary": "The prefecture's top-level plan is the Aomori Prefecture Basic Plan 'A Bridge to the Aomori New Era' (青森県基本計画「青森新時代」への架け橋, adopted in December 2023 after an assembly vote on 2023-12-08, period FY2024-FY2028). This review fixes that identity, the structure of seven policy themes carrying 26 policies, the regional implementation layer (action policies for six regions), and the progress governance based on observation indicators and annual policy reviews (政策点検). Aomori Prefecture had no reviewed deep-dive package in this repository before this stage; a Phase 9 plan review record for the same plan exists separately (data/reviewed/phase9/02.json) and agrees on the plan identity and period. This review rests on the prefecture's and the MIC's own published documents alone. The registration unit for the project stage is provisionally the policy (政策), subject to confirming the published form of the policy reviews in stage 2.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "青森県公式サイト「青森県基本計画『青森新時代』への架け橋の策定について」ページ",
+      "evidence_role": "current_plan_identity",
+      "id": "aomori-plan-current-identity",
+      "review_note": "計画名・位置付け・計画期間・策定経緯（2023年12月8日議決）は県公式の計画ページで一致を確認した。Phase 9 の既存 reviewed 記録（data/reviewed/phase9/02.json）とも計画名・期間が一致する。",
+      "source_url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/master-plan2024-2028.html",
+      "statement": "青森県の県行政運営の基本方針（最上位計画）は「青森県基本計画『青森新時代』への架け橋」であり、2023年12月8日に県議会の議決を経て策定され、計画期間は2024年度から2028年度までの5年間である。計画全体を貫く基本理念として「AX（Aomori Transformation）～青森大変革～」を掲げ、2040年のめざす姿を「若者が、未来を自由に描き、実現できる社会」とする。",
+      "title": "現行計画（青森県基本計画「青森新時代」への架け橋、2023年12月策定）",
+      "value": "青森県基本計画「青森新時代」への架け橋（2024年度〜2028年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画の概要資料の政策・施策体系、および計画第3章（政策・施策体系）",
+      "evidence_role": "policy_structure",
+      "id": "aomori-plan-policy-structure",
+      "review_note": "政策の総数とテーマ別内訳は概要資料の政策・施策体系で数えた。施策の総数は概要資料からは数えられず、段階2の冒頭で計画本文（第3章）により確定させる。",
+      "source_url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/files/13kihonnkeikakugaiyou.pdf",
+      "statement": "計画の体系は、2040年のめざす姿を7つの政策テーマ（しごと・健康・こども・環境・交流・地域社会・社会資本）に分類し、テーマごとに「将来を拓く鍵」と政策・施策を設定する。政策は全26件（しごと4・健康4・こども3・環境5・交流4・地域社会3・社会資本3）である。",
+      "title": "計画の体系（7政策テーマ・26政策）",
+      "value": "7政策テーマ（しごと・健康・こども・環境・交流・地域社会・社会資本）／26政策／施策総数は段階2で確定"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画第4章（地域別取組方針）、および青森県財政課『令和8年度当初予算「青森新時代」への架け橋 政策テーマ別主要事業』",
+      "evidence_role": "implementation_layer",
+      "id": "aomori-plan-implementation-layer",
+      "review_note": "地域別取組方針は計画第4章の構成を計画ページで確認した。政策テーマ別主要事業は県財政課の当初予算資料で、7政策テーマに沿った事業編成が毎年度公表されることを確認した。",
+      "source_url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/files/kakehashi04.pdf",
+      "statement": "計画の実施面は二層からなる。第4章に6圏域（東青・中南・三八・西北・上北・下北）の地域別取組方針を置き、毎年度の当初予算では7つの政策テーマに沿って「政策テーマ別主要事業」が編成・公表される。",
+      "title": "実施面（地域別取組方針6圏域と政策テーマ別主要事業）",
+      "value": "地域別取組方針（東青・中南・三八・西北・上北・下北）／当初予算の政策テーマ別主要事業"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "計画第5章（マネジメントサイクルの展開と取組の重点化）",
+      "evidence_role": "progress_governance",
+      "id": "aomori-plan-progress-governance",
+      "review_note": "公式の進行管理が政策点検を軸とするため、段階2の登録単位の第一候補は「政策」（26件）とする。政策点検の公表形式（政策ごとの評定の有無）は段階2で実物確認する。",
+      "source_url": "https://www.pref.aomori.lg.jp/soshiki/seisaku/seisaku/files/kakehashi05.pdf",
+      "statement": "進行管理は、観察指標による分析と政策点検（県の自己点検と青森県総合計画審議会による検証・提言）を毎年度行い、知事が翌年度の「取組の重点化」の基本方針を定めるマネジメントサイクルによる。",
+      "title": "観察指標と政策点検による進行管理",
+      "value": "観察指標／政策点検（自己点検＋総合計画審議会の検証・提言）／取組の重点化方針は毎年度策定"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-27"
+}

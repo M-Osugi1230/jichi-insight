@@ -1,0 +1,2030 @@
+[
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 798600986000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 770615744000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 182088567000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入のうち県税。総務省『令和4年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和4年度財政状況資料集』「普通会計の状況」（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-formal-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 27985242000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-carryover-resources",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "翌年度へ繰り越すべき財源",
+    "amount_yen": 20094632000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "翌年度へ繰り越すべき財源。総務省『令和4年度都道府県決算カード』（青森県シート）の印字値を収録し、形式収支から実質収支を差し引いた額とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-real-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 7890610000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 2.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質収支比率。総務省『令和4年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 381388392000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（青森県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1202984000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 51721674000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 117855617000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 60789057000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 1856583000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 57781528000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 77360098000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 91833322000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 30581305000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 135701831000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 3426148000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 105971818000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 56620000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 321377000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 215085000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 31364934000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 102449000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 24711000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 433843000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 2014760000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "総務省『令和4年度都道府県決算カード』（青森県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。投資及び出資金・前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 281585425000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 156559200000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 113934634000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 19054718000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 105971507000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 341365858000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 45860126000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 18270949000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 193414300000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7032762000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 17616590000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 59171131000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 147664461000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 144238313000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 95594714000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 43383234000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 3426148000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-fund-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 133467892000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金・土地開発基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 15987299000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 18747448000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 98733145000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-debt-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 930738728000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度都道府県決算カード』（青森県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 567151246000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 363587482000,
+        "parent_key": null,
+        "note": "地方債現在高から「地方債現在高（臨時財政対策債を除く）」の印字値を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 94.5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "経常収支比率。総務省『令和4年度都道府県決算カード』（青森県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」変種値は収録していない）。青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 13.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 74.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和4年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.34201,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和4年度都道府県決算カード』（青森県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2022-ordinary-population",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1225497,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "note": "住民基本台帳人口（2023年1月1日現在）。総務省『令和4年度都道府県決算カード』（青森県シート）の値（青森県『令和4年度財政状況資料集』総括表（県公式サイト掲載）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2022",
+      "aomori-prefecture-fiscal-situation-collection-fy2022"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 709754981000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 681161044000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 182723845000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入のうち県税。総務省『令和5年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和5年度財政状況資料集』「普通会計の状況」（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-formal-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 28593937000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-carryover-resources",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "翌年度へ繰り越すべき財源",
+    "amount_yen": 22694493000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "翌年度へ繰り越すべき財源。総務省『令和5年度都道府県決算カード』（青森県シート）の印字値を収録し、形式収支から実質収支を差し引いた額とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-real-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 5899444000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.6,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質収支比率。総務省『令和5年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 378359033000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（青森県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1253779000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 51953568000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 115940121000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 32206120000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 1815935000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 62271453000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 26125603000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 88810545000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 29792070000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 127000161000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 8063385000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 101250307000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 50285000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 372020000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 396814000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 31163761000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 98977000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 30486000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 526722000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 2038932000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "総務省『令和5年度都道府県決算カード』（青森県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。投資及び出資金・前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 268581691000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 147614190000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 113646821000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 19717457000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 101250044000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 262062888000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 33511371000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 15606443000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 170675033000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 8241361000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 20916908000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 13111772000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 150516465000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 142453080000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 94432906000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 43203465000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 8063385000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-fund-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 149325697000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金・土地開発基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 17547085000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 21107312000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 110671300000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-debt-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 882298272000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度都道府県決算カード』（青森県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 554574094000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 327724178000,
+        "parent_key": null,
+        "note": "地方債現在高から「地方債現在高（臨時財政対策債を除く）」の印字値を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 91.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "経常収支比率。総務省『令和5年度都道府県決算カード』（青森県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」変種値は収録していない）。青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 13.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 64.6,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和5年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.34193,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和5年度都道府県決算カード』（青森県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2023-ordinary-population",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1205578,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "note": "住民基本台帳人口（2024年1月1日現在）。総務省『令和5年度都道府県決算カード』（青森県シート）の値（青森県『令和5年度財政状況資料集』総括表（県公式サイト掲載）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2023",
+      "aomori-prefecture-fiscal-situation-collection-fy2023"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 721053199000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 691728176000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 193342703000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入のうち県税。総務省『令和6年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和6年度財政状況資料集』「普通会計の状況」（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-formal-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 29325023000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "歳入歳出差引額。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-carryover-resources",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "翌年度へ繰り越すべき財源",
+    "amount_yen": 24265295000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "翌年度へ繰り越すべき財源。総務省『令和6年度都道府県決算カード』（青森県シート）の印字値を収録し、形式収支から実質収支を差し引いた額とも一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-real-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 5059728000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "形式収支から翌年度へ繰り越すべき財源を差し引いた額と一致する（検算済み）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 1.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質収支比率。総務省『令和6年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 382634998000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（青森県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・諸支出金・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1329655000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 51034812000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 113538020000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 29080622000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 1972982000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 56536141000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 35406370000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 90704929000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 32566017000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 137517569000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 4851965000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 99306800000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 63486000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 563327000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 688102000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 33702911000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 99065000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 1000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 581788000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 2183614000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "総務省『令和6年度都道府県決算カード』（青森県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。投資及び出資金・前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 276356566000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 157907037000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 116961791000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 19142961000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 99306568000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 270943136000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 31136600000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 19306630000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 162623521000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7588806000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 22897521000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 27390058000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 144428474000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 139576509000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 79119441000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 54362702000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 4851965000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-fund-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 162177973000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度都道府県決算カード』（青森県シート）の千円単位の値を円換算し、青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金・土地開発基金は積立金現在高の区分に含まれないため含めない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 20393806000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 23056321000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 118727846000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-debt-balance",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 837045306000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度都道府県決算カード』（青森県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 547472858000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 289572448000,
+        "parent_key": null,
+        "note": "地方債現在高から「地方債現在高（臨時財政対策債を除く）」の印字値を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 93,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "経常収支比率。総務省『令和6年度都道府県決算カード』（青森県シート）の印字値（括弧内の「減収補塡債（特例分）及び臨時財政対策債を除く」変種値は収録していない）。青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致を確認。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 13.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "実質公債費比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 58,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "将来負担比率（健全化判断比率）。総務省『令和6年度都道府県決算カード』（青森県シート）の印字値をそのまま収録し、再計算による置き換えはしていない。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.36141,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "財政力指数（過去3年平均）。総務省『令和6年度都道府県決算カード』（青森県シート）の印字値をそのまま収録する。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2024-ordinary-population",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1185767,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "note": "住民基本台帳人口（2025年1月1日現在）。総務省『令和6年度都道府県決算カード』（青森県シート）の値（青森県『令和6年度財政状況資料集』総括表（県公式サイト掲載）でも一致）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-prefecture-mic-settlement-card-fy2024",
+      "aomori-prefecture-fiscal-situation-collection-fy2024"
+    ]
+  }
+]
