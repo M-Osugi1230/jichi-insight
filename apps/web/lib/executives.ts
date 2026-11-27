@@ -118,6 +118,7 @@ const municipalityIdToKey = {
   "jp-local-330001": "okayama-prefecture",
   "jp-local-430005": "kumamoto-prefecture",
   "jp-local-070009": "fukushima-prefecture",
+  "jp-local-020001": "aomori-prefecture",
   "jp-local-060003": "yamagata-prefecture",
   "jp-local-050008": "akita-prefecture",
   "jp-local-221007": "shizuoka-city",

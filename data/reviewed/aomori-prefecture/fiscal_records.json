@@ -1,0 +1,71 @@
+[
+  {
+    "id": "jp-local-020001-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 751400000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "青森県財政課『令和8年度当初予算一般会計当初予算款別総括表』の印字値。青森県議会第325回定例会の議決結果では、議案第1号「令和8年度青森県一般会計予算」は2026年3月24日に「原案可決」と記録されている。令和8年度一般会計補正予算（第1号）の県報公示（青森県報号外第71号）でも、歳入合計の「補正前の額」が751,400,000千円と一致することを確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-pref-budget-2026-category-table",
+      "aomori-pref-assembly-325-session-results",
+      "aomori-pref-budget-2026-supplementary-1-gazette"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計県税",
+    "amount_yen": 162183592000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "同款別総括表の県税の印字値。青森県財政課『令和8年度当初予算案の概要』でも県税1,621億8,359万2千円（162,183,592千円）と円単位で一致することを確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-pref-budget-2026-category-table",
+      "aomori-pref-assembly-325-session-results",
+      "aomori-pref-budget-2026-summary"
+    ]
+  },
+  {
+    "id": "jp-local-020001-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-020001",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 751400000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "同款別総括表の歳出合計の印字値で、歳入総額と一致する。補正予算（第1号）の県報公示でも、歳出合計の「補正前の額」が751,400,000千円と一致することを確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-pref-budget-2026-category-table",
+      "aomori-pref-assembly-325-session-results",
+      "aomori-pref-budget-2026-supplementary-1-gazette"
+    ]
+  }
+]
