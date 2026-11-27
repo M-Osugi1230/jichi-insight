@@ -1,0 +1,254 @@
+{
+  "as_of": "2026-11-27",
+  "issue": 1081,
+  "municipality_id": "jp-local-022012",
+  "plan_title": "青森市総合計画前期基本計画",
+  "population": {
+    "basis": "青森市総合計画前期基本計画（令和6年9月27日策定、計画期間は2024年度から2028年度。基本構想は2024年度から2033年度）の体系を母集団とする。計画は基本構想第3章「施策の大綱」の17の政策を3つの基本政策（仕事をつくる、人をまもり・そだてる、まちをデザインする）の下に置き、政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定める。政策の下には52の施策があり、目標とする指標は施策ごとに設定される（全113件、うち1件は他施策の指標の再掲）。",
+    "description": "登録単位は政策とした。理由は次のとおり。第一に、段階1の plan_review が本計画の登録単位を政策（17件）と確定している。第二に、計画の進捗管理は政策を束ねる体系で行われ、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明する。第三に、公式評価（達成度評価A〜D）は指標単位にのみ公表され政策単位の総合評価はなく、政策単位の金額合計も公表されていないため、評価・金額の公表単位に政策を一致させることはできないが、施策単位へ降ろす根拠もない。なお、指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。",
+    "item_count": 17,
+    "unit": "policy"
+  },
+  "schema_version": "0.1.0",
+  "selection_rule": "母集団（17政策）の全件を、計画本編の掲載順（基本政策ごと・政策番号順）に選定する。金額の大小では選ばない。",
+  "selections": [
+    {
+      "department": null,
+      "official_title": "活力ある地域産業の育成",
+      "pillar": "仕事をつくる",
+      "policy": "政策1",
+      "project_id": "jp-local-022012-project-2024-regional-industry",
+      "selection_basis": "掲載順1番目: 基本政策「仕事をつくる」の政策1「活力ある地域産業の育成」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-regional-industry",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "時代の変化を先取りした産業振興",
+      "pillar": "仕事をつくる",
+      "policy": "政策2",
+      "project_id": "jp-local-022012-project-2024-future-industry",
+      "selection_basis": "掲載順2番目: 基本政策「仕事をつくる」の政策2「時代の変化を先取りした産業振興」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-future-industry",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "地域の特性を活かした市場開拓",
+      "pillar": "仕事をつくる",
+      "policy": "政策3",
+      "project_id": "jp-local-022012-project-2024-market-development",
+      "selection_basis": "掲載順3番目: 基本政策「仕事をつくる」の政策3「地域の特性を活かした市場開拓」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-market-development",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "国内外の観光需要の取り込み",
+      "pillar": "仕事をつくる",
+      "policy": "政策4",
+      "project_id": "jp-local-022012-project-2024-tourism-demand",
+      "selection_basis": "掲載順4番目: 基本政策「仕事をつくる」の政策4「国内外の観光需要の取り込み」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-tourism-demand",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "連携や交流による地域活力の強化",
+      "pillar": "仕事をつくる",
+      "policy": "政策5",
+      "project_id": "jp-local-022012-project-2024-collaboration-exchange",
+      "selection_basis": "掲載順5番目: 基本政策「仕事をつくる」の政策5「連携や交流による地域活力の強化」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-collaboration-exchange",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "未来を担う人財の育成",
+      "pillar": "人をまもり・そだてる",
+      "policy": "政策1",
+      "project_id": "jp-local-022012-project-2024-future-talent",
+      "selection_basis": "掲載順6番目: 基本政策「人をまもり・そだてる」の政策1「未来を担う人財の育成」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-future-talent",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "誰もが文化・スポーツに親しめる機会の充実",
+      "pillar": "人をまもり・そだてる",
+      "policy": "政策2",
+      "project_id": "jp-local-022012-project-2024-culture-sports",
+      "selection_basis": "掲載順7番目: 基本政策「人をまもり・そだてる」の政策2「誰もが文化・スポーツに親しめる機会の充実」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-culture-sports",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "生涯を通じた健康づくり・持続可能な医療提供体制の推進",
+      "pillar": "人をまもり・そだてる",
+      "policy": "政策3",
+      "project_id": "jp-local-022012-project-2024-health-medical",
+      "selection_basis": "掲載順8番目: 基本政策「人をまもり・そだてる」の政策3「生涯を通じた健康づくり・持続可能な医療提供体制の推進」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-health-medical",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "高齢者や障がい者が住み慣れた地域で安心して暮らせる環境づくり",
+      "pillar": "人をまもり・そだてる",
+      "policy": "政策4",
+      "project_id": "jp-local-022012-project-2024-elderly-disability-care",
+      "selection_basis": "掲載順9番目: 基本政策「人をまもり・そだてる」の政策4「高齢者や障がい者が住み慣れた地域で安心して暮らせる環境づくり」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-elderly-disability-care",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "誰もが互いに尊重し、支え合う社会の推進",
+      "pillar": "人をまもり・そだてる",
+      "policy": "政策5",
+      "project_id": "jp-local-022012-project-2024-mutual-respect-society",
+      "selection_basis": "掲載順10番目: 基本政策「人をまもり・そだてる」の政策5「誰もが互いに尊重し、支え合う社会の推進」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-mutual-respect-society",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "安全・安心な市民生活・地域社会の確保",
+      "pillar": "人をまもり・そだてる",
+      "policy": "政策6",
+      "project_id": "jp-local-022012-project-2024-safe-secure-life",
+      "selection_basis": "掲載順11番目: 基本政策「人をまもり・そだてる」の政策6「安全・安心な市民生活・地域社会の確保」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-safe-secure-life",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "コンパクト・プラス・ネットワークの都市づくり",
+      "pillar": "まちをデザインする",
+      "policy": "政策1",
+      "project_id": "jp-local-022012-project-2024-compact-city",
+      "selection_basis": "掲載順12番目: 基本政策「まちをデザインする」の政策1「コンパクト・プラス・ネットワークの都市づくり」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-compact-city",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "災害防止・雪対策の充実",
+      "pillar": "まちをデザインする",
+      "policy": "政策2",
+      "project_id": "jp-local-022012-project-2024-disaster-snow",
+      "selection_basis": "掲載順13番目: 基本政策「まちをデザインする」の政策2「災害防止・雪対策の充実」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-disaster-snow",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "都市景観・居住環境の充実",
+      "pillar": "まちをデザインする",
+      "policy": "政策3",
+      "project_id": "jp-local-022012-project-2024-urban-landscape-living",
+      "selection_basis": "掲載順14番目: 基本政策「まちをデザインする」の政策3「都市景観・居住環境の充実」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-urban-landscape-living",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "社会情勢の変化に対応した交通環境の充実",
+      "pillar": "まちをデザインする",
+      "policy": "政策4",
+      "project_id": "jp-local-022012-project-2024-transport-environment",
+      "selection_basis": "掲載順15番目: 基本政策「まちをデザインする」の政策4「社会情勢の変化に対応した交通環境の充実」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-transport-environment",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "未来につなぐ自然環境の保全・快適な生活環境の確保",
+      "pillar": "まちをデザインする",
+      "policy": "政策5",
+      "project_id": "jp-local-022012-project-2024-natural-environment",
+      "selection_basis": "掲載順16番目: 基本政策「まちをデザインする」の政策5「未来につなぐ自然環境の保全・快適な生活環境の確保」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-natural-environment",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    },
+    {
+      "department": null,
+      "official_title": "脱炭素・循環型社会の実現",
+      "pillar": "まちをデザインする",
+      "policy": "政策6",
+      "project_id": "jp-local-022012-project-2024-decarbonization-circular",
+      "selection_basis": "掲載順17番目: 基本政策「まちをデザインする」の政策6「脱炭素・循環型社会の実現」を選定した。母集団は青森市総合計画前期基本計画の17政策の全件であり、本登録では全件を選定した。金額の大小では選んでいない。",
+      "series_id": "jp-local-022012-project-series-decarbonization-circular",
+      "source_ids": [
+        "aomori-city-comprehensive-plan-page",
+        "aomori-city-zenki-keikaku-2024",
+        "aomori-city-major-measures-report-fy2024"
+      ]
+    }
+  ]
+}
