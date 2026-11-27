@@ -1,0 +1,107 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-030007-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-030007-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "議員名簿（五十音順）と会派別名簿が議会ライブラリで公開され、現員44名を確認できる。定数48名に対し欠員4名（任期中の辞職4名：中平均・五日市王・郷右近浩・ハクセル美穂子）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別名簿で9会派の構成を公開（自由民主党16・希望いわて13・いわて新政会5・いわて県民クラブ・無所属の会4・日本共産党2・参政党1・社会民主党1・公明党1・無所属1、計44名）。政務活動費の公表時点（2026年6月）から髙橋はじめ（希望いわて→参政党）と神﨑浩之（自由民主党→無所属）の所属が変わっている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "委員会名簿で議会運営委員会、常任委員会5（総務・文教・環境福祉・商工建設・農林水産）、特別委員会5（人口減少・公共インフラ調査、防災・減災対策調査、グローバル化・多文化共生調査、こども政策調査、東日本大震災津波復興）の構成を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "知事提出議案・議員提出議案・請願陳情の各検索データベースと「会議の結果」ページで議案等の件名・提出日・議決結果を公開。本登録は令和8年9月定例会の議案27件・認定15件・発議案11件・請願6件（第102号は項目別に3件）＝61件で、報告11件は議決の対象でないため登録していない。令和8年12月定例会は開催中（2026年11月27日〜12月10日）のため対象外。",
+    "source_url": null
+   },
+   {
+    "availability": "not_published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "会派単位に集計した賛否は公表されていない（議員個人別の賛否のみが公表対象で、本登録でも会派別賛否の集約は行っていない）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "「議員別の賛否の状況」PDFで、令和8年9月定例会の議案等60件について議員44名全員の記号（○＝賛成、×＝反対、議＝議長、欠＝欠席、－＝議場に不在）と賛成者数・反対者数・表決者数を公開し、本登録では全60件で記号集計と印字合計の一致を確認した。ただし同定例会の会議録は2026年11月27日時点で未公表のため、賛否表が本会議の表決記録そのものかは会議録と突合できておらず、votes の method は unknown とし、会議録公表後に追認確認する（Issue #706で追跡）。請願第97号・第98号の○は、表自体の注記により「本請願を不採択とする委員長報告に反対したこと」を表し、印字された賛成者数（請願への賛成）として集計されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "収支報告書が県公式ページで議員個人単位に公表され、令和7年度分まで公開。本登録は令和7年度分の48単位（現職45名・年度途中の辞職3名）で、全単位で経費内訳の合計が支出額と一致することを確認した。交付は議員個人へ月額31万円（政務活動費の交付に関する条例）。",
+    "source_url": null
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書その他の証拠書類の写しと会計帳簿（支出部分）の写しは、政務活動費収支報告書等閲覧制度により窓口で閲覧できるが、Webでは公表されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会調査・議員派遣調査・海外行政視察の結果（委員会・期間・視察先）が議会ライブラリ「県議会の活動」で公開されている。ただし費用・参加者・報告書本文は公表されていないため、個別の視察レコードは登録していない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "本会議等の会議録が県議会会議録システムで公開されている。ただし令和8年9月定例会分は2026年11月27日時点で未公表（公表済みは令和8年6月定例会まで）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継（ライブ・録画）が議会ライブラリから提供されている。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願・陳情データベースで受理年月日・付託委員会・本会議議決結果を公開。令和8年9月定例会では請願6件（第97号〜第102号、第102号は項目別に表決）が本会議で表決された。陳情は同定例会の賛否表に含まれておらず、本会議の表決対象となっていない。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "iwate-pref-assembly-library-top",
+   "iwate-pref-assembly-kaiha-roster",
+   "iwate-pref-assembly-member-roster",
+   "iwate-pref-assembly-committee-roster",
+   "iwate-pref-assembly-sep2026-vote-table",
+   "iwate-pref-assembly-seimu-fy2025",
+   "iwate-pref-assembly-seimu-reading",
+   "iwate-pref-assembly-minutes-index",
+   "iwate-pref-assembly-visitation",
+   "iwate-pref-assembly-petitions"
+  ]
+ }
+]
