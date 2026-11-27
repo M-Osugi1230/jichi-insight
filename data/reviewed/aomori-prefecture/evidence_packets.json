@@ -1,0 +1,65 @@
+[
+  {
+    "id": "evidence-aomori-prefecture-2026-initial-budget-total-revenue",
+    "subject_id": "jp-local-020001-fiscal-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度青森県一般会計当初予算の歳入総額は751,400,000千円であり、議案第1号として2026年3月24日に「原案可決」で議決された。",
+        "location_note": "青森県財政課『令和8年度当初予算一般会計当初予算款別総括表』の歳入合計の欄、青森県報号外第71号（令和8年度一般会計補正予算（第1号）の要領）の第1表の「補正前の額」、および青森県議会「議案等の審査結果」の第325回定例会議決結果における議案第1号の欄。",
+        "source_ids": [
+          "aomori-pref-budget-2026-category-table",
+          "aomori-pref-assembly-325-session-results",
+          "aomori-pref-budget-2026-supplementary-1-gazette"
+        ],
+        "decision": "accepted",
+        "review_note": "款別総括表の千円単位の印字値を円単位へ換算して保存。補正予算（第1号）公示の第1表「補正前の額」（751,400,000千円）とも一致を確認した。議決日と結果文言「原案可決」は県議会の議決結果で確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2026-initial-budget-local-tax",
+    "subject_id": "jp-local-020001-fiscal-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度青森県一般会計当初予算の県税は162,183,592千円である。",
+        "location_note": "青森県財政課『令和8年度当初予算一般会計当初予算款別総括表』の県税の欄、および『令和8年度当初予算案の概要』の歳入内訳（県税1,621億8,359万2千円）。",
+        "source_ids": [
+          "aomori-pref-budget-2026-category-table",
+          "aomori-pref-assembly-325-session-results",
+          "aomori-pref-budget-2026-summary"
+        ],
+        "decision": "accepted",
+        "review_note": "款別総括表の印字値を収録。当初予算案の概要の円単位表記とも一致を確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-aomori-prefecture-2026-initial-budget-total-expenditure",
+    "subject_id": "jp-local-020001-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度青森県一般会計当初予算の歳出総額は751,400,000千円で、歳入総額と一致する。",
+        "location_note": "青森県財政課『令和8年度当初予算一般会計当初予算款別総括表』の歳出合計の欄、および青森県報号外第71号の第1表の「補正前の額」。",
+        "source_ids": [
+          "aomori-pref-budget-2026-category-table",
+          "aomori-pref-assembly-325-session-results",
+          "aomori-pref-budget-2026-supplementary-1-gazette"
+        ],
+        "decision": "accepted",
+        "review_note": "款別総括表の印字値を収録し、歳入総額および補正予算（第1号）公示の「補正前の額」と一致することを確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

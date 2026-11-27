@@ -17,6 +17,7 @@ import yamagataCityFinanceCatalog from "../../../data/catalog/yamagata_city_fina
 import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_finance_sources.json";
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
 import fukushimaFinanceCatalog from "../../../data/catalog/fukushima_prefecture_finance_sources.json";
+import aomoriFinanceCatalog from "../../../data/catalog/aomori_prefecture_finance_sources.json";
 import iwateFinanceCatalog from "../../../data/catalog/iwate_prefecture_finance_sources.json";
 import akitaFinanceCatalog from "../../../data/catalog/akita_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
@@ -67,10 +68,13 @@ export type MunicipalityKey =
   | "niigata-prefecture"
   | "okayama-city"
   | "fukushima-prefecture"
+  | "aomori-prefecture"
+  | "aomori-city"
+  | "iwate-prefecture"
+  | "morioka-city"
   | "yamagata-prefecture"
   | "akita-prefecture"
   | "fukushima-city"
-  | "iwate-prefecture"
   | "akita-city"
   | "yamagata-city";
 export type SourceRecord = {
@@ -183,16 +187,16 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: "/municipalities/kumamoto-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
-  "iwate-prefecture": {
-    name: "岩手県", type: "都道府県",
-    summary: "いわて県民計画（2019～2028）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と達増拓也知事の現任期を確認します。",
-    status: "財政データ公開", href: "/municipalities/iwate-prefecture",
-    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
-  },
   "fukushima-prefecture": {
     name: "福島県", type: "都道府県",
     summary: "福島県総合計画（2021年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と内堀雅雄知事の現任期を確認します。",
     status: "財政データ公開", href: "/municipalities/fukushima-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
+  "aomori-prefecture": {
+    name: "青森県", type: "都道府県",
+    summary: "青森県基本計画「青森新時代」への架け橋（2023年策定）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と宮下宗一郎知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/aomori-prefecture",
     fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
   },
   "yamagata-prefecture": {
@@ -381,6 +385,24 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "morioka-city": {
+    name: "盛岡市", type: "中核市",
+    summary: "盛岡市総合計画（2025〜2034年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、内舘 茂市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "aomori-city": {
+    name: "青森市", type: "中核市",
+    summary: "青森市総合計画（基本構想2024〜2033年度・前期基本計画2024〜2028年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、西 秀記市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "iwate-prefecture": {
+    name: "岩手県", type: "都道府県",
+    summary: "いわて県民計画（2019～2028）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と達増拓也知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/iwate-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -404,6 +426,7 @@ export const sourceCatalog = [
   ...(okayamaFinanceCatalog.records as SourceRecord[]),
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
   ...(fukushimaFinanceCatalog.records as SourceRecord[]),
+  ...(aomoriFinanceCatalog.records as SourceRecord[]),
   ...(iwateFinanceCatalog.records as SourceRecord[]),
   ...(yamagataFinanceCatalog.records as SourceRecord[]),
   ...(akitaFinanceCatalog.records as SourceRecord[]),

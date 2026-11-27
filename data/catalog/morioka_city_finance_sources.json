@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-27",
   "scope": "phase15-core-capital-review",
   "records": [
     {
@@ -142,6 +142,20 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "岩手県が県内市町村の財政状況資料集を一括公表するZIPに含まれる盛岡市ファイル（Excel形式）。総括表に普通会計の収支・主要財政指標・地方債現在高（臨時財政対策債除き）・基金現在高を千円単位で印字する。盛岡市公式サイトの財政状況資料集ページでは令和6年度版が未掲載（2026-11-19確認）のため、県が公表する市作成資料を使用し、総務省決算カードの照合先とした。"
+    },
+    {
+      "id": "morioka-budget-2026-bill",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市",
+      "category": "budget",
+      "title": "令和8年度盛岡市一般会計・特別会計予算（議案書）",
+      "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/174/R8tousyoyosan.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "議案第3号「令和8年度盛岡市一般会計予算」の議案書。第1条で歳入歳出予算の総額126,510,000千円、第1表「歳入歳出予算」で市税44,944,674千円（項の内訳合計と一致）と印字される。議案第3号は令和8年第1回市議会定例会で可決（多数）され成立済み（市議会だよりNo.241 p.8の議決結果表）。2026-11-27にPDF実物で確認した。"
     }
   ]
 }

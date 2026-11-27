@@ -33,8 +33,10 @@ def test_manifesto_source_search_fixture_is_registered_and_linked():
 def test_manifesto_source_searches_match_contract_and_safety_boundary():
     searches = load("data/entities/executives/manifesto_source_searches.json")
 
-    assert len(searches) == 44
+    assert len(searches) == 47
     assert {search["executive_term_id"] for search in searches} == {
+        "jp-local-032018-executive-2023-09-02",
+        "jp-local-022012-executive-2023-06-04",
         "jp-local-060003-executive-2025-02-14",
         "jp-local-062014-executive-2023-09-28",
         "jp-local-400009-executive-2025-04-14",
@@ -77,8 +79,9 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         "jp-local-052019-executive-2025-04-12",
         "jp-local-050008-executive-2025-04-20",
         "jp-local-070009-executive-2026-11-12",
-        "jp-local-072010-executive-2025-12-08",
+        "jp-local-020001-executive-2023-06-29",
         "jp-local-030007-executive-2023-09-11",
+        "jp-local-072010-executive-2025-12-08",
     }
 
     for search in searches:
@@ -92,7 +95,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
         for search in searches
         if search["result_status"] == "no_stable_primary_source_found"
     ]
-    # Thirty-seven searches have registered a primary source (Fukuoka
+    # Thirty-nine searches have registered a primary source (Fukuoka
     # Prefecture, Fukuoka City, Kitakyushu City, Aichi Prefecture,
     # Nagoya City, Sapporo City, Hokkaido, Osaka Prefecture, Osaka
     # City, Kanagawa Prefecture, Yokohama City, Kawasaki City,
@@ -102,8 +105,9 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # Hamamatsu City, Shizuoka City, Hiroshima Prefecture,
     # Hiroshima City, Kyoto Prefecture, Kyoto City, Niigata City,
     # Okayama City, Kumamoto City, Yamagata City, Fukushima
-    # Prefecture, Fukushima City, Akita Prefecture, Akita City and
-    # Yamagata Prefecture, each closed by its
+    # Prefecture, Fukushima City, Akita Prefecture, Akita City,
+    # Yamagata Prefecture, Aomori Prefecture and Iwate Prefecture,
+    # each closed by its
     # official election bulletin (the Sendai, Shizuoka City,
     # Hiroshima City and Kumamoto City bulletins survive only as archived copies
     # of the cities' official election-period URLs; the Akita
@@ -123,7 +127,7 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # election commission's official election record, as is the
     # Yamagata Prefecture bulletin in the prefectural election
     # commission's official election record).
-    # Six searches remain exceptions:
+    # Eight searches remain exceptions:
     # Toyota City (the 2024 bulletin is not extant as an official web
     # publication), Asahikawa City (the 2025 bulletin has no official
     # web publication), Sakai City (the 2023 bulletin has no official
@@ -141,13 +145,24 @@ def test_manifesto_source_searches_match_contract_and_safety_boundary():
     # website during the election period, but the pages were
     # deleted and no archived copy of the bulletin page itself
     # could be located in the Wayback Machine, the National Diet
-    # Library's WARP or the other archives checked); in all six
+    # Library's WARP or the other archives checked) and Morioka City
+    # (the 2023 bulletin is not extant on the election commission's
+    # current official page, no Wayback capture of the official URL
+    # was found, and the copy on a private election site cannot be
+    # digest-verified against an official capture) and Aomori City
+    # (the 2023 bulletin issuance ordinance exists, but the bulletin
+    # itself is not linked from the city election commission's
+    # current official pages, the prefectural election record
+    # reprints no bulletin, and no archived capture of the bulletin
+    # was identified at stage 1; the full search is stage 3); in all eight
     # cases no verifiable
     # candidate publication was found, so their terms register no
     # manifesto source. The safety invariant still applies to any
     # record that reports no source: it must not claim found sources.
-    assert len(missing) == 6
+    assert len(missing) == 8
     assert {search["executive_term_id"] for search in missing} == {
+        "jp-local-032018-executive-2023-09-02",
+        "jp-local-022012-executive-2023-06-04",
         "jp-local-232114-executive-2024-02-19",
         "jp-local-012041-executive-2025-09-26",
         "jp-local-271403-executive-2023-06-09",
