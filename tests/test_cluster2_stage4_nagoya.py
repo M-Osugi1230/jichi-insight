@@ -56,7 +56,7 @@ def referenced_sources(value: Any) -> set[str]:
 def test_nagoya_catalog_is_valid() -> None:
     catalog = load_json(ROOT / "data" / "catalog" / "nagoya_assembly_sources.json")
     assert_valid("schemas/source_catalog.schema.json", catalog)
-    assert len(catalog["records"]) == 24
+    assert len(catalog["records"]) == 25
     assert {r["municipality_key"] for r in catalog["records"]} == {"nagoya-city"}
 
 
@@ -161,6 +161,38 @@ def test_nagoya_divided_vote_member_positions() -> None:
     kyousan = next(fv for fv in faction_votes if fv["faction_name"] == "日本共産党名古屋市会議員団")
     assert kyousan["position"] == "against"
     assert kyousan["against_count"] == 3
+
+
+def test_nagoya_no134_minutes_reconciliation() -> None:
+    """第134号の会議録による最終照合（2026-11-27）。
+
+    会議録検索システムの復旧後に令和8年6月定例会の本会議会議録
+    （7月6日・第15号）で確認した内容を、議案パケットと採決パケットの
+    両方に minutes_reconciliation として記録し、open_questions を解消する。
+    起立採決のため会議録に賛否の数値・個人別賛否はなく、64・3の典拠は
+    引き続き市会だより第202号である。
+    """
+    catalog = load_json(ROOT / "data" / "catalog" / "nagoya_assembly_sources.json")
+    minutes = next(
+        r for r in catalog["records"] if r["id"] == "nagoya-city-assembly-minutes-2026-07-06"
+    )
+    assert minutes["url"].startswith("https://ssp.kaigiroku.net/tenant/nagoya/SpMinuteView.html")
+    assert minutes["indexed_at"] == "2026-11-27"
+
+    packets = load_json(BASE / "proposal_vote_evidence_packets.json")
+    for packet_id, key_phrase in (
+        (
+            "evidence-jp-local-231002-assembly-2023-proposal-2026-011",
+            "名古屋城天守閣整備事業先行工事",
+        ),
+        ("evidence-jp-local-231002-assembly-2023-vote-2026-011", "起立採決"),
+    ):
+        packet = next(p for p in packets if p["id"] == packet_id)
+        assert packet["open_questions"] == []
+        claim = next(c for c in packet["claims"] if c["field"] == "minutes_reconciliation")
+        assert claim["decision"] == "accepted"
+        assert claim["source_ids"] == ["nagoya-city-assembly-minutes-2026-07-06"]
+        assert key_phrase in claim["statement"]
 
 
 def test_nagoya_expenses_reconcile() -> None:

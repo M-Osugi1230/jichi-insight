@@ -133,12 +133,26 @@
       "id": "nagoya-city-assembly-minutes-search",
       "indexed_at": "2026-11-19",
       "municipality_key": "nagoya-city",
-      "notes": "本会議・委員会の会議録を検索・閲覧できる公式システム。2026-11-19の照合時点では緊急メンテナンス中で閲覧できなかった。",
+      "notes": "本会議・委員会の会議録を検索・閲覧できる公式システム。2026-11-19の照合時点では緊急メンテナンス中で閲覧できなかったが、2026-11-27に復旧を確認した。",
       "organization": "名古屋市会",
       "review_status": "reviewed",
       "source_kind": "search_system",
       "title": "名古屋市会会議録・委員会記録検索システム",
       "url": "https://ssp.kaigiroku.net/tenant/nagoya/SpTop.html"
+    },
+    {
+      "availability": "published",
+      "category": "assembly",
+      "confidence": "high",
+      "id": "nagoya-city-assembly-minutes-2026-07-06",
+      "indexed_at": "2026-11-27",
+      "municipality_key": "nagoya-city",
+      "notes": "第134号議案の採決部分を掲載。6月19日（第11号）の目次に「第134号議案 名古屋城天守閣整備事業先行工事の契約変更について」と記載。7月6日（第15号）の採決は起立採決で、「起立多数であります。」により可決。賛否の数値・個人別賛否の記載はない。2026-11-27に閲覧して確認。",
+      "organization": "名古屋市会",
+      "review_status": "reviewed",
+      "source_kind": "landing_page",
+      "title": "令和8年6月定例会 本会議会議録 7月6日（第15号）",
+      "url": "https://ssp.kaigiroku.net/tenant/nagoya/SpMinuteView.html?power_user=false&tenant_id=207&council_id=676&schedule_id=6&view_years="
     },
     {
       "availability": "published",
@@ -338,6 +352,6 @@
     }
   ],
   "scope": "pilot",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-27",
   "version": "0.1.0"
 }
