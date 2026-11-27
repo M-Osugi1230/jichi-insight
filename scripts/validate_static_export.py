@@ -786,7 +786,7 @@ def validate_hokkaido_assembly_scope() -> list[str]:
     if path.is_file():
         content = normalized_html(path)
         for phrase in [
-            "43議会", "埼玉県議会", "さいたま市議会", "川口市議会",
+            "47議会", "埼玉県議会", "さいたま市議会", "川口市議会",
             "大阪府議会", "大阪市会", "堺市議会",
             "北海道議会", "札幌市議会", "旭川市議会",
             "神奈川県議会", "横浜市会", "川崎市議会",
@@ -1283,7 +1283,7 @@ def validate_chiba_cluster_export() -> list[str]:
     assemblies_page = EXPORT_ROOT / "assemblies/index.html"
     if assemblies_page.is_file():
         html = normalized_html(assemblies_page)
-        for phrase in ("43議会", "千葉県議会", "千葉市議会"):
+        for phrase in ("47議会", "千葉県議会", "千葉市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Chiba fact: {phrase}")
     for slug, phrases in {
@@ -1617,7 +1617,7 @@ def validate_hyogo_web_finish_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("43議会", "兵庫県議会", "神戸市会"):
+        for phrase in ("47議会", "兵庫県議会", "神戸市会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Hyogo fact: {phrase}")
 
@@ -1871,7 +1871,7 @@ def validate_miyagi_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("43議会", "宮城県議会", "仙台市議会"):
+        for phrase in ("47議会", "宮城県議会", "仙台市議会"):
             if phrase not in html:
                 failures.append(f"Assemblies index missing Miyagi registered fact: {phrase}")
     for slug, phrases in (
@@ -2132,14 +2132,14 @@ def validate_kyoto_cluster_export() -> list[str]:
     assembly_index = EXPORT_ROOT / "assemblies/index.html"
     if assembly_index.is_file():
         html = normalized_html(assembly_index)
-        for phrase in ("43議会", "京都府議会", "京都市会", "unknown", "令和7年度決算は認定済み"):
+        for phrase in ("47議会", "京都府議会", "京都市会", "unknown", "令和7年度決算は認定済み"):
             if phrase not in html:
                 failures.append(f"Kyoto assembly index missing: {phrase}")
     return failures
 
 
 def validate_tohoku_cluster_export() -> list[str]:
-    """Validate six independent reviewed packages and nested export sections."""
+    """Validate ten reviewed Tohoku packages and nested export sections."""
     failures: list[str] = []
     expected_votes = {
         "fukushima-prefecture": ("内堀", "585,641票"),
@@ -2148,6 +2148,10 @@ def validate_tohoku_cluster_export() -> list[str]:
         "yamagata-city": ("佐藤", "66,670票"),
         "akita-prefecture": ("鈴木", "273,270票"),
         "akita-city": ("沼谷", "98,049票"),
+        "iwate-prefecture": ("達増", "336,502票"),
+        "morioka-city": ("内舘", "65,701票"),
+        "aomori-prefecture": ("宮下", "404,358票"),
+        "aomori-city": ("西", "57,062票"),
     }
     for slug, (person_name, vote_count) in expected_votes.items():
         municipality_path = ROOT / "data" / "reviewed" / slug / "municipality.json"
@@ -2186,6 +2190,9 @@ def validate_tohoku_cluster_export() -> list[str]:
         "fukushima-prefecture": ("継続審査中", "4議案"),
         "yamagata-prefecture": ("未認定",),
         "akita-prefecture": ("部分登録", "決算関係2件", "未閉会"),
+        "iwate-prefecture": ("継続審査中", "pending"),
+        "aomori-prefecture": ("7議案", "pending"),
+        "aomori-city": ("採決方法", "unknown"),
     }.items():
         path = EXPORT_ROOT / "municipalities" / slug / "index.html"
         if path.is_file():
@@ -2194,10 +2201,34 @@ def validate_tohoku_cluster_export() -> list[str]:
                 if marker not in html:
                     failures.append(f"{slug}: missing scope boundary {marker}")
 
+    # Confirm that the contested decision/method statuses remain unchanged in data.
+    for slug, expected_pending in (
+        ("iwate-prefecture", 1),
+        ("aomori-prefecture", 7),
+    ):
+        proposals = load_json(
+            ROOT / "data" / "reviewed" / slug / "assembly/proposals.json"
+        )
+        pending = sum(item["outcome"] == "pending" for item in proposals)
+        if pending != expected_pending:
+            failures.append(
+                f"{slug}: expected {expected_pending} pending proposals, got {pending}"
+            )
+    aomori_votes = load_json(
+        ROOT / "data/reviewed/aomori-city/assembly/votes.json"
+    )
+    if not aomori_votes or any(
+        item["method"] != "unknown" for item in aomori_votes
+    ):
+        failures.append("aomori-city: voting method is not consistently unknown")
+
     assembly_index = EXPORT_ROOT / "assemblies" / "index.html"
     if assembly_index.is_file():
         html = normalized_html(assembly_index)
-        for marker in ("43議会", "福島県議会", "山形県議会", "秋田県議会"):
+        for marker in (
+            "47議会", "福島県議会", "山形県議会", "秋田県議会",
+            "岩手県議会", "盛岡市議会", "青森県議会", "青森市議会",
+        ):
             if marker not in html:
                 failures.append(f"Assembly directory missing: {marker}")
     terms = load_json(ROOT / "data/entities/executives/executive_terms.json")
@@ -2267,7 +2298,7 @@ def validate_hiroshima_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("43議会", "広島県議会", "広島市議会"):
+        for phrase in ("47議会", "広島県議会", "広島市議会"):
             if phrase not in html:
                 failures.append(f"Assembly directory missing Hiroshima fact: {phrase}")
     return failures
@@ -2376,7 +2407,7 @@ def validate_shizuoka_cluster_export() -> list[str]:
     index = EXPORT_ROOT / "assemblies/index.html"
     if index.is_file():
         html = normalized_html(index)
-        for phrase in ("43議会", "静岡県議会", "静岡市議会", "浜松市議会"):
+        for phrase in ("47議会", "静岡県議会", "静岡市議会", "浜松市議会"):
             if phrase not in html:
                 failures.append(f"Assembly index missing Shizuoka fact: {phrase}")
     for slug, phrases in (
@@ -2432,6 +2463,14 @@ def main() -> int:
             "assemblies/akita-prefecture/index.html",
             "municipalities/akita-city/index.html",
             "assemblies/akita-city/index.html",
+            "municipalities/iwate-prefecture/index.html",
+            "assemblies/iwate-prefecture/index.html",
+            "municipalities/morioka-city/index.html",
+            "assemblies/morioka-city/index.html",
+            "municipalities/aomori-prefecture/index.html",
+            "assemblies/aomori-prefecture/index.html",
+            "municipalities/aomori-city/index.html",
+            "assemblies/aomori-city/index.html",
             "municipalities/kyoto-prefecture/index.html",
             "municipalities/kyoto-city/index.html",
             "assemblies/kyoto-prefecture/index.html",
