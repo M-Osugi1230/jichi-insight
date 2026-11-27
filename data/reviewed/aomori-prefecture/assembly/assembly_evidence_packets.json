@@ -1,0 +1,90 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-pref-assembly-roster-gojuon",
+     "aomori-pref-assembly-roster-districts"
+    ],
+    "statement": "青森県議会の定数は48名、現員は46名（欠員2名）。五十音順名簿の表題に「【定数48人】（欠員2人）」と明記され、選挙区別名簿にも定数48人・選挙区16と記されている。議員の任期満了日は2027年4月29日で選挙区別名簿に明記されており、任期開始日2023年4月30日は前任期の満了日の翌日として構成した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-pref-assembly-roster-factions"
+    ],
+    "statement": "会派別名簿（2026年5月25日更新）の印字どおり、自由民主党27名・オール青森5名・立憲民主・無所属の会4名・日本共産党3名・公明党2名・立憲民主・憲法をいかす県民の会2名・参政党1名・無所属2名の計46名を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "vacancies",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-pref-assembly-roster-districts",
+     "aomori-pref-assembly-roster-gojuon"
+    ],
+    "statement": "欠員2名の内訳は、選挙区別名簿の印字で確認した。弘前市選挙区（定数6）に欠員1名、平川市選挙区（定数2）に欠員1名で、いずれも名簿に「（欠員1）」と明記されている。南津軽郡選挙区は現員1名（阿部祐己）が掲載され欠員ではない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-pref-assembly-structure"
+    ],
+    "statement": "委員会は議会運営委員会、常任委員会6（総務政策こども・環境厚生・農林水産・経済交通観光・文教公安・建設危機管理）、特別委員会3（新幹線・鉄道問題対策・原子力・エネルギー対策・決算）の計10を「県議会の構成」ページの印字どおり登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "vote_table_nature",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-pref-assembly-2026-sep-vote-results",
+     "aomori-pref-assembly-2026-sep-minutes-0928",
+     "aomori-pref-assembly-2026-sep-minutes-1001"
+    ],
+    "statement": "公式「議決結果」の議員別賛否表の性質は、第327回定例会会議録速報版（2026年11月18日掲載）との突合で判定した。9月28日本会議では発議第1〜6号が一括で起立採決され議長が「起立少数」と宣言して否決、10月1日本会議では議案が起立採決で「起立多数」「起立総員」と宣言され可決されており、賛否表の○×・賛成者数・反対者数と完全一致した。したがって同表は事後の表決結果であり、決した議案の method は standing とした。議員派遣№1〜6は会議録上「異議なし」で決定され結果表でも表決方法が「簡易」と印字されているため method は unanimous とした。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-assembly-2023",
+  "open_questions": [
+   "議案第26〜29号（令和7年度決算の認定）と第22〜24号（剰余金処分等）は決算特別委員会で委員会採決まで行われたが、本会議の議決は第327回定例会中に行われず pending とした。結論は第328回定例会以降に確認する（Issue #706 の追跡事項）。",
+   "県議会自身による「各会派の態度」を示す別表の公表は、審査結果ページ等で確認できなかった。登録した会派別賛否は、公式の議員別賛否表のマークを会派ごとに集計したものである。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-assembly-2023",
+  "subject_type": "assembly"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "session_outline",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-pref-assembly-session-327",
+     "aomori-pref-assembly-2026-sep-governor-bills",
+     "aomori-pref-assembly-2026-sep-referral",
+     "aomori-pref-assembly-2026-sep-vote-results"
+    ],
+    "statement": "令和8年9月第327回定例会は2026年9月10日から10月1日まで開かれた。知事提出議案29件（第1〜29号）と報告第1〜29号が提出され、議員提出議案（発議）8件、請願・陳情各1件、議員派遣6件が審議された。報告は議決対象ではないため登録していない。議案第22〜24号と第26〜29号は決算特別委員会に付託され、閉会中の継続審査となったため pending とし、投票記録は作っていない。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-assembly-2023-session-2026-09",
+  "open_questions": [],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-assembly-2023-session-2026-09",
+  "subject_type": "session"
+ }
+]
