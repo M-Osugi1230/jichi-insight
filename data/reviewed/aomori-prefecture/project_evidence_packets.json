@@ -1,0 +1,2888 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ1「しごと」・政策Ⅰ「豊かさを実感できる力強い農林水産業の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「豊かさを実感できる力強い農林水産業の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「しごと」（〜所得向上と経済成長〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「所得増につながる生産性の向上」のもと、施策1「所得向上につながる販売戦略の展開」、施策2「新たな時代に適応した優れた青森県産品づくり」、施策3「農林水産業の持続的な発展を支える人財育成」の3施策を通じて、「豊かさを実感できる力強い農林水産業の実現」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は20件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-agriculture-strength",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-agriculture-strength",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ1「しごと」・政策Ⅱ「地域経済の成長を支える県内産業の競争力強化」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「地域経済の成長を支える県内産業の競争力強化」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「しごと」（〜所得向上と経済成長〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「所得増につながる生産性の向上」のもと、施策1「県内企業の販売力・収益力強化と経営コストの削減」、施策2「地域の未来につながる産業の創出・承継」、施策3「持続的・安定的な労働力の確保」の3施策を通じて、「地域経済の成長を支える県内産業の競争力強化」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は12件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-industry-competitiveness",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-industry-competitiveness",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ1「しごと」・政策Ⅲ「若者を惹きつけるしごとづくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「若者を惹きつけるしごとづくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「しごと」（〜所得向上と経済成長〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「所得増につながる生産性の向上」のもと、施策1「若者を始め地域経済の未来を担う人財の還流と県内定着の促進」、施策2「チャレンジングな創業・起業の促進」、施策3「成長分野や本県の強みを捉えた企業誘致の推進」の3施策を通じて、「若者を惹きつけるしごとづくり」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は9件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-youth-jobs",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-youth-jobs",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ1「しごと」・政策Ⅳ「産業を支えるDXの推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「産業を支えるDXの推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「しごと」（〜所得向上と経済成長〜）の政策Ⅳ。テーマの「将来を拓く鍵」である「所得増につながる生産性の向上」のもと、施策1「産業分野のDX推進」、施策2「スマート農林水産業の推進」の2施策を通じて、「産業を支えるDXの推進」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は6件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-industry-dx",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-industry-dx",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ2「健康」・政策Ⅰ「県民一人ひとりの健康づくりの推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「県民一人ひとりの健康づくりの推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「健康」（〜健康を支える医療環境の向上と共生社会の実現〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「ヘルスリテラシーの向上と医療・介護サービス提供体制の強化」のもと、施策1「ヘルスリテラシーの向上による生活習慣の改善」、施策2「こころを支え、命を守る社会づくり」の2施策を通じて、「県民一人ひとりの健康づくりの推進」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は9件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-health-promotion",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-health-promotion",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ2「健康」・政策Ⅱ「がんの克服をめざす体制づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「がんの克服をめざす体制づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「健康」（〜健康を支える医療環境の向上と共生社会の実現〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「ヘルスリテラシーの向上と医療・介護サービス提供体制の強化」のもと、施策1「科学的根拠に基づくがん対策の充実」、施策2「がん治療体制の充実と、がんと共に生きることを支える仕組みの強化」の2施策を通じて、「がんの克服をめざす体制づくり」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は18件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-cancer-care",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-cancer-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ2「健康」・政策Ⅲ「持続可能な地域医療サービスの整備」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「持続可能な地域医療サービスの整備」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「健康」（〜健康を支える医療環境の向上と共生社会の実現〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「ヘルスリテラシーの向上と医療・介護サービス提供体制の強化」のもと、施策1「医療の担い手育成と確保」、施策2「次世代へつなげる医療連携体制の強化」の2施策を通じて、「持続可能な地域医療サービスの整備」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は8件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-regional-medical-care",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-regional-medical-care",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ2「健康」・政策Ⅳ「高齢者や障がい者が安心して暮らす共生社会の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「高齢者や障がい者が安心して暮らす共生社会の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「健康」（〜健康を支える医療環境の向上と共生社会の実現〜）の政策Ⅳ。テーマの「将来を拓く鍵」である「ヘルスリテラシーの向上と医療・介護サービス提供体制の強化」のもと、施策1「高齢者が生きがいを持ち、安心して暮らせる環境づくり」、施策2「障がい者等の活躍促進」の2施策を通じて、「高齢者や障がい者が安心して暮らす共生社会の実現」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は9件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-inclusive-society",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-inclusive-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ3「こども」・政策Ⅰ「希望と喜びを持って子育てできる環境づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「希望と喜びを持って子育てできる環境づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「こども」（〜こどもの健やかな成長〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「少子化への挑戦と教育改革の推進」のもと、施策1「安心してこどもを産み育てられる環境づくり」、施策2「社会全体で子育てする環境づくり」の2施策を通じて、「希望と喜びを持って子育てできる環境づくり」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は8件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-childrearing-environment",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-childrearing-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ3「こども」・政策Ⅱ「あおもりの未来をつくるこどもたちのための学校教育改革」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「あおもりの未来をつくるこどもたちのための学校教育改革」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「こども」（〜こどもの健やかな成長〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「少子化への挑戦と教育改革の推進」のもと、施策1「「知・徳・体」の調和の取れた「生きる力」の育成」、施策2「グローバル社会への対応と主体的に社会に参画する学びの推進」、施策3「「生きる・働く・学ぶ」をつなぐキャリア教育の推進」、施策4「多様な教育的ニーズへの対応」、施策5「こどもの学びを支える教育環境の整備ときめ細かな指導の充実に向けた人財の確保・育成」、施策6「学校・家庭・地域の連携・協働の推進」の6施策を通じて、「あおもりの未来をつくるこどもたちのための学校教育改革」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は31件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-school-education-reform",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-school-education-reform",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ3「こども」・政策Ⅲ「こども・若者に届く包括的な支援の充実・強化」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「こども・若者に届く包括的な支援の充実・強化」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「こども」（〜こどもの健やかな成長〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「少子化への挑戦と教育改革の推進」のもと、施策1「様々な環境にあるこどもや家庭への支援」、施策2「こども・若者の社会的・職業的自立に向けた支援」の2施策を通じて、「こども・若者に届く包括的な支援の充実・強化」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は7件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-children-youth-support",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-children-youth-support",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ4「環境」・政策Ⅰ「再生可能エネルギーとの共生と環境配慮型ビジネスの推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「再生可能エネルギーとの共生と環境配慮型ビジネスの推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「環境」（〜自然環境との調和とその活用〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「再生可能エネルギーの推進と自然・地域との共生」のもと、施策1「自然・地域と共生する再生可能エネルギーの活用促進」、施策2「エネルギー関連産業クラスターによる経済循環の形成」、施策3「リサイクル、メンテナンス関連産業の集積促進」、施策4「地域内のGXを支える基盤づくり」の4施策を通じて、「再生可能エネルギーとの共生と環境配慮型ビジネスの推進」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は6件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-renewable-energy-coexistence",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-renewable-energy-coexistence",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ4「環境」・政策Ⅱ「カーボンニュートラルに向けた脱炭素社会の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「カーボンニュートラルに向けた脱炭素社会の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「環境」（〜自然環境との調和とその活用〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「再生可能エネルギーの推進と自然・地域との共生」のもと、施策1「温室効果ガスの排出抑制対策の推進」、施策2「吸収源対策の推進」の2施策を通じて、「カーボンニュートラルに向けた脱炭素社会の実現」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は5件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-carbon-neutral",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-carbon-neutral",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ4「環境」・政策Ⅲ「資源効率の高い循環型社会の実現」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「資源効率の高い循環型社会の実現」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「環境」（〜自然環境との調和とその活用〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「再生可能エネルギーの推進と自然・地域との共生」のもと、施策1「限りある資源を有効活用する3R＋の推進」、施策2「廃棄物の適正処理と環境保全対策の推進」の2施策を通じて、「資源効率の高い循環型社会の実現」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は9件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-circular-society",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-circular-society",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ4「環境」・政策Ⅳ「豊かな自然環境の継承」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「豊かな自然環境の継承」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「環境」（〜自然環境との調和とその活用〜）の政策Ⅳ。テーマの「将来を拓く鍵」である「再生可能エネルギーの推進と自然・地域との共生」のもと、施策1「世界自然遺産白神山地や貴重な自然の保全と活用」、施策2「自然と共生する里地里山の保全と活用」、施策3「生活を支える健全な水循環の確保」の3施策を通じて、「豊かな自然環境の継承」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は11件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-natural-environment",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-natural-environment",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ4「環境」・政策Ⅴ「原子力施設の安全確保対策と原子力防災対策の充実」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「原子力施設の安全確保対策と原子力防災対策の充実」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「環境」（〜自然環境との調和とその活用〜）の政策Ⅴ。テーマの「将来を拓く鍵」である「再生可能エネルギーの推進と自然・地域との共生」のもと、施策1「安全確保対策と防災対策の充実」、施策2「安全確保対策と防災対策に係る理解の促進」の2施策を通じて、「原子力施設の安全確保対策と原子力防災対策の充実」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は6件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-nuclear-safety",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-nuclear-safety",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ5「交流」・政策Ⅰ「国内外とつながる観光の推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「国内外とつながる観光の推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「交流」（〜国内外とつながる交流・物流の拡大〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「観光消費額の拡大と海外戦略の強化」のもと、施策1「観光の付加価値創出・向上」、施策2「多様な来訪者が快適に滞在できる環境づくり」、施策3「観光DXの推進と持続可能な観光関連産業の確立」、施策4「青森ファンを増やす情報発信」、施策5「国内外からの誘客の強化」の5施策を通じて、「国内外とつながる観光の推進」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は14件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-tourism-promotion",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-tourism-promotion",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ5「交流」・政策Ⅱ「輸出・海外ビジネスの拡大と物流の確保」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「輸出・海外ビジネスの拡大と物流の確保」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「交流」（〜国内外とつながる交流・物流の拡大〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「観光消費額の拡大と海外戦略の強化」のもと、施策1「海外ニーズを捉えた輸出戦略の展開」、施策2「グローバルな経済連携の強化」、施策3「産業と暮らしを支える物流の最適化」の3施策を通じて、「輸出・海外ビジネスの拡大と物流の確保」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は9件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-exports-logistics",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-exports-logistics",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ5「交流」・政策Ⅲ「国際交流の推進」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「国際交流の推進」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「交流」（〜国内外とつながる交流・物流の拡大〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「観光消費額の拡大と海外戦略の強化」のもと、施策1「海外との友好交流の推進」、施策2「多文化共生社会の実現」の2施策を通じて、「国際交流の推進」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は5件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-international-exchange",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-international-exchange",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ5「交流」・政策Ⅳ「暮らしと交流を支える交通ネットワークづくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「暮らしと交流を支える交通ネットワークづくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「交流」（〜国内外とつながる交流・物流の拡大〜）の政策Ⅳ。テーマの「将来を拓く鍵」である「観光消費額の拡大と海外戦略の強化」のもと、施策1「地域公共交通ネットワークの確保・維持」、施策2「地域公共交通の利便性向上・最適化」、施策3「国内外につながる交通ネットワークの強化」の3施策を通じて、「暮らしと交流を支える交通ネットワークづくり」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は10件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-transport-network",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-transport-network",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ6「地域社会」・政策Ⅰ「元気な地域づくり・人づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「元気な地域づくり・人づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「地域社会」（〜持続可能な地域社会の形成〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「地域との多様なつながりの構築と行政経営分野のDX推進」のもと、施策1「地域の強みを生かした地域づくりと人づくり」、施策2「持続可能な農山漁村地域の実現」、施策3「移住促進と関係人口の拡大」、施策4「女性の人財育成とエンパワーメント」、施策5「人生100年時代の学び直しや生涯学習の推進」、施策6「多様性を尊重する環境の整備」の6施策を通じて、「元気な地域づくり・人づくり」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は17件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-community-development",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-community-development",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ6「地域社会」・政策Ⅱ「安心で快適な生活基盤づくり」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「安心で快適な生活基盤づくり」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「地域社会」（〜持続可能な地域社会の形成〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「地域との多様なつながりの構築と行政経営分野のDX推進」のもと、施策1「DXなどによる生活環境の整備と強化」、施策2「防犯と犯罪対策の強化」、施策3「交通安全対策の強化」、施策4「消費生活と「食」の安全・安心を守る体制づくり」、施策5「生活困窮による様々な問題を解決する仕組みづくり」の5施策を通じて、「安心で快適な生活基盤づくり」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は16件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-safe-living-infrastructure",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-safe-living-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ6「地域社会」・政策Ⅲ「文化・スポーツの振興」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「文化・スポーツの振興」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「地域社会」（〜持続可能な地域社会の形成〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「地域との多様なつながりの構築と行政経営分野のDX推進」のもと、施策1「歴史・文化の価値や魅力に対する理解と活用の促進」、施策2「楽しく体を動かしスポーツに親しむ環境づくりと競技力の向上」の2施策を通じて、「文化・スポーツの振興」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は9件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-culture-sports",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-culture-sports",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ7「社会資本」・政策Ⅰ「安全・安心な県土づくりを推進する社会基盤の整備」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「安全・安心な県土づくりを推進する社会基盤の整備」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「社会資本」（〜安全で利便性の高いインフラの整備〜）の政策Ⅰ。テーマの「将来を拓く鍵」である「DXを活用した、インフラ整備と防災・減災の推進」のもと、施策1「「防災・減災、国土強靱化」の推進」、施策2「安全・安心を確保するインフラ機能の充実・強化」の2施策を通じて、「安全・安心な県土づくりを推進する社会基盤の整備」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は8件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-safe-land-infrastructure",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-safe-land-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ7「社会資本」・政策Ⅱ「産業・交流を支える社会基盤の整備」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「産業・交流を支える社会基盤の整備」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「社会資本」（〜安全で利便性の高いインフラの整備〜）の政策Ⅱ。テーマの「将来を拓く鍵」である「DXを活用した、インフラ整備と防災・減災の推進」のもと、施策1「産業、交流を支える主要幹線道路ネットワークの整備」、施策2「国内外との物流、観光を支える港湾・空港機能の強化」、施策3「快適に暮らせるまちづくりの推進」の3施策を通じて、「産業・交流を支える社会基盤の整備」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は10件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-industry-exchange-infrastructure",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-industry-exchange-infrastructure",
+  "subject_type": "project"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "registration_unit",
+    "location_note": "計画の概要資料・第3章の政策・施策体系、および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画自身の政策単位であり、県の進行管理（政策点検）も政策・施策体系に基づいて毎年度公表される。段階1の plan_review で登録単位として確定済み。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "登録単位は青森県基本計画「青森新時代」への架け橋の政策とし、本件は政策テーマ7「社会資本」・政策Ⅲ「防災・減災の推進や危機管理機能の向上」である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_title",
+    "location_note": "計画の概要資料の政策・施策体系、および政策点検レポート2026の政策・施策一覧の見出し。",
+    "review_note": "要約・言い換えをせず原典の表記を用いた。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "公式名称は「防災・減災の推進や危機管理機能の向上」。"
+   },
+   {
+    "decision": "accepted",
+    "field": "selection",
+    "location_note": "選定カタログ data/catalog/aomori_prefecture_priority_project_selection.json",
+    "review_note": "母集団の全件登録であり、金額順・規模順の選定は行っていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "母集団は基本計画の政策26件。本政策を含む全26政策を計画の掲載順に登録した（選定による抽出なし）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "purpose",
+    "location_note": "計画の政策・施策体系（概要資料・第3章）および政策点検レポート2026の政策・施策一覧。",
+    "review_note": "計画の体系とテーマの「将来を拓く鍵」に基づく要約であり、県の評価や当方の解釈は加えていない。",
+    "source_ids": [
+     "aomori-pref-plan-overview",
+     "aomori-pref-plan-chapter3"
+    ],
+    "statement": "政策テーマ「社会資本」（〜安全で利便性の高いインフラの整備〜）の政策Ⅲ。テーマの「将来を拓く鍵」である「DXを活用した、インフラ整備と防災・減災の推進」のもと、施策1「防災分野のDX推進」、施策2「防災対策の強化」の2施策を通じて、「防災・減災の推進や危機管理機能の向上」の実現を目指す（計画の政策・施策体系および政策点検レポート2026の政策・施策一覧に基づく要約）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "responsible_department",
+    "location_note": "計画および政策点検レポートの政策の記載（政策単位の所管部局の明示なし）。",
+    "review_note": "施策別シートには施策ごとの担当部局が示されるが、政策単位の代表部局は定められていないため、推測で補完しない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report"
+    ],
+    "statement": "計画および政策点検レポートに政策単位の所管部局の明示がないため、responsible_department は null とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "budget_records",
+    "location_note": "令和8年度当初予算「政策テーマ別主要事業」（政策テーマ単位・事業単位の公表）。",
+    "review_note": "事業単位の金額を政策に按分・接続することはしない。",
+    "source_ids": [
+     "aomori-pref-budget-fy2026-theme-projects",
+     "aomori-pref-plan-page"
+    ],
+    "statement": "青森県は基本計画の政策単位の令和7年度予算額・決算額を公表していない。当初予算は政策テーマ単位の主要事業として事業単位で公表されており（令和8年度当初予算「政策テーマ別主要事業」）、政策との公式の対応表（合計額）がないため接続していない。このため金額は欠損として明示し、推測で補完しない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "official_evaluation",
+    "location_note": "政策点検レポート2026の点検結果（施策別シート）および観察指標の自己評価。",
+    "review_note": "政策単位の格付ラベルは存在しない。施策単位の叙述による自己点検と観察指標単位の自己評価記号を、政策単位の格付に読み替えることはしない。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "県は政策点検レポートで施策ごとの自己点検結果と観察指標ごとの自己評価（◎〇△－）を公表しているが、政策単位の評定（格付ラベル）は公表していないため、official_evaluation は null とした。観察指標の自己評価記号も本登録では assessment へ換算していない（各 KPI の definition に明記）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "kpis",
+    "location_note": "政策点検レポート2026「観察指標一覧」（pp.179-203）。",
+    "review_note": "観察指標一覧で本政策の施策に設定された観察指標の全件を登録した。複数系列の指標は系列ごとに登録し、他政策からの再掲指標は再掲先の政策にも登録した。値はいずれも公表値のみを用いた。",
+    "source_ids": [
+     "aomori-pref-policy-check-2026-report",
+     "aomori-pref-policy-check-2026-page"
+    ],
+    "statement": "本政策の KPI は7件。いずれも政策点検レポート2026の観察指標一覧に本政策の施策の観察指標として公表されたもので、基準値・現状値・目標値を公表どおりに登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "review_basis",
+    "location_note": "プロジェクトのレビュー委任の経緯（2026-11-15、所有者から Muse へ委任）。",
+    "review_note": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。所有者本人のレビューとして記録しない。",
+    "source_ids": [
+     "aomori-pref-plan-page"
+    ],
+    "statement": "本登録のレビュー・昇格は所有者から Muse へ委任された判断に基づく（所有者本人のレビューではない）。"
+   }
+  ],
+  "id": "evidence-jp-local-020001-project-2025-disaster-prevention-crisis",
+  "open_questions": [
+   "政策単位の金額（予算額・決算額）が今後公表された場合は、公式の対応表の有無を確認した上で接続する。",
+   "政策点検レポートの次年度版で観察指標の値が更新された場合に、本登録の KPI を更新する。あわせて、施策別シートの自己評価記号（◎〇△－）を assessment へ換算するかどうかは、換算規則を明文化した上で別途判断する。",
+   "段階3（知事公約）の登録後に、本政策と公約の公式対応が確認できたものは related_promise_ids へ接続する。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-020001-project-2025-disaster-prevention-crisis",
+  "subject_type": "project"
+ }
+]
