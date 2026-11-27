@@ -68,6 +68,7 @@ export type MunicipalityKey =
   | "okayama-city"
   | "fukushima-prefecture"
   | "aomori-prefecture"
+  | "morioka-city"
   | "yamagata-prefecture"
   | "akita-prefecture"
   | "fukushima-city"
@@ -378,6 +379,12 @@ export const municipalityMeta: Record<
   "akita-city": {
     name: "秋田市", type: "中核市",
     summary: "第15次秋田市総合計画「秋田市『プラスの循環』プラン」（2026〜2030年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、沼谷 純市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "morioka-city": {
+    name: "盛岡市", type: "中核市",
+    summary: "盛岡市総合計画（2025〜2034年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、内舘 茂市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },

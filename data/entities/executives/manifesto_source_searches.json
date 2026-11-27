@@ -1314,6 +1314,34 @@
     "confidence": "high"
   },
   {
+    "id": "manifesto-source-search-morioka-city-2023",
+    "executive_term_id": "jp-local-032018-executive-2023-09-02",
+    "searched_at": "2026-11-27",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "morioka-city-mayor-election-2023-results",
+      "iwate-pref-mayor-term-expiry-list",
+      "morioka-city-mayor-election-2023-bulletin-copy"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "2023年盛岡市長選挙の選挙公報は、市選挙管理委員会の現行公式ページ（「選挙の記録」および令和5年市長選の記録ページ）に掲載・導線がなく、開票結果のみが公表されている。市公式サイトの選挙セクション配下のWayback Machine保存（2023〜2024年）を照会しても公報ページ・PDFは見つからなかった。政治山（民間選挙情報サイト）に市選管発行の原物とされる複写が存在し、その実在は確認したが、公式URLの保存記録とのダイジェスト照合ができないため、検証基準の原典性担保（(1) 選管の現行公式ページに現存、(2) 公式URLのWayback Machine保存コピー、(3) 保存記録のダイジェストと一致する複写）のいずれにも該当せず、原典として採用しない。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは選挙公報が存在しないという主張ではない。原典性の担保の可否は段階3で改めて判断する。本レビューは、所有者が2026-11-15にレビュー・昇格判断を Muse へ委任したことに基づき、Muse が一次資料で検証して行ったものであり、所有者本人のレビューではない。",
+    "next_actions": [
+      "段階3で、政治山の複写と他の複写（選挙ドットコム等）との内容・ダイジェスト照合など、検証基準(3)に相当する担保が取れるか再判断する。担保できない場合は公約を登録しない",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）や候補者本人の公式公表物が特定できれば、原典として登録し直す",
+      "2027年の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
+  },
+  {
     "id": "manifesto-source-search-aomori-pref-2023",
     "executive_term_id": "jp-local-020001-executive-2023-06-29",
     "searched_at": "2026-11-27",

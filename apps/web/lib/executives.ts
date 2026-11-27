@@ -105,6 +105,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 
 const municipalityIdToKey = {
   "jp-local-072010": "fukushima-city",
+  "jp-local-032018": "morioka-city",
   "jp-local-052019": "akita-city",
   "jp-local-062014": "yamagata-city",
   "jp-local-431001": "kumamoto-city",
