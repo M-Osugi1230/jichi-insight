@@ -86,7 +86,7 @@ def test_governor_term_registers_no_manifesto_source_or_promises() -> None:
     # The Okayama governor registration itself created no promise
     # records. (The registry total has since grown through other
     # municipalities' stage-3 registrations.)
-    assert len(promises) == 580
+    assert len(promises) == 586
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
     assert [r for r in reviews if r["executive_term_id"] == TERM_ID] == []

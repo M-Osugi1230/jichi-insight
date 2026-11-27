@@ -162,11 +162,11 @@ def test_no_promises_or_review_are_created_for_the_term() -> None:
     # The Kumamoto governor registration itself created no promise
     # records. (The registry total has since grown through other
     # municipalities' stage-3 registrations.)
-    assert len(promises) == 580
+    assert len(promises) == 586
     assert all(p["executive_term_id"] != TERM_ID for p in promises)
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 38
+    assert len(reviews) == 39
     assert all(r["executive_term_id"] != TERM_ID for r in reviews)
 
     terms = load_json("data/entities/executives/executive_terms.json")
