@@ -1,3 +1,7 @@
+import iwatePrefectureMunicipality from "../../../data/reviewed/iwate-prefecture/municipality.json";
+import moriokaCityMunicipality from "../../../data/reviewed/morioka-city/municipality.json";
+import aomoriPrefectureMunicipality from "../../../data/reviewed/aomori-prefecture/municipality.json";
+import aomoriCityMunicipality from "../../../data/reviewed/aomori-city/municipality.json";
 import fukushimaPrefectureMunicipality from "../../../data/reviewed/fukushima-prefecture/municipality.json";
 import fukushimaCityMunicipality from "../../../data/reviewed/fukushima-city/municipality.json";
 import yamagataPrefectureMunicipality from "../../../data/reviewed/yamagata-prefecture/municipality.json";
@@ -104,6 +108,8 @@ const staticRoutes = [
   "/municipalities/yamagata-city",
   "/municipalities/akita-prefecture",
   "/municipalities/akita-city",
+  "/municipalities/iwate-prefecture",
+  "/municipalities/aomori-prefecture",
   "/municipalities/hiroshima-prefecture",
   "/municipalities/hiroshima-city",
   "/municipalities/shizuoka-prefecture",
@@ -163,6 +169,10 @@ lastModifiedByRoute.set("/municipalities/yamagata-prefecture", yamagataPrefectur
 lastModifiedByRoute.set("/municipalities/yamagata-city", yamagataCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/akita-prefecture", akitaPrefectureMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/akita-city", akitaCityMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/iwate-prefecture", iwatePrefectureMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/morioka-city", moriokaCityMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/aomori-prefecture", aomoriPrefectureMunicipality.last_verified_at);
+lastModifiedByRoute.set("/municipalities/aomori-city", aomoriCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/hiroshima-prefecture", hiroshimaPrefectureMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/hiroshima-city", hiroshimaCityMunicipality.last_verified_at);
 lastModifiedByRoute.set("/municipalities/shizuoka-prefecture", shizuokaPrefectureMunicipality.last_verified_at);
