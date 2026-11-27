@@ -1,0 +1,101 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-term-list"
+    ],
+    "statement": "盛岡市議会議員の任期満了日は令和9年8月27日（2027年8月27日）であり、岩手県選挙管理委員会の「地方公共団体の議会の議員及び長の任期満了日一覧」（令和8年10月21日現在）で直接確認した。任期は4年のため開始日は2023年8月28日と算定した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-roster-faction",
+     "morioka-city-assembly-vote-table-2026-09"
+    ],
+    "statement": "議員定数は38人。会派等別議員名簿と令和8年9月定例会賛否結果一覧の議員列はいずれも38人で一致し、欠員はない。なお、同定例会で発議案第5号により定数条例が38人から37人へ改正されたが、次の一般選挙からの施行であるため、現任期の定数は38人のままである。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-roster-faction",
+     "morioka-city-assembly-vote-table-2026-09"
+    ],
+    "statement": "会派構成は令和8年9月定例会の賛否結果一覧（会派等名・議員名は議席番号順）の印字による盛友会16人（議長を含む）、創盛会7人、日本共産党盛岡市議団5人、市政クラブ4人、公明党3人、日本維新の会1人、いのちの党1人、無所属1人の合計38人で登録した。会派等別議員名簿ページは令和8年10月28日更新で細川由香里議員が無所属に移っているが、本登録は対象会期（9月30日最終日）時点の構成で統一した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-committees",
+     "morioka-city-assembly-shisatsu-2025"
+    ],
+    "statement": "委員会は総務・教育福祉・産業環境・建設の4常任委員会、議会運営委員会、観光振興・農業地域活性化・こどもいきいき・雇用対策の4特別委員会の計9委員会。常任委員会と特別委員会の名称は令和7年度行政視察の公表（委員会別の実施一覧）でも同一であることを確認した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-dayori-243",
+     "morioka-city-assembly-minutes-system"
+    ],
+    "statement": "令和8年9月定例会の会期は2026年9月2日から9月30日まで（もりおか市議会だより第243号）。本会議は9月2日、8日、9日、10日、11日、17日、30日の7日間で、会議録（第1号〜第7号）の収録と一致する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_votes",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-vote-table-2026-09",
+     "morioka-city-assembly-minutes-system"
+    ],
+    "statement": "議員別賛否は市公式の賛否結果一覧（全46件×38議員、議長は「/」で表決に加わらない）の印字を座標抽出し、公式議決結果（多数・全員の別）と全件照合して一致を確認した。会議録との突合では、9月2日の人事案件4件、9月8日の発議案第4号、9月30日の41件のすべてが起立表決で決したことが記録されており、賛否一覧は表決後の記録である。よって全46件の表決方法を standing と判定した。発議案第4号では対象本人の山崎智樹議員のセルが空欄であり、表決不参加として excused とした（賛否一覧の凡例にある退席者「－」とも異なる扱いであるため、判断根拠をここに明記する）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-petition-guide",
+     "morioka-city-assembly-results-2026-09"
+    ],
+    "statement": "盛岡市議会では請願は委員会審査を経て本会議で採否が議決されるため登録対象とした（令和8年9月定例会は請願2件、採択1件・不採択1件）。陳情は委員会審査・本会議採決の対象ではなく、本会議での報告と写しの配布にとどまるため、本会期分を含め登録対象外とした（「請願・陳情について」ページの制度説明による）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "political_activity_expenses",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-seimu-2025-summary",
+     "morioka-city-assembly-seimu-2025-index"
+    ],
+    "statement": "政務活動費は議員個人に月額5万円（年額60万円）が交付され、令和7年度分は収支一覧と議員別収支報告書（領収書等の写しを含む）が議会ホームページに公表されている。収支一覧の合計は交付決定額22,200,000円・実支出額16,342,955円・戻入額5,857,045円で、全38議員分の内訳合計と一致することを検算した。細川由香里議員は支給を辞退しており交付・支出とも0円である。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-assembly-2023",
+  "open_questions": [
+   "会派等別議員名簿（令和8年10月28日更新）では細川由香里議員が創盛会から無所属へ移っており、登録した会期時点（令和8年9月30日）の構成とは異なる。次回会期の登録時に最新の構成へ更新する。",
+   "発議案第4号における山崎智樹議員の賛否一覧表の空欄セルの扱いは、表決不参加（excused）として登録した。議会事務局の公式な説明が得られれば Issue #706 の更新サイクルで見直す。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-assembly-2023",
+  "subject_type": "assembly"
+ }
+]
