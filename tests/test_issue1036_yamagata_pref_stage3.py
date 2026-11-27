@@ -297,7 +297,7 @@ def test_packets_cover_provenance_and_boundary() -> None:
 def test_bulletin_source_and_term_connection() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 213
+    assert len(catalog["records"]) == 218
     source = next(
         record for record in catalog["records"] if record["id"] == BULLETIN_ID
     )
@@ -326,7 +326,7 @@ def test_search_and_review_records() -> None:
     searches = load_json(
         "data/entities/executives/manifesto_source_searches.json"
     )
-    assert len(searches) == 45
+    assert len(searches) == 46
     search = next(record for record in searches if record["id"] == SEARCH_ID)
     assert_valid("schemas/manifesto_source_search.schema.json", search)
     assert search["executive_term_id"] == TERM_ID
@@ -361,7 +361,7 @@ def test_search_and_review_records() -> None:
             "manifesto_source_search_evidence_packets.json"
         )
     }
-    assert len(search_packets) == 45
+    assert len(search_packets) == 46
     packet = search_packets[SEARCH_ID]
     assert packet["subject_type"] == "manifesto_source_search"
     assert packet["review_status"] == "reviewed"

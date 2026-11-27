@@ -68,6 +68,7 @@ export type MunicipalityKey =
   | "okayama-city"
   | "fukushima-prefecture"
   | "aomori-prefecture"
+  | "aomori-city"
   | "morioka-city"
   | "yamagata-prefecture"
   | "akita-prefecture"
@@ -385,6 +386,12 @@ export const municipalityMeta: Record<
   "morioka-city": {
     name: "盛岡市", type: "中核市",
     summary: "盛岡市総合計画（2025〜2034年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、内舘 茂市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
+    status: "財政データ公開", href: null,
+    fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
+  },
+  "aomori-city": {
+    name: "青森市", type: "中核市",
+    summary: "青森市総合計画（基本構想2024〜2033年度・前期基本計画2024〜2028年度）、2026年度当初予算、2022〜2024年度の普通会計決算に加え、西 秀記市長の現任期を公式出典で確認します。公約原文は未登録です。自治体別ページは準備中です。",
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },

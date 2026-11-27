@@ -2205,7 +2205,7 @@ def validate_tohoku_cluster_export() -> list[str]:
         promise for promise in promises
         if promise["review_status"] in ("reviewed", "verified")
     ]
-    if len(terms) != 45 or len(reviewed) != 580:
+    if len(terms) != 46 or len(reviewed) != 580:
         failures.append(
             f"Unexpected executive registry counts: {len(terms)} terms, "
             f"{len(reviewed)} reviewed promises"
@@ -2213,7 +2213,7 @@ def validate_tohoku_cluster_export() -> list[str]:
     promises_page = EXPORT_ROOT / "promises/index.html"
     if promises_page.is_file():
         html = normalized_html(promises_page)
-        for marker in ("580件", "45件"):
+        for marker in ("580件", "46件"):
             if marker not in html:
                 failures.append(f"Promises page missing updated count: {marker}")
     return failures

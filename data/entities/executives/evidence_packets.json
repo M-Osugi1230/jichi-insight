@@ -2539,6 +2539,61 @@
     "review_status": "reviewed"
   },
   {
+    "id": "evidence-aomori-city-current-mayor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-022012-executive-2023-06-04",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "青森市の現職市長が西秀記（1期目）であることを、市選挙管理委員会の開票結果と県選挙管理委員会の選挙記録で確認した。前市長・小野寺晃彦が青森県知事選挙に出馬するため2023年4月30日に辞職したことに伴う欠員選挙（公職選挙法第114条）で、新人4人の争いとなり初当選した。",
+        "source_ids": [
+          "aomori-city-mayor-election-2023-results",
+          "aomori-pref-election-record-2023"
+        ],
+        "location_note": "市選管「令和5年6月4日執行青森市長選挙」の候補者別得票数表と、県選管『第20回統一地方選挙の記録』「1 青森市長選挙」の開票結果・当選人調。",
+        "decision": "accepted",
+        "review_note": "現職市長の氏名と1期目であることを保持する。"
+      },
+      {
+        "field": "election_date",
+        "statement": "現任期に対応する市長選挙は2023年6月4日に執行された青森市長選挙（欠員選挙、5月28日告示、候補者4人）であり、西秀記が57,062票で当選した。県選挙管理委員会の公式記録で、野崎小三郎34,119票・関良29,734票・大竹進11,419票・有効投票132,334票・無効投票3,393票・投票率58.86%（当日有権者数230,599人）を直接照合し、候補者別得票数の合計132,334票が有効投票数と一致することを検算した。市選挙管理委員会の現行公式ページの開票結果とも一致する。",
+        "source_ids": [
+          "aomori-pref-election-record-2023",
+          "aomori-city-mayor-election-2023-results"
+        ],
+        "location_note": "県選管『第20回統一地方選挙の記録』「1 青森市長選挙」（1）選挙期日・（2）投票結果・（3）開票結果と、市選管「令和5年6月4日執行青森市長選挙」の開票結果表。",
+        "decision": "accepted",
+        "review_note": "得票数は県選挙管理委員会の公式記録の値を採用し、市選挙管理委員会の公式開票結果でも照合した。"
+      },
+      {
+        "field": "term_start",
+        "statement": "任期の開始は2023年6月4日（選挙の日）。本選挙は前市長の辞職に伴う欠員選挙であるため、公職選挙法第259条本文により任期は選挙の日から4年となる。西市長は2023年6月5日に初登庁したが、任期の起算は選挙の日である。",
+        "source_ids": [
+          "aomori-pref-election-record-2023",
+          "aomori-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "県選管記録の「選挙を行うべき事由（公職選挙法第114条の規定による）」の記載と、県選管の任期満了一覧が示す満了日（2027年6月3日）から遡る4年周期の開始。",
+        "decision": "accepted",
+        "review_note": "欠員選挙のため第259条ただし書ではなく本文の構成で確定した。満了日の公式明記とも整合する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "任期満了日は2027年6月3日。青森県選挙管理委員会「市町村長の任期満了日及び選挙期日等」（令和8年11月25日更新版）に、青森市の任期満了日として「R9.6.3」と明記され、あわせて次回市長選挙の告示日（R9.5.9）と選挙期日（R9.5.16）が「2027年6月3日の任期満了に伴う」ものとして掲載される。",
+        "source_ids": [
+          "aomori-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "県選管「市町村長の任期満了日及び選挙期日等」の青森市の行（R9の部・番号5）。",
+        "decision": "accepted",
+        "review_note": "県選管自身の一覧が満了日を日にちまで直接明記する。段階0棚卸しの open question（任期満了一覧での明記照合）は本段階で解消した。本レビューは、所有者が2026-11-15に Muse へレビュー・昇格判断を委任したことに基づき Muse が実施した委任レビューであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報は所在を確認できていない（探索記録 manifesto-source-search-aomori-city-2023）。段階3で現行ページの再探索・Wayback Machine 保存・選挙公報コピーの複写の順で本格探索し、原典が確保できなければ公約は作らない。",
+      "市長の就任日を日にちまで直接印字した市公式文書（市長プロフィール等）は未確認であり、開始日は欠員選挙の法定の起算構成（公職選挙法第259条本文）と満了日の公式明記で確定した。直接資料が公表されれば証拠を補う。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
     "id": "evidence-morioka-city-current-mayor-term",
     "subject_type": "executive_term",
     "subject_id": "jp-local-032018-executive-2023-09-02",
