@@ -18,6 +18,16 @@ import styles from "@/app/municipalities/fukuoka-prefecture/page.module.css";
 import projectStyles from "@/components/ProjectReview.module.css";
 
 const assemblyBoundaries: Partial<Record<TohokuSlug, string>> = {
+  "iwate-prefecture":
+    "令和7年度岩手県一般会計歳入歳出決算は継続審査中（pending）です。" +
+    " 認定済みとして扱いません。",
+  "aomori-prefecture":
+    "令和7年度決算等7議案は継続審査中（pending）です。" +
+    " 決算認定の結果を推測しません。",
+  "aomori-city":
+    "青森市議会の登録済み表決の採決方法は未確定（unknown）です。" +
+    " 表決結果と採決方法を混同しません。",
+
   "fukushima-prefecture":
     "令和7年度決算4議案は継続審査中です。認定済みとは表示しません。",
   "yamagata-prefecture":
