@@ -1,0 +1,308 @@
+{
+ "issue": 1080,
+ "municipality_id": "jp-local-020001",
+ "municipality_key": "aomori-prefecture",
+ "population": {
+  "description": "青森県基本計画「青森新時代」への架け橋（2023年12月8日に県議会の議決を経て策定、計画期間2024〜2028年度）の政策26件（政策テーマ1「しごと」4政策・テーマ2「健康」4政策・テーマ3「こども」3政策・テーマ4「環境」5政策・テーマ5「交流」4政策・テーマ6「地域社会」3政策・テーマ7「社会資本」3政策）を母集団とする。計画の体系は7政策テーマ―26政策―75施策であり、県の進行管理は政策点検レポートとして毎年度公表され、観察指標は施策単位に設定される。登録単位は計画自身の政策単位とし（段階1の plan_review で確定）、母集団の全26政策を登録した。",
+  "fiscal_year": 2025,
+  "project_count": 26,
+  "source_ids": [
+   "aomori-pref-plan-overview",
+   "aomori-pref-plan-chapter3",
+   "aomori-pref-policy-check-2026-report"
+  ]
+ },
+ "review_status": "reviewed",
+ "scope": "initial",
+ "selection_rule": {
+  "description": "選定による抽出は行わず、母集団である基本計画の政策26件の全件を、計画の掲載順（政策テーマ1→7、各テーマ内は政策番号順）に登録した。金額順・規模順では選んでいない。各政策の KPI は、政策点検レポート2026の「観察指標一覧」に当該政策の施策の観察指標として公表された指標の全件とし、複数系列が公表されている指標（県産品認知度の品目別、がん精密検査受診率・がん検診受診率の部位別・性別、バイオマス利用率の品目別、精神病床長期入院患者数の年齢区分別、地域公共交通のオープンデータ化の事業者数・市町村数など）は系列ごとに登録した。他の政策の指標として再掲された指標（県内事業所男性の育児休業取得率、八戸港コンテナ取扱量、クルーズ船寄港数など）は再掲先の政策にも登録し、同一政策内の再掲（再生可能エネルギー産業ネットワークの会員登録数）は1件とした。県が施策別シートで公表する観察指標ごとの自己評価（◎〇△－）は assessment へ換算せず、全 KPI の assessment を not_assessable とした。"
+ },
+ "selections": [
+  {
+   "area_number": 1,
+   "official_title": "豊かさを実感できる力強い農林水産業の実現",
+   "project_id": "jp-local-020001-project-2025-agriculture-strength",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ1「しごと」の政策Ⅰで、計画の掲載順では第1位。",
+   "series_id": "jp-local-020001-project-series-agriculture-strength",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 2,
+   "official_title": "地域経済の成長を支える県内産業の競争力強化",
+   "project_id": "jp-local-020001-project-2025-industry-competitiveness",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ1「しごと」の政策Ⅱで、計画の掲載順では第2位。",
+   "series_id": "jp-local-020001-project-series-industry-competitiveness",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 3,
+   "official_title": "若者を惹きつけるしごとづくり",
+   "project_id": "jp-local-020001-project-2025-youth-jobs",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ1「しごと」の政策Ⅲで、計画の掲載順では第3位。",
+   "series_id": "jp-local-020001-project-series-youth-jobs",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 4,
+   "official_title": "産業を支えるDXの推進",
+   "project_id": "jp-local-020001-project-2025-industry-dx",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ1「しごと」の政策Ⅳで、計画の掲載順では第4位。",
+   "series_id": "jp-local-020001-project-series-industry-dx",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 5,
+   "official_title": "県民一人ひとりの健康づくりの推進",
+   "project_id": "jp-local-020001-project-2025-health-promotion",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ2「健康」の政策Ⅰで、計画の掲載順では第5位。",
+   "series_id": "jp-local-020001-project-series-health-promotion",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 6,
+   "official_title": "がんの克服をめざす体制づくり",
+   "project_id": "jp-local-020001-project-2025-cancer-care",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ2「健康」の政策Ⅱで、計画の掲載順では第6位。",
+   "series_id": "jp-local-020001-project-series-cancer-care",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 7,
+   "official_title": "持続可能な地域医療サービスの整備",
+   "project_id": "jp-local-020001-project-2025-regional-medical-care",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ2「健康」の政策Ⅲで、計画の掲載順では第7位。",
+   "series_id": "jp-local-020001-project-series-regional-medical-care",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 8,
+   "official_title": "高齢者や障がい者が安心して暮らす共生社会の実現",
+   "project_id": "jp-local-020001-project-2025-inclusive-society",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ2「健康」の政策Ⅳで、計画の掲載順では第8位。",
+   "series_id": "jp-local-020001-project-series-inclusive-society",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 9,
+   "official_title": "希望と喜びを持って子育てできる環境づくり",
+   "project_id": "jp-local-020001-project-2025-childrearing-environment",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ3「こども」の政策Ⅰで、計画の掲載順では第9位。",
+   "series_id": "jp-local-020001-project-series-childrearing-environment",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 10,
+   "official_title": "あおもりの未来をつくるこどもたちのための学校教育改革",
+   "project_id": "jp-local-020001-project-2025-school-education-reform",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ3「こども」の政策Ⅱで、計画の掲載順では第10位。",
+   "series_id": "jp-local-020001-project-series-school-education-reform",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 11,
+   "official_title": "こども・若者に届く包括的な支援の充実・強化",
+   "project_id": "jp-local-020001-project-2025-children-youth-support",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ3「こども」の政策Ⅲで、計画の掲載順では第11位。",
+   "series_id": "jp-local-020001-project-series-children-youth-support",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 12,
+   "official_title": "再生可能エネルギーとの共生と環境配慮型ビジネスの推進",
+   "project_id": "jp-local-020001-project-2025-renewable-energy-coexistence",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ4「環境」の政策Ⅰで、計画の掲載順では第12位。",
+   "series_id": "jp-local-020001-project-series-renewable-energy-coexistence",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 13,
+   "official_title": "カーボンニュートラルに向けた脱炭素社会の実現",
+   "project_id": "jp-local-020001-project-2025-carbon-neutral",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ4「環境」の政策Ⅱで、計画の掲載順では第13位。",
+   "series_id": "jp-local-020001-project-series-carbon-neutral",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 14,
+   "official_title": "資源効率の高い循環型社会の実現",
+   "project_id": "jp-local-020001-project-2025-circular-society",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ4「環境」の政策Ⅲで、計画の掲載順では第14位。",
+   "series_id": "jp-local-020001-project-series-circular-society",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 15,
+   "official_title": "豊かな自然環境の継承",
+   "project_id": "jp-local-020001-project-2025-natural-environment",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ4「環境」の政策Ⅳで、計画の掲載順では第15位。",
+   "series_id": "jp-local-020001-project-series-natural-environment",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 16,
+   "official_title": "原子力施設の安全確保対策と原子力防災対策の充実",
+   "project_id": "jp-local-020001-project-2025-nuclear-safety",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ4「環境」の政策Ⅴで、計画の掲載順では第16位。",
+   "series_id": "jp-local-020001-project-series-nuclear-safety",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 17,
+   "official_title": "国内外とつながる観光の推進",
+   "project_id": "jp-local-020001-project-2025-tourism-promotion",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ5「交流」の政策Ⅰで、計画の掲載順では第17位。",
+   "series_id": "jp-local-020001-project-series-tourism-promotion",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 18,
+   "official_title": "輸出・海外ビジネスの拡大と物流の確保",
+   "project_id": "jp-local-020001-project-2025-exports-logistics",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ5「交流」の政策Ⅱで、計画の掲載順では第18位。",
+   "series_id": "jp-local-020001-project-series-exports-logistics",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 19,
+   "official_title": "国際交流の推進",
+   "project_id": "jp-local-020001-project-2025-international-exchange",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ5「交流」の政策Ⅲで、計画の掲載順では第19位。",
+   "series_id": "jp-local-020001-project-series-international-exchange",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 20,
+   "official_title": "暮らしと交流を支える交通ネットワークづくり",
+   "project_id": "jp-local-020001-project-2025-transport-network",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ5「交流」の政策Ⅳで、計画の掲載順では第20位。",
+   "series_id": "jp-local-020001-project-series-transport-network",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 21,
+   "official_title": "元気な地域づくり・人づくり",
+   "project_id": "jp-local-020001-project-2025-community-development",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ6「地域社会」の政策Ⅰで、計画の掲載順では第21位。",
+   "series_id": "jp-local-020001-project-series-community-development",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 22,
+   "official_title": "安心で快適な生活基盤づくり",
+   "project_id": "jp-local-020001-project-2025-safe-living-infrastructure",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ6「地域社会」の政策Ⅱで、計画の掲載順では第22位。",
+   "series_id": "jp-local-020001-project-series-safe-living-infrastructure",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 23,
+   "official_title": "文化・スポーツの振興",
+   "project_id": "jp-local-020001-project-2025-culture-sports",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ6「地域社会」の政策Ⅲで、計画の掲載順では第23位。",
+   "series_id": "jp-local-020001-project-series-culture-sports",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 24,
+   "official_title": "安全・安心な県土づくりを推進する社会基盤の整備",
+   "project_id": "jp-local-020001-project-2025-safe-land-infrastructure",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ7「社会資本」の政策Ⅰで、計画の掲載順では第24位。",
+   "series_id": "jp-local-020001-project-series-safe-land-infrastructure",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 25,
+   "official_title": "産業・交流を支える社会基盤の整備",
+   "project_id": "jp-local-020001-project-2025-industry-exchange-infrastructure",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ7「社会資本」の政策Ⅱで、計画の掲載順では第25位。",
+   "series_id": "jp-local-020001-project-series-industry-exchange-infrastructure",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  },
+  {
+   "area_number": 26,
+   "official_title": "防災・減災の推進や危機管理機能の向上",
+   "project_id": "jp-local-020001-project-2025-disaster-prevention-crisis",
+   "selection_basis": "登録単位は基本計画の政策であり、母集団26政策の全てを登録対象とした。本政策は政策テーマ7「社会資本」の政策Ⅲで、計画の掲載順では第26位。",
+   "series_id": "jp-local-020001-project-series-disaster-prevention-crisis",
+   "source_ids": [
+    "aomori-pref-plan-overview",
+    "aomori-pref-plan-page"
+   ]
+  }
+ ]
+}
