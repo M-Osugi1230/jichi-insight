@@ -52,6 +52,23 @@ const readingLevels = [
 
 const featuredPaths = [
   {
+    code: "03", area: "岩手県・盛岡市", status: "段階1〜4 Reviewed",
+    tone: "verified" as const,
+    title: "いわて県民計画と盛岡市総合計画。",
+    text: "幸福関連指標、重点事業、予算・決算と知事・市長公約、議会の公開範囲を確認します。",
+    facts: ["岩手県", "盛岡市", "財政・政策・議会"],
+    href: "/municipalities/iwate-prefecture", action: "岩手クラスターを見る",
+  },
+  {
+    code: "02", area: "青森県・青森市", status: "段階1〜4 Reviewed",
+    tone: "verified" as const,
+    title: "青森新時代への架け橋と青森市総合計画。",
+    text: "政策テーマ・財政・成果指標と、議会の審査中案件や未確定の採決方法を確認します。",
+    facts: ["青森県", "青森市", "財政・政策・議会"],
+    href: "/municipalities/aomori-prefecture", action: "青森クラスターを見る",
+  },
+
+  {
     code: "07", area: "福島県・福島市", status: "段階1〜4 Reviewed",
     tone: "verified" as const,
     title: "福島県総合計画と第6次福島市総合計画。", text: "復興・再生を含む政策体系、予算・決算、公約・議会のReviewed登録を確認します。",
@@ -252,6 +269,8 @@ export default function MunicipalitiesPage() {
               計画の枠組みと予算・決算を市ページで公開しています。接続できない範囲は判定不能のまま明示します。
             </p>
           </div>
+          <p><Link href="/municipalities/morioka-city">盛岡市の計画・予算・決算・市長公約・議会を見る</Link></p>
+          <p><Link href="/municipalities/aomori-city">青森市の計画・予算・決算・市長公約・議会を見る</Link></p>
           <p><Link href="/municipalities/fukushima-city">福島市の政策・予算・決算・首長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/yamagata-city">山形市の政策・予算・決算・首長公約・議会の詳細を見る</Link></p>
           <p><Link href="/municipalities/akita-city">秋田市の政策・予算・決算・首長公約・議会の詳細を見る</Link></p>

@@ -58,6 +58,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const tohokuCityNames: Record<string, string> = {
+    "morioka-city": "盛岡市", "aomori-city": "青森市",
     "fukushima-city": "福島市", "yamagata-city": "山形市", "akita-city": "秋田市",
   };
   if (slug in tohokuCityNames) {
@@ -291,6 +292,12 @@ export default async function Phase15CityPage({
   }
   if (slug === "akita-city") {
     return <TohokuMunicipalityReview slug="akita-city" />;
+  }
+  if (slug === "morioka-city") {
+    return <TohokuMunicipalityReview slug="morioka-city" />;
+  }
+  if (slug === "aomori-city") {
+    return <TohokuMunicipalityReview slug="aomori-city" />;
   }
   const city = loadPhase15City(slug);
   if (!city) {

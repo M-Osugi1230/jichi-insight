@@ -1,3 +1,55 @@
+import iwatePrefectureAssembly from "../../../data/reviewed/iwate-prefecture/assembly/assembly_records.json";
+import iwatePrefectureDisclosure from "../../../data/reviewed/iwate-prefecture/assembly/disclosure_profiles.json";
+import iwatePrefectureSessions from "../../../data/reviewed/iwate-prefecture/assembly/sessions.json";
+import iwatePrefectureProposals from "../../../data/reviewed/iwate-prefecture/assembly/proposals.json";
+import iwatePrefectureVotes from "../../../data/reviewed/iwate-prefecture/assembly/votes.json";
+import iwatePrefectureFactionVotes from "../../../data/reviewed/iwate-prefecture/assembly/faction_votes.json";
+import iwatePrefectureExpenses from "../../../data/reviewed/iwate-prefecture/assembly/political_activity_expenses.json";
+import iwatePrefectureTrips from "../../../data/reviewed/iwate-prefecture/assembly/inspection_trips.json";
+import iwatePrefectureAssemblyEvidence from "../../../data/reviewed/iwate-prefecture/assembly/assembly_evidence_packets.json";
+import iwatePrefectureVoteEvidence from "../../../data/reviewed/iwate-prefecture/assembly/proposal_vote_evidence_packets.json";
+import iwatePrefectureExpenseEvidence from "../../../data/reviewed/iwate-prefecture/assembly/expense_evidence_packets.json";
+import iwatePrefectureTripEvidence from "../../../data/reviewed/iwate-prefecture/assembly/inspection_evidence_packets.json";
+import iwatePrefectureSources from "../../../data/catalog/iwate_prefecture_assembly_sources.json";
+import moriokaCityAssembly from "../../../data/reviewed/morioka-city/assembly/assembly_records.json";
+import moriokaCityDisclosure from "../../../data/reviewed/morioka-city/assembly/disclosure_profiles.json";
+import moriokaCitySessions from "../../../data/reviewed/morioka-city/assembly/sessions.json";
+import moriokaCityProposals from "../../../data/reviewed/morioka-city/assembly/proposals.json";
+import moriokaCityVotes from "../../../data/reviewed/morioka-city/assembly/votes.json";
+import moriokaCityFactionVotes from "../../../data/reviewed/morioka-city/assembly/faction_votes.json";
+import moriokaCityExpenses from "../../../data/reviewed/morioka-city/assembly/political_activity_expenses.json";
+import moriokaCityTrips from "../../../data/reviewed/morioka-city/assembly/inspection_trips.json";
+import moriokaCityAssemblyEvidence from "../../../data/reviewed/morioka-city/assembly/assembly_evidence_packets.json";
+import moriokaCityVoteEvidence from "../../../data/reviewed/morioka-city/assembly/proposal_vote_evidence_packets.json";
+import moriokaCityExpenseEvidence from "../../../data/reviewed/morioka-city/assembly/expense_evidence_packets.json";
+import moriokaCityTripEvidence from "../../../data/reviewed/morioka-city/assembly/inspection_evidence_packets.json";
+import moriokaCitySources from "../../../data/catalog/morioka_city_assembly_sources.json";
+import aomoriPrefectureAssembly from "../../../data/reviewed/aomori-prefecture/assembly/assembly_records.json";
+import aomoriPrefectureDisclosure from "../../../data/reviewed/aomori-prefecture/assembly/disclosure_profiles.json";
+import aomoriPrefectureSessions from "../../../data/reviewed/aomori-prefecture/assembly/sessions.json";
+import aomoriPrefectureProposals from "../../../data/reviewed/aomori-prefecture/assembly/proposals.json";
+import aomoriPrefectureVotes from "../../../data/reviewed/aomori-prefecture/assembly/votes.json";
+import aomoriPrefectureFactionVotes from "../../../data/reviewed/aomori-prefecture/assembly/faction_votes.json";
+import aomoriPrefectureExpenses from "../../../data/reviewed/aomori-prefecture/assembly/political_activity_expenses.json";
+import aomoriPrefectureTrips from "../../../data/reviewed/aomori-prefecture/assembly/inspection_trips.json";
+import aomoriPrefectureAssemblyEvidence from "../../../data/reviewed/aomori-prefecture/assembly/assembly_evidence_packets.json";
+import aomoriPrefectureVoteEvidence from "../../../data/reviewed/aomori-prefecture/assembly/proposal_vote_evidence_packets.json";
+import aomoriPrefectureExpenseEvidence from "../../../data/reviewed/aomori-prefecture/assembly/expense_evidence_packets.json";
+import aomoriPrefectureTripEvidence from "../../../data/reviewed/aomori-prefecture/assembly/inspection_evidence_packets.json";
+import aomoriPrefectureSources from "../../../data/catalog/aomori_prefecture_assembly_sources.json";
+import aomoriCityAssembly from "../../../data/reviewed/aomori-city/assembly/assembly_records.json";
+import aomoriCityDisclosure from "../../../data/reviewed/aomori-city/assembly/disclosure_profiles.json";
+import aomoriCitySessions from "../../../data/reviewed/aomori-city/assembly/sessions.json";
+import aomoriCityProposals from "../../../data/reviewed/aomori-city/assembly/proposals.json";
+import aomoriCityVotes from "../../../data/reviewed/aomori-city/assembly/votes.json";
+import aomoriCityFactionVotes from "../../../data/reviewed/aomori-city/assembly/faction_votes.json";
+import aomoriCityExpenses from "../../../data/reviewed/aomori-city/assembly/political_activity_expenses.json";
+import aomoriCityTrips from "../../../data/reviewed/aomori-city/assembly/inspection_trips.json";
+import aomoriCityAssemblyEvidence from "../../../data/reviewed/aomori-city/assembly/assembly_evidence_packets.json";
+import aomoriCityVoteEvidence from "../../../data/reviewed/aomori-city/assembly/proposal_vote_evidence_packets.json";
+import aomoriCityExpenseEvidence from "../../../data/reviewed/aomori-city/assembly/expense_evidence_packets.json";
+import aomoriCityTripEvidence from "../../../data/reviewed/aomori-city/assembly/inspection_evidence_packets.json";
+import aomoriCitySources from "../../../data/catalog/aomori_city_assembly_sources.json";
 import fukushimaPrefectureAssembly from "../../../data/reviewed/fukushima-prefecture/assembly/assembly_records.json";
 import fukushimaPrefectureDisclosure from "../../../data/reviewed/fukushima-prefecture/assembly/disclosure_profiles.json";
 import fukushimaPrefectureSessions from "../../../data/reviewed/fukushima-prefecture/assembly/sessions.json";
@@ -569,7 +621,7 @@ import chibaCityExpenseEvidence from "../../../data/reviewed/chiba-city/assembly
 import chibaCityTripEvidence from "../../../data/reviewed/chiba-city/assembly/inspection_evidence_packets.json";
 import chibaCitySources from "../../../data/catalog/chiba_city_assembly_sources.json";
 
-export type AssemblySlug = "fukushima-prefecture" | "fukushima-city" | "yamagata-prefecture" | "yamagata-city" | "akita-prefecture" | "akita-city" | "kumamoto-prefecture" | "kumamoto-city" | "okayama-prefecture" | "okayama-city" | "niigata-prefecture" | "niigata-city" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city" | "hiroshima-prefecture" | "hiroshima-city" | "kyoto-prefecture" | "kyoto-city";
+export type AssemblySlug = "iwate-prefecture" | "morioka-city" | "aomori-prefecture" | "aomori-city" | "fukushima-prefecture" | "fukushima-city" | "yamagata-prefecture" | "yamagata-city" | "akita-prefecture" | "akita-city" | "kumamoto-prefecture" | "kumamoto-city" | "okayama-prefecture" | "okayama-city" | "niigata-prefecture" | "niigata-city" | "osaka-prefecture" | "osaka-city" | "sakai-city" | "hokkaido-prefecture" | "sapporo-city" | "asahikawa-city" | "fukuoka-prefecture" | "fukuoka-city" | "kitakyushu-city" | "aichi-prefecture" | "nagoya-city" | "toyota-city" | "kanagawa-prefecture" | "yokohama-city" | "kawasaki-city" | "saitama-prefecture" | "saitama-city" | "kawaguchi-city" | "chiba-prefecture" | "chiba-city" | "hyogo-prefecture" | "kobe-city" | "miyagi-prefecture" | "sendai-city" | "shizuoka-prefecture" | "shizuoka-city" | "hamamatsu-city" | "hiroshima-prefecture" | "hiroshima-city" | "kyoto-prefecture" | "kyoto-city";
 export type Assembly = {
   id: string; name: string; seat_count: number;
   term_start: string; term_end: string;
@@ -669,6 +721,46 @@ function shizuokaAssemblyEvidence(packets: unknown[]): Evidence[] {
   }));
 }
 export const assemblies: Record<AssemblySlug, Registry> = {
+  "iwate-prefecture": registry(
+    iwatePrefectureAssembly, iwatePrefectureDisclosure, iwatePrefectureSessions,
+    iwatePrefectureProposals, iwatePrefectureVotes, iwatePrefectureFactionVotes,
+    iwatePrefectureExpenses, iwatePrefectureTrips as unknown as Trip[],
+    shizuokaAssemblyEvidence([
+      ...iwatePrefectureAssemblyEvidence, ...iwatePrefectureVoteEvidence,
+      ...iwatePrefectureExpenseEvidence, ...iwatePrefectureTripEvidence,
+    ]),
+    iwatePrefectureSources.records,
+  ),
+  "morioka-city": registry(
+    moriokaCityAssembly, moriokaCityDisclosure, moriokaCitySessions,
+    moriokaCityProposals, moriokaCityVotes, moriokaCityFactionVotes,
+    moriokaCityExpenses, moriokaCityTrips as unknown as Trip[],
+    shizuokaAssemblyEvidence([
+      ...moriokaCityAssemblyEvidence, ...moriokaCityVoteEvidence,
+      ...moriokaCityExpenseEvidence, ...moriokaCityTripEvidence,
+    ]),
+    moriokaCitySources.records,
+  ),
+  "aomori-prefecture": registry(
+    aomoriPrefectureAssembly, aomoriPrefectureDisclosure, aomoriPrefectureSessions,
+    aomoriPrefectureProposals, aomoriPrefectureVotes, aomoriPrefectureFactionVotes,
+    aomoriPrefectureExpenses, aomoriPrefectureTrips as unknown as Trip[],
+    shizuokaAssemblyEvidence([
+      ...aomoriPrefectureAssemblyEvidence, ...aomoriPrefectureVoteEvidence,
+      ...aomoriPrefectureExpenseEvidence, ...aomoriPrefectureTripEvidence,
+    ]),
+    aomoriPrefectureSources.records,
+  ),
+  "aomori-city": registry(
+    aomoriCityAssembly, aomoriCityDisclosure, aomoriCitySessions,
+    aomoriCityProposals, aomoriCityVotes, aomoriCityFactionVotes,
+    aomoriCityExpenses, aomoriCityTrips as unknown as Trip[],
+    shizuokaAssemblyEvidence([
+      ...aomoriCityAssemblyEvidence, ...aomoriCityVoteEvidence,
+      ...aomoriCityExpenseEvidence, ...aomoriCityTripEvidence,
+    ]),
+    aomoriCitySources.records,
+  ),
   "fukushima-prefecture": registry(
     fukushimaPrefectureAssembly, fukushimaPrefectureDisclosure, fukushimaPrefectureSessions,
     fukushimaPrefectureProposals,
@@ -1075,6 +1167,10 @@ export const assemblySlugs: AssemblySlug[] = [
   "fukushima-prefecture", "fukushima-city",
   "yamagata-prefecture", "yamagata-city",
   "akita-prefecture", "akita-city",
+  "iwate-prefecture",
+  "morioka-city",
+  "aomori-prefecture",
+  "aomori-city",
 ];
 export function isAssemblySlug(slug: string): slug is AssemblySlug {
   return Object.prototype.hasOwnProperty.call(assemblies, slug);

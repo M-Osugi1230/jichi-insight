@@ -18,6 +18,16 @@ import styles from "@/app/municipalities/fukuoka-prefecture/page.module.css";
 import projectStyles from "@/components/ProjectReview.module.css";
 
 const assemblyBoundaries: Partial<Record<TohokuSlug, string>> = {
+  "iwate-prefecture":
+    "令和7年度岩手県一般会計歳入歳出決算は継続審査中（pending）です。" +
+    " 認定済みとして扱いません。",
+  "aomori-prefecture":
+    "令和7年度決算等7議案は継続審査中（pending）です。" +
+    " 決算認定の結果を推測しません。",
+  "aomori-city":
+    "青森市議会の登録済み表決の採決方法は未確定（unknown）です。" +
+    " 表決結果と採決方法を混同しません。",
+
   "fukushima-prefecture":
     "令和7年度決算4議案は継続審査中です。認定済みとは表示しません。",
   "yamagata-prefecture":
@@ -58,7 +68,8 @@ export function TohokuMunicipalityReview({ slug }: { slug: TohokuSlug }) {
   );
   const currentPlan = plan.records.find((item) =>
     item.decision === "accepted" &&
-    (item.title.includes("現行計画") || item.title.includes("計画期間")));
+    (item.title.includes("現行計画") || item.title.includes("計画期間")))
+    ?? plan.records.find((item) => item.decision === "accepted");
   const planTitle = currentPlan?.title ?? municipality.name_ja + "の現行計画";
   const evidenceForBudget = (id: string) => evidencePackets.find((item) =>
     item.subject_id === id &&
@@ -83,7 +94,7 @@ export function TohokuMunicipalityReview({ slug }: { slug: TohokuSlug }) {
             <dl className={styles.heroFacts}>
               <div><dt>普通会計決算</dt><dd>{settlements.length}件（FY2022–2024）</dd></div>
               <div><dt>重点事業</dt><dd>{projects.length}系列</dd></div>
-              <div><dt>{chiefTitle}公約</dt><dd>{promises.length}件</dd></div>
+              <div><dt>{chiefTitle}公約</dt><dd>{promises.length ? `${promises.length}件` : "未登録"}</dd></div>
               <div><dt>最終確認</dt><dd>{municipality.last_verified_at}</dd></div>
             </dl>
           </section>
@@ -188,7 +199,7 @@ export function TohokuMunicipalityReview({ slug }: { slug: TohokuSlug }) {
                 <p>任期：{formatDateJa(chief.term_start)}〜{formatDateJa(chief.term_end)}</p>
                 <p>選挙日：{formatDateJa(chief.election_date)}</p>
                 {electionClaim ? <p>選挙結果（公式資料）：{electionClaim.statement}</p> : null}
-                <p>Reviewed公約：{promises.length}件</p>
+                <p>Reviewed公約：{promises.length ? `${promises.length}件` : "未登録"}</p>
                 <p><Link href={"/promises#" + slug}>公約原文と根拠を見る</Link></p>
                 {manifestoSourcesForExecutive(chief).map((source) => (
                   <p key={source.id}><a href={source.url} target="_blank"
