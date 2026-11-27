@@ -41,17 +41,18 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 206
-    assert len({record["id"] for record in catalog["records"]}) == 206
+    assert len(catalog["records"]) == 213
+    assert len({record["id"] for record in catalog["records"]}) == 213
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 44
+    assert len(terms) == 45
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-032018",
+        "jp-local-020001",
         "jp-local-062014",
         "jp-local-400009",
         "jp-local-401307",
@@ -362,6 +363,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-050008": "2029-04-19",
         "jp-local-060003": "2029-02-13",
         "jp-local-070009": "2030-11-11",
+        "jp-local-020001": "2027-06-28",
         # Niigata Prefecture's end (2030-06-09) is stated directly in
         # the prefectural election commission's official term-expiry
         # list (2026-10-16 edition: 花角英世 R12年6月9日, third
@@ -463,6 +465,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-050008": "2025-04-20",
         "jp-local-060003": "2025-02-14",
         "jp-local-070009": "2026-11-12",
+        "jp-local-020001": "2023-06-29",
         "jp-local-072010": "2025-12-08",
         "jp-local-032018": "2023-09-02",
     }
