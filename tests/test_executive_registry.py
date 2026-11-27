@@ -41,17 +41,19 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 208
-    assert len({record["id"] for record in catalog["records"]}) == 208
+    assert len(catalog["records"]) == 218
+    assert len({record["id"] for record in catalog["records"]}) == 218
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 44
+    assert len(terms) == 46
     assert {term["municipality_id"] for term in terms} == {
+        "jp-local-032018",
         "jp-local-022012",
+        "jp-local-020001",
         "jp-local-062014",
         "jp-local-400009",
         "jp-local-401307",
@@ -371,6 +373,7 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         "jp-local-050008": "2029-04-19",
         "jp-local-060003": "2029-02-13",
         "jp-local-070009": "2030-11-11",
+        "jp-local-020001": "2027-06-28",
         # Niigata Prefecture's end (2030-06-09) is stated directly in
         # the prefectural election commission's official term-expiry
         # list (2026-10-16 edition: 花角英世 R12年6月9日, third
@@ -389,6 +392,16 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # Commission's own term-expiry list is still outstanding and
         # is recorded as an open question in the evidence packet.
         "jp-local-072010": "2029-12-07",
+        # Morioka City's end (2027-09-01) is stated directly in the
+        # Iwate Prefectural Election Commission's official
+        # term-expiry list (as of 2026-11-18); its start
+        # (2023-09-02) follows the Article 259 proviso chain,
+        # anchored by that stated expiry and the four-year cycle
+        # (the 2023 election was a term-expiry election held before
+        # the previous term expired on 2023-09-01). No official
+        # document stating the start day itself was located; the
+        # evidence packet records the chain and the open question.
+        "jp-local-032018": "2027-09-01",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -420,7 +433,6 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
     # date plus four years and was corrected under Issue #676. The
     # record ID keeps the original date as an opaque identifier.
     expected_term_starts = {
-        "jp-local-022012": "2023-06-04",
         "jp-local-062014": "2023-09-28",
         "jp-local-400009": "2025-04-11",
         "jp-local-401307": "2022-12-07",
@@ -463,7 +475,10 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-050008": "2025-04-20",
         "jp-local-060003": "2025-02-14",
         "jp-local-070009": "2026-11-12",
+        "jp-local-020001": "2023-06-29",
+        "jp-local-022012": "2023-06-04",
         "jp-local-072010": "2025-12-08",
+        "jp-local-032018": "2023-09-02",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -527,13 +542,6 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     # bulletin has no official web publication and no verifiable
     # candidate publication was found (see the source search record).
     assert by_municipality["jp-local-012041"]["manifesto_source_ids"] == []
-    # Aomori City registers no manifesto source either: the 2023
-    # bulletin issuance ordinance exists, but the bulletin itself
-    # could not be located on the current official pages, in the
-    # prefectural election record or in the archived captures
-    # checked at stage 1 (see the source search record; the full
-    # search is stage 3).
-    assert by_municipality["jp-local-022012"]["manifesto_source_ids"] == []
     # Osaka Prefecture registers the 2026 re-election bulletin: the
     # promise stage (Issue #772) decided that the promises shown to
     # voters at the most recent election are the appropriate source,
@@ -631,6 +639,21 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-331007"]["manifesto_source_ids"] == [
         "okayama-city-mayor-election-2025-bulletin",
     ]
+    # Morioka City registers no manifesto source: the 2023 bulletin
+    # is not extant on the city election commission's current
+    # official page and no Wayback capture of the official URL was
+    # found; a copy on a private election site exists but its
+    # provenance cannot be verified against an official capture, so
+    # it is not adopted as a primary source (see the source search
+    # record; the question is revisited at stage 3).
+    assert by_municipality["jp-local-032018"]["manifesto_source_ids"] == []
+    # Aomori City registers no manifesto source either: the 2023
+    # bulletin issuance ordinance exists, but the bulletin itself
+    # could not be located on the current official pages, in the
+    # prefectural election record or in the archived captures
+    # checked at stage 1 (see the source search record; the full
+    # search is stage 3).
+    assert by_municipality["jp-local-022012"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

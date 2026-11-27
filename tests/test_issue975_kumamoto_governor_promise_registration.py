@@ -80,10 +80,10 @@ def test_gazette_source_is_registered() -> None:
     # over the stage-2 baseline (0.55.0 / 165) and this gazette
     # record adds one more.
     assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 208
-    assert len({record["id"] for record in catalog["records"]}) == 208
-    assert len(catalog["records"]) == 208
-    assert len({record["id"] for record in catalog["records"]}) == 208
+    assert len(catalog["records"]) == 218
+    assert len({record["id"] for record in catalog["records"]}) == 218
+    assert len(catalog["records"]) == 218
+    assert len({record["id"] for record in catalog["records"]}) == 218
 
     gazette = next(r for r in catalog["records"] if r["id"] == GAZETTE_ID)
     assert gazette["municipality_key"] == "kumamoto-prefecture"
@@ -108,7 +108,7 @@ def test_gazette_source_is_registered() -> None:
 
 def test_search_is_registered_as_no_stable_primary_source() -> None:
     searches = load_json("data/entities/executives/manifesto_source_searches.json")
-    assert len(searches) == 44
+    assert len(searches) == 46
     search = next(s for s in searches if s["id"] == SEARCH_ID)
     assert validation_errors("schemas/manifesto_source_search.schema.json", search) == []
     assert search["executive_term_id"] == TERM_ID
@@ -141,7 +141,7 @@ def test_search_evidence_packet_is_complete() -> None:
     packets = load_json(
         "data/entities/executives/manifesto_source_search_evidence_packets.json"
     )
-    assert len(packets) == 44
+    assert len(packets) == 46
     packet = next(p for p in packets if p["id"] == SEARCH_PACKET_ID)
     assert validation_errors("schemas/evidence_packet.schema.json", packet) == []
     assert packet["subject_type"] == "manifesto_source_search"

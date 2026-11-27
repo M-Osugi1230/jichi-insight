@@ -1986,5 +1986,92 @@
       "国立国会図書館WARPにおける青森市サイトの収集有無は未確定。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-morioka-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-morioka-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の「選挙の記録」（令和5年市長選の記録ページ）には開票結果のみが掲載され、選挙公報への導線はない。岩手県選挙管理委員会の任期満了日一覧は任期情報のみで、公約原文は含まない。",
+        "source_ids": [
+          "morioka-city-mayor-election-2023-results",
+          "iwate-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "市選管の選挙結果ページと県選管の一覧ページ（いずれも公式公表）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "政治山に盛岡市長選挙の選挙公報とされる複写が存在し実在を確認したが、公式URLのWayback Machine保存は複写・公式ページのいずれについても見つからず、ダイジェスト照合による原典性の担保が取れないため、原典としては採用しない。",
+        "source_ids": [
+          "morioka-city-mayor-election-2023-bulletin-copy"
+        ],
+        "location_note": "政治山の公報複写PDFと、Wayback Machine（公式サイト選挙セクション配下2023〜2024年の保存照会・複写URLの保存照会）の確認結果に基づく。",
+        "decision": "accepted",
+        "review_note": "複写の存在自体は証拠として記録するが、検証基準の原典性担保のいずれにも該当しないため located とはしない。担保の可否は段階3で再判断する。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。報道の候補者アンケート回答は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "morioka-city-mayor-election-2023-results"
+        ],
+        "location_note": "探索記録 manifesto-source-search-morioka-city-2023 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "政治山以外の複写（選挙ドットコム等のCDN）の全件確認は未実施であり、複写同士のダイジェスト照合による原典性担保の可否は段階3の判断事項。",
+      "国立国会図書館WARPにおける盛岡市サイトの収集有無は未確定。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-aomori-pref-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-aomori-pref-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "青森県選挙管理委員会の現行公式ページ「令和5年6月4日執行青森県知事選挙の結果について」で結果資料と選挙公報へのリンクを確認し、選挙公報PDFを取得した。あわせて県選管『選挙の記録』で候補者4人の構成を確認した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-results",
+          "aomori-pref-governor-election-2023-bulletin",
+          "aomori-pref-governor-election-2023-record"
+        ],
+        "location_note": "県選管の結果ページと、そこからリンクされる選挙公報PDF（2026-11-27取得）。",
+        "decision": "accepted",
+        "review_note": "確認した出典は checked_source_ids に列挙した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "選挙公報（候補者4人分、全候補者掲載）は県選管の現行公式ページに現存し、ファイルの同一性は SHA-256（73caab175758d3ca2bdb76174d1749471b7afe1d33f5d1fe66b98fb6fc86615b、3,285,127バイト）で記録した。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "選挙公報PDF（県選管の現行公式ページからリンク）。",
+        "decision": "accepted",
+        "review_note": "公報そのものが現行公式ページで確認できたため located（source_registered）として登録した。"
+      },
+      {
+        "field": "result_status",
+        "statement": "選挙公報を出典登録したため result_status を source_registered とした。公約の抽出・登録は段階3で行うため、本探索では公約レコードは作成していない。",
+        "source_ids": [
+          "aomori-pref-governor-election-2023-bulletin"
+        ],
+        "location_note": "本探索レコード全体。",
+        "decision": "accepted",
+        "review_note": "選挙公報そのもの（県選管の現行公式ページで現存）であるため confidence は high とする。"
+      }
+    ],
+    "open_questions": [
+      "公約レコードの抽出・登録は段階3で行う（本探索は公報の所在確定まで）。",
+      "宮下候補の公式サイト等に掲載された詳細な政策資料の安定した所在は特定していない（存在しないと判定するものではない）。"
+    ],
+    "review_status": "reviewed"
   }
 ]

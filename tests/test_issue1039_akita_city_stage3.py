@@ -249,7 +249,7 @@ def test_bulletin_source_and_term_connection() -> None:
     # The bulletin source was already registered at stage 1; stage 3
     # only extends its notes, so the catalog size and version stand.
     assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 208
+    assert len(catalog["records"]) == 218
     source = next(
         record for record in catalog["records"] if record["id"] == BULLETIN_ID
     )
@@ -277,7 +277,7 @@ def test_search_and_review_records() -> None:
     searches = load_json(
         "data/entities/executives/manifesto_source_searches.json"
     )
-    assert len(searches) == 44
+    assert len(searches) == 46
     search = next(record for record in searches if record["id"] == SEARCH_ID)
     assert search["executive_term_id"] == TERM_ID
     # Stage 1 left the search follow_up_required; stage 3 closes it.

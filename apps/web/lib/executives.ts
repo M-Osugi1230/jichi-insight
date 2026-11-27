@@ -105,6 +105,7 @@ export type ManifestoSourceSearchEvidencePacket = {
 
 const municipalityIdToKey = {
   "jp-local-072010": "fukushima-city",
+  "jp-local-032018": "morioka-city",
   "jp-local-052019": "akita-city",
   "jp-local-062014": "yamagata-city",
   "jp-local-431001": "kumamoto-city",
@@ -118,6 +119,8 @@ const municipalityIdToKey = {
   "jp-local-330001": "okayama-prefecture",
   "jp-local-430005": "kumamoto-prefecture",
   "jp-local-070009": "fukushima-prefecture",
+  "jp-local-020001": "aomori-prefecture",
+  "jp-local-022012": "aomori-city",
   "jp-local-060003": "yamagata-prefecture",
   "jp-local-050008": "akita-prefecture",
   "jp-local-221007": "shizuoka-city",
