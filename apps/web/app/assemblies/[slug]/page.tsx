@@ -113,7 +113,10 @@ export default async function AssemblyDetailPage({params}:PageProps){
       {slug==="hyogo-prefecture" || slug==="kobe-city" ? <p className={styles.attention}>登録議案{data.proposals.length}件、議決結果等の記録{data.votes.length}件、会派態度・賛否{data.factionVotes.length}件、政務活動費{data.expenses.length}単位、視察・委員会調査{data.trips.length}件を登録しています。</p> : null}
       {slug==="chiba-prefecture" ? <p className={styles.attention}>千葉県議会の賛否一覧は3表で○の意味が異なります。議案表の○は原案に反対する会派等、発議案表の○は賛成会派等の内訳、請願表の○は採択に賛成する会派等を示します。表の種類をまたいで○を同じ意味として解釈しません。令和7年度決算認定「決算認定について」は継続審査中（pending）です。個人名列は無所属議員2名のみで、会派所属議員の個人票は公表されていません。</p> : null}
       {slug==="chiba-prefecture" || slug==="chiba-city" ? <p className={styles.attention}>登録議案{data.proposals.length}件、表決{data.votes.length}件、会派別賛否{data.factionVotes.length}件、政務活動費{data.expenses.length}単位、視察{data.trips.length}件を登録しています。件数はこのページのReviewed登録データに基づきます。</p> : null}
-      <p><Link href="/assemblies">43議会の一覧に戻る</Link></p>
+      {slug==="iwate-prefecture" ? <p className={styles.attention}>岩手県議会の令和7年度一般会計決算は継続審査中（pending）です。認定済みとして扱いません。会派・議員別賛否や表決方法についても登録資料の範囲を超えて推測しません。</p> : null}
+      {slug==="aomori-prefecture" ? <p className={styles.attention}>青森県議会の決算等7議案は継続審査中（pending）であり、認定済みとは表示しません。</p> : null}
+      {slug==="aomori-city" ? <p className={styles.attention}>青森市議会の登録済み表決は採決方法が未確定（unknown）です。議決結果から起立・記名投票などの採決方法を推測しません。</p> : null}
+      <p><Link href="/assemblies">47議会の一覧に戻る</Link></p>
       <nav aria-label="ページ内のセクション">
         <a href="#basic">基本情報</a> ／ <a href="#proposals">会期と議案</a> ／ <a href="#votes">表決</a> ／ <a href="#expenses">政務活動費</a> ／ <a href="#trips">視察</a> ／ <a href="#disclosure">情報公開</a>
       </nav>
