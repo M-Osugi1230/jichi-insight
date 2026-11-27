@@ -289,8 +289,8 @@ def test_bulletin_source_and_term_connection() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     # The bulletin source was registered at stage 1; stage 3 adds no
     # catalog record, so the version and count are unchanged.
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
+    assert catalog["version"] == "0.70.0"
+    assert len(catalog["records"]) == 225
     source = next(
         record for record in catalog["records"] if record["id"] == BULLETIN_ID
     )

@@ -58,9 +58,9 @@ def promise_id(index: int) -> str:
 
 def test_bulletin_source_registered_from_single_wayback_capture() -> None:
     catalog = load_json(ROOT / "data" / "catalog" / "executive_sources.json")
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
-    assert len(catalog["records"]) == 223
+    assert catalog["version"] == "0.70.0"
+    assert len(catalog["records"]) == 225
+    assert len(catalog["records"]) == 225
     by_id = {record["id"]: record for record in catalog["records"]}
     bulletin = by_id[BULLETIN_ID]
     assert bulletin["municipality_key"] == "kumamoto-city"
