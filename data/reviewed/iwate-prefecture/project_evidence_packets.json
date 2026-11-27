@@ -1,0 +1,962 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第1位の「健康・余暇」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「健康・余暇」。目指す姿は「健康寿命が長く、いきいきと暮らすことができ、また、自分らしく自由な時間を楽しむことができる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "生涯を通じた心身の健康づくりを進め、地域の保健医療提供体制の充実や福祉コミュニティづくりなどにより、子どもから高齢者まで、障がいのある人もない人も、こころと体の健康を実感でき、また、文化芸術活動やスポーツ活動、学びの機会を充実することにより、余暇の充実を実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】5・概ね達成【B】0・やや遅れ【C】1・遅れ【D】3（評価対象9指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は81%（評価対象62指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は健康寿命、余暇時間である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（56%）と具体的推進方策指標の達成度（81%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-health-leisure",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-health-leisure",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第2位の「家族・子育て」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「家族・子育て」。目指す姿は「家族の形に応じたつながりや支え合いが育まれ、また、安心して子育てをすることができる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "従来の形に捉われない様々な家族の形態において、それぞれが大切な人とのつながりや支え合いを確保できる環境づくりを進めることにより、共につながり、支え合う良好な家族関係を実感でき、また、結婚や出産、子育てなどの環境づくりを進めることにより、家庭や地域で、子どものいきいきとした成長を実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】3・概ね達成【B】1・やや遅れ【C】0・遅れ【D】3（評価対象7指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は87%（評価対象47指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は合計特殊出生率、男性の家事時間割合、総実労働時間である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（57%）と具体的推進方策指標の達成度（87%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-family-childrearing",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-family-childrearing",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第3位の「教育」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「教育」。目指す姿は「学びや人づくりによって、将来に向かって可能性を伸ばし、自分の夢を実現できる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "学校教育の充実や国際交流、文化・スポーツ、産業などの様々な分野での人づくりを進めることにより、将来を担う子どもたちの心豊かな学びや生きる力の高まりを実感でき、国内外や地域社会の様々な分野で活躍する人材が育っていると実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】6・概ね達成【B】9・やや遅れ【C】0・遅れ【D】3（評価対象18指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は80%（評価対象94指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は意欲を持って自ら進んで学ぼうとする児童生徒の割合、自己肯定感を持つ児童生徒の割合、体力・運動能力が標準以上の児童生徒の割合、高卒者の県内就職率である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（83%）と具体的推進方策指標の達成度（80%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-education",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-education",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第4位の「居住環境・コミュニティ」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「居住環境・コミュニティ」。目指す姿は「不便を感じないで日常生活を送ることができ、また、人や地域の結び付きの中で、助け合って暮らすことができる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "居住環境の整備や日常生活に必要不可欠な交通手段の確保などにより、住まいの快適さや暮らしやすさを実感でき、また、多様な主体の連携や異なる文化、県内外の人的・経済的な交流などにより、暮らし続けたい、帰りたいと思える地域のつながりを実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】4・概ね達成【B】0・やや遅れ【C】0・遅れ【D】2（評価対象6指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は88%（評価対象33指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は県外からの移住・定住者数、地縁的な活動への参加割合である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（67%）と具体的推進方策指標の達成度（88%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-living-environment-community",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-living-environment-community",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第5位の「安全」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「安全」。目指す姿は「災害をはじめとした様々なリスクへの備えがあり、事故や犯罪が少なく、安全で、安心を実感することができる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "災害に対する十分な備えや、犯罪、交通事故が起こりにくい環境づくりに取り組むとともに、食の安全の確保や感染症の予防対策などを進めることにより、地域の安全や暮らしの安心を実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】2・概ね達成【B】0・やや遅れ【C】0・遅れ【D】3（評価対象5指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は76%（評価対象29指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は自主防災組織の組織率、刑法犯認知件数、交通事故発生件数である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（40%）と具体的推進方策指標の達成度（76%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-safety",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-safety",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第6位の「仕事・収入」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「仕事・収入」。目指す姿は「農林水産業やものづくり産業などの活力ある産業のもとで、安定した雇用が確保され、また、やりがいと生活を支える所得が得られる仕事につくことができる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "岩手県の地域経済を支える中小企業、地域経済をけん引する自動車や半導体関連産業をはじめとするものづくり産業、地域の特性や資源を活用した産業、幅広い分野に波及効果をもたらす観光産業、岩手県の基幹産業である農林水産業などの産業政策を総合的に展開し、一人ひとりの能力を発揮できる多様な雇用の確保を進めることにより、希望する仕事に就き、安心して働きながら、仕事のやりがいを実感でき、また、経済基盤の高度化や生産性の向上を図ることにより、必要な収入や所得が得られていると実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】7・概ね達成【B】5・やや遅れ【C】0・遅れ【D】2（評価対象14指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は86%（評価対象99指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は一人当たり県民所得、正社員の有効求人倍率、総実労働時間［再掲］、高卒者の県内就職率［再掲］である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（86%）と具体的推進方策指標の達成度（86%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-work-income",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-work-income",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第7位の「歴史・文化」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「歴史・文化」。目指す姿は「豊かな歴史や文化を受け継ぎ、愛着や誇りを育んでいる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "世界遺産の保存と活用を進め、また、過去や現在から未来に引き継ぎたい地域の歴史や伝統文化を学び、受け継ぐことにより、岩手や地域への誇りや愛着を実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】3・概ね達成【B】0・やや遅れ【C】0・遅れ【D】0（評価対象3指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は100%（評価対象7指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は世界遺産等の来訪者数、国・県指定文化財件数である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（100%）と具体的推進方策指標の達成度（100%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-history-culture",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-history-culture",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第8位の「自然環境」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「自然環境」。目指す姿は「一人ひとりが恵まれた自然環境を守り、自然の豊かさとともに暮らすことができる岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "良好な自然環境の保全や循環型地域社会の形成、再生可能エネルギーの導入をはじめとする地球温暖化対策などを進めることにより、自然に恵まれていることを実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】2・概ね達成【B】3・やや遅れ【C】0・遅れ【D】0（評価対象5指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は92%（評価対象26指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は岩手の代表的希少野生動植物の個体・つがい数、再生可能エネルギーによる電力自給率、自然公園の利用者数である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（100%）と具体的推進方策指標の達成度（92%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-natural-environment",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-natural-environment",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第9位の「社会基盤」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「社会基盤」。目指す姿は「防災対策や産業振興など幸福の追求を支える社会基盤が整っている岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "社会経済活動や教育・研究の土台となる情報通信技術の活用、科学の振興、産業や暮らしを支える社会資本の整備など、8つの政策分野を支える基盤の強化により、地域の魅力を実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】2・概ね達成【B】1・やや遅れ【C】0・遅れ【D】2（評価対象5指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は85%（評価対象41指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は河川整備率、緊急輸送道路の整備延長である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（60%）と具体的推進方策指標の達成度（85%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-social-infrastructure",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-social-infrastructure",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "長期ビジョン（最終案）第5章「政策推進の基本方向」および段階1の plan_review（登録単位を政策分野に固定）。",
+        "review_note": "県の政策評価は政策分野ごとに幸福関連指標・具体的推進方策指標の達成状況を測定し公表する形であり、公式評価の公表単位である政策分野を登録単位とした。本登録のレビュー・昇格判断は、所有者が2026年11月15日に Muse へ委任した権限に基づくものであり、所有者本人のレビューではない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft",
+          "iwate-pref-fy2023-implementation-report-summary"
+        ],
+        "statement": "登録単位は長期ビジョンの政策分野とし、本件は10の政策分野のうち掲載順第10位の「参画」である。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "長期ビジョン（最終案）第5章の政策分野見出し、および第5章3の指標一覧表（p.71）。",
+        "review_note": "要約・言い換えをせず原典の表記を用いた。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "公式名称は「参画」。目指す姿は「男女共同参画や若者・女性、高齢者、障がい者などの活躍、幅広い市民活動や県民運動など幸福の追求を支える仕組みが整っている岩手」と定められている。"
+      },
+      {
+        "decision": "accepted",
+        "field": "selection",
+        "location_note": "選定カタログ data/catalog/iwate_prefecture_priority_project_selection.json",
+        "review_note": "母集団（10の政策分野）と登録単位が一致するため、金額順・規模順の選定は行わず全件を掲載順に登録した。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "母集団は長期ビジョンの10の政策分野の全件（50の政策項目を含む）であり、全10分野を登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "長期ビジョン（最終案）第5章の本分野の冒頭の記述。",
+        "review_note": "県の記述そのものであり、県の評価や当方の解釈は加えていない。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "男女共同参画や若者・女性、高齢者、障がい者などが活躍できる仕組みづくり、ＮＰＯや関係団体等の多様な主体による幅広い市民活動や県民運動の促進など、8つの政策分野を支えるソフトパワーの強化により、地域の魅力を実感できる岩手の実現に向けた取組を展開します。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "長期ビジョン（最終案）第5章の記載（政策分野単位の所管部局の明示なし）。",
+        "review_note": "計画には政策分野単位の所管部局が明示されていないため、推測で補完しない。計画全体の所管は政策企画部であるが、分野単位の所管とは別である。",
+        "source_ids": [
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "計画に政策分野単位の所管部局の明示がないため、responsible_department は null とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records",
+        "location_note": "段階1で登録した岩手県の財政記録（一般会計総額等）および県の当初予算の公表形式。",
+        "review_note": "個別事業の金額は主な事業の抜粋であり、合算して政策分野単位の金額とすることはしない。",
+        "source_ids": [
+          "iwate-pref-plan-page"
+        ],
+        "statement": "岩手県は政策分野単位の予算額・決算額を公表していない。当初予算は一般会計・特別会計の款項目や部局・事業単位で公表され、段階1では一般会計総額等を財政記録として別途登録した。個別事業の金額を合算して政策分野単位の金額とすることはしないため、金額は欠損として明示し、推測で補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要（令和6年9月25日、政策企画部政策企画課）の政策分野別達成状況表。",
+        "review_note": "県は政策分野単位の単一の評定を公表していないため、評定の創作はせず、公表形である達成度の分野別内訳をそのまま登録した。令和6年度分の分野別内訳は判読できなかったため登録していない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-fy2024-implementation-report-page"
+        ],
+        "statement": "令和5年度政策評価：いわて幸福関連指標 達成【A】5・概ね達成【B】1・やや遅れ【C】0・遅れ【D】1（評価対象7指標）。具体的推進方策指標の「概ね達成【B】」以上の割合は83%（評価対象23指標）。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "「主要施策の成果に関する説明書」令和5年度の概要の達成状況表、および長期ビジョン（最終案）第5章3の指標一覧表（p.71）。",
+        "review_note": "個別指標の実績値・目標値は全文の指標一覧表に掲載されるが、本登録で検証可能な公表形は分野別集計までであるため、KPIは分野別集計の2件（幸福関連指標・具体的推進方策指標の達成度）に限った。版をまたぐ指標の対応付けは行っていない。",
+        "source_ids": [
+          "iwate-pref-fy2023-implementation-report-summary",
+          "iwate-pref-long-term-vision-final-draft"
+        ],
+        "statement": "本分野の主要な指標（長期ビジョン版）は労働者総数に占める女性の割合、障がい者の雇用率、高齢者のボランティア活動比率、男性の家事時間割合［再掲］である。KPIとして登録したのは、令和5年度の分野別集計である幸福関連指標の達成度（86%）と具体的推進方策指標の達成度（83%）の2件である。"
+      }
+    ],
+    "id": "evidence-jp-local-030007-project-2019-participation",
+    "open_questions": [
+      "令和6年度の実施状況報告書の全文はkintoneビューアに掲載され機械的な検証ができず、概要版PDFは回転テキストのため政策分野別の内訳が判読できなかった。判読可能な形で内容を確認できた時点で、令和6年度分の分野別評価とKPI実績を追加する。",
+      "いわて幸福関連指標の個別指標の実績値・目標値は実施状況報告書の全文（指標一覧表）に掲載されるが、本登録では検証可能な公表形である政策分野別の集計のみを登録した。全文の検証が可能になれば、長期ビジョンの主要な指標（分野ごとに2〜4件）の個別登録を検討する。",
+      "第3期アクションプラン（2027年3月策定・公表予定）で指標体系や政策分野の構成が改定された場合は、本登録の対応関係を見直す。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-030007-project-2019-participation",
+    "subject_type": "project"
+  }
+]
