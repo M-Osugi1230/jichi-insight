@@ -1,0 +1,103 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-020001-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-020001-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "会派別・選挙区別・五十音順の議員名簿を県議会公式サイトで公開。五十音順名簿の表題に「【定数48人】（欠員2人）」と明記され、現員は46名。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派別名簿に8グループの構成を掲載（自由民主党27名・オール青森5名・立憲民主・無所属の会4名・日本共産党3名・公明党2名・立憲民主・憲法をいかす県民の会2名・参政党1名・無所属2名）。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "committee_composition",
+    "note": "「県議会の構成」ページで、常任委員会6（総務政策こども・環境厚生・農林水産・経済交通観光・文教公安・建設危機管理）・議会運営委員会・特別委員会3（新幹線・鉄道問題対策・原子力・エネルギー対策・決算）の構成を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "proposals_and_results",
+    "note": "定例会ごとに議決結果（件名・議決月日・表決方法・結果）と知事提出議案の一覧、議員提出議案の全文を公開。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "県議会自身による会派別態度表の別途公表は確認できなかった。会派別の賛否は、公式の議決結果に掲載された議員別の賛否から集計できる。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "議決結果に議員別の賛否（○＝賛成、×＝反対、議長は「議」）と賛成者数・反対者数・表決者数を掲載。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は議員個人へ月額31万円を交付し、収支報告書を議員別PDFで公開。令和7年度分は議員48名分と会派共通経費3件を公開（2026年7月1日）。",
+    "source_url": null
+   },
+   {
+    "availability": "restricted",
+    "granularity": "document",
+    "item": "political_activity_expense_receipts",
+    "note": "ホームページで閲覧できるのは収支報告書・領収書等の写し集計表・政務活動実績報告書・事務所状況報告書・費目ごとの按分率一覧までで、領収書の写し自体は閲覧請求による。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "inspection_trip_reports",
+    "note": "議員派遣結果報告書を年度別（国内・海外）に公開し、派遣議員・期間・派遣場所及び目的を掲載。派遣費用は掲載されていない。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "meeting_minutes",
+    "note": "会議録（速報版）を県議会公式サイトで公開。第327回定例会分は2026年11月18日に掲載され、起立採決の実施と議長の宣言を本会議分で確認できる。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継・録画配信を県議会公式サイトで案内している。",
+    "source_url": null
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "議決結果に請願・陳情の委員長報告（採択・不採択）と本会議の結果を掲載。第327回定例会では請願受理番号第2号・陳情受理番号第1号がいずれも不採択となった。",
+    "source_url": null
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "aomori-pref-assembly-top",
+   "aomori-pref-assembly-roster-factions",
+   "aomori-pref-assembly-2026-sep-vote-results",
+   "aomori-pref-assembly-activity-expenses",
+   "aomori-pref-assembly-trips-index",
+   "aomori-pref-assembly-2026-sep-minutes-index"
+  ]
+ }
+]
