@@ -94,7 +94,7 @@ export function TohokuMunicipalityReview({ slug }: { slug: TohokuSlug }) {
             <dl className={styles.heroFacts}>
               <div><dt>普通会計決算</dt><dd>{settlements.length}件（FY2022–2024）</dd></div>
               <div><dt>重点事業</dt><dd>{projects.length}系列</dd></div>
-              <div><dt>{chiefTitle}公約</dt><dd>{promises.length}件</dd></div>
+              <div><dt>{chiefTitle}公約</dt><dd>{promises.length ? `${promises.length}件` : "未登録"}</dd></div>
               <div><dt>最終確認</dt><dd>{municipality.last_verified_at}</dd></div>
             </dl>
           </section>
@@ -199,7 +199,7 @@ export function TohokuMunicipalityReview({ slug }: { slug: TohokuSlug }) {
                 <p>任期：{formatDateJa(chief.term_start)}〜{formatDateJa(chief.term_end)}</p>
                 <p>選挙日：{formatDateJa(chief.election_date)}</p>
                 {electionClaim ? <p>選挙結果（公式資料）：{electionClaim.statement}</p> : null}
-                <p>Reviewed公約：{promises.length}件</p>
+                <p>Reviewed公約：{promises.length ? `${promises.length}件` : "未登録"}</p>
                 <p><Link href={"/promises#" + slug}>公約原文と根拠を見る</Link></p>
                 {manifestoSourcesForExecutive(chief).map((source) => (
                   <p key={source.id}><a href={source.url} target="_blank"
