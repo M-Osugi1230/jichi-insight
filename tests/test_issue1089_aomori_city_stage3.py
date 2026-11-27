@@ -162,7 +162,18 @@ def test_search_evidence_packet_supports_the_closure() -> None:
 
 def test_catalog_is_unchanged_by_this_closure() -> None:
     # Stage 3 secured no new official document, so -- unlike the
-    # Niigata closure -- no source is added to the catalog.
+    # Niigata closure -- no source is added to the catalog for
+    # Aomori City.  (The catalog total itself moved on with the
+    # Morioka stage-3 registration, PR #1091; the global version and
+    # count pins live in the shared catalog tests.)
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
+    aomori_city_ids = sorted(
+        record["id"]
+        for record in catalog["records"]
+        if "aomori-city" in record["id"]
+    )
+    assert aomori_city_ids == [
+        "aomori-city-election-bulletin-ordinance",
+        "aomori-city-mayor-election-2023-results",
+        "aomori-city-past-election-results",
+    ]
