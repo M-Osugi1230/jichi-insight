@@ -1,0 +1,90 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-term-list"
+    ],
+    "statement": "青森県選挙管理委員会「市町村議会議員の任期満了日及び選挙期日等」（令和8年11月25日現在）で、青森市議会議員の現任期の満了日は令和12年11月25日と印字されている。任期は4年のため、登録対象の改選前の任期は満了日2026年11月25日、開始日2022年11月26日と算定した。令和4年度の政務活動費収支報告書が任期満了による精算（11月25日まで）と12月開始の2期間に分かれていることも、この周期と整合する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_count",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-term-list",
+     "aomori-city-assembly-vote-table-2026-3"
+    ],
+    "statement": "登録対象の第3回定例会時点の定数は32人。議員提出議案第13号「青森市議会議員定数条例の一部を改正する条例の制定について」が同定例会で原案可決され、定数は32人から28人へ改正されたが、適用は2026年11月8日執行の市議会議員一般選挙からであるため、本登録は改選前の議会（定数32人）として登録した。新議会の登録は申し送る。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-vote-table-2026-3",
+     "aomori-city-assembly-seimu-2025-index"
+    ],
+    "statement": "会派構成は賛否状況PDFと政務活動費の公開名簿による自民クラブ8人、創青会5人、市民クラブ4人、公明党4人、日本共産党4人、立憲民主・社民3人、無所属4人の計32人。議長は無所属の奈良岡隆（政務活動費収支報告書の宛名で確認）。賛否状況PDFの表記（澁谷洋子・舘山善也・蛯名和子）を氏名の正本とした。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-schedule-2026-3"
+    ],
+    "statement": "委員会は会期予定表に日程が印字された総務企画・文教経済・都市建設・民生環境の4常任委員会と議会運営委員会、予算特別委員会、決算特別委員会の7委員会を登録した。委員名簿は本登録の一次資料では確認できていない。"
+   },
+   {
+    "decision": "accepted",
+    "field": "session",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-session-2026-3",
+     "aomori-city-assembly-schedule-2026-3"
+    ],
+    "statement": "令和8年第3回定例会の会期は2026年8月24日から9月29日まで。会期予定表により、全議案の質疑・討論・採決は最終日9月29日の本会議で行われた。改選前の議員の任期最後の定例会である。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_votes",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-vote-table-2026-3"
+    ],
+    "statement": "議員の賛否状況PDFは、賛否が分かれた6件については議員個人別の賛成・反対・欠席を公表し、全会一致の29件については賛成30人・反対0人の合計と欠席者名（全件とも自民クラブ・長谷川章悦）のみを公表している。本登録では公表どおりに登録し、全会一致の議案については個人別の内訳を復元していない（個人別賛否は欠席者分のみ）。議長（奈良岡隆）は表決に加わらないため、いずれの議案の個人別賛否にも含めていない。賛否表の性質（事後の表決記録かどうか）の会議録との突合は未了のため、全議決の method は unknown とした（open_questions 参照）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "petitions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "aomori-city-assembly-session-2026-3",
+     "aomori-city-assembly-vote-table-2026-3"
+    ],
+    "statement": "青森市議会では請願は議決対象であり、本定例会では第2回定例会から継続審査中の請願第6号・第10号が審議され、いずれも不採択となった。請願第10号は賛成15人・反対15人の可否同数となり、議長裁決により不採択と決定された（賛否状況PDFの脚注に地方自治法の議長裁決の説明がある）。陳情は本定例会の公表資料に掲載がなかった。"
+   }
+  ],
+  "id": "evidence-jp-local-022012-assembly-2022",
+  "open_questions": [
+   "賛否表の性質（事後の表決記録かどうか）の会議録との突合は未了。会議録検索システムには令和8年第3回定例会の会議録が掲載済み（2026年11月25日掲載）で、2026年9月29日本会議録（第8号）の存在と議長・運営は確認できたが、本登録時のアクセスではサイトのレート制限により本文の表決箇所を確認できなかった。全議決の method は unknown として登録し、突合でき次第更新する（Issue #706 で追跡）。",
+   "任期開始日（2022年11月26日）は県選管一覧の任期満了日と4年周期からの算定であり、開始日を直接印字した公式資料は確認できていない。",
+   "定数条例改正後の新議会（定数28人、2026年11月8日の市議選で選出、任期満了日2030年11月25日）の登録は本登録の対象外であり、別途追跡する（Issue #706）。",
+   "登録任期における委員会の委員名簿（委員長・委員の氏名）は、本登録で用いた一次資料では確認できなかった。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-022012-assembly-2022",
+  "subject_type": "assembly"
+ }
+]
