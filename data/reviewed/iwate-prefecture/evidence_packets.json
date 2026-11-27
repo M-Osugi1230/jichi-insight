@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-iwate-prefecture-2026-initial-budget-total-revenue",
+    "subject_id": "jp-local-030007-fiscal-2026-total-revenue",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度岩手県一般会計当初予算の歳入総額は774,233,557千円であり、議案第1号として2026年3月23日に「意見を付し原案可決」で議決された。",
+        "location_note": "『令和8年度予算に関する説明書』一般会計歳入歳出予算事項別明細書・総括（歳入）、および岩手県議会の知事提出議案一覧（令和8年2月定例会・議決結果）の議案第1号の欄。",
+        "source_ids": [
+          "iwate-pref-budget-2026-initial-detail",
+          "iwate-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "説明書の千円単位の印字値を円単位へ換算して保存。款別内訳の合計が総額と一致することも検算した。一般会計補正予算（第1号）第1表の補正前の額でも同額を確認した。議決文言は知事提出議案一覧の表記「意見を付し原案可決」を資料どおりに記録した（議員別賛否表では「意見を付して原案可決」と表記される）。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-iwate-prefecture-2026-initial-budget-local-tax",
+    "subject_id": "jp-local-030007-fiscal-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度岩手県一般会計当初予算の県税は135,788,000千円である。",
+        "location_note": "『令和8年度予算に関する説明書』一般会計歳入歳出予算事項別明細書・総括（歳入）の款1県税の欄。",
+        "source_ids": [
+          "iwate-pref-budget-2026-initial-detail",
+          "iwate-pref-budget-2026-supplementary-2-detail"
+        ],
+        "decision": "accepted",
+        "review_note": "千円単位の印字値を円単位へ換算して保存。前年度予算額136,712,000千円・比較△924,000千円とも整合する。一般会計補正予算（第2号）の事項別明細書でも県税は補正の対象外であり、当初値のままであることを確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-iwate-prefecture-2026-initial-budget-total-expenditure",
+    "subject_id": "jp-local-030007-fiscal-2026-total-expenditure",
+    "subject_type": "fiscal_record",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "2026年度岩手県一般会計当初予算の歳出総額は774,233,557千円であり、歳入総額と同額である。",
+        "location_note": "『令和8年度予算に関する説明書』一般会計歳入歳出予算事項別明細書・総括（歳出）。",
+        "source_ids": [
+          "iwate-pref-budget-2026-initial-detail",
+          "iwate-pref-assembly-2026-feb-session-results"
+        ],
+        "decision": "accepted",
+        "review_note": "説明書の千円単位の印字値を円単位へ換算して保存。歳入総額と同額であることを確認した。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
+  }
+]

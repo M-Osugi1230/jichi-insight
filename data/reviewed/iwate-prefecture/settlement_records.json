@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-revenue",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 879040072000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-expenditure",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 824677066000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-local-tax",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 168825953000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-formal-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 54363006000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-carryover-resources",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 34589737000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-real-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 19773269000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。形式収支から翌年度繰越財源を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 5.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）に印字された実質収支比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 391047741000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・前年度繰上充用金・分離課税所得割交付金・特別地方消費税交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1309412000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 53988056000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 100149115000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 78572949000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2416440000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 59311864000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 121103910000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 86750842000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 27233231000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 142349056000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 19134591000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 97957172000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": 7159000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 42445000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 332247000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 251516000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 30990304000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 188551000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 7433000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 428495000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 2152278000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 284556927000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 172198524000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 123975747000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 14449369000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 97909034000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 403978502000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 45008185000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 15736314000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 195314737000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7226043000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 29697122000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 63445000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 110932656000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 136141637000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 117007046000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 84222686000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 24235669000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 19134591000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-fund-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 111574493000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 29702292000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 29797012000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 52075189000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-debt-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 1304527195000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和4年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は岩手県『令和4年度財政状況資料集』総括表（総務省サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 825655909000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 478871286000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 94.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）に印字された経常収支比率（再計算はしていない）。ラベル行の値を用い、括弧内の変種値は用いていない。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 12.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）に印字された実質公債費比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 204.4,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）に印字された将来負担比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.35368,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）に印字された財政力指数（過去3年平均、再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2022-ordinary-population",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2022,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1189670,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2022-04-01",
+    "period_end": "2023-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2022",
+      "iwate-prefecture-fiscal-situation-collection-fy2022"
+    ],
+    "note": "総務省『令和4年度都道府県決算カード』（岩手県シート）に印字された住民基本台帳人口（2023年1月1日現在）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-revenue",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 809515999000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-expenditure",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 756669461000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-local-tax",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 168353665000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-formal-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 52846538000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-carryover-resources",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 33381838000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-real-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 19464700000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。形式収支から翌年度繰越財源を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 5,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）に印字された実質収支比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 390645538000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・前年度繰上充用金・分離課税所得割交付金・特別地方消費税交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。",
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1352297000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 46314987000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 96028996000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 61580874000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 2418273000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 62058148000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 113510081000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 77032229000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 27044999000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 131922182000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 9764594000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 93228575000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": 5167000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 34637000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 375288000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 440569000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 30791521000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 185869000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 40956000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 494810000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 2044409000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 268760549000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 161643008000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 123164305000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 13952491000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 93165050000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 373212686000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 33360769000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 15781346000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 185886448000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7122184000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 23583085000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 70270000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 107408584000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 114696226000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 104931632000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 73384421000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 23226438000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 9764594000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-fund-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 118111945000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 30999390000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 33326962000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 53785593000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-debt-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 1269349631000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和5年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は岩手県『令和5年度財政状況資料集』総括表（総務省サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 822117329000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 447232302000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 92.6,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）に印字された経常収支比率（再計算はしていない）。ラベル行の値を用い、括弧内の変種値は用いていない。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 12.7,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）に印字された実質公債費比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 201.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）に印字された将来負担比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.35095,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）に印字された財政力指数（過去3年平均、再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2023-ordinary-population",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2023,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1172349,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2023-04-01",
+    "period_end": "2024-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2023",
+      "iwate-prefecture-fiscal-situation-collection-fy2023"
+    ],
+    "note": "総務省『令和5年度都道府県決算カード』（岩手県シート）に印字された住民基本台帳人口（2024年1月1日現在）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-revenue",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_revenue",
+    "metric_label": "普通会計歳入総額",
+    "amount_yen": 804926643000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。歳入から歳出を差し引いた額は形式収支と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-expenditure",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "total_expenditure",
+    "metric_label": "普通会計歳出総額",
+    "amount_yen": 757986980000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。目的別・性質別の内訳合計は歳出総額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-local-tax",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "local_tax",
+    "metric_label": "普通会計県税",
+    "amount_yen": 171488007000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-formal-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "formal_balance",
+    "metric_label": "普通会計形式収支",
+    "amount_yen": 46939663000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。歳入総額から歳出総額を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-carryover-resources",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "carryover_resources",
+    "metric_label": "普通会計翌年度繰越財源",
+    "amount_yen": 34790138000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-real-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance",
+    "metric_label": "普通会計実質収支",
+    "amount_yen": 12149525000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。形式収支から翌年度繰越財源を差し引いた額と一致する（検算済み）。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-real-balance-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_balance_ratio",
+    "metric_label": "実質収支比率",
+    "amount_yen": null,
+    "value": 3.1,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）に印字された実質収支比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-standard-fiscal-scale",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "standard_fiscal_scale",
+    "metric_label": "標準財政規模",
+    "amount_yen": 394089258000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-expenditure-by-purpose",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_purpose",
+    "metric_label": "普通会計目的別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）「目的別歳出の状況」の千円単位の値を円換算。各区分の合計は歳出総額と一致する（検算済み）。目的別の「公債費」は性質別の「公債費」と分類が異なる。カード上「－」の区分（消防費・前年度繰上充用金・分離課税所得割交付金・軽油引取税交付金・特別区財政調整交付金）は該当がないため区分に含めない。なお特別地方消費税交付金は令和6年度のカードに区分自体が存在しない。",
+    "breakdown": [
+      {
+        "key": "assembly",
+        "label": "議会費",
+        "amount_yen": 1406802000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "general_affairs",
+        "label": "総務費",
+        "amount_yen": 44671012000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "welfare",
+        "label": "民生費",
+        "amount_yen": 97175566000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "public_health",
+        "label": "衛生費",
+        "amount_yen": 60270650000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "labor",
+        "label": "労働費",
+        "amount_yen": 3578159000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "agriculture_forestry_fisheries",
+        "label": "農林水産業費",
+        "amount_yen": 64979708000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "commerce_industry",
+        "label": "商工費",
+        "amount_yen": 92635447000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "civil_engineering",
+        "label": "土木費",
+        "amount_yen": 81161322000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "police",
+        "label": "警察費",
+        "amount_yen": 29229062000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "education",
+        "label": "教育費",
+        "amount_yen": 141061318000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "disaster_recovery",
+        "label": "災害復旧費",
+        "amount_yen": 10643095000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 94635983000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "miscellaneous_expenditures",
+        "label": "諸支出金",
+        "amount_yen": 6968000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "interest_allocation_grant",
+        "label": "利子割交付金",
+        "amount_yen": 45355000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "dividend_allocation_grant",
+        "label": "配当割交付金",
+        "amount_yen": 542549000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "capital_gains_allocation_grant",
+        "label": "株式等譲渡所得割交付金",
+        "amount_yen": 745234000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "local_consumption_tax_grant",
+        "label": "地方消費税交付金",
+        "amount_yen": 32221687000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "golf_course_tax_grant",
+        "label": "ゴルフ場利用税交付金",
+        "amount_yen": 191572000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_acquisition_tax_grant",
+        "label": "自動車取得税交付金",
+        "amount_yen": 1000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "automobile_environment_tax_grant",
+        "label": "自動車税環境性能割交付金",
+        "amount_yen": 514565000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "corporate_enterprise_tax_grant",
+        "label": "法人事業税交付金",
+        "amount_yen": 2270925000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-expenditure-by-nature",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "expenditure_by_nature",
+    "metric_label": "普通会計性質別歳出",
+    "amount_yen": null,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）「性質別歳出の状況」の千円単位の値を円換算。義務的経費計・その他の経費・投資的経費計の合計は歳出総額と一致する（検算済み）。性質別の「公債費」は目的別の「公債費」と分類が異なる。前年度繰上充用金・失業対策事業費は該当なし（カード上「－」）のため区分に含めない。",
+    "breakdown": [
+      {
+        "key": "mandatory_expenses",
+        "label": "義務的経費計",
+        "amount_yen": 281496954000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "personnel",
+        "label": "人件費",
+        "amount_yen": 173154270000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "staff_salaries",
+        "label": "うち職員給",
+        "amount_yen": 125297388000,
+        "parent_key": "personnel",
+        "note": null
+      },
+      {
+        "key": "assistance",
+        "label": "扶助費",
+        "amount_yen": 13782159000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "debt_service",
+        "label": "公債費",
+        "amount_yen": 94560525000,
+        "parent_key": "mandatory_expenses",
+        "note": null
+      },
+      {
+        "key": "other_expenses",
+        "label": "その他の経費",
+        "amount_yen": 352371703000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "goods_and_services",
+        "label": "物件費",
+        "amount_yen": 28995726000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "maintenance",
+        "label": "維持補修費",
+        "amount_yen": 16466027000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidies",
+        "label": "補助費等",
+        "amount_yen": 183612539000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "transfers_out",
+        "label": "繰出金",
+        "amount_yen": 7014929000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "fund_contributions",
+        "label": "積立金",
+        "amount_yen": 18182779000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "equity_investments",
+        "label": "投資及び出資金",
+        "amount_yen": 80128000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "loans",
+        "label": "貸付金",
+        "amount_yen": 98019575000,
+        "parent_key": "other_expenses",
+        "note": null
+      },
+      {
+        "key": "capital_expenses",
+        "label": "投資的経費計",
+        "amount_yen": 124118323000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "construction",
+        "label": "普通建設事業費",
+        "amount_yen": 113475228000,
+        "parent_key": "capital_expenses",
+        "note": null
+      },
+      {
+        "key": "subsidized_construction",
+        "label": "うち補助",
+        "amount_yen": 80309814000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "independent_construction",
+        "label": "うち単独",
+        "amount_yen": 25636258000,
+        "parent_key": "construction",
+        "note": null
+      },
+      {
+        "key": "disaster_recovery_works",
+        "label": "災害復旧事業費",
+        "amount_yen": 10643095000,
+        "parent_key": "capital_expenses",
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-fund-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fund_balance",
+    "metric_label": "普通会計基金残高",
+    "amount_yen": 113670327000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "年度末の積立金現在高（財政調整基金・減債基金・その他特定目的基金の3区分）。総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算し、岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）でも一致を確認。内訳の合計は基金残高と一致する（検算済み）。定額運用基金は積立金現在高の区分に含まれないため含めない。",
+    "breakdown": [
+      {
+        "key": "fiscal_adjustment_fund",
+        "label": "財政調整基金",
+        "amount_yen": 30979068000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "debt_redemption_fund",
+        "label": "減債基金",
+        "amount_yen": 36311274000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "other_specific_purpose_funds",
+        "label": "その他特定目的基金",
+        "amount_yen": 46379985000,
+        "parent_key": null,
+        "note": null
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-debt-balance",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "debt_balance",
+    "metric_label": "普通会計地方債残高",
+    "amount_yen": 1235759560000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "年度末の地方債現在高（臨時財政対策債を含む）。総務省『令和6年度都道府県決算カード』（岩手県シート）の千円単位の値を円換算。内訳の「地方債現在高（臨時財政対策債を除く）」は岩手県『令和6年度財政状況資料集』総括表（総務省サイト掲載）の印字値であり、「臨時財政対策債」は現在高からこれを差し引いた算出値。",
+    "breakdown": [
+      {
+        "key": "bonds_excluding_temporary_fiscal",
+        "label": "地方債現在高（臨時財政対策債を除く）",
+        "amount_yen": 821673749000,
+        "parent_key": null,
+        "note": null
+      },
+      {
+        "key": "temporary_fiscal_measures_bonds",
+        "label": "臨時財政対策債",
+        "amount_yen": 414085811000,
+        "parent_key": null,
+        "note": "資料集に直接の印字がなく、地方債現在高から臨時財政対策債を除く残高を差し引いた算出値。"
+      }
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-current-balance-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "current_balance_ratio",
+    "metric_label": "経常収支比率",
+    "amount_yen": null,
+    "value": 93.2,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）に印字された経常収支比率（再計算はしていない）。ラベル行の値を用い、括弧内の変種値は用いていない。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-real-debt-service-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "real_debt_service_ratio",
+    "metric_label": "実質公債費比率",
+    "amount_yen": null,
+    "value": 12.3,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）に印字された実質公債費比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-future-burden-ratio",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "future_burden_ratio",
+    "metric_label": "将来負担比率",
+    "amount_yen": null,
+    "value": 196.8,
+    "unit": "percent",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）に印字された将来負担比率（再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-fiscal-strength-index",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "fiscal_strength_index",
+    "metric_label": "財政力指数",
+    "amount_yen": null,
+    "value": 0.36343,
+    "unit": "index",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）に印字された財政力指数（過去3年平均、再計算はしていない）。資料集総括表でも一致を確認。"
+  },
+  {
+    "id": "jp-local-030007-fiscal-2024-ordinary-population",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2024,
+    "account_type": "ordinary",
+    "stage": "settlement",
+    "metric": "population",
+    "metric_label": "住民基本台帳人口",
+    "amount_yen": null,
+    "value": 1153900,
+    "unit": "persons",
+    "value_status": "available",
+    "period_start": "2024-04-01",
+    "period_end": "2025-03-31",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-prefecture-mic-settlement-card-fy2024",
+      "iwate-prefecture-fiscal-situation-collection-fy2024"
+    ],
+    "note": "総務省『令和6年度都道府県決算カード』（岩手県シート）に印字された住民基本台帳人口（2025年1月1日現在）。資料集総括表でも一致を確認。"
+  }
+]
