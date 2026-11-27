@@ -287,9 +287,22 @@ def test_packets_cover_provenance_and_limitation() -> None:
 def test_bulletin_source_and_term_connection() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     # The bulletin source was registered at stage 1; stage 3 adds no
-    # catalog record, so the version and count are unchanged.
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
+    # catalog record for Iwate Prefecture.  (The catalog total itself
+    # moved on with the Morioka stage-3 registration, PR #1091; the
+    # global version and count pins live in the shared catalog tests.)
+    iwate_ids = sorted(
+        record["id"]
+        for record in catalog["records"]
+        if record["id"].startswith("iwate-pref-")
+    )
+    assert iwate_ids == [
+        "iwate-pref-governor",
+        "iwate-pref-governor-election-2023-ballot-count",
+        "iwate-pref-governor-election-2023-bulletin",
+        "iwate-pref-governor-election-2023-winner-notice",
+        "iwate-pref-governor-term-list",
+        "iwate-pref-mayor-term-expiry-list",
+    ]
     source = next(
         record for record in catalog["records"] if record["id"] == BULLETIN_ID
     )
