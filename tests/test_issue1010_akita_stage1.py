@@ -309,8 +309,8 @@ def test_source_catalog_registers_only_verified_prefecture_sources() -> None:
 
 def test_executive_catalog_includes_the_akita_sources() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.68.0"
-    assert len(catalog["records"]) == 203
+    assert catalog["version"] == "0.69.0"
+    assert len(catalog["records"]) == 208
     akita = [
         r for r in catalog["records"] if r["municipality_key"] == "akita-prefecture"
     ]

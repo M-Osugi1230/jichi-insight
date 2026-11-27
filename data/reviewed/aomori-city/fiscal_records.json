@@ -62,5 +62,27 @@
     "sources": [
       "aomori-settlement-2024-audit-pdf"
     ]
+  },
+  {
+    "id": "jp-local-022012-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-022012",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "市税",
+    "amount_yen": 35906529000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "青森市公式『令和8年度当初予算(案)の概要』26頁「令和8年度一般会計歳入歳出事項別明細書」（単位：千円）の市税35,906,529千円に基づく千円単位の確定値（構成比26.9%、前年度35,069,212千円から837,317千円増で、資料の比較欄とも一致）。同明細書の歳入23款の合計と歳出14款の合計はいずれも133,510,000千円で検算一致し、既登録の一般会計当初予算総額レコード（133,510,000,000円）とも千円単位で一致する。令和8年度一般会計補正予算（第4号）の予算書「予算に関する説明書」でも市税の補正前の額35,906,529千円（第4号の補正額0）と一致する。議案第2号「令和8年度青森市一般会計予算」は青森市議会公式の議決結果で2026年3月24日に原案可決が確認されており、成立済みの当初予算の市税として保持し、補正予算や決算とは別stateで扱う。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "aomori-budget-2026-pdf",
+      "aomori-budget-2026-council"
+    ]
   }
 ]

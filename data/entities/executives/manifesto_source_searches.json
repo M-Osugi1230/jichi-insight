@@ -1312,5 +1312,34 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-aomori-city-2023",
+    "executive_term_id": "jp-local-022012-executive-2023-06-04",
+    "searched_at": "2026-11-27",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "general_web_search"
+    ],
+    "result_status": "no_stable_primary_source_found",
+    "manifesto_source_ids_found": [],
+    "checked_source_ids": [
+      "aomori-city-mayor-election-2023-results",
+      "aomori-pref-election-record-2023",
+      "aomori-city-past-election-results",
+      "aomori-city-election-bulletin-ordinance",
+      "aomori-pref-mayor-term-expiry-list"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "令和5年6月4日執行の青森市長選挙の選挙公報は、発行根拠条例（青森市議会議員及び青森市長の選挙における選挙公報の発行に関する条例）が市例規類集に存在するものの、公報そのものの所在を本段階では確認できなかった。市選挙管理委員会の現行公式ページ「過去の選挙結果」と同選挙の結果ページには公報へのリンクがなく、県選挙管理委員会『第20回統一地方選挙の記録』にも公報の再録は含まれていない（山形県の記録のような再録編はない）。Wayback Machine については、結果ページの保存は確認できず、市ドメインの2023年保存分からも公報に該当する capture は特定できなかった（広報関連の保存が中心で、選挙公報の保存の有無の完全な確認は段階3に残す）。以上により、検証可能な原典を特定できなかったものとして公約は未登録とする。これは公報が存在しないという主張ではない。段階3では、現行ページの再探索、Wayback Machine 保存の精査、県選管の選挙記録への再録の有無の再確認、民間選挙情報サイトの公報コピーの順で本格探索する。",
+    "next_actions": [
+      "段階3で選挙公報の本格探索を行う（現行ページの再探索→Wayback Machine 保存の精査→県選管記録の再録確認→公報コピーの複写の照合の順）。原典が確保できた場合のみ公約を登録する",
+      "紙の選挙公報の現物（選挙管理委員会の保管分・図書館所蔵）が特定できれば、原典として登録し直す",
+      "2027年5月16日執行予定の次回市長選挙では、選挙期間中に選挙公報の公式掲載を確認し、新任期の公約原文資料として登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

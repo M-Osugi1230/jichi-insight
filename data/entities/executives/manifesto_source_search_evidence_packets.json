@@ -1941,5 +1941,50 @@
       "政策との接続は文言・内容に基づく推定であり、県が公約と政策の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-aomori-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-aomori-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の現行公式ページ「過去の選挙結果」と令和5年市長選挙の結果ページを確認したが、いずれにも選挙公報へのリンクは掲載されていない。県選挙管理委員会の任期満了一覧は任期情報のみで、公約原文は含まない。",
+        "source_ids": [
+          "aomori-city-past-election-results",
+          "aomori-city-mayor-election-2023-results",
+          "aomori-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "市選管の選挙ライブラリ「過去の選挙結果」索引ページと「令和5年6月4日執行青森市長選挙」ページ（いずれも公式公表、2026-11-27確認）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "県選挙管理委員会『第20回統一地方選挙の記録』は開票結果等の記録であり、選挙公報の再録は含まれていない。市例規類集には選挙公報の発行根拠条例が存在するが、公報そのものの所在は辿れない。Wayback Machine でも公報に該当する保存は特定できなかった。",
+        "source_ids": [
+          "aomori-pref-election-record-2023",
+          "aomori-city-election-bulletin-ordinance"
+        ],
+        "location_note": "県選管記録の市町長選挙の部（「選挙公報」の記載なし）と、市例規類集の条例ページ、Wayback Machine の保存状況の確認結果に基づく。",
+        "decision": "accepted",
+        "review_note": "発行の根拠は確認できたが、公報の実物は確認できていないため、原典としては採用しない。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。報道の候補者アンケート回答は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "aomori-city-mayor-election-2023-results"
+        ],
+        "location_note": "探索記録 manifesto-source-search-aomori-city-2023 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。本格探索は段階3で行う。"
+      }
+    ],
+    "open_questions": [
+      "Wayback Machine における青森市サイトの選挙関係ページ・公報PDFの保存有無の完全な確認は未了（段階3で精査する）。",
+      "国立国会図書館WARPにおける青森市サイトの収集有無は未確定。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
   }
 ]
