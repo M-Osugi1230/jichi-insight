@@ -1,0 +1,22 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "inspection_trips",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "morioka-city-assembly-shisatsu-2025",
+     "morioka-city-assembly-shisatsu-index"
+    ],
+    "statement": "盛岡市議会は「行政視察」ページに年度別の実施分を公表しており、令和7年度実施分として4常任委員会・4特別委員会の計8件（いずれも令和8年1月実施）について、委員会名・実施時期・視察先・視察項目が掲載されている。同ページに視察報告書・参加者氏名・費用の公表はないため、report_status と cost_status は not_published とし、参加者と費用は欠損のまま登録した。"
+   }
+  ],
+  "id": "evidence-jp-local-032018-assembly-2023-inspection",
+  "open_questions": [],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-032018-assembly-2023",
+  "subject_type": "assembly"
+ }
+]

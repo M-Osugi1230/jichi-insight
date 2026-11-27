@@ -1,0 +1,105 @@
+[
+ {
+  "as_of": "2026-11-27",
+  "assembly_id": "jp-local-032018-assembly-2023",
+  "confidence": "high",
+  "id": "jp-local-032018-assembly-2023-disclosure-2026",
+  "items": [
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_roster",
+    "note": "会派等別議員名簿と議員名簿（50音順）が議会ホームページに掲載され、議員38人の氏名と所属会派等が確認できる。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/giinshokai/1014492.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_composition",
+    "note": "会派等別議員名簿に8つの会派等の正式名称と所属議員が掲載され、合計38人である。令和8年10月の異動（細川由香里議員の無所属への移行）も同ページの更新で確認できる。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/giinshokai/1014492.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "committee_composition",
+    "note": "委員会名簿ページに常任委員会・特別委員会・議会運営委員会等の委員氏名が掲載される。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/giinshokai/iinkaimeibo/index.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "proposals_and_results",
+    "note": "会期ごとの「提出議案・議決結果」ページに議案番号・件名・議決結果（可決（多数）・可決（全員）・認定・同意・採択・不採択の別）が一覧公表される。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/giketsukekka/1055507/1059396.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "faction",
+    "item": "faction_votes",
+    "note": "賛否結果一覧は議員列が会派等別にグループ化されており、会派別の賛否はその集計で確認できる。",
+    "source_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/059/396/R8.09sanpikekka.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "member_votes",
+    "note": "議員個人別の賛否結果一覧が会期ごとにPDFで公表される。令和8年9月定例会分は会議録との突合により、全件が起立表決の記録であることを確認した（議長は表決に加わらず「/」と表示）。",
+    "source_url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/059/396/R8.09sanpikekka.pdf"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_reports",
+    "note": "政務活動費は議員個人単位で交付され（月額5万円）、議員別の収支報告書と全議員の収支一覧が議会ホームページに公表される（令和7年度分は2026年6月30日更新で公開）。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/seimukatsudohi/1023701/1056439.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "member",
+    "item": "political_activity_expense_receipts",
+    "note": "領収書等の写しは、収支報告書とともに議員別PDFで議会ホームページに公開されている（個人情報等は塗抹）。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/seimukatsudohi/1023701/1056439.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "inspection_trip_reports",
+    "note": "委員会別の行政視察は年度別ページに委員会名・実施時期・視察先・視察項目が公表される。視察報告書・参加者・費用の公表はない。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/gikaikatsudo/gyoseishisatsu/1030425.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "meeting_minutes",
+    "note": "会議録検索システムに令和8年9月定例会の本会議録（第1号〜第7号）が収録されており、表決方法の突合に用いた。",
+    "source_url": "https://ssp.kaigiroku.net/tenant/morioka/"
+   },
+   {
+    "availability": "published",
+    "granularity": "assembly",
+    "item": "session_broadcast",
+    "note": "本会議のインターネット中継・録画映像が議会ホームページから提供されている。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/shigikai_gaiyo/1014441.html"
+   },
+   {
+    "availability": "published",
+    "granularity": "document",
+    "item": "petition_results",
+    "note": "請願は「市議会に提出された請願一覧」と会期ごとの議決結果ページに件名と採否が掲載される。陳情は本会議での報告と写しの配布にとどまり、採決は行われない。",
+    "source_url": "https://www.city.morioka.iwate.jp/shisei/shigikai/seigan_chinjo/1017270/index.html"
+   }
+  ],
+  "review_status": "reviewed",
+  "sources": [
+   "morioka-city-assembly-roster-faction",
+   "morioka-city-assembly-committees",
+   "morioka-city-assembly-results-2026-09",
+   "morioka-city-assembly-vote-table-2026-09",
+   "morioka-city-assembly-seimu-2025-index",
+   "morioka-city-assembly-minutes-system",
+   "morioka-city-assembly-broadcast",
+   "morioka-city-assembly-shisatsu-index"
+  ]
+ }
+]

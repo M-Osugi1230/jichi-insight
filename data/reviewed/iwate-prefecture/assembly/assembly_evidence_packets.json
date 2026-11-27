@@ -1,0 +1,90 @@
+[
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "term_and_seats",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "iwate-pref-assembly-kaiha-roster",
+     "iwate-pref-assembly-member-roster",
+     "iwate-pref-assembly-seat-revision"
+    ],
+    "statement": "岩手県議会の定数は48名（県議会議員の定数等に関する条例）、現員は44名。議員の任期は2023年9月11日から2027年9月10日まで（2023年9月3日執行の一般選挙による。前任期の満了日が2023年9月10日であることは報道でも確認できる）。欠員4名は任期中の辞職による（中平均・五日市王・郷右近浩・ハクセル美穂子。ハクセル美穂子は2026年9月に辞職し雫石町長に就任）。"
+   },
+   {
+    "decision": "accepted",
+    "field": "factions",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "iwate-pref-assembly-kaiha-roster",
+     "iwate-pref-assembly-sep2026-vote-table"
+    ],
+    "statement": "会派は9会派44名（自由民主党16・希望いわて13・いわて新政会5・いわて県民クラブ・無所属の会4・日本共産党2・参政党1・社会民主党1・公明党1・無所属1）で、会派別名簿の印字どおり。議長は城内愛彦（自由民主党）で、「議員別の賛否の状況」の全行で同議員の列に「議」と印字されている。副議長は佐々木努。"
+   },
+   {
+    "decision": "accepted",
+    "field": "committees",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "iwate-pref-assembly-committee-roster"
+    ],
+    "statement": "委員会名簿の印字により、議会運営委員会、常任委員会5（総務・文教・環境福祉・商工建設・農林水産）、特別委員会5（人口減少・公共インフラ調査、防災・減災対策調査、グローバル化・多文化共生調査、こども政策調査、東日本大震災津波復興）の11委員会を登録した。"
+   },
+   {
+    "decision": "accepted",
+    "field": "member_vote_table_nature",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "iwate-pref-assembly-sep2026-vote-table",
+     "iwate-pref-assembly-minutes-index"
+    ],
+    "statement": "「議員別の賛否の状況」（令和8年9月定例会）は、議案等60件について議員44名の記号と賛成者数・反対者数・表決者数を印字する公式PDFで、本登録では全60件について記号の集計が印字合計と完全一致した。一方、同定例会の会議録は2026年11月27日時点で会議録システムに未公表（公表済みは令和8年6月定例会まで）のため、賛否表の性質（本会議の表決記録そのものか、採決前の態度表明の集約か）を会議録と突合して判定することはできなかった。よって votes の method は unknown とし、会議録公表後に追認確認する。"
+   },
+   {
+    "decision": "accepted",
+    "field": "seat_revision",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "iwate-pref-assembly-sep2026-member-bills",
+     "iwate-pref-assembly-seat-revision",
+     "iwate-pref-assembly-sep2026-vote-table"
+    ],
+    "statement": "令和8年9月定例会の発議案第2号「県議会議員の定数等に関する条例の一部を改正する条例」が2026年10月13日に原案可決され、総定数は48人から46人（遠野選挙区と釜石選挙区を合区して定数2、一関選挙区を5人から4人）となり、次の一般選挙（令和9年9月見込）から適用される。本登録の seat_count は現行の48のままとした。"
+   }
+  ],
+  "id": "evidence-jp-local-030007-assembly-2023",
+  "open_questions": [
+   "令和8年9月定例会の会議録が公表されたら、賛否表と採決方法・結果を突合し、votes の method の追認確認を行う（Issue #706で追跡）。",
+   "認定第1号（令和7年度一般会計歳入歳出決算）は閉会中の継続審査とされた。結論が公表されたら outcome を更新する（Issue #706で追跡）。"
+  ],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-030007-assembly-2023",
+  "subject_type": "assembly"
+ },
+ {
+  "claims": [
+   {
+    "decision": "accepted",
+    "field": "session_dates",
+    "location_note": null,
+    "review_note": null,
+    "source_ids": [
+     "iwate-pref-assembly-session-results-index",
+     "iwate-pref-assembly-sep2026-governor-bills"
+    ],
+    "statement": "令和8年9月定例会の会期は2026年9月25日から10月27日までで、「会議の結果」ページと知事提出議案データベースの会議名選択肢（2026/09/25,2026/10/27）の双方で確認した。"
+   }
+  ],
+  "id": "evidence-jp-local-030007-assembly-2023-session-2026-09",
+  "open_questions": [],
+  "review_status": "reviewed",
+  "subject_id": "jp-local-030007-assembly-2023-session-2026-09",
+  "subject_type": "session"
+ }
+]
