@@ -2024,12 +2024,36 @@
         ],
         "location_note": "探索記録 manifesto-source-search-aomori-city-2023 の review_note に判断の詳細を記載。",
         "decision": "accepted",
-        "review_note": "不存在の断定はしない（nonexistence_claim は false）。本格探索は段階3で行う。"
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。段階3の本格探索（2026-11-27）でも担保できる原典は特定できず、本状態を確定とする。"
+      },
+      {
+        "field": "checked_source_ids",
+        "statement": "段階3（2026年11月27日）で市選挙管理委員会の現行公式ページを再探索し、「令和5年6月4日執行青森市長選挙」結果ページ（2024年12月23日更新）を直接再確認した。掲載は投票結果・開票結果・候補者別得票数のみで、選挙公報へのリンクや候補者の政見はない。「過去の選挙結果」索引にも公報へのリンクはない。",
+        "source_ids": [
+          "aomori-city-mayor-election-2023-results",
+          "aomori-city-past-election-results"
+        ],
+        "location_note": "市選管の現行公式ページ（2026-11-27、段階3で直接再確認）。",
+        "decision": "accepted",
+        "review_note": "段階1の確認結果を段階3で再検証した。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "段階3のアーカイブ探索の結果は次のとおり。Wayback Machine は、段階1で結果ページの保存が確認できず市ドメインの2023年保存分からも公報に該当する capture が特定できなかったことに加え、段階3で試みた保存一覧（CDX）の完全な列挙が本環境からのアクセス拒否（HTTP 403）により完了できなかった。国立国会図書館WARPは市町村のウェブサイトを年4回収集する制度収集の対象であることは公式案内で確認したが、2023年の選挙期間中の収集分に公報が含まれるかは確定できなかった。候補者公表資料・民間選挙情報サイトを含む一般ウェブ検索でも公報の複写は特定できなかった。",
+        "source_ids": [
+          "aomori-city-past-election-results",
+          "aomori-pref-election-record-2023",
+          "aomori-city-election-bulletin-ordinance"
+        ],
+        "location_note": "Wayback Machine・WARP の公開案内と保存状況の確認結果、一般ウェブ検索の結果に基づく（2026-11-27、段階3）。",
+        "decision": "accepted",
+        "review_note": "アーカイブ側の完全な列挙は未完了のまま残るが、確保可能な経路のいずれからも担保できる原典は特定できなかった。"
       }
     ],
     "open_questions": [
-      "Wayback Machine における青森市サイトの選挙関係ページ・公報PDFの保存有無の完全な確認は未了（段階3で精査する）。",
-      "国立国会図書館WARPにおける青森市サイトの収集有無は未確定。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
+      "Wayback Machine の保存一覧（CDX）の完全な列挙は、本環境からのアクセス拒否（HTTP 403）により段階3でも完了できなかった。段階1の確認範囲を超える精査は、列挙が可能な環境での再確認に委ねる。",
+      "国立国会図書館WARPにおける2023年の青森市サイト収集分に、選挙期間中の選挙関係ページや選挙公報が含まれるかは未確定のままである。",
+      "紙の選挙公報の現物（市選管の保管分・市立図書館等の所蔵）の確認はオフライン経路が必要で、本探索の範囲外として残る。"
     ],
     "review_status": "reviewed"
   },
