@@ -1,6 +1,6 @@
 {
-  "version": "0.68.0",
-  "updated_at": "2026-11-26",
+  "version": "0.69.0",
+  "updated_at": "2026-11-27",
   "scope": "pilot",
   "records": [
     {
@@ -2844,6 +2844,76 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2023年9月10日執行の山形市長選挙の選挙公報そのもの（全2ページ、候補者2人）。選挙期間中は市公式サイトの選挙ページの添付PDF（https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/012/073/r5sityousenkyokouhou3.pdf）として掲載されていたが、2026-11-26の確認では同URLは404で、選挙ページからもリンクが外れている。Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなく、公式原典とのダイジェスト照合はできなかった。一方、選挙ドットコムCDNに現存する同一公報の複写（1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）を取得し、内容を実物で照合した: 選挙管理委員会の枠文（候補者から提供された原稿をそのまま印刷したもの）、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、二面の投票案内（繰上げ閉鎖の11投票所を含む）が市公式の選挙ページ・開票結果と一致する。佐藤孝弘候補欄は1ページ目下段にあり、大見出し「市民と共に 希望の山形へ！」と「持続可能な山形市へ！」のビジョン文のもと、番号付きの7項目で構成される。公報の候補者欄は画像・ベクタ描画でテキスト層は選管の枠文のみのため、段階3の登録文は描画画像の目視転記を正とする。"
+    },
+    {
+      "id": "iwate-pref-governor",
+      "municipality_key": "iwate-prefecture",
+      "organization": "岩手県",
+      "category": "executive",
+      "title": "知事のプロフィール（岩手県）",
+      "url": "https://www.pref.iwate.jp/governor/1000670.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岩手県公式の知事プロフィール。達増拓也が現職知事であり、歴代の任期として5期目「令和5年9月11日～」を明記する（4期目は令和元年9月11日～令和5年9月10日）。2026-11-27に直接確認した。"
+    },
+    {
+      "id": "iwate-pref-governor-term-list",
+      "municipality_key": "iwate-prefecture",
+      "organization": "都道府県選挙管理委員会連合会",
+      "category": "election",
+      "title": "都道府県知事一覧（都道府県選挙管理委員会連合会）",
+      "url": "https://todofuken-senkan.jp/pref/",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "都道府県選挙管理委員会連合会の知事一覧。岩手県の行に、選挙執行日（令和5年9月3日）、達増拓也、得票数336,502票、任期満了日「令和9年9月10日」、連続就任回数5、投票率56.63%が明記されている。2026-11-27に直接確認した。"
+    },
+    {
+      "id": "iwate-pref-governor-election-2023-ballot-count",
+      "municipality_key": "iwate-prefecture",
+      "organization": "岩手県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年岩手県知事選挙 開票結果（県選挙管理委員会様式・県計）",
+      "url": "https://www.city.oshu.iwate.jp/material/files/group/137/942070.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岩手県選挙管理委員会の様式による開票結果（県計）。たっそ拓也336,502票・千葉じゅんこ232,115票、有効投票568,617票（両候補の合計と一致）、無効投票3,370票、投票者総数571,989人。県選管の現行公式ページに当該ファイルの掲載は確認できず、奥州市公式サイトに複写掲載された同一様式で確認した（2026-11-27取得、SHA-256: cae258d5747fef303752f5c56700f3f2fc2d390e3ffe099d7ea03040dccee2、153,416バイト）。都道府県選挙管理委員会連合会の知事一覧および総務省「都道府県知事選挙結果調」（令和5年9月3日執行 岩手県知事選挙）とも得票数が一致する。"
+    },
+    {
+      "id": "iwate-pref-governor-election-2023-winner-notice",
+      "municipality_key": "iwate-prefecture",
+      "organization": "岩手県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年岩手県知事選挙 当選人告示（岩手県選挙管理委員会告示第82号・岩手県報）",
+      "url": "https://www3.pref.iwate.jp/webdb/view/outside/s19Kenpo/kenpoFile.download?fileId=s19Kenpo-1zSo9J.18OYJ.d8Ji6",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和5年9月6日の岩手県報に掲載された岩手県選挙管理委員会告示第82号。令和5年9月3日執行の岩手県知事選挙における当選人として達増拓也を告示する（2026-11-27取得、SHA-256: 0418e8967c1ff6eba96972ea94f2bebea4660cda804ab957bc052d51c340c114、83,980バイト）。"
+    },
+    {
+      "id": "iwate-pref-governor-election-2023-bulletin",
+      "municipality_key": "iwate-prefecture",
+      "organization": "岩手県選挙管理委員会",
+      "category": "election",
+      "title": "令和5年岩手県知事選挙 選挙公報",
+      "url": "https://prod-cdn.go2senkyo.com/public/senkyo_koho/24278/20230903岩手県知事選挙.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "令和5年9月3日執行の岩手県知事選挙の選挙公報（全4ページ、発行: 岩手県選挙管理委員会）。県選管の現行公式ページに公報の掲載は2026-11-27時点で確認できず、選挙情報サイト（選挙ドットコム）のCDNに複写が現存する（2026-11-27取得、SHA-256: f3aaa408eb193158adff848019cb1dec29130e525b0253bdc7ee3d98f88a71a7、4,195,741バイト）。複写の内容は、題名・発行者・両候補（たっそ拓也・千葉じゅんこ）の候補者欄を確認し、達増候補のプロフィール（1964年6月10日生・身長177cm・O型）は県公式の知事プロフィールと一致するなど内容照合を行った。ただし公式原典が得られないため、ファイルのダイジェストによる原典との同一性照合は行えていない。"
     }
   ]
 }

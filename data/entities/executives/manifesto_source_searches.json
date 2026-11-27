@@ -1312,5 +1312,37 @@
     ],
     "review_status": "reviewed",
     "confidence": "high"
+  },
+  {
+    "id": "manifesto-source-search-iwate-pref-2023",
+    "executive_term_id": "jp-local-030007-executive-2023-09-11",
+    "searched_at": "2026-11-27",
+    "search_scopes": [
+      "official_election_result_page",
+      "official_site_search",
+      "official_document_archive",
+      "candidate_publication_search",
+      "general_web_search"
+    ],
+    "result_status": "source_registered",
+    "manifesto_source_ids_found": [
+      "iwate-pref-governor-election-2023-bulletin"
+    ],
+    "checked_source_ids": [
+      "iwate-pref-governor-term-list",
+      "iwate-pref-governor-election-2023-ballot-count",
+      "iwate-pref-governor-election-2023-winner-notice",
+      "iwate-pref-governor-election-2023-bulletin"
+    ],
+    "nonexistence_claim": false,
+    "review_note": "令和5年9月3日執行の岩手県知事選挙の選挙公報は、県選挙管理委員会の現行公式ページでは2026-11-27時点で掲載を確認できなかった（段階0棚卸しOQ-1）。一方、選挙情報サイト（選挙ドットコム）のCDNに公報の複写（全4ページ）が現存し、2026-11-27に取得した（SHA-256: f3aaa408eb193158adff848019cb1dec29130e525b0253bdc7ee3d98f88a71a7、4,195,741バイト）。複写については、題名「令和5年 岩手県知事選挙選挙公報」・発行者（岩手県選挙管理委員会）・両候補の候補者欄を目視で確認し、達増候補のプロフィール記載が県公式の知事プロフィールと一致することなど内容照合を行った。ただし公式原典が得られないため、ダイジェストによる原典との同一性照合は行えていない。この限界を明記したうえで、公報の複写を出典として登録する（located）。選挙公報は候補者提出原稿をそのまま印刷した公式文書であり、内容照合の範囲では真正な複写と判断できるが、原典照合ができていないため、段階3の転記では複写の記載を正としつつこの限界を引き継ぐ。達増候補の公報は「マニフェスト＋39」を掲げ、詳細は候補の公式サイトで公表する旨が記載されているが、その安定した所在は特定していない（存在しないと判定するものではない）。",
+    "next_actions": [
+      "県選挙管理委員会の公式ページに選挙公報が再掲載された場合は、登録済みの複写とダイジェスト照合を行う",
+      "段階3で公報の候補者欄（達増候補の「マニフェスト＋39」等）を転記し、公約レコードを作成する",
+      "達増候補の公式サイト等に掲載された詳細な政策資料（マニフェスト＋39の詳細版）が安定した所在で確認できれば、登録済みの公約文と照合する",
+      "2027年の任期満了に伴う次回知事選挙では、新任期の公約原文資料として選挙公報を改めて登録する"
+    ],
+    "review_status": "reviewed",
+    "confidence": "high"
   }
 ]

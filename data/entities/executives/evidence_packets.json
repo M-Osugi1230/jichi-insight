@@ -2537,5 +2537,58 @@
       "2023年山形市長選挙の選挙公報は、市公式URLが404となり現行の選挙ページからもリンクが外れている。段階3では選挙ドットコムCDNの複写（内容照合済み）から転記する。公式原典の保存記録（Wayback Machine）には404分しかなく、ダイジェスト照合は実施できていない。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-iwate-pref-current-governor-term",
+    "subject_type": "executive_term",
+    "subject_id": "jp-local-030007-executive-2023-09-11",
+    "claims": [
+      {
+        "field": "person_name",
+        "statement": "岩手県知事は達増拓也氏（5期目）である。",
+        "location_note": "県公式サイトの知事のプロフィール。",
+        "source_ids": [
+          "iwate-pref-governor"
+        ],
+        "decision": "accepted",
+        "review_note": "現職知事の氏名と期数は県公式プロフィールで確認した。"
+      },
+      {
+        "field": "election_date",
+        "statement": "直近の岩手県知事選挙は2023年9月3日に執行され、達増拓也氏が336,502票で当選した。",
+        "location_note": "県選挙管理委員会様式の開票結果（県計）、都道府県選挙管理委員会連合会の知事一覧、および県報の当選人告示（告示第82号）。",
+        "source_ids": [
+          "iwate-pref-governor-election-2023-ballot-count",
+          "iwate-pref-governor-term-list",
+          "iwate-pref-governor-election-2023-winner-notice"
+        ],
+        "decision": "accepted",
+        "review_note": "開票結果（県計）の候補者別得票（たっそ拓也336,502票・千葉じゅんこ232,115票）を実物で確認し、両候補の合計が有効投票数568,617票と一致することを検算した。連合会一覧の得票数・総務省の選挙結果調とも一致する。当選人告示でも達増拓也の当選を確認した。報道数値は用いていない。"
+      },
+      {
+        "field": "term_start",
+        "statement": "現任期の開始日は2023年9月11日である。",
+        "location_note": "県公式サイトの知事のプロフィール（歴代の任期の欄）。",
+        "source_ids": [
+          "iwate-pref-governor"
+        ],
+        "decision": "accepted",
+        "review_note": "県公式プロフィールが5期目の開始日「令和5年9月11日」を直接明記する。前任期の満了日（2023年9月10日、同プロフィールに明記）の翌日であり、公職選挙法259条ただし書の任期起算の構成とも一致する。"
+      },
+      {
+        "field": "term_end",
+        "statement": "現任期の満了日は2027年9月10日である。",
+        "location_note": "都道府県選挙管理委員会連合会の知事一覧（岩手県の行）。",
+        "source_ids": [
+          "iwate-pref-governor-term-list"
+        ],
+        "decision": "accepted",
+        "review_note": "連合会一覧が満了日「令和9年9月10日」を直接明記する。県公式プロフィールの歴代任期も、各期が9月10日に満了する形式で一貫している。"
+      }
+    ],
+    "open_questions": [
+      "選挙公報は県選挙管理委員会の現行公式ページでの残存が確認できておらず（段階0棚卸しOQ-1）、選挙情報サイトのCDNに現存する複写を内容照合のうえ登録した。公式原典が得られないためダイジェストによる同一性照合は行えておらず、県選管のページに再掲載された場合はダイジェスト照合を行う。"
+    ],
+    "review_status": "reviewed"
   }
 ]
