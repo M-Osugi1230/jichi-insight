@@ -58,9 +58,9 @@ def promise_id(index: int) -> str:
 
 def test_bulletin_source_registered_from_single_wayback_capture() -> None:
     catalog = load_json(ROOT / "data" / "catalog" / "executive_sources.json")
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
-    assert len(catalog["records"]) == 223
+    assert catalog["version"] == "0.70.0"
+    assert len(catalog["records"]) == 225
+    assert len(catalog["records"]) == 225
     by_id = {record["id"]: record for record in catalog["records"]}
     bulletin = by_id[BULLETIN_ID]
     assert bulletin["municipality_key"] == "kumamoto-city"
@@ -103,7 +103,7 @@ def test_search_and_review_records() -> None:
     assert "manifesto_source_ids へ接続する" in search["review_note"]
 
     reviews = load_json(EXECUTIVES / "manifesto_reviews.json")
-    assert len(reviews) == 39
+    assert len(reviews) == 40
     review = {record["id"]: record for record in reviews}[
         "manifesto-review-jp-local-431001-2026"
     ]
@@ -120,7 +120,7 @@ def test_search_and_review_records() -> None:
 
 def test_promises_registered_from_bulletin_panel() -> None:
     promises = load_json(EXECUTIVES / "promises.json")
-    assert len(promises) == 591
+    assert len(promises) == 597
     own = [p for p in promises if p["executive_term_id"] == TERM_ID]
     assert [p["id"] for p in own] == [promise_id(i) for i in range(1, 10)]
     for index, promise in enumerate(own, start=1):
@@ -154,7 +154,7 @@ def test_promises_registered_from_bulletin_panel() -> None:
 
 def test_promise_evidence_packets_document_provenance_and_term_handover() -> None:
     packets = load_json(EXECUTIVES / "promise_evidence_packets.json")
-    assert len(packets) == 591
+    assert len(packets) == 597
     own = {p["subject_id"]: p for p in packets if p["subject_id"].startswith(TERM_ID)}
     assert set(own) == {promise_id(i) for i in range(1, 10)}
     for index, packet in own.items():
@@ -193,7 +193,7 @@ def test_search_and_review_evidence_packets() -> None:
     assert any("manifesto_source_ids へ接続する" in q for q in packet["open_questions"])
 
     review_packets = load_json(EXECUTIVES / "manifesto_review_evidence_packets.json")
-    assert len(review_packets) == 39
+    assert len(review_packets) == 40
     review_packet = {p["id"]: p for p in review_packets}[
         "evidence-kumamoto-city-2026-manifesto-review"
     ]

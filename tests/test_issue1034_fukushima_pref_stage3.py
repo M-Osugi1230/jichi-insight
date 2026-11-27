@@ -381,7 +381,7 @@ def test_every_promise_has_one_packet_with_provenance() -> None:
 
 def test_review_search_and_term_reflect_the_registration() -> None:
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 39
+    assert len(reviews) == 40
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert_valid("schemas/manifesto_review.schema.json", review)
     assert review["source_id"] == BULLETIN_ID
@@ -437,8 +437,8 @@ def test_review_search_and_term_reflect_the_registration() -> None:
 
 def test_bulletin_source_record_points_at_the_official_pdf() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
+    assert catalog["version"] == "0.70.0"
+    assert len(catalog["records"]) == 225
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["municipality_key"] == "fukushima-prefecture"
     assert bulletin["organization"] == "福島県選挙管理委員会"

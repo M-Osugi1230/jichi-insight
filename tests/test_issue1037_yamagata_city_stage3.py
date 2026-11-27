@@ -289,8 +289,8 @@ def test_bulletin_source_and_term_connection() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     # The bulletin source was registered at stage 1; stage 3 adds no
     # catalog record, so the version and count are unchanged.
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
+    assert catalog["version"] == "0.70.0"
+    assert len(catalog["records"]) == 225
     source = next(
         record for record in catalog["records"] if record["id"] == BULLETIN_ID
     )
@@ -331,7 +331,7 @@ def test_search_and_review_records() -> None:
     assert "ダイジェスト照合はできなかった" in search["review_note"]
 
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 39
+    assert len(reviews) == 40
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert review["executive_term_id"] == TERM_ID
     assert review["source_id"] == BULLETIN_ID
@@ -361,7 +361,7 @@ def test_search_and_review_records() -> None:
             "data/entities/executives/manifesto_review_evidence_packets.json"
         )
     }
-    assert len(review_packets) == 39
+    assert len(review_packets) == 40
     review_packet = review_packets[REVIEW_ID]
     assert review_packet["id"] == "evidence-yamagata-city-2023-manifesto-review"
     assert review_packet["subject_type"] == "manifesto_review"
@@ -388,11 +388,11 @@ def test_search_and_review_records() -> None:
 
 def test_registry_totals() -> None:
     all_promises = load_json("data/entities/executives/promises.json")
-    assert len(all_promises) == 591
+    assert len(all_promises) == 597
     all_packets = load_json(
         "data/entities/executives/promise_evidence_packets.json"
     )
-    assert len(all_packets) == 591
+    assert len(all_packets) == 597
     assert {packet["subject_id"] for packet in all_packets} == {
         record["id"] for record in all_promises
     }

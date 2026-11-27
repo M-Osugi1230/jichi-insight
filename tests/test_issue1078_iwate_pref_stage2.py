@@ -116,8 +116,10 @@ def test_projects_validate_against_schema() -> None:
         assert project["fiscal_year"] == 2019
         assert project["review_status"] == "reviewed"
         assert project["parent_policy"] == "いわて県民計画（2019～2028）長期ビジョン"
-        # Promises are registered in stage 3; no links yet.
-        assert project["related_promise_ids"] == []
+        # Stage 3 (Issue #1086) registered the governor's promises
+        # and linked them here; the exact links are pinned by
+        # tests/test_issue1086_iwate_pref_stage3.py.
+        assert isinstance(project["related_promise_ids"], list)
         # The plan names no responsible department per policy field.
         assert project["responsible_department"] is None
         # target_population key is mandatory (ProjectRecord type).

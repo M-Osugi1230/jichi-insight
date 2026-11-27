@@ -1,5 +1,5 @@
 {
-  "version": "0.69.0",
+  "version": "0.70.0",
   "updated_at": "2026-11-27",
   "scope": "pilot",
   "records": [
@@ -3025,7 +3025,7 @@
       "indexed_at": "2026-11-27",
       "review_status": "reviewed",
       "confidence": "low",
-      "notes": "民間選挙情報サイト「政治山」に掲載された、盛岡市選挙管理委員会発行の選挙公報の原物とされる複写（PDFの実在は2026-11-27に確認）。市選管の現行公式ページに公報は現存せず、公式URLのWayback Machine保存も見つからなかったため、検証基準の原典性担保（現行公式ページ現存／公式URLのWayback保存／保存記録とダイジェストが一致する複写）のいずれにも該当せず、公約の原典としては採用しない。複写の存在自体の記録として保持し、原典性の担保の可否は段階3で再判断する。"
+      "notes": "民間選挙情報サイト「政治山」に掲載された、盛岡市選挙管理委員会発行の選挙公報の原物とされる複写（PDFの実在は2026-11-27に確認）。市選管の現行公式ページに公報は現存せず、公式URLのWayback Machine保存も見つからなかったため、検証基準の原典性担保（現行公式ページ現存／公式URLのWayback保存／保存記録とダイジェストが一致する複写）のいずれにも該当せず、公約の原典としては採用しない。複写の存在自体の記録として保持する。段階3（Issue #1088、2026-11-27）で、選挙ドットコム等の第二の複写との照合を含む再判断を行ったが、市長選公報の第二の複写自体が特定できず、担保は取れなかったため、原典として採用しない判断を確定した。"
     },
     {
       "id": "aomori-pref-governor",
@@ -3124,6 +3124,34 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "都道府県選挙管理委員会連合会の知事一覧。青森県知事 宮下宗一郎の任期満了日を令和9年6月28日（2027年6月28日）と明示し、得票数404,358票・投票率57.05%も『選挙の記録』と一致する。任期満了日の根拠。"
+    },
+    {
+      "id": "morioka-city-assembly-election-2023-bulletin-go2senkyo",
+      "municipality_key": "morioka-city",
+      "organization": "選挙ドットコム（go2senkyo）",
+      "category": "election",
+      "title": "令和5年8月13日執行 盛岡市議会議員一般選挙 選挙公報（選挙ドットコムCDN掲載の複写）",
+      "url": "https://prod-cdn.go2senkyo.com/public/senkyo_koho/24229/20230813盛岡市議会議員選挙.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "low",
+      "notes": "段階3（Issue #1088）の本格探索で2026-11-27に確認。選挙ドットコムのCDNには同一選挙日（2023年8月13日執行）の盛岡市議会議員一般選挙の選挙公報PDFが現存し、同プラットフォームが盛岡市の選挙公報を扱っていること自体は確認できた。しかし市長選挙の選挙公報PDFは同プラットフォーム上でも特定できず（URLの推測・組み立ては行わない）、市長選公報については政治山の複写と照合できる第二の複写自体が得られないため、検証基準(3)の担保も取れない。市長選公報の原典としては採用しない。"
+    },
+    {
+      "id": "ndl-search-iwate-election-records",
+      "municipality_key": "morioka-city",
+      "organization": "国立国会図書館",
+      "category": "election",
+      "title": "NDLサーチ「選挙の記録」（岩手県選挙管理委員会編）の書誌・所蔵記録",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000001-I03112428884",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "段階3（Issue #1088）の本格探索で2026-11-27に確認。岩手県選挙管理委員会編「選挙の記録」シリーズの書誌記録（本件URLは平成29年10月22日執行分、岩手県立図書館所蔵）。同シリーズは県が執行する選挙を中心とし、市町村の選挙については結果の収録にとどまり、市長選挙公報の転載は確認できない。NDLサーチの書誌検索でも2023年盛岡市長選挙の選挙公報の書誌記録は確認できなかった。紙の選挙公報の現物確認はオフライン経路が必要であり、本探索の範囲外とする。"
     }
   ]
 }

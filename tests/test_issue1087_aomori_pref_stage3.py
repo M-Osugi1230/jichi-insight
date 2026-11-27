@@ -284,7 +284,7 @@ def test_every_promise_has_one_packet_with_provenance() -> None:
 
 def test_review_search_and_term_reflect_the_registration() -> None:
     reviews = load_json("data/entities/executives/manifesto_reviews.json")
-    assert len(reviews) == 39
+    assert len(reviews) == 40
     review = next(record for record in reviews if record["id"] == REVIEW_ID)
     assert_valid("schemas/manifesto_review.schema.json", review)
     assert review["source_id"] == BULLETIN_ID
@@ -340,8 +340,25 @@ def test_review_search_and_term_reflect_the_registration() -> None:
 
 def test_bulletin_source_record_points_at_the_official_pdf() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
-    assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 223
+    # Stage 3 adds no catalog record for Aomori Prefecture (the
+    # bulletin was registered at stage 1).  The catalog total itself
+    # moved on with the Morioka stage-3 registration, PR #1091; the
+    # global version and count pins live in the shared catalog tests.
+    aomori_ids = sorted(
+        record["id"]
+        for record in catalog["records"]
+        if record["id"].startswith("aomori-pref-")
+    )
+    assert aomori_ids == [
+        "aomori-pref-election-record-2023",
+        "aomori-pref-governor",
+        "aomori-pref-governor-election-2023-bulletin",
+        "aomori-pref-governor-election-2023-history",
+        "aomori-pref-governor-election-2023-record",
+        "aomori-pref-governor-election-2023-results",
+        "aomori-pref-governor-inauguration-2023",
+        "aomori-pref-mayor-term-expiry-list",
+    ]
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["municipality_key"] == "aomori-prefecture"
     assert bulletin["organization"] == "青森県選挙管理委員会"

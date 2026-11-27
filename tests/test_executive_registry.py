@@ -41,8 +41,8 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 223
-    assert len({record["id"] for record in catalog["records"]}) == 223
+    assert len(catalog["records"]) == 225
+    assert len({record["id"] for record in catalog["records"]}) == 225
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
