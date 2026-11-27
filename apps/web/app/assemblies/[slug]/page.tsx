@@ -165,6 +165,7 @@ export default async function AssemblyDetailPage({params}:PageProps){
               <td>{date(proposal.decided_at)}</td>
               <td>{proposal.outcome||"未収録"}
                 {vote ? <details><summary>表決の公開範囲・会派別内訳</summary>\n                  {vote.item_scope ? <p className={styles.note}>採決対象項目：{vote.item_scope}。項目ごとに採決された記録です。</p> : null}
+                  {slug==="aomori-city" ? <p className={styles.note}>採決方法：{vote.method==="unknown" ? "未確定（unknown）" : vote.method}</p> : null}
                   {vote.member_vote_availability==="published" && vote.member_votes?.length
                     ? <div>
                         <p>公式公表の議員別賛否（{vote.member_votes.length}人分）。「議決に参加できない」は議長の扱いであり、欠席ではありません。</p>
