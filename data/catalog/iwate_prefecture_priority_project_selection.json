@@ -1,0 +1,133 @@
+{
+  "issue": 1078,
+  "municipality_id": "jp-local-030007",
+  "municipality_key": "iwate-prefecture",
+  "population": {
+    "description": "「いわて県民計画（2019～2028）」長期ビジョンの10の政策分野を母集団とする。計画の体系は、主観的幸福感に関する12の領域をもとにした8つの政策分野（健康・余暇、家族・子育て、教育、居住環境・コミュニティ、安全、仕事・収入、歴史・文化、自然環境）に、これらを下支えする社会基盤・参画を加えた10分野で、各分野に目指す姿と取組方向（計50の政策項目）、主要な指標（いわて幸福関連指標・長期ビジョン版、再掲を含む29件）を定める構造である。登録単位は「政策分野」とした。県の政策評価は政策分野ごとに幸福関連指標と具体的推進方策指標の達成状況を測定し、「主要施策の成果に関する説明書（実施状況報告書）」として公表しており、公式評価の公表単位である政策分野に一致させた（段階1の plan_review の方針どおり）。第2期アクションプラン（2023～2026年度）の指標体系は幸福関連指標85件・具体的推進方策指標490件に拡大しているが、登録単位は長期ビジョンの政策分野のままとし、版をまたぐ指標の対応付けは行わない。",
+    "fiscal_year": 2019,
+    "project_count": 10,
+    "source_ids": [
+      "iwate-pref-plan-page",
+      "iwate-pref-long-term-vision-final-draft"
+    ]
+  },
+  "review_status": "reviewed",
+  "scope": "initial",
+  "selection_rule": {
+    "description": "母集団が10の政策分野の全件であり、登録単位と母集団が一致するため、選定は行わず全10分野を長期ビジョンの掲載順に登録した。金額順・規模順の選定はしていない。",
+    "pillars": [
+      "健康・余暇",
+      "家族・子育て",
+      "教育",
+      "居住環境・コミュニティ",
+      "安全",
+      "仕事・収入",
+      "歴史・文化",
+      "自然環境",
+      "社会基盤",
+      "参画"
+    ]
+  },
+  "selections": [
+    {
+      "area_number": 1,
+      "official_title": "健康・余暇",
+      "project_id": "jp-local-030007-project-2019-health-leisure",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第1位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-health-leisure",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 2,
+      "official_title": "家族・子育て",
+      "project_id": "jp-local-030007-project-2019-family-childrearing",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第2位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-family-childrearing",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 3,
+      "official_title": "教育",
+      "project_id": "jp-local-030007-project-2019-education",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第3位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-education",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 4,
+      "official_title": "居住環境・コミュニティ",
+      "project_id": "jp-local-030007-project-2019-living-environment-community",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第4位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-living-environment-community",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 5,
+      "official_title": "安全",
+      "project_id": "jp-local-030007-project-2019-safety",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第5位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-safety",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 6,
+      "official_title": "仕事・収入",
+      "project_id": "jp-local-030007-project-2019-work-income",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第6位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-work-income",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 7,
+      "official_title": "歴史・文化",
+      "project_id": "jp-local-030007-project-2019-history-culture",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第7位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-history-culture",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 8,
+      "official_title": "自然環境",
+      "project_id": "jp-local-030007-project-2019-natural-environment",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第8位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-natural-environment",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 9,
+      "official_title": "社会基盤",
+      "project_id": "jp-local-030007-project-2019-social-infrastructure",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第9位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-social-infrastructure",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    },
+    {
+      "area_number": 10,
+      "official_title": "参画",
+      "project_id": "jp-local-030007-project-2019-participation",
+      "selection_basis": "母集団は長期ビジョンの10の政策分野の全件であり、本分野は掲載順第10位。登録単位が母集団と一致するため、選定ではなく全件を登録した。",
+      "series_id": "jp-local-030007-project-series-participation",
+      "source_ids": [
+        "iwate-pref-long-term-vision-final-draft"
+      ]
+    }
+  ]
+}
