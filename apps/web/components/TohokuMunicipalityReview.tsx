@@ -68,7 +68,8 @@ export function TohokuMunicipalityReview({ slug }: { slug: TohokuSlug }) {
   );
   const currentPlan = plan.records.find((item) =>
     item.decision === "accepted" &&
-    (item.title.includes("現行計画") || item.title.includes("計画期間")));
+    (item.title.includes("現行計画") || item.title.includes("計画期間")))
+    ?? plan.records.find((item) => item.decision === "accepted");
   const planTitle = currentPlan?.title ?? municipality.name_ja + "の現行計画";
   const evidenceForBudget = (id: string) => evidencePackets.find((item) =>
     item.subject_id === id &&
