@@ -56,5 +56,26 @@
     ],
     "open_questions": [],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-morioka-city-2026-local-tax",
+    "subject_type": "fiscal_record",
+    "subject_id": "jp-local-032018-fiscal-2026-local-tax",
+    "claims": [
+      {
+        "field": "amount_yen",
+        "statement": "令和8年度の盛岡市一般会計当初予算の市税は44,944,674,000円。",
+        "source_ids": [
+          "morioka-budget-2026-bill",
+          "morioka-budget-2026-pdf",
+          "morioka-budget-2026-enactment"
+        ],
+        "location_note": "盛岡市公式『令和8年度盛岡市一般会計・特別会計予算』（議案書）議案第3号「第1表 歳入歳出予算」（単位：千円）市税44,944,674千円。市公式『令和8年度 当初予算の概要』（1）歳入の状況の主要税目毎の収入見込額表でも市税計44,944,674千円。議決結果は市議会だよりNo.241（令和8年5月1日発行）p.8の議決結果表で議案第3号 可決（多数）。",
+        "decision": "accepted",
+        "review_note": "議案書第1表の印字値（44,944,674千円）を円換算した。項の内訳7件の合計が市税額と一致し、同表の歳入合計126,510,000千円は議案書第1条の総額および既登録の一般会計当初予算総額レコードとも一致する。議案第3号は可決（多数）で成立しており、第1表の額がそのまま成立後の額である。本レビューは、所有者が2026-11-15にレビュー・昇格判断を Muse へ委任したことに基づき、Muse が一次資料で検証して行ったものであり、所有者本人のレビューではない。"
+      }
+    ],
+    "open_questions": [],
+    "review_status": "reviewed"
   }
 ]

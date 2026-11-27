@@ -1941,5 +1941,48 @@
       "政策との接続は文言・内容に基づく推定であり、県が公約と政策の公式な対応付けを公表した場合は接続を見直す。"
     ],
     "review_status": "reviewed"
+  },
+  {
+    "id": "evidence-manifesto-source-search-morioka-city-2023",
+    "subject_type": "manifesto_source_search",
+    "subject_id": "manifesto-source-search-morioka-city-2023",
+    "claims": [
+      {
+        "field": "checked_source_ids",
+        "statement": "市選挙管理委員会の「選挙の記録」（令和5年市長選の記録ページ）には開票結果のみが掲載され、選挙公報への導線はない。岩手県選挙管理委員会の任期満了日一覧は任期情報のみで、公約原文は含まない。",
+        "source_ids": [
+          "morioka-city-mayor-election-2023-results",
+          "iwate-pref-mayor-term-expiry-list"
+        ],
+        "location_note": "市選管の選挙結果ページと県選管の一覧ページ（いずれも公式公表）。",
+        "decision": "accepted",
+        "review_note": "公式資料側に公約原文の掲載がないことを確認。"
+      },
+      {
+        "field": "manifesto_source_ids_found",
+        "statement": "政治山に盛岡市長選挙の選挙公報とされる複写が存在し実在を確認したが、公式URLのWayback Machine保存は複写・公式ページのいずれについても見つからず、ダイジェスト照合による原典性の担保が取れないため、原典としては採用しない。",
+        "source_ids": [
+          "morioka-city-mayor-election-2023-bulletin-copy"
+        ],
+        "location_note": "政治山の公報複写PDFと、Wayback Machine（公式サイト選挙セクション配下2023〜2024年の保存照会・複写URLの保存照会）の確認結果に基づく。",
+        "decision": "accepted",
+        "review_note": "複写の存在自体は証拠として記録するが、検証基準の原典性担保のいずれにも該当しないため located とはしない。担保の可否は段階3で再判断する。"
+      },
+      {
+        "field": "result_status",
+        "statement": "検証可能な原典を特定できなかったため、result_status を no_stable_primary_source_found とし、公約レコードは作成しない。報道の候補者アンケート回答は候補者自身の公式公表物ではないため、原典の代替として採用しない。",
+        "source_ids": [
+          "morioka-city-mayor-election-2023-results"
+        ],
+        "location_note": "探索記録 manifesto-source-search-morioka-city-2023 の review_note に判断の詳細を記載。",
+        "decision": "accepted",
+        "review_note": "不存在の断定はしない（nonexistence_claim は false）。"
+      }
+    ],
+    "open_questions": [
+      "政治山以外の複写（選挙ドットコム等のCDN）の全件確認は未実施であり、複写同士のダイジェスト照合による原典性担保の可否は段階3の判断事項。",
+      "国立国会図書館WARPにおける盛岡市サイトの収集有無は未確定。紙の選挙公報の現物確認はオフライン経路が必要で、本探索の範囲外。"
+    ],
+    "review_status": "reviewed"
   }
 ]

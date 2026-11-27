@@ -41,16 +41,17 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 203
-    assert len({record["id"] for record in catalog["records"]}) == 203
+    assert len(catalog["records"]) == 206
+    assert len({record["id"] for record in catalog["records"]}) == 206
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 43
+    assert len(terms) == 44
     assert {term["municipality_id"] for term in terms} == {
+        "jp-local-032018",
         "jp-local-062014",
         "jp-local-400009",
         "jp-local-401307",
@@ -379,6 +380,16 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # Commission's own term-expiry list is still outstanding and
         # is recorded as an open question in the evidence packet.
         "jp-local-072010": "2029-12-07",
+        # Morioka City's end (2027-09-01) is stated directly in the
+        # Iwate Prefectural Election Commission's official
+        # term-expiry list (as of 2026-11-18); its start
+        # (2023-09-02) follows the Article 259 proviso chain,
+        # anchored by that stated expiry and the four-year cycle
+        # (the 2023 election was a term-expiry election held before
+        # the previous term expired on 2023-09-01). No official
+        # document stating the start day itself was located; the
+        # evidence packet records the chain and the open question.
+        "jp-local-032018": "2027-09-01",
     }
     for term in terms:
         assert term["term_end"] == expected_term_ends[term["municipality_id"]]
@@ -453,6 +464,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-060003": "2025-02-14",
         "jp-local-070009": "2026-11-12",
         "jp-local-072010": "2025-12-08",
+        "jp-local-032018": "2023-09-02",
     }
     for term in terms:
         assert term["term_start"] == expected_term_starts[term["municipality_id"]]
@@ -613,6 +625,14 @@ def test_manifesto_readiness_is_not_confused_with_progress() -> None:
     assert by_municipality["jp-local-331007"]["manifesto_source_ids"] == [
         "okayama-city-mayor-election-2025-bulletin",
     ]
+    # Morioka City registers no manifesto source: the 2023 bulletin
+    # is not extant on the city election commission's current
+    # official page and no Wayback capture of the official URL was
+    # found; a copy on a private election site exists but its
+    # provenance cannot be verified against an official capture, so
+    # it is not adopted as a primary source (see the source search
+    # record; the question is revisited at stage 3).
+    assert by_municipality["jp-local-032018"]["manifesto_source_ids"] == []
 
 
 def test_every_executive_has_evidence_and_known_sources() -> None:

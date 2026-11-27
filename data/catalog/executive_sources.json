@@ -1,6 +1,6 @@
 {
-  "version": "0.68.0",
-  "updated_at": "2026-11-26",
+  "version": "0.69.0",
+  "updated_at": "2026-11-27",
   "scope": "pilot",
   "records": [
     {
@@ -2844,6 +2844,48 @@
       "review_status": "reviewed",
       "confidence": "high",
       "notes": "2023年9月10日執行の山形市長選挙の選挙公報そのもの（全2ページ、候補者2人）。選挙期間中は市公式サイトの選挙ページの添付PDF（https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/012/073/r5sityousenkyokouhou3.pdf）として掲載されていたが、2026-11-26の確認では同URLは404で、選挙ページからもリンクが外れている。Wayback Machine の CDX 記録にも同URLの保存は404分（2026年2月13日）しかなく、公式原典とのダイジェスト照合はできなかった。一方、選挙ドットコムCDNに現存する同一公報の複写（1,644,215バイト、SHA-256: b7633c048c0f9add22f7c09e7598beff697d2755e5be6c58c9bc2c95fc868e88）を取得し、内容を実物で照合した: 選挙管理委員会の枠文（候補者から提供された原稿をそのまま印刷したもの）、候補者2名（渡辺ゆり子・さとう孝弘）の候補者欄、二面の投票案内（繰上げ閉鎖の11投票所を含む）が市公式の選挙ページ・開票結果と一致する。佐藤孝弘候補欄は1ページ目下段にあり、大見出し「市民と共に 希望の山形へ！」と「持続可能な山形市へ！」のビジョン文のもと、番号付きの7項目で構成される。公報の候補者欄は画像・ベクタ描画でテキスト層は選管の枠文のみのため、段階3の登録文は描画画像の目視転記を正とする。"
+    },
+    {
+      "id": "morioka-city-mayor-election-2023-results",
+      "municipality_key": "morioka-city",
+      "organization": "盛岡市選挙管理委員会",
+      "category": "election",
+      "title": "令和5年8月13日執行 盛岡市長選挙及び盛岡市議会議員一般選挙（選挙の記録）",
+      "url": "https://www.city.morioka.iwate.jp/shisei/senkyo/kiroku/1044285.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "市選挙管理委員会が市公式サイトで公表する令和5年8月13日執行の盛岡市長選挙の開票結果。内舘しげる65,701票・当選、谷藤ひろあき48,022票が印字され、候補者別得票数の合計113,723票が有効投票と一致する（無効投票1,333票、投票者数115,058人、投票率48.44%、当日有権者数237,539人）。Wikipedia「内舘茂」の65,704票は公式値と異なる誤記であり採用しない。2026-11-27に直接確認した。"
+    },
+    {
+      "id": "iwate-pref-mayor-term-expiry-list",
+      "municipality_key": "morioka-city",
+      "organization": "岩手県選挙管理委員会",
+      "category": "election",
+      "title": "各議員及び長の任期満了日一覧（任期満了日一覧表・令和8年11月18日現在）",
+      "url": "https://www.pref.iwate.jp/iinkai/senkyo/1015587.html",
+      "source_kind": "landing_page",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "high",
+      "notes": "岩手県選挙管理委員会の任期満了日一覧。添付の「任期満了日一覧表（令和8年11月18日現在）」PDFに、盛岡市長・内舘茂の任期満了年月日が令和9年9月1日と明記される（盛岡市議会議員は令和9年8月27日）。2026-11-27にPDF実物で直接確認した。"
+    },
+    {
+      "id": "morioka-city-mayor-election-2023-bulletin-copy",
+      "municipality_key": "morioka-city",
+      "organization": "政治山（民間選挙情報サイト）",
+      "category": "election",
+      "title": "令和5年8月13日執行 盛岡市長選挙 選挙公報（政治山掲載の複写）",
+      "url": "https://seijiyama.jp/pdf/koho/20230813_32018_1.pdf",
+      "source_kind": "document",
+      "availability": "published",
+      "indexed_at": "2026-11-27",
+      "review_status": "reviewed",
+      "confidence": "low",
+      "notes": "民間選挙情報サイト「政治山」に掲載された、盛岡市選挙管理委員会発行の選挙公報の原物とされる複写（PDFの実在は2026-11-27に確認）。市選管の現行公式ページに公報は現存せず、公式URLのWayback Machine保存も見つからなかったため、検証基準の原典性担保（現行公式ページ現存／公式URLのWayback保存／保存記録とダイジェストが一致する複写）のいずれにも該当せず、公約の原典としては採用しない。複写の存在自体の記録として保持し、原典性の担保の可否は段階3で再判断する。"
     }
   ]
 }
