@@ -93,6 +93,8 @@ export function municipalityDiscoveryAvailability(officialCode: string) {
     "fukushima-prefecture", "fukushima-city",
     "yamagata-prefecture", "yamagata-city",
     "akita-prefecture", "akita-city",
+    "iwate-prefecture", "morioka-city",
+    "aomori-prefecture", "aomori-city",
   ];
   for (const slug of tohokuSlugs) {
     const { municipality, records } = tohokuFinance[slug];
