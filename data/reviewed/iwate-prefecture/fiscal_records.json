@@ -1,0 +1,69 @@
+[
+  {
+    "id": "jp-local-030007-fiscal-2026-total-revenue",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_revenue",
+    "metric_label": "一般会計歳入総額",
+    "amount_yen": 774233557000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "『令和8年度予算に関する説明書（令和8年2月）』一般会計歳入歳出予算事項別明細書・総括（歳入）の印字値。款別内訳の合計も総額と一致する。一般会計補正予算（第1号）第1表の補正前の額でも同額を確認した。岩手県議会の令和8年2月定例会議決結果では、議案第1号「令和8年度岩手県一般会計予算」は2026年3月23日に「意見を付し原案可決」と記録されている（議員別賛否表の表記は「意見を付して原案可決」）。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-pref-budget-2026-initial-detail",
+      "iwate-pref-assembly-2026-feb-session-results",
+      "iwate-pref-budget-2026-supplementary-1-summary"
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2026-local-tax",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "local_tax",
+    "metric_label": "一般会計県税",
+    "amount_yen": 135788000000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "同事項別明細書・総括（歳入）の款1県税の印字値（前年度136,712,000千円、比較△924,000千円と整合）。一般会計補正予算（第2号）の事項別明細書でも県税は補正の対象外であり、当初値のままであることを確認した。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-pref-budget-2026-initial-detail",
+      "iwate-pref-budget-2026-supplementary-2-detail"
+    ]
+  },
+  {
+    "id": "jp-local-030007-fiscal-2026-total-expenditure",
+    "municipality_id": "jp-local-030007",
+    "fiscal_year": 2026,
+    "account_type": "general",
+    "stage": "initial_budget",
+    "metric": "total_expenditure",
+    "metric_label": "一般会計歳出総額",
+    "amount_yen": 774233557000,
+    "value": null,
+    "unit": "yen",
+    "value_status": "available",
+    "period_start": "2026-04-01",
+    "period_end": "2027-03-31",
+    "note": "同事項別明細書・総括（歳出）の印字値で、歳入総額と同額である。議決は議案第1号として2026年3月23日に「意見を付し原案可決」。",
+    "review_status": "reviewed",
+    "confidence": "high",
+    "sources": [
+      "iwate-pref-budget-2026-initial-detail",
+      "iwate-pref-assembly-2026-feb-session-results"
+    ]
+  }
+]

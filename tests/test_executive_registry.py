@@ -41,19 +41,20 @@ def source_ids() -> set[str]:
 def test_executive_source_catalog_matches_contract() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert validation_errors("schemas/source_catalog.schema.json", catalog) == []
-    assert len(catalog["records"]) == 218
-    assert len({record["id"] for record in catalog["records"]}) == 218
+    assert len(catalog["records"]) == 223
+    assert len({record["id"] for record in catalog["records"]}) == 223
 
 
 def test_executive_registry_matches_shared_contracts() -> None:
     terms = load_json("data/entities/executives/executive_terms.json")
     packets = load_json("data/entities/executives/evidence_packets.json")
 
-    assert len(terms) == 46
+    assert len(terms) == 47
     assert {term["municipality_id"] for term in terms} == {
         "jp-local-032018",
         "jp-local-022012",
         "jp-local-020001",
+        "jp-local-030007",
         "jp-local-062014",
         "jp-local-400009",
         "jp-local-401307",
@@ -392,6 +393,14 @@ def test_executive_term_ends_match_official_term_expiry_records() -> None:
         # Commission's own term-expiry list is still outstanding and
         # is recorded as an open question in the evidence packet.
         "jp-local-072010": "2029-12-07",
+        # Iwate Prefecture's end (2027-09-10) is stated directly in
+        # the federation of prefectural election commissions'
+        # governor list; its start (2023-09-11) is stated directly
+        # in the governor's official profile, which lists every
+        # term, and follows the Article 259 proviso chain from
+        # the previous term's expiry (2023-09-10) printed in the
+        # same profile.
+        "jp-local-030007": "2027-09-10",
         # Morioka City's end (2027-09-01) is stated directly in the
         # Iwate Prefectural Election Commission's official
         # term-expiry list (as of 2026-11-18); its start
@@ -478,6 +487,7 @@ def test_executive_term_starts_follow_statutory_counting() -> None:
         "jp-local-020001": "2023-06-29",
         "jp-local-022012": "2023-06-04",
         "jp-local-072010": "2025-12-08",
+        "jp-local-030007": "2023-09-11",
         "jp-local-032018": "2023-09-02",
     }
     for term in terms:

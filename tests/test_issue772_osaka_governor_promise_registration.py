@@ -334,10 +334,10 @@ def test_bulletin_source_record_points_at_the_pdf() -> None:
     # mayor records, bringing the combined catalog to
     # version 0.63.0 / 176 records.
     assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 218
+    assert len(catalog["records"]) == 223
     # version 0.63.0 / 178 records.
     assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 218
+    assert len(catalog["records"]) == 223
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["url"].endswith("chijisenkyokoho.pdf")
     assert bulletin["municipality_key"] == "osaka-prefecture"

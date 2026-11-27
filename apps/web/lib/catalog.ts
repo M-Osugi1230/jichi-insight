@@ -18,6 +18,7 @@ import okayamaCityFinanceCatalog from "../../../data/catalog/okayama_city_financ
 import kumamotoFinanceCatalog from "../../../data/catalog/kumamoto_prefecture_finance_sources.json";
 import fukushimaFinanceCatalog from "../../../data/catalog/fukushima_prefecture_finance_sources.json";
 import aomoriFinanceCatalog from "../../../data/catalog/aomori_prefecture_finance_sources.json";
+import iwateFinanceCatalog from "../../../data/catalog/iwate_prefecture_finance_sources.json";
 import akitaFinanceCatalog from "../../../data/catalog/akita_prefecture_finance_sources.json";
 import okayamaFinanceCatalog from "../../../data/catalog/okayama_prefecture_finance_sources.json";
 import yamagataFinanceCatalog from "../../../data/catalog/yamagata_prefecture_finance_sources.json";
@@ -69,6 +70,7 @@ export type MunicipalityKey =
   | "fukushima-prefecture"
   | "aomori-prefecture"
   | "aomori-city"
+  | "iwate-prefecture"
   | "morioka-city"
   | "yamagata-prefecture"
   | "akita-prefecture"
@@ -395,6 +397,12 @@ export const municipalityMeta: Record<
     status: "財政データ公開", href: null,
     fiscalSummary: "Reviewed 55項目（財政レコード4件・決算51件）",
   },
+  "iwate-prefecture": {
+    name: "岩手県", type: "都道府県",
+    summary: "いわて県民計画（2019～2028）、FY2026一般会計当初予算、2022〜2024年度の普通会計決算と達増拓也知事の現任期を確認します。",
+    status: "財政データ公開", href: "/municipalities/iwate-prefecture",
+    fiscalSummary: "Reviewed 54項目（当初予算3件・決算51件）",
+  },
 };
 
 export const sourceCatalog = [
@@ -419,6 +427,7 @@ export const sourceCatalog = [
   ...(kumamotoFinanceCatalog.records as SourceRecord[]),
   ...(fukushimaFinanceCatalog.records as SourceRecord[]),
   ...(aomoriFinanceCatalog.records as SourceRecord[]),
+  ...(iwateFinanceCatalog.records as SourceRecord[]),
   ...(yamagataFinanceCatalog.records as SourceRecord[]),
   ...(akitaFinanceCatalog.records as SourceRecord[]),
   ...(aichiFinanceCatalog.records as SourceRecord[]),

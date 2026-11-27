@@ -33,6 +33,7 @@ SOURCE_CATALOG_PATHS = [
     ROOT / "data" / "catalog" / "okayama_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "kumamoto_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "fukushima_prefecture_finance_sources.json",
+    ROOT / "data" / "catalog" / "iwate_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "yamagata_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "akita_prefecture_finance_sources.json",
     ROOT / "data" / "catalog" / "aomori_prefecture_finance_sources.json",
@@ -2205,7 +2206,7 @@ def validate_tohoku_cluster_export() -> list[str]:
         promise for promise in promises
         if promise["review_status"] in ("reviewed", "verified")
     ]
-    if len(terms) != 46 or len(reviewed) != 580:
+    if len(terms) != 47 or len(reviewed) != 580:
         failures.append(
             f"Unexpected executive registry counts: {len(terms)} terms, "
             f"{len(reviewed)} reviewed promises"
@@ -2213,7 +2214,7 @@ def validate_tohoku_cluster_export() -> list[str]:
     promises_page = EXPORT_ROOT / "promises/index.html"
     if promises_page.is_file():
         html = normalized_html(promises_page)
-        for marker in ("580件", "46件"):
+        for marker in ("580件", "47件"):
             if marker not in html:
                 failures.append(f"Promises page missing updated count: {marker}")
     return failures

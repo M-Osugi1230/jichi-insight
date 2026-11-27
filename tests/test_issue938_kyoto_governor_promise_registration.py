@@ -384,8 +384,8 @@ def test_review_search_and_term_reflect_the_registration() -> None:
 def test_bulletin_source_record_points_at_the_official_pdf() -> None:
     catalog = load_json("data/catalog/executive_sources.json")
     assert catalog["version"] == "0.69.0"
-    assert len(catalog["records"]) == 218
-    assert len(catalog["records"]) == 218
+    assert len(catalog["records"]) == 223
+    assert len(catalog["records"]) == 223
     bulletin = next(r for r in catalog["records"] if r["id"] == BULLETIN_ID)
     assert bulletin["municipality_key"] == "kyoto-prefecture"
     assert bulletin["organization"] == "京都府選挙管理委員会"

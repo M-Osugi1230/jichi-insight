@@ -1,0 +1,55 @@
+{
+  "id": "phase19-iwate-plan-review",
+  "name_ja": "岩手県",
+  "next_action": "Register the prefecture's projects in the project stage after fixing the registration unit as the 10 policy fields of the Iwate Prefectural Plan (2019-2028) and confirming the published form of the policy evaluation reports; register the governor's promises in the promise stage from the 2023 election bulletin, which survives only as a copy on an election-information CDN and whose digest could not be collated against an official original; add the assembly layer in the assembly stage, where the FY2025 general-account settlement bill (認定第1号) stands continued in committee and remains pending; keep supplementary budgets, execution and settlement as separate states.",
+  "official_code": "030007",
+  "quality_boundary": "The prefecture's top-level plan is the Iwate Prefectural Plan (いわて県民計画, 2019-2028). This review fixes that identity, the two-layer structure (the ten-year Long-Term Vision with 10 policy fields, each carrying Iwate happiness-related indicators, plus the Action Plans made of four plans run in three periods), and the progress governance based on the prefecture's policy evaluation of the happiness-related and implementation indicators, deliberated by the Iwate Prefecture Comprehensive Plan Council. Iwate Prefecture had no reviewed package in this repository before this stage, so this review rests on the prefecture's and the MIC's own published documents alone. The registration unit for the project stage is fixed as the policy field (政策分野), the unit at which the prefecture itself evaluates progress.",
+  "records": [
+    {
+      "decision": "accepted",
+      "evidence_location": "岩手県公式サイト「いわて県民計画（2019～2028）」ページ、および岩手県総合計画審議会資料「第3期アクションプランの策定方針等について」の計画構成資料",
+      "evidence_role": "current_plan_identity",
+      "id": "iwate-plan-current-identity",
+      "review_note": "計画名・計画期間・最上位計画としての位置付けは、県公式の計画ページと審議会資料で一致を確認した。",
+      "source_url": "https://www.pref.iwate.jp/kensei/seisaku/suishin/1018014/index.html",
+      "statement": "岩手県の県政運営の最上位計画は「いわて県民計画（2019～2028）」であり、計画期間は2019年度から2028年度までの10年間である。基本目標は「東日本大震災津波の経験に基づき、引き続き復興に取り組みながら、お互いに幸福を守り育てる希望郷いわて」である。",
+      "title": "現行計画（いわて県民計画（2019～2028））",
+      "value": "いわて県民計画（2019～2028）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "岩手県総合計画審議会資料「第3期アクションプランの策定方針等について」の参考資料（計画の構成・政策推進の基本方向）",
+      "evidence_role": "policy_structure",
+      "id": "iwate-plan-policy-structure",
+      "review_note": "長期ビジョンの構成と10の政策分野の設定方法は審議会資料の参考資料で直接確認した。幸福関連指標は政策分野ごとに定められる。",
+      "source_url": "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/101/072/siryou3112.pdf",
+      "statement": "計画は長期ビジョンとアクションプランで構成される。長期ビジョンは、主観的幸福感に関する12の領域をもとにした8つの政策分野（「健康・余暇」から「自然環境」まで）に、これらを下支えする「社会基盤」「参画」を加えた10の政策分野を設定し、各政策分野に幸福に関連する客観的指標（いわて幸福関連指標）を定める。",
+      "title": "計画の体系（長期ビジョンと10の政策分野・いわて幸福関連指標）",
+      "value": "長期ビジョン（10の政策分野）／各政策分野にいわて幸福関連指標"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "岩手県総合計画審議会資料「第3期アクションプランの策定方針等について」（策定の趣旨・計画期間・構成と計画の変遷図）",
+      "evidence_role": "implementation_layer",
+      "id": "iwate-plan-implementation-layer",
+      "review_note": "4プランの構成と期別の運用は審議会資料で確認した。第3期の策定スケジュール（2027年3月策定・公表予定）も同資料に明記されている。",
+      "source_url": "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/101/072/siryou3112.pdf",
+      "statement": "アクションプランは復興推進プラン・政策推進プラン・地域振興プラン・行政経営プランの4プランで構成され、長期ビジョンの実効性を確保するため、重点的・優先的に取り組むべき政策や具体的な推進方策を明らかにする。第1期（2019～2022年度）・第2期（2023～2026年度）を経て、第3期（2027～2028年度）は2027年3月の策定・公表に向けて準備が進められている。",
+      "title": "実行計画（アクションプラン4プラン・期別運用）",
+      "value": "復興推進プラン／政策推進プラン／地域振興プラン／行政経営プラン（第1期2019～2022年度・第2期2023～2026年度・第3期2027～2028年度）"
+    },
+    {
+      "decision": "accepted",
+      "evidence_location": "岩手県総合計画審議会資料「第3期アクションプランの策定方針等について」（基本的な考え方）、および岩手県議会会議録における政策評価レポートへの言及",
+      "evidence_role": "progress_governance",
+      "id": "iwate-plan-progress-governance",
+      "review_note": "次期プランへの評価結果の反映と審議会での審議は審議会資料で確認した。政策評価レポートの公表形式（指標の達成状況の測定）は県議会会議録で確認したが、レポートそのものの公表単位の実物確認は段階2で行うため、段階2の登録単位は政策分野を第一候補として固定する。",
+      "source_url": "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/101/072/siryou3112.pdf",
+      "statement": "進行管理は、県の政策評価により政策分野ごとに「いわて幸福関連指標」と「具体的推進方策指標」の達成状況を測定し、政策評価レポートとして公表する形で行われる。各期のアクションプランの評価結果は次期アクションプランの策定に反映され、策定は岩手県総合計画審議会で審議される。",
+      "title": "政策評価による進行管理と総合計画審議会の審議",
+      "value": "政策評価（いわて幸福関連指標・具体的推進方策指標の達成状況）／岩手県総合計画審議会の審議／評価結果の次期プランへの反映"
+    }
+  ],
+  "review_status": "reviewed",
+  "reviewed_at": "2026-11-27"
+}
