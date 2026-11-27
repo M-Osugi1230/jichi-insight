@@ -1,0 +1,2064 @@
+[
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「活力ある地域産業の育成」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「活力ある地域産業の育成」は、基本政策「仕事をつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「地域産業の安定経営・基盤強化」、「産業を支える人材の確保・育成と雇用創出」、「地域特性を活かした商店街づくりの推進」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全9件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-regional-industry",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-regional-industry",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「時代の変化を先取りした産業振興」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「時代の変化を先取りした産業振興」は、基本政策「仕事をつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「市内産業へのDXの推進」、「GXによる産業の育成・集積」、「若者等への起業・創業、第二創業支援」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全4件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-future-industry",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-future-industry",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「地域の特性を活かした市場開拓」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「地域の特性を活かした市場開拓」は、基本政策「仕事をつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「域外からの所得獲得と域内での所得循環の促進」、「ブランド化・高付加価値化の推進」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の2施策に設定された目標とする指標の全2件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。なお、「製造品出荷額等」は令和6年度実績値が報告書時点で未確定（または未公表）のため、actuals を空とし assessment を not_assessable とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-market-development",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。",
+      "「製造品出荷額等」は令和6年度実績値が報告書時点で未確定（または未公表）のため実績値を登録していない。確定値の公表後に更新サイクル（Issue #706）で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-market-development",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「国内外の観光需要の取り込み」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「国内外の観光需要の取り込み」は、基本政策「仕事をつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「充実した交通網を活かした立体観光の推進」、「地域特性を活かした観光資源の魅力向上」、「受け入れ態勢の強化と効果的な情報発信」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全5件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-tourism-demand",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-tourism-demand",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「連携や交流による地域活力の強化」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「連携や交流による地域活力の強化」は、基本政策「仕事をつくる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「公民連携の推進」、「若者に選ばれる移住・定住の促進、関係人口の創出」、「広域連携・国内交流の推進」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全5件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-collaboration-exchange",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-collaboration-exchange",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「未来を担う人財の育成」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「未来を担う人財の育成」は、基本政策「人をまもり・そだてる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「多様なニーズに応じた切れ目のない子育て支援」、「子どもの居場所や主体的に活動できる環境の充実」、「多様なニーズに応じた快適で質の高い教育の提供」、「青少年の健全育成と生涯学習の推進」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の4施策に設定された目標とする指標の全14件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-future-talent",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-future-talent",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「誰もが文化・スポーツに親しめる機会の充実」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「誰もが文化・スポーツに親しめる機会の充実」は、基本政策「人をまもり・そだてる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「豊かな人生を創る文化芸術環境の充実」、「文化芸術・歴史の継承」、「スポーツに親しめる環境づくりと地域活性化」、「選手・指導者が活躍できる環境づくり」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の4施策に設定された目標とする指標の全9件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-culture-sports",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-culture-sports",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「生涯を通じた健康づくり・持続可能な医療提供体制の推進」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「生涯を通じた健康づくり・持続可能な医療提供体制の推進」は、基本政策「人をまもり・そだてる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「更なる健康寿命の延伸」、「感染症予防対策の充実」、「持続可能な医療提供体制の構築」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全10件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。なお、「がんの標準化死亡比（男性）」、「がんの標準化死亡比（女性）」、「特定保健指導対象者の減少率」、「特定健診受診者の喫煙率」、「自殺による死亡率」は令和6年度実績値が報告書時点で未確定（または未公表）のため、actuals を空とし assessment を not_assessable とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-health-medical",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。",
+      "「がんの標準化死亡比（男性）」、「がんの標準化死亡比（女性）」、「特定保健指導対象者の減少率」、「特定健診受診者の喫煙率」、「自殺による死亡率」は令和6年度実績値が報告書時点で未確定（または未公表）のため実績値を登録していない。確定値の公表後に更新サイクル（Issue #706）で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-health-medical",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「高齢者や障がい者が住み慣れた地域で安心して暮らせる環境づくり」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「高齢者や障がい者が住み慣れた地域で安心して暮らせる環境づくり」は、基本政策「人をまもり・そだてる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「地域包括ケアシステムの更なる充実」、「多様なニーズや特性に応じた障がいのあるかたへの支援」、「地域共生社会の構築」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全12件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-elderly-disability-care",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-elderly-disability-care",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「誰もが互いに尊重し、支え合う社会の推進」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「誰もが互いに尊重し、支え合う社会の推進」は、基本政策「人をまもり・そだてる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「女性活躍の推進・男女共同参画社会の形成」、「多文化共生社会の形成」、「平和意識の継承」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全3件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-mutual-respect-society",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-mutual-respect-society",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「安全・安心な市民生活・地域社会の確保」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「安全・安心な市民生活・地域社会の確保」は、基本政策「人をまもり・そだてる」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「防犯・交通安全対策の充実」、「安全・安心な消費生活の確保」、「地域で支え合う環境づくりの推進」、「生活困窮者の自立支援」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の4施策に設定された目標とする指標の全10件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-safe-secure-life",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-safe-secure-life",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「コンパクト・プラス・ネットワークの都市づくり」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「コンパクト・プラス・ネットワークの都市づくり」は、基本政策「まちをデザインする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「公共交通ネットワークとの連携によるコンパクトな複数の拠点づくりの促進」、「交流拠点としての中心市街地の形成」、「魅力ある地域のまちづくり」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全4件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。「歩行者通行量」は調査方法・調査期間の見直しにより現状値・目標値・実績値が未測定・未設定であり、値を持たない指標として欠損を明示した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-compact-city",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。",
+      "「歩行者通行量」は調査方法・調査期間の見直しにより未測定・未設定である。測定・設定が公表され次第、更新サイクル（Issue #706）で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-compact-city",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「災害防止・雪対策の充実」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「災害防止・雪対策の充実」は、基本政策「まちをデザインする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「人口減少に対応した災害に強い都市基盤整備」、「効果的・効率的な雪対策の推進」、「空家等対策の推進」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全5件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-disaster-snow",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-disaster-snow",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「都市景観・居住環境の充実」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「都市景観・居住環境の充実」は、基本政策「まちをデザインする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「豊かな自然環境と調和した都市景観の形成」、「安全で快適な居住環境の充実」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の2施策に設定された目標とする指標の全3件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-urban-landscape-living",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-urban-landscape-living",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「社会情勢の変化に対応した交通環境の充実」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「社会情勢の変化に対応した交通環境の充実」は、基本政策「まちをデザインする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「広域交通の機能充実」、「域内交通の充実」、「安全で快適な道路交通環境の確保」、「自然環境の保全及び資源の適切な利活用」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の4施策に設定された目標とする指標の全9件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。なお、「市内鉄道駅（新幹線）の1日当たりの乗車人数」、「市内鉄道駅（在来線）の1日当たりの乗車人数」は令和6年度実績値が報告書時点で未確定（または未公表）のため、actuals を空とし assessment を not_assessable とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-transport-environment",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。",
+      "「市内鉄道駅（新幹線）の1日当たりの乗車人数」、「市内鉄道駅（在来線）の1日当たりの乗車人数」は令和6年度実績値が報告書時点で未確定（または未公表）のため実績値を登録していない。確定値の公表後に更新サイクル（Issue #706）で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-transport-environment",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「未来につなぐ自然環境の保全・快適な生活環境の確保」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「未来につなぐ自然環境の保全・快適な生活環境の確保」は、基本政策「まちをデザインする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「生活環境の保全」、「適正な汚水排除・処理による生活環境の確保」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の2施策に設定された目標とする指標の全4件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-natural-environment",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-natural-environment",
+    "subject_type": "project"
+  },
+  {
+    "claims": [
+      {
+        "decision": "accepted",
+        "field": "registration_unit",
+        "location_note": "前期基本計画の計画の構成、段階1 plan_review、令和6年度報告書第3章の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録の単位は、青森市総合計画前期基本計画の「政策」とした。段階1の plan_review が本計画の登録単位を政策（17件）と確定している。計画は17の政策ごとに基本方向・現状と課題・施策の体系・主な取組・目標とする指標を定め、令和6年度報告書も基本政策・政策・施策の体系に沿って成果を説明しており、政策は計画の公式の体系単位と一致する。目標とする指標は施策単位で設定されるため、各政策のKPIには配下の施策の指標をすべて収録した。基本構想（2024〜2033年度）と前期基本計画（2024〜2028年度）の政策は同一計画文書内の体系であり、版をまたぐ対応付けは行っていない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_title",
+        "location_note": "前期基本計画の目次と各政策の見出し",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策の公式名称は「脱炭素・循環型社会の実現」であり、前期基本計画の表記どおりに登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "parent_policy",
+        "location_note": "前期基本計画の目次・計画の構成",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "政策「脱炭素・循環型社会の実現」は、基本政策「まちをデザインする」に属する。"
+      },
+      {
+        "decision": "accepted",
+        "field": "purpose",
+        "location_note": "前期基本計画の各政策「基本方向」「施策の体系」",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "purpose は、前期基本計画における本政策の「基本方向」の本文を転記し、「施策の体系」に掲げる施策名（「地球温暖化対策の推進」、「ごみの減量化・リサイクルの強化」、「廃棄物の適正処理の確保」）を列挙したものである。"
+      },
+      {
+        "decision": "accepted",
+        "field": "responsible_department",
+        "location_note": "前期基本計画（政策単位の所管部局の記載なし）、令和6年度報告書（事業単位の部局課名のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "計画本編は政策ごとの所管部局を印字していないため、responsible_department は null とした。令和6年度報告書は事業ごとに部局課名を印字するが政策単位の所管は公表されていないため、市の組織図等からの推定は行わない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "official_evaluation",
+        "location_note": "令和6年度報告書第3章（達成度評価は指標単位のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "青森市は政策単位の総合評価（評定）を公表していない。令和6年度報告書の達成度評価（A〜D）は指標単位にのみ付されるため、official_evaluation は null とし、欠損明示とした。指標単位の評定は各KPIの assessment に換算して登録した。"
+      },
+      {
+        "decision": "accepted",
+        "field": "budget_records.settlement",
+        "location_note": "令和6年度報告書第3章（事業単位の決算額のみ）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "令和6年度報告書は前期基本計画の体系に沿って事業ごとの決算額（千円）を印字するが、政策単位の金額合計は公表していない。事業決算額の合算は公表形ではないため行わず、金額は未登録（null）とし、0では補完しない。"
+      },
+      {
+        "decision": "accepted",
+        "field": "kpis",
+        "location_note": "前期基本計画の各施策「目標とする指標」、令和6年度報告書第3章の指標表",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本政策のKPIは、配下の3施策に設定された目標とする指標の全5件を、報告書の印字どおりに登録した。baseline は報告書の現状値、target は計画最終年度（令和10年度）の目標値、actuals は令和6年度実績値であり、市の達成度評価（A〜D）を換算規則に基づき assessment に換算した。値はすべて公表形のままであり、推測や0補完はしていない。なお、「温室効果ガス排出量削減率」は令和6年度実績値が報告書時点で未確定（または未公表）のため、actuals を空とし assessment を not_assessable とした。"
+      },
+      {
+        "decision": "accepted",
+        "field": "review_provenance",
+        "location_note": "本リポジトリの運用記録（所有者から Muse へのレビュー・昇格判断の委任、2026-11-15）",
+        "review_note": null,
+        "source_ids": [
+          "aomori-city-comprehensive-plan-page",
+          "aomori-city-zenki-keikaku-2024",
+          "aomori-city-major-measures-report-fy2024"
+        ],
+        "statement": "本登録のレビュー・昇格判断は、所有者が2026-11-15に Muse へ委任した権限に基づき Muse が行ったものであり、所有者本人のレビューとしては記録しない。review_status の reviewed はこの委任に基づくレビュー済みを意味する。"
+      }
+    ],
+    "id": "evidence-jp-local-022012-project-2024-decarbonization-circular",
+    "open_questions": [
+      "金額は未登録である。政策単位の金額を掲載した公式資料は確認できていない。公表され次第、更新サイクル（Issue #706）で登録する。",
+      "後期基本計画（2029〜2033年度）の策定時に政策体系が変更される場合は、公式対応表の公表を待って判断する。版をまたぐ対応付けは行っていない。",
+      "首長公約との接続は段階3で検討する。本段階では接続を行っていない。なお、令和5年市長選の選挙公報は段階1の探索で所在を特定できておらず、公約が登録されない場合は接続は行われない。",
+      "「温室効果ガス排出量削減率」は令和6年度実績値が報告書時点で未確定（または未公表）のため実績値を登録していない。確定値の公表後に更新サイクル（Issue #706）で登録する。"
+    ],
+    "review_status": "reviewed",
+    "subject_id": "jp-local-022012-project-2024-decarbonization-circular",
+    "subject_type": "project"
+  }
+]
